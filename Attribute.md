@@ -39,4 +39,4 @@ Willensstärke ermöglicht es einem Charakter, starke Emotionen, Ablenkungen und
  ### Point Buy Regeln
 ** to be added **
  
-Nächster Schritt: Alter
+Nächster Schritt: [Alter](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Alter.md)
