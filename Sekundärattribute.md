@@ -69,4 +69,4 @@ Der Schadensbonus wird auf jeden Nahkampfangriff, egal ob bewaffnet oder unbewaf
 •	Ab 20 STR = +4
  
  
-Nächster Schritt: Fertigkeiten
+Nächster Schritt: [Fertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Fertigkeiten.md)
