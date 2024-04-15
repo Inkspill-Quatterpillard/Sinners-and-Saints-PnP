@@ -82,4 +82,4 @@ Ihr altes Blut gewährt Elfen unerreichte Expertise in bestimmten Bereichen, jed
 
 *Coming Next:* **Gnome, Orks**
  
-Nächster Schritt: Religion
+Nächster Schritt: [Religion](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Religion.md)
