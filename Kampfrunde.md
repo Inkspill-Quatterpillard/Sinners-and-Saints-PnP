@@ -39,7 +39,7 @@ Passiert ein Kampfteilnehmer während der ersten Bewegungsphase einen feindliche
 In der Plänkelphase finden alle Fernkampfangriffe mit Fernkampfwaffen gleichzeitig statt. Das heißt, dass alle Kampfwürfe, sowie ggf. Ausweichswürfe und Schadenswürfe gleichzeitig ausgewürfelt werden können. Da in den meisten Fällen Spieler gegen NPCs kämpfen werden, sagen die Spieler dabei zuerst das Ziel an, auf welches sie schießen. Mit einer entsprechenden Probe kann allerdings auch vor dieser Phase in einer Zusatzaktion herausgefunden werden, auf wen ein Kampfteilnehmer zielt. Fernkampfangriffe in Form von Magie werden in der Magiephase ausgeführt.
 
 ### Nahkampfphase
-In dieser Phase können Aktionen genutzt werden, um Nahkämpfe zu initiieren oder fortzuführen. Das Initiationsrecht besitzt dabei je nachdem die Gruppe, die zuerst angegriffen hat, die Spieler oder ein Boss-NPC.
+In dieser Phase können Aktionen genutzt werden, um Nahkämpfe zu initiieren oder fortzuführen. Das Initiationsrecht besitzt dabei je nachdem die Gruppe, die zuerst angegriffen hat, die Spieler oder ein Boss-NPC. Alternativ kann auch hier WAH+1W6 geworfen werden, um den Initiator zu bestimmen.
 Zauber, die im Nahkampf gewirkt werden, finden ebenfalls in der Magiephase statt.
 
 ### Magiephase
