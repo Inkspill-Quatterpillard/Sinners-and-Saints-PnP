@@ -2,15 +2,15 @@
 ### Überblick über die Charaktererstellung
 1. [Determinierung der Attribute](Attribute.md)
 2. Bestimmung des Hintergrundes
-- Alter
-- Spezies
-- Religion
-- Charakteristik
-- Besondere Herkunft
-3. Berechnung der Sekundärattribute
-4. Wahl der Fertigkeiten
-5. Reflexion über die Vorgeschichte und den Namen des Charakters
-6. Zusammenstellung der Ausstattung
+- [Alter](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Alter.md)
+- [Spezies](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Spezies.md)
+- [Religion](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Religion.md)
+- [Charakteristik](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Charakteristik.md)
+- [Besondere Herkunft](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Herkunft.md)
+3. [Berechnung der Sekundärattribute](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Sekund%C3%A4rattribute.md)
+4. [Wahl der Fertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Fertigkeiten.md)
+5. [Reflexion über die Vorgeschichte und den Namen des Charakters](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Vorgeschichte.md)
+6. [Zusammenstellung der Ausstattung](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Ausstattung.md)
 7. Auswahl möglicher Kunststücke, Kampftechniken, Kampfstile und Zauber
 
 ## [Attribute](Attribute.md)
@@ -41,7 +41,7 @@ Willensstärke ermöglicht es einem Charakter, starke Emotionen, Ablenkungen und
 ** to be added **
 
 ## Hintergrund
-### Alter
+### [Alter](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Alter.md)
 Das Alter eines Charakters beeinflusst in erster Linie dessen Klugheit und Lebenserfahrung, aber auch seinen körperlichen Verfall. Dies wird simuliert, indem für gewisse Altersstufen sogenannte Verbesserungswürfe auf den INT oder KLU-Wert vergeben werden. 
 Alternde oder noch nicht ausgewachsene Charaktere erhalten zudem einen Nachteil auf körperliche Werte wie STR, KON, GES oder WAH. Diese Mali können zumeist je nach Präferenz auf diese Grundattribute verteilt werden.
  
@@ -59,7 +59,7 @@ Alternde oder noch nicht ausgewachsene Charaktere erhalten zudem einen Nachteil 
  
  
  
-### Spezies
+### [Spezies](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Spezies.md)
  
 Die Spezies des Charakters beeinflusst nicht nur dessen persönlichen, sozialen und kulturellen Hintergrund sowie seine Stellung in der Welt, sondern auch Teile seiner Grundattribute. Zudem besitzt jede Spezies dieser Welt bestimmte Eigenschaften, positiv wie negativ.
  
@@ -69,11 +69,11 @@ Neben diesen drei Spezies existieren noch weitere humanoide und kulturschaffende
  
 Spielbare Spezies sind aktuell: Menschen, Elfen und Zwerge.
  
-Details der Spezies können unter Liste der Spezies gefunden werden.
+Details der Spezies können unter [Liste der Spezies](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Spezies.md) gefunden werden.
  
  
  
-### Religion
+### [Religion](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Religion.md)
  
 Religion prägt das Leben eines Jeden in Arvor. Egal ob Mensch, Elf oder Zwerg, sie alle sind in einer Gesellschaft geboren, die verschiedenen religiösen Kulten und Praktiken folgt. Religion wirkt sich auf die Erziehung, das Weltbild und die Wertevorstellungen aus. Dabei ist es zunächst egal, wie ein Charakter persönlich zu den Göttern steht.
  
@@ -81,7 +81,7 @@ Die folgenden Religionen sind auf dem westlichen Kontinent verbreitet. Viele sin
  
 Jeder der Kulte gibt einem Charakter individuelle Boni. Diese werden wie angegeben im Charakterbogen vermerkt und können sich unter Umständen auf abgeleitete Werte oder folgende Boni und Mali während der Charaktererstellung auswirken.
  
-Eine Liste der spielbaren Religionen kann unter Religion gefunden werden.
+Eine Liste der spielbaren Religionen kann unter [Religion](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Religion.md) gefunden werden.
  
 - Kult der Acht
 - Kult der Herrin des Waldes
@@ -94,25 +94,25 @@ Eine Liste der spielbaren Religionen kann unter Religion gefunden werden.
 - Kult der sieben Erzdämonen
  
  
-### Charakteristik
+### [Charakteristik](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Charakteristik.md)
  
 Eine Charakteristik ist eine Eigenschaft des Charakters, die bestimmte Vor- oder Nachteile geben kann. Ein Spieler kann entweder eine Charakteristik frei auswählen oder bis zu zwei auswürfeln. Dabei darf einmal neu gewürfelt werden. Es ist allerdings nicht erforderlich, eine Charakteristika auszuwählen.
  
  
-Liste der Charakteristika
+[Liste der Charakteristika](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Charakteristik.md)
  
  
  
-### Besondere Herkunft
+### [Besondere Herkunft](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Herkunft.md)
  
 Eine Gruppe von Spielern und ihr Spielleiter können sich entscheiden, mit besonderer Herkunft zu spielen. Diese Regel gibt Spielern die Möglichkeit, zusätzlich zu ihrer Spezies die Abstammung ihres Charakters individuell zu gestalten. Eine Herkunft gibt Spielern zusätzliche Fertigkeiten, aber auch Mali auf ihre Attribute. Will ein Spieler der Gruppe ohne besondere Herkunft spielen, so darf er ein zusätzliches Kunststück wählen.
  
  
-Liste der Herkünfte
+[Liste der Herkünfte](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Herkunft.md)
  
  
  
-## Sekundärattribute
+## [Sekundärattribute](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Sekund%C3%A4rattribute.md)
  
  
 ### Trefferpunkte
@@ -179,7 +179,7 @@ Der Schadensbonus wird auf jeden Nahkampfangriff, egal ob bewaffnet oder unbewaf
 •	Ab 20 STR = +4
 
  
-## Fertigkeiten
+## [Fertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Fertigkeiten.md)
  
 ### Professionen
  
@@ -215,15 +215,15 @@ Alle Fertigkeiten sind unter Liste der Fertigkeiten und alle Heldenfertigkeiten 
 Neben den Fertigkeiten, die ein Charakter durch seine Profession meistert, können zudem noch Punkte auf **persönliche Interessen** des Charakters vergeben werden. Diese Fertigkeitspunkte entsprechen dem doppelten KLU-Wert oder INT-Wert eines Charakters und können auf beliebig viele Fertigkeiten verteilt werden, inklusive den Professionsfertigkeiten und den Statuswert. Sie können jedoch nicht auf Kampf- oder Magiefertigkeiten verteilt werden. Daraufhin können die halben und Fünftelwerte der Fertigkeiten ermittelt werden, um Berechnungen im laufenden Spiel zu verkürzen.
  
  
-## Vorgeschichte
+## [Vorgeschichte](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Vorgeschichte.md)
  
-Für weiteres zur Vorgeschichte siehe das Kapitel Vorgeschichte.
+Für weiteres zur Vorgeschichte siehe das Kapitel [Vorgeschichte](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Vorgeschichte.md).
  
  
  
 ## Ausstattung
  
-Für weiteres zur Ausstattung siehe das Kapitel Ausstattung.
+Für weiteres zur Ausstattung siehe das Kapitel [Ausstattung](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Ausstattung.md).
  
  
  
