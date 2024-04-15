@@ -29,7 +29,7 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
 #### [Besondere Herkunft (optional)](Herkunft.md)
  
 #### [Sekundärattribute
- 
+
 #### [Fertigkeiten
  
 #### [Vorgeschichte
@@ -37,6 +37,12 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
 #### [Ausstattung
  
 ### [Spielsystem
+
+#### Fertigkeiten
+
+#### Trefferpunkte und Regeneration
+
+#### Gift, Tränke und Krankheiten
  
 ### [Kampfregeln
  
