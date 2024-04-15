@@ -277,4 +277,4 @@ Der Charakter vermag es, Musik und Lieder mit arkaner Energie zu unterstreichen.
 Der Charakter kann ein magisches Lied anstimmen. Dafür muss er eine Probe auf Handwerk (Instrument oder Singen) in einer vollen Aktion bestehen. Um das Lied aufrechtzuerhalten, ist nur eine Zusatzaktion nötig. Solange das Lied ununterbrochen andauert, sinkt das Schwierigkeitslevel von Zaubern um eine Stufe. Er kann seine volle Aktion ausgeben, um diesen Vorteil für eine Runde auf alle Verbündete in Reichweite auszudehnen. Während der Barde das Lied singt, sind alle anderen nicht-magischen Proben erschwert und seine Bewegung halbiert. Erleidet der Barde Schaden, so muss er eine Handwerk-Probe bestehen, ansonsten wird das Lied unterbrochen.
  
  
-Nächster Schritt: Sekundärattribute
+Nächster Schritt: [Sekundärattribute](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Sekund%C3%A4rattribute.md)
