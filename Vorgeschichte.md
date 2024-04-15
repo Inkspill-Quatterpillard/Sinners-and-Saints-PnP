@@ -302,4 +302,4 @@ Grimzwerge benennen sich meist nach ihrem Vater (-sonur, -dóttir) oder ihrem Kl
 Die meisten freien Goldzwerge gehören dabei zu einem der drei-zehn großen Klans der Bronzeberge. Die Namen dieser Klans lauten Feuerbart, Isengrim, Hammerhall, Sturmaxt, Drachentod, Schwarzstahl, Steingroll, Felsenspalter, Ambossbrecher, Silberzorn, Kessel-kraut, Erzwacht und Kohlenglut.
  
  
-Nächster Schritt: Ausstattung
+Nächster Schritt: [Ausstattung](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Ausstattung.md)
