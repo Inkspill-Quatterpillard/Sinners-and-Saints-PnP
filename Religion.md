@@ -115,4 +115,4 @@ Auch wenn nicht alle Religionen im gesamten Kaiserreich akzeptiert und ausgelebt
  
  
  
-Nächster Schritt: Charakteristik
+Nächster Schritt: [Charakteristik](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Charakteristik.md)
