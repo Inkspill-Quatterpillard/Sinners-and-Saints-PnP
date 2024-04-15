@@ -14,3 +14,5 @@ Alternde oder noch nicht ausgewachsene Charaktere erhalten zudem einen Nachteil 
 *Verbesserungswurf*: Wirf einen W20. Ist das Ergebnis höher als der aktuelle Wert, addiere einen Punkt auf den Wert.
  
 *Alter bei anderen Spezies*: Für das Altern anderer Spezies als Menschen siehe Kapitel Altern bei anderen Spezies.
+
+Nächster Punkt: [Spezies](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Spezies.md)
