@@ -28,23 +28,23 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
  
 #### [Besondere Herkunft (optional)](Herkunft.md)
  
-#### [Sekundärattribute
+#### [Sekundärattribute](Sekundärattribute.md)
 
-#### [Fertigkeiten
+#### [Fertigkeiten](Fertigkeiten.md)
  
-#### [Vorgeschichte
+#### [Vorgeschichte](Vorgeschichte.md)
  
-#### [Ausstattung
+#### [Ausstattung](Ausstattung.md)
  
-### [Spielsystem
+### [Spielsystem](Spielsystem.md)
 
 #### [Fertigkeitsproben](Fertigkeitsproben.md)
 
-#### Trefferpunkte und Regeneration
+#### [Trefferpunkte und Regeneration](Trefferpunkte.md)
 
-#### Gift, Tränke und Krankheiten
+#### [Gift, Tränke und Krankheiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Gift%20und%20Tr%C3%A4nke.md)
  
-### [Kampfregeln
+### [Kampfregeln](Kampfregeln.md)
  
 ### [Magieregeln
  
