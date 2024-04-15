@@ -102,4 +102,4 @@ Eine Charakteristik ist eine Eigenschaft des Charakters, die bestimmte Vor- oder
 **99-100:** _Albino_ - Dem Charakter fehlen jedwede Farbpigmente in Haut und Haar. Sein absonderliches Aussehen gibt ihm einen Malus von einem Punkt in Charme, jedoch einen zusätzlichen Punkt in Okkultismus. Außerdem bekommt er einen permanenten Vorteil auf Selbstbeherrschung bei sozialen Gegenproben, da niemand seinem Blick standhalten kann.
  
  
-Nächster Schritt: Besondere Herkunft
+Nächster Schritt: [Besondere Herkunft](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Herkunft.md)
