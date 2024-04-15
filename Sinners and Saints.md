@@ -38,7 +38,7 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
  
 ### [Spielsystem
 
-#### Fertigkeiten
+#### [Fertigkeitsproben](Fertigkeitsproben.md)
 
 #### Trefferpunkte und Regeneration
 
