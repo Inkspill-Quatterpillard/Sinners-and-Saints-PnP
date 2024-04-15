@@ -3,10 +3,16 @@
  
  
 Trefferpunkte repräsentieren neben der körperlichen Verfassung und Gesundheit hauptsächlich die Kampfkraft eines Charakters. Verliert ein Charakter im Verlauf eines Kampfes oder einer anderen Konfrontation Trefferpunkte, bedeutet das nicht, dass er zwangsweise verletzt wird. Er verliert zunächst nur einen Teil seiner Fähigkeit, den Kampf fortzusetzen. Erleidet eine Person Schaden durch einen Kampf, einen Unfall oder sonstiges, werden sofort entsprechend viele Trefferpunkten des Charakters abgezogen. Vorher wird in den meisten Fällen noch der Rüstungsschutz des Charakters mit einbezogen, welcher den Schaden reduziert. Manche Schadensarten ignorieren allerdings Rüstung, wie etwa Gift, Hitze, Kälte, Fallschaden oder mancher magischer Schaden.
+
+### Wunden
  
 Jeder Charakter besitzt zudem eine Wundschwelle. Erleidet eine Person auf einen Schlag mehr als ein Viertel der maximalen Trefferpunkte an Schaden, entsteht eine schwere Wunde. Der Charakter trägt eine Wunde davon, die ihn auch nach dem Kampf beeinträchtigen wird. Dies kann auf dem Charakterbogen oberhalb der Trefferpunkte festgehalten werden. Zudem muss eine Probe auf KON bestanden werden, sonst fällt der Charakter zu Boden. Verliert ein Charakter alle seine Trefferpunkte, so ist er zunächst einmal nicht mehr in der Lage, einen Kampf fortzusetzen und gilt als kampfunfähig. Dies kann sich auf variable Weise ausdrücken. So kann er etwa je nach Situation aufgeben, seine Waffe verlieren, das Bewusstsein verlieren oder schlicht zu erschöpft sein, um weiterzukämpfen. Ein Spieler in einer solchen Situation ist nicht in der Lage, eine weitere Aktion auszuführen und geht für gewöhnlich K.O. Er erhält nach Ende des Kampfes ebenfalls eine schwere Wunde.
+
+### Kampfunfähigkeit und Tod
  
 Besitzt eine Person jedoch bereits eine schwere Wunde und ihre Trefferpunkte fallen auf null, so liegt der Charakter im Sterben und braucht unmittelbar medizinische Hilfe. Der Charakter muss drei Runden in Folge jeweils einen Rettungswurf rollen. Liegt das Ergebnis unter zehn, ist die Probe geschafft. Liegt das Ergebnis darüber, scheitert sie. Nach zwei erfolgreichen Proben kann der Charakter vorerst sein Bewusstsein bewahren, bleibt aber weiter kampfunfähig und liegt im Sterben. Nach zwei fehlgeschlagenen Proben stirbt der Charakter. Der Charakter kann für einen dieser Würfe seinen Glückswert einsetzen. Ein im Sterben liegender Charakter kann mit einer Probe auf Erste Hilfe stabilisiert werden. Er ist temporär stabilisiert und muss keine Proben mehr bestehen, bleibt aber kampfunfähig. Wird ein Charakter nach einem Kampf nicht stabilisiert, so verblutet er langsam, aber sicher.
+
+### Versorgung einer Wunde
  
 Wird eine Wunde nicht weiter durch eine Medizin-Probe sowie durch die Einnahme eines Trankes innerhalb der nächsten Stunde versorgt, muss der Charakter jede Stunde eine KON-Probe bestehen. Fehlt diese, so verschlechtert sich die Situation des Verwundeten und er liegt wieder im Sterben. Ein Charakter, der auf einen Schlag mehr als seine maximalen Trefferpunkte verliert, stirbt auf der Stelle. Ein Charakter, der dagegen die Hälfte seiner TP mit einem Schlag verliert und damit zwei Wunden erhält, muss eine Probe auf KON bestehen, ansonsten verliert er das Bewusstsein. Fällt er durch einen solchen Schlag auf null TP, darf er lediglich einen Rettungswurf machen.
  
