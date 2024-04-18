@@ -2,7 +2,7 @@
  
 Um die acht Grundattribute **Stärke, Konstitution, Geschicklichkeit, Charisma, Klugheit, Intuition, Willensstärke und Wahrnehmung** für einen neuen Charakter zu ermitteln, werden achtmal je vier 6-seitige Würfel gewürfelt und die Summe der drei höchsten Würfel auf einem Blatt Papier notiert. Die gewürfelten Attribute können schließlich frei auf die acht Grundattribute verteilt werden.
  
-Optional können die Werte 8, 10, 10, 10, 12, 12, 14, 16 auf die jeweiligen Grundattribute verteilt werden.
+Optional können die Werte 16, 14, 12, 12, 10, 10, 10, 8 auf die jeweiligen Grundattribute verteilt werden.
  
 ## Stärke (STR)
  
