@@ -251,16 +251,14 @@ Jeder Charakter, der einen gewissen Fortschritt in einer Kampffertigkeit vorweis
 - Stufe III: Ab 18 Punkten in einer Kampffertigkeit
  
  
-Liste der Kampftechniken
- 
+[Liste der Kampftechniken](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Kampftechniken.md) 
  
 ### Kampfstil
  
 Erreicht ein Kämpfer in einer Kampffertigkeit mehr als 18 Punkte, so darf er einen Kampfstil wählen. Diese besonderen Sonderfertigkeiten repräsentieren das besondere Können eines Kämpfers und können mit allen Kampffertigkeiten verwendet werden. Hat ein Kämpfer einen Kampfstil gemeistert, so darf er pro Kampf einen Stil einsetzen. Verlässt ein Kämpfer den Kampf und initiiert einen neuen, so darf er einen neuen Kampfstil einsetzen.
  
  
-Liste der Kampfstile
- 
+[Liste der Kampfstile](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampfstile.md) 
  
 ### Zauber
  
