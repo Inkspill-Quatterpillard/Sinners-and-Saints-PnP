@@ -14,7 +14,7 @@
 ### [Schwerter](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampftechniken%20Schwerter.md)
  
  
-### Stangenwaffen
+### [Stangenwaffen](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampftechniken%20Stangenwaffen.md)
  
  
 ## Fernkampf
