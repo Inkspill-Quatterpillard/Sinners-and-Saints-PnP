@@ -8,7 +8,7 @@
 ### [Faustkampf](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampftechniken%20Faustkampf.md)
  
  
-### Hiebwaffen
+### [Hiebwaffen](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampftechniken%20Hiebwaffen.md)
  
  
 ### Schwerter
