@@ -11,7 +11,7 @@
 4. [Wahl der Fertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Fertigkeiten.md)
 5. [Reflexion über die Vorgeschichte und den Namen des Charakters](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Vorgeschichte.md)
 6. [Zusammenstellung der Ausstattung](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Ausstattung.md)
-7. Auswahl möglicher Kunststücke, Kampftechniken, Kampfstile und Zauber
+7. Auswahl möglicher [Kunststücke](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/tree/main), Kampftechniken, Kampfstile und Zauber
 
 ## [Attribute](Attribute.md)
  
@@ -236,9 +236,9 @@ Für weiteres zur Ausstattung siehe das Kapitel [Ausstattung](https://github.com
  
 ## Weiteres
  
-### Kunststücke
+### [Kunststücke](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/tree/main)
  
-Falls kein besondere Herkunft gewählt wurde, darf der Spieler bereits ein Kunststück wählen.
+Falls kein besondere Herkunft gewählt wurde, darf der Spieler bereits ein [Kunststück](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/tree/main) wählen.
  
  
  
