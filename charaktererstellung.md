@@ -47,7 +47,8 @@ Alternde oder noch nicht ausgewachsene Charaktere erhalten zudem einen Nachteil 
  
 - 10 - 14 Jahre = Insgesamt 4 Punkte werden von STR, KON und INT abgezogen. Würfel mit Vorteil auf Glück.
 - 15 - 19 Jahre = Insgesamt 1 Punkt werden von STR oder KON, sowie von INT abgezogen. Würfel mit Vorteil auf Glück.
-- 20 - 39 Jahre = Verbesserungswurf auf INT oder KLU.40 - 49 Jahre = 1 Punkt wird insgesamt von STR, KON, WAH oder GES abgezogen. Zwei Verbesserungswürfe auf INT oder KLU.
+- 20 - 39 Jahre = Verbesserungswurf auf INT oder KLU.
+- 40 - 49 Jahre = 1 Punkt wird insgesamt von STR, KON, WAH oder GES abgezogen. Zwei Verbesserungswürfe auf INT oder KLU.
 - 50 - 59 Jahre = 2 Punkte werden insgesamt von STR, KON, WAH oder GES abgezogen. Drei Verbesserungswürfe auf INT oder KLU.
 - 60 - 69 Jahre = 3 Punkte werden insgesamt von STR, KON, WAH oder GES abgezogen. Vier Verbesserungswürfe auf INT oder KLU.
 - 70 - 79 Jahre = 5 Punkte werden insgesamt von STR, KON, WAH oder GES abgezogen. Fünf Verbesserungswürfe auf INT oder KLU.
