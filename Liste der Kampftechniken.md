@@ -11,7 +11,7 @@
 ### [Hiebwaffen](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampftechniken%20Hiebwaffen.md)
  
  
-### Schwerter
+### [Schwerter](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampftechniken%20Schwerter.md)
  
  
 ### Stangenwaffen
