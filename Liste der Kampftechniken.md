@@ -20,13 +20,13 @@
 ## Fernkampf
  
  
-### Armbrust
+### [Armbrust](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampftechniken%20Armbr%C3%BCste.md)
  
  
-### Bögen
+### [Bögen](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampftechniken%20B%C3%B6gen.md)
  
  
-### Schleudern
+### [Schleudern](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampftechniken%20Schleudern.md)
  
  
-### Wurfwaffen
+### [Wurfwaffen](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampftechniken%20Wurfwaffen.md)
