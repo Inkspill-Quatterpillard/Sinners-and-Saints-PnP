@@ -46,7 +46,7 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
  
 ### [Kampfregeln](Kampfregeln.md)
  
-### [Magieregeln
+### [Magieregeln](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Magieregeln.md)
  
 ### [Geistige Stabilität
  
