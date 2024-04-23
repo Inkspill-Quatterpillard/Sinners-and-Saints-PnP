@@ -54,13 +54,13 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
  
 ### [Listen
  
-#### [Fertigkeiten
+#### [Fertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Fertigkeiten.md)
  
-#### [Heldenfertigkeiten
+#### [Heldenfertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Heldenfertigkeiten.md)
  
-#### [Professionen
+#### Professionen
  
-#### [Kampftechniken
+#### [Kampftechniken](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Kampftechniken.md)
  
 #### [Zauber
  
