@@ -1,0 +1,3 @@
+# Fehlschlag eines Zaubers
+
+Schlägt das Wirken eines Zaubers fehl, passiert nicht einfach nichts. Stattdessen wird der Zauber zwar ausgeführt, allerdings nicht in der Form, wie es der Magier geplant hat. Ein einfacher Fehlschlag kann einen Zauber abschwächen, ihn sein Ziel verfehlen lassen oder einen unbeabsichtigten Modifikator hinzufügen. Dagegen kann ein kritischer Fehlschlag den Zauber in der Hand des Magiers explodieren lassen, einen Verbündeten treffen, den Effekt des Zaubers verändern oder einen völlig anderen Zauber ausführen. Dies gilt nicht für einen abgewehrten Zauber. Dessen Effekt wird von dem Gegner unterbunden, sodass tatsächlich nichts passiert.
