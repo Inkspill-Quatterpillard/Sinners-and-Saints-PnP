@@ -8,7 +8,7 @@
 
 ## [Magie wirken im Kampf](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Magie%20wirken%20im%20Kampf.md)
 
-## Zauberkosten und Schwierigkeit
+## [Zauberkosten und Schwierigkeit](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Zauberkosten%20und%20Schwierigkeit.md)
 
 ## Detailregeln
 **Fehlschlag eines Zaubers**
