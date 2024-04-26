@@ -13,8 +13,8 @@
 ## Detailregeln
 **[Fehlschlag eines Zaubers](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Fehlschlag%20eines%20Zaubers.md)**
 
-**Widerstand gegen magische Beeinflussung**
+**[Widerstand gegen magische Beeinflussung](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Widerstand%20gegen%20magische%20Beeinflussung.md)**
 
-**Auraduelle**
+**[Auraduelle](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Auraduell.md)**
 
-**Glossar der magischen Begriffe**
+**[Glossar der magischen Begriffe](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Glossar%20der%20magischen%20Begriffe.md)**
