@@ -48,11 +48,11 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
  
 ### [Magieregeln](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Magieregeln.md)
  
-### [Geistige Stabilität
+### [Geistige Stabilität](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Geistige%20Stabilit%C3%A4t.md)
  
-### [Charakterentwicklung
+### Charakterentwicklung
  
-### [Listen
+### Listen
  
 #### [Fertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Fertigkeiten.md)
  
@@ -62,6 +62,6 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
  
 #### [Kampftechniken](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Kampftechniken.md)
  
-#### [Zauber
+#### Zauber
  
-#### [Ausrüstung
+#### Ausrüstung
