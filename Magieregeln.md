@@ -11,7 +11,7 @@
 ## [Zauberkosten und Schwierigkeit](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Zauberkosten%20und%20Schwierigkeit.md)
 
 ## Detailregeln
-**Fehlschlag eines Zaubers**
+**[Fehlschlag eines Zaubers](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Fehlschlag%20eines%20Zaubers.md)**
 
 **Widerstand gegen magische Beeinflussung**
 
