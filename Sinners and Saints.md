@@ -51,6 +51,10 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
 ### [Geistige Stabilität](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Geistige%20Stabilit%C3%A4t.md)
  
 ### Charakterentwicklung
+
+#### [Fertigkeitsfortschritt](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Fertigkeitsfortschritt.md)
+
+#### [Kunststücke](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kunstst%C3%BCcke.md)
  
 ### Listen
  
