@@ -1,10 +1,10 @@
 # Magieregeln
 
-## Magie erlernen
+## [Magie erlernen](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Magie%20erlernen.md)
 
-## Magiepunkte
+## [Magiepunkte](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Magiepunkte.md)
 
-## Ablauf eines Zaubers
+## [Ablauf eines Zaubers](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Ablauf%20eines%20Zaubers.md)
 
 ## Magie wirken im Kampf
 
