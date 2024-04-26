@@ -6,7 +6,7 @@
 
 ## [Ablauf eines Zaubers](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Ablauf%20eines%20Zaubers.md)
 
-## Magie wirken im Kampf
+## [Magie wirken im Kampf](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Magie%20wirken%20im%20Kampf.md)
 
 ## Zauberkosten und Schwierigkeit
 
