@@ -8,7 +8,7 @@ Besteht eine Person die Moral-Stabilitätsprobe nicht, erleidet sie zwischen 0/1
  
 ## Panik
  
-Verliert eine Person im Kampf mehr als fünf Stabilitätspunkte auf einmal, verfällt sie in Panik. Es wird 1W10 gewürfelt, um die Anzahl an Kampfrunden zu bestimmen, die die Panik anhält. Der Charakter verliert während dieser Zeit die Kontrolle und flieht. Ist dies nicht möglich, ergibt er sich oder wirft sich zu Boden. Nach dem Ende der ersten Kampfrunde darf der Charakter mit Nachteil auf Stabilität würfeln. Ist die Probe erfolgreich, wird die Panik in der nächsten Kampfrunde beendet. Dieser Vorgang wiederholt sich alle drei Kampfrunde, bis eine Probe erfolgreich ist oder die Zeit der Panik regulär ausläuft. 
+Verliert eine Person im Kampf mehr als fünf Stabilitätspunkte auf einmal, verfällt sie in Panik. Es wird 1W6 gewürfelt, um die Anzahl an Kampfrunden zu bestimmen, die die Panik anhält. Der Charakter verliert während dieser Zeit die Kontrolle und flieht. Ist dies nicht möglich, ergibt er sich oder wirft sich zu Boden. Nach dem Ende der ersten Kampfrunde darf der Charakter mit Nachteil auf Stabilität würfeln. Ist die Probe erfolgreich, wird die Panik in der nächsten Kampfrunde beendet. Dieser Vorgang wiederholt sich alle drei Kampfrunde, bis eine Probe erfolgreich ist oder die Zeit der Panik regulär ausläuft. 
  
 Ein Charakter kann durch eine Probe auf Überzeugung oder Autorität einen verbündeten Charakter aus seiner Panik befreien und für den Kampf sammeln. Der Charakter in Panik regeneriert 1W3 Stabilität und sein Panikstatus wird aufgehoben.
  
