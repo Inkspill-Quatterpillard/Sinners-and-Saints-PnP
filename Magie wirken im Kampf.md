@@ -8,7 +8,7 @@ Ein Zauber kann zudem in einer Zusatzaktion als Reaktion auf einen fremden Angri
  
 ## Reichweite
  
-Die Reichweite eines Magiers ist der Bereich um ihn herum, in dem er effektiv Magie wirken oder mit seiner Magie Objekte oder Lebewesen beeinflussen kann. Dieser Bereich ist in drei Zonen unterteilt. Zunächst gilt alles, was ein Lebewesen berührt und darüber die Kontrolle hat, als Teil seiner so genannten **Aura**. Fremde Lebewesen können diesen Bereich nicht ohne weiteres kontrollieren oder beeinflussen, ohne dass die Beeinflussung bemerkt und sich dieser widersetzt werden kann. Zudem funktionieren manche Zauber nur dann, wenn der Magier das Ziel berührt oder sich in dessen unmittelbarer Umgebung befindet. So können etwa Wunden nur durch Berührung effektiv geschlossen werden.
+Die Reichweite eines Magiers ist der Bereich um ihn herum, in dem er effektiv Magie wirken oder mit seiner Magie Objekte oder Lebewesen beeinflussen kann. Dieser Bereich ist in drei Zonen unterteilt. Zunächst gilt alles, was ein Lebewesen berührt und darüber die Kontrolle hat, als Teil seiner so genannten **Aura**. Fremde Lebewesen können diesen Bereich nicht ohne weiteres kontrollieren oder beeinflussen, ohne dass das Opfer sich der  Beeinflussung widersetzten kann. Zudem funktionieren manche Zauber nur dann, wenn der Magier das Ziel berührt oder sich in dessen unmittelbarer Umgebung befindet. So können etwa Wunden nur durch Berührung effektiv geschlossen werden.
  
 Die zweite Zone wird **innere Aurasphäre** genannt. Diese entspricht der Willensstärke des Zauberers in Metern. Dies ist die maximale Reichweite, um einen Zauber zu wirken oder effektiv zu kontrollieren.
  
