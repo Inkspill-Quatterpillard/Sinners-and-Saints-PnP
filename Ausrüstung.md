@@ -1,4 +1,4 @@
-## Liste der Nahkampfwaffen
+## [Liste der Nahkampfwaffen](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Nahkampfwaffen.md)
 
 ## Liste der Fernkampfwaffen
 
