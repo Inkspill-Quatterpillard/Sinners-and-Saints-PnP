@@ -60,13 +60,13 @@ Der Ausweichen-Wert wird bestimmt, indem GES mit WAH zusammengerechnet und das E
  
  
 Der Schadensbonus wird auf jeden Nahkampfangriff, egal ob bewaffnet oder unbewaffnet, hinzugerechnet. Zum Berechnen dient der Stärke-Wert (STR).
-•	Ab 0 STR = -2
-•	Ab 6 STR= -1
-•	Ab 10 STR = 0
-•	Ab 14 STR = +1
-•	Ab 16 STR = +2
-•	Ab 18 STR = +3
-•	Ab 20 STR = +4
+-	Ab 0 STR = -2
+-	Ab 6 STR= -1
+-	Ab 10 STR = 0
+-	Ab 14 STR = +1
+-	Ab 16 STR = +2
+-	Ab 18 STR = +3
+-	Ab 20 STR = +4
  
  
 Nächster Schritt: [Fertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Fertigkeiten.md)
