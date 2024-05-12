@@ -1,3 +1,5 @@
+# Liste der Nahkampfwaffen
+
 | Faustwaffen	 | Schaden | Modifikator | Länge | Preis | Besonderheit | 
 |----------|----------|----------|----------|----------|----------|
 | Faust | 1W3 | - | Minimal | -	 |-	 |
