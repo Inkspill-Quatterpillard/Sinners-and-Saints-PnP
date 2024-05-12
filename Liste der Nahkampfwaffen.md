@@ -32,13 +32,13 @@
 | Hiebwaffen	 | Schaden | Modifikator | Länge | Preis | Besonderheit | 
 |----------|----------|----------|----------|----------|----------|
 | Handbeil | 1W6+2	 | -	 | Kurz | 2,5 Kronen		 |-	 |
-| Wurfbeil | 1W6+2	 | -1 (Improvisiert)	 | Kurz | 6 Kronen	 | +1 SP gegen Ungepanzert |
-| Keule | 1W6+2 | - | Mittel | 4 Kronen		 |Nutzbar für Hiebwaffen-Manöver	 |
+| Wurfbeil | 1W6+2	 | -1 (Improvisiert)	 | Kurz | 6 Kronen	 | - |
+| Keule | 1W6+2 | - | Mittel | 4 Kronen		 | -	 |
 | Holzfälleraxt | 1W6+3 | -1 (Improvisiert) | Mittel | 3 Kronen |-	 |
 | Streitaxt | 1W6+4 | - | Mittel | 45 Kronen		 | -	 |
 | Streithammer | 1W6+5 | - | Mittel | 50 Kronen	 | -	 |
 | Morgenstern	 | 1W8+3 | - | Mittel | 80 Kronen |-	 |
-| Streitflegel	 | 1W8+4 | -1 (Unhandlich) | Mittel | 95 Kronen		 | -	 |
+| Streitflegel	 | 1W8+4 | -1 (Unhandlich) | Mittel | 95 Kronen		 | Ignoriert Schilde	 |
 | Kriegshammer (2H) | 1W6+6 | - | Lang | 220 Kronen	 | - |
 | Kriegsaxt (2H) | 1W8+4 | - | Lang | 120 Kronen	 | -	 |
 | Goedendag (2H)	 | 1W8+4 | - | Lang | 50 Kronen | Nutzbar als Stangenwaffe	 |
