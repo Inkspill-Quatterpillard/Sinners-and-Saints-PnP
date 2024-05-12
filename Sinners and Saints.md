@@ -68,4 +68,4 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
  
 #### Zauber
  
-#### Ausrüstung
+#### [Ausrüstung](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Ausr%C3%BCstung.md)
