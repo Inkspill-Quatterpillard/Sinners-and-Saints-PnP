@@ -6,4 +6,4 @@
 
 ## [Diverse Preise](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Diverse%20Preise.md)
 
-## Liste von Ausrüstungsgegenständen
+## [Liste von Ausrüstungsgegenständen](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20von%20Ausr%C3%BCstungsgegenst%C3%A4nden.md)
