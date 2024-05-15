@@ -67,6 +67,11 @@ Der Schadensbonus wird auf jeden Nahkampfangriff, egal ob bewaffnet oder unbewaf
 -	Ab 16 STR = +2
 -	Ab 18 STR = +3
 -	Ab 20 STR = +4
- 
+
+## Wundschwelle
+
+Die Wundschwelle entscheidet, wie viele Trefferpunkte der Charakter auf einen Schlag verlieren muss, um eine Wunde davon zu tragen. Die Wundschwelle beträgt ein Viertel der maximalen TP.
+
+TP/4 = Wundschwelle
  
 Nächster Schritt: [Fertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Fertigkeiten.md)
