@@ -8,38 +8,40 @@
 Der Magier untersucht die Aura eines fremden Lebewesens. Als arkaner Abdruck und Speicher kann ein Magier durch die Aura Informationen unter anderem über den Zustand, die Fähigkeiten oder auch über Stärken und Schwächen eines Lebewesens gewinnen. Ebenso kann auf diesen Weg die magische Signatur eines Lebewesens analysiert und gespeichert werden. Dies erlaubt es, die Person zu einem späteren Zeitpunkt zweifelsfrei zu identifizieren und kann zudem für Zauber genutzt werden. Erfahrene Magier können so auch kurze Einblicke in das Schicksal eines Lebewesens erhaschen.
  
 Kostenbeispiel: 
-Level 0: Kurzes Abtasten der Aura eines nahen Lebewesens. Kann sehr grobe Informationen über dessen Art und Zustand verraten.
- 
-Level 1: Abfragen einer singulären, spezifischen Information, wie die Kampfkraft, Magiereserven oder Fertigkeiten eines Lebewesens
-
-Level 2: 
-
-Level 3: Erfassen der magischen Signatur eines Lebewesens (eine Art magischer Fingerabdruck), etwa zur Identitätskontrolle, für Flüche oder für eine zukünftige Identifikation.
-
-Level 4: Unmittelbare 
-
-Level 5: 
+- Lvl. 0: Kurzes Abtasten der Aura eines nahen Lebewesens. Kann sehr grobe Informationen über dessen Art und Zustand verraten.
+- Lvl. 1: Abfragen einer singulären, spezifischen Information (Information über TP- oder MP-Stand, bestimmten Wert oder Fertigkeiten)
+- Lvl. 2: Magische Schwächen eines Lebewesens herausfinden
+- Lvl. 3: Erfassen der magischen Signatur eines Lebewesens (Zum Verwandeln, für Illusionen oder zur späteren Identifizierung)
+- Lvl. 4: Persönliches Profil einer Person
+- Lvl. 5: Einblick in das Schicksal eines Lebewesens
  
  
 ### Aura durchbrechen (Stufe 1)
  
 Der Magier greift die Aura eines Lebewesens an. Diese fungiert als arkane Verteidigung, die ein Wesen vor Magie schützt. Ist die Aura durchbrochen, sind Angriffe, Verzauberungen oder Beeinflussungen auf das jeweilige Lebewesen erleichtert. Ebenso kann sich mit diesem Zauber gegen Auraangriffe verteidigt werden.
  
-Kostenbeispiel: Für jeden investierten MP verursacht der Magier +1 Stabilitätsschaden am gegnerischen Magier. Für weitere Details siehe Kapitel zu Auraduellen.
+Kostenbeispiel: Für jedes Level verursacht der Magier +1 Stabilitätsschaden am gegnerischen Magier.
+
+Auraschaden nach WIL-Wert
+- WIL < 3 = 1W2 Stabilitätspunkte
+- WIL > 3 = 1W3 Stabilitätspunkte
+- WIL > 6 = 1W4 Stabilitätspunkte
+- WIL > 10 = 1W6 Stabilitätspunkte
+- WIL > 14 = 1W8 Stabilitätspunkte
+- WIL > 18 = 1W10 Stabilitätspunkte
  
  
 ### Magie beseitigen (Stufe 1)
  
 Der Magier hebt aktive Magie auf. Hiermit können Verzauberungen, aktive Zauber wie Schilde oder Fallen oder sogar langfristige und komplexe Zauber wie etwa Flüche annulliert werden. Der dazu notwendige Zeitaufwand hängt sowohl von der Zeit ab, die für die Erschaffung des Zaubers benötigt wurde, als auch von dessen Komplexität.
  
-Kostenbeispiel: 0,5 MP = Kleineren Zauber erlöschen lassen, etwa eine magische Flamme
- 
-1 MP = Magische Falle entschärfen, magisches Geschoss annullieren
- 
-3 MP = Magische Barriere auflösen
- 
-5 MP = Großflächige Verzauberung auflösen, etwa ein Schutzzauber auf einem Haus
- 
+Kostenbeispiel: 
+- Lvl. 0: Kleineren Zauber erlöschen lassen, etwa eine magische Flamme
+- Lvl. 1: Glyphe deaktivieren
+- Lvl. 2: Magische Falle entschärfen
+- Lvl. 3: Magisches Geschoss annullieren
+- Lvl. 4: Magische Barriere auflösen
+- Lvl. 5: Großflächige Verzauberung auflösen, etwa ein Schutzzauber oder Fluch auf einem Haus
  
 ### Magie stören (Stufe 1)
  
@@ -173,19 +175,17 @@ Der Magier wirkt Schicksalsmagie auf ein Ziel, um dessen Schicksal auf magische 
  
 In der Praxis verbindet der Magier daraufhin das Lebewesen mit einem dauerhaften Zauber. Dieser Zauber begleitet sein Opfer und wird entweder dauerhaft oder unter bestimmten Umständen ausgelöst. Je besser der Zauber zum Schicksal des Ziels passt, desto einfacher und mächtiger ist er. Je nach Fähigkeit des Magiers kann ein solcher Zauber äußerst subtil und schwer zu entdecken sein.
  
-Kostenbeispiel: 0,5 MP = Motivation für eine singuläre Aufgabe
- 
-1 MP = Böser Blick: Unglück für den Tag
- 
-3 MP = Simpler, eher nerviger Fluch, der sich nach einigen Wochen oder einer simplen Kondition verflüchtigt
- 
-5 MP = Mächtiger Schutzsegen, der irgendwann in der Zukunft eine Person vor Unheil beschützen kann
- 
-10 MP = Tiefer und komplexer Fluch mit mehreren Bedingungen und Konsequenzen (Prinz, der in einen Frosch verwandelt wird)
- 
-20 MP = Tiefer, lebenslanger Segen, der zuverlässig vor einem bestimmten Unheil bewahrt (Lilis Segen auf Harry als Beispiel)
- 
-50+ MP = Segnung oder Verfluchen eines ganzen Landstrichs
+Kostenbeispiel: 
+
+- Lvl. 0: Motivation für eine singuläre Aufgabe
+- Lvl. 1: Böser Blick: Unglück für den Tag
+- Lvl. 2: Fluch im Kampf (Variables Ungeschick in den nächsten Runden)
+- Lvl. 3: Simpler, eher nerviger Fluch, der sich nach einigen Wochen oder einer simplen Kondition verflüchtigt
+- Lvl. 4: Gruppe Kämpfer für einen Kampf segnen
+- Lvl. 5: Mächtiger Schutzsegen, der irgendwann in der Zukunft eine Person vor Unheil beschützen kann
+- Lvl. 10: Tiefer und komplexer Fluch mit mehreren Bedingungen und Konsequenzen (Prinz, der in einen Frosch verwandelt wird)
+- Lvl. 20: Tiefer, lebenslanger Segen, der zuverlässig vor einem bestimmten Unheil bewahrt (Lilis Segen auf Harry als Beispiel)
+- Lvl. 50: Segnung oder Verfluchung eines ganzen Landstrichs
  
  
 ## Stufe 3
