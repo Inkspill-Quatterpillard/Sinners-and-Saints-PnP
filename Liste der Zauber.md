@@ -10,4 +10,4 @@
  
 ## Liste der Illusions-Zauber
  
-## Liste der Psychonik-Zauber
+## Liste der Psychomantie-Zauber
