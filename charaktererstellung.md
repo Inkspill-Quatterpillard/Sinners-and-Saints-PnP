@@ -11,7 +11,7 @@
 4. [Wahl der Fertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Fertigkeiten.md)
 5. [Reflexion über die Vorgeschichte und den Namen des Charakters](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Vorgeschichte.md)
 6. [Zusammenstellung der Ausstattung](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Ausstattung.md)
-7. Auswahl möglicher [Kunststücke](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kunstst%C3%BCcke.md), [Kampftechniken](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Kampftechniken.md), [Kampfstile](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampfstile.md) und Zauber
+7. Auswahl möglicher [Kunststücke](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kunstst%C3%BCcke.md), [Kampftechniken](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Kampftechniken.md), [Kampfstile](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampfstile.md) und [Zauber](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Zauber.md)
 
 ## [Attribute](Attribute.md)
  
@@ -267,7 +267,7 @@ Erreicht ein Kämpfer in einer Kampffertigkeit mehr als 18 Punkte, so darf er ei
  
 [Liste der Kampfstile](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Kampfstile.md) 
  
-### Zauber
+### [Zauber](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Zauber.md)
  
 Bei der Charaktererstellung können je nach Profession eine gewisse Anzahl arkaner Fertigkeiten erlernt werden. Für alle zwei Punkte, die in einer dieser Fertigkeiten gesetzt sind, beginnend ab sechs Punkten, darf ein Zauberer einen Zauber dieser Disziplin erlernen. Zauber der Basisstufe einer Disziplin erlernt jeder Magier automatisch, sobald er Punkte in die jeweilige Fertigkeit steckt. Komplexere Zauber mit höheren Stufen werden mit dem Fortschritt in der jeweiligen Fertigkeit freigeschaltet
 - 1 bis 5 Punkt: Grundstufe, nur intuitive Zauber
