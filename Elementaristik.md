@@ -13,6 +13,12 @@ Der Magier erzeugt einen gebündelten Energieball und ihn schleudert ihn in eine
 Modifikatoren: Verlangsamte Schüsse; ungerade Schüsse; mehrere Schüsse; durchdringende Schüsse
 
 Level: Die Level steigen mit der Größe des Geschosses. Pro Level erhält das Geschoss eine Schadensstufe. Ebenfalls kann mit zusätzlichen Leveln die Größe des Explosionsradius des Geschosses um jeweils einen Schritt erhöht werden, um Ziele in einem Umkreis zu treffen.
+- Lvl. 0: 1W1 (1 oder 0) SP
+- Lvl. 1: 1W4 SP
+- Lvl. 2: 2W4 SP
+- Lvl. 3: 3W4 SP
+- Lvl. 4: 3W6 SP
+- Lvl. 5: 3W10 SP
  
  
 ## Stufe 1
@@ -103,6 +109,13 @@ Kostenbeispiel:
 Der Magier schleudert ein Element in eine bestimmte Richtung. Dies kann sowohl als simples Geschoss (die einfachste Form) oder aber auch als Strahl gebündelt, gestreut oder in ein oder mehrere Richtungen gleichzeitig geschehen. Klassische Beispiele sind geschleuderte Steingeschosse, ein Flammenstrahl oder ein Windstoß, der mehrere Gegner in einem bestimmten Radius hinwegfegt.
  
 Kostenbeispiel: Die Level steigen mit der Größe des Geschosses. Pro Level erhält das Geschoss eine Schadensstufe. Ebenfalls kann mit zusätzlichen Leveln die Größe oder Länge des Strahles um jeweils einen Schritt erhöht werden, um Ziele in einem Radius zu treffen.
+
+- Lvl. 0: 1W1 (1 oder 0) SP
+- Lvl. 1: 1W4 SP
+- Lvl. 2: 2W4 SP
+- Lvl. 3: 3W4 SP
+- Lvl. 4: 3W6 SP
+- Lvl. 5: 3W10 SP
  
  
 ### Energie entziehen (Stufe 1)
@@ -251,13 +264,12 @@ Der Magier stellt eine Verbindung mit der Elementarmagie in Pflanzen und natürl
  
 Kostenbeispiel:
  
-- Level 0: Kommunikation mit einer Blume
- 
-- Level 1: Einfache Information über eine Pflanze
- 
-- Level 3: Kommunikation mit einem Baum
- 
-- Level 5: Kommunikation mit einem kleinen Waldstück
+- Lvl. 0: Einfache Information über eine Pflanze
+- Lvl. 1: Kommunikation mit einer Blume
+- Lvl. 2: Kommunikation mit einem Strauch
+- Lvl. 3: Kommunikation mit einem Baum
+- Lvl. 4: Kommunikation mit einem kleinen Waldstück
+- Lvl. 5: Kommunikation mit einem ganzen Wald
  
  
 ## Stufe 3
