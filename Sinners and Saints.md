@@ -66,6 +66,6 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
  
 #### [Kampftechniken](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Kampftechniken.md)
  
-#### Zauber
+#### [Zauber](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Zauber.md)
  
 #### [Ausrüstung](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Ausr%C3%BCstung.md)
