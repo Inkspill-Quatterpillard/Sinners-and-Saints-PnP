@@ -12,7 +12,7 @@
 |----------|----------|----------|----------|----------|----------|----------|
 | Balestrina (Kugelarmbrust)	 | 2W3+3 | - | 5/25/40		 | 5 KR		 | 530 Kronen		 | -	 |
 | Leichte Armbrust		 | 2W6+1 | - | 10/50/80	 | 0 KR		 | 200 Kronen		 |  -	 	 |
-| Repetierarmbrust	 | 2W6+2 | -4 (Ungenau)	 | 10/50/80	 | 0 KR/8 KR		 | 700 Kronen		 |  Magazin von 10 Pfeilen	 	 |
+| Repetierarmbrust	 | 2W6+2 | -4 (Ungenau)	 | 10/50/80	 | 0 KR/8 KR		 | 700 Kronen		 |  Magazin von 10 Bolzen	 	 |
 | Bügelarmbrust	 | 2W6+3 | - | 15/50/150 | 3 KR	| 370 Kronen		 | - |
 | Geißfuß-Armbrust		 | 2W6+4 | - | 15/50/150	 | 2 KR		 | 450 Kronen		 | -	 |
 | Windenarmbrust		 | 2W8+4 | - | 20/100/170	 | 4 KR		 | 580 Kronen		 | - |
