@@ -160,13 +160,14 @@ Kostenbeispiel: 0,5 MP = Kleines Loch in der Wand erkunden
  
 Der Magier unterdrückt alle bewussten Gedanken, öffnet seine Seele und spürt in das Schicksal der Welten hinein. Er kann dabei entweder ungezielt in wahllose Schicksalsfäden hineinhorchen oder einer bestimmten Frage hinterherspüren. Die Antwort auf diese Fragen sind jedoch selten klar und eindeutig, sondern offenbaren sich in der Form von Wahrsagungen, Prophezeiungen und Visionen. Um den Zauber zu ermöglichen, werden oft Hilfsmittel wie Räucherstäbchen, Hypnose, Meditation oder schlichter Schlaf verwendet.
  
-Kostenbeispiel: 0,5 MP = Geistesblitz des Schicksals
- 
-1 MP = Ungezielte Suche nach einer Vision
- 
-3 MP = Tiefe Suche nach der Antwort auf eine konkrete Frage
- 
-5 MP = Tiefe Analyse eines Schicksalsfaden, zum Beispiel nach den verschiedenen Auswirkungen einer Handlung
+Kostenbeispiel: 
+
+- Lvl. 0: Geistesblitz des Schicksals
+- Lvl. 1: Ungezielte Suche nach einer Vision
+- Lvl. 2: Gespür für die Tragweite einer Entscheidung erhalten
+- Lvl. 3: Tiefe Suche nach der Antwort auf eine konkrete Frage
+- Lvl. 4: Gezielte Vision zu einem bestimmten Geschehnis
+- Lvl. 5: Tiefe Analyse eines Schicksalsfaden, zum Beispiel nach den verschiedenen Auswirkungen einer Handlung
  
  
 ### Verfluchen oder Segnen (Stufe 2)
