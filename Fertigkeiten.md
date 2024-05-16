@@ -17,7 +17,7 @@ Jede Profession gibt zudem einen Bonus oder Malus auf den Statuswert. Dieser sta
 
 Status kann im Verlauf des Abenteuers sinken und steigen und determiniert in erster Linie den sozialen Stand und den Besitz eines Charakters.
 
-Zudem erhält eine Profession fünf Heldenfertigkeiten. Dabei handelt es sich um Fertigkeiten, die für den Kampf und den Einsatz von Magie genutzt werden, also allgemein gesprochen der Verteidigung und Wehrhaftigkeit eines Charakters dienen. Diese Heldenfertigkeiten können in beliebiger Reihenfolge auf die folgenden Stufen gesetzt werden.
+Zudem erhält eine Profession fünf [Heldenfertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Heldenfertigkeiten.md). Dabei handelt es sich um Fertigkeiten, die für den Kampf und den Einsatz von Magie genutzt werden, also allgemein gesprochen der Verteidigung und Wehrhaftigkeit eines Charakters dienen. Diese Heldenfertigkeiten können in beliebiger Reihenfolge auf die folgenden Stufen gesetzt werden.
 
 - Eine Heldenfertigkeit auf 14 Punkte
 - Eine Heldenfertigkeit auf 12 Punkte
