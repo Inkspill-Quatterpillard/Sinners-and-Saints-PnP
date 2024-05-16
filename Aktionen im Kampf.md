@@ -32,9 +32,9 @@ Wählen beide Seiten einen normalen Angriff, würfeln sie auf das Talent ihrer W
  
 **Beide Proben scheitern**: Beide Parteien nehmen halbierten Schaden.
  
-**Harter Erfolg**: Sobald eine Person einen harten Erfolg bei einem Angriffswurf würfelt, kann er reguläre Erfolge übertrumpfen. Würfeln beide Spieler einen harten Erfolg, passiert das Gleiche wie im Fall eines doppelten Erfolges. Bei Kämpfen mit mehr als zwei Teilnehmern darf der Kämpfer mit dem höheren Erfolg entscheiden, ob alle Erfolge zählen oder nur die seines Erfolgslevels.
+**Erfolgsstufe II**: Sobald eine Person einen harten Erfolg bei einem Angriffswurf würfelt, kann er reguläre Erfolge übertrumpfen. Würfeln beide Spieler einen harten Erfolg, passiert das Gleiche wie im Fall eines doppelten Erfolges. Bei Kämpfen mit mehr als zwei Teilnehmern darf der Kämpfer mit dem höheren Erfolg entscheiden, ob alle Erfolge zählen oder nur die seines Erfolgslevels.
  
-**Extremer Erfolg**: Sobald eine Person einen extremen Erfolg bei einem Angriffswurf würfelt, kann er reguläre Erfolge übertrumpfen und fügt seinem Gegner doppelten Schaden zu. Würfelt eine Person bei einem Verteidigungswurf einen kritischen Erfolg, so kann sie neben der erfolgreichen Parade entweder dem Gegner regulären Schaden zufügen oder ein Kampfmanöver ausführen, wie etwa den Gegner entwaffnen oder zu Fall bringen. Würfeln beide Spieler einen extremen Erfolg, passiert das Gleiche wie im Fall eines doppelten Erfolges, nur mit verdoppeltem Schaden.
+**Erfolgsstufe III**: Sobald eine Person einen extremen Erfolg bei einem Angriffswurf würfelt, kann er reguläre Erfolge übertrumpfen und fügt seinem Gegner doppelten Schaden zu. Würfelt eine Person bei einem Verteidigungswurf einen kritischen Erfolg, so kann sie neben der erfolgreichen Parade entweder dem Gegner regulären Schaden zufügen oder ein Kampfmanöver ausführen, wie etwa den Gegner entwaffnen oder zu Fall bringen. Würfeln beide Spieler einen extremen Erfolg, passiert das Gleiche wie im Fall eines doppelten Erfolges, nur mit verdoppeltem Schaden.
  
 **Patzer**: Würfelt eine Person einen kritischen Misserfolg, oder Patzer, patzt sie nach Ermessen des Spielleiters. Ansonsten wird der Wurf wie ein regulärer Misserfolg behandelt. Dies gilt auch, wenn beide Kampfteilnehmer einen kritischen Misserfolg würfeln.
  
