@@ -41,17 +41,16 @@ Kostenbeispiel:
  
 ### Geistiges Abbild (Stufe 1)
  
-Der Magier erschafft ein geistiges Abbild einer Situation in der realen Welt, welches in seinem Gedächtnis verankert wird. Mit diesem Zauber lassen sich komplexe oder kurzfristige Eindrücke und Situationen festhalten und für die Zukunft konservieren. Ein geistiges Abbild kann etwa auch per Telepathie geteilt werden oder durch eine Illusion sichtbar gemacht werden.
+Der Magier erschafft ein geistiges Abbild einer Situation in der realen Welt, welches in seinem Gedächtnis verankert wird. Mit diesem Zauber lassen sich komplexe oder kurzfristige Eindrücke und Situationen festhalten und für die Zukunft konservieren. Ein geistiges Abbild kann etwa auch per Telepathie geteilt werden, durch eine Illusion sichtbar gemacht werden oder mental auf Details durchsucht werden.
  
 Kostenbeispiel: 
 
-- Level 0:  Gedanke oder geistige Notiz behalten
- 
-- Level 1:  Geistiges Abbild des Gesichtes einer Person speichern
- 
-- Level 3:  Zeichnung einer Karte memorieren.
- 
-- Level 5: Genaues Abbild der Situation in einem Raum speichern
+- Level 0: Gedanke oder geistige Notiz behalten
+- Level 1: Geistiges Abbild des Gesichtes einer Person speichern
+- Level 2: Zeichnung einer Karte memorieren
+- Level 3: Genaues Abbild der Situation in einem Raum speichern, um einen Mordfall zu untersuchen.
+- Level 4: Die gesammte Szenerie eines geschäftigen Marktplatzes in einer Stadt einfangen, um nach einer bestimmten Person zu suchen.
+- Level 5: Ein Schlachtfeld memorisieren, um die Illusion der Schlacht zu rekreieren.
  
  
 ### Illusion auflösen (Stufe 1)
@@ -66,12 +65,11 @@ Kostenbeispiel: Das Level des Zaubers hängen von den in die Illusion investiert
 Der Magier erkennt arkane Trugbilder aller Art in einem bestimmten Bereich. Diese sind nur für ihn selbst erkennbar und er kann mit diesem Zauber nichts an deren Existenz verändern. Dieser Zauber mindert oder beseitigt für den Magier die meisten Effekte, die eine Illusion erzeugt oder erzeugen soll, wie etwa Furcht, Verwirrung oder ähnliches.
  
 Kostenbeispiel: 
-
-- Level 1:  Illusion an einem bestimmten Gegenstand überprüfen
- 
-- Level 3:  Umkreis von drei Metern auf Illusionen überprüfen
- 
-- Level 5:  Raum von zehn bis 15 Schritt Durchmesser auf Illusionen untersuchen
+- Lvl. 1: Illusion an einem bestimmten Gegenstand überprüfen
+- Lvl. 2: Einfache Illusionseffekte auf Selbst erkennen
+- Lvl. 3: Innere Aurasphäre auf Illusionen überprüfen
+- Lvl. 4: Gebäude auf Illusion überprüfen
+- Lvl. 5: Entfernten Illusionen nachspüren
  
  
 ## Stufe 2
@@ -81,47 +79,51 @@ Kostenbeispiel:
  
 Der Magier manipuliert eine Illusion, um deren Aussehen, Ort oder Effekte zu verändern. Er kann mit diesem Zauber nur Aspekte der Illusion verändern, nicht aber neue Elemente hinzufügen. So kann etwa Aussehen, Farben, Schein, Geräusche, Gerüche, Effekte auf Betrachter oder ähnliches in einer Illusion verändert werden.
  
-Kostenbeispiel: Die Kosten des Zaubers schwanken je nach Menge und Ausmaß der Veränderungen.
- 
+Kostenbeispiel: 
+- Lvl. 0: Ablenkendes Geräusch ertönen lassen
+- Lvl. 1: Dramatische Musik in einer per Illusion gruselig wirkenden Villa erklingen lassen
+- Lvl. 2: Illusion eines schrecklichen Dämons in ein süßes Kätzchen wandeln
+- Lvl. 3: Effekt einer Illusion dem Verursacher spiegeln, so das er etwa Angst bekommt oder verwirrt wird
+- Lvl. 4: Jahreszeit in einem Hexensumpf verändern
+- Lvl. 5: Opfer in einem illusionistischen Spiegelkabinett hypnotisieren
+
  
 ### Licht manipulieren (Stufe 2)
  
 Der Magier beeinflusst das Licht in einem bestimmten Bereich durch Illusionsmagie. Er kann es so etwa dimmen, einen bestimmten Bereich verdunkeln oder erhellen, den Fall des Licht verändern oder Schatten an bestimmten Stellen erscheinen lassen. Dabei handelt es sich jedoch um eine Illusion, also nicht um regeltechnisches echtes Licht.
  
-Kostenbeispiel: 0,5 MP = Licht einer Kerze dimmen
- 
-1 MP = Licht einer Laterne verstärken
- 
-3 MP = Schatten an einer Wand entstehen lassen
- 
-5 MP = Bereich eines Raumes vollständig verdunkeln
- 
+Kostenbeispiel:
+- Lvl. 0: Licht einer Kerze dimmen
+- Lvl. 1: Licht einer Laterne verstärken
+- Lvl. 2: Schatten an einer Wand entstehen lassen
+- Lvl. 3: Bereich eines Raumes vollständig verdunkeln
+- Lvl. 4: Blendend grelles Licht aus eigenen Augen reflektieren lassen
+- Lvl. 5: Künstliche Sonnenfinsternis in einem Dorf hervorrufen
  
 ### Sinneseindrücke hervorrufen (Stufe 2)
  
 Der Magier ruft durch eine Illusion einen künstlichen Sinneseindruck bei einem Lebewesen hervor. Dabei kann es sich um ein Geräusch, einen Geruch, einen Geschmack oder eine Empfindung wie Schmerz, Hitze oder Kälte handeln. Dieser Zauber kann sowohl für sich stehen als auch in eine bestehende Illusion eingewoben werden.
  
-Kostenbeispiel: 0,5 MP = Einer Papierblume einen angenehmen Duft entströmen lassen
- 
-1 MP = Schrei im Wald aus einer bestimmten Richtung vortäuschen
- 
-3 MP = Person Schmerz empfinden lassen
- 
-5 MP = Raum behaglich warm wirken lassen
- 
+Kostenbeispiel: 
+- Lvl. 0: Einer Papierblume einen angenehmen Duft entströmen lassen
+- Lvl. 1: Schrei im Wald aus einer bestimmten Richtung vortäuschen
+- Lvl. 2: Ohrenbetäubenden Schrei erklingen lassen, den nur die Opfer der Illusion hören 
+- Lvl. 3: Person Schmerzen empfinden lassen 
+- Lvl. 4: Geruch von toxischen Gas in einem Haus erzeugen.
+- Lvl. 5: Person eine Verbrennung am Lebendigen Leib empfinden lassen
  
 ### Unauffälligkeit (Stufe 2)
  
  
 Der Magier senkt mit einer Illusion die Merkmale von Materie oder Lebewesen, anhand derer andere Lebewesen sie als auffällig wahrnehmen. Sie sind damit technisch nicht unsichtbar, fallen jedoch nicht mehr auf oder werden sogar gänzlich ignoriert. Bei einer mächtigen Illusion können sie weder erkannt werden, gezielt gesucht werden, noch erinnert sich jemand im Nachhinein an ihre Anwesenheit. Ein Magier kann so etwa unerkannt durch einen Marktplatz voller Menschen laufen, ein Haus vor der Stadtwache verstecken oder einen Gegenstand unerkannt durch eine Zollstation schmuggeln.
  
-Kostenbeispiel: 0,5 MP = Kleiner Gegenstand, etwa eine Schatulle, wird für kurze Zeit unauffällig
- 
-1 MP = Dolch in der Hinterhand nicht auffallen lassen
- 
-3 MP = Sich selbst für ein paar Minuten unerkannt bleiben lassen
- 
-5 MP = Zelt im Wald für einige Stunden unauffällig werden lassen
+Kostenbeispiel: 
+- Lvl. 0: Einen Taschenspielertrick verdecken
+- Lvl. 1: Kleiner Gegenstand, etwa eine Schatulle, wird für kurze Zeit unauffällig
+- Lvl. 2: Dolch in der Hinterhand nicht auffallen lassen
+- Lvl. 3: Für ein paar Minuten unerkannt bleiben lassen
+- Lvl. 4: Zelt im Wald für einige Stunden unauffällig werden lassen
+- Lvl. 5: Haus in einer Stadt unauffindbar werden lassen
  
  
 ## Stufe 3
