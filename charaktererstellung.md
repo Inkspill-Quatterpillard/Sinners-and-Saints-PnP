@@ -223,7 +223,7 @@ Zudem erhält eine Profession fünf Heldenfertigkeiten. Dabei handelt es sich um
 
 Eine nähere Beschreibung der Professionen ist im Kapitel Liste der Professionen zu finden.
 
-Alle Fertigkeiten sind unter Liste der Fertigkeiten und alle Heldenfertigkeiten unter Liste der Heldenfertigkeiten zu finden.
+Alle Fertigkeiten sind unter Liste der Fertigkeiten und alle Heldenfertigkeiten unter [Liste der Heldenfertigkeiten](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Heldenfertigkeiten.md) zu finden.
 
 ### Persönliche Interessen
 Neben den Fertigkeiten, die ein Charakter durch seine Profession meistert, können zudem noch Punkte auf **persönliche Interessen** des Charakters vergeben werden. Diese Fertigkeitspunkte entsprechen dem doppelten KLU-Wert oder INT-Wert eines Charakters und können auf beliebig viele Fertigkeiten verteilt werden, inklusive den Professionsfertigkeiten und den Statuswert. Sie können jedoch nicht auf Kampf- oder Magiefertigkeiten verteilt werden. Daraufhin können die halben und Fünftelwerte der Fertigkeiten ermittelt werden, um Berechnungen im laufenden Spiel zu verkürzen.
