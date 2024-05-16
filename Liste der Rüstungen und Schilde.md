@@ -14,7 +14,7 @@
 
 | Schwere Rüstung	| Rüstungsschutz | Preis | Besonderheiten |
 |----------|----------|----------|----------|
-| Brigandine | 7 RS | 150 Kronen | Min. 12 KON	|
+| Brigantine | 7 RS | 150 Kronen | Min. 12 KON	|
 | Kürass	 | 8 RS | 250 Kronen	 | Min. 14 KON	|
 | Plattenrüstung	 | 10 RS | 500 Kronen	 | Min. 16 KON	|
 
