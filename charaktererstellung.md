@@ -173,17 +173,11 @@ Der Ausweichen-Wert wird bestimmt, indem GES mit WAH zusammengerechnet und das E
 Der Schadensbonus wird auf jeden Nahkampfangriff, egal ob bewaffnet oder unbewaffnet, hinzugerechnet. Zum Berechnen dient der Stärke-Wert (STR).
 
 •	Ab 0 STR = -2
-
 •	Ab 6 STR= -1
-
 •	Ab 10 STR = 0
-
 •	Ab 14 STR = +1
-
 •	Ab 16 STR = +2
-
 •	Ab 18 STR = +3
-
 •	Ab 20 STR = +4
 
 ## Wundschwelle
@@ -205,6 +199,7 @@ Die Profession eines Charakters definiert dessen Rolle in der Gesellschaft. Mit 
 **Professionen** sind frei wähl- und zusammenstellbar. Jede Profession besitzt acht Professionsfertigkeiten , die +5 Punkte als festen Bonus erhalten. Dabei kann entweder eine Profession aus der Professionsliste ausgewählt werden oder acht Fertigkeiten zu einer eigenen Profession hinzugefügt werden. 
 
 Jede Profession gibt zudem einen Bonus oder Malus auf den Statuswert. Dieser startet stehts bei 5 Punkten. Bei frei zusammengestellte Professionen würfeln der Spielen einen W6, um den Bonus zu ermitteln.
+
 - 1: -3
 - 2: -2
 - 3: -1
@@ -270,6 +265,7 @@ Erreicht ein Kämpfer in einer Kampffertigkeit mehr als 18 Punkte, so darf er ei
 ### [Zauber](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Liste%20der%20Zauber.md)
  
 Bei der Charaktererstellung können je nach Profession eine gewisse Anzahl arkaner Fertigkeiten erlernt werden. Für alle zwei Punkte, die in einer dieser Fertigkeiten gesetzt sind, beginnend ab sechs Punkten, darf ein Zauberer einen Zauber dieser Disziplin erlernen. Zauber der Basisstufe einer Disziplin erlernt jeder Magier automatisch, sobald er Punkte in die jeweilige Fertigkeit steckt. Komplexere Zauber mit höheren Stufen werden mit dem Fortschritt in der jeweiligen Fertigkeit freigeschaltet
+
 - 1 bis 5 Punkt: Grundstufe, nur intuitive Zauber
 - 6 Punkte: Ein Zauber der Stufe I plus Basiszauber
 - 8 Punkte: Bis zu zwei Zauber
