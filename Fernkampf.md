@@ -34,6 +34,6 @@ Läuft das Ziel oder befindet sich im Kampf, erhält der Schütze einen Nachteil
 Ist die Sicht beeinträchtigt, erhält der Schütze einen Nachteil.
  
  
-Trefferzonen anvisieren
+### Trefferzonen anvisieren
  
 Visiert ein Charakter eine Trefferzone mit einem Fernkampfangriff an, erhält er einen zusätzlichen Nachteil. Dieser verwandelt potenzielle Vorteile in einen regulären Wurf.
