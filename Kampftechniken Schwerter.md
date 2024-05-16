@@ -28,7 +28,7 @@ Der Kämpfer erhält eine Möglichkeit auf einen zweiten Angriff nach einem Patt
  
 _Der Gegner wird mit dem Knauf der Waffe am Kopf oder Helm getroffen, um ihn zu betäuben._
  
-Der Kämpfer muss einen Kampfwurf, dessen Ergebnis um +1 erhöht wird, bestehen. Wird dabei erfolgreich Schaden verursacht, wird dieser halbiert. Dafür ist muss der Gegner eine Konstitutionsprobe ablegen. Ist diese erfolgreich, muss der Gegner die nächste Runde auf alle körperlichen Proben, inklusive Kampfproben, mit Nachteil würfeln. Fehlt der Gegner, erleidet dieser für 1W3 Runden diese Einschränkung. In beiden Fällen gilt der Gegner für die jeweilige Zeit als beeinträchtigt.
+Der Kämpfer muss einen Kampfwurf, dessen Ergebnis um +1 erhöht wird, bestehen. Wird dabei erfolgreich Schaden verursacht, wird dieser halbiert. Dafür ist muss der Gegner eine Konstitutionsprobe ablegen. Ist diese erfolgreich, erhält der Gegner eine Stufe Betäubung.
  
  
 **Krummhau, Stufe I, Aktiv oder Passiv (Ein- und zweihändig)**
