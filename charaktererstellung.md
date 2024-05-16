@@ -56,7 +56,7 @@ Alternde oder noch nicht ausgewachsene Charaktere erhalten zudem einen Nachteil 
  
 *Verbesserungswurf*: Wirf einen W20. Ist das Ergebnis höher als der aktuelle Wert, addiere einen Punkt auf den Wert.
  
-*Alter bei anderen Spezies*: Für das Altern anderer Spezies als Menschen siehe Kapitel Altern bei anderen Spezies.
+*Alter bei anderen Spezies*: Zwerge altern in etwa gleich schnell wie Menschen, nur tritt der körperliche Verfall wesentlich später ein. Sie erhalten den Malus auf körperliche Attribute und die zusätzlichen Verbesserungswürfe erst ab 60 Jahren. Elfen dagegen altern körperlich nur unmerklich und auch geistig wesentlich langsamer als Menschen. Sie erhalten nur für alle 20 Jahre ab dem Alter von 80 einen Verbesserungswurf auf INT oder KLU. Dafür erhalten sie für jede 20 Jahre einen Malus von 5 auf STA.
  
  
  
