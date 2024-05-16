@@ -167,11 +167,13 @@ Der Charakter ist der Abkömmling eines Dämons aus den sieben Höllen mit einer
  
 Außenseiter: -3 Status
  
-Dämonische Aura: Das Wechselbalg hat einen Nachteil, wenn es mit nichtdämonischen Tieren interagieren will. Diese misstrauen dem Geruch seines Blutes. Dies kann auch manche Humanoide betreffen, wenn sie besonders empfänglich dafür sind Höllenbrut: Sein dämonisches Blut gibt dem Wechselbalg Vorteile, wenn es dämonischen Einflüssen ausgesetzt ist, etwa bei Stabilitätsproben. Dafür besitzt der Wechselbalg eine angeborene Schwäche gegen kaltes Eisen (Stahl macht ihm nichts aus).
+**Dämonische Aura**: Das Wechselbalg hat einen Nachteil, wenn es mit nichtdämonischen Tieren interagieren will. Diese misstrauen dem Geruch seines Blutes. Dies kann auch manche Humanoide betreffen, wenn sie besonders empfänglich dafür sind 
+
+**Höllenbrut**: Sein dämonisches Blut gibt dem Wechselbalg Vorteile, wenn es dämonischen Einflüssen ausgesetzt ist, etwa bei Stabilitätsproben. Dafür besitzt der Wechselbalg eine angeborene Schwäche gegen kaltes Eisen (Stahl macht ihm nichts aus).
  
-Teufelsfratze: Das Gesicht eines Wechselbalgs unterscheidet sich für gewöhnlich nur wenig von dem eines durchschnittlichen Humanoiden. Dies ist jedoch nicht seine wahre Visage. Ein ausgewachsener Wechselbalg kann sich jederzeit dazu entscheiden, sein teuflisches Antlitz zu enthüllen. Er erhält daraufhin einen Vorteil auf Autoritäts-Proben sowie auf Wahrnehmung im Dunkeln. Dafür sind alle anderen sozialen Proben erschwert. Zudem kann er mit einer Probe auf Willenskraft den Raum, in dem er sich aufhält, verdunkeln.
+**Teufelsfratze**: Das Gesicht eines Wechselbalgs unterscheidet sich für gewöhnlich nur wenig von dem eines durchschnittlichen Humanoiden. Dies ist jedoch nicht seine wahre Visage. Ein ausgewachsener Wechselbalg kann sich jederzeit dazu entscheiden, sein teuflisches Antlitz zu enthüllen. Er erhält daraufhin einen Vorteil auf Autoritäts-Proben sowie auf Wahrnehmung im Dunkeln. Dafür sind alle anderen sozialen Proben erschwert. Zudem kann er mit einer Probe auf Willenskraft den Raum, in dem er sich aufhält, verdunkeln.
  
-Böser Blick: Der Wechselbalg kann eine Aktion darauf verwenden, einen Gegner anzustarren, um ihn zu paralysieren. Solange er die Paralyse aufrecht erhalten will, muss er den Gegner in die Augen schauen und kann lediglich soziale Proben mit diesem einen Gegner durchführen. Wird der Blickkontakt unterbrochen oder dem Gegner gelingt es, nach seiner Runde eine Willenskrafts-Gegenprobe zu bestehen, wird die Paralyse beendet. Der Gegner würfelt mit einem Nachteil auf die Probe, falls der Wechselbalg seine Teufelsfratze trägt.
+**Böser Blick**: Der Wechselbalg kann eine Aktion darauf verwenden, einen Gegner anzustarren, um ihn zu paralysieren. Solange er die Paralyse aufrecht erhalten will, muss er den Gegner in die Augen schauen und kann lediglich soziale Proben mit diesem einen Gegner durchführen. Wird der Blickkontakt unterbrochen oder dem Gegner gelingt es, nach seiner Runde eine Willenskrafts-Gegenprobe zu bestehen, wird die Paralyse beendet. Der Gegner würfelt mit einem Nachteil auf die Probe, falls der Wechselbalg seine Teufelsfratze trägt.
  
  
 ### 11. Dhampir
