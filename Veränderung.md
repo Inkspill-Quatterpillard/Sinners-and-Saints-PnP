@@ -117,12 +117,11 @@ Der Magier wirkt mit seiner Magie auf das eigene oder fremde Nervensystem ein, u
  
 Kostenbeispiel: 
 
-- Level 0: Leichte Kopfschmerzen beseitigen
 - Level 1: Sehsinn für wenige Augenblicke stören
-- Level 2: Sprachfähigkeit für einige Stunden verlieren lassen
-- Level 3: 
-- Level 4: 
-- Level 5: Orientierungssinn für mehrere Tage durcheinander bringen
+- Level 2: Sicht verstärken
+- Level 3: Sprachfähigkeit für einige Stunden verlieren lassen
+- Level 4: Orientierungssinn für mehrere Tage durcheinander bringen
+- Level 5: Dauerhaft blenden oder taub werden lassen
  
  
 ### Organe verändern (Stufe 2)
@@ -131,11 +130,11 @@ Der Magier greift mit seiner Magie tief in die Prozesse des menschlichen Körper
  
 Kostenbeispiel: 
 
-- Level 0: 
+- Level 0: Leichte Kopfschmerzen beseitigen
 - Level 1: Leistungsfähigkeit der Lungen für wenige Minuten erhöhen (Ausdauer erhöhen)
 - Level 2: Künstliche Trunkenheit auslösen
 - Level 3: Eigenen Herzschlag für gewisse Zeit aussetzen lassen
-- Level 4: Wirkung von Gift verlangsamen
+- Level 4: Wirkung von Gift verlangsamen/ Schwere Organschäden verursachen
 - Level 5: Herz reanimieren (Kürzlich gestorbenen Charakter wiederbeleben)/ Herz anhalten
  
  
@@ -147,9 +146,9 @@ Kostenbeispiel:
 
 - Level 0: Pfennig entrosten
 - Level 1: Schimmeligen Apfel regenerieren
-- Level 2:
-- Level 3: Schwert rosten lassen
-- Level 4:
+- Level 2: Schwert rosten lassen
+- Level 3: Stützbalken faulen lassen
+- Level 4: Leiche vor Fäulnis bewahren
 - Level 5: Mauersteine zu Staub zersetzen lassen
  
  
