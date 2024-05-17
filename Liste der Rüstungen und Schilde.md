@@ -10,7 +10,7 @@
 | Mittlere Rüstung	| Rüstungsschutz | Preis | Besonderheiten |
 |----------|----------|----------|----------|
 | Lamellenpanzer | 5 RS | 30 Kronen | Min. 8 KON	|
-| Lederwams	 | 6 RS | 50 Kronen	 | Min. 10 KON	|
+| Kettenrüstung	 | 6 RS | 50 Kronen	 | Min. 10 KON	|
 
 | Schwere Rüstung	| Rüstungsschutz | Preis | Besonderheiten |
 |----------|----------|----------|----------|
