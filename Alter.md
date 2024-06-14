@@ -17,7 +17,7 @@ Zwerge hingegen zeigen sich gänzlich resolut gegen geistigen Verfall, während 
 | Spezies | Kindheit | Jugend   | Erwachsen | Alterung      | Reife               | Atrophie & Vergreisung         |
 |--------:|:--------:|:--------:|:---------:|:-------------:|:--------------------|:-------------------------------|
 | Mensch  | Unter 15 | Unter 20 | Unter 40  | Alle 10 Jahre | 1 Verbesserungswurf | 1 Atrophie, 1 Vergreisungswurf |
-| Zwerg   | Unter 15 | Unter 20 | Unter 80  | Alle 10 Jahre | 1 Verbesserungswurf | -2 körperlich Atrophie         |
+| Zwerg   | Unter 15 | Unter 20 | Unter 80  | Alle 10 Jahre | 1 Verbesserungswurf | 2 Atrophie                     |
 | Elf     | Unter 15 | Unter 80 | Unter 150 | Alle 20 Jahre | 1 Verbesserungswurf | 2 Vergreisungswürfe            |
 
 *Alterung*:
