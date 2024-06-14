@@ -1,4 +1,5 @@
 # Trefferpunkte und Regeneration
+
 ## Kampfkraft, Wunden und Tod
 
 Trefferpunkte repräsentieren neben der körperlichen Verfassung und Gesundheit hauptsächlich die Kampfkraft eines Charakters. Verliert ein Charakter im Verlauf eines Kampfes oder einer anderen Konfrontation Trefferpunkte, bedeutet das nicht, dass er zwangsweise verletzt wird. Er verliert zunächst nur einen Teil seiner Fähigkeit, den Kampf fortzusetzen. Erleidet eine Person Schaden durch einen Kampf, einen Unfall oder sonstiges, werden sofort entsprechend viele Trefferpunkten des Charakters abgezogen. Vorher wird in den meisten Fällen noch der Rüstungsschutz des Charakters mit einbezogen, welcher den Schaden reduziert. Manche Schadensarten ignorieren allerdings Rüstung, wie etwa Gift, Hitze, Kälte, Fallschaden oder mancher magischer Schaden.

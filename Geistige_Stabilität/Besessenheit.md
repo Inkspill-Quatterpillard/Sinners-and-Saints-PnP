@@ -1,4 +1,5 @@
 # Besessenheit
+
 Ist die Stabilität eines Charakters niedrig, erhöht sich zeitgleich die Anfälligkeit seines Geistes gegenüber fremder Beeinflussung. Fremde Geister und Dämonen können diesen Umstand nutzen, um Besitz vom Geist eines unvorsichtigen Opfers zu nehmen.
 
 ## Entstehung von Besessenheit

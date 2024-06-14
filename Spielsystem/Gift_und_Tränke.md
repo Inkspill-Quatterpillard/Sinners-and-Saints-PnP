@@ -1,4 +1,5 @@
 # Gift, Tränke und Krankheiten
+
 ## Gift
 
 Es existieren eine Vielzahl von Giften in der Form von Pflanzen, Tiergift oder Alchemika, die Menschen wie Anderlinge innerhalb von bloßen Minuten ins Jenseits befördern können. Wird ein Charakter vergiftet, muss er eine erschwerte Probe auf KON ablegen, je nach Art des Giftes. Ein Erfolg halbiert daraufhin den Effekt des Giftes, während ein kritischer Erfolg das Gift sogar nur minimalen Effekt haben lässt. Ein Wurf auf Medizin kann die Art eines Giftes sowie mögliche Antidots verraten, nicht aber automatisch eine Vergiftung kurieren.
@@ -23,27 +24,27 @@ Viele Tränke und Tinkturen werden eingeteilt in arkane und profane Alchemika. P
 
 Tränke können eine Vielzahl an Effekten hervorrufen und verursachen. Im Folgenden sind die weitverbreitetsten Beispiele für Arten von Tränken und Alchemika genannt, sowie deren Auswirkungen und Zutaten.
 
-**Heiltränke und Salben**
+#### Heiltränke und Salben
 
 Tinkturen, die Wunden schließen können, treten sowohl in arkaner als auch profaner Form auf. Profane Heiltränke regen in erster Linie die Regeneration eines Charakters an und verhindern die Entstehung von Wundbrand. Dagegen können arkane Heiltränke einem Charakter tatsächlich einen Teil seiner Trefferpunkte zurückgeben. Solche Tränke sind jedoch äußerst kostbar. Klassische Heilpflanzen, aus denen Heiltränke hergestellt werden, sind Arnika, Alant, Anis, Enzian, Lavendel, Kamille sowie vor allem die bekannte und weitverbreitete Beinwell-Pflanze.
 
-**Antidote**
+#### Antidote
 
 Gegengifte helfen gegen akute Vergiftungen und sind sowohl profaner als auch arkaner Art. Profane Antidots sind meist an ein bestimmtes Gift gekoppelt, während arkane Gegengifte gegen eine Vielzahl an Giften helfen. Bekannte Zutaten sind Honig, Asche, Fenchel, Kümmel, Hauswurz, Spitzwegerich, das Blut giftresistenter Tiere, Gifte wie Eisenhut und Fingerhut, Einhorn sowie Bezoare.
 
-**Arzneimittel**
+#### Arzneimittel
 
 Heilmittel gegen Krankheiten sind zumeist profaner Natur und in der Volksmedizin weit verbreitet. Gerade gegen weit verbreitete Krankheiten wie Fieber, Übelkeit, Wurmbefall oder Kopfschmerzen sind eine Vielzahl an mal mehr, mal weniger wirksamen Gegenmittel bekannt. Klassische Heilkräuter sind etwa Lindenblüten, Weidenrinde oder Holunder gegen Fieber, Fenchel und Augentrost gegen Schnupfen, Huflatich und Königkerze gegen Husten, Tüpfelfarn gegen Würmer, Wilder Ingwer gegen Übelkeit und Melisse und Mädesüß gegen Kopfschmerzen.
 
-**Schmerzmittel**
+#### Schmerzmittel
 
 Schmerzmittel können Schmerzen unterdrücken und so einen temporären Bonus auf die Trefferpunkte eines Charakters geben. Klassische Zutaten sind Beifuß, Baldrian, Melisse oder Bilsenkraut.
 
-**Stärkungstinkturen**
+#### Stärkungstinkturen
 
 Stärkungsmittel können bestimmte Werte eines Charakters temporär steigern. Dieser Effekt steigt bei arkanen Tinkturen. So kann etwa Konstitution und Stärke erhöht, Mut gesteigert, Willen gestählt und Sinne geschärft werden. Viele Stärkungsmittel bestehen jedoch aus Substanzen, die Rausch erzeugen und daher mit Vorsicht verwendet werden sollten. Bekannte Zutaten sind etwa Ginseng, Beifuß, Habichtskraut, Geisterborn oder Rosenwurz.
 
-**Zaubertränke**
+#### Zaubertränke
 
 Zaubertränke steigern die Magiepunkte eines Charakters und sind ausschließlich arkaner Natur. Zutaten sind etwa Wermut, Alraune, Eisenkraut, Holunder oder Wegwarte.
 

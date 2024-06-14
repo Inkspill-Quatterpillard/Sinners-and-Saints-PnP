@@ -1,4 +1,5 @@
 # Zauberkosten und Schwierigkeit
+
 Je komplexer ein Zauber ist, desto schwieriger und kostenintensiver ist es, diesen zu wirken. Dies wird mit einer Level-Skala angegeben, auf welcher die spezifische Nutzung des Zaubers einsortiert wird. Höhere Zauberlevel sind mit größeren Magiepunkte-Kosten verbunden und addieren zusätzliche Punkte auf das Ergebnis des Magiewurfes.
 
 ## Zauberlevel

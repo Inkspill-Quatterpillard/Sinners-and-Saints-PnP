@@ -26,8 +26,8 @@
 
 8. [Trefferzonen](Trefferzonen.md)
 
-9. [Kampftechniken](Kampftechniken.md)
+9. [Kampftechniken](../Charaktererstellung/Kampftechniken.md)
 
-10. [Kampfstile](Kampfstile.md)
+10. [Kampfstile](../Charaktererstellung/Kampfstile.md)
 
 11. [Manöver-Regeln](Manöver.md)

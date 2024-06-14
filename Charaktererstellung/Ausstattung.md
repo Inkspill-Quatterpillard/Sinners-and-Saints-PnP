@@ -16,7 +16,6 @@ Wohlhabende Charaktere dürften dagegen ihr eigenes Haus in der Stadt, einen eig
 | Wohlhabend (Status 10-17) | 30 Kronen | Status x2.500 (25.000 - 50.000 Kronen) | 3 Kronen |
 | Vornehm (Status 18-19) | 120 Kronen | Status x10.000 (150.000 – 200.000 Kronen) | 10 Kronen |
 | Kaiserlich (Status 20+) | 400 Kronen | 5.000.000+ Kronen| 25 Kronen |
-   
 
 ### Währung im Kaiserreich
 
@@ -32,4 +31,4 @@ Dabei gibt es jedoch einige Objekte, die an bestimmte Bedingungen geknüpft sind
 
 Waffen dagegen sind unter beinahe allen Bewohnern des Kaiserreiches verbreitet. Die Zeiten sind hart und die Straßen unsicher, daher werden beinahe alle Reisenden einen Dolch oder einen Knüppel bei sich tragen. Bauern und Handwerker benutzen im Notfall ihre Werkzeuge, wie etwa Mistgabeln, Hippen, Sicheln, Dreschflegel oder Hammer, als improvisierte Waffen. Schwerter, Helme, Schilde und Speere werden oft als Familienerbstücke vom Vater an den Sohn weitervererbt, insbesondere bei Freibauern oder Stadtbürgern, die für ihren Lehnsherren im Kriegsdienst dienen müssen. Banditen und Söldner stellen sich ihr Arsenal an Waffen durch das Plündern besiegter Feinde zusammen. Dennoch gibt es auch in der Welt von Arvor Einschränkungen bezüglich des Waffenbesitzes. So verbieten viele Städte das Tragen von Waffen, die länger als eine oder anderthalb Ellen sind (kurze Waffengröße). Zudem sind Rüstungen und frisch geschmiedete Schwerter und Waffen teuer und für einfache Menschen meist nur durch Erbschaft oder Plünderung zugänglich. Dies sollte bei der Waffenauswahl für einen Charakter bedacht werden.
 
-Siehe auch: **[Liste der Ausrüstungsgegenstände](/Ausrüstung/Ausrüstung.md)**
+Siehe auch: **[Liste der Ausrüstungsgegenstände](../Ausrüstung/Ausrüstung.md)**

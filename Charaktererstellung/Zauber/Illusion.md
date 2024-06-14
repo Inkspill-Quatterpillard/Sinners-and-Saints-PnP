@@ -1,4 +1,5 @@
 # Illusions-Zauber
+
 ## Basisstufe
 
 ### Illusion erschaffen (Basis)
@@ -59,6 +60,7 @@ Kostenbeispiel: Das Level des Zaubers hängen von den in die Illusion investiert
 Der Magier erkennt arkane Trugbilder aller Art in einem bestimmten Bereich. Diese sind nur für ihn selbst erkennbar und er kann mit diesem Zauber nichts an deren Existenz verändern. Dieser Zauber mindert oder beseitigt für den Magier die meisten Effekte, die eine Illusion erzeugt oder erzeugen soll, wie etwa Furcht, Verwirrung oder ähnliches.
 
 Kostenbeispiel:
+
 - Lvl. 1: Illusion an einem bestimmten Gegenstand überprüfen
 - Lvl. 2: Einfache Illusionseffekte auf Selbst erkennen
 - Lvl. 3: Innere Aurasphäre auf Illusionen überprüfen
@@ -72,6 +74,7 @@ Kostenbeispiel:
 Der Magier manipuliert eine Illusion, um deren Aussehen, Ort oder Effekte zu verändern. Er kann mit diesem Zauber nur Aspekte der Illusion verändern, nicht aber neue Elemente hinzufügen. So kann etwa Aussehen, Farben, Schein, Geräusche, Gerüche, Effekte auf Betrachter oder ähnliches in einer Illusion verändert werden.
 
 Kostenbeispiel:
+
 - Lvl. 0: Ablenkendes Geräusch ertönen lassen
 - Lvl. 1: Dramatische Musik in einer per Illusion gruselig wirkenden Villa erklingen lassen
 - Lvl. 2: Illusion eines schrecklichen Dämons in ein süßes Kätzchen wandeln
@@ -84,6 +87,7 @@ Kostenbeispiel:
 Der Magier beeinflusst das Licht in einem bestimmten Bereich durch Illusionsmagie. Er kann es so etwa dimmen, einen bestimmten Bereich verdunkeln oder erhellen, den Fall des Licht verändern oder Schatten an bestimmten Stellen erscheinen lassen. Dabei handelt es sich jedoch um eine Illusion, also nicht um regeltechnisches echtes Licht.
 
 Kostenbeispiel:
+
 - Lvl. 0: Licht einer Kerze dimmen
 - Lvl. 1: Licht einer Laterne verstärken
 - Lvl. 2: Schatten an einer Wand entstehen lassen
@@ -96,6 +100,7 @@ Kostenbeispiel:
 Der Magier ruft durch eine Illusion einen künstlichen Sinneseindruck bei einem Lebewesen hervor. Dabei kann es sich um ein Geräusch, einen Geruch, einen Geschmack oder eine Empfindung wie Schmerz, Hitze oder Kälte handeln. Dieser Zauber kann sowohl für sich stehen als auch in eine bestehende Illusion eingewoben werden.
 
 Kostenbeispiel:
+
 - Lvl. 0: Einer Papierblume einen angenehmen Duft entströmen lassen
 - Lvl. 1: Schrei im Wald aus einer bestimmten Richtung vortäuschen
 - Lvl. 2: Ohrenbetäubenden Schrei erklingen lassen, den nur die Opfer der Illusion hören
@@ -108,6 +113,7 @@ Kostenbeispiel:
 Der Magier senkt mit einer Illusion die Merkmale von Materie oder Lebewesen, anhand derer andere Lebewesen sie als auffällig wahrnehmen. Sie sind damit technisch nicht unsichtbar, fallen jedoch nicht mehr auf oder werden sogar gänzlich ignoriert. Bei einer mächtigen Illusion können sie weder erkannt werden, gezielt gesucht werden, noch erinnert sich jemand im Nachhinein an ihre Anwesenheit. Ein Magier kann so etwa unerkannt durch einen Marktplatz voller Menschen laufen, ein Haus vor der Stadtwache verstecken oder einen Gegenstand unerkannt durch eine Zollstation schmuggeln.
 
 Kostenbeispiel:
+
 - Lvl. 0: Einen Taschenspielertrick verdecken
 - Lvl. 1: Kleiner Gegenstand, etwa eine Schatulle, wird für kurze Zeit unauffällig
 - Lvl. 2: Dolch in der Hinterhand nicht auffallen lassen

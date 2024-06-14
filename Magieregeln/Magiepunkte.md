@@ -1,4 +1,5 @@
 # Magiepunkte
+
 ## Magiepunkte einsetzen
 
 Magiepunkte dienen in erster Linie als magische Energiereserve des Körpers. Aus diesem Vorrat schöpft ein Magier seine Fähigkeit, Zauber auszuführen. Nutzt ein Magier seine magischen Kräfte, verbraucht er einen Teil seiner magischen Reserve. Für jeden Zauber werden im Vorhinein Magiekosten festgelegt, die vom Vorrat der Magiepunkte abgezogen werden. Wie hoch diese Kosten sind, hängt von der Art des Zaubers sowie von dessen Ausmaß ab. Erlangt der Zauberer bei der Probe auf seine Magiefertigkeit einen kritischen Erfolg, werden die Magiepunktekosten halbiert. Dabei wird bei halben Werten abgerundet. Patzt die Probe jedoch, muss der Magier den doppelten Preis für den Zauber bezahlen, auch wenn er dabei unter null fällt.

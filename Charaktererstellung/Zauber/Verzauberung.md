@@ -1,4 +1,5 @@
 # Verzauberungs-Zauber
+
 ## Basisstufe
 
 ### Arkaner Impuls (Basis)
@@ -32,6 +33,7 @@ Kostenbeispiel: Das Level des Zaubers hängt von der erwünschten Kapazität der
 Der Magier erzeugt oder modifiziert eine Verbindung zwischen zwei magischen Strukturen, etwa einer Magiequelle, einem Mechanismus oder einer Glyphe. So lassen sich komplexere Glyphenstrukturen schaffen, Mechanismen und Glyphen an eine Energiequelle anschließen oder magische Verbindungen trennen.
 
 Kostenbeispiel:
+
 - Lvl. 0: Glyphen miteinander verbinden, etwa Auslöser mit Falle oder Glyphe mit Magiequelle
 - Lvl. 1: Fallenglyphe entschärfen
 - Lvl. 2:
@@ -46,6 +48,7 @@ Kostenbeispiel:
 Bestimmte Eigenschaften von Pflanzen und anderen alchemischen Zutaten werden vom Magier extrahiert, potenziert oder abgeschwächt, um Alchemika zu brauen. So können sehr wirkungsvolle Tränke und Tinkturen entstehen, die eine breite Palette an Effekten aufweisen können. In der Praxis werden so zumeist die natürlichen Effekte von alchemischen Zutaten um ein Vielfaches verstärkt und Negativeffekte unterdrückt.
 
 Kostenbeispiel: Die Kosten hängen von dem jeweiligen Rezept und der Zutat ab. Je mehr Effekt aus weniger Material herausgeholt werden muss, desto mehr MP müssen investiert werden.
+
 - Lvl. 0:
 - Lvl. 2:
 - Lvl. 3:
@@ -57,6 +60,7 @@ Kostenbeispiel: Die Kosten hängen von dem jeweiligen Rezept und der Zutat ab. J
 Der Magier weckt und verstärkt mit magischen Stimuli die arkanen Kräfte, die in Edelsteinen und -metallen natürlich vorhanden sind. Die so entstandenen Gemmensteine bergen zwar keine Zauber in sich, können aber Rüstungen, Waffen, Amulette oder Glyphen, mit denen sie verbunden sind, auf magische Weise verstärken oder unterschwellige magische Effekte auf Lebewesen haben. So können rote Rubine die Macht von Schwertern und Hämmern erhöhen, Diamanten Waffen und Rüstungen härten und Amulette aus Saphir Wunden schließen. Gravuren aus Silber können Rüstungen gegen Magie verstärken oder Waffen effektiver gegen magische Kreaturen machen, während Selbiges in Gold Zauber und Glyphen verstärkt.
 
 Kostenbeispiel: Die Kosten hängen von der Größe und Reinheit des Steins ab.
+
 - Lvl. 0:
 - Lvl. 2:
 - Lvl. 3:
@@ -68,6 +72,7 @@ Kostenbeispiel: Die Kosten hängen von der Größe und Reinheit des Steins ab.
 Der Magier kopiert den Effekt einer Glyphe und bindet ihn an ein neues Objekt. So können Glyphen geklont oder auch die Effekte raffinierterer Glyphen gesammelt und bei Bedarf eingesetzt werden. Die Kopie einer Glyphe ist zwar einfacher als deren Herstellung, dennoch gehört einiges an Erfahrung dazu, eine komplexe Glyphe zu kopieren
 
 Kostenbeispiel: Die Kosten des Zaubers hängen von der Komplexität und investierten Magiepunkten der kopierten Glyphe ab.
+
 - Lvl. 0:
 - Lvl. 2:
 - Lvl. 3:
@@ -79,6 +84,7 @@ Kostenbeispiel: Die Kosten des Zaubers hängen von der Komplexität und investie
 Der Magier erschafft eine magische Struktur, die eine Konstruktion aus Glyphen und/oder profanen Mechaniken steuert und es diesem ermöglicht, die einzelnen Bestandteile zu kontrollieren und komplexere Befehle zu befolgen. Dies reicht von dem Betrieb einfacher Konstruktionen wie einer magischen Uhr oder einem Transportmechanismus bis hin zu komplexeren Mechanismen wie beispielsweise einem Schloss, welches nur auf bestimmte Schlüssel reagiert oder auch einem magischen Roboter, welcher einfache Aufgaben übernimmt. Die Komplexität der Konstruktion und der Befehle definiert dabei die Schwierigkeit des Zaubers. Ähnlich wie bei einer Glyphe benötigt auch ein magischer Mechanismus eine dauerhafte Magiequelle, um zu funktionieren.
 
 Kostenbeispiel:
+
 - Lvl. 0:
 - Lvl. 1: Magisch betriebene Uhr
 - Lvl. 2:

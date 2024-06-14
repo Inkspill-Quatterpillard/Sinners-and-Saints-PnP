@@ -1,4 +1,5 @@
 # Liste der Heldenfertigkeiten
+
 ## Kampffertigkeiten
 
 Es existieren neun Kampffertigkeiten, die den Umgang mit verschiedenen Waffenarten repräsentieren und im Kampf eingesetzt werden können. Fünf davon sind Nahkampffertigkeiten, also Dolche und Messer, Schwerter, Hiebwaffen, Stangenwaffen und Faustkampf. Dazu kommen vier Fernkampffertigkeiten mit Bögen, Armbrüste und Schusswaffen, Wurfwaffen und Schleudern. Einige Kampffertigkeiten können mit verschiedenen Attributen eingesetzt werden. In dem Fall entscheidet über den Startwert das höchste Attribut des Charakters.

@@ -1,4 +1,5 @@
 # Kunststücke
+
 Pro Reflexionsphase erhält der Charakter eine Möglichkeit, ein Meisterstück dazu zu gewinnen. Die Meisterstücke haben bestimmte Voraussetzungen, die an Fertigkeiten oder Attribute geknüpft sind.
 
 ## Stufe 1 (Exzeptionell)

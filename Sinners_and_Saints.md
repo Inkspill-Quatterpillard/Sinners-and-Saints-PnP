@@ -48,7 +48,7 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
 
 ### [Magieregeln](Magieregeln/Magieregeln.md)
 
-### [Geistige Stabilität](Geistige_Stabilität.md)
+### [Geistige Stabilität](Geistige_Stabilität/Geistige_Stabilität.md)
 
 ### Charakterentwicklung
 

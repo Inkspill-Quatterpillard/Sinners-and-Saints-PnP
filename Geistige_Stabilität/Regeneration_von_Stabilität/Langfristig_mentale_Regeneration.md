@@ -1,4 +1,5 @@
 # Langfristig mentale Regeneration
+
 ## Reflektion der Ereignisse
 
 Ein Charakter kann ruhige Phasen zwischen den Abenteuern nutzen, um das Erlebte zu rekapitulieren und die Ereignisse zu reflektieren. Dies ist oft der erste Schritt, um mit zermürbenden Traumata und psychischer Belastung fertig zu werden.

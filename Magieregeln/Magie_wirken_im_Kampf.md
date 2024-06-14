@@ -1,4 +1,5 @@
 # Magie wirken im Kampf
+
 ## Dauer
 
 Normalerweise dauert das Wirken eines Zaubers jeweils eine Kampfrunde. Ein Zauber kann jedoch unter Umständen auch in einer Zusatzaktion gewirkt werden. Dafür wird die Schwierigkeit des Zaubers um eine Stufe erhöht. So kann ein Zauber beispielsweise parallel zu einer Kampfaktion ausgeführt werden. Es kann dennoch pro Runde nur ein Zauber gewirkt werden. Kostet ein Zauber weniger als einen Magiepunkt, kann dieser ohne Erschwernis in einer freien Aktion gewirkt werden.

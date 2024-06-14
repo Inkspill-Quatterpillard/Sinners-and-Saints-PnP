@@ -25,7 +25,7 @@ Der Glückswert wird mit einem 1W20 festgelegt. Nach jeder Spielsession oder Ruh
 ## Bewegungsgeschwindigkeit
 
 Die Geschwindigkeit eines Charakters bezeichnet die Strecke in Schritt, die ein Charakter in einer Sekunde sprintend zurücklegen kann. In einer Runde kann eine Person das bis zu Fünffache dieser Strecke zurücklegen.
- 
+
 Die Bewegungsgeschwindigkeit berechnet sich wie folgt:
 
 - GES + KON < 20: Geschwindigkeit von 7.
@@ -49,6 +49,7 @@ Der Ausweichen-Wert wird bestimmt, indem GES mit WAH zusammengerechnet und das E
 ## Schadensbonus
 
 Der Schadensbonus wird auf jeden Nahkampfangriff, egal ob bewaffnet oder unbewaffnet, hinzugerechnet. Zum Berechnen dient der Stärke-Wert (STR).
+
 - Ab 0 STR = -2
 - Ab 6 STR= -1
 - Ab 10 STR = 0

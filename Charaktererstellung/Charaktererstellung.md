@@ -88,7 +88,7 @@ Neben diesen drei Spezies existieren noch weitere humanoide und kulturschaffende
 
 Spielbare Spezies sind aktuell: Menschen, Elfen und Zwerge.
 
-Details der Spezies können unter [Liste der Spezies](Spezies.md) gefunden werden.
+Details der Spezies können unter [Spezies](Spezies.md) gefunden werden.
 
 ### [Religion](Religion.md)
 

@@ -1,11 +1,13 @@
 # Veränderungs-Zauber
+
 ## Stufe 1
- 
+
 ### Gewebe regenerieren (Stufe 1)
 
 Der Magier stellt verletztes oder fehlendes Gewebe, also etwa Fleisch, Haut oder Knochen wieder her. Mit diesem Zauber ist es möglich, Wunden zu schließen, Knochen zu richten oder sogar Gliedmaßen nachwachsen zu lassen.
 
 Kostenbeispiel:
+
 - Lvl. 0: Oberflächige Kratzer verheilen lassen
 - Lvl. 1: Durch Berührung Fleischwunden heilen (I: 1W6 / II: 2W6 / III: 3W6 wiederherstellen) (Ohne Berührung Lvl. 3)
 - Lvl. 2: Durch Berührung Blutung stoppen
@@ -18,6 +20,7 @@ Kostenbeispiel:
 Die Ausmaße und Dimensionen zusammenhängender Materie werden erfasst, indem der Magier Magie durch die Materie leitet. Dabei können etwa Schwachstellen in einem Schloss, Unregelmäßigkeiten in einer Wand oder die Ausmaße eines Raumes erfasst werden.
 
 Kostenbeispiel:
+
 - Level 0: Die Maße eines kleinen Objektes werden erfasst
 - Level 1: Durchmesser einer Tür oder Unregelmäßigkeiten in einem Edelstein überprüfen
 - Level 2: Geheimes Fach in einem Schreibtisch suchen
@@ -30,6 +33,7 @@ Kostenbeispiel:
 Der Magier verändert die Form von unbelebter Materie nach seinem Willen. Damit kann ein Magier etwa Öffnungen in Wänden erzeugen, Schlösser öffnen oder Fesseln lösen sowie die Größe und Form von Waffen verändern. Die Schwierigkeit des Zaubers wird vom Umfang der Veränderung als auch von der Komplexität der zu formenden Materie beeinflusst.
 
 Kostenbeispiel:
+
 - Level 0: Winziges Zeichen in einem Mauerstein einlassen
 - Level 1: Fesseln lösen
 - Level 2: Ein Schloss öffnen
@@ -57,6 +61,7 @@ Kostenbeispiel:
 Der Magier verändert eigenes oder fremdes Gewebe, also Fleisch, Muskeln, Haut oder Knochen. Dies ermöglicht tiefergehende Veränderungen am Körper eines Lebewesens, wie etwa das temporäre Stärken oder Schwächen von Muskeln, die Verhärtung von Haut, das Entfernen von Geschwüren oder das Verändern von Gesichtszügen, bis hin zu komplexen Mutationen wie dem Hinzufügen von Gliedmaßen, der Veränderung der Knochenstruktur oder dem Aneinanderwachsen zweier ursprünglich fremder Geweben. Komplexe und dauerhafte Mutationen können dabei fast immer nur ein längerfristiges und kompliziertes Ritual hervorgerufen werden.
 
 Kostenbeispiel:
+
 - Level 0: Schönheitsmakel temporär entfernen
 - Level 1: Muskeln eines Arms für ein paar Minuten kräftigen
 - Level 2: Haut verhärten (zusätzlicher Rüstungsschutz
@@ -82,6 +87,7 @@ Kostenbeispiel: Die Level dieses Zaubers hängen in erster Linie von der Größe
 Der Magier gibt unbelebter Materie zeitweise eine völlig andere Form. So kann er einen Gegenstand temporär in einen anderen Gegenstand verwandeln. Einem Objekt wird dabei eine andere Gestalt magisch übergestülpt. Diese Form fungiert physisch wie die reale Gestalt des Objektes. Da jeder Gegenstand jedoch in seine eigene Gestalt zurück will, wird eine solche Veränderung je nach Stärke des Zauber früher oder später rückgängig gemacht. Die Komplexität und Perfektion dieses Zaubers schwankt mit der Erfahrung des Magiers. Die Verwandlung von Novizen behalten oft Attribute der Ursprungsform oder entsprechen dem generischsten Bild der Verwandlungsgestalt.
 
 Kostenbeispiel:
+
 - Level 0: Kupferpfennig für kurze Zeit in eine Silbermünze verwandeln
 - Level 1: Teetasse für kurze Zeit in eine Schreibfeder verwandeln
 - Level 2: Ast in ein Schwert oder ein Seil verwandeln
@@ -147,6 +153,7 @@ Kostenbeispiel:
 Der Magier macht eine magische Veränderung rückgängig. Dies ist wesentlich einfacher bei temporären Veränderungen als bei dauerhaften. Das Objekt oder der Körper kehrt dabei in den Zustand vor der magischen Veränderung zurück.
 
 Kostenbeispiel: Die Kosten für den Zauber hängen von der Komplexität und der investierten Magie der Veränderung ab.
+
 - Level 0:
 - Level 1:
 - Level 2:

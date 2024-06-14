@@ -1,4 +1,5 @@
 # Psychomantie-Zauber
+
 ## Stufe 1
 
 ### Emotion auslösen (Stufe 1)
@@ -6,6 +7,7 @@
 Der Magier greift in die Gefühle eines mit ihm verbundenen Lebewesens ein und verändert dessen Emotionen. So kann er etwa Furcht erzeugen, Wut entfachen oder Zuversicht auslösen.
 
 Kostenbeispiel:
+
 - Lvl. 0: Ein leichtes Gefühl der Unsicherheit bei einem Händedruck erzeugen
 - Lvl. 1: Zuversicht in einer benachbarten Person auslösen
 - Lvl. 2: Mit einer Umarmung eine Person für einen Tag mit warmen Gefühlen erfüllen
@@ -18,6 +20,7 @@ Kostenbeispiel:
 Der Magier nimmt die Emotionen eines Lebewesens war. Er beeinflusst diese nicht, sondern erhält bloße Informationen über den Gemütszustand des Gegenübers.
 
 Kostenbeispiel:
+
 - Lvl. 0: Bei einer Berührung einen Eindruck von der Stimmung des Gegenübers kriegen
 - Lvl. 1: Emotionen eines einzelnen Lebewesens lesen
 - Lvl. 2: Gemütszustand von Personen im direkten Umfeld sichtbar machen
@@ -30,6 +33,7 @@ Kostenbeispiel:
 Der Magier überträgt seine Gedanken über eine geistige Verbindung telepathisch auf ein anderes Lebewesen. Er ist durch diesen Zauber nicht in der Lage, die Gedanken seines Gegenübers zu lesen. Um den Zauber zu wirken, muss der Magier entweder wissen, wo sich der Empfänger befindet oder eine emotionale oder magische Verbindung zu ihm besitzen. Erfahrene Magier können nicht nur Worte oder einzelne Sätze übertragen, sondern komplexe Bilder, Gedankenkomplexe oder sogar ganze Pläne. Die Schwierigkeit eines solchen Unterfangens wird durch die Willigkeit des Empfängers, die Nachricht zu empfangen, sowie der Länge und Komplexität der Botschaft determiniert.
 
 Kostenbeispiel:
+
 - Lvl. 0: Nachricht an eine Person übermitteln, die man berührt
 - Lvl. 1: Nachricht an eine Person innerhalb der äußeren Aurasphäre
 - Lvl. 2: Nachricht an eine Person, die sich bis zu hundert Schritt entfernt aufhält
@@ -44,6 +48,7 @@ Kostenbeispiel:
 Der Magier manipuliert Gedanken auf einer unbewussten Ebene. Er kann seinen Opfer so einen völlig neuen Gedanken oder eine Idee einpflanzen, einen bestehenden Gedanken verstärken oder eine Idee oder eine Erinnerung verdrehen und verändern. Je nach Erfolg und Stärke des Zaubers bleibt die Manipulation unentdeckt und hält länger oder sogar ewig an.
 
 Kostenbeispiel:
+
 - Lvl. 0: Eigene Gedanken fokussieren
 - Lvl. 1: Gedanken einer Person verstärken, etwa um diese in etwas reinzureden
 - Lvl. 2: Dem Ziel einflüstern, an diesem Tag eine gute Tat vollbringen zu müssen
@@ -62,6 +67,7 @@ Kostenbeispiel: Das Level des Zaubers hängen von der Entfernung von der Zielper
 Der Magier manipuliert das Bewusstsein eines Lebewesens. Er kann so etwa dessen Wahrnehmung verändern, seinen Geist lähmen, seine Konzentration stören, ihm Dinge vorgaukeln, die nicht existieren oder auch seinen Willen brechen.
 
 Kostenbeispiel:
+
 - Lvl. 0: Im Gespräch die Konzentration einer Person kurz stören
 - Lvl. 1: Aufmerksamkeit einer Person auf sich oder ein bestimmtes Objekt ziehen
 - Lvl. 2: Konzentration eines Magiers bei einem Zauber stören
@@ -82,13 +88,14 @@ Kostenbeispiel: Für jedes Level erhält der Magier oder sein Verbündeter einen
 Der Magier übernimmt das Bewusstsein eines Lebewesens und damit die Kontrolle über dieses. Je nach Macht des Zaubers kann das Opfer zu unterschiedlichen Graden und über unterschiedliche Zeitspannen kontrolliert werden. Dies reicht von einfachen, zeitlich begrenzten Befehlen bis hin zur kompletten Kontrolle über einen beliebig langen Zeitraum. Der Zauber benötigt eine intakte geistige Verbindung zur Quelle der Kontrolle. Ist diese Verbindung unterbrochen, endet auch der Zauber.
 
 Kostenbeispiel:
+
 - Lvl. 0:
 - Lvl. 1:
 - Lvl. 2:
 - Lvl. 3:
 - Lvl. 4:
 - Lvl. 5:
- 
+
 1 MP = Einzelner, kurzzeitiger Befehl an eine unterworfene Person
 
 3 MP = Unterstützung von einer Person für eine kurze Zeitspanne erzwingen, etwa für einen Kampf

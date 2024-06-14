@@ -1,4 +1,5 @@
 # Ablauf eines Zaubers
+
 ## Aktivieren der Magischen Kräfte
 
 So wie ein Krieger seine Waffe ziehen muss, muss auch ein Magier seine Magischen Kräfte aktivieren, bevor er auf diese zugreifen kann. Dies funktioniert meist intuitiv, oft untermalt von einer eingewöhnten Geste, wie etwa einem Schnipsen, einem kurzen Augenschließen oder einer Handbewegung. Dies zählt als Zusatzaktion. Ist es dem Magier nicht möglich, diese Geste durchzuführen, so erhält er für den ersten Zauber einen Nachteil.

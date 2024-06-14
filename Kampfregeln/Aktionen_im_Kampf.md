@@ -1,4 +1,5 @@
 # Aktionen im Kampf
+
 ## Kampf initiieren und Kampfgruppen bestimmen
 
 Ein Nahkampf wird ausgelöst, indem ein Kampfteilnehmer in der Nahkampfphase einen Kampf mit einer anderen Person initiiert. Die angegriffene Person darf sich dabei nicht weiter als die halbe Bewegungsreichweite der angreifenden Person von dieser weg befinden. Alle Personen, die mit ihrer halben Bewegungsreichweite ebenfalls den Kampf erreichen könnten, können ebenfalls in den Kampf eingreifen.

@@ -1,4 +1,5 @@
 # Mentaler Zusammenbruch
+
 Traumatische Ereignisse können sich tief in Geist und Seele eines Charakters einnisten. Manchmal entstehen solche Narben langsam, schleichend und lange Zeit fast unsichtbar. Manchmal plötzlich, gnadenlos und kalt. Ein Abenteurer erduldet während seines Lebens eine Vielzahl solcher Ereignisse. Grauenhafte und brutale Situationen, die die Abgründe der Welt offenbaren. Verwundungen, Entbehrungen, die stetige Angst um Leben und Existenz. Der Tod von guten Freunden, von Unschuldigen. Die Konfrontation mit dem Übernatürlichen, den dunklen Geheimnissen unserer Welt. Die Konfrontation mit moralischen Fragen, mit unlösbaren Dilemmata. All dies hinterlässt Spuren, bei manchen deutlicher, bei anderen fast unmerklich.
 
 ## Mentaler Zusammenbruch

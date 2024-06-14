@@ -1,4 +1,5 @@
 # Kurzfristige mentale Regeneration
+
 Neben den vielen Möglichkeiten, die psychische Verfassung zu verschlechtern, gibt es aber auch gewisse Anlässe, die sich positiv auf die Stabilität eines Charakters auswirken können. So kann etwa eine warmen Mahlzeit und einem weichen Bett am Ende eines entbehrungsreichen Tages für die psychische Verfassung einer Person Wunder wirken und ihm erlauben, einen Teil seiner Stabilitätspunkte zu regenerieren.
 
 ## Wege zur kurzfristigen mentalen Regeneration

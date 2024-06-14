@@ -7,6 +7,7 @@
 Der Magier untersucht die Aura eines fremden Lebewesens. Als arkaner Abdruck und Speicher kann ein Magier durch die Aura Informationen unter anderem über den Zustand, die Fähigkeiten oder auch über Stärken und Schwächen eines Lebewesens gewinnen. Ebenso kann auf diesen Weg die magische Signatur eines Lebewesens analysiert und gespeichert werden. Dies erlaubt es, die Person zu einem späteren Zeitpunkt zweifelsfrei zu identifizieren und kann zudem für Zauber genutzt werden. Erfahrene Magier können so auch kurze Einblicke in das Schicksal eines Lebewesens erhaschen.
 
 Kostenbeispiel:
+
 - Lvl. 0: Kurzes Abtasten der Aura eines nahen Lebewesens. Kann sehr grobe Informationen über dessen Art und Zustand verraten.
 - Lvl. 1: Abfragen einer singulären, spezifischen Information (Information über TP- oder MP-Stand, bestimmten Wert oder Fertigkeiten)
 - Lvl. 2: Magische Schwächen eines Lebewesens herausfinden
@@ -21,6 +22,7 @@ Der Magier greift die Aura eines Lebewesens an. Diese fungiert als arkane Vertei
 Kostenbeispiel: Für jedes Level verursacht der Magier +1 Stabilitätsschaden am gegnerischen Magier.
 
 Auraschaden nach WIL-Wert
+
 - WIL < 3 = 1W2 Stabilitätspunkte
 - WIL > 3 = 1W3 Stabilitätspunkte
 - WIL > 6 = 1W4 Stabilitätspunkte
@@ -33,6 +35,7 @@ Auraschaden nach WIL-Wert
 Der Magier hebt aktive Magie auf. Hiermit können Verzauberungen, aktive Zauber wie Schilde oder Fallen oder sogar langfristige und komplexe Zauber wie etwa Flüche annulliert werden. Der dazu notwendige Zeitaufwand hängt sowohl von der Zeit ab, die für die Erschaffung des Zaubers benötigt wurde, als auch von dessen Komplexität.
 
 Kostenbeispiel:
+
 - Lvl. 0: Kleineren Zauber erlöschen lassen, etwa eine magische Flamme
 - Lvl. 1: Glyphe deaktivieren
 - Lvl. 2: Magische Falle entschärfen
@@ -45,6 +48,7 @@ Kostenbeispiel:
 Der Magier stört aktive Magie in einem bestimmten Bereich. So können gegnerische Zauber erschwert, dauerhaft aktive Zauber gestört oder magische Rituale unterbrochen werden. Der Effekt der Störung wird von der Stärke des Zaubers definiert.
 
 Kostenbeispiel:
+
 - Lvl. 0: Unterbindung eines Zaubertricks.
 - Lvl. 1: Störung eines einzelnen Zaubers oder Rituals.
 - Lvl. 2: Störung der Zauber eines Magiers für eine gewisse Zeit(, bis sich dieser der geistigen Beeinflussung widersetzen kann).
@@ -57,6 +61,7 @@ Kostenbeispiel:
 Der Magier sucht nach den Spuren von magischen Handlungen oder Beeinflussungen. Hiermit kann etwa untersucht werden, ob ein Objekt magische Eigenschaften oder Verzauberungen hat, ob Magie in einem Bereich aktiv ist, ob eine Person vor einer gewissen Zeit Magie gewirkt hat oder ob sich magische Quellen in der Nähe befinden. Ebenso kann ein erfahrener Magier so den Grad und die Art der erspürten Magie herausfinden.
 
 Kostenbeispiel:
+
 - Lvl. 0: Offensichtliche aktive Magie bei einem Objekt in Kontaktreichweite erspüren
 - Lvl. 1: Objekt auf magische Spuren untersuchen
 - Lvl. 2: Magische Objekte in kleinen Radius, etwa einem Schreibtisch oder einer Truhe, suchen
@@ -69,6 +74,7 @@ Kostenbeispiel:
 Der Magier untersucht eine magische Struktur, wie etwa eine Glyphe, einen magischen Mechanismus, eine Magiequelle oder einen aktiven und präsenten Zauber. Dieser Zauber kann so Auskunft über die Art einer Verzauberung, den Effekt eines Zaubers oder die Stärke einer Quelle geben.
 
 Kostenbeispiel:
+
 - Lvl. 0: Analyse einer kleinen, einfachen Glyphe
 - Lvl. 1: Analyse einer einzelnen Struktur, etwa einer Glyphe oder einer magischen Waffe
 - Lvl. 2:
@@ -115,6 +121,7 @@ Kostenbeispiel:
 Der Magier manipuliert Gravitation, um etwa Schwerkraft aufzuheben, zu verstärken oder umzukehren. Dieser Zauber bezieht sich auf Orte und Räume, nicht auf Gegenstände.
 
 Kostenbeispiel:
+
 - Lvl. 0: Obst auf einer Schale schweben lassen
 - Lvl. 1: Schwerkraft auf dem Boden unter einer Person verstärken
 - Lvl. 2:
@@ -127,6 +134,7 @@ Kostenbeispiel:
 Der Magier beeinflusst eine magische Struktur, wie etwa eine Glyphe, einen magischen Mechanismus, eine Magiequelle oder einen aktiven und präsenten Zauber. Er kann so den Effekt eines Zaubers oder einer Verzauberung verändern, dessen Stärke modifizieren oder dessen Quelle verändern.
 
 Kostenbeispiel:
+
 - Lvl. 0: Farbe eines magischen Lichtes ändern
 - Lvl. 1: Fallen-Glyphe entschärfen
 - Lvl. 2: Gelenkten Energieball übernehmen
@@ -139,6 +147,7 @@ Kostenbeispiel:
 Der Magier erfasst einen bestimmten Teil des Raums um ihn herum in variierendem Detailgrad. So können etwa bestimmte Sachen lokalisiert werden, Wege erkundet oder auch sich ein genauer Überblick über eine Situation verschafft werden.
 
 Kostenbeispiel:
+
 - Lvl. 0: Kleines Loch in der Wand erkunden
 - Lvl. 1: Entfernung zwischen zwei Punkten messen
 - Lvl. 2:
@@ -184,6 +193,7 @@ Kostenbeispiel:
 Der Magier beeinflusst die Lebensenergie eines Lebewesens. Diese Form der Höheren Magie ist einerseits in der Lage, Lebensenergie zu spenden, Menschen zu verjüngen und sogar das Alter selbst aufzuhalten. Auf der anderen Seite ist dieser Zauber in der Lage, Lebensenergie auszusaugen und zu absorbieren, ebenso wie Lebewesen altern und zu Staub zerfallen zu lassen, oder sogar die Toten wiederauferstehen zu lassen. Nur wenige Magier beherrschen diese Form der Magie und jeder einzelne verfügt über eine unvorstellbar große Macht.
 
 Kostenbeispiel:
+
 - Lvl. 0: Vorrübergehendes Altersmakel auf einer fremden Hand
 - Lvl. 1: Leben aus einem Lebewesen aussaugen
 - Lvl. 2: Gesicht für eine kurze Zeitspanne jünger erscheinen lassen
@@ -196,6 +206,7 @@ Kostenbeispiel:
 Der Magier formt den Raum nach seinem Willen. Genauso wie bei der Zeitmagie handelt es sich bei Raummagie um höhere Magie, die noch kaum erforscht ist und deren Potential zu einem Großteil im Dunkeln liegt. In der Praxis wird dieser Zauber meist dazu genutzt, Portale zwischen zwei Orten zu öffnen. Dabei muss mindestens ein Ort sich in Reichweite des Magiers befinden, während die anderen Orte bekannt und als klares Bild im Gedächtnis vorhanden sein müssen. Auch kann dieser Zauber für kurze Teleportationen aus strategischen Gründen benutzt werden.
 
 Kostenbeispiel:
+
 - Lvl. 0: Papierkugel teleportieren
 - Lvl. 1: Kleinen Gegenstand in direkter Reichweite teleportieren, zum Beispiel einen Geldbeutel
 - Lvl. 2: Raumsprung (Direkte Sichtlinie überqueren)
@@ -231,4 +242,3 @@ Kostenbeispiel:
 - Lvl. 3:
 - Lvl. 4: Zeit für eine kurze Periode verlangsamen
 - Lvl. 5:
-

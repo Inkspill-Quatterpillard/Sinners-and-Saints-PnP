@@ -1,4 +1,5 @@
 # Vor- und Nachteile im Kampf
+
 Kämpfe laufen nur selten völlig auf Augenhöhe ab. Oft muss sich ein Kämpfer gegen widrige Umstände durchsetzen. Dies wird durch Kampfmodifikatoren in Form von Vorteils- und Nachteilswürfen widergespiegelt. Ob ein Spieler einen Vor- oder Nachteil erhält, kann anhand folgender Liste nachvollzogen werden. Würde ein Spieler sowohl einen Vorteil als auch einen Nachteil erhalten, so negieren sich die Modifikatoren und die Probe wird normal durchgeführt. Ein Vorteil wird jedoch von zwei Nachteilen überwogen. In dem Fall würde der Spieler dennoch einen Nachteil erhalten und vice versa. Ein Spieler kann dabei allerdings jeweils nur einen Vor- oder Nachteilswurf erhalten.
 
 ## Nahkampfmodifikatoren

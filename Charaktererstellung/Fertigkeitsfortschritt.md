@@ -1,4 +1,5 @@
 # Fertigkeitsfortschritt
+
 Nach jedem abgeschlossenen Abenteuer oder Abschnitt in einer Kampagne erhält ein Spieler die Gelegenheit, in einer Reflexionsphase die Fertigkeiten seines Charakters weiterzuentwickeln. Der genaue Zeitpunkt wird dabei vom Spielleiter festgelegt.
 
 ## Verbesserung von Attributen
