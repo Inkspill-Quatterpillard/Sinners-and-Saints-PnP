@@ -25,6 +25,9 @@ Kinder und jugendliche haben ihre vollen körperlichen und geistigen Fähigkeite
 Entsprechend erhalten Kinder einen Malus von insgesamt 4 Punkten auf Stärke, Konstitution oder Intuition, während Jugendliche einen Malus von insgesamt 2 Punkten erhalten.
 Zum Ausgleich würfeln Kinder und Jugendliche ihr Glück mit Vorteil aus, weiterhin erhalten Kinder stets zusätzlich einen Bonus von 2 Punkten auf ihren Glückswert.
 
+*Erwachsen*:
+Ein erwachsener Charakter erhält 1 Verbesserungswurf, jedoch keine Mali.
+
 *Alterung*:
 Ein Charakter erhält seine erste Altersstufe, sobald er das Erwachsenenalter für seine Spezies überschreitet und erhält jedes Mal eine weitere Alterungsstufe, wenn sein Alter erneut den jeweiligen Alterungs-Wert überschreitet.
 Er erhält pro Alterungsstufe alle Reife-Boni sowie alle Mali durch Atrophie & Vergreisung.
