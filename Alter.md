@@ -15,7 +15,7 @@ Während bei Elfen der körperliche Verfall praktisch vernachlässigbar ist und 
 Zwerge hingegen zeigen sich gänzlich resolut gegen geistigen Verfall, während der körperliche später als bei den Menschen einsetzt.
 
 | Spezies | Kindheit | Jugend   | Erwachsen | Alterung      | Reife               | Atrophie & Vergreisung         |
-|--------:|:--------:|:--------:|:---------:|:-------------:|:--------------------|:-------------------------------|
+|:-------:|:--------:|:--------:|:---------:|:-------------:|:-------------------:|:------------------------------:|
 | Mensch  | Unter 15 | Unter 20 | Unter 40  | Alle 10 Jahre | 1 Verbesserungswurf | 1 Atrophie, 1 Vergreisungswurf |
 | Zwerg   | Unter 15 | Unter 20 | Unter 80  | Alle 10 Jahre | 1 Verbesserungswurf | 2 Atrophie                     |
 | Elf     | Unter 15 | Unter 80 | Unter 150 | Alle 20 Jahre | 1 Verbesserungswurf | 2 Vergreisungswürfe            |
@@ -28,7 +28,7 @@ Er erhält pro Alterungsstufe alle Reife-Boni sowie alle Mali durch Atrophie & V
 Wirf einen W20 gegen deinen INT- oder deinen KLU-Wert. Ist das Ergebnis höher als der aktuelle Wert, addiere einen Punkt auf den Wert.
 
 *Vergreisungswurf*:
-Wirf einen W100 gegen deinen SAN-Wert. Ist das Ergebnis höher, reduziere die Stabilität um 5 Punkte.
+Wirf einen W100 gegen deinen SAN-Wert. Ist das Ergebnis höher, reduziere die aktuelle und die maximale Stabilität um 5 Punkte.
 
 Nächster Punkt: [Spezies](https://github.com/Inkspill-Quatterpillard/Sinners-and-Saints-PnP/blob/main/Spezies.md)
 
