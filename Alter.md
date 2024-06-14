@@ -22,7 +22,7 @@ Zwerge hingegen zeigen sich gänzlich resolut gegen geistigen Verfall, während 
 
 *Kindheit und Jugend*:
 Kinder und jugendliche haben ihre vollen körperlichen und geistigen Fähigkeiten noch nicht erreicht.
-Entsprechend erhalten Kinder einen Malus von insgesamt 4 Punkten auf Stärke, Konsitution oder Intuition, während Jugendliche einen Malus von insgesamt 2 Punkten erhalten.
+Entsprechend erhalten Kinder einen Malus von insgesamt 4 Punkten auf Stärke, Konstitution oder Intuition, während Jugendliche einen Malus von insgesamt 2 Punkten erhalten.
 Zum Ausgleich würfeln Kinder und Jugendliche ihr Glück mit Vorteil aus, weiterhin erhalten Kinder stets zusätzlich einen Bonus von 2 Punkten auf ihren Glückswert.
 
 *Alterung*:
