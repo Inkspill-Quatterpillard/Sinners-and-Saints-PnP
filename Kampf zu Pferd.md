@@ -1,9 +1,0 @@
-# Kampf zu Pferd
-
-Greift ein Reiter in einen Kampf ein, so hat er zwei Möglichkeiten. Er kann einerseits einen regulären Nahkampf initiieren. Dafür nutzt er die Bewegungsreichweite seines Reittieres. Im Kampf befindet sich der Reiter aufgrund des Höhenvorteils in einer vorteilhaften Position. Dabei kann der Gegner anstelle des Reiters auch dem Reittier Schaden zufügen.
- 
-Mit einem trainierten Schlachtross oder einer Probe auf Reiten kann zudem auch ein Reiterangriff durchgeführt werden. Dies ist ein Kampfmanöver, mit dem der Reiter entweder an seinem Gegner vorbei reitet und ihn dabei angreift oder versucht, ihn niederzureiten.
- 
-Greift er den Gegner an, so kann er sich die halbe Bewegungsreichweite seines Pferdes zu einem beliebigen Ort fortbewegen, solange der Weg am Gegner vorbei führt. Ist das Ziel vorbereitet und nicht in einem Kampf involviert, kann es dem Angriff wie einer normalen Kampfinitiation begegnen. Der Kampf wird allerdings nach der Runde sofort beendet. Der Gegner befindet sich hierbei in einer unvorteilhaften Position. Dies kann mit bestimmten Kampftechniken und Manövern umgangen werden. Der variable Schaden des Reiters wird bei einem solchen Manöver verdoppelt (1W6+2 zu 2W6+2). Wird der Reiter oder das Pferd jedoch getroffen, kann der Reiter zu Boden geworfen werden oder das Pferd gestoppt werden und sogar stolpern und fallen. Befindet sich das Ziel des Reiterangriffs dagegen im Kampf, wird der Angriff wie ein Fernkampfangriff behandelt, dem das Ziel nur ausweichen kann, weil es abgelenkt ist. Hierbei wird auch der Schaden des Reiters verdoppelt. Der Reiter erhält einen Nachteil, weil sich das Ziel in Bewegung befindet.
- 
-Versucht ein Reiter, einen Fußsoldaten niederzureiten, ist eine erschwerte Probe auf Reiten abhängig vom Pferd erforderlich. Hierbei greift das Pferd anstelle des Reiters an und verursacht Schaden, der den Gegner zu Boden werfen kann.

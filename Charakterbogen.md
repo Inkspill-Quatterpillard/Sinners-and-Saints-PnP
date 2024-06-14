@@ -1,6 +1,7 @@
 # Charakterbogen
 
 ## Persönliche Informationen
+
 - **Name:** [Hier Name eintragen]
 - **Profession:** [Hier Profession eintragen]
 - **Alter:** [Hier Alter eintragen]
@@ -10,6 +11,7 @@
 - **Herkunft:** [Hier Herkunft eintragen]
 
 ## Attribute
+
 - **STR:** [Hier Wert eintragen]
 - **GES:** [Hier Wert eintragen]
 - **KLU:** [Hier Wert eintragen]
@@ -40,7 +42,7 @@
     <input type="text" id="religion">
     <label for="herkunft">Herkunft:</label>
     <input type="text" id="herkunft">
-    
+
     <label for="str">STR:</label>
     <input type="number" id="str">
     <label for="ges">GES:</label>
@@ -57,7 +59,7 @@
     <input type="number" id="int">
     <label for="wil">WIL:</label>
     <input type="number" id="wil">
-    
+   
     <button onclick="speichern()">Speichern</button>
   </form>
 </details>
@@ -71,7 +73,7 @@
     var spezies = document.getElementById('spezies').value;
     var religion = document.getElementById('religion').value;
     var herkunft = document.getElementById('herkunft').value;
-    
+
     var str = document.getElementById('str').value;
     var ges = document.getElementById('ges').value;
     var klu = document.getElementById('klu').value;
@@ -80,7 +82,7 @@
     var wah = document.getElementById('wah').value;
     var int = document.getElementById('int').value;
     var wil = document.getElementById('wil').value;
-    
+
     // Hier könntest du die gesammelten Daten weiterverarbeiten, z.B. in einer Datenbank speichern oder an einen Server senden
     console.log("Name:", name);
     console.log("Profession:", profession);
@@ -89,7 +91,7 @@
     console.log("Spezies:", spezies);
     console.log("Religion:", religion);
     console.log("Herkunft:", herkunft);
-    
+
     console.log("STR:", str);
     console.log("GES:", ges);
     console.log("KLU:", klu);
