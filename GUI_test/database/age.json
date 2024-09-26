@@ -1,0 +1,51 @@
+{
+    "Unter 15": {
+        "Adv_Luck": "1",
+        "total_penalty": "4",
+        "penalized_atrs": ["int", "kon", "str"],
+        "desc": "Insgesamt 4 Punkte werden von STR, KON und INT abgezogen. Würfel mit Vorteil auf Glück."
+    },
+    "Unter 20": {
+        "Adv_Luck": "1",
+        "total_penalty": "1",
+        "penalized_atrs": ["int", "kon", "str"],
+        "desc": "Insgesamt 1 Punkt werden von STR oder KON, sowie von INT abgezogen. Würfel mit Vorteil auf Glück."
+    },
+    "Unter 40": {
+        "Adv_Luck": "0",
+        "total_penalty": "0",
+        "penalized_atrs": [],
+        "desc": "Verbesserungswurf auf INT oder KLU."
+    },
+    "Unter 50": {
+        "Adv_Luck": "0",
+        "total_penalty": "1",
+        "penalized_atrs": ["ges", "kon", "str", "wah"],
+        "desc": "1 Punkt wird insgesamt von STR, KON, WAH oder GES abgezogen. Zwei Verbesserungswürfe auf INT oder KLU."
+    },
+    "Unter 60": {
+        "Adv_Luck": "0",
+        "total_penalty": "2",
+        "penalized_atrs": ["ges", "kon", "str", "wah"],
+        "desc": "2 Punkte werden insgesamt von STR, KON, WAH oder GES abgezogen. Drei Verbesserungswürfe auf INT oder KLU."
+    },
+    "Unter 70": {
+        "Adv_Luck": "0",
+        "total_penalty": "3",
+        "penalized_atrs": ["ges", "kon", "str", "wah"],
+        "desc": "3 Punkte werden insgesamt von STR, KON, WAH oder GES abgezogen. Vier Verbesserungswürfe auf INT oder KLU."
+    },
+    "Unter 80": {
+        "Adv_Luck": "0",
+        "total_penalty": "5",
+        "penalized_atrs": ["ges", "kon", "str", "wah"],
+        "desc": "5 Punkte werden insgesamt von STR, KON, WAH oder GES abgezogen. Fünf Verbesserungswürfe auf INT oder KLU."
+    },
+    "Über 80": {
+        "Adv_Luck": "0",
+        "total_penalty": "10",
+        "penalized_atrs": ["ges", "kon", "str", "wah"],
+        "desc": "10 Punkte werden insgesamt von STR, KON, WAH oder GES abgezogen, mit einem Minimum von 5 Punkten auf einen Wert. Sechs Verbesserungswürfe auf INT oder KLU."
+    }
+}
+

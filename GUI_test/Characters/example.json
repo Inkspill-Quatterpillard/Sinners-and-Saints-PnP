@@ -1,0 +1,86 @@
+{
+    "attributes": {
+        "primary": {
+            "STR": 10,
+            "GES": 10,
+            "KLU": 10,
+            "CHA": 10,
+            "KON": 10,
+            "WAH": 10,
+            "INT": 10,
+            "WIL": 10
+        },
+        "secondary": {
+            "HP": 10,
+            "SAN": 50,
+            "SPD": 10,
+            "LCK": 10
+        }
+    },
+    "age": {
+        "age": 25,
+        "agegroup:": "<40",
+        "description": "Long",
+        "bonus": 0
+    },
+    "species": {
+        "name": "Human",
+        "description": "Mammal",
+        "subtype": "Primate"
+    },
+    "religion": {
+        "name": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001"
+    },
+    "chracacteristics": {
+        "height": 6.0,
+        "weight": 180,
+        "hair": "brown",
+        "eyes": "blue"
+    },
+    "special_origin": {
+        "height": 6.0,
+        "weight": 180,
+        "hair": "brown",
+        "eyes": "blue"
+    },
+    "skills": {
+        "hero": {
+            "STR": 10,
+            "GES": 10,
+            "KLU": 10,
+            "CHA": 10,
+            "KON": 10,
+            "WAH": 10,
+            "INT": 10,
+            "WIL": 10
+        },
+        "general": {
+            "HP": 10,
+            "SAN": 50,
+            "SPD": 10,
+            "LCK": 10
+        }
+    },
+    "background": {
+        "name": "John Doe",
+        "height": 6.0,
+        "weight": 180,
+        "hair": "brown",
+        "eyes": "blue"
+    },
+    "equipment": {
+        "height": 6.0,
+        "weight": 180,
+        "hair": "brown",
+        "eyes": "blue"
+    },
+    "specials": {
+        "tricks": 6.0,
+        "techniques": 180,
+        "styles": "brown",
+        "spells": "blue"
+    }
+}
