@@ -386,8 +386,8 @@ _„Für die harten Schläge des Lebens.“_
 _„Ein glasklarer Fokus... bis die Dunkelheit kommt.“_
 - **Vorteil (Reaktion):** Vorteil für 2W4 Runden auf alle WIS-Proben und -Rettungswürfe.
 - **Nachteil:** Nach Ablauf erleidest du 1W6 Psychic Damage und bist für 1 KR frightened.
-#### Amphetamin
-_„Adrenalin pur.“_
+#### Anabolika
+_„Muskeln in Minuten - Für Minuten.“_
 - **Vorteil (Reaktion**): Deine Angriffe verursachen für 2W4 Runden +1 zusätzlichen Schaden (beliebiger Typ des Angriffs).
 - **Nachteil**: Nach Ablauf hast du für 1W4 Runden Nachteile auf alle Angriffs- und Schadenswürfe.
 #### Speed
