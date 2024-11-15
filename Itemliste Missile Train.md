@@ -156,6 +156,12 @@ _Dieser stylische, hochmoderne Körperpanzer kombiniert subtilen Schutz mit eine
 - **Schattentarnung**: Während du dich in dunklen oder verdunkelten Bereichen befindest, erhältst du Vorteil auf Stealth-Würfe. Wenn du stillstehst und in einem Bereich mit wenig oder gar keinem Licht bist, wirst du fast unsichtbar und kannst nur von Kreaturen gesehen werden, die über Dunkelsicht oder ähnliche Sinne verfügen.
 - **Stil und Charisma**: Der Samurai-Schattenanzug strahlt einen rebellischen, einzigartigen Stil aus. Du erhältst einen +2 Bonus auf Charisma-Würfe, wenn du mit NPCs interagierst, die deinen Stil schätzen könnten. Dies kann je nach Situation und Vorlieben der Umgebung variieren, aber die Ausstrahlung dieses Anzugs verleiht dir einen überzeugenden, selbstsicheren Auftritt.
 
+### Skelettschlüssel
+_Ein Universalschlüssel, geschnitzt aus den Fingerknochen eines legendären Diebes._
+
+**Effekt**: Du erhältst Vorteil auf alle Thieves' Tool-Proben, die du zum Entschärfen von Fallen oder zum Öffnen von Schlössern verwendest.
+
+
 ### „Tempus Angustum“ Taschenuhr
 Lässt den Träger einmal pro Short Rest **Misty Step in einer Bonus Aktion** zaubern.
 
@@ -195,7 +201,97 @@ _Eine mit flüssigen, schnelltrocknenden Zement gefüllte intelligente Granate, 
 - **Einbetoniert**: Ein Gegner, der in Zement eingehüllt wird, muss als Bonusaktion einen Stärke-Wurf (DC 14) machen. Bei einem Erfolg kann er sich befreien,
 - **Bauarbeiter**: Die Zementbombe kann alternativ dazu eingesetzt werden, einen 10*10 Fuß großen Würfel oder eine 20*5 Fuß lange Wand aus Beton zu erzeugen. Kreaturen, die sich im Bereich befinden, werden auf Seite geschoben.
 
+### Tränke
 
+#### Kühlwasser
+_„Die ultimative Erfrischung für heiße Sommertage oder die Feuer der Hölle.“_
+
+**Effekt**: Du erhältst Resistenz gegen Feuerschaden für 1 W4 KR und regenerierst 1W4 Trefferpunkte.
+
+**Beschreibung**: Diese eisblaue, prickelnde Flüssigkeit hat einen angenehm erfrischenden Geschmack, der an Minze und Zitrone erinnert. Beim Trinken breitet sich ein kühlender Effekt durch den Körper aus, der selbst die stärkste Glut erträglich macht
+
+### Kosmetika
+#### “Brick Wall Nail Polish” von IronFist
+**Effekt**: Eiserner Griff: Dieser langlebige Nagellack härtet deine Fingernägel zu unzerbrechlicher Stärke. Solange du ihn trägst, erhältst du bei Nahkampfangriffen ohne Waffe 1 zusätzlichen Punkt Bludgeoning-Schaden. Die Wirkung bleibt, bis der Lack sich abnutzt (1W4 KR).
+#### “MetalHead Hair Wax” von SteelGlint
+**Effekt**: Robuster Style: Dieses Haargel fixiert die Haare in einem stacheligen und robusten Look und gibt dir einen Hauch von Härte. Solange du es trägst, erhältst du 1 temporären Trefferpunkt für jeden Punkt deines Charismamodifikators. Diese temporären Trefferpunkte werden nur einmal pro Tag gewährt und halten, bis sie verbraucht oder ersetzt werden.
+#### “Neon Lips” von Glitz Industries
+**Effekt**: Elektrisierende Ausstrahlung: Ein Lippenstift mit knalliger Neonfarbe, der im Dunkeln leuchtet. Solange du diesen Lippenstift trägst, erhältst du Vorteil auf Persuasion-Checks gegen humanoide Kreaturen, die dich bemerken können, da dein außergewöhnlicher Stil die Aufmerksamkeit auf dich zieht. Die Wirkung hält 1W4 KR.
+#### “Nightrunner” von NeonVibe Corp.
+**Effekt**: Unsichtbare Spur: Wenn du dieses Parfum aufsprühst, maskierst du deinen Geruch für die nächsten 1W4 KR vollständig, was dir Vorteil auf Stealth-Checks gibt. Perfekt, um Feinde oder aggressive Wachdrohnen zu täuschen.
+#### “Skyline” von Horizon Scents
+**Effekt**: Erfrischender Aufschwung: Dieses Parfum riecht nach einer frischen Brise auf einem Wolkenkratzer. Es verleiht dir für 1W4 KR eine spürbare Leichtigkeit, die dich 5 Fuß höher springen lässt als gewöhnlich. Eine Flasche ist oft nur für eine Anwendung ausreichend.
+#### “Void Mascara” von NoirLine Beauty
+**Effekt**: Tiefer Blick: Diese tiefschwarze Mascara lässt deine Augen intensiver und bedrohlicher wirken. Solange du sie trägst, gewinnst du Vorteil auf Intimidation-Checks gegen humanoide Kreaturen. Perfekt, wenn du einen einschüchternden Auftritt hinlegen willst. Die Wirkung hält 1W4 KR.
+
+
+### Kleidung
+
+### Snacks
+#### Anti-Grav Kaugummi von BubbleBliss
+_„Einmal kauen, einmal fliegen.“_
+- **Effekt**: Levitate für 1 Runde (kein Konzentrationswurf erforderlich).
+- **Beschreibung**: Ein süßes Stück Kaugummi, das dich leicht wie eine Feder macht – perfekt für waghalsige Sprünge oder einen dramatischen Abgang.
+#### Chili-Pops von RedHot Treats
+_„Feuriger Geschmack, feuriger Schutz.“_
+- **Effekt**: Gewährt Resistenz gegen Cold Damage für 3 Runden.
+- **Beschreibung**: Ein kleiner, scharfer Lollipop, der dich gegen selbst die kältesten Angriffe schützt.
+#### Feuerfeste Gurken-Sandwiches von CukeCorp
+_„Wenn die Hitze steigt, bleib cool mit CukeCorp.“_
+- **Effekt**: Gewährt Resistenz gegen Feuerschaden für 3 Runden.
+- **Beschreibung**: Zwei Scheiben Weißbrot, eine perfekte Gurkenscheibe und ein Hauch von Magie – so langweilig, dass selbst das heißeste Feuer ausgeht.
+#### Holy Smoked Ramen von Divine Dining Co.
+_„Göttlicher Geschmack. Höllischer Schutz.“_
+- **Effekt**: Heilt 1W6 TP und gewährt Resistenz gegen Necrotic-Schaden für 3 Runden.
+- **Beschreibung**: Diese dampfende Schüssel Ramen enthält magische Brühe, die selbst die dunkelsten Energien abwehrt.
+#### Lucky Cracker von CrunchTime Inc.
+_„Knack die Kruste, knack die Magie.“_
+- **Effekt**: Heilt 1W4 TP und gewährt Resistenz gegen Poison-Schaden für 3 Runden.
+- **Beschreibung**: Diese krossen Cracker sind mit einer magischen Paste bestrichen, die deinen Körper vor allen möglichen Giften schützt.
+#### Mondschein-Wasser von LunarBrew
+_„Klarer als das Licht der Sterne.“_
+- **Effekt**: Hebt alle Zustände (wie Poisoned, Paralyzed oder Blinded) auf.
+- **Beschreibung**: Dieses sanft schimmernde Wasser löscht nicht nur deinen Durst, sondern auch deine Probleme.
+#### Schokonüsse von ChocoNova
+_„Schokolade macht alles besser – besonders, wenn du von einem Drachen gejagt wirst.“_
+- **Effekt**: Heilt 1W6 TP und hebt den Zustand Furcht auf.
+- **Beschreibung**: Die perfekte Mischung aus Schokolade und magisch knackigen Nüssen beruhigt selbst die wildesten Nerven.
+#### Thunfisch-Onigiri von SushiSynth
+_„Frisch aus der Datenbank des Geschmacks.“_
+- **Effekt**: Heilt 1W4 TP und gewährt für 1 Minute Vorteil auf Strength-Saving Throws.
+- **Beschreibung**: Ein herzhafter Reisbissen mit Thunfischfüllung – gibt dir die Kraft, Berge (oder Cyber-Walls) zu versetzen.
+#### Frost-Bonbons von IcePop Industries
+_„Eisige Frische für heiße Momente.“_
+- **Effekt**: Gewährt Resistenz gegen Feuerschaden für 3 Runden und verleiht kurzzeitig einen frischen Atem (gut für soziale Interaktionen!).
+- **Beschreibung**: Diese kleinen, eiskalten Bonbons löschen jede Flamme – und peinliche Gespräche.
+#### Wasabi-Erbsen (Höllenscharf)
+_Hergestellt mit einer Prise magischen Wasabi-Pulvers und einer geheimen Mischung aus Drachengewürzen, entfesseln sie die Fähigkeit, Feuer zu speien. Ideal für den spontanen Abenteurer-Snack – und den Moment, wenn Worte nicht ausreichen._
+
+**Effekte**: Wenn du eine Portion der Scharfen Wasabi-Nüsse isst (dauert 1 Bonusaktion):
+- **Feueratem**: Nachdem du die Erbsen gegessen hast, kannst du mit einer Bonusaktion einmalig Feuer auf ein Ziel im Umkreis von 30 Fuß ausstoßen. Das Ziel muss einen Schutzwurf von DC 13 auf Geschicklichkeit ablegen und erleidet bei einem misslungenen Schutzwurf 4d6 Feuerschaden, bei einem erfolgreichen Schutzwurf halb so viel Schaden.
+- **Nebenwirkung**: Der Geschmack ist so scharf, dass deine Augen für die Dauer des Effekts leicht tränen. Du erhältst Nachteil auf Würfe, um nichtmagische Illusionen oder kleine Details zu erkennen.
+#### Zielwasser-Schnaps von RedShot Distillery
+_„Ein Schuss für den perfekten Schuss.“_
+- **Effekt**: Gewährt Vorteil auf den nächsten Fernkampfangriff.
+- **Beschreibung**: Ein kleiner Flachmann mit starkem, brennendem Schnaps – für Schützen, die niemals daneben zielen wollen.
+
+
+
+### Drogen
+
+### Cocktails
+#### Bloody Mary
+Nach dem Trinken wird die Poison-Kondition geheilt und du erhältst 5 temporäre Trefferpunkte für 1W3 KR.
+#### Holy Hurricane
+Wenn du diesen Trank trinkst, erhältst du für 1W3 KR den Effekt des Segenszaubers (keine Konzentration erforderlich, wirkt nur auf dich). Dieser Trank ist eine dunkelblaue Flüssigkeit mit schwimmenden Goldflecken darin.
+#### Irish Car Bomb
+Dieser Cocktail explodiert beim Trinken oder beim Impact und verursacht 3d4+3 Force Damage (DEX DC13).
+#### Magic Margarita
+Nach dem Trinken dieses Trankes erhält der Anwender 2 Recovery Points ähnlich zur Arcane Recovery oder 2 sorcery points.
+#### Muscle Mojito
+Wenn du diesen Trank trinkst, erhältst du einen Bonus von +2 auf deinen Stärkewert bis zu einem Maximum von 20. Diese Erhöhung hält 1W3 KR lang an.
+#### Sex on the Beach
+Du erhältst 2d4 + 2 Trefferpunkte zurück, wenn du diesen Trank trinkst.
 
 
 
