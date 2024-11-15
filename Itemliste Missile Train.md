@@ -416,6 +416,13 @@ Wenn du diesen Trank trinkst, erhältst du einen Bonus von +2 auf deinen Stärke
 #### Sex on the Beach
 Du erhältst 2d4 + 2 Trefferpunkte zurück, wenn du diesen Trank trinkst.
 
+### Granaten
+#### Rauchgranate (Wurf, 30/90 Fuß)
+Einmal aktiviert, erzeugt diese Granate eine dichte, farbige Rauchwolke, die für **1W4 Runden in einem Radius von 15 Fuß** bleibt. Kreaturen im Rauch gelten als blinded für Sichtlinien und Angriffe durch oder innerhalb des Rauchs haben Nachteil.
+#### Blendgranate (Wurf, 30/90 Fuß)
+Beim Aufprall setzt die Granate einen intensiven Lichtblitz frei. Alle Kreaturen in einem **Radius von 15 Fuß**, die in die Richtung der Explosion sehen, müssen einen **Constitution Saving Throw (DC 13)** machen. Bei einem Fehlschlag werden Kreaturen **blinded** bis zum Ende ihrer nächsten Runde.
+#### Splittergranate (Wurf, 30/90 Fuß)
+Diese tödliche Granate explodiert beim Aufprall und schickt scharfe Splitter durch die Luft. **Alle Kreaturen im Radius von 10 Fuß** müssen einen **Dexterity Saving Throw (DC 14)** machen. Bei einem Fehlschlag erleiden alle Kreaturen **3W6 Piercing Damage**, bei einem Erfolg halben Schaden.
 
 
 ## Cyberware
