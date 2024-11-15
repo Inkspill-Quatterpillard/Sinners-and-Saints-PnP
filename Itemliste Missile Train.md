@@ -80,6 +80,15 @@ _Eine elegante, kleine Pistole, die mit speziellen Betäubungsspritzen geladen i
 - **Betäubungseffekt**: Wenn das Ziel von der Spritze getroffen wird, muss es einen Constitution Saving Throw (DC 14) bestehen. Bei einem Misserfolg verfällt das Ziel sofort in einen tiefen Schlaf, der bis zu 1W6 KR anhält, oder bis das Ziel geweckt wird (z. B. durch Erschütterung oder Schaden). Wesen, die immun gegen Schlaf-Effekte sind, sind nicht betroffen.
 - **Ladungen**: Die Pistole ist mit einem Magazin ausgestattet, das 3 Spritzen fasst, bevor es nachgeladen werden muss.
 
+### Wellenbrecher-Katana
+_„So fließend wie Wasser, so tödlich wie die Gischt einer Sturmwelle.“_
+
+Dieses wunderschöne Katana hat eine schimmernde Klinge aus flüssigem Wasser und einen Griff aus poliertem Elfenbein, verziert mit wellenförmigen Gravuren.
+-	**Angriff**: Fügt 1W8 Slashing Damage und 1W6 Cold Damage zu.
+-	**Wellenbruch** (1/Long Rest): Du kannst die Kraft einer tosenden Welle entfesseln: Alle Kreaturen in einem 15-Fuß-Kegel müssen einen Strength Saving Throw (DC 15) machen. Bei Fehlschlag werden die Kreaturen5 Fuß zurückgestoßen und erleiden 2W8 Cold Damage.
+-	**Wellentanz**: Wenn du das Katana hältst, kannst du dich mit der Eleganz eines Flusses bewegen:** +10 Fuß Bewegung**.
+
+
 ### Zugführer-Maschinengewehr 
 _Dieses schwere, archaische MG ist ein Relikt einer längst vergangenen Zeit. Es ist massiv und massiv schwer zu kontrollieren. Die Waffe erfordert Kraft und ein bisschen Liebe, um den Charme der Ostfront über dem Feind zu entfesseln – wenn sie nicht blockiert._
 **Eigenschaften**:
@@ -112,6 +121,11 @@ _Dieser kunstvoll gestaltete Damenfächer ist aus feinem, widerstandsfähigem Ma
 **Effekte**:
 - **Tänzelnder Schlag**: Wenn du mit dem Fächer einen erfolgreichen Angriff ausführst, kannst du als Bonusaktion einen zusätzlichen Angriff mit Nachteil ausführen. Du wirfst dabei deinen Gegner kurzzeitig aus dem Gleichgewicht – selbst wenn der Schlag verfehlt, erhält das Ziel Nachteil auf den nächsten Angriff gegen dich.
 - **Kühle Brise (1 Ladung):** Der Fächer kann als Bonusaktion leicht gewedelt werden, um eine kurze, erfrischende Brise zu erzeugen. Dadurch erhältst du 1W4 temporäre Trefferpunkte. Die Ladung wird am Ende einer langen Rast wiederhergestellt.
+
+### Fernglas
+_Ein einfaches, aber hochwertiges Fernglas, ideal für Beobachtungen und taktische Entscheidungen._
+
+**Effekt**: Erlaubt dir, Objekte oder Kreaturen in bis zu 1.000 Fuß Entfernung genau zu betrachten. Gibt Vorteil auf Perception-Proben, wenn du es verwendest.
 
 ### Greifhaken
 _Ein hochentwickeltes, kompaktes Gerät, das bei Abenteurern, Dieben und Agenten gleichermaßen beliebt ist. Der Greifhaken ermöglicht es seinem Träger, sich schnell an hohe oder weit entfernte Orte zu begeben, Hindernisse zu überwinden oder aus brenzligen Situationen zu entkommen._
@@ -180,7 +194,20 @@ _Ein hochentwickeltes Visier, das speziell für die Verfolgung von Zielen unter 
 
 
 
+
 ## Consumables
+
+### Dämonenherz
+_„Es schlägt weiter – für dich.“_
+
+Ein pulsierendes, organisches Herz, durchdrungen von dämonischer Energie. Trotz seines grotesken Aussehens gewährt es dem Träger die Fähigkeit, Lebensenergie aus der Dunkelheit zu schöpfen.
+
+**Effekt**: Als Reaktion, wenn du Schaden erleidest, kannst du einen Hit Die ausgeben, um HP zu regenerieren (Würfle den Hit Die und addiere deinen Constitution-Modifikator).
+
+### Deathclaw-Herz
+_„Das Herz eines Monsters – nun schlägt es in dir.“_
+
+**Effekt**: Als Aktion, wenn du das Herz konsumierst, erhältst du für die nächsten 1W3 Runden eine **Schreckliche Präsenz**. Kreaturen in einem 15-Fuß-Radius, die dich sehen, müssen einen Wisdom Saving Throw (DC 14) bestehen. Bei einem Fehlschlag sind Sie frightened für die Dauer der Fähigkeit.
 
 ### Duct Tape
 _Ein robustes und vielseitiges Klebeband, das nicht nur Gegenstände repariert, sondern auch als improvisiertes Fesselmateriel dient. In den Händen eines geschickten Abenteurers kann es selbst die zähesten Gegner in ihrer Bewegungsfreiheit einschränken._
@@ -200,8 +227,17 @@ _Weil es so prickelt in die Bauchnabel…_
 - Bei einem kritischen Treffer zerbricht die Flasche, und der Gegner wird für eine Runde „verlangsamt“ (speed halbiert), da die Kälte ihn durchdringt und seine Bewegungen lähmt.
 - **Beschwipster Mut**: Wenn man die Gekühlte Sektflasche öffnet und einen tiefen Schluck nimmt, entfaltet sich ein magischer Effekt. Für die nächsten 3 Kampfrunden erhältst du** +1 auf AC und Advantage auf Charisma-Würfe**, da die prickelnde Kälte deinen Mut erfrischt. Allerdings hast du **Nachteil auf Dexterity-Würfe** durch die leichte Taumeligkeit.
 
+### Jadeherz
+_Dieses smaragdgrüne Herz scheint von innen zu glühen und pulsiert schwach mit magischer Energie._
+**Effekt**: Einmal pro Short Rest, kannst du das Jadeherz verwenden, um einen Spellslot der 1. Stufe zurückzugewinnen.
+
+
 ### "Lucky Strike" Zigaretten
 **Effekt**: Diese Zigarette hat angeblich Glück bringende Eigenschaften, die die Chancen in riskanten Situationen verbessern. Solange man sie raucht, kann der Nutzer einmal pro Tag einen Wurf wiederholen (er muss das zweite Ergebnis nehmen).
+
+### Naga-Gift
+_Eine dunkle, schimmernde Flüssigkeit, aufbewahrt in einer kleinen Glasphiole, die leicht nach Bittermandeln riecht._
+- **Effekt**: Dieses Gift kann auf eine Waffe aufgetragen werden (Bonusaktion). Der nächste Treffer der Waffe verursacht zusätzlich 3W6 Poison Damage. Das Ziel muss einen Constitution Saving Throw (DC 15) bestehen, sonst ist es poisoned. Es kann diesen Save nach dem Ende seiner Runde wiederholen.
 
 ### Notfall Sekunden-Zement-Bombe
 _Eine mit flüssigen, schnelltrocknenden Zement gefüllte intelligente Granate, für Notfallreparaturen am Zug – oder an deinen Gegnern._
