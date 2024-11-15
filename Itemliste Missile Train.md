@@ -203,12 +203,50 @@ _Eine mit flüssigen, schnelltrocknenden Zement gefüllte intelligente Granate, 
 
 ### Tränke
 
+#### Heiltrank (Blutrot)
+_„Lebenskraft in flüssiger Form.“_
+
+**Effekt**: Stellt 2W4 + 2 Trefferpunkte wieder her.
+
+**Beschreibung**: Eine dickflüssige, tiefrote Substanz, die leicht nach Eisen schmeckt. Sie wärmt sofort, wenn sie die Kehle hinunterrinnt, und weckt ein Gefühl von Vitalität.
 #### Kühlwasser
 _„Die ultimative Erfrischung für heiße Sommertage oder die Feuer der Hölle.“_
 
 **Effekt**: Du erhältst Resistenz gegen Feuerschaden für 1 W4 KR und regenerierst 1W4 Trefferpunkte.
 
 **Beschreibung**: Diese eisblaue, prickelnde Flüssigkeit hat einen angenehm erfrischenden Geschmack, der an Minze und Zitrone erinnert. Beim Trinken breitet sich ein kühlender Effekt durch den Körper aus, der selbst die stärkste Glut erträglich macht
+
+#### Polymorph-Trank (Braun)
+_„Verwandle dich in die Kreatur deiner Träume… oder Albträume.“_
+
+**Effekt**: Du kannst für bis zu 1 Stunde einen Polymorph-Zauber auf dich selbst anwenden. (DC 14, um gegen Verwandlung zu widerstehen, falls unerwünscht).
+
+**Beschreibung**: Diese trübe, braune Flüssigkeit riecht unangenehm nach nassem Fell und schmeckt nicht viel besser. Aber die Verwandlung ist es wert!
+#### Trank der leuchtenden Haut (Grünblau fluoreszierende Flüssigkeit)
+„Erhelle die Dunkelheit – und deine Ausstrahlung.“
+
+**Effekt**: Deine Haut beginnt für 1 Stunde in einem sanften, grünblauen Licht zu leuchten, das 10 Fuß erhellt. Du erhältst außerdem Vorteil auf Charisma-Würfe in sozialen Interaktionen, solange das Leuchten anhält.
+
+**Beschreibung**: Der Trank schmeckt wie erfrischender Minztee, und das Leuchten verbreitet ein Gefühl von Frieden und Faszination.
+#### Schlaftrunk (Blaue, dickflüssige Flüssigkeit)
+_„Schlaf dich aus… ob du willst oder nicht.“_
+
+**Effekt**: Die Kreatur muss einen CON Save (DC 14) bestehen, oder sie fällt für 1 Minute in einen tiefen Schlaf. (Unwirksam gegen Kreaturen, die immun gegen Schlafmagie sind).
+
+**Beschreibung**: Die zähflüssige, blaue Flüssigkeit hat einen süßen, beruhigenden Geschmack – wie warmer Honig – und wirkt sofort entspannend, fast betäubend.
+
+#### Trank der Levitation (Gelbe, kleberartige Flüssigkeit)
+_„Hoch hinaus mit der Kraft der Leichtigkeit.“_
+
+**Effekt**: Verleiht dir für 10 Minuten die Effekte des Zaubers Levitate.
+
+**Beschreibung**: Diese zähe, gelbe Flüssigkeit klebt an der Zunge, fühlt sich aber erstaunlich leicht an, sobald sie geschluckt ist – ein prickelndes Gefühl der Schwerelosigkeit folgt.
+#### Wahrheitsserum (Leuchtende, klare Flüssigkeit)
+_„Dein Wille gehört mir – nur für eine Frage.“_
+
+**Effekt**: Eine Kreatur, die diesen Trank trinkt, muss einen WIS Save (DC 15) bestehen, sonst kann sie für 10 Minuten die Unwahrheit nicht sprechen.
+
+**Beschreibung**: Die klare, leuchtende Flüssigkeit hat keinen Geschmack, aber sie hinterlässt ein merkwürdiges Gefühl von Offenheit und Ehrlichkeit im Kopf.
 
 ### Kosmetika
 #### “Brick Wall Nail Polish” von IronFist
@@ -226,6 +264,59 @@ _„Die ultimative Erfrischung für heiße Sommertage oder die Feuer der Hölle.
 
 
 ### Kleidung
+#### Air Jordans
+_„Für die hohen Sprünge im Leben.“_
+- **Effekt**: Verdoppelt deine Sprungreichweite.
+- **Beschreibung**: Diese schicken Sneakers sind nicht nur bequem, sondern auch mit einer kleinen Prise Schwerkraftmagie versehen.
+#### Gasmaske
+_„Wenn die Luft schwer wird, atme leicht.“_
+- **Effekt**: Filtert schädliche Luft; Immunität gegen Giftgas und ähnliche Effekte.
+- **Beschreibung**: Ein futuristisches Design, das Stil und Funktionalität vereint – für die Modebewussten unter den Überlebenskünstlern.
+#### Geladene Gummistiefel
+_„Immer auf der Höhe der Elektrizität.“_
+- **Effekt**: Elektrisiert Wasserflächen, auf denen du stehst, und verursacht 1W6 Lightning Damage an Kreaturen im Kontakt mit derselben Wasserfläche.
+- **Beschreibung**: Diese robusten Stiefel funkeln vor Energie – im wahrsten Sinne des Wortes.
+#### Gelber Regenmantel
+_„Regen kann dir nichts anhaben, wenn du bereits nass bist.“_
+- **Verflucht**: Wird automatisch ausgerüstet
+- **Effekt (Fluch):** Du bist ständig nass, und wenn du dich bewegst, hinterlässt du eine Pfütze.
+- **Beschreibung**: Sieht aus wie ein normaler Regenmantel, aber die Magie läuft irgendwie… falsch herum.
+#### Glitzernder Overall
+_„Strahlen wie ein Stern, strahlen wie ein Panzer.“_
+- **Effekt**: Gewährt dir +2 AC, aber macht dich gleichzeitig für alle Gegner leicht sichtbar (Nachteil auf Stealth-Würfe).
+- **Beschreibung**: Dieser glitzernde, diamantbesetzte Overall bringt dich in den Mittelpunkt der Aufmerksamkeit – ob du willst oder nicht.
+#### Melone des Mondänen Gentleman
+_„Ein Hut macht den Mann. Dieser Hut macht ihn unwiderstehlich.“_
+- **Effekt**: Setzt deinen Charisma-Wert auf 18, solange du ihn trägst.
+- **Beschreibung**: Dieser elegante, glänzende Hut verleiht dir den Charme eines klassischen Filmstars.
+#### Satin-Abendhandschuhe
+_„Ein Hauch von Eleganz, ein Hauch von Verführung.“_
+- **Effekt**: Bei einem kritischen Treffer wird die getroffene Kreatur für 1 Minute gecharmed (DC 14 WIS Save, um den Effekt zu widerstehen).
+- **Beschreibung**: Diese seidigen Handschuhe schreien Luxus – und Manipulation.
+#### Sommerkleid
+_„Bleib cool, egal wie frostig die Lage wird.“_
+- **Effekt**: Gewährt Resistenz gegen Cold Damage.
+- **Beschreibung**: Dieses luftige Kleid in Pastellfarben flüstert Sommer und gibt dir Warme Gedanken, selbst wenn die Temperaturen es nicht tun.
+#### Schwarzer Hoodie
+_„In der Masse oder im Schatten – so unsichtbar wie dein Stil.“_
+- Effekt: Gewährt Vorteil auf Stealth-Würfe, wenn du dich in einer Menschenmenge oder in einem dunklen Bereich befindest.
+- **Beschreibung**: Schlicht, unauffällig und mit extra tiefem Kapuzenrand – der perfekte Begleiter für jede Schattenmission.
+#### Tobendes Tank Top
+_„Cool aussehen, heftig zuschlagen.“_
+- **Verflucht**: Wird automatisch ausgerüstet
+- **Effekt**: +2 auf Nahkampfangriffsschaden. Wenn du getroffen wirst, musst du einen WIS Save (DC 12) bestehen, sonst verfällst du in einen Rage-Zustand (wie beim Barbar).
+- **Rage**: Während du wütest, erhältst du die folgenden Vorteile, wenn du keine schwere Rüstung trägst:
+- Du hast einen Vorteil bei Stärkeproben und Stärkewürfen.
+- Wenn du einen Angriff mit einer Nahkampfwaffe mit Stärke ausführst, erhältst du einen Bonus von +2 auf den Schadenswurf. Dieser Bonus steigt mit deinem Level.
+- Du bist resistent gegen Hieb-, Stich- und Schnittwunden.
+- Wenn du in der Lage bist, Zauber zu wirken, kannst du sie während deiner Wut nicht wirken oder dich darauf konzentrieren.
+- Deine Wut hält 1 Minute an. Sie endet vorzeitig, wenn du bewusstlos wirst oder wenn dein Zug endet und du seit deinem letzten Zug keine feindliche Kreatur angegriffen oder Schaden genommen hast. Du kannst deine Wut auch in deinem Zug als Bonusaktion beenden.
+- **Beschreibung**: Ein schlichtes, sportliches Tank Top, das den inneren Berserker weckt – ob du willst oder nicht.
+#### Zauberhafter Zylinder
+_„Ein echter Klassiker – mit einem magischen Twist.“_
+- **Effekt**: Du kannst einmal pro Tag den Zauber Find Familiar wirken (beschwört ein Kaninchen).
+- **Beschreibung**: Ein schwarzer, hochglänzender Zylinder mit einem versteckten Geheimnis… oder Kaninchen, je nachdem.
+
 
 ### Snacks
 #### Anti-Grav Kaugummi von BubbleBliss
