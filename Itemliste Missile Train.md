@@ -128,6 +128,13 @@ _Ein ikonisches futuristisches Motorrad in einem blutroten Farbton. The Streets 
 - **Slide**: Du kannst als Bonusaktion mit deinem Motorrad sliden, während du das Motorrad fährst. Du musst eine Vehicle-Probe (DC 12) bestehen und alle Angriffe auf dich diese Runde erhalten einen Nachteil.
 - Während du das Motorrad nutzt, kannst du mit **Vorteil alle Dexterity Saving Throws** gegen Angriffe ausführen, die auf deine Beweglichkeit abzielen (z. B. AoE-Angriffe oder Angriffe, die du durch deine schnelle Bewegung vermeiden möchtest).
 
+### Kiroshi-Schlafbrille
+_Die legendäre Kiroshi-Schlafbrille vereint Komfort und Technologie auf höchstem Niveau. Ausgestattet mit den bahnbrechenden Matsushima-Kiroshi Optics, bietet sie nicht nur absolute Dunkelheit für einen tiefen und erholsamen Schlaf, sondern auch eine hochmoderne Nachtsichtfunktion für nächtliche Abenteuer. Mit einem einfachen Befehl kann der Träger die Brille zwischen Schlaf- und Nachtsichtmodus umschalten, um in völliger Dunkelheit klar zu sehen._
+
+**Eigenschaften**:
+- **Schlafmodus**: Die Kiroshi-Schlafbrille blockiert jegliches Licht und schafft eine völlig lichtfreie Umgebung für erholsamen Schlaf. Der Träger gilt als “blind“, solange dieser Modus aktiviert ist, was ihn gegen optische Reize und helles Licht unempfindlich macht.
+- **Nachtsichtmodus**: Wenn die Nachtsichtfunktion aktiviert wird, erhält der Träger Dunkelsicht bis zu 60 Fuß, und kann sowohl bei magischer als auch nicht-magischer Dunkelheit normal sehen. Die Sicht in dieser Dunkelheit ist in Graustufen, aber klar und scharf, was eine natürliche Orientierung ohne zusätzliche Lichtquelle ermöglicht.
+
 ### Magnetschuhe
 _Diese robusten Stiefel sind mit speziellen Magneten ausgestattet, die den Träger sicher an Böden, Wänden und sogar Decken haften lassen. Sie verleihen dir außergewöhnliche Kontrolle über deine Bewegung, auch in den herausforderndsten Umgebungen._
 - Du ignorierst schwieriges Terrain.
@@ -141,12 +148,6 @@ _„Dies ist mein Zug und dieser Zug wird niemals pünktlich kommen.“_
 - Alle Kreaturen (einschließlich des Trägers) in einem Umkreis von 30 Fuß erleben eine erhöhte Chance auf Pech. Schon eine gewürfelte 2 oder 3 zählt für sie als kritischer Fehlschlag.
 - Diese Aura der Pechsträhne kann nicht abgeschüttelt oder neutralisiert werden, solange die Mütze getragen wird.
 
-### Kiroshi-Schlafbrille
-_Die legendäre Kiroshi-Schlafbrille vereint Komfort und Technologie auf höchstem Niveau. Ausgestattet mit den bahnbrechenden Matsushima-Kiroshi Optics, bietet sie nicht nur absolute Dunkelheit für einen tiefen und erholsamen Schlaf, sondern auch eine hochmoderne Nachtsichtfunktion für nächtliche Abenteuer. Mit einem einfachen Befehl kann der Träger die Brille zwischen Schlaf- und Nachtsichtmodus umschalten, um in völliger Dunkelheit klar zu sehen._
-
-**Eigenschaften**:
-- **Schlafmodus**: Die Kiroshi-Schlafbrille blockiert jegliches Licht und schafft eine völlig lichtfreie Umgebung für erholsamen Schlaf. Der Träger gilt als “blind“, solange dieser Modus aktiviert ist, was ihn gegen optische Reize und helles Licht unempfindlich macht.
-- **Nachtsichtmodus**: Wenn die Nachtsichtfunktion aktiviert wird, erhält der Träger Dunkelsicht bis zu 60 Fuß, und kann sowohl bei magischer als auch nicht-magischer Dunkelheit normal sehen. Die Sicht in dieser Dunkelheit ist in Graustufen, aber klar und scharf, was eine natürliche Orientierung ohne zusätzliche Lichtquelle ermöglicht.
 
 ### Samurai-Suit
 _Dieser stylische, hochmoderne Körperpanzer kombiniert subtilen Schutz mit einer unvergleichlichen Ästhetik. Der elegante Anzug ist aus hochwertigen, mattschwarzen Materialien gefertigt und trägt stolz das dezent aufgedruckte Logo der legendären Band Samurai – eine brennende japanische Teufelsmaske. Die Details des Logos schimmern rot und orange, als würden sie selbst in Flammen stehen, doch in Schatten verschwindet es beinahe vollständig, und der Träger wird eins mit der Dunkelheit._
