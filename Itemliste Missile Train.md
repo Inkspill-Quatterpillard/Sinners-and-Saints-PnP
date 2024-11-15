@@ -3,6 +3,13 @@
 
 
 ## Waffen
+### E-Gitarre „Stormstriker“
+_„Mit einem einzigen Riff spürst du die Macht des Donners – und alle anderen auch.“_ 
+- **Improvisierte Waffe:** 1d6 bludgeoning+CHA
+- **Klang des Donners (einmal pro Short Rest):** Als Action kannst du einen mächtigen Akkord spielen, der alle Kreaturen in einem 15-Fuß-Kegel vor dir dazu zwingt, einen Dexterity Saving Throw (DC = 8 + dein Charisma-Modifikator + dein Proficiency-Bonus) zu bestehen. Bei einem Fehlschlag erleiden sie 1W8 Thunder Damage und werden 10 Fuß zurückgeschleudert. Bei einem Erfolg erleiden sie nur halben Schaden und werden nicht zurückgestoßen.
+- **Riff der Inspiration (einmal pro Short Rest):** Wenn du mit der Gitarre spielst und die Fähigkeit „Bardic Inspiration“ verwendest, kannst du den Würfel einmalig verdoppeln (z. B. 1W6 → 2W6). 
+
+
 ### Fahrkarten-Tarot, Wurfwaffe
 _Ein Set von drei Fahrkarten und Bahncards, die so scharf schneiden wie die Stimmen übellauniger Schaffner, wenn sie „Fahrkarten bitte!“ durch die zweite Klasse bellen. Diese magischen Karten durchdringen ihre Ziele nicht nur mit scharfem Schnitt, sondern entfalten dabei zufällige, magische Effekte, die das Schicksal ihrer Opfer besiegeln._
 
