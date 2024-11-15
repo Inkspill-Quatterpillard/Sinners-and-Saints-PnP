@@ -369,6 +369,30 @@ _„Ein Schuss für den perfekten Schuss.“_
 
 
 ### Drogen
+#### Crack
+„_Ein Rausch, der Schmerzen wegbläst – für einen Moment.“_
+- **Vorteil (Reaktion):** Heilt 2W6 Trefferpunkte sofort.
+- **Nachteil:** Du erhältst fortan einen Nachteil auf Constitution Saving Throws.
+#### Weed
+_„Chill dich magisch.“_
+- **Vorteil (Reaktion):**  Du erhältst einen Spellslot der 1. Stufe zurück.
+- **Nachteil:** Du hast einen Nachteil auf Würfe, um die Konzentration beim Zaubern zu bewahren.
+#### Heroin
+_„Für die harten Schläge des Lebens.“_
+-** Vorteil (Reaktion):**  Du erhältst für 2W4 Runden Resistenz gegen physischen Schaden (bludgeoning, piercing, slashing).
+- **Nachteil:** Nach Ablauf erhältst du 1 Punkt Exhaustion 
+#### Koks
+_„Ein glasklarer Fokus... bis die Dunkelheit kommt.“_
+- **Vorteil (Reaktion):** Vorteil für 2W4 Runden auf alle WIS-Proben und -Rettungswürfe.
+- **Nachteil:** Nach Ablauf erleidest du 1W6 Psychic Damage und bist für 1 KR frightened.
+#### Amphetamin
+_„Adrenalin pur.“_
+- **Vorteil (Reaktion**): Deine Angriffe verursachen für 2W4 Runden +1 zusätzlichen Schaden (beliebiger Typ des Angriffs).
+- **Nachteil**: Nach Ablauf hast du für 1W4 Runden Nachteile auf alle Angriffs- und Schadenswürfe.
+#### Speed
+_„Ein Hauch der Geschwindigkeit.“_
+- **Vorteil** (**Reaktion**): Vorteil auf einen Dexterity Saving Throw deiner Wahl.
+- **Nachteil**: Du erhältst nach dem Effekt 1 Punkt Exhaustion.
 
 ### Cocktails
 #### Bloody Mary
