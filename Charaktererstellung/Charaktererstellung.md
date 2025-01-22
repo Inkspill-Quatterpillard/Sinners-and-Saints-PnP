@@ -138,9 +138,9 @@ Die Stabilitätspunkte eines Charakters werden berechnet, indem man die Hälfte 
 
 ### Magiepunkte
 
-Die Magiepunkte eines Charakters werden berechnet, indem man den halben Willenskraft-Wert mit einem Viertel des höchsten Attribut aus Charisma, Intuition oder Klugheit addiert.
+Die Magiepunkte eines Charakters werden berechnet, indem man den halben Willenskraft-Wert mit einem Fünftel des höchsten Attribut aus Charisma, Intuition oder Klugheit addiert.
 
-WIL/2 + (< Charisma; Intuition; Klugheit)/4
+WIL/2 + (< Charisma; Intuition; Klugheit)/5
 
 ### Glück
 
@@ -184,9 +184,9 @@ Der Schadensbonus wird auf jeden Nahkampfangriff, egal ob bewaffnet oder unbewaf
 
 ## Wundschwelle
 
-Die Wundschwelle entscheidet, wie viele Trefferpunkte der Charakter auf einen Schlag verlieren muss, um eine Wunde davon zu tragen. Die Wundschwelle beträgt ein Viertel der maximalen TP.
+Die Wundschwelle entscheidet, wie viele Trefferpunkte der Charakter auf einen Schlag verlieren muss, um eine Wunde davon zu tragen. Die Wundschwelle beträgt ein Fünftel der maximalen TP.
 
-TP/4 = Wundschwelle
+TP/5 = Wundschwelle
 
 ## [Fertigkeiten](Fertigkeiten.md)
 
