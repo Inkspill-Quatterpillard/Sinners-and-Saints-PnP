@@ -4,27 +4,27 @@
 
 Es gibt sechs Disziplinen, die verschiedene Bereiche der Arkanistik abbilden. Erlernt ein Charakter eine dieser Fertigkeiten, ermöglicht es diesem, magische Zauber aus diesem Bereich zu lernen. Diese Fertigkeiten können beliebig miteinander kombiniert werden, um tiefergehendes Wissen in den arkanen Künsten zu erlangen. Magier, die alle sechs Disziplinen meistern, sind als Arkanisten bekannt und berüchtigt.
 
-### Elementaristik (¼ WIL)
+### Elementaristik (⅕ WIL)
 
 Die Lehre, Energie zu kontrollieren, zu manipulieren und zu wandeln
 
-### Veränderung (¼ WIL)
+### Veränderung (⅕ WIL)
 
 Die Lehre, Materie zu verändern
 
-### Verzauberung (¼ WIL)
+### Verzauberung (⅕ WIL)
 
 Die Lehre, magische Strukturen zu erschaffen und mit Materie zu verbinden
 
-### Mystik (¼ WIL)
+### Mystik (⅕ WIL)
 
 Die Lehre, Magie selbst zu beeinflussen, Magische Strukturen und Konstrukte zu entschlüsseln und zu manipulieren
 
-### Illusion (¼ WIL)
+### Illusion (⅕ WIL)
 
 Die Lehre, Materie zu imitieren
 
-### Psychomantie (¼ WIL)
+### Psychomantie (⅕ WIL)
 
 Die Lehre, die Psyche von Lebewesen zu entschlüsseln, zu manipulieren oder zu kontrollieren
 
