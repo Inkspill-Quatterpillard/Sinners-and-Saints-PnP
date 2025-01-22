@@ -116,7 +116,7 @@ Wissen über Religion, Liturgien, Kulte und die religiösen Institutionen, sowie
 
 Wissen um die Nuancen, sowie über verschiedene Dialekte und Komplexitäten der Muttersprache eines Charakters. Die Fertigkeit kann dazu benutzt werden, komplexe und anspruchsvolle Texte zu verstehen, sowie sprachliche Rätsel oder Kodierungen zu erkennen.
 
-### Wissenschaften (⅕ KLU) [Spezialisierung notwendig]
+### Wissenschaften (¼ KLU) [Spezialisierung notwendig]
 
 Theoretisches Wissen in einem bestimmten Bereich der Wissenschaft. Hier kann ein beliebiges Fachgebiet angegeben werden, um tiefergehende Kenntnisse im theoretischen Bereich, wenn auch nicht im praktischen Bereich zu symbolisieren. Besitzt jemand also Wissenschaft (Medizin), so kennt er sich mit dem menschlichen Körper und den verschiedenen Seuchen aus, jedoch nicht unbedingt mit deren Behandlung, geschweige denn der Durchführung komplexerer Operationen. Die Fertigkeit ist also ergänzend gedacht.
 
