@@ -222,7 +222,7 @@ Alle Fertigkeiten sind unter Liste der Fertigkeiten und alle Heldenfertigkeiten 
 
 ### Persönliche Interessen
 
-Neben den Fertigkeiten, die ein Charakter durch seine Profession meistert, können zudem noch Punkte auf **persönliche Interessen** des Charakters vergeben werden. Diese Fertigkeitspunkte entsprechen dem doppelten KLU-Wert oder INT-Wert eines Charakters und können auf beliebig viele Fertigkeiten verteilt werden, inklusive den Professionsfertigkeiten und den Statuswert. Sie können jedoch nicht auf Kampf- oder Magiefertigkeiten verteilt werden. Daraufhin können die halben und Fünftelwerte der Fertigkeiten ermittelt werden, um Berechnungen im laufenden Spiel zu verkürzen.
+Neben den Fertigkeiten, die ein Charakter durch seine Profession meistert, können zudem noch Punkte auf **persönliche Interessen** des Charakters vergeben werden. Diese Fertigkeitspunkte entsprechen dem doppelten KLU-Wert oder INT-Wert eines Charakters und können auf beliebig viele Fertigkeiten verteilt werden, inklusive den Professionsfertigkeiten und den Statuswert. Sie können jedoch nicht auf Kampf- oder Magiefertigkeiten (Heldenfertigkeiten) verteilt werden. Daraufhin können die halben und Fünftelwerte der Fertigkeiten ermittelt werden, um Berechnungen im laufenden Spiel zu verkürzen.
 
 ## [Vorgeschichte](Vorgeschichte.md)
 
