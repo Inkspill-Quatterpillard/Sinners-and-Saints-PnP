@@ -16,7 +16,7 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
 
 ### [Charaktererstellung](Charaktererstellung/Charaktererstellung.md)
 
-#### [Attribute](Charaktererstellung/Attribute.mdAttribute.md)
+#### [Attribute](Charaktererstellung/Attribute.md)
 
 #### [Alter](Charaktererstellung/Alter.md)
 
