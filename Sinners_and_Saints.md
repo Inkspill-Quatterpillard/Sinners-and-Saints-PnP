@@ -68,4 +68,4 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
 
 #### [Zauber](Charaktererstellung/Liste_der_Zauber.md)
 
-#### [Ausrüstung](Ausrüstung.md)
+#### [Ausrüstung](Ausrüstung/Ausrüstung.md)
