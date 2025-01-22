@@ -128,7 +128,7 @@ Zu den Wissenschaften der Welt zählen als Beispiel die klassischen „Sieben fr
 
 Wissen um die kurzfristige Versorgung von Wunden und Verletzungen. Für die langfristige Behandlung von Wunden sowie Krankheiten sind dagegen Kenntnisse in der Fertigkeit Medizin von Nöten.
 
-### Fremdsprachen (⅕ INT) [Spezialisierung notwendig]
+### Fremdsprachen (¼ INT) [Spezialisierung notwendig]
 
 Fertigkeit, in einer fremden Sprache zu kommunizieren und diese zu verstehen. Ab 5 Punkten kann man sich in einer Sprache grundlegend verständigen. 10 Punkte genügen, um flüssig eine Unterhaltung führen zu können. Ab 15 Punkten spricht man akzentfrei auf Muttersprachenniveau.
 
