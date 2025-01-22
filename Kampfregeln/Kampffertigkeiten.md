@@ -4,18 +4,18 @@ Es existieren neun Kampffertigkeiten, die den Umgang mit verschiedenen Waffenart
 
 ## Nahkampffertigkeiten
 
-- Dolche und Messer (¼ GES)
-- Faustkampf (½ STR/GES)
-- Schwerter (¼ STR/GES)
-- Hiebwaffen (¼ STR)
-- Stangenwaffen (¼ STR)
+- Dolche und Messer (⅕ GES)
+- Faustkampf (⅕ STR/GES)
+- Schwerter (⅕ STR/GES)
+- Hiebwaffen (⅕ STR)
+- Stangenwaffen (⅕ STR)
 
 ## Fernkampffertigkeiten
 
-- Armbrüste und Schusswaffen (¼ WAH)
-- Bögen (¼ WAH)
-- Schleudern (¼ WAH)
-- Wurfwaffen (¼ WAH)
+- Armbrüste und Schusswaffen (⅕ WAH)
+- Bögen (⅕ WAH)
+- Schleudern (⅕ WAH)
+- Wurfwaffen (⅕ WAH)
 
 ## Improvisierte Waffen
 
