@@ -8,35 +8,35 @@ Es existieren neun Kampffertigkeiten, die den Umgang mit verschiedenen Waffenart
 
 Diese Fertigkeit schließt allen Kampf ohne Waffen mit ein. Darunter fallen einfache Schlägereien bis hin filigraneren Techniken wie Boxen, Ringen oder weitere unbewaffnete Kampfkünste
 
-### Dolche und Messer (¼ GES)
+### Dolche und Messer (⅕ GES)
 
 Diese Fertigkeit betrifft den Umgang mit kurzen Stichwaffen.
 
-### Schwerter (¼ STR/GES)
+### Schwerter (⅕ STR/GES)
 
 Diese Fertigkeit schließt den Umgang mit geraden oder gebogenen, ein- oder zweischneidigen Klingenwaffen ein. Dazu zählen insbesondere ein- und zweihändige Schwerter und Säbel.
 
-### Hiebwaffen (¼ STR)
+### Hiebwaffen (⅕ STR)
 
 Diese Fertigkeit deckt den Umgang mit Hieb- und Schlagwaffen ab, sowohl scharfe wie Äxte und Beile als auch stumpfe wie Hämmer und Kolben ab.
 
-### Stangenwaffen (¼ STR)
+### Stangenwaffen (⅕ STR)
 
 Diese Fertigkeit deckt den Umgang mit langen Stichwaffen wie Speeren, Hellebarden oder Lanzen ab.
 
-### Bögen (¼ WAH)
+### Bögen (⅕ WAH)
 
 Bögen sind Fernkampfwaffen, die Pfeile mit Muskelkraft verschießen.
 
-### Armbrüste und Schusswaffen (¼ WAH)
+### Armbrüste und Schusswaffen (⅕ WAH)
 
 Armbrüste und Schusswaffen sind Fernkampfwaffen, die Geschosse durch komplexe Mechanismen verschießen.
 
-### Wurfwaffen (¼ WAH/STR)
+### Wurfwaffen (⅕ WAH/STR)
 
 Als Wurfwaffen werden Geschosse bezeichnet, die geworfen werden.
 
-### Schleudern (¼ WAH)
+### Schleudern (⅕ WAH)
 
 Schleudern verschießen Projektile mittels einer Hebelwirkung.
 
@@ -44,23 +44,23 @@ Schleudern verschießen Projektile mittels einer Hebelwirkung.
 
 Es gibt sechs Disziplinen, die verschiedene Bereiche der Arkanistik abbilden. Erlernt ein Charakter eine dieser Fertigkeiten, ermöglicht es diesem, magische Zauber aus diesem Bereich zu lernen. Diese Fertigkeiten können beliebig miteinander kombiniert werden, um tiefergehendes Wissen in den arkanen Künsten zu erlangen. Magier, die alle sechs Disziplinen meistern, sind als Arkanisten bekannt und berüchtigt.
 
-### Elementaristik (¼ WIL)
+### Elementaristik (⅕ WIL)
 
 Die Lehre, Energie zu kontrollieren, zu manipulieren und zu wandeln
 
-### Veränderung (¼ WIL)
+### Veränderung (⅕ WIL)
 
 Die Lehre, Materie zu verändern
 
-### Verzauberung (¼ WIL)
+### Verzauberung (⅕ WIL)
 
 Die Lehre, magische Strukturen zu erschaffen und mit Materie zu verbinden
 
-### Mystik (¼ WIL)
+### Mystik (⅕ WIL)
 
 Die Lehre, Magie selbst zu beeinflussen, Magische Strukturen und Konstrukte zu entschlüsseln und zu manipulieren
 
-### Illusion (¼ WIL)
+### Illusion (⅕ WIL)
 
 Die Lehre, Materie zu imitieren
 
