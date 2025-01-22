@@ -6,7 +6,7 @@
 
 Fertigkeit, artistische Manöver durchzuführen, sowie weit und hoch zu springen und Fallschaden abzuwenden.
 
-### Fahrzeug steuern (¼ GES)
+### Fahrzeug steuern (1/5 GES)
 
 Ermöglicht es, Fahrzeuge wie etwa Karren, Kutschen oder Wagen zu steuern und Zugtiere an diese Fahrzeuge anzuspannen.
 
