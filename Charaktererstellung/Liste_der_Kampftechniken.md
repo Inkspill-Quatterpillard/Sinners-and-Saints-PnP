@@ -2,22 +2,22 @@
 
 ## Nahkampf
 
-### [Dolche und Messer](Kampftechniken_Dolche_und_Messer.md)
+### [Dolche und Messer](Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md)
 
-### [Faustkampf](Kampftechniken_Faustkampf.md)
+### [Faustkampf](Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md)
 
-### [Hiebwaffen](Kampftechniken_Hiebwaffen.md)
+### [Hiebwaffen](Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md)
 
-### [Schwerter](Kampftechniken_Schwerter.md)
+### [Schwerter](Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md)
 
-### [Stangenwaffen](Kampftechniken_Stangenwaffen.md)
+### [Stangenwaffen](Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md)
 
 ## Fernkampf
 
-### [Armbrust](Kampftechniken_Armbrüste.md)
+### [Armbrust](Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md)
 
-### [Bögen](Kampftechniken_Bögen.md)
+### [Bögen](Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md)
 
-### [Schleudern](Kampftechniken_Schleudern.md)
+### [Schleudern](Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md)
 
-### [Wurfwaffen](Kampftechniken_Wurfwaffen.md)
+### [Wurfwaffen](Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md)
