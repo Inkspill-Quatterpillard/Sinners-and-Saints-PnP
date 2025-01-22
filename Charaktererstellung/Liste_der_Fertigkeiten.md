@@ -4,13 +4,13 @@
 
 ### Akrobatik (½ GES)
 
-1/5 Fertigkeit, artistische Manöver durchzuführen, sowie weit und hoch zu springen und Fallschaden abzuwenden.
+Fertigkeit, artistische Manöver durchzuführen, sowie weit und hoch zu springen und Fallschaden abzuwenden.
 
-### Fahrzeug steuern (1/5 GES)
+### Fahrzeug steuern (⅕ GES)
 
 Ermöglicht es, Fahrzeuge wie etwa Karren, Kutschen oder Wagen zu steuern und Zugtiere an diese Fahrzeuge anzuspannen.
 
-### Fingerfertigkeit (¼ GES)
+### Fingerfertigkeit (⅕ GES)
 
 Fertigkeit, heimliche, präzise, geschickte oder schnelle Bewegungen mit den Fingern oder der Hand durchzuführen. Dazu gehören Taschendiebstahl, Schlossknacken, Trickbetrug oder Kartentricks.
 
@@ -18,7 +18,7 @@ Fertigkeit, heimliche, präzise, geschickte oder schnelle Bewegungen mit den Fin
 
 Fertigkeit, alle Arten von Hindernissen wie etwa Mauern, Bäume oder Felsen zu erklimmen.
 
-### Reiten (¼ GES)
+### Reiten (⅕ GES)
 
 Fertigkeit, auf Pferden und ähnlichen Tieren zu reiten und zu manövrieren.
 
@@ -26,21 +26,21 @@ Fertigkeit, auf Pferden und ähnlichen Tieren zu reiten und zu manövrieren.
 
 Fertigkeit, sich ungesehen und leise zu bewegen, sich zu verstecken. Die Fertigkeit wird mit Wahrnehmung gekontert.
 
-### Schwimmen (¼ GES)
+### Schwimmen (⅕ GES)
 
 Fertigkeit, sich im Wasser fortzubewegen oder überhaupt über Wasser zu halten. Ab 5 Fertigkeitspunkten kann ein Spieler sich ohne Probleme im Wasser aufhalten, ohne in Gefahr zu geraten, unterzugehen
 
 ## Wahrnehmung
 
-### Fährtenlesen (¼ WAH)
+### Fährtenlesen (⅕ WAH)
 
 Fertigkeit, Spuren aller Art zu finden, zu analysieren und zu folgen.
 
-### Gespür (¼ WAH)
+### Gespür (⅕ WAH)
 
 Fertigkeit, auf das Bauchgefühl zu hören, die Nackenhaare aufstellen und die kleinen und großen Details der Welt wahrzunehmen. Nicht durch die Augen, nein, durch einen weiteren Sinn, fast wie ein innerer Dialog mit dem umgebenden Diesseits.
 
-### Inspizieren (¼ WAH)
+### Inspizieren (⅕ WAH)
 
 Fähigkeit, den Wert und die Qualität einer Ware oder eines Gegenstands herauszufinden oder einzuschätzen.
 
@@ -52,7 +52,7 @@ Fertigkeit, den Habitus einer Person zu entschlüsseln und ihre Motive und verbo
 
 Fertigkeit, sich zu orientieren, die eigene Position auszumachen sowie einen Weg zu einem bekannten oder unbekannten Ort zu finden.
 
-### Recherche (¼ WAH)
+### Recherche (⅕ WAH)
 
 Fertigkeit, in Büchern oder Bibliotheken nach Informationen zu suchen, diese auszuwerten und Wissen daraus zu erlangen.
 
@@ -70,7 +70,7 @@ Im Gegensatz zur Fertigkeit Überzeugung ermöglicht es Beschwatzen, kurzfristig
 
 Fähigkeit, Charme einzusetzen, um jemanden zu verführen, zu schmeicheln, oder um einfach nur charmant zu wirken. Fertigkeit zur Gegenprobe ist Empathie oder Charme.
 
-### Autorität(½ CHA)
+### Autorität (½ CHA)
 
 Fertigkeit, ein Lebewesen durch physische Form, psychische Manipulation oder Bedrohungen einzuschüchtern, zu verängstigen oder in einer bestimmten Art und Weise zu beeinflussen. Autorität-Proben können durch Waffen oder zusätzliche Bedrohungen einen besseren Effekt erzielen. Das gescheiterte Forcieren einer Autorität-Probe kann dagegen dazu führen, dass die Androhung unfreiwillig durch den Spieler durchgeführt werden muss.
 
@@ -82,17 +82,17 @@ Fertigkeit, die Gefühle und Einstellungen eines anderen Charakters einzuschätz
 
 Fertigkeit, die Sichtbarkeit und den Ausbruch der eigenen Emotionen zu unterdrücken und einen kühlen Kopf zu bewahren
 
-### Überzeugung (¼ CHA)
+### Überzeugung (⅕ CHA)
 
 Fertigkeit, einen anderen Charakter von einer bestimmten Idee oder Auffassung zu überzeugen. Im Gegensatz zu Beschwatzen benötigt Überzeugung ein gewisses Maß an Zeit.
 
-### Umgang mit Tieren (¼ CHA)
+### Umgang mit Tieren (⅕ CHA)
 
 Fertigkeiten und Wissen über den Umgang mit in der Regel domestizierten Tieren. Kann auch für den Umgang mit Wildtieren genutzt werden, jedoch nicht, um Wissen über diese zu erlangen.
 
 ## Klugheit
 
-### Kalkulation (¼ KLU)
+### Kalkulation (⅕ KLU)
 
 Wissen über Arithmetik, Calculus und die Fähigkeit, einen Abakus zu benutzen, sowie Inventuren, Buchhaltung oder Ernteregister zu verstehen und zu handhaben.
 
@@ -100,23 +100,23 @@ Wissen über Arithmetik, Calculus und die Fähigkeit, einen Abakus zu benutzen, 
 
 Wissen um nahe und ferne Länder und Reiche, etwa in Geographie, Geschichte, Gesellschaft, Religion, sowie Sagen und Legenden. Die konkrete Region muss als Spezialisierung angegeben werden.
 
-### Medizin (¼ KLU)
+### Medizin (⅕ KLU)
 
 Die Fertigkeit, Wunden und Krankheiten langfristig effektiv zu behandeln und zu kurieren, ebenso wie das Wissen über Krankheiten, Behandlungsarten und Medikamente.
 
-### Okkultismus (¼ KLU)
+### Okkultismus (⅕ KLU)
 
 Wissen um volkstümlichen Okkultismus, über übernatürliche Wesen, Geister, Rituale und Mythen. Im Gegensatz zu Magiefertigkeiten ist diese Fertigkeit eine reine Wissensfertigkeit.
 
-### Religion (¼ KLU)
+### Religion (⅕ KLU)
 
 Wissen über Religion, Liturgien, Kulte und die religiösen Institutionen, sowie über heilige Schriften, Heilige und Feiertage.
 
-### Sprachkunst (¼ KLU)
+### Sprachkunst (⅕ KLU)
 
 Wissen um die Nuancen, sowie über verschiedene Dialekte und Komplexitäten der Muttersprache eines Charakters. Die Fertigkeit kann dazu benutzt werden, komplexe und anspruchsvolle Texte zu verstehen, sowie sprachliche Rätsel oder Kodierungen zu erkennen.
 
-### Wissenschaften (¼ KLU) [Spezialisierung notwendig]
+### Wissenschaften (⅕ KLU) [Spezialisierung notwendig]
 
 Theoretisches Wissen in einem bestimmten Bereich der Wissenschaft. Hier kann ein beliebiges Fachgebiet angegeben werden, um tiefergehende Kenntnisse im theoretischen Bereich, wenn auch nicht im praktischen Bereich zu symbolisieren. Besitzt jemand also Wissenschaft (Medizin), so kennt er sich mit dem menschlichen Körper und den verschiedenen Seuchen aus, jedoch nicht unbedingt mit deren Behandlung, geschweige denn der Durchführung komplexerer Operationen. Die Fertigkeit ist also ergänzend gedacht.
 
@@ -128,15 +128,15 @@ Zu den Wissenschaften der Welt zählen als Beispiel die klassischen „Sieben fr
 
 Wissen um die kurzfristige Versorgung von Wunden und Verletzungen. Für die langfristige Behandlung von Wunden sowie Krankheiten sind dagegen Kenntnisse in der Fertigkeit Medizin von Nöten.
 
-### Fremdsprachen (¼ INT) [Spezialisierung notwendig]
+### Fremdsprachen (⅕ INT) [Spezialisierung notwendig]
 
 Fertigkeit, in einer fremden Sprache zu kommunizieren und diese zu verstehen. Ab 5 Punkten kann man sich in einer Sprache grundlegend verständigen. 10 Punkte genügen, um flüssig eine Unterhaltung führen zu können. Ab 15 Punkten spricht man akzentfrei auf Muttersprachenniveau.
 
-### Handwerk und Künste (¼ INT): [Spezialisierung notwendig]
+### Handwerk und Künste (⅕ INT): [Spezialisierung notwendig]
 
 Wissen und Fertigkeiten in den verschiedenen Künsten und Handwerken. Dazu gehören etwa das Schmiedehandwerk, Weberei, Bogenmacherei, Brauerei, Baumeisterei und Landwirtschaft, aber auch Malerei, Sanges- und Tanzkunst oder die Alchemie.
 
-### Natur (¼ INT) [Spezialisierung notwendig]
+### Natur (⅕ INT) [Spezialisierung notwendig]
 
 Das Wissen und die Erfahrung um das Leben und den Umgang in und mit der Natur. Dies bezieht Überlebenstechniken, Wissen um Pflanzen- und Tierwelt und die klimatischen Bedingungen in einer bestimmten Region mit ein. Die Region muss durch eine Spezialisierung gewählt werden und ist meist identisch mit der Herkunft des Charakter. Beispiele sind etwa Wüste, Waldland, Ozean, Tropen oder Tundra.
 
@@ -144,11 +144,11 @@ Das Wissen und die Erfahrung um das Leben und den Umgang in und mit der Natur. D
 
 Die Fertigkeit, Gegenstände, Fahrzeuge oder Ausrüstung zu reparieren. Diese Fertigkeit ist kein Ersatz für ein Handwerk und kann nicht für alle Gegenstände und Konstruktionen eingesetzt werden. Ebenso können mit dieser Fertigkeit Mechanismen und Gegenstände hergestellt werden.
 
-### Steuern (Boot) (¼ INT)
+### Steuern (Boot) (⅕ INT)
 
 Wissen um das Steuern von Booten, sowie grundsätzliche Kenntnisse im Bereich der Nautik.
 
-### Vorstellungskraft (¼ INT)
+### Vorstellungskraft (⅕ INT)
 
 Fertigkeit, kreativ und phantasievoll zu denken und Situationen einzuschätzen.
 
