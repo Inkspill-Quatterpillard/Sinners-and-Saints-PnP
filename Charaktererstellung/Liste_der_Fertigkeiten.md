@@ -4,7 +4,7 @@
 
 ### Akrobatik (½ GES)
 
-Fertigkeit, artistische Manöver durchzuführen, sowie weit und hoch zu springen und Fallschaden abzuwenden.
+1/5 Fertigkeit, artistische Manöver durchzuführen, sowie weit und hoch zu springen und Fallschaden abzuwenden.
 
 ### Fahrzeug steuern (1/5 GES)
 
