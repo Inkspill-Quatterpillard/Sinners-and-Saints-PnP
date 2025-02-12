@@ -11,7 +11,8 @@
 [Liste von Ausrüstungsgegenständen](Liste_von_Ausrüstungsgegenständen.md)
 
 
-Fallout-Variante
+
+### Fallout-Variante
 
 [Liste der Nahkampfwaffen](Liste_der_Nahkampfwaffen_(Fallout).md)
 
