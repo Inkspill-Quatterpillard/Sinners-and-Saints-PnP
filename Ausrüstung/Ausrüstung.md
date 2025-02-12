@@ -9,3 +9,12 @@
 [Diverse Preise](Diverse_Preise.md)
 
 [Liste von Ausrüstungsgegenständen](Liste_von_Ausrüstungsgegenständen.md)
+
+
+Fallout-Variante
+
+[Liste der Nahkampfwaffen](Liste_der_Nahkampfwaffen_(Fallout).md)
+
+[Liste der Fernkampfwaffen](Liste_der_Fernkampfwaffen_(Fallout).md)
+
+[Liste der Rüstungen und Schilde](Liste_der_Rüstungen_und_Schilde_(Fallout).md)
