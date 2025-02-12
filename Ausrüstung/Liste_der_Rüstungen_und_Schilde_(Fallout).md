@@ -1,4 +1,4 @@
-# Liste der Rüstungen und Schilde
+# Liste der Rüstungen und Schilde (Fallout)
 
 ## Rüstungen
 | Leichte Rüstung | Rüstungsschutz | Preis | Besonderheiten |
