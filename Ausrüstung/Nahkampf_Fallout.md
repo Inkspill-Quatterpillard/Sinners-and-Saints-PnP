@@ -3,7 +3,7 @@
 | Faustwaffen  | Schaden | Modifikator | Länge | Preis | Besonderheit |
 |----------|----------|----------|----------|----------|----------|
 | Faust | 1W3 | - | Minimal | -  |-  |
-| Verstärkter Handschuh | 1W3+1 | - | Minimal | 70 Pfennig | -  |
+| Verstärkter Handschuh | 1W3+1 | - | Minimal | Kronkorken | -  |
 | Stahlhandschuh | 1W3+2 | - | Minimal | 20 Kronen  | -  |
 | Schlagring | 1W4+1 | - | Minimal | 100 Pfennig | -  |
 | Stachelring | 1W4+2 | - | Minimal | 1,5 Kronen  | -  |
