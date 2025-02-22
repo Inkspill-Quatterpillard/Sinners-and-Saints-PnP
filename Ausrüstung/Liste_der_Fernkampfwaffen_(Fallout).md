@@ -21,9 +21,7 @@
 
 | Wurfwaffen  | Schaden | Modifikator | Reichweite | Ladezeit | Preis | Besonderheit |
 |----------|----------|----------|----------|----------|----------|----------|
-| Lasso   | 0 | - | 2/5/10  | 0 KR   | 10 Kronkorken   |  Schnürrt ein |
 | Stein  | 1W3+1 | - | 2/10/15  | 0 KR   | - | - |
-| Bola   | 1W3 | - | 2/10/15  | 0 KR   | 15 Kronkorken   |  Kann zu Fall bringen |
 | Wurfmesser  | 2W3+1 | -  | 2/10/15 | 0 KR | 20 Kronkorken   |  - |
 | Wurfstern  | 2W3+2 | - | 2/10/15 | 0 KR | 30 Kronkorken   | - |
 | Wurfkeule   | 2W4+1 | - | 2/10/15 | 0 KR   | 25 Kronkorken   | -  |
@@ -39,6 +37,8 @@
 
 | Schleudern  | Schaden | Modifikator | Reichweite | Ladezeit | Preis | Besonderheit |
 |----------|----------|----------|----------|----------|----------|----------|
+| Lasso   | 0 | - | 2/5/10  | 0 KR   | 10 Kronkorken   |  Schnürrt ein |
+| Bola   | 1W3 | - | 2/10/15  | 0 KR   | 15 Kronkorken   |  Kann zu Fall bringen |
 | Zwille  | 1W3+2 | - | 3/10/40 | 0 KR   | 10 Kronkorken | - |
 | Steinschleuder   | 2W4+2  | - | 5/25/60 | 0 KR   | 15 Kronkorken   |  - |
 | Bleischleuder  | 2W4+3  | -  | 10/30/100 | 0 KR | 20 Kronkorken   |  - |
