@@ -4,7 +4,7 @@
 
 Die Profession eines Charakters definiert dessen Rolle in der Gesellschaft. Mit jeder Profession sind bestimmte Fertigkeiten verbunden, sowie ein gewisser ökonomischer und sozialer Status. Ein Charakter ist nicht gezwungen, seine Profession zum Start des Abenteuers auszuüben. Gerade, wenn er sich im Moment auf Reisen befindet, kann er sich auf anderen Wegen sein Geld verdienen. Die Profession ist in diesem Fall eher als Ausbildung des Charakters zu verstehen.
 
-**[Fertigkeiten](Liste_der_Heldenfertigkeiten.md)** besitzen einen festgeschriebenen Startwert. Dieser entspricht entweder der Hälfte oder dem Fünftel des zugehörigen Attributes. Selbst wenn ein Charakter eine Fertigkeit nicht gelernt hat, kann er mit diesem Wert eine Probe versuchen.
+**[Fertigkeiten](Liste_der_Fertigkeiten.md)** besitzen einen festgeschriebenen Startwert. Dieser entspricht entweder der Hälfte oder dem Fünftel des zugehörigen Attributes. Selbst wenn ein Charakter eine Fertigkeit nicht gelernt hat, kann er mit diesem Wert eine Probe versuchen.
 
 **Professionen** sind frei wähl- und zusammenstellbar. Jede Profession besitzt acht Professionsfertigkeiten , die +5 Punkte als festen Bonus erhalten. Dabei kann entweder eine Profession aus der Professionsliste ausgewählt werden oder acht Fertigkeiten zu einer eigenen Profession hinzugefügt werden.
 
