@@ -44,9 +44,25 @@
 | Strahlenschutzanzug | 350 Kronkorken | Schutz gegen Strahlung |
 
 
+
+
+## Getränke
+
+
+| Alkohol | Preis | Effekt |
+|----------|----------|----------|
+| Bier | 2 Kronkorken | Vorteil auf Charisma und Stärke, Nachteil auf Klugheit für 1h |
+| Wasteland Wein | 3 Kronkorken | Vorteil auf Charisma und Intuition, Nachteil auf Klugheit für 1h |
+| Whiskey | 4 Kronkorken | Vorteil auf Charisma und Konstitution, Nachteil auf Klugheit für 1h |
+| Rum | 4 Kronkorken | Vorteil auf Charisma und Geschick, Nachteil auf Klugheit für 1h |
+| Mesqual | 4 Kronkorken | Vorteil auf Charisma und Willenskraft, Nachteil auf Klugheit für 1h |
+| Moonshine | 5 Kronkorken | Vorteil auf Charisma, Stärke und Konstitution, Nachteil auf Klugheit und Wahrnehmung für 1h |
+| Absinth | 9 Kronkorken | Vorteil auf Charisma, Willenskraft und Intuition, Nachteil auf Klugheit und Geschick  für 1h |
+
+| Soft Drinks | Preis | Effekt |
+|----------|----------|----------|
+| Schmutzwasser | 2 Kronkorken | Vorteil auf Charisma und Stärke, Nachteil auf Klugheit für 1h |
+
 | Alchemika und Tonikums | Preis | Effekt |
 |----------|----------|----------|
 | Alkohol | Kronkorken | Erleichtert Reparieren und Basteln |
-
-
-Talismane & Schmuckstücke	
