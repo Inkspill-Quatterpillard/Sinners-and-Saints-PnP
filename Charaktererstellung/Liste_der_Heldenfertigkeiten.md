@@ -64,6 +64,6 @@ Die Lehre, Magie selbst zu beeinflussen, Magische Strukturen und Konstrukte zu e
 
 Die Lehre, Materie zu imitieren
 
-### Psychomantie (¼ WIL)
+### Psychomantie (⅕ WIL)
 
 Die Lehre, die Psyche von Lebewesen zu entschlüsseln, zu manipulieren oder zu kontrollieren
