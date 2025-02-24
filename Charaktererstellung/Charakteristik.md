@@ -28,7 +28,7 @@ Eine Charakteristik ist eine Eigenschaft des Charakters, die bestimmte Vor- oder
 
 **25-26:** _Weltenbummler_ - Der Charakter ist viel in der Welt herumgekommen. Er erhält zwei Punkte jeweils in Länderkunde und Fremdsprachen. Aufgrund eines Mangels an Wurzeln sinkt sein Status jedoch um drei Punkte.
 
-**27-28:** _Gemeingefährlich_ - Der Charakter ist unberechenbar. Er zieht schneller als sein Schatten und erhält so einen Bonus von +3 auf seinen Initiativewurf. Allerdings ist auch sein Temperament so aufbrausend wie seine Waffe. Er erhält zwei Minuspunkte auf Selbstbeherrschung.
+**27-28:** _Gemeingefährlich_ - Der Charakter ist unberechenbar. Er zieht schneller als sein Schatten und erhält so einen Bonus von +2 auf den ersten Angriff in der ersten Kampfrunde. Allerdings ist auch sein Temperament so aufbrausend wie seine Waffe. Er erhält zwei Minuspunkte auf Selbstbeherrschung.
 
 **29-30:** _Haarig_ - Der Charakter ist mehr Fell als Mensch. Aufgrund des dichten Pelzes steigt seine Konstitution um 1 und er ist gegen Kälte resistent. Aufgrund seines zotteligen und etwas kulturlosen Aussehens verliert er jedoch auch zwei Punkte in Charme. Zudem erleidet er einen mentalen Zusammenbruch, wenn ihm jemand seinen Bart oder Zopf, nach Wahl des Spieler, abschneidet.
 
