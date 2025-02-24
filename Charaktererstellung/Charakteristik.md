@@ -76,7 +76,7 @@ Eine Charakteristik ist eine Eigenschaft des Charakters, die bestimmte Vor- oder
 
 **73-74:** _Farbenblind_ - Farben, insbesondere grüne und rote Töne, bleiben für diesen Charakter ein ewiges Mysterium. Er erhält dadurch einen permanenten Nachteil bei Proben auf Handwerk (Alchemie). Wie soll man so die verschiedenen Töpfchen und Substanzen auseinanderhalten? Dafür nehmen seine Augen in der Dämmerung mehr wahr und er erhält keinen Nachteil auf Wahrnehmungsproben bei Dunkelheit.
 
-**75-76:** _Behäbig_ - Der Charakter ist ungern schnell auf den Beinen, sowohl körperlich als auch mental. Er braucht seine Zeit und so ist sowohl seine Bewegungsgeschwindigkeit als auch sein Initiativewert um eins reduziert. Aber gut Ding will Weile haben und so steigt der Klugheitswert als auch das Gespür des Charakters um einen Punkt.
+**75-76:** _Behäbig_ - Der Charakter ist ungern schnell auf den Beinen, sowohl körperlich als auch mental. Er braucht seine Zeit und so ist seine Bewegungsgeschwindigkeit um 1 Punkt reduziert. Aber gut Ding will Weile haben und so steigt der Klugheitswert als auch das Gespür des Charakters um einen Punkt.
 
 **77-78:** _Bierbauch_ - Dem Charakter sieht man an, dass er es sich in seinen vergangenen Jahren vielleicht ein wenig zu gut hat gehen lassen. Er bekommt einen dauerhaften Vorteil auf Konstitutions-Proben bei Alkoholkonsum aufgrund der vielen Trinkgelage. Jedoch hat sein ungesunder Lebensstil sich nicht unbedingt positiv auf seine Konstitution ausgewirkt, die um einen Punkt reduziert wird. Dafür kann er unglaublich gut aus dem Bauch heraus handeln, +1 auf Intuition.
 
@@ -96,7 +96,7 @@ Eine Charakteristik ist eine Eigenschaft des Charakters, die bestimmte Vor- oder
 
 **93-94:** _Markante Narbe_ - Das Gesicht des Charakters wird von einer beeindruckenden Narbe geziert, die seine Autorität um einen Punkt anhebt. Er erleidet jedoch einen Punkt Abzug auf Beschwatzen, weil er schwerer in Clubs reinkommt. Außerdem sind Proben erleichtert, um den Charakter zu identifizieren.
 
-**95-96:** _Paranoia_ - Der Charakter vertraut nichts und niemandem. Er ist immer auf der Hut und bekommt einen Bonus von +1 auf seine Initiative. Jedoch leidet sein Bauchgefühl unter der ständigen Paranoia, was zu einem Punkt Abzug auf Gespür führt. Zudem führt sein Misstrauen dazu, dass er bei Menschenkenntnis-Proben ab 18 patzt.
+**95-96:** _Paranoia_ - Der Charakter vertraut nichts und niemandem. Er ist immer auf der Hut und bekommt einen Bonus von +3 auf Sondieren. Jedoch leidet sein Bauchgefühl unter der ständigen Paranoia, was zu einem Punkt Abzug auf Gespür führt. Zudem führt sein Misstrauen dazu, dass er bei Menschenkenntnis-Proben ab 18 patzt.
 
 **97-98:** _Sensible Nase_ - Das Riechorgan des Charakters ist außerordentlich gut. Er erhält demnach einen Punkt auf Fährtenlesen und Gespür. Die Sensibilität seines Sinnes führt jedoch auch dazu, dass er bei starken Gestank eine Selbstbeherrschungsprobe ablegen muss, um Verwirrung zu vermeiden.
 
