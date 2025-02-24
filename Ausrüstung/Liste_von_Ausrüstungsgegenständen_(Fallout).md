@@ -5,12 +5,21 @@
 | Flare | 25 Kronkorken | Stößt farbigen Rauch aus  |
 | Dynamit | 30 Kronkorken | Verursacht 1W10 SP in einem Schritt pro Stab (2W10 SP in zwei Schritt bei zwei Stäben)  |
 | Molotov-Cocktail | 45 Kronkorken | Verursacht 1W6 SP in 3 Schritt und setzt die Fläche in Brand |
+| Militärischer Brandpfeil | 50 Kronkorken | Verursacht 2W4 Feuerschaden und setzt Fläche in Brand  |
 | Rauchgranate | 120 Kronkorken | Verursacht Rauch in einem 3x3 Schritt Umkreis |
 | Blendgranate | 170 Kronkorken | Verursacht 1W4 plus Blenden in 10 Schritt Umkreis  |
 | Splittermine | 230 Kronkorken | Verursacht 1W10 SP in einem Schritt (Benötigt Sprengstoff-Fertigkeit) |
 | Visier | 270 Kronkorken | Erhöht Reichweite von Schusswaffen um 50 Prozent |
 | Schalldämpfer | 350 Kronkorken | Verringert Lärm durch Schusswaffen |
 | C-4 | 350 Kronkorken | Verursacht 5W12 (-1W12 alle 5 Schritt) |
+
+| Munition | Preis | Effekt |
+|----------|----------|----------|
+| Militärischer Brandpfeil | 25 Kronkorken pro Pfeil | Verursacht 2W4 Feuerschaden und setzt Fläche in Brand  |
+| Hochgeschwindigkeitsmunition | 35 Kronkorken pro Kugel | Munition durchbohrt Ziel und trifft Ziele dahinter  |
+| Sedativpfeil | 45 Kronkorken pro Pfeil | Verursacht keinen Schaden, sondern schläfert Ziel ein  |
+| Explosivmunition | 75 Kronkorken pro Kugel | Munition explodiert und verursacht 3W4 SP an allen Zielen im Umkreis von 2 Schritt  |
+| Nukleare Munition | 150 Kronkorken pro Kugel | Munition explodiert und verursacht 4W6 Strahlungsschaden an allen Zielen im Umkreis von 5 Schritt und verstrahlt sie  |
 
 
 | Technische Gegenstände | Preis | Effekt |
