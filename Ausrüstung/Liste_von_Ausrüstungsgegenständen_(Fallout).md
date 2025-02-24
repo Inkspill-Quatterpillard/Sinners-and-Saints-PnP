@@ -1,6 +1,6 @@
 # Liste von Ausrüstungsgegenständen
 
-| Waffen und Zubehör | Preis | Effekt |
+| Granaten und Waffenzubehör | Preis | Effekt |
 |----------|----------|----------|
 | Flare | 25 Kronkorken | Stößt farbigen Rauch aus  |
 | Dynamit | 30 Kronkorken | Verursacht 1W10 SP in einem Schritt pro Stab (2W10 SP in zwei Schritt bei zwei Stäben)  |
@@ -21,7 +21,6 @@
 | Explosivmunition | 75 Kronkorken pro Kugel | Munition explodiert und verursacht 3W4 SP an allen Zielen im Umkreis von 2 Schritt  |
 | Nukleare Munition | 150 Kronkorken pro Kugel | Munition explodiert und verursacht 4W6 Strahlungsschaden an allen Zielen im Umkreis von 5 Schritt und verstrahlt sie  |
 
-
 | Technische Gegenstände | Preis | Effekt |
 |----------|----------|----------|
 | Taschenuhr | 100 Kronkorken | Verrät die Tageszeit, Vorteil auf Navigieren-Proben |
@@ -39,4 +38,15 @@
 
 | Klamotten | Preis | Effekt |
 |----------|----------|----------|
+| Sonnenbrille | 45 Kronkorken | Schützt gegen Blendung |
+| Arbeitsschuhe | 75 Kronkorken | Isoliert gegen Stromfluss |
+| Gasmaske | 180 Kronkorken | Schützt gegen verunreinigte Luft |
 | Strahlenschutzanzug | 350 Kronkorken | Schutz gegen Strahlung |
+
+
+| Alchemika und Tonikums | Preis | Effekt |
+|----------|----------|----------|
+| Alkohol | Kronkorken | Erleichtert Reparieren und Basteln |
+
+
+Talismane & Schmuckstücke	
