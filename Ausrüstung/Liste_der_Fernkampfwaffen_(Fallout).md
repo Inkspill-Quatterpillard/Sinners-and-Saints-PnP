@@ -9,15 +9,15 @@
 
 | Armbrüste und Feuerwaffen  | Schaden | Modifikator | Reichweite | Ladezeit | Preis | Besonderheit |
 |----------|----------|----------|----------|----------|----------|----------|
-| Leichte Armbrust   | 2W4+2 | - | 10/50/80  | 0 KR   | 150 Kronkorken   |      |
-| Repetierarmbrust  | 2W4+4 | -  | 10/50/80  | 2 KR (Magazin von 5 Runden)   | 350 Kronkorken   |  -    |
-| Schwere Armbrust  | 2W6+5 | - | 15/70/130 | 1 KR | 250 Kronkorken   | - |
-| Pistole   | 1W6+6 | - | 15/30/80  | 1 KR   | 200 Kronkorken   | -  |
-| Revolver   | 2W6+4 | - | 15/30/80  | 2 KR (Magazin von 3 Runden)   | 300 Kronkorken   | - |
-| Abgesägte Schrotflinte    | 2W4+4 | Schaden in 2 Schritt Radius | 2/5/10 | 1 KR (Magazin von 2 Runden)   | 400 Kronkorken   | - |
-| Schrotflinte    | 3W4+4 | Schaden in 1 Schritt Radius | 5/10/15 | 1 KR (Magazin von 2 Runden)   | 450 Kronkorken   | Kann mit Messer zu Bayonett kombiniert werden (Nutzbar als Stangenwaffe) |
-| Jagdgewehr   | 2W8+8 | -  | 50/130/300  | 1 KR   | 750 Kronkorken   | Kann mit Messer zu Bayonett kombiniert werden (Nutzbar als Stangenwaffe) |
-| Repetiergewehr   | 2W8+6 | -   | 30/100/250  | 2 KR (Magazin von 5 Runden)   | 1.500 Kronkorken   | Kann mit Messer zu Bayonett kombiniert werden (Nutzbar als Stangenwaffe) |
+| Leichte Armbrust (1H)   | 2W4+2 | - | 10/50/80  | 0 KR   | 150 Kronkorken   |      |
+| Repetierarmbrust (2H)  | 2W4+4 | -  | 10/50/80  | 2 KR (Magazin von 5 Runden)   | 350 Kronkorken   |  -    |
+| Schwere Armbrust (2H)  | 2W6+5 | - | 15/70/130 | 1 KR | 250 Kronkorken   | - |
+| Pistole (1H)   | 1W6+6 | - | 15/30/80  | 1 KR   | 200 Kronkorken   | -  |
+| Revolver (1H)   | 2W6+4 | - | 15/30/80  | 2 KR (Magazin von 3 Runden)   | 300 Kronkorken   | - |
+| Abgesägte Schrotflinte (1H)   | 2W4+4 | Schaden in 2 Schritt Radius | 2/5/10 | 1 KR (Magazin von 2 Runden)   | 400 Kronkorken   | - |
+| Schrotflinte (2H)    | 3W4+4 | Schaden in 1 Schritt Radius | 5/10/15 | 1 KR (Magazin von 2 Runden)   | 450 Kronkorken   | Kann mit Messer zu Bayonett kombiniert werden (Nutzbar als Stangenwaffe) |
+| Jagdgewehr (2H)   | 2W8+8 | -  | 50/130/300  | 1 KR   | 750 Kronkorken   | Kann mit Messer zu Bayonett kombiniert werden (Nutzbar als Stangenwaffe) |
+| Repetiergewehr (2H)  | 2W8+6 | -   | 30/100/250  | 2 KR (Magazin von 5 Runden)   | 1.500 Kronkorken   | Kann mit Messer zu Bayonett kombiniert werden (Nutzbar als Stangenwaffe) |
 
 | Wurfwaffen  | Schaden | Modifikator | Reichweite | Ladezeit | Preis | Besonderheit |
 |----------|----------|----------|----------|----------|----------|----------|
