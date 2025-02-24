@@ -1,34 +1,7 @@
 # Liste von Ausrüstungsgegenständen
 
-| Granaten und Waffenzubehör | Preis | Effekt |
-|----------|----------|----------|
-| Flare | 25 Kronkorken | Stößt farbigen Rauch aus  |
-| Dynamit | 30 Kronkorken | Verursacht 1W10 SP in einem Schritt pro Stab (2W10 SP in zwei Schritt bei zwei Stäben)  |
-| Molotov-Cocktail | 45 Kronkorken | Verursacht 1W6 SP in 3 Schritt und setzt die Fläche in Brand |
-| Militärischer Brandpfeil | 50 Kronkorken | Verursacht 2W4 Feuerschaden und setzt Fläche in Brand  |
-| Rauchgranate | 120 Kronkorken | Verursacht Rauch in einem 3x3 Schritt Umkreis |
-| Blendgranate | 170 Kronkorken | Verursacht 1W4 plus Blenden in 10 Schritt Umkreis  |
-| Splittermine | 230 Kronkorken | Verursacht 1W10 SP in einem Schritt (Benötigt Sprengstoff-Fertigkeit) |
-| Visier | 270 Kronkorken | Erhöht Reichweite von Schusswaffen um 50 Prozent |
-| Schalldämpfer | 350 Kronkorken | Verringert Lärm durch Schusswaffen |
-| C-4 | 350 Kronkorken | Verursacht 5W12 (-1W12 alle 5 Schritt) |
 
-| Munition | Preis | Effekt |
-|----------|----------|----------|
-| Militärischer Brandpfeil | 25 Kronkorken pro Pfeil | Verursacht 2W4 Feuerschaden und setzt Fläche in Brand  |
-| Hochgeschwindigkeitsmunition | 35 Kronkorken pro Kugel | Munition durchbohrt Ziel und trifft Ziele dahinter  |
-| Sedativpfeil | 45 Kronkorken pro Pfeil | Verursacht keinen Schaden, sondern schläfert Ziel ein  |
-| Explosivmunition | 75 Kronkorken pro Kugel | Munition explodiert und verursacht 3W4 SP an allen Zielen im Umkreis von 2 Schritt  |
-| Nukleare Munition | 150 Kronkorken pro Kugel | Munition explodiert und verursacht 4W6 Strahlungsschaden an allen Zielen im Umkreis von 5 Schritt und verstrahlt sie  |
-
-| Technische Gegenstände | Preis | Effekt |
-|----------|----------|----------|
-| Taschenuhr | 100 Kronkorken | Verrät die Tageszeit, Vorteil auf Navigieren-Proben |
-| Radio | 125 Kronkorken | Ermöglicht es, auf Radioübertragungen zuzugreifen und Nachrichten zu verschicken |
-| Fernglas | 150 Kronkorken | Vorteil auf Wahrnehmungsproben auf Distanz |
-| Geiger-Zähler | 250 Kronkorken | Ermöglicht es, Strahlenbelastung zu messen |
-| Leuchtpistole | 350 Kronkorken | Feuert Leuchtprojektil ab |
-| Enterhakenpistole | 450 Kronkorken | Erleichtert Klettern (Reichweite 10 Schritt) |
+## Diverses
 
 | Nützliche Gegenstände | Preis | Effekt |
 |----------|----------|----------|
@@ -43,8 +16,43 @@
 | Gasmaske | 180 Kronkorken | Schützt gegen verunreinigte Luft |
 | Strahlenschutzanzug | 350 Kronkorken | Schutz gegen Strahlung |
 
+| Technische Gegenstände | Preis | Effekt |
+|----------|----------|----------|
+| Taschenuhr | 100 Kronkorken | Verrät die Tageszeit, Vorteil auf Navigieren-Proben |
+| Radio | 125 Kronkorken | Ermöglicht es, auf Radioübertragungen zuzugreifen und Nachrichten zu verschicken |
+| Fernglas | 150 Kronkorken | Vorteil auf Wahrnehmungsproben auf Distanz |
+| Geiger-Zähler | 250 Kronkorken | Ermöglicht es, Strahlenbelastung zu messen |
+| Leuchtpistole | 350 Kronkorken | Feuert Leuchtprojektil ab |
+| Enterhakenpistole | 450 Kronkorken | Erleichtert Klettern (Reichweite 10 Schritt) |
+
+## Waffenzubehör und ähnliches
+
+| Waffenzubehör | Preis | Effekt |
+|----------|----------|----------|
+| Erweitertes Magazin | 250 Kronkorken | Fügt eine zusätzliche KR Magazinkapazität hinzu |
+| Visier | 270 Kronkorken | Erhöht Reichweite von Schusswaffen um 50 Prozent |
+| Schnellwechsel-Magazin | 300 Kronkorken | Verlangsamt Ladezeit um 1 KR |
+| Schalldämpfer | 350 Kronkorken | Verringert Lärm durch Schusswaffen |
+| Nachtsicht-Visier | 450 Kronkorken | Erhöht Reichweite von Schusswaffen um 50 Prozent |
 
 
+| Granaten und Sprengstoff | Preis | Effekt |
+|----------|----------|----------|
+| Flare | 25 Kronkorken | Stößt farbigen Rauch aus  |
+| Dynamit | 30 Kronkorken | Verursacht 1W10 SP in einem Schritt pro Stab (2W10 SP in zwei Schritt bei zwei Stäben)  |
+| Molotov-Cocktail | 45 Kronkorken | Verursacht 1W6 SP in 3 Schritt und setzt die Fläche in Brand |
+| Rauchgranate | 120 Kronkorken | Verursacht Rauch in einem 3x3 Schritt Umkreis |
+| Blendgranate | 170 Kronkorken | Verursacht 1W4 plus Blenden in 10 Schritt Umkreis  |
+| Splittermine | 230 Kronkorken | Verursacht 1W10 SP in einem Schritt (Benötigt Sprengstoff-Fertigkeit) |
+| C-4 | 350 Kronkorken | Verursacht 5W12 (-1W12 alle 5 Schritt) |
+
+| Munition | Preis | Effekt |
+|----------|----------|----------|
+| Militärischer Brandpfeil | 25 Kronkorken pro Pfeil | Verursacht 2W4 Feuerschaden und setzt Fläche in Brand  |
+| Hochgeschwindigkeitsmunition | 35 Kronkorken pro Kugel | Munition durchbohrt Ziel und trifft Ziele dahinter  |
+| Sedativpfeil | 45 Kronkorken pro Pfeil | Verursacht keinen Schaden, sondern schläfert Ziel ein  |
+| Explosivmunition | 75 Kronkorken pro Kugel | Munition explodiert und verursacht 3W4 SP an allen Zielen im Umkreis von 2 Schritt  |
+| Nukleare Munition | 150 Kronkorken pro Kugel | Munition explodiert und verursacht 4W6 Strahlungsschaden an allen Zielen im Umkreis von 5 Schritt und verstrahlt sie  |
 
 ## Getränke
 
@@ -61,7 +69,19 @@
 
 | Soft Drinks | Preis | Effekt |
 |----------|----------|----------|
-| Schmutzwasser | 2 Kronkorken | Vorteil auf Charisma und Stärke, Nachteil auf Klugheit für 1h |
+| Schmutzwasser | 2 Kronkorken | +1W4 TP, 1 RAD |
+| Sunset Sarsaparilla | 4 Kronkorken | +1W4 TP, 1 RAD, +1 Kronkorken |
+| Wasteland-Kaffee | 6 Kronkorken | +1W4 TP, 1 RAD, Vorteil Klugheit, Nachteil Geschick für 1h |
+| Klares Wasser | 10 Kronkorken | +1W4 TP |
+| Nuka Cola | 5 Kronkorken | +1W4 maxTP für 1h, 1 RAD, +1 Kronkorken|
+| Nuka Cola Victory | 20 Kronkorken | +1W6 maxTP für 1h, Vorteil Willenskraft, 3 RAD |
+| Nuka Cola Quantum | 35 Kronkorken | +1W8 maxTP für 1h, Vorteil Geschick, Nachtsicht, 5 RAD |
+
+## Chems und Alchemika
+
+| Chems | Preis | Effekt |
+|----------|----------|----------|
+| Schmutzwasser | 2 Kronkorken | +1W4 TP, 1 RAD |
 
 | Alchemika und Tonikums | Preis | Effekt |
 |----------|----------|----------|
