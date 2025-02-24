@@ -46,6 +46,13 @@ _Sicher verborgen hinter einer Mauer oder einem Baumstamm wartet der Schütze au
 
 Der Schütze kann aus einer halben Deckung, die eigentlich seine Sicht behindern würde, ohne Mali auf einen Gegner schießen. Er kann zudem auch aus voller Deckung heraus auf den Gegner schießen, solange er von einer Seite der Deckung Sicht auf den Gegner hat. Dabei erhält er einen Nachteil.
 
+### Duales Schießen (Nur einhändig)
+
+_Der Schütze verwendet zwei einhändige Schusswaffen parallel, um seine Feuerkraft zu verdoppeln._
+
+Führt der Schütze zwei Schusswaffen in seinen Händen, so darf er in einer Runde zwei Kampfwürfe ausführen, deren Ergebnis um +3 erhöht wird. Treffen ein oder mehrere Kampfwürfe, so wird der Schaden separat berechnet. Mit den Angriffen kann dasselbe Ziel oder zwei verschiedene Ziele anvisiert werden. Beide Waffen müssen eigenständig und nacheinander nachgeladen werden.
+
+
 ### Laderoutine
 
 _Das Laden seiner Waffe geht für den Schützen völlig automatisiert und flüssig von der Hand. Wenn er in seiner Routine versinkt, steigt seine Effizienz drastisch._
