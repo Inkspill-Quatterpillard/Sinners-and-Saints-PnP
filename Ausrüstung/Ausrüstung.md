@@ -19,3 +19,5 @@
 [Liste der Fernkampfwaffen (Fallout)](Liste_der_Fernkampfwaffen_(Fallout).md)
 
 [Liste der Rüstungen und Schilde (Fallout)](Liste_der_Rüstungen_und_Schilde_(Fallout).md)
+
+[Liste von Ausrüstungsgegenständen (Fallout)](Liste_von_Ausrüstungsgegenständen_(Fallout).md)
