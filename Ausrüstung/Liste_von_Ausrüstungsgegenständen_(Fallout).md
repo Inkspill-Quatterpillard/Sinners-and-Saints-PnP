@@ -81,8 +81,27 @@
 
 | Chems | Preis | Effekt |
 |----------|----------|----------|
-| Schmutzwasser | 2 Kronkorken | +1W4 TP, 1 RAD |
+| RadX | 15 Kronkorken | RAD-Resistenz für 1h |
+| RadAway | 25 Kronkorken | -5 RAD |
+| Cateye | 25 Kronkorken | Nachtsicht für 1h |
+| Mentats | 30 Kronkorken | Vorteil auf Intuition, Klugheit, Wahrnehmung und Charisma für 1h |
+| Buffout | 35 Kronkorken | 1W10 maxTP, Vorteil auf Stärke und Konstitution für 1h |
+| Jett | 40 Kronkorken | Vorteil auf Nahkampf und Fernkampf, Bewegung x1,5, Vorteil auf Geschick für 1h |
+| Psycho | 45 Kronkorken | +2 Schadensbonus für 1h, ggf. Blutrausch |
+| Stimpack | 45 Kronkorken | -2W6 Wundpunkte |
+| Med-X	 | 45 Kronkorken | halbierter Schaden für 1h |
+
 
 | Alchemika und Tonikums | Preis | Effekt |
 |----------|----------|----------|
-| Alkohol | Kronkorken | Erleichtert Reparieren und Basteln |
+| Kautabak | 8 Kronkorken | 1W4 TP, Vorteil auf Wahrnehmung für 1h |
+| Zigaretten  | 10 Kronkorken | 1W4 TP, Vorteil auf Wahrnehmung und auf nächsten Glückswurf für 1h |
+| Schlangenöl | 12 Kronkorken | Vorteil auf Intuition für 1h, Ermöglicht es, Glück neu zu rollen |
+| Ginseng Elixir | 15 Kronkorken | 1W6 maxTP für 1h, 1 RAD |
+| Heilpulver | 20 Kronkorken | -1 Wundpunkt, Nachteil auf Wahrnehmung für 1 TagD |
+| Cannabis-Joint | 20 Kronkorken | 1W6 TP, Vorteil auf Intuition und Charisma für 1h |
+| Kokainkaugummi | 20 Kronkorken | 1W4 maxTP, Vorteil auf Konstitution für 1h |
+| Zigarre | 25 Kronkorken | 1W6 TP, Vorteil auf Wahrnehmung und Intuition für 1h |
+| Kokain | 30 Kronkorken |1W8 maxTP für 1h |
+| LSD | 35 Kronkorken | Vorteil auf Intuition, Geschick und Wahrnehmung für 1h |
+| Blutreserve | 50 Kronkorken | -1W4 Wundpunkte, 3 RAD |
