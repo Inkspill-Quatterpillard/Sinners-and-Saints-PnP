@@ -12,7 +12,7 @@
 
 
 
-### Fallout-Variante
+### Radiation Edition
 
 [Liste der Nahkampfwaffen (Fallout)](Liste_der_Nahkampfwaffen_(Fallout).md)
 
