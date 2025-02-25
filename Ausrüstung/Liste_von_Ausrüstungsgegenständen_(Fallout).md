@@ -98,7 +98,7 @@
 | Zigaretten  | 10 Kronkorken | 1W4 TP, Vorteil auf Wahrnehmung und auf nächsten Glückswurf für 1h |
 | Schlangenöl | 12 Kronkorken | Vorteil auf Intuition für 1h, Ermöglicht es, Glück neu zu rollen |
 | Ginseng Elixir | 15 Kronkorken | 1W6 maxTP für 1h, 1 RAD |
-| Heilpulver | 20 Kronkorken | -1 Wundpunkt, Nachteil auf Wahrnehmung für 1 TagD |
+| Heilpulver | 20 Kronkorken | -1 Wundpunkt, Nachteil auf Wahrnehmung für 1 Tag |
 | Cannabis-Joint | 20 Kronkorken | 1W6 TP, Vorteil auf Intuition und Charisma für 1h |
 | Kokainkaugummi | 20 Kronkorken | 1W4 maxTP, Vorteil auf Konstitution für 1h |
 | Zigarre | 25 Kronkorken | 1W6 TP, Vorteil auf Wahrnehmung und Intuition für 1h |
