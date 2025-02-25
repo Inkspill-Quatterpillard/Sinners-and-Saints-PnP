@@ -86,7 +86,7 @@
 | Cateye | 25 Kronkorken | Nachtsicht für 1h |
 | Mentats | 30 Kronkorken | Vorteil auf Intuition, Klugheit, Wahrnehmung und Charisma für 1h |
 | Buffout | 35 Kronkorken | 1W10 maxTP, Vorteil auf Stärke und Konstitution für 1h |
-| Jett | 40 Kronkorken | Vorteil auf Nahkampf und Fernkampf, Bewegung x1,5, Vorteil auf Geschick für 1h |
+| Jet | 40 Kronkorken | Vorteil auf Nahkampf und Fernkampf, Bewegung x1,5, Vorteil auf Geschick für 1h |
 | Psycho | 45 Kronkorken | +2 Schadensbonus für 1h, ggf. Blutrausch |
 | Stimpack | 45 Kronkorken | -2W6 Wundpunkte |
 | Med-X	 | 45 Kronkorken | halbierter Schaden für 1h |
