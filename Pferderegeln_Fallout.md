@@ -49,7 +49,7 @@ Jede nachteilige Charaktereigenschaft gibt 1 Punkt für das Punktekonto. Für 2 
 
 | - | Eigenschaft | Beschreibung | Vorteil | 
 |----------|----------|----------|----------|
-| **1.** | Blind | Tendiert dazu, gegen Äste zu laufen und über Wurzeln zu stolpern  | Vorteil auf WAH-Proben |
+| **1.** | Blind | Tendiert dazu, gegen Äste zu laufen und über Wurzeln zu stolpern  | Nachteil auf WAH-Proben |
 | **2.** | Nervös | Selbst kleinere Schrecken bringen das Pferd aus der Fassung  | Nachteil auf STA-Proben  |
 | **3.** | Faul | Bleibt des Öfteren zum Grasen stehen | Nachteil auf KON-Proben |
 | **4.** | Laut | Schnauft chronisch laut in regelmäßigen Abständen | Nachteil auf Schleichen mit Pferd |
