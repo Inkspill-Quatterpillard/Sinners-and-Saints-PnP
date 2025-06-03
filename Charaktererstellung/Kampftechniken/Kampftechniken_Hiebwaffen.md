@@ -60,7 +60,7 @@ Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Die
 
 _Aus naher Distanz versetzt der Kämpfer seinen Gegner einen schmerzhaft lähmenden Stoß mit seiner Waffe in die Bauchregion, kurz unter dem Brustbein._
 
-Der Kämpfer würfelt einen regulären Kampfwurf. Wird dabei erfolgreich Schaden verursacht, wird anstelle eines Schadenswurf eine Gegenprobe zwischen der Stärke des Kämpfers und der Konstitution des Gegners ausgewürfelt. Gewinnt der Gegner, wird der Schaden des Kämpfers annulliert. Bei Gleichstand darf der Kämpfer halbierten Schaden auswürfeln. Gewinnt der Angreifer, erleidet der Gegner halbierten Schaden und wird betäubt. Er kann die Betäubung mit einer erfolgreichen KON-Probe nach seiner Runde los werden. Gewinnt der Angreifer mit einem kritischen Treffer oder der Gegner patzt, so verliert der Gegner das Bewusstsein, bis er die KON-Probe mit entsprechenden Nachteilen besteht.
+Der Kämpfer würfelt einen regulären Kampfwurf. Wird dabei erfolgreich Schaden verursacht, wird anstelle eines Schadenswurf eine Gegenprobe zwischen der Stärke des Kämpfers und der Konstitution des Gegners ausgewürfelt. Gewinnt der Gegner, wird der Schaden des Kämpfers annulliert. Bei Gleichstand darf der Kämpfer halbierten Schaden auswürfeln. Gewinnt der Angreifer, erleidet der Gegner halbierten Schaden und wird betäubt. Gewinnt der Angreifer mit einem kritischen Treffer oder der Gegner patzt, so verliert der Gegner das Bewusstsein.
 
 ### Schildbruch, Aktiv (Hammer, Ein- und zweihändig)
 
