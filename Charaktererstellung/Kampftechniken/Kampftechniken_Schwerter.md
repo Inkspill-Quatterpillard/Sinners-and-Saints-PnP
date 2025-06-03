@@ -2,7 +2,7 @@
 
 ## Stufe I
 
-### Abzug, (Ein- und zweihändig)
+### Abzug, Passiv (Ein- und zweihändig)
 
 _Der Kämpfer geht mit einem weiten Streich auf Distanz zum Gegner und löst sich anschließend sicher aus dem Kampf._
 
