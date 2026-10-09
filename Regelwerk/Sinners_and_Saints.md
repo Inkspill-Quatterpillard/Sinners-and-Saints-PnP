@@ -16,7 +16,7 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
 
 ### [Charaktererstellung](Charaktererstellung/Charaktererstellung.md)
 
-#### [Attribute](Charaktererstellung/Attribute.mdAttribute.md)
+#### [Attribute](Charaktererstellung/Attribute.md)
 
 #### [Alter](Charaktererstellung/Alter.md)
 
@@ -68,4 +68,9 @@ Ursprünglich eine Abwandlung des Call of Cthulhu – Dark Age Regelwerkes, wurd
 
 #### [Zauber](Charaktererstellung/Liste_der_Zauber.md)
 
-#### [Ausrüstung](Ausrüstung.md)
+#### [Ausrüstung](Ausrüstung/Ausrüstung.md)
+
+
+### Zusatz Radiation Edition
+
+#### [Pferderegeln](Pferderegeln_Fallout.md)

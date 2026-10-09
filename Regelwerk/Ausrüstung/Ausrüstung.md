@@ -9,3 +9,15 @@
 [Diverse Preise](Diverse_Preise.md)
 
 [Liste von Ausrüstungsgegenständen](Liste_von_Ausrüstungsgegenständen.md)
+
+
+
+### Radiation Edition
+
+[Liste der Nahkampfwaffen (Fallout)](Liste_der_Nahkampfwaffen_(Fallout).md)
+
+[Liste der Fernkampfwaffen (Fallout)](Liste_der_Fernkampfwaffen_(Fallout).md)
+
+[Liste der Rüstungen und Schilde (Fallout)](Liste_der_Rüstungen_und_Schilde_(Fallout).md)
+
+[Liste von Ausrüstungsgegenständen (Fallout)](Liste_von_Ausrüstungsgegenständen_(Fallout).md)

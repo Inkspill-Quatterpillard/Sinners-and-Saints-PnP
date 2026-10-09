@@ -138,9 +138,9 @@ Die Stabilitätspunkte eines Charakters werden berechnet, indem man die Hälfte 
 
 ### Magiepunkte
 
-Die Magiepunkte eines Charakters werden berechnet, indem man den halben Willenskraft-Wert mit einem Viertel des höchsten Attribut aus Charisma, Intuition oder Klugheit addiert.
+Die Magiepunkte eines Charakters werden berechnet, indem man den halben Willenskraft-Wert mit einem Fünftel des höchsten Attribut aus Charisma, Intuition oder Klugheit addiert.
 
-WIL/2 + (< Charisma; Intuition; Klugheit)/4
+WIL/2 + (< Charisma; Intuition; Klugheit)/5
 
 ### Glück
 
@@ -184,9 +184,9 @@ Der Schadensbonus wird auf jeden Nahkampfangriff, egal ob bewaffnet oder unbewaf
 
 ## Wundschwelle
 
-Die Wundschwelle entscheidet, wie viele Trefferpunkte der Charakter auf einen Schlag verlieren muss, um eine Wunde davon zu tragen. Die Wundschwelle beträgt ein Viertel der maximalen TP.
+Die Wundschwelle entscheidet, wie viele Trefferpunkte der Charakter auf einen Schlag verlieren muss, um eine Wunde davon zu tragen. Die Wundschwelle beträgt ein Fünftel der maximalen TP.
 
-TP/4 = Wundschwelle
+TP/5 = Wundschwelle
 
 ## [Fertigkeiten](Fertigkeiten.md)
 
@@ -194,7 +194,7 @@ TP/4 = Wundschwelle
 
 Die Profession eines Charakters definiert dessen Rolle in der Gesellschaft. Mit jeder Profession sind bestimmte Fertigkeiten verbunden, sowie ein gewisser ökonomischer und sozialer Status. Ein Charakter ist nicht gezwungen, seine Profession zum Start des Abenteuers auszuüben. Gerade, wenn er sich im Moment auf Reisen befindet, kann er sich auf anderen Wegen sein Geld verdienen. Die Profession ist in diesem Fall eher als Ausbildung des Charakters zu verstehen.
 
-**Fertigkeiten** besitzen einen festgeschriebenen Startwert. Dieser entspricht entweder der Hälfte, einem Viertel oder Fünftel des zugehörigen Attributes. Selbst wenn ein Charakter eine Fertigkeit nicht gelernt hat, kann er mit diesem Wert eine Probe versuchen.
+**Fertigkeiten** besitzen einen festgeschriebenen Startwert. Dieser entspricht entweder der Hälfte oder dem Fünftel des zugehörigen Attributes. Selbst wenn ein Charakter eine Fertigkeit nicht gelernt hat, kann er mit diesem Wert eine Probe versuchen.
 
 **Professionen** sind frei wähl- und zusammenstellbar. Jede Profession besitzt acht Professionsfertigkeiten , die +5 Punkte als festen Bonus erhalten. Dabei kann entweder eine Profession aus der Professionsliste ausgewählt werden oder acht Fertigkeiten zu einer eigenen Profession hinzugefügt werden.
 
@@ -222,7 +222,7 @@ Alle Fertigkeiten sind unter Liste der Fertigkeiten und alle Heldenfertigkeiten 
 
 ### Persönliche Interessen
 
-Neben den Fertigkeiten, die ein Charakter durch seine Profession meistert, können zudem noch Punkte auf **persönliche Interessen** des Charakters vergeben werden. Diese Fertigkeitspunkte entsprechen dem doppelten KLU-Wert oder INT-Wert eines Charakters und können auf beliebig viele Fertigkeiten verteilt werden, inklusive den Professionsfertigkeiten und den Statuswert. Sie können jedoch nicht auf Kampf- oder Magiefertigkeiten verteilt werden. Daraufhin können die halben und Fünftelwerte der Fertigkeiten ermittelt werden, um Berechnungen im laufenden Spiel zu verkürzen.
+Neben den Fertigkeiten, die ein Charakter durch seine Profession meistert, können zudem noch Punkte auf **persönliche Interessen** des Charakters vergeben werden. Diese Fertigkeitspunkte entsprechen dem doppelten KLU-Wert oder INT-Wert eines Charakters und können auf beliebig viele Fertigkeiten verteilt werden, inklusive den Professionsfertigkeiten und den Statuswert. Sie können jedoch nicht auf Kampf- oder Magiefertigkeiten (Heldenfertigkeiten) verteilt werden. Daraufhin können die halben und Fünftelwerte der Fertigkeiten ermittelt werden, um Berechnungen im laufenden Spiel zu verkürzen.
 
 ## [Vorgeschichte](Vorgeschichte.md)
 
