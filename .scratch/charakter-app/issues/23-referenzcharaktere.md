@@ -1,6 +1,6 @@
 # 23 — Referenzcharaktere
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,6 +10,6 @@ Einige vollständig durchgerechnete Beispielcharaktere dienen als Regressionstes
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Mindestens drei Referenzcharaktere, je Spezies einer, mit unterschiedlichen Altersstufen, Religionen, mit und ohne Besondere Herkunft und mit Charakteristik.
-- [ ] Jeder Referenzcharakter ist eine Folge von Aktionen mit festen Würfelwerten. Die erwartete Ansicht (alle Werte, keine ungültigen Entscheidungen) ist von Hand nachgerechnet.
-- [ ] Die Tests laufen gegen die echten Regeldaten mit Vitest.
+- [x] Mindestens drei Referenzcharaktere, je Spezies einer, mit unterschiedlichen Altersstufen, Religionen, mit und ohne Besondere Herkunft und mit Charakteristik.
+- [x] Jeder Referenzcharakter ist eine Folge von Aktionen mit festen Würfelwerten. Die erwartete Ansicht (alle Werte, keine ungültigen Entscheidungen) ist von Hand nachgerechnet.
+- [x] Die Tests laufen gegen die echten Regeldaten mit Vitest.
