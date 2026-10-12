@@ -40,6 +40,7 @@ export const messages = {
 	characteristicDuplicatePick: (name: string) => `${name} ist zweimal eingetragen. Jede Charakteristik zählt nur einmal.`,
 	percentSource: (percent: number) => `+${percent} %`,
 	tooManyStunts: (chosen: number, allowed: number) => `Es sind ${chosen} Kunststücke gewählt, erlaubt sind ${allowed}.`,
+	noStuntAvailable: 'Für kein weiteres Kunststück sind die Voraussetzungen erfüllt. Der Schritt gilt trotzdem als erledigt.',
 	stuntUnmet: (name: string, unmet: string[]) => `${name}: Voraussetzungen nicht erfüllt (${unmet.join(', ')}).`,
 	techniquesExceeded: (skill: string, chosen: number, allowed: number, maxTier: number) =>
 		`${skill}: ${chosen} Kampftechniken gewählt, erlaubt sind ${allowed}${maxTier ? ` bis Stufe ${roman(maxTier)}` : ''}. Entferne Techniken oder steigere die Fertigkeit.`,

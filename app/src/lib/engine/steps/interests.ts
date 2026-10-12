@@ -4,6 +4,8 @@ import { addSkillBonus, effective, type Derivation, type StepStatus } from '../d
 import { messages } from '../messages';
 
 export const STATUS_TARGET = 'status';
+/** Quelle der Interessenpunkte in den Boni einer Fertigkeit. */
+export const INTERESTS_SOURCE = messages.interestsSource;
 
 export type InterestsAction =
 	{ type: 'setInterestBasis'; attribute: AttributeId } | { type: 'setInterestPoints'; target: string; points: number };
@@ -43,8 +45,8 @@ export function evaluateInterests(d: Derivation): InterestsStepView {
 	let spent = 0;
 	for (const [target, n] of Object.entries(points)) {
 		spent += n;
-		if (target === STATUS_TARGET) d.status.modifiers.push({ source: messages.interestsSource, value: n });
-		else addSkillBonus(d, target, { source: messages.interestsSource, value: n });
+		if (target === STATUS_TARGET) d.status.modifiers.push({ source: INTERESTS_SOURCE, value: n });
+		else addSkillBonus(d, target, { source: INTERESTS_SOURCE, value: n });
 	}
 
 	let status: StepStatus = 'open';

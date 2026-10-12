@@ -1,7 +1,8 @@
 <script lang="ts">
 	import DiceInput from '$lib/components/DiceInput.svelte';
+	import SkillName from '$lib/components/SkillName.svelte';
 	import SpecializationEditor from '$lib/components/SpecializationEditor.svelte';
-	import type { Action, CharacterView } from '$lib/engine';
+	import type { Action, CharacterView, SkillView } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
 
@@ -10,7 +11,20 @@
 	const p = $derived(view.professionStep);
 	const general = $derived(view.skills.filter((s) => s.category === 'general' && !(s.needsSpecialization && !s.specialization)));
 	const needsSpec = $derived(view.skills.filter((s) => s.category === 'general' && s.needsSpecialization && !s.specialization));
-	const heroSkills = $derived(view.skills.filter((s) => s.category !== 'general'));
+	const byName = (a: SkillView, b: SkillView) => a.name.localeCompare(b.name, 'de');
+	/** Allgemeine Fertigkeiten nach Attributgruppe, innerhalb alphabetisch. */
+	const groups = $derived(
+		[...new Set(general.map((s) => s.group ?? ''))].map((group) => ({
+			group,
+			skills: general.filter((s) => (s.group ?? '') === group).sort(byName)
+		}))
+	);
+	const heroGroups = $derived(
+		(['combat', 'arcane'] as const).map((category) => ({
+			category,
+			skills: view.skills.filter((s) => s.category === category).sort(byName)
+		}))
+	);
 	const full = $derived(p.skills.length >= p.required);
 	const sign = (v: number) => (v > 0 ? `+${v}` : `${v}`);
 </script>
@@ -29,20 +43,24 @@
 <section>
 	<h3>{t.profession.skills(p.skills.length, p.required)}</h3>
 	<p class="hint">{t.profession.skillsHint(ruleData.profession.professionSkillBonus)}</p>
-	<div class="grid">
-		{#each general as s (s.key)}
-			{@const chosen = p.skills.includes(s.key)}
-			<label class="check" class:chosen>
-				<input
-					type="checkbox"
-					checked={chosen}
-					disabled={!chosen && full}
-					onchange={() => dispatch({ type: 'toggleProfessionSkill', skill: s.key })}
-				/>
-				<span>{s.name} <small>{s.value ?? '–'}</small></span>
-			</label>
-		{/each}
-	</div>
+	{#each groups as g (g.group)}
+		{#if g.group}<h4>{g.group}</h4>{/if}
+		<div class="grid">
+			{#each g.skills as s (s.key)}
+				{@const chosen = p.skills.includes(s.key)}
+				<span class="check" class:chosen>
+					<input
+						type="checkbox"
+						aria-label={s.name}
+						checked={chosen}
+						disabled={!chosen && full}
+						onchange={() => dispatch({ type: 'toggleProfessionSkill', skill: s.key })}
+					/>
+					<span><SkillName skill={s} /> <small>{s.value ?? '–'}</small></span>
+				</span>
+			{/each}
+		</div>
+	{/each}
 </section>
 
 {#if needsSpec.length}
@@ -81,9 +99,15 @@
 					onchange={(e) => dispatch({ type: 'assignHeroSkill', slot: slot.index, skill: e.currentTarget.value || undefined })}
 				>
 					<option value="">–</option>
-					{#each heroSkills as h (h.key)}
-						{@const elsewhere = p.heroSlots.find((o) => o.skill === h.skillId && o.index !== slot.index)}
-						<option value={h.skillId}>{h.name} ({t.profession.start(h.start)}){elsewhere ? ` · ${elsewhere.value}` : ''}</option>
+					{#each heroGroups as g (g.category)}
+						<optgroup label={t.skills.categories[g.category]}>
+							{#each g.skills as h (h.key)}
+								{@const elsewhere = p.heroSlots.find((o) => o.skill === h.skillId && o.index !== slot.index)}
+								<option value={h.skillId}
+									>{h.name} ({t.profession.start(h.start)}){elsewhere ? ` · ${elsewhere.value}` : ''}</option
+								>
+							{/each}
+						</optgroup>
 					{/each}
 				</select>
 			</label>
@@ -108,6 +132,11 @@
 		display: flex;
 		gap: 0.5rem;
 		align-items: center;
+	}
+	h4 {
+		margin: 0.8rem 0 0.3rem;
+		color: var(--muted);
+		font-size: 0.9rem;
 	}
 	.check small {
 		color: var(--muted);

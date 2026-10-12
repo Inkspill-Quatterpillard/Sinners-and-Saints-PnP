@@ -4,7 +4,7 @@ import { applyTrait } from '../choices';
 import type { Derivation, StepStatus } from '../derivation';
 import { messages } from '../messages';
 
-export type CharacteristicMode = 'none' | 'free' | 'roll' | 'override';
+export type CharacteristicMode = 'none' | 'free' | 'roll';
 
 export type CharacteristicAction =
 	| { type: 'setCharacteristicMode'; mode: CharacteristicMode }
@@ -14,8 +14,8 @@ export type CharacteristicAction =
 
 export interface CharacteristicSlotView {
 	index: number;
-	/** `free`/`pick`: frei gewählt bzw. eingetragen; `roll`: per W100. */
-	kind: 'free' | 'pick' | 'roll';
+	/** `free`: frei gewählt; `roll`: per W100 oder als am Tisch gewürfeltes Ergebnis ausgewählt. */
+	kind: 'free' | 'roll';
 	/** Zusätzlicher Platz durch eine Spezies-Eigenschaft. */
 	extra: boolean;
 	id?: string;
@@ -23,6 +23,8 @@ export interface CharacteristicSlotView {
 	text?: string;
 	note?: string;
 	roll?: Roll;
+	/** Würfelplatz, dessen Ergebnis direkt ausgewählt statt gewürfelt wurde. */
+	picked?: boolean;
 	rerolled?: boolean;
 	/** Dieselbe Charakteristik ist schon in einem früheren Platz: neu würfeln bzw. anders wählen. */
 	duplicate?: boolean;
@@ -47,11 +49,14 @@ export function applyCharacteristicAction(basis: Basis, action: CharacteristicAc
 		case 'setCharacteristicMode':
 			c.mode = action.mode;
 			break;
+		// Ein Platz hat entweder eine Auswahl oder einen Wurf; das Neueste gilt.
 		case 'pickCharacteristic':
+			delete c.rolls[action.slot];
 			if (action.characteristic) c.picks[action.slot] = action.characteristic;
 			else delete c.picks[action.slot];
 			break;
 		case 'rollCharacteristic':
+			delete c.picks[action.slot];
 			if (action.roll) c.rolls[action.slot] = action.roll;
 			else delete c.rolls[action.slot];
 			break;
@@ -65,7 +70,7 @@ export function applyCharacteristicAction(basis: Basis, action: CharacteristicAc
 	}
 }
 
-/** Charakteristik: frei wählen, bis zu zwei würfeln oder (Override) selbst eintragen; Effekte wirken automatisch. */
+/** Charakteristik: frei wählen oder bis zu zwei würfeln (auch am Tisch, dann ausgewählt); Effekte wirken automatisch. */
 export function evaluateCharacteristic(d: Derivation): CharacteristicStepView {
 	const rd = d.ruleData;
 	const c = d.character.basis.characteristics;
@@ -93,21 +98,23 @@ export function evaluateCharacteristic(d: Derivation): CharacteristicStepView {
 
 	for (let index = 0; index < view.maxSlots; index++) {
 		const isExtra = index >= baseSlots;
-		const kind: CharacteristicSlotView['kind'] = c.mode === 'override' ? 'pick' : c.mode === 'free' && !isExtra ? 'free' : 'roll';
+		const kind: CharacteristicSlotView['kind'] = c.mode === 'free' && !isExtra ? 'free' : 'roll';
 		const slot: CharacteristicSlotView = { index, kind, extra: isExtra };
 		let def: CharacteristicDef | undefined;
-		if (kind === 'roll') {
+		if (kind === 'roll' && !c.picks[index]) {
+			slot.picked = false;
 			slot.roll = c.rolls[index];
 			slot.rerolled = c.rerolledSlots[index] ?? false;
 			if (slot.roll) def = characteristicForRoll(rd, slot.roll.dice[0]);
 		} else {
+			if (kind === 'roll') slot.picked = true;
 			def = rd.characteristics.entries.find((e) => e.id === c.picks[index]);
 		}
 		if (def) {
 			Object.assign(slot, { id: def.id, name: def.name, text: def.text, note: def.note });
 			if (seen.has(def.id)) {
 				slot.duplicate = true;
-				if (kind === 'roll') {
+				if (kind === 'roll' && !slot.picked) {
 					status = status === 'invalid' ? status : 'open';
 					d.issues.push({ step: 'characteristic', severity: 'warning', message: messages.characteristicDuplicateRoll(def.name) });
 				} else {

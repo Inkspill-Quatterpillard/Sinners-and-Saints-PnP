@@ -1,7 +1,14 @@
 <script lang="ts">
 	import DiceInput from '$lib/components/DiceInput.svelte';
 	import { rollDice } from '$lib/dice';
-	import { characteristicForRoll, type Action, type CharacteristicMode, type CharacterView, type Roll } from '$lib/engine';
+	import {
+		characteristicForRoll,
+		type Action,
+		type CharacteristicMode,
+		type CharacterView,
+		type CharacteristicSlotView,
+		type Roll
+	} from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
 
@@ -9,7 +16,7 @@
 
 	const step = $derived(view.characteristicStep);
 	const rules = ruleData.characteristics;
-	const modes: CharacteristicMode[] = ['none', 'free', 'roll', 'override'];
+	const modes: CharacteristicMode[] = ['none', 'free', 'roll'];
 
 	/** Würfelt die App und trifft eine schon vorhandene Charakteristik, wird automatisch neu gewürfelt. */
 	function unique(roll: Roll, slot: number): Roll {
@@ -20,6 +27,22 @@
 		return r;
 	}
 </script>
+
+{#snippet picker(slot: CharacteristicSlotView, placeholder: string)}
+	<select
+		value={slot.picked || slot.kind === 'free' ? (slot.id ?? '') : ''}
+		aria-label={t.characteristic.slot(slot.index, slot.extra)}
+		onchange={(e) =>
+			dispatch({ type: 'pickCharacteristic', slot: slot.index, characteristic: e.currentTarget.value || undefined })}
+	>
+		<option value="">{placeholder}</option>
+		{#each rules.entries as entry (entry.id)}
+			<option value={entry.id}
+				>{String(entry.range[0]).padStart(2, '0')}–{String(entry.range[1]).padStart(2, '0')} {entry.name}</option
+			>
+		{/each}
+	</select>
+{/snippet}
 
 <p class="intro">{t.characteristic.intro}</p>
 
@@ -48,36 +71,28 @@
 		<article class:duplicate={slot.duplicate}>
 			<h4>{t.characteristic.slot(slot.index, slot.extra)}</h4>
 			{#if slot.kind === 'roll'}
-				<DiceInput
-					locked={!slot.duplicate}
-					count={1}
-					sides={rules.die}
-					roll={slot.roll}
-					onroll={(roll) => dispatch({ type: 'rollCharacteristic', slot: slot.index, roll: unique(roll, slot.index) })}
-					onreset={() => dispatch({ type: 'rollCharacteristic', slot: slot.index, roll: undefined })}
-				/>
-				{#if slot.roll && step.rerollAvailable && !slot.duplicate}
-					<button
-						onclick={() =>
-							dispatch({ type: 'rerollCharacteristic', slot: slot.index, roll: unique(rollDice(1, rules.die), slot.index) })}
-					>
-						{t.characteristic.reroll}
-					</button>
-				{/if}
-			{:else}
-				<select
-					value={slot.id ?? ''}
-					aria-label={t.characteristic.slot(slot.index, slot.extra)}
-					onchange={(e) =>
-						dispatch({ type: 'pickCharacteristic', slot: slot.index, characteristic: e.currentTarget.value || undefined })}
-				>
-					<option value="">–</option>
-					{#each rules.entries as entry (entry.id)}
-						<option value={entry.id}
-							>{String(entry.range[0]).padStart(2, '0')}–{String(entry.range[1]).padStart(2, '0')} {entry.name}</option
+				<div class="controls">
+					<DiceInput
+						locked={!slot.duplicate}
+						manual={false}
+						count={1}
+						sides={rules.die}
+						roll={slot.roll}
+						onroll={(roll) => dispatch({ type: 'rollCharacteristic', slot: slot.index, roll: unique(roll, slot.index) })}
+						onreset={() => dispatch({ type: 'rollCharacteristic', slot: slot.index, roll: undefined })}
+					/>
+					{#if slot.roll && step.rerollAvailable && !slot.duplicate}
+						<button
+							onclick={() =>
+								dispatch({ type: 'rerollCharacteristic', slot: slot.index, roll: unique(rollDice(1, rules.die), slot.index) })}
 						>
-					{/each}
-				</select>
+							{t.characteristic.reroll}
+						</button>
+					{/if}
+					{@render picker(slot, slot.roll || slot.id ? t.dice.overwrite : t.dice.enter)}
+				</div>
+			{:else}
+				{@render picker(slot, '–')}
 			{/if}
 			{#if slot.name}
 				<p class="name"><strong>{slot.name}</strong>{slot.rerolled ? ` · ${t.characteristic.rerolled}` : ''}</p>
@@ -128,5 +143,11 @@
 	}
 	select {
 		max-width: 100%;
+	}
+	.controls {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+		align-items: center;
 	}
 </style>

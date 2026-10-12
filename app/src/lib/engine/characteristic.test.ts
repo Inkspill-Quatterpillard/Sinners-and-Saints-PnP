@@ -137,23 +137,40 @@ describe('Charakteristik', () => {
 		});
 	});
 
-	describe('Override', () => {
-		it('zwei Charakteristiken lassen sich direkt eintragen, etwa nach einem Wurf am Tisch', () => {
+	describe('Eintragen im Würfelmodus', () => {
+		it('ein am Tisch gewürfeltes Ergebnis lässt sich je Platz direkt auswählen', () => {
 			const c = play(
 				...ATTRS,
-				{ type: 'setCharacteristicMode', mode: 'override' },
+				{ type: 'setCharacteristicMode', mode: 'roll' },
 				{ type: 'pickCharacteristic', slot: 0, characteristic: 'haarig' },
-				{ type: 'pickCharacteristic', slot: 1, characteristic: 'paranoia' }
+				{ type: 'rollCharacteristic', slot: 1, roll: w100(50) }
 			);
-			expect(view(c).characteristicStep.maxSlots).toBe(2);
+			const v = view(c);
+			expect(v.characteristicStep.slots[0]).toMatchObject({ kind: 'roll', id: 'haarig', picked: true });
+			expect(v.characteristicStep.slots[1]).toMatchObject({ id: 'sprinter' });
 			expect(status(c)).toBe('valid');
-			expect(view(c).attributes.KON.effective).toBe(15);
+			// Haarig +1 KON, Sprinter −1 KON: beide wirken.
+			expect(v.attributes.KON.effective).toBe(14);
+			expect(skill(c, 'charme')?.value).toBe(skill(play(...ATTRS), 'charme')!.value! - 2);
 		});
 
-		it('dieselbe Charakteristik zweimal ist ungültig', () => {
+		it('Würfeln ersetzt eine Auswahl, Auswählen ersetzt einen Wurf', () => {
+			const picked = play(
+				...ATTRS,
+				{ type: 'setCharacteristicMode', mode: 'roll' },
+				{ type: 'pickCharacteristic', slot: 0, characteristic: 'haarig' },
+				{ type: 'rollCharacteristic', slot: 0, roll: w100(50) }
+			);
+			expect(view(picked).characteristicStep.slots[0]).toMatchObject({ id: 'sprinter', picked: false });
+			const rolled = applyAction(picked, { type: 'pickCharacteristic', slot: 0, characteristic: 'paranoia' }, ruleData);
+			expect(view(rolled).characteristicStep.slots[0]).toMatchObject({ id: 'paranoia', picked: true });
+			expect(view(rolled).characteristicStep.slots[0].roll).toBeUndefined();
+		});
+
+		it('dieselbe Charakteristik zweimal ausgewählt ist ungültig', () => {
 			const c = play(
 				...ATTRS,
-				{ type: 'setCharacteristicMode', mode: 'override' },
+				{ type: 'setCharacteristicMode', mode: 'roll' },
 				{ type: 'pickCharacteristic', slot: 0, characteristic: 'haarig' },
 				{ type: 'pickCharacteristic', slot: 1, characteristic: 'haarig' }
 			);

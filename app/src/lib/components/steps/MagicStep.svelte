@@ -37,7 +37,7 @@
 				<h4 class:locked={tier > c.maxTier}>{t.magic.tier(tier)}</h4>
 				{#each list as s (s.id)}
 					{@const chosen = d.chosen.includes(s.id)}
-					<details class="spell" class:chosen class:locked={tier > c.maxTier}>
+					<details class="spell" class:chosen class:locked={!chosen && !d.selectable.includes(s.id)}>
 						<summary>
 							<input
 								type="checkbox"

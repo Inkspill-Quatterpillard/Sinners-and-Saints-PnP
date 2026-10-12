@@ -121,16 +121,13 @@ export const t = {
 		intro:
 			'Verteile Punkte auf persönliche Interessen: beliebige Fertigkeiten, auch Professionsfertigkeiten, und den Status. Kampf- und Magiefertigkeiten sind ausgeschlossen.',
 		basis: 'Punkte aus',
-		basisOption: (attr: string, value: number | undefined) => `2 × ${attr} (${value === undefined ? '–' : value * 2} Punkte)`,
+		basisPoints: (value: number | undefined) => (value === undefined ? '–' : `${value * 2} Punkte`),
 		needsAttributes: 'Lege zuerst die Grundattribute fest.',
 		remaining: (remaining: number, total: number) =>
 			remaining >= 0
 				? `Noch ${remaining} von ${total} Punkten zu verteilen`
 				: `${-remaining} Punkte zu viel verteilt (${total} verfügbar)`,
-		status: 'Status',
-		points: (name: string) => `Punkte für ${name}`,
-		more: (name: string) => `${name} +1`,
-		less: (name: string) => `${name} −1`
+		status: 'Status'
 	},
 	senility: {
 		intro: (loss: number) =>
@@ -163,15 +160,14 @@ export const t = {
 	},
 	characteristic: {
 		intro:
-			'Eine Charakteristik ist eine Eigenschaft mit Vor- und Nachteilen. Wähle eine frei, würfle bis zu zwei (einmal darf neu gewürfelt werden) oder trage am Tisch gewürfelte ein. Du kannst auch ganz verzichten.',
+			'Eine Charakteristik ist eine Eigenschaft mit Vor- und Nachteilen. Wähle eine frei, oder würfle bis zu zwei (einmal darf neu gewürfelt werden). Am Tisch gewürfelte Ergebnisse wählst du im Feld daneben aus. Du kannst auch ganz verzichten.',
 		disabled: 'Ihr spielt ohne Charakteristik. Du kannst die optionale Regel unter „Optionen“ aktivieren.',
 		forbidden: 'Durch „Eherner Wille“ hast du auf eine Charakteristik verzichtet.',
 		mode: 'Wie?',
 		modes: {
 			none: 'Keine Charakteristik',
 			free: 'Eine frei wählen',
-			roll: 'Bis zu zwei würfeln (W100)',
-			override: 'Eintragen (am Tisch gewürfelt)'
+			roll: 'Bis zu zwei würfeln (W100)'
 		},
 		slot: (i: number, extra: boolean) => (extra ? `Zusätzliche Charakteristik (Spezies)` : `Charakteristik ${i + 1}`),
 		reroll: 'Neu würfeln (einmalig)',

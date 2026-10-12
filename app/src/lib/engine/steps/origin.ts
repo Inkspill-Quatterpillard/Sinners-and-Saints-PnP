@@ -151,7 +151,13 @@ export function evaluateStunts(
 		};
 	});
 
-	let stepStatus: StepStatus = chosen.length === allowed ? 'valid' : chosen.length < allowed ? 'open' : 'invalid';
+	// Erfüllt der Charakter für weniger Kunststücke die Voraussetzungen als erlaubt, genügen die erfüllbaren.
+	const choosable = stunts.filter((s) => s.available && !s.chosen).length;
+	const needed = Math.min(allowed, chosen.length + choosable);
+	let stepStatus: StepStatus = chosen.length > allowed ? 'invalid' : chosen.length >= needed ? 'valid' : 'open';
+	if (chosen.length < allowed && choosable === 0) {
+		d.issues.push({ step: 'stunts', severity: 'warning', message: messages.noStuntAvailable });
+	}
 	if (chosen.length > allowed) {
 		d.issues.push({ step: 'stunts', severity: 'invalid', message: messages.tooManyStunts(chosen.length, allowed) });
 	}

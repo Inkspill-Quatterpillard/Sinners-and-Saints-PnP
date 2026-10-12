@@ -16,9 +16,11 @@
 		 * Ein am Tisch gewürfeltes Ergebnis lässt sich weiterhin überschreiben.
 		 */
 		locked?: boolean;
+		/** Ohne Eingabefeld, wenn das Ergebnis anders eingetragen wird (z. B. per Auswahl). */
+		manual?: boolean;
 	}
 
-	let { count, sides, roll, onroll, onreset, locked = false }: Props = $props();
+	let { count, sides, roll, onroll, onreset, locked = false, manual = true }: Props = $props();
 
 	let editing = $state(false);
 	let text = $state('');
@@ -56,7 +58,9 @@
 		{#if !(locked && roll)}
 			<button type="button" onclick={() => onroll(rollDice(count, sides))}>{t.dice.roll(count, sides)}</button>
 		{/if}
-		<button type="button" onclick={() => (editing = true)}>{roll ? t.dice.overwrite : t.dice.enter}</button>
+		{#if manual}
+			<button type="button" onclick={() => (editing = true)}>{roll ? t.dice.overwrite : t.dice.enter}</button>
+		{/if}
 		{#if roll && onreset}
 			<button type="button" class="reset" aria-label={t.dice.reset} title={t.dice.reset} onclick={onreset}>↺</button>
 		{/if}

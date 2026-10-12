@@ -140,7 +140,7 @@ describe('Profession', () => {
 				{ type: 'assignHeroSkill', slot: 3, skill: 'faustkampf' }
 			);
 			// STR 16 + 1 = 17 → Startwert ½ = 8, gesetzt auf 8: keine Warnung
-			expect(view(strong).issues.filter((i) => i.severity === 'warning')).toEqual([]);
+			expect(view(strong).issues.filter((i) => i.step === 'profession' && i.severity === 'warning')).toEqual([]);
 			const higher = play(
 				{ type: 'setAttributeMethod', method: 'roll' },
 				...[0, 1, 2, 3, 4, 5, 6, 7].map((slot): Action => ({

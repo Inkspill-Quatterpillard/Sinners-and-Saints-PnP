@@ -3,12 +3,16 @@
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
 	import { roman } from '$lib/format';
+	import { untrack } from 'svelte';
 
 	let { view, dispatch }: { view: CharacterView; dispatch: (a: Action) => void } = $props();
 
 	const step = $derived(view.combatStep);
 	const unlocked = $derived(step.skills.filter((s) => s.allowed > 0));
 	const anyStyle = $derived(step.styleAllowed.melee || step.styleAllowed.ranged);
+	// Aufgeklappt bleibt, was der Spieler aufgeklappt hat; sonst sind Bereiche mit Auswahl offen.
+	let opened = $state<Record<string, boolean>>({});
+	const startOpen = untrack(() => Object.fromEntries(view.combatStep.skills.map((s) => [s.skill, s.chosen.length > 0])));
 </script>
 
 <p class="intro">{t.combat.intro}</p>
@@ -19,7 +23,10 @@
 {/if}
 {#each unlocked as skill (skill.skill)}
 	{@const techniques = ruleData.combat.techniques.filter((x) => x.skill === skill.skill)}
-	<details open={skill.chosen.length > 0}>
+	<details
+		open={opened[skill.skill] ?? startOpen[skill.skill] ?? false}
+		ontoggle={(e) => (opened[skill.skill] = e.currentTarget.open)}
+	>
 		<summary>
 			<strong>{skill.name}</strong> ({skill.value}) · {t.combat.unlocked(
 				skill.chosen.length,
@@ -31,11 +38,12 @@
 			<h4 class:locked={tier > skill.maxTier}>{t.combat.tier(roman(tier))}</h4>
 			{#each techniques.filter((x) => x.tier === tier) as tech (tech.id)}
 				{@const chosen = skill.chosen.includes(tech.id)}
-				<label class="tech" class:chosen class:locked={tier > skill.maxTier}>
+				{@const unavailable = !chosen && (tier > skill.maxTier || skill.chosen.length >= skill.allowed)}
+				<label class="tech" class:chosen class:locked={unavailable}>
 					<input
 						type="checkbox"
 						checked={chosen}
-						disabled={!chosen && (tier > skill.maxTier || skill.chosen.length >= skill.allowed)}
+						disabled={unavailable}
 						onchange={() => dispatch({ type: 'toggleTechnique', technique: tech.id })}
 					/>
 					<span>

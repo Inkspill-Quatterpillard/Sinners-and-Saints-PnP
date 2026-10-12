@@ -123,6 +123,36 @@ describe('Kunststücke', () => {
 		expect(stepStatus(c, 'stunts')).toBe('open');
 	});
 
+	it('erfüllt der Charakter für kein Kunststück die Voraussetzungen, ist der Schritt nicht offen', () => {
+		const c = play(...ATTRS);
+		const unavailable = new Set(
+			view(c)
+				.stuntStep.stunts.filter((s) => !s.available)
+				.map((s) => s.id)
+		);
+		const onlyUnavailable = { ...ruleData, stunts: ruleData.stunts.filter((s) => unavailable.has(s.id)) };
+		const v = computeView(c, onlyUnavailable);
+		expect(v.steps.find((s) => s.id === 'stunts')?.status).toBe('valid');
+		expect(v.issues.some((i) => i.step === 'stunts' && i.severity === 'warning')).toBe(true);
+	});
+
+	it('sind weniger Kunststücke erfüllbar als erlaubt, genügen die erfüllbaren', () => {
+		const c = play(
+			...stuntReady,
+			ON,
+			{ type: 'chooseOriginOrStunt', choice: 'stunt' },
+			{ type: 'toggleStunt', stunt: 'abrollen' }
+		);
+		const available = view(c)
+			.stuntStep.stunts.filter((s) => s.available)
+			.map((s) => s.id);
+		expect(available).toContain('abrollen');
+		const onlyOne = { ...ruleData, stunts: ruleData.stunts.filter((s) => s.id === 'abrollen' || !available.includes(s.id)) };
+		const v = computeView(c, onlyOne);
+		expect(v.stuntStep.allowed).toBe(2);
+		expect(v.steps.find((s) => s.id === 'stunts')?.status).toBe('valid');
+	});
+
 	it('ein Kunststück mit erfüllten Voraussetzungen ist gültig', () => {
 		const c = play(...stuntReady, { type: 'toggleStunt', stunt: 'abrollen' });
 		expect(stepStatus(c, 'stunts')).toBe('valid');

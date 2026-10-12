@@ -83,6 +83,18 @@ describe('Charakterdatei', () => {
 				expect(() => computeView(result.character, ruleData)).not.toThrow();
 			}
 		});
+
+		it('eingetragene Charakteristiken (alter Modus „Eintragen“) bleiben als Auswahl im Würfelmodus erhalten', () => {
+			const json = JSON.parse(exportCharacter(sample()));
+			json.formatVersion = 2;
+			json.basis.characteristics = { mode: 'override', picks: { 0: 'haarig' }, rolls: {}, rerolledSlots: {} };
+			const result = parseCharacterFile(JSON.stringify(json));
+			expect(result.ok).toBe(true);
+			if (result.ok) {
+				expect(result.character.basis.characteristics.mode).toBe('roll');
+				expect(computeView(result.character, ruleData).characteristicStep.slots[0]).toMatchObject({ id: 'haarig', picked: true });
+			}
+		});
 	});
 });
 

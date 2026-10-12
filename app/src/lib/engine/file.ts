@@ -20,6 +20,13 @@ const MIGRATIONS: Record<number, (raw: Raw) => Raw> = {
 			for (const attr of Object.values(age.atrophia)) if (typeof attr === 'string') points[attr] = (points[attr] ?? 0) + 1;
 		}
 		return { ...raw, formatVersion: 2, basis: { ...basis, age: { ...age, atrophia: points } } };
+	},
+	// Version 3: Der Modus „Eintragen“ entfällt; eingetragene Charakteristiken sind Auswahlen im Würfelmodus.
+	2: (raw) => {
+		const basis = isObject(raw.basis) ? raw.basis : {};
+		const ch = isObject(basis.characteristics) ? basis.characteristics : {};
+		const characteristics = ch.mode === 'override' ? { ...ch, mode: 'roll' } : ch;
+		return { ...raw, formatVersion: 3, basis: { ...basis, characteristics } };
 	}
 };
 

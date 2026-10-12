@@ -6,7 +6,7 @@ import type { AgeStage } from './steps/age';
 import type { Background } from './steps/background';
 
 /** Version des Formats der Charakterdatei. Ältere Dateien werden beim Laden migriert. */
-export const FORMAT_VERSION = 2;
+export const FORMAT_VERSION = 3;
 
 export type CharacterStatus = 'inCreation' | 'finished';
 
