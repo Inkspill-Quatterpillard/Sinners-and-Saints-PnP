@@ -80,6 +80,14 @@ export function evaluateProfession(d: Derivation): ProfessionStepView {
 		addSkillBonus(d, key, { source, value: rules.professionSkillBonus });
 	}
 	if (p.skills.length < rules.professionSkillCount) status = worst(status, 'open');
+	if (p.skills.length > rules.professionSkillCount) {
+		status = 'invalid';
+		d.issues.push({
+			step: 'profession',
+			severity: 'invalid',
+			message: messages.tooManyProfessionSkills(p.skills.length, rules.professionSkillCount)
+		});
+	}
 
 	const statusModifier = p.statusRoll ? rules.statusTable[String(p.statusRoll.dice[0])] : undefined;
 	d.status.base = rules.statusStart;

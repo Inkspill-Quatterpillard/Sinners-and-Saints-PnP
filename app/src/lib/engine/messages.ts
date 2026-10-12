@@ -44,5 +44,12 @@ export const messages = {
 	spellsExceeded: (discipline: string, total: number) =>
 		`${discipline}: Die gewählten Zauber überschreiten das Kontingent (${total} Zauber, Stufen und Höchstzahlen laut Tabelle). Entferne Zauber oder steigere die Fertigkeit.`,
 	overspent: 'Die Ausrüstung kostet mehr, als im Geldbeutel ist. Das ist erlaubt, wenn der Spielleiter zustimmt.',
+	fileNotJson: 'Die Datei ist keine gültige Charakterdatei (kein JSON).',
+	fileNotCharacter: 'Die Datei enthält keinen Charakter dieser App.',
+	fileTooNew: (version: number, supported: number) =>
+		`Die Datei stammt aus einer neueren Version der App (Format ${version}, unterstützt bis ${supported}). Bitte die App aktualisieren.`,
+	copyName: (name: string) => `${name || 'Unbenannt'} (Kopie)`,
+	tooManyProfessionSkills: (n: number, max: number) =>
+		`Es sind ${n} Professionsfertigkeiten gewählt, erlaubt sind ${max}. Entferne ${n - max}.`,
 	characteristicForbidden: 'Durch „Eherner Wille“ (keine Charakteristik) darf keine Charakteristik gewählt werden.'
 };

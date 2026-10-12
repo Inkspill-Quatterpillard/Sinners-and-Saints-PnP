@@ -28,3 +28,5 @@ export { currencyOf } from './steps/equipment';
 export type { BackgroundField, BackgroundView, ImportantPerson } from './steps/background';
 export type { CurrentKey, LiveAction, LiveView, OverrideKey } from './live';
 export type { PlayState } from './character';
+export { duplicateCharacter, exportCharacter, normalizeCharacter, parseCharacterFile } from './file';
+export type { ParseResult } from './file';

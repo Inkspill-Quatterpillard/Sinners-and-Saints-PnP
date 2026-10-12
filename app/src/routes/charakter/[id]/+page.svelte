@@ -83,6 +83,8 @@
 		<input value={view.name} oninput={(e) => dispatch({ type: 'setName', name: e.currentTarget.value })} />
 	</label>
 
+	{#if view.ruleDataChanged}<p class="issue invalid">{t.live.ruleDataChanged}</p>{/if}
+
 	<div class="finish">
 		{#if view.status === 'finished'}
 			<a class="button primary" href="/charakter/{view.id}/bogen">{t.live.open}</a>

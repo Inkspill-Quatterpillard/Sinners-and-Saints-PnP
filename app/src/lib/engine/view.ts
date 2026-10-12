@@ -64,6 +64,8 @@ export interface CharacterView {
 	background: BackgroundView;
 	/** Alle Schritte der Erstellung sind gültig. */
 	canFinish: boolean;
+	/** Neue Regeldaten seit der letzten Änderung haben den Charakter ungültig gemacht. */
+	ruleDataChanged: boolean;
 	/** Würfel für die Meditation (W6, bei Wächter der Ströme W10). */
 	meditationDie: number;
 	live: LiveView;
@@ -131,6 +133,10 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		equipmentStep,
 		background,
 		canFinish: d.steps.every((s) => s.status === 'valid'),
+		ruleDataChanged:
+			character.ruleDataVersion !== ruleData.version &&
+			(d.steps.some((s) => s.status === 'invalid') ||
+				(character.status === 'finished' && !d.steps.every((s) => s.status === 'valid'))),
 		meditationDie: d.meditationDie,
 		live: computeLive(character.play, secondary, {
 			remainingMoney: equipmentStep.remaining,

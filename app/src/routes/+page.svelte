@@ -1,16 +1,28 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { createCharacter, computeView, type CharacterView } from '$lib/engine';
+	import {
+		computeView,
+		createCharacter,
+		duplicateCharacter,
+		exportCharacter,
+		parseCharacterFile,
+		type Character,
+		type CharacterView
+	} from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
-	import { listCharacters, saveCharacter } from '$lib/storage/characterStore';
+	import { deleteCharacter, listCharacters, loadCharacter, saveCharacter } from '$lib/storage/characterStore';
 	import { t } from '$lib/texts';
 
-	let characters = $state.raw<CharacterView[] | undefined>();
+	let characters = $state.raw<{ character: Character; view: CharacterView }[] | undefined>();
+	let message = $state('');
+
+	async function refresh() {
+		const all = await listCharacters();
+		characters = all.map((character) => ({ character, view: computeView(character, ruleData) }));
+	}
 
 	$effect(() => {
-		listCharacters().then((all) => {
-			characters = all.map((c) => computeView(c, ruleData));
-		});
+		refresh();
 	});
 
 	async function newCharacter() {
@@ -18,9 +30,50 @@
 		await saveCharacter(character);
 		await goto(`/charakter/${character.id}`);
 	}
+
+	async function duplicate(c: Character) {
+		await saveCharacter(duplicateCharacter(c, crypto.randomUUID()));
+		await refresh();
+	}
+
+	async function remove(c: CharacterView) {
+		if (!confirm(t.list.confirmDelete(c.name || t.unnamed))) return;
+		await deleteCharacter(c.id);
+		await refresh();
+	}
+
+	function download(c: Character) {
+		const blob = new Blob([exportCharacter(c)], { type: 'application/json' });
+		const url = URL.createObjectURL(blob);
+		const a = document.createElement('a');
+		a.href = url;
+		a.download = `${(c.basis.name || 'charakter').replace(/[^\p{L}\p{N}_-]+/gu, '_')}.sns.json`;
+		a.click();
+		URL.revokeObjectURL(url);
+	}
+
+	async function importFile(e: Event) {
+		const input = e.currentTarget as HTMLInputElement;
+		const file = input.files?.[0];
+		input.value = '';
+		if (!file) return;
+		const result = parseCharacterFile(await file.text());
+		if (!result.ok) {
+			message = result.error;
+			return;
+		}
+		let character = result.character;
+		// Ist die ID schon vergeben, wird der Import als eigener Charakter gespeichert.
+		if (await loadCharacter(character.id)) character = { ...character, id: crypto.randomUUID() };
+		await saveCharacter(character);
+		message = t.list.imported(character.basis.name || t.unnamed);
+		await refresh();
+	}
 </script>
 
 <h1>{t.characters}</h1>
+
+{#if message}<p class="message">{message}</p>{/if}
 
 {#if characters === undefined}
 	<p>{t.loading}</p>
@@ -28,16 +81,32 @@
 	<p>{t.noCharacters}</p>
 {:else}
 	<ul class="list">
-		{#each characters as c (c.id)}
+		{#each characters as { character, view } (view.id)}
 			<li>
-				<a href={c.status === 'finished' ? `/charakter/${c.id}/bogen` : `/charakter/${c.id}`}>{c.name || t.unnamed}</a>
-				<span class="status">{t.status[c.status]}</span>
+				<div class="main">
+					<a href={view.status === 'finished' ? `/charakter/${view.id}/bogen` : `/charakter/${view.id}`}
+						>{view.name || t.unnamed}</a
+					>
+					<span class="status">{t.status[view.status]}</span>
+					{#if view.ruleDataChanged}<span class="warn">{t.list.ruleDataChanged}</span>{/if}
+				</div>
+				<div class="actions">
+					<button onclick={() => download(character)}>{t.list.export}</button>
+					<button onclick={() => duplicate(character)}>{t.list.duplicate}</button>
+					<button class="danger" onclick={() => remove(view)}>{t.list.delete}</button>
+				</div>
 			</li>
 		{/each}
 	</ul>
 {/if}
 
-<button class="primary" onclick={newCharacter}>{t.newCharacter}</button>
+<div class="bottom">
+	<button class="primary" onclick={newCharacter}>{t.newCharacter}</button>
+	<label class="button">
+		{t.list.import}
+		<input type="file" accept=".json,application/json" onchange={importFile} />
+	</label>
+</div>
 
 <style>
 	.list {
@@ -47,14 +116,60 @@
 		gap: 0.5rem;
 	}
 	.list li {
-		display: flex;
-		justify-content: space-between;
 		background: var(--surface);
 		border: 1px solid var(--line);
 		border-radius: 0.5rem;
 		padding: 0.75rem 1rem;
+		display: grid;
+		gap: 0.5rem;
+	}
+	.main {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+		align-items: baseline;
+	}
+	.main a {
+		font-weight: 600;
+		font-size: 1.1rem;
 	}
 	.status {
 		color: var(--muted);
+	}
+	.warn {
+		color: var(--warn);
+		font-size: 0.9rem;
+	}
+	.actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+	}
+	.actions button {
+		padding: 0.25rem 0.6rem;
+		font-size: 0.9rem;
+	}
+	.danger {
+		color: var(--danger);
+	}
+	.bottom {
+		display: flex;
+		gap: 0.6rem;
+		align-items: center;
+	}
+	.button {
+		display: inline-block;
+		background: var(--surface);
+		border: 1px solid var(--line);
+		border-radius: 0.4rem;
+		padding: 0.45rem 0.7rem;
+		cursor: pointer;
+	}
+	.button input {
+		display: none;
+	}
+	.message {
+		border-left: 4px solid var(--accent);
+		padding-left: 0.6rem;
 	}
 </style>

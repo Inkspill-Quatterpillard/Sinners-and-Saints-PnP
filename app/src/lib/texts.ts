@@ -281,6 +281,8 @@ export const t = {
 		editCreation: 'Erstellung ansehen und ändern',
 		toCreation: 'Zur Erstellung',
 		notFinished: 'Dieser Charakter ist noch nicht abgeschlossen.',
+		ruleDataChanged:
+			'Die Regeldaten der App wurden aktualisiert und dieser Charakter ist dadurch nicht mehr gültig. Prüfe die markierten Schritte.',
 		years: (n: number) => `${n} Jahre`,
 		tp: 'Trefferpunkte',
 		stability: 'Stabilität',
@@ -388,6 +390,15 @@ export const t = {
 		techniques: 'Kampftechniken',
 		style: 'Kampfstil',
 		spells: 'Zauber'
+	},
+	list: {
+		export: 'Exportieren',
+		duplicate: 'Duplizieren',
+		delete: 'Löschen',
+		import: 'Importieren …',
+		confirmDelete: (name: string) => `„${name}“ wirklich löschen? Das lässt sich nicht rückgängig machen.`,
+		imported: (name: string) => `„${name}“ wurde importiert.`,
+		ruleDataChanged: 'Neue Regeln: bitte prüfen'
 	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',
