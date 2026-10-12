@@ -113,6 +113,26 @@ export interface SecondaryRules {
 	damageBonusTable: ThresholdTable;
 }
 
+export type SkillCategory = 'general' | 'combat' | 'arcane';
+
+export interface SkillDef {
+	id: string;
+	name: string;
+	/** Bei mehreren Attributen zählt das höhere. */
+	attributes: AttributeId[];
+	fraction: 'half' | 'fifth';
+	/** „Spezialisierung notwendig“: die Fertigkeit wird je Spezialisierung getrennt geführt. */
+	specialization: boolean;
+	group?: string;
+	/** Nur bei Heldenfertigkeiten: Kampf oder Magie. */
+	category?: 'combat' | 'arcane';
+	description: string;
+	/** Andere Namen, unter denen das Regelwerk die Fertigkeit an anderer Stelle nennt. */
+	aliases?: string[];
+	note?: string;
+	source: SourceRef;
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -123,4 +143,6 @@ export interface RuleData {
 	defaultSetting: string;
 	species: SpeciesDef[];
 	secondary: SecondaryRules;
+	skills: SkillDef[];
+	heroSkills: SkillDef[];
 }

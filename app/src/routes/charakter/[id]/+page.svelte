@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import Summary from '$lib/components/Summary.svelte';
+	import SkillTable from '$lib/components/SkillTable.svelte';
 	import AttributesStep from '$lib/components/steps/AttributesStep.svelte';
 	import OptionsStep from '$lib/components/steps/OptionsStep.svelte';
 	import SpeciesStep from '$lib/components/steps/SpeciesStep.svelte';
@@ -86,6 +87,11 @@
 		</section>
 		<Summary {view} />
 	</div>
+
+	<details class="all-skills">
+		<summary>{t.skills.all}</summary>
+		<SkillTable skills={view.skills} {dispatch} />
+	</details>
 {/if}
 
 <style>
@@ -135,6 +141,13 @@
 		display: flex;
 		justify-content: space-between;
 		margin-top: 1.5rem;
+	}
+	.all-skills {
+		margin-top: 1.5rem;
+	}
+	.all-skills summary {
+		cursor: pointer;
+		font-weight: 600;
 	}
 	.issue {
 		padding: 0.4rem 0.7rem;

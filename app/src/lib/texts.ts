@@ -61,6 +61,17 @@ export const t = {
 		result: 'Ergebnis',
 		cap: (max: number) => `höchstens ${max}`
 	},
+	skills: {
+		all: 'Alle Fertigkeiten',
+		categories: { general: 'Fertigkeiten', combat: 'Kampffertigkeiten', arcane: 'Arkane Fertigkeiten' },
+		skill: 'Fertigkeit',
+		value: 'Wert',
+		valueHint: 'Voller Wert (Erfolgsstufe I); ½ und ⅕ für die Erfolgsstufen II und III',
+		anySpecialization: 'Grundwert für jede Spezialisierung',
+		specializationPlaceholder: 'Spezialisierung hinzufügen',
+		addSpecialization: (name: string) => `Spezialisierung für ${name} hinzufügen`,
+		removeSpecialization: (name: string) => `${name} entfernen`
+	},
 	traits: {
 		choose: 'Wähle eine Variante',
 		tied: 'Welches Attribut?'

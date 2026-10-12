@@ -1,4 +1,6 @@
-import type { AttributeDef, RuleData, SecondaryRules, SpeciesDef } from './types';
+import type { AttributeDef, RuleData, SecondaryRules, SkillDef, SpeciesDef } from './types';
+import fertigkeiten from './data/fertigkeiten.json';
+import heldenfertigkeiten from './data/heldenfertigkeiten.json';
 import grundattribute from './data/grundattribute.json';
 import optionen from './data/optionen.json';
 import sekundaerattribute from './data/sekundaerattribute.json';
@@ -15,5 +17,7 @@ export const ruleData: RuleData = {
 	settings: optionen.settings,
 	defaultSetting: optionen.defaultSetting,
 	species: spezies.species as SpeciesDef[],
-	secondary: sekundaerattribute as SecondaryRules
+	secondary: sekundaerattribute as SecondaryRules,
+	skills: fertigkeiten.skills as SkillDef[],
+	heroSkills: heldenfertigkeiten.heroSkills as SkillDef[]
 };

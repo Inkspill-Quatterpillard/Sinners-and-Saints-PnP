@@ -5,6 +5,7 @@ import { applyOptionsAction, type OptionsAction } from './steps/options';
 import { applySpeciesAction, type SpeciesAction } from './steps/species';
 import { applyChoiceAction, type ChoiceAction } from './choices';
 import { applySecondaryAction, type SecondaryAction } from './steps/secondary';
+import { applySkillsAction, type SkillsAction } from './steps/skills';
 
 export type Action =
 	| { type: 'setName'; name: string }
@@ -12,7 +13,8 @@ export type Action =
 	| AttributesAction
 	| SpeciesAction
 	| ChoiceAction
-	| SecondaryAction;
+	| SecondaryAction
+	| SkillsAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -41,6 +43,10 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 			break;
 		case 'rollLuck':
 			applySecondaryAction(basis, action);
+			break;
+		case 'addSpecialization':
+		case 'removeSpecialization':
+			applySkillsAction(basis, action, [...ruleData.skills, ...ruleData.heroSkills]);
 			break;
 	}
 	return next;

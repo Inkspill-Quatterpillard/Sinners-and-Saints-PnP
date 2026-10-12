@@ -1,6 +1,6 @@
 # 05 — Fertigkeitsliste und Startwerte
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,9 +10,9 @@ Ein Spieler sieht alle Fertigkeiten und Heldenfertigkeiten mit ihrem Startwert, 
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Fertigkeiten und Heldenfertigkeiten stehen in den Regeldaten (aus `Liste_der_Fertigkeiten.md` und `Liste_der_Heldenfertigkeiten.md`) mit Attribut, Bruchteil, Kennzeichen „Spezialisierung notwendig“ und Quellenverweis.
-- [ ] Der Startwert wird abgerundet aus dem effektiven Attribut berechnet, bei zwei Attributen aus dem höheren.
-- [ ] Die Ansicht liefert pro Fertigkeit Voll-, Halb- und Fünftelwert.
-- [ ] Fertigkeiten mit Spezialisierung lassen sich mehrfach mit unterschiedlichen Spezialisierungen anlegen.
-- [ ] Ein gemeinsamer Mechanismus für Fertigkeitsboni (Profession, Religion, Charakteristik, Interessen …) ist vorhanden.
-- [ ] Der Ansicht ist bekannt, ob eine Fertigkeit eine Kampf- oder Magiefertigkeit ist.
+- [x] Fertigkeiten und Heldenfertigkeiten stehen in den Regeldaten (aus `Liste_der_Fertigkeiten.md` und `Liste_der_Heldenfertigkeiten.md`) mit Attribut, Bruchteil, Kennzeichen „Spezialisierung notwendig“ und Quellenverweis.
+- [x] Der Startwert wird abgerundet aus dem effektiven Attribut berechnet, bei zwei Attributen aus dem höheren.
+- [x] Die Ansicht liefert pro Fertigkeit Voll-, Halb- und Fünftelwert.
+- [x] Fertigkeiten mit Spezialisierung lassen sich mehrfach mit unterschiedlichen Spezialisierungen anlegen.
+- [x] Ein gemeinsamer Mechanismus für Fertigkeitsboni (Profession, Religion, Charakteristik, Interessen …) ist vorhanden.
+- [x] Der Ansicht ist bekannt, ob eine Fertigkeit eine Kampf- oder Magiefertigkeit ist.

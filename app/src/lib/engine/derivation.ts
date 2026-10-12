@@ -45,6 +45,10 @@ export interface Derivation {
 	meditationDie: number;
 	/** Glück wird mit Vorteil gewürfelt (z. B. bei Kindern und Jugendlichen). */
 	luckAdvantage: boolean;
+	/** Boni auf Fertigkeiten, je Fertigkeitsschlüssel (siehe `skillKey`). */
+	skillBonuses: Record<string, Modifier[]>;
+	/** Fest gesetzte Werte (z. B. Heldenfertigkeiten 14/12/10/8/8), die den Startwert ersetzen. */
+	skillSetValues: Record<string, Modifier>;
 	steps: StepResult[];
 	issues: Issue[];
 }
@@ -71,6 +75,8 @@ export function createDerivation(character: Character, ruleData: RuleData, optio
 		characteristicAllowance: { extra: 0, forbidden: false },
 		meditationDie: 6,
 		luckAdvantage: false,
+		skillBonuses: {},
+		skillSetValues: {},
 		steps: [],
 		issues: []
 	};
@@ -79,4 +85,13 @@ export function createDerivation(character: Character, ruleData: RuleData, optio
 export function effective(state: AttributeState): number | undefined {
 	if (state.base === undefined) return undefined;
 	return state.base + state.modifiers.reduce((sum, m) => sum + m.value, 0);
+}
+
+/** Schlüssel einer Fertigkeit: die ID, bei Spezialisierungen mit angehängter Spezialisierung. */
+export function skillKey(skillId: string, specialization?: string): string {
+	return specialization ? `${skillId}:${specialization}` : skillId;
+}
+
+export function addSkillBonus(d: Derivation, key: string, modifier: Modifier): void {
+	(d.skillBonuses[key] ??= []).push(modifier);
 }

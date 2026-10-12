@@ -1,0 +1,235 @@
+{
+	"source": {
+		"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md"
+	},
+	"heroSkills": [
+		{
+			"id": "faustkampf",
+			"name": "Faustkampf",
+			"attributes": [
+				"STR",
+				"GES"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"description": "Diese Fertigkeit schließt allen Kampf ohne Waffen mit ein. Darunter fallen einfache Schlägereien bis hin filigraneren Techniken wie Boxen, Ringen oder weitere unbewaffnete Kampfkünste",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Faustkampf (½ STR/GES)"
+			},
+			"category": "combat"
+		},
+		{
+			"id": "dolcheUndMesser",
+			"name": "Dolche und Messer",
+			"attributes": [
+				"GES"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Diese Fertigkeit betrifft den Umgang mit kurzen Stichwaffen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Dolche und Messer (⅕ GES)"
+			},
+			"category": "combat"
+		},
+		{
+			"id": "schwerter",
+			"name": "Schwerter",
+			"attributes": [
+				"STR",
+				"GES"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Diese Fertigkeit schließt den Umgang mit geraden oder gebogenen, ein- oder zweischneidigen Klingenwaffen ein. Dazu zählen insbesondere ein- und zweihändige Schwerter und Säbel.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Schwerter (⅕ STR/GES)"
+			},
+			"category": "combat"
+		},
+		{
+			"id": "hiebwaffen",
+			"name": "Hiebwaffen",
+			"attributes": [
+				"STR"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Diese Fertigkeit deckt den Umgang mit Hieb- und Schlagwaffen ab, sowohl scharfe wie Äxte und Beile als auch stumpfe wie Hämmer und Kolben ab.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Hiebwaffen (⅕ STR)"
+			},
+			"category": "combat"
+		},
+		{
+			"id": "stangenwaffen",
+			"name": "Stangenwaffen",
+			"attributes": [
+				"STR"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Diese Fertigkeit deckt den Umgang mit langen Stichwaffen wie Speeren, Hellebarden oder Lanzen ab.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Stangenwaffen (⅕ STR)"
+			},
+			"category": "combat"
+		},
+		{
+			"id": "boegen",
+			"name": "Bögen",
+			"attributes": [
+				"WAH"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Bögen sind Fernkampfwaffen, die Pfeile mit Muskelkraft verschießen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Bögen (⅕ WAH)"
+			},
+			"category": "combat"
+		},
+		{
+			"id": "armbruesteUndSchusswaffen",
+			"name": "Armbrüste und Schusswaffen",
+			"attributes": [
+				"WAH"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Armbrüste und Schusswaffen sind Fernkampfwaffen, die Geschosse durch komplexe Mechanismen verschießen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Armbrüste und Schusswaffen (⅕ WAH)"
+			},
+			"category": "combat"
+		},
+		{
+			"id": "wurfwaffen",
+			"name": "Wurfwaffen",
+			"attributes": [
+				"WAH",
+				"STR"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Als Wurfwaffen werden Geschosse bezeichnet, die geworfen werden.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Wurfwaffen (⅕ WAH/STR)"
+			},
+			"category": "combat"
+		},
+		{
+			"id": "schleudern",
+			"name": "Schleudern",
+			"attributes": [
+				"WAH"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Schleudern verschießen Projektile mittels einer Hebelwirkung.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Schleudern (⅕ WAH)"
+			},
+			"category": "combat"
+		},
+		{
+			"id": "elementaristik",
+			"name": "Elementaristik",
+			"attributes": [
+				"WIL"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Die Lehre, Energie zu kontrollieren, zu manipulieren und zu wandeln",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Elementaristik (⅕ WIL)"
+			},
+			"category": "arcane"
+		},
+		{
+			"id": "veraenderung",
+			"name": "Veränderung",
+			"attributes": [
+				"WIL"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Die Lehre, Materie zu verändern",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Veränderung (⅕ WIL)"
+			},
+			"category": "arcane"
+		},
+		{
+			"id": "verzauberung",
+			"name": "Verzauberung",
+			"attributes": [
+				"WIL"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Die Lehre, magische Strukturen zu erschaffen und mit Materie zu verbinden",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Verzauberung (⅕ WIL)"
+			},
+			"category": "arcane"
+		},
+		{
+			"id": "mystik",
+			"name": "Mystik",
+			"attributes": [
+				"WIL"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Die Lehre, Magie selbst zu beeinflussen, Magische Strukturen und Konstrukte zu entschlüsseln und zu manipulieren",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Mystik (⅕ WIL)"
+			},
+			"category": "arcane"
+		},
+		{
+			"id": "illusion",
+			"name": "Illusion",
+			"attributes": [
+				"WIL"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Die Lehre, Materie zu imitieren",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Illusion (⅕ WIL)"
+			},
+			"category": "arcane"
+		},
+		{
+			"id": "psychomantie",
+			"name": "Psychomantie",
+			"attributes": [
+				"WIL"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"description": "Die Lehre, die Psyche von Lebewesen zu entschlüsseln, zu manipulieren oder zu kontrollieren",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Heldenfertigkeiten.md",
+				"section": "Psychomantie (⅕ WIL)"
+			},
+			"category": "arcane"
+		}
+	]
+}

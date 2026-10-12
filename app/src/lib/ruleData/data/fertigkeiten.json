@@ -1,0 +1,552 @@
+{
+	"source": {
+		"file": "Charaktererstellung/Liste_der_Fertigkeiten.md"
+	},
+	"skills": [
+		{
+			"id": "akrobatik",
+			"name": "Akrobatik",
+			"attributes": [
+				"GES"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Geschicklichkeit",
+			"description": "Fertigkeit, artistische Manöver durchzuführen, sowie weit und hoch zu springen und Fallschaden abzuwenden.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Akrobatik (½ GES)"
+			}
+		},
+		{
+			"id": "fahrzeugSteuern",
+			"name": "Fahrzeug steuern",
+			"attributes": [
+				"GES"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Geschicklichkeit",
+			"description": "Ermöglicht es, Fahrzeuge wie etwa Karren, Kutschen oder Wagen zu steuern und Zugtiere an diese Fahrzeuge anzuspannen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Fahrzeug steuern (⅕ GES)"
+			},
+			"aliases": [
+				"Steuern"
+			]
+		},
+		{
+			"id": "fingerfertigkeit",
+			"name": "Fingerfertigkeit",
+			"attributes": [
+				"GES"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Geschicklichkeit",
+			"description": "Fertigkeit, heimliche, präzise, geschickte oder schnelle Bewegungen mit den Fingern oder der Hand durchzuführen. Dazu gehören Taschendiebstahl, Schlossknacken, Trickbetrug oder Kartentricks.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Fingerfertigkeit (⅕ GES)"
+			}
+		},
+		{
+			"id": "klettern",
+			"name": "Klettern",
+			"attributes": [
+				"GES"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Geschicklichkeit",
+			"description": "Fertigkeit, alle Arten von Hindernissen wie etwa Mauern, Bäume oder Felsen zu erklimmen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Klettern (½ GES)"
+			}
+		},
+		{
+			"id": "reiten",
+			"name": "Reiten",
+			"attributes": [
+				"GES"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Geschicklichkeit",
+			"description": "Fertigkeit, auf Pferden und ähnlichen Tieren zu reiten und zu manövrieren.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Reiten (⅕ GES)"
+			}
+		},
+		{
+			"id": "schleichen",
+			"name": "Schleichen",
+			"attributes": [
+				"GES"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Geschicklichkeit",
+			"description": "Fertigkeit, sich ungesehen und leise zu bewegen, sich zu verstecken. Die Fertigkeit wird mit Wahrnehmung gekontert.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Schleichen (½ GES)"
+			}
+		},
+		{
+			"id": "schwimmen",
+			"name": "Schwimmen",
+			"attributes": [
+				"GES"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Geschicklichkeit",
+			"description": "Fertigkeit, sich im Wasser fortzubewegen oder überhaupt über Wasser zu halten. Ab 5 Fertigkeitspunkten kann ein Spieler sich ohne Probleme im Wasser aufhalten, ohne in Gefahr zu geraten, unterzugehen",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Schwimmen (⅕ GES)"
+			}
+		},
+		{
+			"id": "faehrtenlesen",
+			"name": "Fährtenlesen",
+			"attributes": [
+				"WAH"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Wahrnehmung",
+			"description": "Fertigkeit, Spuren aller Art zu finden, zu analysieren und zu folgen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Fährtenlesen (⅕ WAH)"
+			}
+		},
+		{
+			"id": "gespuer",
+			"name": "Gespür",
+			"attributes": [
+				"WAH"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Wahrnehmung",
+			"description": "Fertigkeit, auf das Bauchgefühl zu hören, die Nackenhaare aufstellen und die kleinen und großen Details der Welt wahrzunehmen. Nicht durch die Augen, nein, durch einen weiteren Sinn, fast wie ein innerer Dialog mit dem umgebenden Diesseits.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Gespür (⅕ WAH)"
+			}
+		},
+		{
+			"id": "inspizieren",
+			"name": "Inspizieren",
+			"attributes": [
+				"WAH"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Wahrnehmung",
+			"description": "Fähigkeit, den Wert und die Qualität einer Ware oder eines Gegenstands herauszufinden oder einzuschätzen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Inspizieren (⅕ WAH)"
+			}
+		},
+		{
+			"id": "menschenkenntnis",
+			"name": "Menschenkenntnis",
+			"attributes": [
+				"WAH"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Wahrnehmung",
+			"description": "Fertigkeit, den Habitus einer Person zu entschlüsseln und ihre Motive und verborgene Regungen zu entschlüsseln. Menschenkenntnis kann in einer Gegenprobe mit Beschwatzen, Charme, Einschüchtern, Überzeugung, normalerweise aber mit Selbstbeherrschung gekontert werden.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Menschenkenntnis (½ WAH)"
+			}
+		},
+		{
+			"id": "navigieren",
+			"name": "Navigieren",
+			"attributes": [
+				"WAH"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Wahrnehmung",
+			"description": "Fertigkeit, sich zu orientieren, die eigene Position auszumachen sowie einen Weg zu einem bekannten oder unbekannten Ort zu finden.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Navigieren (½ WAH)"
+			}
+		},
+		{
+			"id": "recherche",
+			"name": "Recherche",
+			"attributes": [
+				"WAH"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Wahrnehmung",
+			"description": "Fertigkeit, in Büchern oder Bibliotheken nach Informationen zu suchen, diese auszuwerten und Wissen daraus zu erlangen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Recherche (⅕ WAH)"
+			}
+		},
+		{
+			"id": "sondieren",
+			"name": "Sondieren",
+			"attributes": [
+				"WAH"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Wahrnehmung",
+			"description": "Fertigkeit, etwas Verstecktes zu suchen oder etwas Verborgenes zu entdecken, sowie unscheinbare Details in einer Situation wahrzunehmen. Unterscheidet sich von einer normalen Wahrnehmungsprobe durch die Gründlichkeit und den Zeitaufwand.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Sondieren (½ WAH)"
+			},
+			"aliases": [
+				"Verborgenes Entdecken"
+			]
+		},
+		{
+			"id": "beschwatzen",
+			"name": "Beschwatzen",
+			"attributes": [
+				"CHA"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Charisma",
+			"description": "Im Gegensatz zur Fertigkeit Überzeugung ermöglicht es Beschwatzen, kurzfristig Situationen rhetorisch zu bewältigen und Plaudereien zu führen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Beschwatzen (½ CHA)"
+			}
+		},
+		{
+			"id": "charme",
+			"name": "Charme",
+			"attributes": [
+				"CHA"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Charisma",
+			"description": "Fähigkeit, Charme einzusetzen, um jemanden zu verführen, zu schmeicheln, oder um einfach nur charmant zu wirken. Fertigkeit zur Gegenprobe ist Empathie oder Charme.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Charme (½ CHA)"
+			}
+		},
+		{
+			"id": "autoritaet",
+			"name": "Autorität",
+			"attributes": [
+				"CHA"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Charisma",
+			"description": "Fertigkeit, ein Lebewesen durch physische Form, psychische Manipulation oder Bedrohungen einzuschüchtern, zu verängstigen oder in einer bestimmten Art und Weise zu beeinflussen. Autorität-Proben können durch Waffen oder zusätzliche Bedrohungen einen besseren Effekt erzielen. Das gescheiterte Forcieren einer Autorität-Probe kann dagegen dazu führen, dass die Androhung unfreiwillig durch den Spieler durchgeführt werden muss.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Autorität (½ CHA)"
+			},
+			"aliases": [
+				"Einschüchtern"
+			]
+		},
+		{
+			"id": "empathie",
+			"name": "Empathie",
+			"attributes": [
+				"CHA"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Charisma",
+			"description": "Fertigkeit, die Gefühle und Einstellungen eines anderen Charakters einzuschätzen, zu lesen und einzuordnen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Empathie (½ CHA)"
+			}
+		},
+		{
+			"id": "selbstbeherrschung",
+			"name": "Selbstbeherrschung",
+			"attributes": [
+				"CHA"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Charisma",
+			"description": "Fertigkeit, die Sichtbarkeit und den Ausbruch der eigenen Emotionen zu unterdrücken und einen kühlen Kopf zu bewahren",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Selbstbeherrschung (½ CHA)"
+			}
+		},
+		{
+			"id": "ueberzeugen",
+			"name": "Überzeugen",
+			"attributes": [
+				"CHA"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Charisma",
+			"description": "Fertigkeit, einen anderen Charakter von einer bestimmten Idee oder Auffassung zu überzeugen. Im Gegensatz zu Beschwatzen benötigt Überzeugung ein gewisses Maß an Zeit.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Überzeugung (⅕ CHA)"
+			},
+			"aliases": [
+				"Überzeugung"
+			],
+			"note": "Im Regelwerk als „Überzeugung“ geführt; Begriff laut Regelfrage U4 vereinheitlicht."
+		},
+		{
+			"id": "umgangMitTieren",
+			"name": "Umgang mit Tieren",
+			"attributes": [
+				"CHA"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Charisma",
+			"description": "Fertigkeiten und Wissen über den Umgang mit in der Regel domestizierten Tieren. Kann auch für den Umgang mit Wildtieren genutzt werden, jedoch nicht, um Wissen über diese zu erlangen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Umgang mit Tieren (⅕ CHA)"
+			}
+		},
+		{
+			"id": "kalkulation",
+			"name": "Kalkulation",
+			"attributes": [
+				"KLU"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Klugheit",
+			"description": "Wissen über Arithmetik, Calculus und die Fähigkeit, einen Abakus zu benutzen, sowie Inventuren, Buchhaltung oder Ernteregister zu verstehen und zu handhaben.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Kalkulation (⅕ KLU)"
+			}
+		},
+		{
+			"id": "laenderkunde",
+			"name": "Länderkunde",
+			"attributes": [
+				"KLU"
+			],
+			"fraction": "half",
+			"specialization": true,
+			"group": "Klugheit",
+			"description": "Wissen um nahe und ferne Länder und Reiche, etwa in Geographie, Geschichte, Gesellschaft, Religion, sowie Sagen und Legenden. Die konkrete Region muss als Spezialisierung angegeben werden.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Länderkunde (½ KLU) [Spezialisierung notwendig]"
+			}
+		},
+		{
+			"id": "medizin",
+			"name": "Medizin",
+			"attributes": [
+				"KLU"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Klugheit",
+			"description": "Die Fertigkeit, Wunden und Krankheiten langfristig effektiv zu behandeln und zu kurieren, ebenso wie das Wissen über Krankheiten, Behandlungsarten und Medikamente.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Medizin (⅕ KLU)"
+			}
+		},
+		{
+			"id": "okkultismus",
+			"name": "Okkultismus",
+			"attributes": [
+				"KLU"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Klugheit",
+			"description": "Wissen um volkstümlichen Okkultismus, über übernatürliche Wesen, Geister, Rituale und Mythen. Im Gegensatz zu Magiefertigkeiten ist diese Fertigkeit eine reine Wissensfertigkeit.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Okkultismus (⅕ KLU)"
+			}
+		},
+		{
+			"id": "religion",
+			"name": "Religion",
+			"attributes": [
+				"KLU"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Klugheit",
+			"description": "Wissen über Religion, Liturgien, Kulte und die religiösen Institutionen, sowie über heilige Schriften, Heilige und Feiertage.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Religion (⅕ KLU)"
+			}
+		},
+		{
+			"id": "sprachkunst",
+			"name": "Sprachkunst",
+			"attributes": [
+				"KLU"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Klugheit",
+			"description": "Wissen um die Nuancen, sowie über verschiedene Dialekte und Komplexitäten der Muttersprache eines Charakters. Die Fertigkeit kann dazu benutzt werden, komplexe und anspruchsvolle Texte zu verstehen, sowie sprachliche Rätsel oder Kodierungen zu erkennen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Sprachkunst (⅕ KLU)"
+			}
+		},
+		{
+			"id": "wissenschaften",
+			"name": "Wissenschaften",
+			"attributes": [
+				"KLU"
+			],
+			"fraction": "fifth",
+			"specialization": true,
+			"group": "Klugheit",
+			"description": "Theoretisches Wissen in einem bestimmten Bereich der Wissenschaft. Hier kann ein beliebiges Fachgebiet angegeben werden, um tiefergehende Kenntnisse im theoretischen Bereich, wenn auch nicht im praktischen Bereich zu symbolisieren. Besitzt jemand also Wissenschaft (Medizin), so kennt er sich mit dem menschlichen Körper und den verschiedenen Seuchen aus, jedoch nicht unbedingt mit deren Behandlung, geschweige denn der Durchführung komplexerer Operationen. Die Fertigkeit ist also ergänzend gedacht. Zu den Wissenschaften der Welt zählen als Beispiel die klassischen „Sieben freien Künste“, Musik, Geometrie, Arithmetik, Astronomie, Grammatik, Dialektik oder Rhetorik und natürlich die drei Hohen Fakultäten Medizin, Jura und Theologie. An einer Universität gelten andere Wissenschaften nicht als eigenes Fach, sondern werden einer der Künste im Kanon zugerechnet. So gehört die Geschichtswissenschaft etwa zur Grammatik oder die Physik zur Astronomie. Außerhalb des Kanons steht zudem die Arkanistik als theoretische Wissenschaft der Magie.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Wissenschaften (⅕ KLU) [Spezialisierung notwendig]"
+			}
+		},
+		{
+			"id": "ersteHilfe",
+			"name": "Erste Hilfe",
+			"attributes": [
+				"INT"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Intuition",
+			"description": "Wissen um die kurzfristige Versorgung von Wunden und Verletzungen. Für die langfristige Behandlung von Wunden sowie Krankheiten sind dagegen Kenntnisse in der Fertigkeit Medizin von Nöten.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Erste Hilfe (½ INT)"
+			}
+		},
+		{
+			"id": "fremdsprachen",
+			"name": "Fremdsprachen",
+			"attributes": [
+				"INT"
+			],
+			"fraction": "fifth",
+			"specialization": true,
+			"group": "Intuition",
+			"description": "Fertigkeit, in einer fremden Sprache zu kommunizieren und diese zu verstehen. Ab 5 Punkten kann man sich in einer Sprache grundlegend verständigen. 10 Punkte genügen, um flüssig eine Unterhaltung führen zu können. Ab 15 Punkten spricht man akzentfrei auf Muttersprachenniveau.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Fremdsprachen (⅕ INT) [Spezialisierung notwendig]"
+			}
+		},
+		{
+			"id": "handwerkUndKuenste",
+			"name": "Handwerk und Künste",
+			"attributes": [
+				"INT"
+			],
+			"fraction": "fifth",
+			"specialization": true,
+			"group": "Intuition",
+			"description": "Wissen und Fertigkeiten in den verschiedenen Künsten und Handwerken. Dazu gehören etwa das Schmiedehandwerk, Weberei, Bogenmacherei, Brauerei, Baumeisterei und Landwirtschaft, aber auch Malerei, Sanges- und Tanzkunst oder die Alchemie.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Handwerk und Künste (⅕ INT): [Spezialisierung notwendig]"
+			}
+		},
+		{
+			"id": "natur",
+			"name": "Natur",
+			"attributes": [
+				"INT"
+			],
+			"fraction": "fifth",
+			"specialization": true,
+			"group": "Intuition",
+			"description": "Das Wissen und die Erfahrung um das Leben und den Umgang in und mit der Natur. Dies bezieht Überlebenstechniken, Wissen um Pflanzen- und Tierwelt und die klimatischen Bedingungen in einer bestimmten Region mit ein. Die Region muss durch eine Spezialisierung gewählt werden und ist meist identisch mit der Herkunft des Charakter. Beispiele sind etwa Wüste, Waldland, Ozean, Tropen oder Tundra.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Natur (⅕ INT) [Spezialisierung notwendig]"
+			}
+		},
+		{
+			"id": "reparierenUndKonstruieren",
+			"name": "Reparieren und Konstruieren",
+			"attributes": [
+				"INT"
+			],
+			"fraction": "half",
+			"specialization": false,
+			"group": "Intuition",
+			"description": "Die Fertigkeit, Gegenstände, Fahrzeuge oder Ausrüstung zu reparieren. Diese Fertigkeit ist kein Ersatz für ein Handwerk und kann nicht für alle Gegenstände und Konstruktionen eingesetzt werden. Ebenso können mit dieser Fertigkeit Mechanismen und Gegenstände hergestellt werden.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Reparieren und Konstruieren (½ INT)"
+			}
+		},
+		{
+			"id": "steuernBoot",
+			"name": "Steuern (Boot)",
+			"attributes": [
+				"INT"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Intuition",
+			"description": "Wissen um das Steuern von Booten, sowie grundsätzliche Kenntnisse im Bereich der Nautik.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Steuern (Boot) (⅕ INT)"
+			},
+			"aliases": [
+				"Steuern"
+			]
+		},
+		{
+			"id": "vorstellungskraft",
+			"name": "Vorstellungskraft",
+			"attributes": [
+				"INT"
+			],
+			"fraction": "fifth",
+			"specialization": false,
+			"group": "Intuition",
+			"description": "Fertigkeit, kreativ und phantasievoll zu denken und Situationen einzuschätzen.",
+			"source": {
+				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
+				"section": "Vorstellungskraft (⅕ INT)"
+			},
+			"aliases": [
+				"Vorstellen",
+				"Vorstellung"
+			]
+		}
+	]
+}

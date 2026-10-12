@@ -30,6 +30,8 @@ export interface Basis {
 		assignment: Partial<Record<AttributeId, number>>;
 	};
 	species?: string;
+	/** Angelegte Spezialisierungen je Fertigkeit, z. B. Wissenschaften: Alchemie. */
+	specializations: Record<string, string[]>;
 	/** Glückswurf (bei Vorteil zwei Würfel). */
 	luck?: Roll;
 	/** Wahlen bei Eigenschaften usw., je Eintrag (siehe `ChoiceState`). */
@@ -60,6 +62,7 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			name: '',
 			options: { optionalRules: {} },
 			attributes: { rolls: {}, assignment: {} },
+			specializations: {},
 			choices: {}
 		},
 		play: {}

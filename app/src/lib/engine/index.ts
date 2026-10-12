@@ -10,3 +10,4 @@ export type { AttributeSlot, AttributeStepView } from './steps/attributes';
 export type { SpeciesStepView } from './steps/species';
 export type { ChoiceState, TraitView } from './choices';
 export type { LuckView, SecondaryValue } from './steps/secondary';
+export type { SkillView } from './steps/skills';
