@@ -105,7 +105,9 @@
 		display: grid;
 		gap: 0.5rem;
 	}
+	/* Die ganze Karte öffnet den Charakter; die Knöpfe liegen darüber. */
 	.list li {
+		position: relative;
 		background: var(--surface);
 		border: 1px solid var(--line);
 		border-radius: 0.5rem;
@@ -123,6 +125,15 @@
 		font-weight: 600;
 		font-size: 1.1rem;
 	}
+	.main a::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: 0.5rem;
+	}
+	.list li:hover {
+		border-color: var(--accent);
+	}
 	.status {
 		color: var(--muted);
 	}
@@ -131,6 +142,7 @@
 		font-size: 0.9rem;
 	}
 	.actions {
+		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.4rem;

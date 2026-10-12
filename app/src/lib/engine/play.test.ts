@@ -54,6 +54,35 @@ describe('Abschließen', () => {
 		expect(view(c).status).toBe('inCreation');
 	});
 
+	it('beim Abschließen werden nicht mehr genutzte Angaben entfernt, die Werte bleiben gleich', () => {
+		// Erst 500 Jahre alt mit Atrophia und Vergreisung, dann wieder 25; dazu Reste anderer Wege.
+		const detour = playWith(
+			rd,
+			{ type: 'setAge', years: 500 },
+			{ type: 'setAtrophiaPoints', attribute: 'STR', points: 2 },
+			{ type: 'rollSenility', index: 3, roll: { dice: [99], source: 'manual' } },
+			{ type: 'rollMaturity', index: 7, attribute: 'INT', roll: { dice: [20], source: 'manual' } },
+			{ type: 'setAttributeMethod', method: 'roll' },
+			{ type: 'rollAttributeSlot', slot: 0, roll: { dice: [6, 6, 6, 6], source: 'manual' } },
+			{ type: 'chooseTraitOption', trait: 'gibtEsNicht', option: 'x' },
+			...COMPLETE
+		);
+		const before = view(detour);
+		expect(before.issues.filter((i) => i.severity === 'invalid')).toEqual([]);
+		expect(before.canFinish).toBe(true);
+		const done = act(detour, { type: 'finishCreation' });
+		const b = done.basis;
+		expect(b.age.atrophia).toEqual({});
+		expect(b.age.senility).toEqual({});
+		expect(Object.keys(b.age.maturity)).toEqual(['0']);
+		expect(b.attributes.rolls).toEqual({});
+		expect(b.choices).toEqual({});
+		const after = view(done);
+		expect(after.attributes).toEqual(before.attributes);
+		expect(after.skills).toEqual(before.skills);
+		expect(after.secondary).toEqual(before.secondary);
+	});
+
 	it('beim Abschließen wird die Start-Stabilität festgehalten', () => {
 		// (WIL 8 + KON 14) × 2,5 = 55
 		expect(view(finished()).live.stabilityStart).toBe(55);
@@ -112,6 +141,22 @@ describe('Lebender Bogen', () => {
 		expect(view(after).live).toMatchObject({ pendingWounds: 0, woundMalus: 8, maxTp: 11, tp: 11 });
 		const again = act(after, { type: 'takeDamage', amount: 4 }, { type: 'endCombat', rolls: [{ dice: [2], source: 'app' }] });
 		expect(view(again).live).toMatchObject({ woundMalus: 10, maxTp: 9 });
+	});
+
+	it('geheilte Wundenpunkte senken den Wundenmalus; danach lassen sich die TP wieder ganz auffüllen', () => {
+		const wounded = act(
+			finished(),
+			{ type: 'takeDamage', amount: 4 },
+			{ type: 'endCombat', rolls: [{ dice: [5], source: 'app' }] }
+		);
+		expect(view(wounded).live).toMatchObject({ woundMalus: 5, maxTp: 14 });
+		// Erste Hilfe: −1 Wundenmalus und 1 TP
+		const aided = act(wounded, { type: 'healWounds', amount: 1, tp: 1 });
+		expect(view(aided).live).toMatchObject({ woundMalus: 4, maxTp: 15 });
+		const healed = act(aided, { type: 'healWounds', amount: 9 });
+		expect(view(healed).live).toMatchObject({ woundMalus: 0, maxTp: 19 });
+		expect(view(healed).live.conditions).not.toContain('wunde');
+		expect(view(act(healed, { type: 'rest', hours: 1 })).live.tp).toBe(19);
 	});
 
 	it('Zustände lassen sich setzen und entfernen', () => {

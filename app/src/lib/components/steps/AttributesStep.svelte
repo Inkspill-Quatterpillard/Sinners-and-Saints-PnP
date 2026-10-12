@@ -14,8 +14,11 @@
 	/** Plätze in der Auswahl absteigend nach Wert. */
 	const sortedSlots = $derived([...step.slots].sort((a, b) => (b.value ?? -1) - (a.value ?? -1) || a.index - b.index));
 
+	/** Würfelt alle Plätze; sind schon Werte da, erst nach Rückfrage alle neu. */
 	function rollAll() {
-		for (const slot of unrolled) {
+		const rerolling = unrolled.length < step.slots.length;
+		if (rerolling && !confirm(t.attributes.confirmRerollAll)) return;
+		for (const slot of rerolling ? step.slots : unrolled) {
 			dispatch({ type: 'rollAttributeSlot', slot: slot.index, roll: rollDice(gen.dice.count, gen.dice.sides) });
 		}
 	}
@@ -39,7 +42,7 @@
 {#if step.method === 'roll'}
 	<section>
 		<h3>{t.attributes.slots}</h3>
-		<button class="primary" onclick={rollAll} disabled={unrolled.length === 0}>{t.attributes.rollAll}</button>
+		<button class="primary" onclick={rollAll}>{t.attributes.rollAll}</button>
 		<ol class="slots">
 			{#each step.slots as slot (slot.index)}
 				<li>

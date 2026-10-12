@@ -201,17 +201,19 @@ describe('Charakteristik', () => {
 			expect(view(c).characteristicStep.slots[1]).toMatchObject({ extra: true, kind: 'roll' });
 		});
 
-		it('Eherner Wille ohne Charakteristik: jede gewählte Charakteristik ist ungültig', () => {
-			const c = play(
-				...ATTRS,
-				{ type: 'chooseSpecies', species: 'zwerg' },
-				{ type: 'chooseTraitOption', trait: 'ehernerWille', option: 'keineCharakteristik' },
-				{ type: 'setCharacteristicMode', mode: 'free' },
-				{ type: 'pickCharacteristic', slot: 0, characteristic: 'haarig' }
-			);
-			expect(status(c)).toBe('invalid');
-			expect(view(c).attributes.KON.effective).toBe(16);
-			expect(status(applyAction(c, { type: 'setCharacteristicMode', mode: 'none' }, ruleData))).toBe('valid');
+		it('Eherner Wille ohne zusätzliche Charakteristik: die normalen Charakteristiken bleiben erlaubt', () => {
+			const dwarf = (mode: 'free' | 'roll') =>
+				play(
+					...ATTRS,
+					{ type: 'chooseSpecies', species: 'zwerg' },
+					{ type: 'chooseTraitOption', trait: 'ehernerWille', option: 'keineCharakteristik' },
+					{ type: 'setCharacteristicMode', mode }
+				);
+			const c = applyAction(dwarf('free'), { type: 'pickCharacteristic', slot: 0, characteristic: 'haarig' }, ruleData);
+			expect(status(c)).toBe('valid');
+			// Zwerg +2 KON, Haarig +1 KON
+			expect(view(c).attributes.KON.effective).toBe(17);
+			expect(view(dwarf('roll')).characteristicStep.maxSlots).toBe(2);
 		});
 	});
 

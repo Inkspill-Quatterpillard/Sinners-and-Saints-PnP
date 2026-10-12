@@ -18,6 +18,7 @@ import { applyMagicAction, type MagicAction } from './steps/magic';
 import { applyEquipmentAction, applyTradeAction, type EquipmentAction } from './steps/equipment';
 import { applyBackgroundAction, type BackgroundAction } from './steps/background';
 import { computeView } from './view';
+import { pruneUnused } from './prune';
 import { applyLiveAction, type LiveAction } from './live';
 
 export type Action =
@@ -69,6 +70,7 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'reopenCreation':
 		case 'takeDamage':
 		case 'endCombat':
+		case 'healWounds':
 		case 'setCondition':
 		case 'overrideValue':
 		case 'setCurrent':
@@ -157,6 +159,10 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'removeSpecialization':
 			applySkillsAction(basis, action, [...ruleData.skills, ...ruleData.heroSkills]);
 			break;
+	}
+	// Nach dem Abschluss braucht der Charakter keine Reste früherer Entscheidungen mehr.
+	if (action.type === 'finishCreation' && next.status === 'finished' && character.status !== 'finished') {
+		pruneUnused(next, ruleData);
 	}
 	// Die Regeldaten-Version gilt als übernommen, sobald der Charakter mit ihr nicht (mehr) ungültig ist.
 	// So bleibt der Hinweis auf geänderte Regeldaten bestehen, bis die betroffenen Entscheidungen angepasst sind.

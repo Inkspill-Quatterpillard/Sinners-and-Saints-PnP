@@ -145,6 +145,17 @@ describe('Alter', () => {
 			expect(view(done).attributes.GES.effective).toBe(10);
 		});
 
+		it('wird der Charakter wieder jünger, gelten alte Atrophia-Punkte nicht mehr', () => {
+			const old = applyAction(
+				human({ type: 'setAge', years: 52 }),
+				{ type: 'setAtrophiaPoints', attribute: 'GES', points: 2 },
+				ruleData
+			);
+			const young = applyAction(old, { type: 'setAge', years: 25 }, ruleData);
+			expect(view(young).attributes.GES.effective).toBe(12);
+			expect(view(young).issues.filter((i) => i.step === 'age')).toEqual([]);
+		});
+
 		it('Zwerge erleiden zwei Atrophia je Alterungsstufe', () => {
 			const c = play(...ATTRS, { type: 'chooseSpecies', species: 'zwerg' }, { type: 'setAge', years: 95 });
 			expect(view(c).ageStep.atrophia.required).toBe(4);

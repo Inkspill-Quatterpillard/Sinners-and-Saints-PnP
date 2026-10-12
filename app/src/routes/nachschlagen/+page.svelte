@@ -19,6 +19,11 @@
 	const results = $derived(query.trim() || area ? searchLookup(entries, query, { area: area || undefined, setting }) : []);
 </script>
 
+<p class="top">
+	<!-- Zurück dorthin, woher man kam (z. B. lebender Bogen); ohne Verlauf zur Übersicht. -->
+	<a href="/" onclick={(e) => history.length > 1 && (e.preventDefault(), history.back())}>← {t.back}</a>
+</p>
+
 <h1>{t.lookup.title}</h1>
 
 {#if linked}

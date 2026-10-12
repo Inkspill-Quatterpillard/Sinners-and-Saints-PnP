@@ -301,6 +301,7 @@ Die Oberfläche enthält keine Regellogik. Sie zeigt die Ansicht an und löst Ak
 - Liste vorgefertigter Professionen (bis sie existiert, baut jeder Spieler seine Profession selbst)
 - Ergänzen unvollständiger Regeltexte und Reparieren kaputter Links im Regelwerk
 - Cloud-Sync, Benutzerkonten, Server, Spielleiter-Übersicht über die Charaktere einer Runde
+- Export als kurzer Code zum Abtippen (wie im CPRed Companion); bräuchte eine kurzzeitige Ablage auf einem Server. Ferne Zukunft.
 - Store-Apps (Play Store, App Store)
 - Veröffentlichung bzw. Auslieferung über GitHub Pages und GitHub Actions; vorerst bleibt alles lokal
 - Übersetzungen

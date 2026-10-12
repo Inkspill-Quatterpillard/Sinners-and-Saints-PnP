@@ -149,4 +149,12 @@
 		grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
 		gap: 0.6rem;
 	}
+	.heroes label {
+		display: grid;
+		gap: 0.2rem;
+		min-width: 0;
+	}
+	.heroes select {
+		width: 100%;
+	}
 </style>

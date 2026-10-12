@@ -51,7 +51,14 @@
 	$effect(() => {
 		if (currentIndex > furthest) furthest = currentIndex;
 	});
-	const jumpTarget = $derived(view && currentIndex < furthest ? view.steps[furthest] : undefined);
+	/** Der nächste offene Schritt nach dem aktuellen; sonst der am weitesten erreichte, wenn man zurückgegangen ist. */
+	const jumpTarget = $derived.by(() => {
+		if (!view) return undefined;
+		const open = view.steps.find((s, i) => i > currentIndex && s.status !== 'valid');
+		if (open) return { step: open, label: t.jumpToOpen(t.steps[open.id]) };
+		if (currentIndex < furthest) return { step: view.steps[furthest], label: t.jumpTo(t.steps[view.steps[furthest].id]) };
+		return undefined;
+	});
 	const isLast = $derived(view ? currentIndex === view.steps.length - 1 : false);
 	let saved = $state(false);
 	const openSteps = $derived(view ? view.steps.filter((s) => s.status !== 'valid') : []);
@@ -126,7 +133,7 @@
 		{/each}
 	</nav>
 	{#if jumpTarget}
-		<p class="jump"><button onclick={() => (current = jumpTarget.id)}>{t.jumpTo(t.steps[jumpTarget.id])}</button></p>
+		<p class="jump"><button onclick={() => (current = jumpTarget.step.id)}>{jumpTarget.label}</button></p>
 	{/if}
 
 	<div class="layout">
@@ -144,7 +151,12 @@
 				{#if isLast}
 					<span class="history">
 						<button onclick={() => session.character && downloadCharacter(session.character)}>{t.export}</button>
-						<button class="primary" onclick={save}>{saved ? `${t.saved} ✓` : t.save}</button>
+						<button class:primary={!view.canFinish || view.status === 'finished'} onclick={save}
+							>{saved ? `${t.saved} ✓` : t.save}</button
+						>
+						{#if view.canFinish && view.status !== 'finished'}
+							<button class="primary" onclick={finish}>{t.live.finish}</button>
+						{/if}
 					</span>
 				{:else}
 					<button class="primary" onclick={() => go(1)}>{t.nextStep}</button>
@@ -208,9 +220,13 @@
 	}
 	@media (min-width: 52rem) {
 		.layout {
-			grid-template-columns: 1fr 16rem;
+			grid-template-columns: minmax(0, 1fr) 16rem;
 			align-items: start;
 		}
+	}
+	/* Ohne das wächst die Spalte mit ihrem breitesten Inhalt (z. B. den Katalog-Reitern) über den Bildschirm. */
+	.step-body {
+		min-width: 0;
 	}
 	.step-body h2 {
 		margin-top: 0;

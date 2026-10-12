@@ -51,6 +51,7 @@ Legende:
 - [ ] **U8 – Blut der Alten Welt: höchstes Attribut.** Zählt das höchste Attribut vor oder nach den Modifikatoren der Spezies? Und wer entscheidet bei Gleichstand? → *Vorläufig:* nach den Modifikatoren der Spezies; bei Gleichstand wählt der Spieler.
 - [ ] **U9 – Reifewürfe alter Charaktere.** Ein Erwachsener erhält 1 Reifewurf, pro Alterungsstufe kommen „alle Reife-Boni“ dazu. Bekommt ein Charakter mit Alterungsstufen den Reifewurf des Erwachsenen zusätzlich? → *Vorläufig:* ja, also 1 + Reifewürfe je Alterungsstufe. **Entschieden (Nutzer):** Ein Mensch hat insgesamt höchstens 10 Reifewürfe (`maxMaturityRolls` in den Spezies-Daten).
 - [ ] **U10 – Bewegungsabzug im Alter.** `Sekundärattribute.md` zieht „in den 50ern“ bis „in den 90ern“ 1 bis 5 Punkte Bewegung ab. Gilt das nach Lebensjahren für alle Spezies, also auch für einen 120-jährigen Elfen, der noch gar nicht altert? → *Vorläufig:* ja, nach Lebensjahren für alle Spezies, wie geschrieben.
+- [x] **U11 – Eherner Wille: „keine Charakteristik“.** `Spezies.md`: „Alternativ kann ein Spieler sich dazu entscheiden, keine Charakteristik zu wählen. Dafür erhöht er seine Stabilität um 10 Punkte.“ Wörtlich heißt das: gar keine Charakteristik. → **Entschieden (Nutzer, weicht vom Wortlaut ab):** Der Zwerg verzichtet nur auf die *zusätzliche* Charakteristik; die normalen Charakteristiken bleiben erlaubt.
 
 ## Unvollständiger Text
 

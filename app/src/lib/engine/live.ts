@@ -16,6 +16,8 @@ export type LiveAction =
 	| { type: 'reopenCreation' }
 	| { type: 'takeDamage'; amount: number }
 	| { type: 'endCombat'; rolls: Roll[] }
+	/** Wundenpunkte heilen (Erste Hilfe, Medizin, Ruhephase); optional zugleich TP regenerieren. */
+	| { type: 'healWounds'; amount: number; tp?: number }
 	| { type: 'setCondition'; condition: string; active: boolean }
 	| { type: 'overrideValue'; key: OverrideKey; value: number | undefined }
 	| { type: 'setCurrent'; key: CurrentKey; value: number }
@@ -190,6 +192,13 @@ export function applyLiveAction(
 			const malus = action.rolls.reduce((sum, r) => sum + r.dice.reduce((s, d) => s + d, 0), 0);
 			play.woundMalus += malus;
 			play.pendingWounds = Math.max(0, play.pendingWounds - action.rolls.length);
+			break;
+		}
+		case 'healWounds': {
+			const amount = Math.max(0, Math.floor(action.amount));
+			play.woundMalus = Math.max(0, play.woundMalus - amount);
+			if (action.tp) play.tp = Math.min(live.maxTp + amount, live.tp + Math.floor(action.tp));
+			if (play.woundMalus === 0 && play.pendingWounds === 0) play.conditions = play.conditions.filter((c) => c !== 'wunde');
 			break;
 		}
 		case 'setCondition':

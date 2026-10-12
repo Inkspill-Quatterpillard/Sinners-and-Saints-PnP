@@ -8,6 +8,7 @@ export const t = {
 	newCharacter: 'Neuer Charakter',
 	unnamed: 'Unbenannt',
 	backToList: 'Zur Übersicht',
+	back: 'Zurück',
 	name: 'Name',
 	notFound: 'Dieser Charakter wurde nicht gefunden.',
 	loading: 'Lädt …',
@@ -22,6 +23,7 @@ export const t = {
 	saved: 'Gespeichert',
 	export: 'Exportieren',
 	jumpTo: (step: string) => `Zurück zu ${step} →`,
+	jumpToOpen: (step: string) => `Zum nächsten offenen Schritt: ${step} →`,
 	status: {
 		inCreation: 'In Erstellung',
 		finished: 'Fertig'
@@ -66,6 +68,7 @@ export const t = {
 		assign: 'Verteilung',
 		notAssigned: '–',
 		rollAll: 'Alle würfeln',
+		confirmRerollAll: 'Alle Werte neu würfeln? Die bisherigen Würfe gehen verloren.',
 		chooseMethod: 'Wähle zuerst ein Verfahren.',
 		methodHint:
 			'Ein Wechsel des Verfahrens setzt die Verteilung zurück, weil die Werte andere sind. Gewürfelte Werte bleiben erhalten.',
@@ -162,7 +165,6 @@ export const t = {
 		intro:
 			'Eine Charakteristik ist eine Eigenschaft mit Vor- und Nachteilen. Wähle eine frei, oder würfle bis zu zwei (einmal darf neu gewürfelt werden). Am Tisch gewürfelte Ergebnisse wählst du im Feld daneben aus. Du kannst auch ganz verzichten.',
 		disabled: 'Ihr spielt ohne Charakteristik. Du kannst die optionale Regel unter „Optionen“ aktivieren.',
-		forbidden: 'Durch „Eherner Wille“ hast du auf eine Charakteristik verzichtet.',
 		mode: 'Wie?',
 		modes: {
 			none: 'Keine Charakteristik',
@@ -332,6 +334,17 @@ export const t = {
 		overrideHint:
 			'Von Hand gesetzte Werte (golden) gehen dem berechneten Wert vor, etwa nach einer Entscheidung des Spielleiters.',
 		skills: 'Wichtige Fertigkeiten',
+		luckSection: 'Glück',
+		luckReroll: 'Glück neu würfeln',
+		heal: 'Wunden heilen',
+		healPoints: 'Wundenpunkte',
+		healApply: 'Heilen',
+		firstAid: 'Erste Hilfe (−1, +1 TP)',
+		healHint:
+			'Erste Hilfe senkt den Wundenmalus um 1 und gibt 1 TP. Medizin: 1W4 (½: 2W4, ⅕: 3W4). Ruhephase: 1W4 bei bestandener KON-Probe, sonst 1.',
+		currency: (units: string) => `Währung: ${units}`,
+		unitAmount: (unit: string) => `Betrag in ${unit}`,
+		preview: (amount: string) => `= ${amount}`,
 		mindAndMagic: 'Stabilität, Magie und Ruhe',
 		staLoss: 'Stabilitätsverlust',
 		inCombat: 'im Kampf',
@@ -358,9 +371,8 @@ export const t = {
 		meditated: 'MP durch Meditation regeneriert. Am Ende ist eine Stabilitätsprobe fällig.',
 		fumble: 'Patzer (+1 Glück)',
 		moneyAndGear: 'Geld, Inventar, Fähigkeiten',
-		amount: 'Betrag, z. B. 2 K 50 Pf',
-		income: 'Einnehmen',
-		expense: 'Ausgeben',
+		income: '+ Einnehmen',
+		expense: '− Ausgeben',
 		inventory: 'Inventar',
 		armor: (rs: number) => `Rüstungsschutz angelegt: ${rs}`,
 		equippedHint: 'Häkchen = angelegt bzw. getragen.',

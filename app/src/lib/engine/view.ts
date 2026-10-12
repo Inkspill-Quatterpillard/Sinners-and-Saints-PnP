@@ -47,6 +47,8 @@ export interface CharacterView {
 	attributes: Record<AttributeId, AttributeView>;
 	attributeStep: AttributeStepView;
 	speciesStep: SpeciesStepView;
+	/** IDs aller Einträge mit eigener Wahl, die gerade wirken. */
+	activeTraits: string[];
 	secondaryModifiers: Record<SecondaryKey, Modifier[]>;
 	secondary: Record<SecondaryKey, SecondaryValue>;
 	luck: LuckView;
@@ -124,6 +126,7 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		) as Record<AttributeId, AttributeView>,
 		attributeStep: attributeStepView(d),
 		speciesStep,
+		activeTraits: d.appliedTraits,
 		secondaryModifiers: d.secondary,
 		secondary,
 		luck,

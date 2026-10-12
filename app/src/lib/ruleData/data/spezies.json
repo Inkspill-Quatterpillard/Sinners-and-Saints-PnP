@@ -90,11 +90,8 @@
 						},
 						{
 							"id": "keineCharakteristik",
-							"name": "Keine Charakteristik und +10 Stabilität",
+							"name": "Keine zusätzliche Charakteristik, dafür +10 Stabilität",
 							"effects": [
-								{
-									"type": "noCharacteristic"
-								},
 								{
 									"type": "secondary",
 									"key": "stability",

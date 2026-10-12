@@ -87,7 +87,7 @@ describe('Spezies', () => {
 				),
 				ruleData
 			);
-			expect(view.characteristicAllowance).toEqual({ extra: 1, forbidden: false });
+			expect(view.characteristicAllowance).toEqual({ extra: 1 });
 			expect(view.secondaryModifiers.tp).toEqual([{ source: 'Eherner Wille', value: 5 }]);
 		});
 
@@ -100,11 +100,11 @@ describe('Spezies', () => {
 				),
 				ruleData
 			);
-			expect(view.characteristicAllowance).toEqual({ extra: 1, forbidden: false });
+			expect(view.characteristicAllowance).toEqual({ extra: 1 });
 			expect(view.secondaryModifiers.stability).toEqual([{ source: 'Eherner Wille', value: 20 }]);
 		});
 
-		it('ohne Charakteristik und dafür +10 Stabilität', () => {
+		it('ohne zusätzliche Charakteristik und dafür +10 Stabilität', () => {
 			const view = computeView(
 				play(
 					...ATTRIBUTES,
@@ -113,7 +113,7 @@ describe('Spezies', () => {
 				),
 				ruleData
 			);
-			expect(view.characteristicAllowance).toEqual({ extra: 0, forbidden: true });
+			expect(view.characteristicAllowance).toEqual({ extra: 0 });
 			expect(view.secondaryModifiers.stability).toEqual([{ source: 'Eherner Wille', value: 10 }]);
 		});
 

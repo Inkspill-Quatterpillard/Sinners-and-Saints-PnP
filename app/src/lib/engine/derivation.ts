@@ -71,7 +71,9 @@ export interface Derivation {
 	secondary: Record<SecondaryKey, Modifier[]>;
 	/** Obergrenzen einzelner Sekundärattribute (z. B. Stabilität höchstens 99). */
 	secondaryCaps: Partial<Record<SecondaryKey, number>>;
-	characteristicAllowance: { extra: number; forbidden: boolean };
+	characteristicAllowance: { extra: number };
+	/** IDs aller Einträge (Spezies-Eigenschaften, Charakteristiken …), die gerade wirken. */
+	appliedTraits: string[];
 	/** Würfel für die Regeneration von MP durch Meditation. */
 	meditationDie: number;
 	/** Anzahl der Vorteile beim Glückswurf (Jugend, Kult der Dana …); jeder Vorteil bringt einen W20 mehr. */
@@ -114,7 +116,8 @@ export function createDerivation(character: Character, ruleData: RuleData, optio
 		) as unknown as Derivation['attributes'],
 		secondary: Object.fromEntries(SECONDARY_KEYS.map((k) => [k, []])) as unknown as Derivation['secondary'],
 		secondaryCaps: {},
-		characteristicAllowance: { extra: 0, forbidden: false },
+		characteristicAllowance: { extra: 0 },
+		appliedTraits: [],
 		meditationDie: ruleData.play.meditationDie,
 		luckAdvantages: 0,
 		resources: [],

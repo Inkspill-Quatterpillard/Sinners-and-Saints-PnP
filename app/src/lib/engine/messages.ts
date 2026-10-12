@@ -55,6 +55,5 @@ export const messages = {
 		`Die Datei stammt aus einer neueren Version der App (Format ${version}, unterstützt bis ${supported}). Bitte die App aktualisieren.`,
 	copyName: (name: string) => `${name || 'Unbenannt'} (Kopie)`,
 	tooManyProfessionSkills: (n: number, max: number) =>
-		`Es sind ${n} Professionsfertigkeiten gewählt, erlaubt sind ${max}. Entferne ${n - max}.`,
-	characteristicForbidden: 'Durch „Eherner Wille“ (keine Charakteristik) darf keine Charakteristik gewählt werden.'
+		`Es sind ${n} Professionsfertigkeiten gewählt, erlaubt sind ${max}. Entferne ${n - max}.`
 };

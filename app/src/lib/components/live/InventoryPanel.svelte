@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { currencyOf, type Action, type CharacterView } from '$lib/engine';
-	import { formatMoney, parseMoney } from '$lib/money';
+	import { parseCount } from '$lib/format';
+	import { formatMoney } from '$lib/money';
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
 
@@ -11,12 +12,13 @@
 	const money = (n: number) => formatMoney(n, currency);
 	const periods = $derived(t.live.periods as Record<string, string>);
 
-	let amount = $state('');
+	// Ein Eingabefeld je Einheit der Währung (z. B. Gulden, Kronen, Pfennig).
+	let amounts = $state<Record<string, string>>({});
+	const total = $derived(currency.units.reduce((sum, u) => sum + (parseCount(amounts[u.id] ?? '') ?? 0) * u.value, 0));
 	function change(sign: 1 | -1) {
-		const value = parseMoney(amount, currency);
-		if (!value) return;
-		dispatch({ type: 'changeMoney', delta: sign * value });
-		amount = '';
+		if (!total) return;
+		dispatch({ type: 'changeMoney', delta: sign * total });
+		amounts = {};
 	}
 
 	let search = $state('');
@@ -38,9 +40,20 @@
 	<h2>{t.live.moneyAndGear}</h2>
 	<div class="money">
 		<strong class:negative={live.money < 0}>{money(live.money)}</strong>
-		<input bind:value={amount} placeholder={t.live.amount} aria-label={t.live.amount} size="10" />
-		<button onclick={() => change(1)} disabled={!amount}>{t.live.income}</button>
-		<button onclick={() => change(-1)} disabled={!amount}>{t.live.expense}</button>
+	</div>
+	<p class="hint">{t.live.currency(currency.units.map((u) => `${u.name} (${u.short})`).join(' · '))}</p>
+	<div class="money">
+		{#each currency.units as u (u.id)}
+			<label class="unit">
+				<input bind:value={amounts[u.id]} inputmode="numeric" size="4" aria-label={t.live.unitAmount(u.name)} />
+				{u.short}
+			</label>
+		{/each}
+		{#if total}<span class="hint">{t.live.preview(money(total))}</span>{/if}
+	</div>
+	<div class="money">
+		<button onclick={() => change(1)} disabled={!total}>{t.live.income}</button>
+		<button onclick={() => change(-1)} disabled={!total}>{t.live.expense}</button>
 	</div>
 
 	<h3>{t.live.inventory} <small>{t.live.armor(live.armor)}</small></h3>
@@ -222,5 +235,13 @@
 	.actions button {
 		padding: 0.2rem 0.5rem;
 		font-size: 0.88rem;
+	}
+	.unit {
+		display: inline-flex;
+		gap: 0.25rem;
+		align-items: center;
+	}
+	.unit input {
+		width: 3.5rem;
 	}
 </style>

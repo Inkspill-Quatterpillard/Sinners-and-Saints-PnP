@@ -88,16 +88,6 @@
 			}}
 		/>
 	</div>
-
-	<h3>{t.live.luck}</h3>
-	<div class="row">
-		<DiceInput
-			count={view.luck.dice}
-			sides={ruleData.secondary.luckDie}
-			onroll={(roll) => dispatch({ type: 'rerollLuck', roll })}
-		/>
-		<button onclick={() => dispatch({ type: 'fumble' })}>{t.live.fumble}</button>
-	</div>
 </section>
 
 <style>

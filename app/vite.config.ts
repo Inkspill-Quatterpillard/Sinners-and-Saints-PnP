@@ -23,6 +23,8 @@ export default defineConfig({
 			},
 			// Die Fallback-Seite des statischen Adapters muss mit in den Offline-Cache.
 			kit: { adapterFallback: 'index.html', spa: true },
+			// Eine neue Version übernimmt sofort, das Layout lädt dann neu.
+			workbox: { skipWaiting: true, clientsClaim: true },
 			devOptions: { enabled: false }
 		})
 	],

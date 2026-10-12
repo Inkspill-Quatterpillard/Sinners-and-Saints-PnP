@@ -68,7 +68,6 @@ export type Effect =
 	| { type: 'attribute'; attribute: AttributeId; value: number }
 	| { type: 'secondary'; key: SecondaryKey; value: number; max?: number }
 	| { type: 'extraCharacteristic'; count: number }
-	| { type: 'noCharacteristic' }
 	/** Bonus auf das höchste Grundattribut, Malus auf alle anderen (bei Gleichstand wählt der Spieler). */
 	| { type: 'highestAttribute'; bonus: number; others: number }
 	/** Würfel für die Regeneration durch Meditation (Standard W6). */

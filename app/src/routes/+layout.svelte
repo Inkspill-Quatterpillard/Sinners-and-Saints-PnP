@@ -5,10 +5,18 @@
 	let { children } = $props();
 
 	// Service Worker registrieren, damit die App nach dem ersten Laden offline läuft.
+	// Übernimmt eine neue Version, lädt die Seite neu, damit nicht die alte weiterläuft.
+	// Jede Änderung ist sofort gespeichert, beim Neuladen geht also nichts verloren.
 	$effect(() => {
-		if (!import.meta.env.DEV && 'serviceWorker' in navigator) {
-			navigator.serviceWorker.register('/sw.js');
-		}
+		if (import.meta.env.DEV || !('serviceWorker' in navigator)) return;
+		const hadController = !!navigator.serviceWorker.controller;
+		let reloading = false;
+		navigator.serviceWorker.addEventListener('controllerchange', () => {
+			if (!hadController || reloading) return;
+			reloading = true;
+			location.reload();
+		});
+		navigator.serviceWorker.register('/sw.js').then((r) => r.update());
 	});
 </script>
 

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Action, SkillView } from '$lib/engine';
+	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
 
 	interface Props {
@@ -11,6 +12,9 @@
 
 	const categories = ['general', 'combat', 'arcane'] as const;
 	let newSpec = $state<Record<string, string>>({});
+	const attrName = (id: string) => ruleData.attributes.find((a) => a.id === id)?.name ?? id;
+	/** Zwischenüberschrift: das Grundattribut, aus dem die Fertigkeit ihren Wert bezieht. */
+	const groupOf = (s: SkillView) => s.group ?? s.attributes.map(attrName).join(' / ');
 	const fraction = (s: SkillView) => `${s.fraction === 'half' ? '½' : '⅕'} ${s.attributes.join('/')}`;
 
 	function addSpec(skillId: string) {
@@ -22,49 +26,56 @@
 </script>
 
 {#each categories as category (category)}
-	{@const list = skills.filter((s) => s.category === category)}
-	<h3>{t.skills.categories[category]}</h3>
-	<table>
-		<thead>
-			<tr>
-				<th>{t.skills.skill}</th>
-				<th class="num" title={t.skills.valueHint}>{t.skills.value}</th>
-				<th class="num">½</th>
-				<th class="num">⅕</th>
-			</tr>
-		</thead>
-		<tbody>
-			{#each list as s (s.key)}
-				<tr class:spec={!!s.specialization}>
-					<td>
-						<span class="name">{s.name}</span>
-						<small>{fraction(s)}{s.needsSpecialization && !s.specialization ? ` · ${t.skills.anySpecialization}` : ''}</small>
-						{#if s.specialization && dispatch}
-							<button
-								class="link"
-								aria-label={t.skills.removeSpecialization(s.name)}
-								onclick={() => dispatch({ type: 'removeSpecialization', skill: s.skillId, specialization: s.specialization! })}
-								>×</button
-							>
-						{/if}
-						{#if s.needsSpecialization && !s.specialization && dispatch}
-							<form class="add" onsubmit={(e) => (e.preventDefault(), addSpec(s.skillId))}>
-								<input
-									bind:value={newSpec[s.skillId]}
-									placeholder={t.skills.specializationPlaceholder}
-									aria-label={t.skills.addSpecialization(s.name)}
-								/>
-								<button type="submit">+</button>
-							</form>
-						{/if}
-					</td>
-					<td class="num"><strong>{s.value ?? '–'}</strong></td>
-					<td class="num">{s.half ?? '–'}</td>
-					<td class="num">{s.fifth ?? '–'}</td>
+	{@const list = skills
+		.filter((s) => s.category === category)
+		.sort((a, b) => groupOf(a).localeCompare(groupOf(b), 'de') || a.name.localeCompare(b.name, 'de'))}
+	{#if list.length}
+		<h3>{t.skills.categories[category]}</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>{t.skills.skill}</th>
+					<th class="num" title={t.skills.valueHint}>{t.skills.value}</th>
+					<th class="num">½</th>
+					<th class="num">⅕</th>
 				</tr>
-			{/each}
-		</tbody>
-	</table>
+			</thead>
+			<tbody>
+				{#each list as s, i (s.key)}
+					{#if i === 0 || groupOf(list[i - 1]) !== groupOf(s)}
+						<tr class="group"><th colspan="4">{groupOf(s)}</th></tr>
+					{/if}
+					<tr class:spec={!!s.specialization}>
+						<td>
+							<span class="name">{s.name}</span>
+							<small>{fraction(s)}{s.needsSpecialization && !s.specialization ? ` · ${t.skills.anySpecialization}` : ''}</small>
+							{#if s.specialization && dispatch}
+								<button
+									class="link"
+									aria-label={t.skills.removeSpecialization(s.name)}
+									onclick={() => dispatch({ type: 'removeSpecialization', skill: s.skillId, specialization: s.specialization! })}
+									>×</button
+								>
+							{/if}
+							{#if s.needsSpecialization && !s.specialization && dispatch}
+								<form class="add" onsubmit={(e) => (e.preventDefault(), addSpec(s.skillId))}>
+									<input
+										bind:value={newSpec[s.skillId]}
+										placeholder={t.skills.specializationPlaceholder}
+										aria-label={t.skills.addSpecialization(s.name)}
+									/>
+									<button type="submit">+</button>
+								</form>
+							{/if}
+						</td>
+						<td class="num"><strong>{s.value ?? '–'}</strong></td>
+						<td class="num">{s.half ?? '–'}</td>
+						<td class="num">{s.fifth ?? '–'}</td>
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	{/if}
 {/each}
 
 <style>
@@ -79,6 +90,12 @@
 		padding: 0.3rem 0.4rem;
 		border-bottom: 1px solid var(--line);
 		vertical-align: top;
+	}
+	tr.group th {
+		color: var(--muted);
+		font-size: 0.85rem;
+		font-weight: 600;
+		padding-top: 0.7rem;
 	}
 	.num {
 		text-align: right;

@@ -62,6 +62,7 @@ export function applyTrait(d: Derivation, trait: TraitDef, step: StepId): { stat
 	let status: StepStatus = 'valid';
 	const effects: Effect[] = [...(trait.effects ?? [])];
 	const choice = d.character.basis.choices[trait.id] ?? {};
+	d.appliedTraits.push(trait.id);
 
 	if (trait.options) {
 		view.options = trait.options.map((o) => ({ id: o.id, name: o.name, text: o.text }));
@@ -99,9 +100,6 @@ function applyEffect(d: Derivation, effect: Effect, trait: TraitDef, choice: Cho
 			return 'valid';
 		case 'extraCharacteristic':
 			d.characteristicAllowance.extra += effect.count;
-			return 'valid';
-		case 'noCharacteristic':
-			d.characteristicAllowance.forbidden = true;
 			return 'valid';
 		case 'meditationDie':
 			d.meditationDie = effect.sides;

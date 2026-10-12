@@ -35,8 +35,6 @@ export interface CharacteristicStepView {
 	maxSlots: number;
 	slots: CharacteristicSlotView[];
 	rerollAvailable: boolean;
-	/** Durch eine Spezies-Eigenschaft ist keine Charakteristik erlaubt. */
-	forbidden: boolean;
 }
 
 export function characteristicForRoll(rd: RuleData, value: number): CharacteristicDef | undefined {
@@ -74,14 +72,13 @@ export function applyCharacteristicAction(basis: Basis, action: CharacteristicAc
 export function evaluateCharacteristic(d: Derivation): CharacteristicStepView {
 	const rd = d.ruleData;
 	const c = d.character.basis.characteristics;
-	const { extra, forbidden } = d.characteristicAllowance;
+	const { extra } = d.characteristicAllowance;
 	const rerolls = Object.keys(c.rerolledSlots).length;
 	const view: CharacteristicStepView = {
 		mode: c.mode,
 		maxSlots: 0,
 		slots: [],
-		rerollAvailable: rerolls < rd.characteristics.rerolls,
-		forbidden
+		rerollAvailable: rerolls < rd.characteristics.rerolls
 	};
 	if (!d.options.optionalRules.charakteristik) return view;
 
@@ -121,8 +118,6 @@ export function evaluateCharacteristic(d: Derivation): CharacteristicStepView {
 					status = 'invalid';
 					d.issues.push({ step: 'characteristic', severity: 'invalid', message: messages.characteristicDuplicatePick(def.name) });
 				}
-			} else if (forbidden) {
-				status = 'invalid';
 			} else {
 				seen.add(def.id);
 				const { status: effectStatus } = applyTrait(
@@ -136,9 +131,6 @@ export function evaluateCharacteristic(d: Derivation): CharacteristicStepView {
 			status = status === 'invalid' ? status : 'open';
 		}
 		view.slots.push(slot);
-	}
-	if (forbidden && seen.size === 0 && view.slots.some((s) => s.id)) {
-		d.issues.push({ step: 'characteristic', severity: 'invalid', message: messages.characteristicForbidden });
 	}
 	d.steps.push({ id: 'characteristic', status });
 	return view;

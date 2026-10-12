@@ -2,6 +2,7 @@
 export { createCharacter, FORMAT_VERSION } from './character';
 export type { AttributeMethod, Character, CharacterStatus, Roll } from './character';
 export { applyAction } from './actions';
+export { forExport } from './prune';
 export type { Action } from './actions';
 export { computeView } from './view';
 export type { AttributeView, CharacterView } from './view';

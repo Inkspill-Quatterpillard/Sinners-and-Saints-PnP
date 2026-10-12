@@ -49,9 +49,6 @@
 {#if !view.options.optionalRules.charakteristik}
 	<p>{t.characteristic.disabled}</p>
 {:else}
-	{#if step.forbidden}
-		<p class="hint">{t.characteristic.forbidden}</p>
-	{/if}
 	<fieldset>
 		<legend>{t.characteristic.mode}</legend>
 		{#each modes as mode (mode)}
@@ -105,7 +102,6 @@
 
 <style>
 	.intro,
-	.hint,
 	.note {
 		color: var(--muted);
 	}

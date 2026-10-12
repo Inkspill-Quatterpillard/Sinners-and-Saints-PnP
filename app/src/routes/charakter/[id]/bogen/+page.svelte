@@ -8,6 +8,7 @@
 	import Specials from '$lib/components/live/Specials.svelte';
 	import SkillTable from '$lib/components/SkillTable.svelte';
 	import type { CurrentKey, OverrideKey } from '$lib/engine';
+	import { parseCount } from '$lib/format';
 	import { ruleData } from '$lib/ruleData';
 	import { CharacterSession } from '$lib/session.svelte';
 	import { t } from '$lib/texts';
@@ -39,6 +40,15 @@
 					? t.live.hintDown
 					: '';
 		damage = '';
+	}
+
+	let healPoints = $state('');
+	function heal(e: SubmitEvent) {
+		e.preventDefault();
+		const amount = parseCount(healPoints);
+		if (!amount) return;
+		dispatch({ type: 'healWounds', amount });
+		healPoints = '';
 	}
 
 	const setCurrent = (key: CurrentKey, value: number) => dispatch({ type: 'setCurrent', key, value });
@@ -151,7 +161,31 @@
 				/>
 			</div>
 		{/if}
-		{#if live.woundMalus}<p class="hint">{t.live.woundMalus(live.woundMalus)}</p>{/if}
+		{#if live.woundMalus}
+			<p class="hint">{t.live.woundMalus(live.woundMalus)}</p>
+			<h3>{t.live.heal}</h3>
+			<form class="damage" onsubmit={heal}>
+				<label>
+					{t.live.healPoints}
+					<input bind:value={healPoints} inputmode="numeric" size="4" />
+				</label>
+				<button type="submit" disabled={!healPoints.trim()}>{t.live.healApply}</button>
+				<button type="button" onclick={() => dispatch({ type: 'healWounds', amount: 1, tp: 1 })}>{t.live.firstAid}</button>
+			</form>
+			<p class="hint">{t.live.healHint}</p>
+		{/if}
+	</section>
+
+	<section class="luck">
+		<h2>{t.live.luckSection}</h2>
+		<div class="row">
+			<DiceInput
+				count={view.luck.dice}
+				sides={ruleData.secondary.luckDie}
+				onroll={(roll) => dispatch({ type: 'rerollLuck', roll })}
+			/>
+			<button class="small" onclick={() => dispatch({ type: 'fumble' })}>{t.live.fumble}</button>
+		</div>
 	</section>
 
 	<RestPanel {view} {dispatch} />
@@ -221,22 +255,7 @@
 
 	<section>
 		<h2>{t.live.skills}</h2>
-		<table class="skills">
-			<thead
-				><tr><th>{t.skills.skill}</th><th class="num">{t.skills.value}</th><th class="num">½</th><th class="num">⅕</th></tr
-				></thead
-			>
-			<tbody>
-				{#each mainSkills as s (s.key)}
-					<tr>
-						<td>{s.name}</td>
-						<td class="num"><strong>{s.value ?? '–'}</strong></td>
-						<td class="num">{s.half ?? '–'}</td>
-						<td class="num">{s.fifth ?? '–'}</td>
-					</tr>
-				{/each}
-			</tbody>
-		</table>
+		<SkillTable skills={mainSkills} />
 		<details>
 			<summary>{t.skills.all}</summary>
 			<SkillTable skills={view.skills} />
@@ -271,7 +290,8 @@
 			grid-template-columns: repeat(4, 1fr);
 		}
 	}
-	.combat {
+	.combat,
+	.luck {
 		background: var(--surface);
 		border: 1px solid var(--line);
 		border-radius: 0.6rem;
@@ -335,27 +355,28 @@
 		font-size: 1.15rem;
 		font-weight: 600;
 	}
-	.skills {
-		width: 100%;
-		border-collapse: collapse;
-		margin-bottom: 0.6rem;
-	}
-	.skills th,
-	.skills td {
-		text-align: left;
-		padding: 0.3rem 0.4rem;
-		border-bottom: 1px solid var(--line);
-	}
-	.num {
-		text-align: right !important;
-		font-variant-numeric: tabular-nums;
-		width: 3rem;
-	}
 	.history {
 		display: flex;
 		gap: 0.4rem;
 	}
 	.history button:disabled {
 		opacity: 0.4;
+	}
+	.luck {
+		margin-top: 1rem;
+	}
+	.luck h2 {
+		margin-top: 0;
+	}
+	.luck .row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+		align-items: center;
+	}
+	/* Gleich groß wie die Knöpfe der Würfeleingabe. */
+	button.small {
+		padding: 0.2rem 0.55rem;
+		font-size: 0.9em;
 	}
 </style>

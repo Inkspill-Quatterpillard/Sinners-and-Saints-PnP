@@ -209,7 +209,8 @@ export function evaluateAge(d: Derivation): AgeStepView {
 	const required = agingStages * species.age.perStage.atrophia;
 	view.atrophia.required = required;
 	let distributed = 0;
-	for (const [attr, points] of Object.entries(basis.atrophia) as [AttributeId, number][]) {
+	// Ohne Alterungsstufe gelten früher verteilte Punkte nicht (etwa nachdem der Charakter jünger gemacht wurde).
+	for (const [attr, points] of (required ? Object.entries(basis.atrophia) : []) as [AttributeId, number][]) {
 		if (!d.ruleData.attributes.find((a) => a.id === attr)?.physical) {
 			status = 'invalid';
 			d.issues.push({ step: 'age', severity: 'invalid', message: messages.atrophiaNotPhysical(attr) });
