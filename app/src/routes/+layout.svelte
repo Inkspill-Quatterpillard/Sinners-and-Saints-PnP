@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import '../app.css';
 	import { t } from '$lib/texts';
 
@@ -16,19 +17,19 @@
 			reloading = true;
 			location.reload();
 		});
-		navigator.serviceWorker.register('/sw.js').then((r) => r.update());
+		navigator.serviceWorker.register(`${base}/sw.js`, { scope: `${base}/` }).then((r) => r.update());
 	});
 </script>
 
 <svelte:head>
 	<title>{t.appTitle} – {t.appSubtitle}</title>
-	<link rel="icon" href="/icon.svg" />
+	<link rel="icon" href="{base}/icon.svg" />
 	<meta name="theme-color" content="#1b1a1f" />
 </svelte:head>
 
 <header class="no-print">
-	<a href="/" class="brand">{t.appTitle} <span>{t.appSubtitle}</span></a>
-	<a href="/nachschlagen" class="nav">{t.lookup.nav}</a>
+	<a href="{base}/" class="brand">{t.appTitle} <span>{t.appSubtitle}</span></a>
+	<a href="{base}/nachschlagen" class="nav">{t.lookup.nav}</a>
 </header>
 
 <main>

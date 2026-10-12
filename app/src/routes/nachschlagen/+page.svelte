@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from '$app/state';
 	import RuleText from '$lib/components/RuleText.svelte';
 	import { buildLookup, searchLookup, type LookupArea } from '$lib/lookup';
@@ -21,7 +22,7 @@
 
 <p class="top">
 	<!-- Zurück dorthin, woher man kam (z. B. lebender Bogen); ohne Verlauf zur Übersicht. -->
-	<a href="/" onclick={(e) => history.length > 1 && (e.preventDefault(), history.back())}>← {t.back}</a>
+	<a href="{base}/" onclick={(e) => history.length > 1 && (e.preventDefault(), history.back())}>← {t.back}</a>
 </p>
 
 <h1>{t.lookup.title}</h1>

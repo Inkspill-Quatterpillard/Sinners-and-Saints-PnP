@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import Summary from '$lib/components/Summary.svelte';
@@ -82,12 +83,12 @@
 
 	async function finish() {
 		dispatch({ type: 'finishCreation' });
-		await goto(`/charakter/${page.params.id}/bogen`);
+		await goto(`${base}/charakter/${page.params.id}/bogen`);
 	}
 </script>
 
 <p class="top">
-	<a href="/">← {t.backToList}</a>
+	<a href="{base}/">← {t.backToList}</a>
 	<span class="history">
 		<button onclick={session.undo} disabled={!session.canUndo}>{t.undo}</button>
 		<button onclick={session.redo} disabled={!session.canRedo}>{t.redo}</button>
@@ -109,7 +110,7 @@
 
 	<div class="finish">
 		{#if view.status === 'finished'}
-			<a class="button primary" href="/charakter/{view.id}/bogen">{t.live.open}</a>
+			<a class="button primary" href="{base}/charakter/{view.id}/bogen">{t.live.open}</a>
 			<span>{t.live.editingFinished}</span>
 		{:else if view.canFinish}
 			<button class="primary" onclick={finish}>{t.live.finish}</button>

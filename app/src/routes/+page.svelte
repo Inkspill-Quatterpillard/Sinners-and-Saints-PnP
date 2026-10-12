@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { goto } from '$app/navigation';
 	import {
 		computeView,
@@ -28,7 +29,7 @@
 	async function newCharacter() {
 		const character = createCharacter(crypto.randomUUID(), ruleData.version);
 		await saveCharacter(character);
-		await goto(`/charakter/${character.id}`);
+		await goto(`${base}/charakter/${character.id}`);
 	}
 
 	async function duplicate(c: Character) {
@@ -74,7 +75,7 @@
 		{#each characters as { character, view } (view.id)}
 			<li>
 				<div class="main">
-					<a href={view.status === 'finished' ? `/charakter/${view.id}/bogen` : `/charakter/${view.id}`}
+					<a href={view.status === 'finished' ? `${base}/charakter/${view.id}/bogen` : `${base}/charakter/${view.id}`}
 						>{view.name || t.unnamed}</a
 					>
 					<span class="status">{t.status[view.status]}</span>

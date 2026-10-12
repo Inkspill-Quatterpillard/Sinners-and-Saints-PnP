@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from '$app/state';
 	import { currencyOf } from '$lib/engine';
 	import { formatMoney } from '$lib/money';
@@ -43,7 +44,7 @@
 </script>
 
 <div class="no-print bar">
-	<a href="/charakter/{page.params.id}/bogen">← {t.print.back}</a>
+	<a href="{base}/charakter/{page.params.id}/bogen">← {t.print.back}</a>
 	<button class="primary" onclick={() => window.print()}>{t.print.print}</button>
 </div>
 

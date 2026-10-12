@@ -9,7 +9,9 @@ const config = {
 	},
 	kit: {
 		// Reine Client-App: Eine Fallback-Seite übernimmt alle Routen, damit die App offline läuft.
-		adapter: adapter({ fallback: 'index.html' })
+		adapter: adapter({ fallback: 'index.html' }),
+		// Auf GitHub Pages liegt die App unter /<Repo-Name>; lokal unter /.
+		paths: { base: process.env.BASE_PATH ?? '' }
 	}
 };
 

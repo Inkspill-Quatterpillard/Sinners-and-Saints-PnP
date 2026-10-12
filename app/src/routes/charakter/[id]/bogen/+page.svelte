@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from '$app/state';
 	import DiceInput from '$lib/components/DiceInput.svelte';
 	import AttributeName from '$lib/components/AttributeName.svelte';
@@ -73,7 +74,7 @@
 </script>
 
 <p class="top">
-	<a href="/">← {t.backToList}</a>
+	<a href="{base}/">← {t.backToList}</a>
 	<span class="history">
 		<button onclick={session.undo} disabled={!session.canUndo}>{t.undo}</button>
 		<button onclick={session.redo} disabled={!session.canRedo}>{t.redo}</button>
@@ -93,8 +94,8 @@
 				.join(' · ')}
 		</p>
 		<p class="links">
-			<a href="/charakter/{view.id}">{view.status === 'finished' ? t.live.editCreation : t.live.toCreation}</a>
-			· <a href="/charakter/{view.id}/druck">{t.print.open}</a>
+			<a href="{base}/charakter/{view.id}">{view.status === 'finished' ? t.live.editCreation : t.live.toCreation}</a>
+			· <a href="{base}/charakter/{view.id}/druck">{t.print.open}</a>
 		</p>
 		{#if view.ruleDataChanged}<p class="hint">{t.live.ruleDataChanged}</p>{/if}
 		{#if view.status !== 'finished'}
