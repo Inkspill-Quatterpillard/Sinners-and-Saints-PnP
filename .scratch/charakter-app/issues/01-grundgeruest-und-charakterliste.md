@@ -1,6 +1,6 @@
 # 01 — Grundgerüst und Charakterliste
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,11 +10,11 @@ Ein Spieler startet die App lokal, legt einen Charakter mit Namen an und findet 
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Neuer Branch von `main`. `GUI_test` und `PWA_test` sind einmal committet und danach entfernt.
-- [ ] Die SvelteKit-App (statischer Adapter, TypeScript, `vite-plugin-pwa`) startet lokal per npm-Befehl. Der statische Build lässt sich lokal als Vorschau starten.
-- [ ] Nach dem ersten Laden funktioniert die App ohne Netzwerk (Service Worker cached alle App-Dateien).
-- [ ] Der Regelkern ist reines TypeScript ohne Svelte- oder Browser-Bezug und bietet *Ansicht berechnen* und *Aktion anwenden*. Die erste Aktion ist „Name setzen“.
-- [ ] Die Charakterdatei hat Metadaten (ID, Name, Formatversion, Regeldaten-Version, Status „in Erstellung“/„fertig“), Grundlage und Spielstand und speichert nur den aktuellen Stand.
-- [ ] Die Charakterliste zeigt alle Charaktere mit Name und Status. „Neuer Charakter“ legt einen an, jede Aktion speichert automatisch in IndexedDB.
-- [ ] Vitest läuft per npm-Befehl. Es gibt erste Tests für den Regelkern über seine öffentliche Schnittstelle.
-- [ ] Sichtbare Texte stehen gesammelt an einer Stelle (Vorbereitung für spätere Übersetzungen).
+- [x] Neuer Branch von `main`. `GUI_test` und `PWA_test` sind einmal committet und danach entfernt.
+- [x] Die SvelteKit-App (statischer Adapter, TypeScript, `vite-plugin-pwa`) startet lokal per npm-Befehl. Der statische Build lässt sich lokal als Vorschau starten.
+- [x] Nach dem ersten Laden funktioniert die App ohne Netzwerk (Service Worker cached alle App-Dateien).
+- [x] Der Regelkern ist reines TypeScript ohne Svelte- oder Browser-Bezug und bietet *Ansicht berechnen* und *Aktion anwenden*. Die erste Aktion ist „Name setzen“.
+- [x] Die Charakterdatei hat Metadaten (ID, Name, Formatversion, Regeldaten-Version, Status „in Erstellung“/„fertig“), Grundlage und Spielstand und speichert nur den aktuellen Stand.
+- [x] Die Charakterliste zeigt alle Charaktere mit Name und Status. „Neuer Charakter“ legt einen an, jede Aktion speichert automatisch in IndexedDB.
+- [x] Vitest läuft per npm-Befehl. Es gibt erste Tests für den Regelkern über seine öffentliche Schnittstelle.
+- [x] Sichtbare Texte stehen gesammelt an einer Stelle (Vorbereitung für spätere Übersetzungen).
