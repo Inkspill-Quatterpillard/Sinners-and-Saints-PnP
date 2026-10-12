@@ -9,9 +9,14 @@
 		sides: number;
 		roll?: Roll;
 		onroll: (roll: Roll) => void;
+		/**
+		 * Nach einem Wurf nicht erneut von der App würfeln lassen (die Regeln erlauben kein Neuwürfeln).
+		 * Ein am Tisch gewürfeltes Ergebnis lässt sich weiterhin eintragen bzw. korrigieren.
+		 */
+		locked?: boolean;
 	}
 
-	let { count, sides, roll, onroll }: Props = $props();
+	let { count, sides, roll, onroll, locked = false }: Props = $props();
 
 	let editing = $state(false);
 	let text = $state('');
@@ -45,7 +50,9 @@
 			<button type="button" onclick={() => (editing = false)}>{t.dice.cancel}</button>
 		</form>
 	{:else}
-		<button type="button" onclick={() => onroll(rollDice(count, sides))}>{t.dice.roll(count, sides)}</button>
+		{#if !(locked && roll)}
+			<button type="button" onclick={() => onroll(rollDice(count, sides))}>{t.dice.roll(count, sides)}</button>
+		{/if}
 		<button type="button" onclick={() => (editing = true)}>{t.dice.enter}</button>
 	{/if}
 </span>

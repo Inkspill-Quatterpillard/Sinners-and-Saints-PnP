@@ -6,9 +6,7 @@
 		{
 			"id": "akrobatik",
 			"name": "Akrobatik",
-			"attributes": [
-				"GES"
-			],
+			"attributes": ["GES"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Geschicklichkeit",
@@ -21,9 +19,7 @@
 		{
 			"id": "fahrzeugSteuern",
 			"name": "Fahrzeug steuern",
-			"attributes": [
-				"GES"
-			],
+			"attributes": ["GES"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Geschicklichkeit",
@@ -32,16 +28,12 @@
 				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
 				"section": "Fahrzeug steuern (⅕ GES)"
 			},
-			"aliases": [
-				"Steuern"
-			]
+			"aliases": ["Steuern"]
 		},
 		{
 			"id": "fingerfertigkeit",
 			"name": "Fingerfertigkeit",
-			"attributes": [
-				"GES"
-			],
+			"attributes": ["GES"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Geschicklichkeit",
@@ -54,9 +46,7 @@
 		{
 			"id": "klettern",
 			"name": "Klettern",
-			"attributes": [
-				"GES"
-			],
+			"attributes": ["GES"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Geschicklichkeit",
@@ -69,9 +59,7 @@
 		{
 			"id": "reiten",
 			"name": "Reiten",
-			"attributes": [
-				"GES"
-			],
+			"attributes": ["GES"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Geschicklichkeit",
@@ -84,9 +72,7 @@
 		{
 			"id": "schleichen",
 			"name": "Schleichen",
-			"attributes": [
-				"GES"
-			],
+			"attributes": ["GES"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Geschicklichkeit",
@@ -99,9 +85,7 @@
 		{
 			"id": "schwimmen",
 			"name": "Schwimmen",
-			"attributes": [
-				"GES"
-			],
+			"attributes": ["GES"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Geschicklichkeit",
@@ -114,9 +98,7 @@
 		{
 			"id": "faehrtenlesen",
 			"name": "Fährtenlesen",
-			"attributes": [
-				"WAH"
-			],
+			"attributes": ["WAH"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Wahrnehmung",
@@ -129,9 +111,7 @@
 		{
 			"id": "gespuer",
 			"name": "Gespür",
-			"attributes": [
-				"WAH"
-			],
+			"attributes": ["WAH"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Wahrnehmung",
@@ -144,9 +124,7 @@
 		{
 			"id": "inspizieren",
 			"name": "Inspizieren",
-			"attributes": [
-				"WAH"
-			],
+			"attributes": ["WAH"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Wahrnehmung",
@@ -159,9 +137,7 @@
 		{
 			"id": "menschenkenntnis",
 			"name": "Menschenkenntnis",
-			"attributes": [
-				"WAH"
-			],
+			"attributes": ["WAH"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Wahrnehmung",
@@ -174,9 +150,7 @@
 		{
 			"id": "navigieren",
 			"name": "Navigieren",
-			"attributes": [
-				"WAH"
-			],
+			"attributes": ["WAH"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Wahrnehmung",
@@ -189,9 +163,7 @@
 		{
 			"id": "recherche",
 			"name": "Recherche",
-			"attributes": [
-				"WAH"
-			],
+			"attributes": ["WAH"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Wahrnehmung",
@@ -204,9 +176,7 @@
 		{
 			"id": "sondieren",
 			"name": "Sondieren",
-			"attributes": [
-				"WAH"
-			],
+			"attributes": ["WAH"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Wahrnehmung",
@@ -215,16 +185,12 @@
 				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
 				"section": "Sondieren (½ WAH)"
 			},
-			"aliases": [
-				"Verborgenes Entdecken"
-			]
+			"aliases": ["Verborgenes Entdecken"]
 		},
 		{
 			"id": "beschwatzen",
 			"name": "Beschwatzen",
-			"attributes": [
-				"CHA"
-			],
+			"attributes": ["CHA"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Charisma",
@@ -237,9 +203,7 @@
 		{
 			"id": "charme",
 			"name": "Charme",
-			"attributes": [
-				"CHA"
-			],
+			"attributes": ["CHA"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Charisma",
@@ -252,9 +216,7 @@
 		{
 			"id": "autoritaet",
 			"name": "Autorität",
-			"attributes": [
-				"CHA"
-			],
+			"attributes": ["CHA"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Charisma",
@@ -263,16 +225,12 @@
 				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
 				"section": "Autorität (½ CHA)"
 			},
-			"aliases": [
-				"Einschüchtern"
-			]
+			"aliases": ["Einschüchtern"]
 		},
 		{
 			"id": "empathie",
 			"name": "Empathie",
-			"attributes": [
-				"CHA"
-			],
+			"attributes": ["CHA"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Charisma",
@@ -285,9 +243,7 @@
 		{
 			"id": "selbstbeherrschung",
 			"name": "Selbstbeherrschung",
-			"attributes": [
-				"CHA"
-			],
+			"attributes": ["CHA"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Charisma",
@@ -300,9 +256,7 @@
 		{
 			"id": "ueberzeugen",
 			"name": "Überzeugen",
-			"attributes": [
-				"CHA"
-			],
+			"attributes": ["CHA"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Charisma",
@@ -311,17 +265,13 @@
 				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
 				"section": "Überzeugung (⅕ CHA)"
 			},
-			"aliases": [
-				"Überzeugung"
-			],
+			"aliases": ["Überzeugung"],
 			"note": "Im Regelwerk als „Überzeugung“ geführt; Begriff laut Regelfrage U4 vereinheitlicht."
 		},
 		{
 			"id": "umgangMitTieren",
 			"name": "Umgang mit Tieren",
-			"attributes": [
-				"CHA"
-			],
+			"attributes": ["CHA"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Charisma",
@@ -334,9 +284,7 @@
 		{
 			"id": "kalkulation",
 			"name": "Kalkulation",
-			"attributes": [
-				"KLU"
-			],
+			"attributes": ["KLU"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Klugheit",
@@ -349,9 +297,7 @@
 		{
 			"id": "laenderkunde",
 			"name": "Länderkunde",
-			"attributes": [
-				"KLU"
-			],
+			"attributes": ["KLU"],
 			"fraction": "half",
 			"specialization": true,
 			"group": "Klugheit",
@@ -364,9 +310,7 @@
 		{
 			"id": "medizin",
 			"name": "Medizin",
-			"attributes": [
-				"KLU"
-			],
+			"attributes": ["KLU"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Klugheit",
@@ -379,9 +323,7 @@
 		{
 			"id": "okkultismus",
 			"name": "Okkultismus",
-			"attributes": [
-				"KLU"
-			],
+			"attributes": ["KLU"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Klugheit",
@@ -394,9 +336,7 @@
 		{
 			"id": "religion",
 			"name": "Religion",
-			"attributes": [
-				"KLU"
-			],
+			"attributes": ["KLU"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Klugheit",
@@ -409,9 +349,7 @@
 		{
 			"id": "sprachkunst",
 			"name": "Sprachkunst",
-			"attributes": [
-				"KLU"
-			],
+			"attributes": ["KLU"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Klugheit",
@@ -424,9 +362,7 @@
 		{
 			"id": "wissenschaften",
 			"name": "Wissenschaften",
-			"attributes": [
-				"KLU"
-			],
+			"attributes": ["KLU"],
 			"fraction": "fifth",
 			"specialization": true,
 			"group": "Klugheit",
@@ -439,9 +375,7 @@
 		{
 			"id": "ersteHilfe",
 			"name": "Erste Hilfe",
-			"attributes": [
-				"INT"
-			],
+			"attributes": ["INT"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Intuition",
@@ -454,9 +388,7 @@
 		{
 			"id": "fremdsprachen",
 			"name": "Fremdsprachen",
-			"attributes": [
-				"INT"
-			],
+			"attributes": ["INT"],
 			"fraction": "fifth",
 			"specialization": true,
 			"group": "Intuition",
@@ -469,9 +401,7 @@
 		{
 			"id": "handwerkUndKuenste",
 			"name": "Handwerk und Künste",
-			"attributes": [
-				"INT"
-			],
+			"attributes": ["INT"],
 			"fraction": "fifth",
 			"specialization": true,
 			"group": "Intuition",
@@ -484,9 +414,7 @@
 		{
 			"id": "natur",
 			"name": "Natur",
-			"attributes": [
-				"INT"
-			],
+			"attributes": ["INT"],
 			"fraction": "fifth",
 			"specialization": true,
 			"group": "Intuition",
@@ -499,9 +427,7 @@
 		{
 			"id": "reparierenUndKonstruieren",
 			"name": "Reparieren und Konstruieren",
-			"attributes": [
-				"INT"
-			],
+			"attributes": ["INT"],
 			"fraction": "half",
 			"specialization": false,
 			"group": "Intuition",
@@ -514,9 +440,7 @@
 		{
 			"id": "steuernBoot",
 			"name": "Steuern (Boot)",
-			"attributes": [
-				"INT"
-			],
+			"attributes": ["INT"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Intuition",
@@ -525,16 +449,12 @@
 				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
 				"section": "Steuern (Boot) (⅕ INT)"
 			},
-			"aliases": [
-				"Steuern"
-			]
+			"aliases": ["Steuern"]
 		},
 		{
 			"id": "vorstellungskraft",
 			"name": "Vorstellungskraft",
-			"attributes": [
-				"INT"
-			],
+			"attributes": ["INT"],
 			"fraction": "fifth",
 			"specialization": false,
 			"group": "Intuition",
@@ -543,10 +463,7 @@
 				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
 				"section": "Vorstellungskraft (⅕ INT)"
 			},
-			"aliases": [
-				"Vorstellen",
-				"Vorstellung"
-			]
+			"aliases": ["Vorstellen", "Vorstellung"]
 		}
 	]
 }

@@ -40,15 +40,7 @@ export interface SettingDef {
 	name: string;
 }
 
-export type SecondaryKey =
-	| 'tp'
-	| 'stability'
-	| 'magicPoints'
-	| 'luck'
-	| 'movement'
-	| 'dodge'
-	| 'damageBonus'
-	| 'woundThreshold';
+export type SecondaryKey = 'tp' | 'stability' | 'magicPoints' | 'luck' | 'movement' | 'dodge' | 'damageBonus' | 'woundThreshold';
 
 /**
  * Ein mechanischer Effekt als Daten. Effekte, die sich so nicht beschreiben lassen,
@@ -198,6 +190,26 @@ export interface ReligionDef {
 	source: SourceRef;
 }
 
+export interface CharacteristicDef {
+	id: string;
+	name: string;
+	/** Bereich auf dem W100, z. B. [21, 22]. */
+	range: [number, number];
+	text: string;
+	effects?: Effect[];
+	note?: string;
+	source: SourceRef;
+}
+
+export interface CharacteristicRules {
+	die: number;
+	/** Höchstzahl gewürfelter Charakteristiken (ohne Zusatz durch Spezies-Eigenschaften). */
+	maxRolled: number;
+	/** Wie oft insgesamt neu gewürfelt werden darf. */
+	rerolls: number;
+	entries: CharacteristicDef[];
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -213,4 +225,5 @@ export interface RuleData {
 	age: AgeRules;
 	profession: ProfessionRules;
 	religions: ReligionDef[];
+	characteristics: CharacteristicRules;
 }

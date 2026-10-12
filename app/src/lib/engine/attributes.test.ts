@@ -77,10 +77,7 @@ describe('Grundattribute', () => {
 	});
 
 	it('wird ein vergebener Platz einem anderen Attribut zugewiesen, tauschen die beiden', () => {
-		const view = computeView(
-			play(...ARRAY_ASSIGNMENT, { type: 'assignAttribute', attribute: 'WIL', slot: 0 }),
-			ruleData
-		);
+		const view = computeView(play(...ARRAY_ASSIGNMENT, { type: 'assignAttribute', attribute: 'WIL', slot: 0 }), ruleData);
 		expect(view.attributes.WIL.base).toBe(16);
 		expect(view.attributes.STR.base).toBe(8);
 	});
@@ -101,8 +98,7 @@ describe('Grundattribute', () => {
 		expect(view.attributes.STR.base).toBeUndefined();
 		expect(view.steps.find((s) => s.id === 'attributes')?.status).toBe('open');
 		const rolled = [0, 1, 2, 3, 4, 5, 6, 7].reduce(
-			(acc, slot) =>
-				applyAction(acc, { type: 'rollAttributeSlot', slot, roll: { dice: [6, 6, 6, 1], source: 'app' } }, ruleData),
+			(acc, slot) => applyAction(acc, { type: 'rollAttributeSlot', slot, roll: { dice: [6, 6, 6, 1], source: 'app' } }, ruleData),
 			c
 		);
 		expect(computeView(rolled, ruleData).attributes.STR.base).toBe(18);

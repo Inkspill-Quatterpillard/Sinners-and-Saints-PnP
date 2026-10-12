@@ -86,13 +86,7 @@ export function applyTrait(d: Derivation, trait: TraitDef, step: StepId): { stat
 	return { status, view };
 }
 
-function applyEffect(
-	d: Derivation,
-	effect: Effect,
-	trait: TraitDef,
-	choice: ChoiceState,
-	view: TraitView
-): StepStatus {
+function applyEffect(d: Derivation, effect: Effect, trait: TraitDef, choice: ChoiceState, view: TraitView): StepStatus {
 	switch (effect.type) {
 		case 'attribute':
 			d.attributes[effect.attribute].modifiers.push({ source: trait.name, value: effect.value });

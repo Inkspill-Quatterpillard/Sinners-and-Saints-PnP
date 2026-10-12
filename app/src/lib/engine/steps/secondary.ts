@@ -41,7 +41,11 @@ export function evaluateSecondary(d: Derivation): { secondary: Record<SecondaryK
 	const r = d.ruleData.secondary;
 	const a = (id: AttributeId) => effective(d.attributes[id]);
 	const floor = Math.floor;
-	const STR = a('STR'), KON = a('KON'), GES = a('GES'), WAH = a('WAH'), WIL = a('WIL');
+	const STR = a('STR'),
+		KON = a('KON'),
+		GES = a('GES'),
+		WAH = a('WAH'),
+		WIL = a('WIL');
 	const mental = [a('CHA'), a('INT'), a('KLU')];
 	const all = (...values: (number | undefined)[]) => values.every((v) => v !== undefined);
 
@@ -49,7 +53,8 @@ export function evaluateSecondary(d: Derivation): { secondary: Record<SecondaryK
 	if (all(KON)) base.tp = KON! + r.tpBonus;
 	if (all(WIL, KON)) base.stability = floor((WIL! + KON!) * r.stabilityFactor);
 	if (all(WIL, ...mental)) {
-		base.magicPoints = floor(WIL! / r.magicPointsWilDivisor) + floor(Math.max(...(mental as number[])) / r.magicPointsMentalDivisor);
+		base.magicPoints =
+			floor(WIL! / r.magicPointsWilDivisor) + floor(Math.max(...(mental as number[])) / r.magicPointsMentalDivisor);
 	}
 	if (all(GES, KON)) base.movement = lookup(r.movementTable, GES! + KON!);
 	if (all(GES, WAH)) base.dodge = floor((GES! + WAH!) / 2);

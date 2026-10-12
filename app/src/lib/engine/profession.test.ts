@@ -74,7 +74,11 @@ describe('Profession', () => {
 		);
 		expect(skill(c, 'wissenschaften:Alchemie').value).toBe(7);
 		expect(status(c)).toBe('valid');
-		const removed = applyAction(c, { type: 'removeSpecialization', skill: 'wissenschaften', specialization: 'Alchemie' }, ruleData);
+		const removed = applyAction(
+			c,
+			{ type: 'removeSpecialization', skill: 'wissenschaften', specialization: 'Alchemie' },
+			ruleData
+		);
 		expect(status(removed)).toBe('invalid');
 		expect(view(removed).issues.some((i) => i.step === 'profession' && i.severity === 'invalid')).toBe(true);
 	});
@@ -117,7 +121,13 @@ describe('Profession', () => {
 		it('eine Heldenfertigkeit kann nur einen Platz belegen', () => {
 			const c = play(...COMPLETE, { type: 'assignHeroSkill', slot: 4, skill: 'schwerter' });
 			// Schwerter wandert von Platz 0 auf Platz 4; Platz 0 wird frei.
-			expect(view(c).professionStep.heroSlots.map((s) => s.skill)).toEqual([undefined, 'boegen', 'faustkampf', 'dolcheUndMesser', 'schwerter']);
+			expect(view(c).professionStep.heroSlots.map((s) => s.skill)).toEqual([
+				undefined,
+				'boegen',
+				'faustkampf',
+				'dolcheUndMesser',
+				'schwerter'
+			]);
 			expect(status(c)).toBe('open');
 		});
 
@@ -138,7 +148,11 @@ describe('Profession', () => {
 					slot,
 					roll: { dice: slot === 0 ? [6, 6, 6, 1] : [4, 4, 4, 1], source: 'manual' }
 				})),
-				...(['STR', 'KON', 'GES', 'WAH', 'KLU', 'INT', 'CHA', 'WIL'] as const).map((attribute, slot): Action => ({ type: 'assignAttribute', attribute, slot })),
+				...(['STR', 'KON', 'GES', 'WAH', 'KLU', 'INT', 'CHA', 'WIL'] as const).map((attribute, slot): Action => ({
+					type: 'assignAttribute',
+					attribute,
+					slot
+				})),
 				{ type: 'chooseSpecies', species: 'zwerg' },
 				{ type: 'assignHeroSkill', slot: 3, skill: 'faustkampf' }
 			);

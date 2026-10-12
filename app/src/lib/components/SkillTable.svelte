@@ -49,7 +49,11 @@
 						{/if}
 						{#if s.needsSpecialization && !s.specialization && dispatch}
 							<form class="add" onsubmit={(e) => (e.preventDefault(), addSpec(s.skillId))}>
-								<input bind:value={newSpec[s.skillId]} placeholder={t.skills.specializationPlaceholder} aria-label={t.skills.addSpecialization(s.name)} />
+								<input
+									bind:value={newSpec[s.skillId]}
+									placeholder={t.skills.specializationPlaceholder}
+									aria-label={t.skills.addSpecialization(s.name)}
+								/>
 								<button type="submit">+</button>
 							</form>
 						{/if}

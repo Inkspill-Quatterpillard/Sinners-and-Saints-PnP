@@ -16,20 +16,23 @@ export const messages = {
 		`Es sind ${distributed} Malus-Punkte verteilt, vorgesehen sind ${required}.`,
 	atrophiaNotPhysical: (attr: string) => `Atrophia trifft nur körperliche Attribute (STR, KON, GES, WAH), nicht ${attr}.`,
 	belowMinimum: (attr: string, value: number, min: number) =>
-		`${attr} fiele durch Altersmali auf ${value}. Kein Attribut darf dadurch unter ${min} sinken.`
-,
+		`${attr} fiele durch Altersmali auf ${value}. Kein Attribut darf dadurch unter ${min} sinken.`,
 	professionSource: (name: string) => `Profession: ${name || 'ohne Namen'}`,
 	heroSkillSource: 'Heldenfertigkeit',
 	professionSkillMissing: (key: string) =>
 		`Die Professionsfertigkeit ${key.replace(':', ': ')} gibt es nicht mehr (z. B. weil die Spezialisierung entfernt wurde). Wähle eine andere.`,
 	heroSkillLowered: (name: string, start: number, value: number) =>
-		`${name}: Der Startwert ${start} sinkt durch das Setzen auf ${value}. Das ist erlaubt, aber vermutlich nicht gewollt.`
-,
+		`${name}: Der Startwert ${start} sinkt durch das Setzen auf ${value}. Das ist erlaubt, aber vermutlich nicht gewollt.`,
 	interestsSource: 'Persönliche Interessen',
 	tooManyInterestPoints: (spent: number, total: number) =>
 		`Es sind ${spent} Punkte für Persönliche Interessen verteilt, zur Verfügung stehen ${total}. Nimm ${spent - total} Punkte zurück.`,
 	skillChoiceInvalid: (trait: string, key: string, heroAllowed: boolean) =>
 		`${trait}: ${key.replace(':', ': ')} ist hier nicht wählbar` +
-		(heroAllowed ? ' (die Spezialisierung wurde entfernt).' : ' (keine Kampf- oder Magiefertigkeit; Spezialisierungen müssen angelegt sein).') +
-		' Wähle eine andere Fertigkeit.'
+		(heroAllowed
+			? ' (die Spezialisierung wurde entfernt).'
+			: ' (keine Kampf- oder Magiefertigkeit; Spezialisierungen müssen angelegt sein).') +
+		' Wähle eine andere Fertigkeit.',
+	characteristicDuplicateRoll: (name: string) => `${name} wurde doppelt gewürfelt. Würfle diesen Platz neu.`,
+	characteristicDuplicatePick: (name: string) => `${name} ist zweimal eingetragen. Jede Charakteristik zählt nur einmal.`,
+	characteristicForbidden: 'Durch „Eherner Wille“ (keine Charakteristik) darf keine Charakteristik gewählt werden.'
 };

@@ -89,7 +89,12 @@ describe('Religion', () => {
 
 	describe('Kult der Dana', () => {
 		it('Glück mit Vorteil', () => {
-			const c = play(...ATTRS, { type: 'chooseReligion', religion: 'kultDerDana' }, { type: 'setAge', years: 30 }, { type: 'rollLuck', roll: { dice: [3, 15], source: 'app' } });
+			const c = play(
+				...ATTRS,
+				{ type: 'chooseReligion', religion: 'kultDerDana' },
+				{ type: 'setAge', years: 30 },
+				{ type: 'rollLuck', roll: { dice: [3, 15], source: 'app' } }
+			);
 			expect(view(c).luck).toMatchObject({ advantage: true, dice: 2 });
 			expect(view(c).secondary.luck.value).toBe(15);
 		});
@@ -112,7 +117,9 @@ describe('Religion', () => {
 			const c = play(...ATTRS, { type: 'chooseReligion', religion: 'kultDerSiebenErzdaemonen' });
 			expect(view(c).religionStep.trait?.options).toHaveLength(7);
 			expect(status(c)).toBe('open');
-			expect(status(applyAction(c, { type: 'chooseTraitOption', trait: 'kultDerSiebenErzdaemonen', option: 'kreis3' }, ruleData))).toBe('valid');
+			expect(
+				status(applyAction(c, { type: 'chooseTraitOption', trait: 'kultDerSiebenErzdaemonen', option: 'kreis3' }, ruleData))
+			).toBe('valid');
 		});
 	});
 

@@ -10,6 +10,7 @@ import { applyAgeAction, type AgeAction } from './steps/age';
 import { applyProfessionAction, type ProfessionAction } from './steps/profession';
 import { applyInterestsAction, type InterestsAction } from './steps/interests';
 import { applyReligionAction, type ReligionAction } from './steps/religion';
+import { applyCharacteristicAction, type CharacteristicAction } from './steps/characteristic';
 
 export type Action =
 	| { type: 'setName'; name: string }
@@ -22,7 +23,8 @@ export type Action =
 	| AgeAction
 	| ProfessionAction
 	| InterestsAction
-	| ReligionAction;
+	| ReligionAction
+	| CharacteristicAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -44,6 +46,12 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 			break;
 		case 'chooseSpecies':
 			applySpeciesAction(basis, action);
+			break;
+		case 'setCharacteristicMode':
+		case 'pickCharacteristic':
+		case 'rollCharacteristic':
+		case 'rerollCharacteristic':
+			applyCharacteristicAction(basis, action, ruleData);
 			break;
 		case 'chooseReligion':
 			applyReligionAction(basis, action);

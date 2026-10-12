@@ -56,12 +56,19 @@ export function evaluateSkills(d: Derivation): SkillView[] {
 	const views: SkillView[] = [];
 	for (const def of allSkillDefs(d)) {
 		const category: SkillCategory = def.category ?? 'general';
-		const specs = def.specialization ? [undefined, ...(d.character.basis.specializations[def.id] ?? [])] : [undefined];
+		const declared = d.character.basis.specializations[def.id] ?? [];
+		// Spezialisierungen, auf die ein Effekt (z. B. eine Charakteristik) gezielt einen Bonus gibt, werden mitgeführt.
+		const fromBonuses = Object.keys(d.skillBonuses)
+			.filter((k) => k.startsWith(`${def.id}:`))
+			.map((k) => k.slice(def.id.length + 1))
+			.filter((spec) => !declared.includes(spec));
+		const specs = def.specialization ? [undefined, ...declared, ...fromBonuses] : [undefined];
 		for (const specialization of specs) {
 			const key = skillKey(def.id, specialization);
 			const start = startValue(d, def);
 			const setValue = d.skillSetValues[key];
-			const bonuses = d.skillBonuses[key] ?? [];
+			// Boni auf die Fertigkeit ohne Spezialisierung gelten für jede ihrer Spezialisierungen.
+			const bonuses = [...(specialization ? (d.skillBonuses[def.id] ?? []) : []), ...(d.skillBonuses[key] ?? [])];
 			const baseValue = setValue ? setValue.value : start;
 			const value = baseValue === undefined ? undefined : baseValue + bonuses.reduce((s, m) => s + m.value, 0);
 			views.push({

@@ -1,14 +1,62 @@
 {
 	"source": { "file": "Charaktererstellung/Attribute.md" },
 	"attributes": [
-		{ "id": "STR", "name": "Stärke", "physical": true, "description": "Stärke determiniert in erster Linie die Muskelkraft einer Person. Es beeinflusst unter anderem, wie viel ein Wesen tragen kann oder wie viel Schaden es im Nahkampf verursacht.", "source": { "file": "Charaktererstellung/Attribute.md", "section": "Stärke (STR)" } },
-		{ "id": "KON", "name": "Konstitution", "physical": true, "description": "Konstitution bezeichnet die Ausdauer und die körperliche Verfassung eines Charakters.", "source": { "file": "Charaktererstellung/Attribute.md", "section": "Konstitution (KON)" } },
-		{ "id": "GES", "name": "Geschicklichkeit", "physical": true, "description": "Geschicklichkeit bezeichnet einerseits die Schnelligkeit und Flinkheit einer Person, sowie eine generelle Kontrolle über den Körper.", "source": { "file": "Charaktererstellung/Attribute.md", "section": "Geschicklichkeit (GES)" } },
-		{ "id": "WAH", "name": "Wahrnehmung", "physical": true, "description": "Die Wahrnehmung eines Charakters bestimmt, wie gut die Sinne des Charakters funktionieren und wie gut er Sachen in seinem Umfeld wahrnimmt.", "source": { "file": "Charaktererstellung/Attribute.md", "section": "Wahrnehmung (WAH)" } },
-		{ "id": "KLU", "name": "Klugheit", "physical": false, "description": "Klugheit bezeichnet die Fähigkeit eines Charakters, Informationen aufzunehmen, zu verarbeiten und zu behalten sowie sie gegebenenfalls wiederzugeben.", "source": { "file": "Charaktererstellung/Attribute.md", "section": "Klugheit (KLU)" } },
-		{ "id": "INT", "name": "Intuition", "physical": false, "description": "Eine hohe Intuition ermöglicht es einem Charakter, instinktiv die richtige Entscheidung zu treffen und Situationen zu bewerten.", "source": { "file": "Charaktererstellung/Attribute.md", "section": "Intuition (INT)" } },
-		{ "id": "CHA", "name": "Charisma", "physical": false, "description": "Das Charisma einer Person bestimmt deren Erscheinung, Ausstrahlung und Auftreten.", "source": { "file": "Charaktererstellung/Attribute.md", "section": "Charisma (CHA)" } },
-		{ "id": "WIL", "name": "Willenskraft", "physical": false, "description": "Willenskraft ermöglicht es einem Charakter, starke Emotionen, Ablenkungen und fremde Einflüsse wie etwa Magie abzuwehren.", "source": { "file": "Charaktererstellung/Attribute.md", "section": "Willensstärke (WIL)" } }
+		{
+			"id": "STR",
+			"name": "Stärke",
+			"physical": true,
+			"description": "Stärke determiniert in erster Linie die Muskelkraft einer Person. Es beeinflusst unter anderem, wie viel ein Wesen tragen kann oder wie viel Schaden es im Nahkampf verursacht.",
+			"source": { "file": "Charaktererstellung/Attribute.md", "section": "Stärke (STR)" }
+		},
+		{
+			"id": "KON",
+			"name": "Konstitution",
+			"physical": true,
+			"description": "Konstitution bezeichnet die Ausdauer und die körperliche Verfassung eines Charakters.",
+			"source": { "file": "Charaktererstellung/Attribute.md", "section": "Konstitution (KON)" }
+		},
+		{
+			"id": "GES",
+			"name": "Geschicklichkeit",
+			"physical": true,
+			"description": "Geschicklichkeit bezeichnet einerseits die Schnelligkeit und Flinkheit einer Person, sowie eine generelle Kontrolle über den Körper.",
+			"source": { "file": "Charaktererstellung/Attribute.md", "section": "Geschicklichkeit (GES)" }
+		},
+		{
+			"id": "WAH",
+			"name": "Wahrnehmung",
+			"physical": true,
+			"description": "Die Wahrnehmung eines Charakters bestimmt, wie gut die Sinne des Charakters funktionieren und wie gut er Sachen in seinem Umfeld wahrnimmt.",
+			"source": { "file": "Charaktererstellung/Attribute.md", "section": "Wahrnehmung (WAH)" }
+		},
+		{
+			"id": "KLU",
+			"name": "Klugheit",
+			"physical": false,
+			"description": "Klugheit bezeichnet die Fähigkeit eines Charakters, Informationen aufzunehmen, zu verarbeiten und zu behalten sowie sie gegebenenfalls wiederzugeben.",
+			"source": { "file": "Charaktererstellung/Attribute.md", "section": "Klugheit (KLU)" }
+		},
+		{
+			"id": "INT",
+			"name": "Intuition",
+			"physical": false,
+			"description": "Eine hohe Intuition ermöglicht es einem Charakter, instinktiv die richtige Entscheidung zu treffen und Situationen zu bewerten.",
+			"source": { "file": "Charaktererstellung/Attribute.md", "section": "Intuition (INT)" }
+		},
+		{
+			"id": "CHA",
+			"name": "Charisma",
+			"physical": false,
+			"description": "Das Charisma einer Person bestimmt deren Erscheinung, Ausstrahlung und Auftreten.",
+			"source": { "file": "Charaktererstellung/Attribute.md", "section": "Charisma (CHA)" }
+		},
+		{
+			"id": "WIL",
+			"name": "Willenskraft",
+			"physical": false,
+			"description": "Willenskraft ermöglicht es einem Charakter, starke Emotionen, Ablenkungen und fremde Einflüsse wie etwa Magie abzuwehren.",
+			"source": { "file": "Charaktererstellung/Attribute.md", "section": "Willensstärke (WIL)" }
+		}
 	],
 	"generation": {
 		"dice": { "count": 4, "sides": 6, "keep": 3 },

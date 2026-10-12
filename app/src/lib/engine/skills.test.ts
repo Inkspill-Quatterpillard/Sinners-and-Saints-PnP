@@ -22,7 +22,10 @@ describe('Fertigkeiten', () => {
 		// Akrobatik (½ GES): 12 / 2 = 6
 		expect(skill(play(...ATTRS), 'akrobatik')?.start).toBe(6);
 		// Schleichen (½ GES) mit GES 15 (Elf +1, aber Grundwert 14):
-		const c = play(...arrayAttributes(['STR', 'GES', 'KON', 'WAH', 'KLU', 'INT', 'CHA', 'WIL']), { type: 'chooseSpecies', species: 'elf' });
+		const c = play(...arrayAttributes(['STR', 'GES', 'KON', 'WAH', 'KLU', 'INT', 'CHA', 'WIL']), {
+			type: 'chooseSpecies',
+			species: 'elf'
+		});
 		// GES 14 + 1 = 15 → 7
 		expect(skill(c, 'schleichen')?.start).toBe(7);
 	});

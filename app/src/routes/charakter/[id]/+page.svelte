@@ -11,6 +11,7 @@
 	import ProfessionStep from '$lib/components/steps/ProfessionStep.svelte';
 	import InterestsStep from '$lib/components/steps/InterestsStep.svelte';
 	import ReligionStep from '$lib/components/steps/ReligionStep.svelte';
+	import CharacteristicStep from '$lib/components/steps/CharacteristicStep.svelte';
 	import { applyAction, computeView, type Action, type Character, type StepId } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { loadCharacter, saveCharacter } from '$lib/storage/characterStore';
@@ -27,6 +28,7 @@
 		species: SpeciesStep,
 		age: AgeStep,
 		religion: ReligionStep,
+		characteristic: CharacteristicStep,
 		profession: ProfessionStep,
 		interests: InterestsStep,
 		secondary: SecondaryStep,

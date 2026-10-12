@@ -2,9 +2,7 @@ import type { RuleData } from '$lib/ruleData';
 import type { Basis } from '../character';
 import type { Derivation } from '../derivation';
 
-export type OptionsAction =
-	| { type: 'setOptionalRule'; rule: string; enabled: boolean }
-	| { type: 'setSetting'; setting: string };
+export type OptionsAction = { type: 'setOptionalRule'; rule: string; enabled: boolean } | { type: 'setSetting'; setting: string };
 
 export function applyOptionsAction(basis: Basis, action: OptionsAction): void {
 	switch (action.type) {

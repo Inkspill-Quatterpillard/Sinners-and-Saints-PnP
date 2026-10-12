@@ -6,10 +6,7 @@
 		{
 			"id": "faustkampf",
 			"name": "Faustkampf",
-			"attributes": [
-				"STR",
-				"GES"
-			],
+			"attributes": ["STR", "GES"],
 			"fraction": "half",
 			"specialization": false,
 			"description": "Diese Fertigkeit schließt allen Kampf ohne Waffen mit ein. Darunter fallen einfache Schlägereien bis hin filigraneren Techniken wie Boxen, Ringen oder weitere unbewaffnete Kampfkünste",
@@ -22,9 +19,7 @@
 		{
 			"id": "dolcheUndMesser",
 			"name": "Dolche und Messer",
-			"attributes": [
-				"GES"
-			],
+			"attributes": ["GES"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Diese Fertigkeit betrifft den Umgang mit kurzen Stichwaffen.",
@@ -37,10 +32,7 @@
 		{
 			"id": "schwerter",
 			"name": "Schwerter",
-			"attributes": [
-				"STR",
-				"GES"
-			],
+			"attributes": ["STR", "GES"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Diese Fertigkeit schließt den Umgang mit geraden oder gebogenen, ein- oder zweischneidigen Klingenwaffen ein. Dazu zählen insbesondere ein- und zweihändige Schwerter und Säbel.",
@@ -53,9 +45,7 @@
 		{
 			"id": "hiebwaffen",
 			"name": "Hiebwaffen",
-			"attributes": [
-				"STR"
-			],
+			"attributes": ["STR"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Diese Fertigkeit deckt den Umgang mit Hieb- und Schlagwaffen ab, sowohl scharfe wie Äxte und Beile als auch stumpfe wie Hämmer und Kolben ab.",
@@ -68,9 +58,7 @@
 		{
 			"id": "stangenwaffen",
 			"name": "Stangenwaffen",
-			"attributes": [
-				"STR"
-			],
+			"attributes": ["STR"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Diese Fertigkeit deckt den Umgang mit langen Stichwaffen wie Speeren, Hellebarden oder Lanzen ab.",
@@ -83,9 +71,7 @@
 		{
 			"id": "boegen",
 			"name": "Bögen",
-			"attributes": [
-				"WAH"
-			],
+			"attributes": ["WAH"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Bögen sind Fernkampfwaffen, die Pfeile mit Muskelkraft verschießen.",
@@ -98,9 +84,7 @@
 		{
 			"id": "armbruesteUndSchusswaffen",
 			"name": "Armbrüste und Schusswaffen",
-			"attributes": [
-				"WAH"
-			],
+			"attributes": ["WAH"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Armbrüste und Schusswaffen sind Fernkampfwaffen, die Geschosse durch komplexe Mechanismen verschießen.",
@@ -113,10 +97,7 @@
 		{
 			"id": "wurfwaffen",
 			"name": "Wurfwaffen",
-			"attributes": [
-				"WAH",
-				"STR"
-			],
+			"attributes": ["WAH", "STR"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Als Wurfwaffen werden Geschosse bezeichnet, die geworfen werden.",
@@ -129,9 +110,7 @@
 		{
 			"id": "schleudern",
 			"name": "Schleudern",
-			"attributes": [
-				"WAH"
-			],
+			"attributes": ["WAH"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Schleudern verschießen Projektile mittels einer Hebelwirkung.",
@@ -144,9 +123,7 @@
 		{
 			"id": "elementaristik",
 			"name": "Elementaristik",
-			"attributes": [
-				"WIL"
-			],
+			"attributes": ["WIL"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Die Lehre, Energie zu kontrollieren, zu manipulieren und zu wandeln",
@@ -159,9 +136,7 @@
 		{
 			"id": "veraenderung",
 			"name": "Veränderung",
-			"attributes": [
-				"WIL"
-			],
+			"attributes": ["WIL"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Die Lehre, Materie zu verändern",
@@ -174,9 +149,7 @@
 		{
 			"id": "verzauberung",
 			"name": "Verzauberung",
-			"attributes": [
-				"WIL"
-			],
+			"attributes": ["WIL"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Die Lehre, magische Strukturen zu erschaffen und mit Materie zu verbinden",
@@ -189,9 +162,7 @@
 		{
 			"id": "mystik",
 			"name": "Mystik",
-			"attributes": [
-				"WIL"
-			],
+			"attributes": ["WIL"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Die Lehre, Magie selbst zu beeinflussen, Magische Strukturen und Konstrukte zu entschlüsseln und zu manipulieren",
@@ -204,9 +175,7 @@
 		{
 			"id": "illusion",
 			"name": "Illusion",
-			"attributes": [
-				"WIL"
-			],
+			"attributes": ["WIL"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Die Lehre, Materie zu imitieren",
@@ -219,9 +188,7 @@
 		{
 			"id": "psychomantie",
 			"name": "Psychomantie",
-			"attributes": [
-				"WIL"
-			],
+			"attributes": ["WIL"],
 			"fraction": "fifth",
 			"specialization": false,
 			"description": "Die Lehre, die Psyche von Lebewesen zu entschlüsseln, zu manipulieren oder zu kontrollieren",

@@ -125,7 +125,11 @@ describe('Sekundärattribute', () => {
 
 	it('+5 TP aus Eherner Wille erhöhen auch die Wundschwelle', () => {
 		const view = computeView(
-			play(...attributes(BASE), { type: 'chooseSpecies', species: 'zwerg' }, { type: 'chooseTraitOption', trait: 'ehernerWille', option: 'leben' }),
+			play(
+				...attributes(BASE),
+				{ type: 'chooseSpecies', species: 'zwerg' },
+				{ type: 'chooseTraitOption', trait: 'ehernerWille', option: 'leben' }
+			),
 			ruleData
 		);
 		// KON 13 + 5 + 5 = 23 → Wundschwelle 4

@@ -53,6 +53,7 @@
 						<span class="slot-name">{t.attributes.slot(slot.index)}</span>
 						<strong class="value">{slot.value ?? '–'}</strong>
 						<DiceInput
+							locked
 							count={gen.dice.count}
 							sides={gen.dice.sides}
 							roll={slot.roll}

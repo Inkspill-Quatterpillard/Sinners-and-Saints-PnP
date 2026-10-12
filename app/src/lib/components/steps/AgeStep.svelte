@@ -20,7 +20,13 @@
 	<p>{t.age.chooseSpeciesFirst}</p>
 {:else}
 	<p class="ranges">
-		{t.age.ranges(species.name, species.age.childUnder, species.age.youthUnder, species.age.adultUnder, species.age.agingInterval)}
+		{t.age.ranges(
+			species.name,
+			species.age.childUnder,
+			species.age.youthUnder,
+			species.age.adultUnder,
+			species.age.agingInterval
+		)}
 	</p>
 {/if}
 
@@ -57,7 +63,12 @@
 						min="0"
 						max={age.youngMalus.required}
 						value={age.youngMalus.points[attr] ?? 0}
-						oninput={(e) => dispatch({ type: 'setYoungMalus', attribute: attr, points: Math.max(0, Math.floor(Number(e.currentTarget.value) || 0)) })}
+						oninput={(e) =>
+							dispatch({
+								type: 'setYoungMalus',
+								attribute: attr,
+								points: Math.max(0, Math.floor(Number(e.currentTarget.value) || 0))
+							})}
 					/>
 				</label>
 			{/each}
@@ -87,13 +98,16 @@
 						{/each}
 					</select>
 					<DiceInput
+						locked
 						count={1}
 						sides={rules.maturityDie}
 						roll={roll.roll}
 						onroll={(r) => dispatch({ type: 'rollMaturity', index: roll.index, attribute: target, roll: r })}
 					/>
 					{#if roll.success !== undefined}
-						<span class:ok={roll.success}>{roll.success ? t.age.maturitySuccess(roll.target!) : t.age.maturityFail(roll.target!)}</span>
+						<span class:ok={roll.success}
+							>{roll.success ? t.age.maturitySuccess(roll.target!) : t.age.maturityFail(roll.target!)}</span
+						>
 					{/if}
 				</li>
 			{/each}

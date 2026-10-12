@@ -100,14 +100,25 @@ export function evaluateProfession(d: Derivation): ProfessionStepView {
 	}
 
 	d.steps.push({ id: 'profession', status });
-	return { name: p.name, skills: p.skills, required: rules.professionSkillCount, statusRoll: p.statusRoll, statusModifier, heroSlots };
+	return {
+		name: p.name,
+		skills: p.skills,
+		required: rules.professionSkillCount,
+		statusRoll: p.statusRoll,
+		statusModifier,
+		heroSlots
+	};
 }
 
 /** Warnt, wenn das Setzen einer Heldenfertigkeit ihren Wert unter den Startwert senkt (erlaubt, aber ungewöhnlich). */
 export function warnLoweredHeroSkills(d: Derivation, skills: SkillView[]): void {
 	for (const s of skills) {
 		if (s.setValue && s.start !== undefined && s.setValue.value < s.start) {
-			d.issues.push({ step: 'profession', severity: 'warning', message: messages.heroSkillLowered(s.name, s.start, s.setValue.value) });
+			d.issues.push({
+				step: 'profession',
+				severity: 'warning',
+				message: messages.heroSkillLowered(s.name, s.start, s.setValue.value)
+			});
 		}
 	}
 }

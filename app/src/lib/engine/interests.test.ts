@@ -84,7 +84,11 @@ describe('Persönliche Interessen', () => {
 	});
 
 	it('eine ausdrücklich getroffene Wahl bleibt bestehen, auch wenn das andere Attribut höher wird', () => {
-		const c = play(...ATTRS, { type: 'setInterestBasis', attribute: 'KLU' }, { type: 'assignAttribute', attribute: 'KLU', slot: 7 });
+		const c = play(
+			...ATTRS,
+			{ type: 'setInterestBasis', attribute: 'KLU' },
+			{ type: 'assignAttribute', attribute: 'KLU', slot: 7 }
+		);
 		expect(view(c).interestsStep).toMatchObject({ basis: 'KLU', total: 16 });
 	});
 

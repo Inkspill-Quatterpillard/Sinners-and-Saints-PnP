@@ -15,6 +15,7 @@
 	<h3>{t.secondary.luck}</h3>
 	<p>{view.luck.advantage ? t.secondary.luckAdvantage : t.secondary.luckPlain}</p>
 	<DiceInput
+		locked={view.secondary.luck.value !== undefined}
 		count={view.luck.advantage ? 2 : 1}
 		sides={ruleData.secondary.luckDie}
 		roll={view.luck.roll}

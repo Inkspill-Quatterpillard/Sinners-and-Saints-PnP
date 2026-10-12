@@ -181,7 +181,9 @@ export function evaluateAge(d: Derivation): AgeStepView {
 	for (const attr of d.ruleData.attributes) {
 		const state = d.attributes[attr.id];
 		const value = effective(state);
-		const fromAge = state.modifiers.some((m) => m.value < 0 && (m.source === messages.atrophiaSource || m.source.startsWith(messages.ageSourcePrefix)));
+		const fromAge = state.modifiers.some(
+			(m) => m.value < 0 && (m.source === messages.atrophiaSource || m.source.startsWith(messages.ageSourcePrefix))
+		);
 		if (value !== undefined && fromAge && value < rules.minimumAttribute) {
 			status = 'invalid';
 			d.issues.push({ step: 'age', severity: 'invalid', message: messages.belowMinimum(attr.id, value, rules.minimumAttribute) });

@@ -58,9 +58,7 @@ function slotValues(basis: Basis, ruleData: RuleData): (number | undefined)[] {
 	const count = ruleData.attributes.length;
 	if (method === 'array') return gen.fixedArray.slice(0, count);
 	if (method === 'roll') {
-		return Array.from({ length: count }, (_, i) =>
-			rolls[i] ? keepHighest(rolls[i].dice, gen.dice.keep) : undefined
-		);
+		return Array.from({ length: count }, (_, i) => (rolls[i] ? keepHighest(rolls[i].dice, gen.dice.keep) : undefined));
 	}
 	return Array.from({ length: count }, () => undefined);
 }

@@ -23,7 +23,12 @@
 	<legend>{t.interests.basis}</legend>
 	{#each ['KLU', 'INT'] as const as attr (attr)}
 		<label class="check">
-			<input type="radio" name="interest-basis" checked={step.basis === attr} onchange={() => dispatch({ type: 'setInterestBasis', attribute: attr })} />
+			<input
+				type="radio"
+				name="interest-basis"
+				checked={step.basis === attr}
+				onchange={() => dispatch({ type: 'setInterestBasis', attribute: attr })}
+			/>
 			{t.interests.basisOption(attr, view.attributes[attr].effective)}
 		</label>
 	{/each}
@@ -40,7 +45,9 @@
 				<span class="name">{target.name}</span>
 				<span class="value">{target.value ?? '–'}</span>
 				<span class="ctrl">
-					<button aria-label={t.interests.less(target.name)} disabled={points === 0} onclick={() => set(target.key, points - 1)}>−</button>
+					<button aria-label={t.interests.less(target.name)} disabled={points === 0} onclick={() => set(target.key, points - 1)}
+						>−</button
+					>
 					<input
 						type="number"
 						min="0"

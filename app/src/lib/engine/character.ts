@@ -1,5 +1,6 @@
 import type { AttributeId } from '$lib/ruleData';
 import type { ChoiceState } from './choices';
+import type { CharacteristicMode } from './steps/characteristic';
 
 /** Version des Formats der Charakterdatei. Ältere Dateien werden beim Laden migriert. */
 export const FORMAT_VERSION = 1;
@@ -31,6 +32,15 @@ export interface Basis {
 	};
 	species?: string;
 	religion?: string;
+	characteristics: {
+		mode?: CharacteristicMode;
+		/** Frei gewählte bzw. eingetragene Charakteristik je Platz. */
+		picks: Record<number, string>;
+		/** W100-Würfe je Platz. */
+		rolls: Record<number, Roll>;
+		/** Plätze, die bereits neu gewürfelt wurden. */
+		rerolledSlots: Record<number, true>;
+	};
 	age: {
 		years?: number;
 		/** Verteilte Malus-Punkte junger Charaktere je Attribut. */
@@ -88,6 +98,7 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			name: '',
 			options: { optionalRules: {} },
 			attributes: { rolls: {}, assignment: {} },
+			characteristics: { picks: {}, rolls: {}, rerolledSlots: {} },
 			age: { youngMalus: {}, maturity: {}, atrophia: {}, senility: {} },
 			profession: { name: '', skills: [], heroSlots: {} },
 			interests: { points: {} },

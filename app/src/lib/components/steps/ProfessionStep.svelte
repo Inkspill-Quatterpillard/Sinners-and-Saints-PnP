@@ -18,7 +18,11 @@
 
 <label class="name">
 	{t.profession.name}
-	<input value={p.name} placeholder={t.profession.namePlaceholder} oninput={(e) => dispatch({ type: 'setProfessionName', name: e.currentTarget.value })} />
+	<input
+		value={p.name}
+		placeholder={t.profession.namePlaceholder}
+		oninput={(e) => dispatch({ type: 'setProfessionName', name: e.currentTarget.value })}
+	/>
 </label>
 
 <section>
@@ -46,7 +50,13 @@
 <section>
 	<h3>{t.profession.status}</h3>
 	<p class="hint">{t.profession.statusHint(ruleData.profession.statusStart)}</p>
-	<DiceInput count={1} sides={ruleData.profession.statusDie} roll={p.statusRoll} onroll={(roll) => dispatch({ type: 'rollStatus', roll })} />
+	<DiceInput
+		locked
+		count={1}
+		sides={ruleData.profession.statusDie}
+		roll={p.statusRoll}
+		onroll={(roll) => dispatch({ type: 'rollStatus', roll })}
+	/>
 	{#if p.statusModifier !== undefined}
 		<p>{t.profession.statusResult(sign(p.statusModifier), view.socialStatus.value)}</p>
 	{/if}

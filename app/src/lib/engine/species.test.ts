@@ -9,9 +9,11 @@ function play(...actions: Action[]): Character {
 // STR 16, KON 14, GES 12, WAH 12, KLU 10, INT 10, CHA 10, WIL 8
 const ATTRIBUTES: Action[] = [
 	{ type: 'setAttributeMethod', method: 'array' },
-	...(['STR', 'KON', 'GES', 'WAH', 'KLU', 'INT', 'CHA', 'WIL'] as const).map(
-		(attribute, slot): Action => ({ type: 'assignAttribute', attribute, slot })
-	)
+	...(['STR', 'KON', 'GES', 'WAH', 'KLU', 'INT', 'CHA', 'WIL'] as const).map((attribute, slot): Action => ({
+		type: 'assignAttribute',
+		attribute,
+		slot
+	}))
 ];
 
 const stepStatus = (c: Character) => computeView(c, ruleData).steps.find((s) => s.id === 'species')?.status;
@@ -33,18 +35,36 @@ describe('Spezies', () => {
 
 	it('ein Zwerg erhält +2 KON, +1 STR, −1 GES und −2 WAH', () => {
 		const view = computeView(
-			play(...ATTRIBUTES, { type: 'chooseSpecies', species: 'zwerg' }, { type: 'chooseTraitOption', trait: 'ehernerWille', option: 'leben' }),
+			play(
+				...ATTRIBUTES,
+				{ type: 'chooseSpecies', species: 'zwerg' },
+				{ type: 'chooseTraitOption', trait: 'ehernerWille', option: 'leben' }
+			),
 			ruleData
 		);
-		expect([view.attributes.KON.effective, view.attributes.STR.effective, view.attributes.GES.effective, view.attributes.WAH.effective]).toEqual([16, 17, 11, 10]);
+		expect([
+			view.attributes.KON.effective,
+			view.attributes.STR.effective,
+			view.attributes.GES.effective,
+			view.attributes.WAH.effective
+		]).toEqual([16, 17, 11, 10]);
 	});
 
 	it('ein Elf erhält +2 WAH, +1 GES, −1 STR und −2 KON', () => {
 		const view = computeView(
-			play(...ATTRIBUTES, { type: 'chooseSpecies', species: 'elf' }, { type: 'chooseTraitOption', trait: 'blutDerAltenWelt', option: 'charakteristik' }),
+			play(
+				...ATTRIBUTES,
+				{ type: 'chooseSpecies', species: 'elf' },
+				{ type: 'chooseTraitOption', trait: 'blutDerAltenWelt', option: 'charakteristik' }
+			),
 			ruleData
 		);
-		expect([view.attributes.WAH.effective, view.attributes.GES.effective, view.attributes.STR.effective, view.attributes.KON.effective]).toEqual([14, 13, 15, 12]);
+		expect([
+			view.attributes.WAH.effective,
+			view.attributes.GES.effective,
+			view.attributes.STR.effective,
+			view.attributes.KON.effective
+		]).toEqual([14, 13, 15, 12]);
 	});
 
 	it('die Eigenschaften der Spezies werden mit Text angezeigt', () => {
@@ -60,7 +80,11 @@ describe('Spezies', () => {
 	describe('Eherner Wille', () => {
 		it('mit zusätzlicher Charakteristik und +5 TP', () => {
 			const view = computeView(
-				play(...ATTRIBUTES, { type: 'chooseSpecies', species: 'zwerg' }, { type: 'chooseTraitOption', trait: 'ehernerWille', option: 'leben' }),
+				play(
+					...ATTRIBUTES,
+					{ type: 'chooseSpecies', species: 'zwerg' },
+					{ type: 'chooseTraitOption', trait: 'ehernerWille', option: 'leben' }
+				),
 				ruleData
 			);
 			expect(view.characteristicAllowance).toEqual({ extra: 1, forbidden: false });
@@ -69,7 +93,11 @@ describe('Spezies', () => {
 
 		it('mit zusätzlicher Charakteristik und +20 Stabilität', () => {
 			const view = computeView(
-				play(...ATTRIBUTES, { type: 'chooseSpecies', species: 'zwerg' }, { type: 'chooseTraitOption', trait: 'ehernerWille', option: 'stabilitaet' }),
+				play(
+					...ATTRIBUTES,
+					{ type: 'chooseSpecies', species: 'zwerg' },
+					{ type: 'chooseTraitOption', trait: 'ehernerWille', option: 'stabilitaet' }
+				),
 				ruleData
 			);
 			expect(view.characteristicAllowance).toEqual({ extra: 1, forbidden: false });
@@ -78,7 +106,11 @@ describe('Spezies', () => {
 
 		it('ohne Charakteristik und dafür +10 Stabilität', () => {
 			const view = computeView(
-				play(...ATTRIBUTES, { type: 'chooseSpecies', species: 'zwerg' }, { type: 'chooseTraitOption', trait: 'ehernerWille', option: 'keineCharakteristik' }),
+				play(
+					...ATTRIBUTES,
+					{ type: 'chooseSpecies', species: 'zwerg' },
+					{ type: 'chooseTraitOption', trait: 'ehernerWille', option: 'keineCharakteristik' }
+				),
 				ruleData
 			);
 			expect(view.characteristicAllowance).toEqual({ extra: 0, forbidden: true });
@@ -119,8 +151,16 @@ describe('Spezies', () => {
 			const c = play(
 				{ type: 'setAttributeMethod', method: 'roll' },
 				{ type: 'rollAttributeSlot', slot: 0, roll: { dice: [6, 6, 6, 6], source: 'manual' } },
-				...[1, 2, 3, 4, 5, 6, 7].map((slot): Action => ({ type: 'rollAttributeSlot', slot, roll: { dice: [3, 3, 3, 3], source: 'manual' } })),
-				...(['WAH', 'STR', 'KON', 'GES', 'KLU', 'INT', 'CHA', 'WIL'] as const).map((attribute, slot): Action => ({ type: 'assignAttribute', attribute, slot })),
+				...[1, 2, 3, 4, 5, 6, 7].map((slot): Action => ({
+					type: 'rollAttributeSlot',
+					slot,
+					roll: { dice: [3, 3, 3, 3], source: 'manual' }
+				})),
+				...(['WAH', 'STR', 'KON', 'GES', 'KLU', 'INT', 'CHA', 'WIL'] as const).map((attribute, slot): Action => ({
+					type: 'assignAttribute',
+					attribute,
+					slot
+				})),
 				{ type: 'chooseSpecies', species: 'elf' },
 				{ type: 'chooseTraitOption', trait: 'blutDerAltenWelt', option: 'attribute' }
 			);
@@ -131,7 +171,11 @@ describe('Spezies', () => {
 			// Mensch-unabhängig: Elf mit STR 15 und WAH 15 nach Spezies.
 			const c = play(
 				{ type: 'setAttributeMethod', method: 'array' },
-				...(['STR', 'GES', 'WAH', 'KON', 'KLU', 'INT', 'CHA', 'WIL'] as const).map((attribute, slot): Action => ({ type: 'assignAttribute', attribute, slot })),
+				...(['STR', 'GES', 'WAH', 'KON', 'KLU', 'INT', 'CHA', 'WIL'] as const).map((attribute, slot): Action => ({
+					type: 'assignAttribute',
+					attribute,
+					slot
+				})),
 				// STR 16 → 15, GES 14 → 15, WAH 12 → 14
 				{ type: 'chooseSpecies', species: 'elf' },
 				{ type: 'chooseTraitOption', trait: 'blutDerAltenWelt', option: 'attribute' }
@@ -150,7 +194,11 @@ describe('Spezies', () => {
 		it('ist das gewählte Attribut nach einer Änderung nicht mehr das höchste, wird die Wahl ungültig', () => {
 			const c = play(
 				{ type: 'setAttributeMethod', method: 'array' },
-				...(['STR', 'GES', 'WAH', 'KON', 'KLU', 'INT', 'CHA', 'WIL'] as const).map((attribute, slot): Action => ({ type: 'assignAttribute', attribute, slot })),
+				...(['STR', 'GES', 'WAH', 'KON', 'KLU', 'INT', 'CHA', 'WIL'] as const).map((attribute, slot): Action => ({
+					type: 'assignAttribute',
+					attribute,
+					slot
+				})),
 				{ type: 'chooseSpecies', species: 'elf' },
 				{ type: 'chooseTraitOption', trait: 'blutDerAltenWelt', option: 'attribute' },
 				{ type: 'chooseTraitAttribute', trait: 'blutDerAltenWelt', attribute: 'GES' },

@@ -16,3 +16,5 @@ export type { HeroSlotView, ProfessionStepView, StatusView } from './steps/profe
 export type { InterestsStepView } from './steps/interests';
 export { STATUS_TARGET } from './steps/interests';
 export type { ReligionStepView } from './steps/religion';
+export type { CharacteristicMode, CharacteristicSlotView, CharacteristicStepView } from './steps/characteristic';
+export { characteristicForRoll } from './steps/characteristic';

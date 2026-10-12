@@ -13,7 +13,10 @@
 
 	const choosable = $derived(
 		trait.skillChoice
-			? skills.filter((s) => !(s.needsSpecialization && !s.specialization) && (trait.skillChoice!.includeHeroSkills || s.category === 'general'))
+			? skills.filter(
+					(s) =>
+						!(s.needsSpecialization && !s.specialization) && (trait.skillChoice!.includeHeroSkills || s.category === 'general')
+				)
 			: []
 	);
 </script>

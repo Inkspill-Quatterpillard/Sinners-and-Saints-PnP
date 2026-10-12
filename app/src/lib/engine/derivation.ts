@@ -1,7 +1,17 @@
 import type { AttributeId, ResourcePeriod, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character } from './character';
 
-export type StepId = 'options' | 'attributes' | 'species' | 'age' | 'religion' | 'profession' | 'interests' | 'secondary' | 'senility';
+export type StepId =
+	| 'options'
+	| 'attributes'
+	| 'species'
+	| 'age'
+	| 'religion'
+	| 'characteristic'
+	| 'profession'
+	| 'interests'
+	| 'secondary'
+	| 'senility';
 export type StepStatus = 'open' | 'valid' | 'invalid';
 
 /** Ein Hinweis zu einer Entscheidung: eine Warnung oder eine ungültige Entscheidung mit Begründung. */
@@ -83,7 +93,9 @@ export function createDerivation(character: Character, ruleData: RuleData, optio
 		character,
 		ruleData,
 		options,
-		attributes: Object.fromEntries(ruleData.attributes.map((a) => [a.id, { modifiers: [] }])) as unknown as Derivation['attributes'],
+		attributes: Object.fromEntries(
+			ruleData.attributes.map((a) => [a.id, { modifiers: [] }])
+		) as unknown as Derivation['attributes'],
 		secondary: Object.fromEntries(SECONDARY_KEYS.map((k) => [k, []])) as unknown as Derivation['secondary'],
 		secondaryCaps: {},
 		characteristicAllowance: { extra: 0, forbidden: false },
@@ -117,7 +129,8 @@ export function addSkillBonus(d: Derivation, key: string, modifier: Modifier): v
 export function skillKeyExists(d: Derivation, key: string, includeHeroSkills: boolean): boolean {
 	const [id, specialization] = key.split(':');
 	const def =
-		d.ruleData.skills.find((s) => s.id === id) ?? (includeHeroSkills ? d.ruleData.heroSkills.find((s) => s.id === id) : undefined);
+		d.ruleData.skills.find((s) => s.id === id) ??
+		(includeHeroSkills ? d.ruleData.heroSkills.find((s) => s.id === id) : undefined);
 	if (!def) return false;
 	if (!specialization) return true;
 	return def.specialization && (d.character.basis.specializations[id] ?? []).includes(specialization);

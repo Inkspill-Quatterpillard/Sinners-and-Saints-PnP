@@ -13,7 +13,10 @@
 
 <label>
 	{t.religion.choose}
-	<select value={view.religionStep.selected ?? ''} onchange={(e) => dispatch({ type: 'chooseReligion', religion: e.currentTarget.value })}>
+	<select
+		value={view.religionStep.selected ?? ''}
+		onchange={(e) => dispatch({ type: 'chooseReligion', religion: e.currentTarget.value })}
+	>
 		<option value="" disabled>–</option>
 		{#each ruleData.religions as religion (religion.id)}
 			<option value={religion.id}>{religion.name} – {religion.blessing}</option>

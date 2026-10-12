@@ -1,6 +1,6 @@
 # 10 — Charakteristik
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,8 +10,8 @@ Ist die optionale Regel aktiv, wählt der Spieler eine Charakteristik frei oder 
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Die 50 Charakteristiken stehen in den Regeldaten (aus `Charakteristik.md`) mit Würfelbereich, Name, Text und, wo möglich, strukturierten Effekten auf Attribute, Fertigkeiten, Status und Bewegung.
-- [ ] Die Modi „eine frei wählen“, „zwei würfeln“ und „Override: zwei selbst wählen“ sind vorhanden.
-- [ ] Einmal Neuwürfeln einer der beiden Charakteristiken. Dopplungen werden neu gewürfelt.
-- [ ] „Eherner Wille“ und „Blut der Alten Welt“ geben in der entsprechenden Variante eine zusätzliche Charakteristik.
-- [ ] Ist die optionale Regel deaktiviert, entfällt der Schritt. Gewählte Charakteristiken werden dann nicht angewendet, gehen aber nicht verloren.
+- [x] Die 50 Charakteristiken stehen in den Regeldaten (aus `Charakteristik.md`) mit Würfelbereich, Name, Text und, wo möglich, strukturierten Effekten auf Attribute, Fertigkeiten, Status und Bewegung.
+- [x] Die Modi „eine frei wählen“, „zwei würfeln“ und „Override: zwei selbst wählen“ sind vorhanden.
+- [x] Einmal Neuwürfeln einer der beiden Charakteristiken. Dopplungen werden neu gewürfelt.
+- [x] „Eherner Wille“ und „Blut der Alten Welt“ geben in der entsprechenden Variante eine zusätzliche Charakteristik.
+- [x] Ist die optionale Regel deaktiviert, entfällt der Schritt. Gewählte Charakteristiken werden dann nicht angewendet, gehen aber nicht verloren.

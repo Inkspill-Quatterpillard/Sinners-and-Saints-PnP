@@ -1,5 +1,16 @@
-import type { AgeRules, AttributeDef, ProfessionRules, ReligionDef, RuleData, SecondaryRules, SkillDef, SpeciesDef } from './types';
+import type {
+	AgeRules,
+	AttributeDef,
+	CharacteristicDef,
+	ProfessionRules,
+	ReligionDef,
+	RuleData,
+	SecondaryRules,
+	SkillDef,
+	SpeciesDef
+} from './types';
 import religionen from './data/religionen.json';
+import charakteristiken from './data/charakteristiken.json';
 import profession from './data/profession.json';
 import alter from './data/alter.json';
 import fertigkeiten from './data/fertigkeiten.json';
@@ -25,5 +36,11 @@ export const ruleData: RuleData = {
 	heroSkills: heldenfertigkeiten.heroSkills as SkillDef[],
 	age: alter as AgeRules,
 	profession: profession as ProfessionRules,
-	religions: religionen.religions as ReligionDef[]
+	religions: religionen.religions as ReligionDef[],
+	characteristics: {
+		die: charakteristiken.die,
+		maxRolled: charakteristiken.maxRolled,
+		rerolls: charakteristiken.rerolls,
+		entries: charakteristiken.characteristics as CharacteristicDef[]
+	}
 };

@@ -1,6 +1,14 @@
 import type { AttributeId, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character, CharacterStatus } from './character';
-import { createDerivation, effective, type Derivation, type Issue, type Modifier, type ResourceDef, type StepResult } from './derivation';
+import {
+	createDerivation,
+	effective,
+	type Derivation,
+	type Issue,
+	type Modifier,
+	type ResourceDef,
+	type StepResult
+} from './derivation';
 import { attributeStepView, evaluateAttributes, type AttributeStepView } from './steps/attributes';
 import { evaluateOptions, resolveOptions } from './steps/options';
 import { evaluateSpecies, type SpeciesStepView } from './steps/species';
@@ -8,6 +16,7 @@ import { evaluateSecondary, type LuckView, type SecondaryValue } from './steps/s
 import { evaluateSkills, type SkillView } from './steps/skills';
 import { evaluateAge, evaluateSenility, type AgeStepView, type SenilityView } from './steps/age';
 import { evaluateReligion, type ReligionStepView } from './steps/religion';
+import { evaluateCharacteristic, type CharacteristicStepView } from './steps/characteristic';
 import { evaluateInterests, type InterestsStepView } from './steps/interests';
 import { evaluateProfession, warnLoweredHeroSkills, type ProfessionStepView, type StatusView } from './steps/profession';
 
@@ -39,6 +48,7 @@ export interface CharacterView {
 	socialStatus: StatusView;
 	interestsStep: InterestsStepView;
 	religionStep: ReligionStepView;
+	characteristicStep: CharacteristicStepView;
 	resources: ResourceDef[];
 	characteristicAllowance: Derivation['characteristicAllowance'];
 }
@@ -52,6 +62,7 @@ export function computeView(character: Character, ruleData: RuleData): Character
 	const speciesStep = evaluateSpecies(d);
 	const ageStep = evaluateAge(d);
 	const religionStep = evaluateReligion(d);
+	const characteristicStep = evaluateCharacteristic(d);
 	const professionStep = evaluateProfession(d);
 	const interestsStep = evaluateInterests(d);
 	const { secondary, luck } = evaluateSecondary(d);
@@ -80,6 +91,7 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		professionStep,
 		interestsStep,
 		religionStep,
+		characteristicStep,
 		resources: d.resources,
 		socialStatus: {
 			base: d.status.base,

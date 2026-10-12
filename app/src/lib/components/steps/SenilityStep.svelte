@@ -13,6 +13,7 @@
 	{#each view.senility.rolls as roll (roll.index)}
 		<li>
 			<DiceInput
+				locked
 				count={1}
 				sides={ruleData.age.senilityDie}
 				roll={roll.roll}

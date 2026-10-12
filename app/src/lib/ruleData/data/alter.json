@@ -6,11 +6,7 @@
 	"youngMalus": {
 		"child": 4,
 		"youth": 2,
-		"attributes": [
-			"STR",
-			"KON",
-			"INT"
-		]
+		"attributes": ["STR", "KON", "INT"]
 	},
 	"childLuckBonus": 2,
 	"minimumAttribute": 5,
@@ -19,10 +15,7 @@
 	},
 	"adultMaturityRolls": 1,
 	"maturityDie": 20,
-	"maturityAttributes": [
-		"INT",
-		"KLU"
-	],
+	"maturityAttributes": ["INT", "KLU"],
 	"senilityDie": 100,
 	"senilityStabilityLoss": 5,
 	"movementByAge": [

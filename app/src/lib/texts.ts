@@ -25,6 +25,7 @@ export const t = {
 		species: 'Spezies',
 		age: 'Alter',
 		religion: 'Religion',
+		characteristic: 'Charakteristik',
 		profession: 'Profession',
 		interests: 'Interessen',
 		secondary: 'Sekundärattribute',
@@ -41,8 +42,7 @@ export const t = {
 	attributes: {
 		intro: 'Bestimme die Werte der acht Grundattribute und verteile sie frei.',
 		method: 'Verfahren',
-		methodRoll: (count: number, sides: number, keep: number) =>
-			`Würfeln: ${count}W${sides}, die ${keep} höchsten zählen`,
+		methodRoll: (count: number, sides: number, keep: number) => `Würfeln: ${count}W${sides}, die ${keep} höchsten zählen`,
 		methodArray: (values: number[]) => `Festes Array: ${values.join(', ')}`,
 		slots: 'Werte',
 		slot: (index: number) => `Wert ${index + 1}`,
@@ -76,14 +76,16 @@ export const t = {
 		atrophiaPoint: (i: number) => `Atrophia-Punkt ${i + 1}`
 	},
 	profession: {
-		intro: 'Stell deine Profession selbst zusammen und gib ihr einen Namen. Eine Liste vorgefertigter Professionen gibt es noch nicht.',
+		intro:
+			'Stell deine Profession selbst zusammen und gib ihr einen Namen. Eine Liste vorgefertigter Professionen gibt es noch nicht.',
 		name: 'Name der Profession',
 		namePlaceholder: 'z. B. Söldnerin, Schreiber, Kräuterkundige',
 		skills: (n: number, of: number) => `Professionsfertigkeiten (${n} von ${of})`,
 		skillsHint: (bonus: number) => `Jede Professionsfertigkeit erhält +${bonus}. Die Zahl zeigt den aktuellen Wert.`,
 		specHint: (names: string) => `Für ${names} lege zuerst unter „Alle Fertigkeiten“ eine Spezialisierung an.`,
 		status: 'Status',
-		statusHint: (start: number) => `Der Status startet bei ${start}. Würfle 1W6 für den Bonus oder Malus deiner Profession: 1: −3, 2: −2, 3: −1, 4: +1, 5: +2, 6: +3.`,
+		statusHint: (start: number) =>
+			`Der Status startet bei ${start}. Würfle 1W6 für den Bonus oder Malus deiner Profession: 1: −3, 2: −2, 3: −1, 4: +1, 5: +2, 6: +3.`,
 		statusResult: (mod: string, value: number) => `Statusmodifikator ${mod}, Status jetzt ${value}.`,
 		heroSkills: 'Heldenfertigkeiten',
 		heroHint: 'Setze fünf Kampf- oder Magiefertigkeiten auf 14, 12, 10, 8 und 8. Die Werte ersetzen den Startwert.',
@@ -91,25 +93,30 @@ export const t = {
 		start: (v: number | undefined) => `Start ${v ?? '–'}`
 	},
 	interests: {
-		intro: 'Verteile Punkte auf persönliche Interessen: beliebige Fertigkeiten, auch Professionsfertigkeiten, und den Status. Kampf- und Magiefertigkeiten sind ausgeschlossen.',
+		intro:
+			'Verteile Punkte auf persönliche Interessen: beliebige Fertigkeiten, auch Professionsfertigkeiten, und den Status. Kampf- und Magiefertigkeiten sind ausgeschlossen.',
 		basis: 'Punkte aus',
 		basisOption: (attr: string, value: number | undefined) => `2 × ${attr} (${value === undefined ? '–' : value * 2} Punkte)`,
 		needsAttributes: 'Lege zuerst die Grundattribute fest.',
 		remaining: (remaining: number, total: number) =>
-			remaining >= 0 ? `Noch ${remaining} von ${total} Punkten zu verteilen` : `${-remaining} Punkte zu viel verteilt (${total} verfügbar)`,
+			remaining >= 0
+				? `Noch ${remaining} von ${total} Punkten zu verteilen`
+				: `${-remaining} Punkte zu viel verteilt (${total} verfügbar)`,
 		status: 'Status',
 		points: (name: string) => `Punkte für ${name}`,
 		more: (name: string) => `${name} +1`,
 		less: (name: string) => `${name} −1`
 	},
 	senility: {
-		intro: (loss: number) => `Würfle je Vergreisungswurf 1W100 gegen die Stabilität. Liegt der Wurf höher, sinkt die Stabilität um ${loss}.`,
+		intro: (loss: number) =>
+			`Würfle je Vergreisungswurf 1W100 gegen die Stabilität. Liegt der Wurf höher, sinkt die Stabilität um ${loss}.`,
 		lost: (target: number) => `über ${target}: Stabilität sinkt`,
 		kept: (target: number) => `nicht über ${target}`,
 		result: (value: number | undefined) => `Stabilität jetzt: ${value ?? '–'}`
 	},
 	secondary: {
-		intro: 'Die Sekundärattribute ergeben sich aus den Grundattributen und werden immer abgerundet. Nur das Glück wird gewürfelt.',
+		intro:
+			'Die Sekundärattribute ergeben sich aus den Grundattributen und werden immer abgerundet. Nur das Glück wird gewürfelt.',
 		luck: 'Glück',
 		luckPlain: 'Würfle 1W20.',
 		luckAdvantage: 'Würfle mit Vorteil: zwei W20, der höhere zählt.',
@@ -134,6 +141,22 @@ export const t = {
 		choose: 'Wähle eine Variante',
 		tied: 'Welches Attribut?',
 		skill: (value: number) => `Fertigkeit für +${value}`
+	},
+	characteristic: {
+		intro:
+			'Eine Charakteristik ist eine Eigenschaft mit Vor- und Nachteilen. Wähle eine frei, würfle bis zu zwei (einmal darf neu gewürfelt werden) oder trage am Tisch gewürfelte ein. Du kannst auch ganz verzichten.',
+		disabled: 'Ihr spielt ohne Charakteristik. Du kannst die optionale Regel unter „Optionen“ aktivieren.',
+		forbidden: 'Durch „Eherner Wille“ hast du auf eine Charakteristik verzichtet.',
+		mode: 'Wie?',
+		modes: {
+			none: 'Keine Charakteristik',
+			free: 'Eine frei wählen',
+			roll: 'Bis zu zwei würfeln (W100)',
+			override: 'Eintragen (am Tisch gewürfelt)'
+		},
+		slot: (i: number, extra: boolean) => (extra ? `Zusätzliche Charakteristik (Spezies)` : `Charakteristik ${i + 1}`),
+		reroll: 'Neu würfeln (einmalig)',
+		rerolled: 'neu gewürfelt'
 	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',

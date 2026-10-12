@@ -2,14 +2,63 @@
 	"source": { "file": "Charaktererstellung/Sekundärattribute.md" },
 	"rounding": "floor",
 	"secondaryAttributes": [
-		{ "key": "tp", "name": "Trefferpunkte", "short": "TP", "formula": "KON + 5", "source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Trefferpunkte" } },
-		{ "key": "stability", "name": "Stabilität", "short": "STA", "formula": "(WIL + KON) × 5 / 2", "source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Stabilität" } },
-		{ "key": "magicPoints", "name": "Magiepunkte", "short": "MP", "formula": "WIL / 2 + höchstes aus CHA, INT, KLU / 5", "source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Magiepunkte" } },
-		{ "key": "luck", "name": "Glück", "short": "GLÜ", "formula": "1W20", "source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Glück" } },
-		{ "key": "movement", "name": "Bewegung", "short": "BEW", "formula": "nach GES + KON", "source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Bewegungsgeschwindigkeit" } },
-		{ "key": "dodge", "name": "Ausweichen", "short": "AUS", "formula": "(GES + WAH) / 2", "source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Ausweichen" } },
-		{ "key": "damageBonus", "name": "Schadensbonus", "short": "SB", "formula": "nach STR", "source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Schadensbonus" } },
-		{ "key": "woundThreshold", "name": "Wundschwelle", "short": "WS", "formula": "TP / 5", "source": { "file": "Charaktererstellung/Charaktererstellung.md", "section": "Wundschwelle" }, "note": "Sekundärattribute.md nennt noch TP/4; Charaktererstellung.md und Spielsystem/Trefferpunkte.md (beide neuer, vom Autor) nennen TP/5." }
+		{
+			"key": "tp",
+			"name": "Trefferpunkte",
+			"short": "TP",
+			"formula": "KON + 5",
+			"source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Trefferpunkte" }
+		},
+		{
+			"key": "stability",
+			"name": "Stabilität",
+			"short": "STA",
+			"formula": "(WIL + KON) × 5 / 2",
+			"source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Stabilität" }
+		},
+		{
+			"key": "magicPoints",
+			"name": "Magiepunkte",
+			"short": "MP",
+			"formula": "WIL / 2 + höchstes aus CHA, INT, KLU / 5",
+			"source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Magiepunkte" }
+		},
+		{
+			"key": "luck",
+			"name": "Glück",
+			"short": "GLÜ",
+			"formula": "1W20",
+			"source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Glück" }
+		},
+		{
+			"key": "movement",
+			"name": "Bewegung",
+			"short": "BEW",
+			"formula": "nach GES + KON",
+			"source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Bewegungsgeschwindigkeit" }
+		},
+		{
+			"key": "dodge",
+			"name": "Ausweichen",
+			"short": "AUS",
+			"formula": "(GES + WAH) / 2",
+			"source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Ausweichen" }
+		},
+		{
+			"key": "damageBonus",
+			"name": "Schadensbonus",
+			"short": "SB",
+			"formula": "nach STR",
+			"source": { "file": "Charaktererstellung/Sekundärattribute.md", "section": "Schadensbonus" }
+		},
+		{
+			"key": "woundThreshold",
+			"name": "Wundschwelle",
+			"short": "WS",
+			"formula": "TP / 5",
+			"source": { "file": "Charaktererstellung/Charaktererstellung.md", "section": "Wundschwelle" },
+			"note": "Sekundärattribute.md nennt noch TP/4; Charaktererstellung.md und Spielsystem/Trefferpunkte.md (beide neuer, vom Autor) nennen TP/5."
+		}
 	],
 	"tpBonus": 5,
 	"stabilityFactor": 2.5,

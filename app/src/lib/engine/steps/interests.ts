@@ -6,8 +6,7 @@ import { messages } from '../messages';
 export const STATUS_TARGET = 'status';
 
 export type InterestsAction =
-	| { type: 'setInterestBasis'; attribute: AttributeId }
-	| { type: 'setInterestPoints'; target: string; points: number };
+	{ type: 'setInterestBasis'; attribute: AttributeId } | { type: 'setInterestPoints'; target: string; points: number };
 
 export interface InterestsStepView {
 	basis: AttributeId;
@@ -58,5 +57,12 @@ export function evaluateInterests(d: Derivation): InterestsStepView {
 		}
 	}
 	d.steps.push({ id: 'interests', status });
-	return { basis, chosen: chosenBasis !== undefined, total, spent, remaining: total === undefined ? undefined : total - spent, points };
+	return {
+		basis,
+		chosen: chosenBasis !== undefined,
+		total,
+		spent,
+		remaining: total === undefined ? undefined : total - spent,
+		points
+	};
 }
