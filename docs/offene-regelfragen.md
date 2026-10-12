@@ -57,3 +57,8 @@ Legende:
 - [ ] **T1 – Herkunft.** Talisman und Foliant brechen ab, „Erde“ heißt ebenfalls „Sturmmark“, Biestmensch ist nur skizziert. → Vorerst übersprungen. Die App zeigt den Text so, wie er im Regelwerk steht.
 - [ ] **T3 – Stufe von „Auren verbinden“.** In `Zauber/Mystik.md` steht der Zauber unter „Stufe 2“, die Überschrift nennt aber „Stufe 3“. → *Vorläufig:* Stufe 3 laut Überschrift.
 - [ ] **T2 – Kaputte Links.** → Wird später angegangen.
+
+## Settings
+
+- [ ] **F1 – Geld im Fallout-Setting.** Die Fallout-Listen rechnen in Kronkorken, eine Status- und Geldtabelle für Fallout gibt es aber nicht. → *Vorläufig:* Die Statustabelle aus `Ausstattung.md` gilt 1:1 in Kronkorken (die Preise liegen in derselben Größenordnung).
+- [ ] **F2 – „Kreuzer“.** `Ausrüstung/Diverse_Preise.md` nennt Reisekosten in Kreuzern, eine Währung, die sonst nirgends definiert ist. Sind Pfennig gemeint?

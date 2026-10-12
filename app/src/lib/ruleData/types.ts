@@ -35,9 +35,27 @@ export interface OptionalRuleDef {
 	source: SourceRef;
 }
 
+export interface CurrencyUnit {
+	id: string;
+	name: string;
+	short: string;
+	/** Wert in der kleinsten Einheit. */
+	value: number;
+}
+
+export interface CurrencyDef {
+	/** Wie viele kleinste Einheiten eine Krone der Statustabelle entspricht. */
+	kroneValue: number;
+	/** Einheiten, größte zuerst. */
+	units: CurrencyUnit[];
+	source?: SourceRef;
+	provisional?: Provisional;
+}
+
 export interface SettingDef {
 	id: string;
 	name: string;
+	currency: CurrencyDef;
 }
 
 export type SecondaryKey = 'tp' | 'stability' | 'magicPoints' | 'luck' | 'movement' | 'dodge' | 'damageBonus' | 'woundThreshold';
@@ -305,6 +323,41 @@ export interface MagicRules {
 	spells: SpellDef[];
 }
 
+export interface StatusStage {
+	id: string;
+	name: string;
+	/** Statusbereich; `null` = offen. */
+	min: number | null;
+	max: number | null;
+	/** Beträge in Kronen. */
+	purse: number;
+	daily: number;
+	possessions: { factor?: number; fixed?: number; text?: string };
+}
+
+export interface StatusTable {
+	stages: StatusStage[];
+	note?: string;
+	source: SourceRef;
+}
+
+export interface EquipmentDef {
+	/** „Setting:Kategorie:Name“. */
+	id: string;
+	name: string;
+	/** Tabellenüberschrift, z. B. „Dolche und Messer“. */
+	category: string;
+	group: 'melee' | 'ranged' | 'armor' | 'shield' | 'gear';
+	setting: string;
+	/** Preis in der kleinsten Einheit des Settings; bei Spannen der untere Wert. */
+	price: number | null;
+	priceMax?: number;
+	priceText: string;
+	/** Übrige Spalten der Tabelle, z. B. Schaden, Modifikator, Länge, RS, Besonderheit. */
+	stats: Record<string, string>;
+	source: SourceRef;
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -325,4 +378,6 @@ export interface RuleData {
 	stunts: StuntDef[];
 	combat: CombatRules;
 	magic: MagicRules;
+	statusTable: StatusTable;
+	equipment: EquipmentDef[];
 }

@@ -1,0 +1,4732 @@
+{
+	"source": {
+		"file": "Ausrüstung/Ausrüstung.md"
+	},
+	"items": [
+		{
+			"id": "standard:faustwaffen:faust",
+			"name": "Faust",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": null,
+			"priceText": "",
+			"stats": {
+				"Schaden": "1W3",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "standard:faustwaffen:verstaerkterHandschuh",
+			"name": "Verstärkter Handschuh",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 70,
+			"priceText": "70 Pfennig",
+			"stats": {
+				"Schaden": "1W3+1",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "standard:faustwaffen:stahlhandschuh",
+			"name": "Stahlhandschuh",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 2000,
+			"priceText": "20 Kronen",
+			"stats": {
+				"Schaden": "1W3+2",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "standard:faustwaffen:schlagring",
+			"name": "Schlagring",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 100,
+			"priceText": "100 Pfennig",
+			"stats": {
+				"Schaden": "1W4+1",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "standard:faustwaffen:stachelring",
+			"name": "Stachelring",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 150,
+			"priceText": "1,5 Kronen",
+			"stats": {
+				"Schaden": "1W4+2",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "standard:faustwaffen:klingenhandschuh",
+			"name": "Klingenhandschuh",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 2500,
+			"priceText": "25 Kronen",
+			"stats": {
+				"Schaden": "1W6+3",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "standard:dolcheUndMesser:wurfdolch",
+			"name": "Wurfdolch",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "standard",
+			"price": 800,
+			"priceText": "8 Kronen",
+			"stats": {
+				"Schaden": "1W3+2",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "standard:dolcheUndMesser:kuechenmesser",
+			"name": "Küchenmesser",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "standard",
+			"price": 150,
+			"priceText": "1,5 Kronen",
+			"stats": {
+				"Schaden": "1W4+1",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "standard:dolcheUndMesser:fleischermesser",
+			"name": "Fleischermesser",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "standard",
+			"price": 200,
+			"priceText": "2 Kronen",
+			"stats": {
+				"Schaden": "1W4+2",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "standard:dolcheUndMesser:jagdmesser",
+			"name": "Jagdmesser",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "standard",
+			"price": 700,
+			"priceText": "7 Kronen",
+			"stats": {
+				"Schaden": "1W4+3",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "standard:dolcheUndMesser:dolch",
+			"name": "Dolch",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "standard",
+			"price": 1000,
+			"priceText": "10 Kronen",
+			"stats": {
+				"Schaden": "1W6+1",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "standard:dolcheUndMesser:parierdolch",
+			"name": "Parierdolch",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "standard",
+			"price": 1500,
+			"priceText": "15 Kronen",
+			"stats": {
+				"Schaden": "1W6+1",
+				"Länge": "Kurz",
+				"Besonderheit": "Paradewaffe"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "standard:dolcheUndMesser:langdolch",
+			"name": "Langdolch",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "standard",
+			"price": 2000,
+			"priceText": "20 Kronen",
+			"stats": {
+				"Schaden": "1W6+2",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "standard:schwerter:kurzschwert",
+			"name": "Kurzschwert",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "standard",
+			"price": 8000,
+			"priceText": "80 Kronen",
+			"stats": {
+				"Schaden": "1W8+1",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "standard:schwerter:yatagansaebelKurzerSaebel",
+			"name": "Yatagansäbel (Kurzer Säbel)",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "standard",
+			"price": 11000,
+			"priceText": "110 Kronen",
+			"stats": {
+				"Schaden": "1W8+2",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Kurz",
+				"Besonderheit": "+1 SP gegen Ungepanzert"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "standard:schwerter:falchion",
+			"name": "Falchion",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "standard",
+			"price": 10000,
+			"priceText": "100 Kronen",
+			"stats": {
+				"Schaden": "1W8+2",
+				"Länge": "Mittel",
+				"Besonderheit": "Nutzbar für Hiebwaffen-Manöver"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "standard:schwerter:langschwert",
+			"name": "Langschwert",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "standard",
+			"price": 15000,
+			"priceText": "150 Kronen",
+			"stats": {
+				"Schaden": "1W8+3",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "standard:schwerter:saebel",
+			"name": "Säbel",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "standard",
+			"price": 16000,
+			"priceText": "160 Kronen",
+			"stats": {
+				"Schaden": "1W8+3",
+				"Länge": "Mittel",
+				"Besonderheit": "+1 SP gegen Ungepanzert"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "standard:schwerter:bastardschwert",
+			"name": "Bastardschwert",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "standard",
+			"price": 18000,
+			"priceText": "180 Kronen",
+			"stats": {
+				"Schaden": "1W8+4",
+				"Länge": "Lang",
+				"Besonderheit": "+1 SP wenn Zweihändig"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "standard:schwerter:kriegsmesser2h",
+			"name": "Kriegsmesser (2H)",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "standard",
+			"price": 21000,
+			"priceText": "210 Kronen",
+			"stats": {
+				"Schaden": "2W6+2",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "standard:schwerter:kriegssaebel2h",
+			"name": "Kriegssäbel (2H)",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "standard",
+			"price": 23000,
+			"priceText": "230 Kronen",
+			"stats": {
+				"Schaden": "2W6+2",
+				"Länge": "Lang",
+				"Besonderheit": "+1 SP gegen Ungepanzert"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "standard:schwerter:zweihaender2h",
+			"name": "Zweihänder (2H)",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "standard",
+			"price": 25000,
+			"priceText": "250 Kronen",
+			"stats": {
+				"Schaden": "2W6+3",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:handbeil",
+			"name": "Handbeil",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 250,
+			"priceText": "2,5 Kronen",
+			"stats": {
+				"Schaden": "1W6+2",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:wurfbeil",
+			"name": "Wurfbeil",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 600,
+			"priceText": "6 Kronen",
+			"stats": {
+				"Schaden": "1W6+2",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:keule",
+			"name": "Keule",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 400,
+			"priceText": "4 Kronen",
+			"stats": {
+				"Schaden": "1W6+2",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:holzfaelleraxt",
+			"name": "Holzfälleraxt",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 300,
+			"priceText": "3 Kronen",
+			"stats": {
+				"Schaden": "1W6+3",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:streitaxt",
+			"name": "Streitaxt",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 4500,
+			"priceText": "45 Kronen",
+			"stats": {
+				"Schaden": "1W6+4",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:streithammer",
+			"name": "Streithammer",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 5000,
+			"priceText": "50 Kronen",
+			"stats": {
+				"Schaden": "1W6+5",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:morgenstern",
+			"name": "Morgenstern",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 8000,
+			"priceText": "80 Kronen",
+			"stats": {
+				"Schaden": "1W8+3",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:streitflegel",
+			"name": "Streitflegel",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 9500,
+			"priceText": "95 Kronen",
+			"stats": {
+				"Schaden": "1W8+4",
+				"Modifikator": "-1 (Unhandlich)",
+				"Länge": "Mittel",
+				"Besonderheit": "Ignoriert Schilde"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:kriegshammer2h",
+			"name": "Kriegshammer (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 22000,
+			"priceText": "220 Kronen",
+			"stats": {
+				"Schaden": "1W6+6",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:kriegsaxt2h",
+			"name": "Kriegsaxt (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 12000,
+			"priceText": "120 Kronen",
+			"stats": {
+				"Schaden": "1W8+4",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:goedendag2h",
+			"name": "Goedendag (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 5000,
+			"priceText": "50 Kronen",
+			"stats": {
+				"Schaden": "1W8+4",
+				"Länge": "Lang",
+				"Besonderheit": "Nutzbar als Stangenwaffe"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:schlaghammer2h",
+			"name": "Schlaghammer (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 6000,
+			"priceText": "60 Kronen",
+			"stats": {
+				"Schaden": "1W8+6",
+				"Modifikator": "-2 (Gewicht)",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:kriegsflegel2h",
+			"name": "Kriegsflegel (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 12000,
+			"priceText": "120 Kronen",
+			"stats": {
+				"Schaden": "2W6+1",
+				"Länge": "Lang",
+				"Besonderheit": "Ignoriert Schilde"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:kriegsspalter2h",
+			"name": "Kriegsspalter (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 22000,
+			"priceText": "220 Kronen",
+			"stats": {
+				"Schaden": "2W6+4",
+				"Modifikator": "-1 (Gewicht)",
+				"Länge": "Lang",
+				"Besonderheit": "Erleichtert Spalten"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:hiebwaffen:bardiche2h",
+			"name": "Bardiche (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 26000,
+			"priceText": "260 Kronen",
+			"stats": {
+				"Schaden": "2W6+4",
+				"Länge": "Sehr Lang",
+				"Besonderheit": "Nutzbar als Stangenwaffe"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:wurfspeer",
+			"name": "Wurfspeer",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 1500,
+			"priceText": "15 Kronen",
+			"stats": {
+				"Schaden": "1W6+2",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:kampfstock",
+			"name": "Kampfstock",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 500,
+			"priceText": "5 Kronen",
+			"stats": {
+				"Schaden": "1W8+1",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:mistgabel",
+			"name": "Mistgabel",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 350,
+			"priceText": "3,5 Kronen",
+			"stats": {
+				"Schaden": "1W6+1",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:speer",
+			"name": "Speer",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 1000,
+			"priceText": "10 Kronen",
+			"stats": {
+				"Schaden": "1W8+2",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:hippe2h",
+			"name": "Hippe (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 7000,
+			"priceText": "70 Kronen",
+			"stats": {
+				"Schaden": "1W8+2",
+				"Länge": "Sehr Lang",
+				"Besonderheit": "Erleichtert Hakenmanöver"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:glefe2h",
+			"name": "Glefe (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 23000,
+			"priceText": "230 Kronen",
+			"stats": {
+				"Schaden": "1W8+4",
+				"Länge": "Sehr Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:guisarme2h",
+			"name": "Guisarme (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 24000,
+			"priceText": "240 Kronen",
+			"stats": {
+				"Schaden": "1W8+4",
+				"Länge": "Sehr Lang",
+				"Besonderheit": "Erleichtert Hakenmanöver"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:hellebarde2h",
+			"name": "Hellebarde (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 25000,
+			"priceText": "250 Kronen",
+			"stats": {
+				"Schaden": "1W8+5",
+				"Länge": "Sehr Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:schwertstab2h",
+			"name": "Schwertstab (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 40000,
+			"priceText": "400 Kronen",
+			"stats": {
+				"Schaden": "1W8+6",
+				"Länge": "Sehr Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:mordaxt2h",
+			"name": "Mordaxt (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 55000,
+			"priceText": "550 Kronen",
+			"stats": {
+				"Schaden": "1W8+7",
+				"Länge": "Sehr Lang",
+				"Besonderheit": "Nutzbar als Hiebwaffe"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:turnierlanze",
+			"name": "Turnierlanze",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 2000,
+			"priceText": "20 Kronen",
+			"stats": {
+				"Schaden": "1W8+1",
+				"Länge": "Sehr Lang",
+				"Besonderheit": "Nur zu Pferd nutzbar / Reiterangriff (3W8+1)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:stangenwaffen:kriegslanze",
+			"name": "Kriegslanze",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "standard",
+			"price": 5000,
+			"priceText": "50 Kronen",
+			"stats": {
+				"Schaden": "1W8+3",
+				"Länge": "Sehr Lang",
+				"Besonderheit": "Nur zu Pferd nutzbar / Reiterangriff (3W8+3)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen.md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "standard:boegen:primitiverBoden",
+			"name": "Primitiver Boden",
+			"category": "Bögen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 2500,
+			"priceText": "25 Kronen",
+			"stats": {
+				"Schaden": "1W6+2",
+				"Reichweite": "10/50/80",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Bögen"
+			}
+		},
+		{
+			"id": "standard:boegen:kurzbogen",
+			"name": "Kurzbogen",
+			"category": "Bögen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 5000,
+			"priceText": "50 Kronen",
+			"stats": {
+				"Schaden": "1W6+3",
+				"Reichweite": "10/50/80",
+				"Ladezeit": "0 KR",
+				"Besonderheit": ">6 STR nötig"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Bögen"
+			}
+		},
+		{
+			"id": "standard:boegen:kompositbogen",
+			"name": "Kompositbogen",
+			"category": "Bögen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 30000,
+			"priceText": "300 Kronen",
+			"stats": {
+				"Schaden": "2W6+2",
+				"Modifikator": "-5 bei Regen",
+				"Reichweite": "20/100/200",
+				"Ladezeit": "0 KR",
+				"Besonderheit": ">8 STR nötig"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Bögen"
+			}
+		},
+		{
+			"id": "standard:boegen:langbogen",
+			"name": "Langbogen",
+			"category": "Bögen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 23000,
+			"priceText": "230 Kronen",
+			"stats": {
+				"Schaden": "2W6+4",
+				"Reichweite": "15/70/130",
+				"Ladezeit": "1 KR",
+				"Besonderheit": ">10 STR nötig"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Bögen"
+			}
+		},
+		{
+			"id": "standard:boegen:kriegsbogen",
+			"name": "Kriegsbogen",
+			"category": "Bögen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 35000,
+			"priceText": "350 Kronen",
+			"stats": {
+				"Schaden": "2W6+5",
+				"Reichweite": "15/70/130",
+				"Ladezeit": "1 KR",
+				"Besonderheit": ">14 STR nötig"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Bögen"
+			}
+		},
+		{
+			"id": "standard:armbruesteUndFeuerwaffen:balestrinaKugelarmbrust",
+			"name": "Balestrina (Kugelarmbrust)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 53000,
+			"priceText": "530 Kronen",
+			"stats": {
+				"Schaden": "2W3+3",
+				"Reichweite": "5/25/40",
+				"Ladezeit": "5 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "standard:armbruesteUndFeuerwaffen:leichteArmbrust",
+			"name": "Leichte Armbrust",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 20000,
+			"priceText": "200 Kronen",
+			"stats": {
+				"Schaden": "2W6+1",
+				"Reichweite": "10/50/80",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "standard:armbruesteUndFeuerwaffen:repetierarmbrust",
+			"name": "Repetierarmbrust",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 70000,
+			"priceText": "700 Kronen",
+			"stats": {
+				"Schaden": "2W6+2",
+				"Modifikator": "-4 (Ungenau)",
+				"Reichweite": "10/50/80",
+				"Ladezeit": "0 KR/8 KR",
+				"Besonderheit": "Magazin von 10 Bolzen"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "standard:armbruesteUndFeuerwaffen:buegelarmbrust",
+			"name": "Bügelarmbrust",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 37000,
+			"priceText": "370 Kronen",
+			"stats": {
+				"Schaden": "2W6+3",
+				"Reichweite": "15/50/150",
+				"Ladezeit": "3 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "standard:armbruesteUndFeuerwaffen:geissfussArmbrust",
+			"name": "Geißfuß-Armbrust",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 45000,
+			"priceText": "450 Kronen",
+			"stats": {
+				"Schaden": "2W6+4",
+				"Reichweite": "15/50/150",
+				"Ladezeit": "2 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "standard:armbruesteUndFeuerwaffen:windenarmbrust",
+			"name": "Windenarmbrust",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 58000,
+			"priceText": "580 Kronen",
+			"stats": {
+				"Schaden": "2W8+4",
+				"Reichweite": "20/100/170",
+				"Ladezeit": "4 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "standard:armbruesteUndFeuerwaffen:arbalestStahlarmbrust",
+			"name": "Arbalest (Stahlarmbrust)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 65000,
+			"priceText": "650 Kronen",
+			"stats": {
+				"Schaden": "2W8+6",
+				"Reichweite": "20/100/170",
+				"Ladezeit": "4 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "standard:armbruesteUndFeuerwaffen:handrohr",
+			"name": "Handrohr",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 75000,
+			"priceText": "750 Kronen",
+			"stats": {
+				"Schaden": "4W8+5",
+				"Modifikator": "-10 (Extrem Ungenau)",
+				"Reichweite": "5/20/100",
+				"Ladezeit": "6 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "standard:armbruesteUndFeuerwaffen:arkebuse",
+			"name": "Arkebuse",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 85000,
+			"priceText": "850 Kronen",
+			"stats": {
+				"Schaden": "3W8+5",
+				"Modifikator": "-8 (Sehr Ungenau)",
+				"Reichweite": "5/25/120",
+				"Ladezeit": "5 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "standard:wurfwaffen:stein",
+			"name": "Stein",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": null,
+			"priceText": "",
+			"stats": {
+				"Schaden": "1W3+1",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "standard:wurfwaffen:bola",
+			"name": "Bola",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 150,
+			"priceText": "1,5 Kronen",
+			"stats": {
+				"Schaden": "1W3",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR",
+				"Besonderheit": "Kann zu Fall bringen"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "standard:wurfwaffen:wurfdolch",
+			"name": "Wurfdolch",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 1500,
+			"priceText": "15 Kronen",
+			"stats": {
+				"Schaden": "2W3+1",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "standard:wurfwaffen:wurfstern",
+			"name": "Wurfstern",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 2000,
+			"priceText": "20 Kronen",
+			"stats": {
+				"Schaden": "2W3+2",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "standard:wurfwaffen:wurfkeule",
+			"name": "Wurfkeule",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 400,
+			"priceText": "4 Kronen",
+			"stats": {
+				"Schaden": "2W4+1",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "standard:wurfwaffen:wurfbeil",
+			"name": "Wurfbeil",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 2500,
+			"priceText": "25 Kronen",
+			"stats": {
+				"Schaden": "2W4+2",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "standard:wurfwaffen:wurfpfeil",
+			"name": "Wurfpfeil",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 2700,
+			"priceText": "27 Kronen",
+			"stats": {
+				"Schaden": "2W6+1",
+				"Reichweite": "10/30/50",
+				"Ladezeit": "1 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "standard:wurfwaffen:wurfspeer",
+			"name": "Wurfspeer",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 1500,
+			"priceText": "15 Kronen",
+			"stats": {
+				"Schaden": "2W6+3",
+				"Reichweite": "5/25/40",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "standard:schleudern:zwille",
+			"name": "Zwille",
+			"category": "Schleudern",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 150,
+			"priceText": "1,5 Kronen",
+			"stats": {
+				"Schaden": "1W3+2",
+				"Reichweite": "3/10/40",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Schleudern"
+			}
+		},
+		{
+			"id": "standard:schleudern:steinschleuder",
+			"name": "Steinschleuder",
+			"category": "Schleudern",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 300,
+			"priceText": "3 Kronen",
+			"stats": {
+				"Schaden": "2W4+2",
+				"Reichweite": "5/25/60",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Schleudern"
+			}
+		},
+		{
+			"id": "standard:schleudern:bleischleuder",
+			"name": "Bleischleuder",
+			"category": "Schleudern",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 500,
+			"priceText": "5 Kronen",
+			"stats": {
+				"Schaden": "2W4+3",
+				"Reichweite": "10/30/100",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Schleudern"
+			}
+		},
+		{
+			"id": "standard:schleudern:stabschleuder",
+			"name": "Stabschleuder",
+			"category": "Schleudern",
+			"group": "ranged",
+			"setting": "standard",
+			"price": 800,
+			"priceText": "8 Kronen",
+			"stats": {
+				"Schaden": "2W4+5",
+				"Modifikator": "-1 (Unpräzise)",
+				"Reichweite": "20/30/120",
+				"Ladezeit": "1 KR",
+				"Besonderheit": "Nicht unter 5 Schritt"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen.md",
+				"section": "Schleudern"
+			}
+		},
+		{
+			"id": "standard:leichteRuestung:schwereKleidung",
+			"name": "Schwere Kleidung",
+			"category": "Leichte Rüstung",
+			"group": "armor",
+			"setting": "standard",
+			"price": null,
+			"priceText": "",
+			"stats": {
+				"Rüstungsschutz": "1 RS"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Leichte Rüstung"
+			}
+		},
+		{
+			"id": "standard:leichteRuestung:lederwams",
+			"name": "Lederwams",
+			"category": "Leichte Rüstung",
+			"group": "armor",
+			"setting": "standard",
+			"price": 500,
+			"priceText": "5 Kronen",
+			"stats": {
+				"Rüstungsschutz": "2 RS"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Leichte Rüstung"
+			}
+		},
+		{
+			"id": "standard:leichteRuestung:gambeson",
+			"name": "Gambeson",
+			"category": "Leichte Rüstung",
+			"group": "armor",
+			"setting": "standard",
+			"price": 1000,
+			"priceText": "10 Kronen",
+			"stats": {
+				"Rüstungsschutz": "4 RS"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Leichte Rüstung"
+			}
+		},
+		{
+			"id": "standard:mittlereRuestung:lamellenpanzer",
+			"name": "Lamellenpanzer",
+			"category": "Mittlere Rüstung",
+			"group": "armor",
+			"setting": "standard",
+			"price": 3000,
+			"priceText": "30 Kronen",
+			"stats": {
+				"Rüstungsschutz": "5 RS",
+				"Besonderheiten": "Min. 8 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Mittlere Rüstung"
+			}
+		},
+		{
+			"id": "standard:mittlereRuestung:kettenruestung",
+			"name": "Kettenrüstung",
+			"category": "Mittlere Rüstung",
+			"group": "armor",
+			"setting": "standard",
+			"price": 5000,
+			"priceText": "50 Kronen",
+			"stats": {
+				"Rüstungsschutz": "6 RS",
+				"Besonderheiten": "Min. 10 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Mittlere Rüstung"
+			}
+		},
+		{
+			"id": "standard:schwereRuestung:brigantine",
+			"name": "Brigantine",
+			"category": "Schwere Rüstung",
+			"group": "armor",
+			"setting": "standard",
+			"price": 15000,
+			"priceText": "150 Kronen",
+			"stats": {
+				"Rüstungsschutz": "7 RS",
+				"Besonderheiten": "Min. 12 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Schwere Rüstung"
+			}
+		},
+		{
+			"id": "standard:schwereRuestung:kuerass",
+			"name": "Kürass",
+			"category": "Schwere Rüstung",
+			"group": "armor",
+			"setting": "standard",
+			"price": 25000,
+			"priceText": "250 Kronen",
+			"stats": {
+				"Rüstungsschutz": "8 RS",
+				"Besonderheiten": "Min. 14 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Schwere Rüstung"
+			}
+		},
+		{
+			"id": "standard:schwereRuestung:plattenruestung",
+			"name": "Plattenrüstung",
+			"category": "Schwere Rüstung",
+			"group": "armor",
+			"setting": "standard",
+			"price": 50000,
+			"priceText": "500 Kronen",
+			"stats": {
+				"Rüstungsschutz": "10 RS",
+				"Besonderheiten": "Min. 16 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Schwere Rüstung"
+			}
+		},
+		{
+			"id": "standard:schilde:buckler",
+			"name": "Buckler",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "standard",
+			"price": 1000,
+			"priceText": "10 Kronen",
+			"stats": {
+				"Regulärer Bonus": "+4",
+				"Defensiver Bonus": "0",
+				"Besonderheit": "Verwendbar mit Zweihandwaffen (Regulärer Bonus von +1)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "standard:schilde:rundschild",
+			"name": "Rundschild",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "standard",
+			"price": 300,
+			"priceText": "3 Kronen",
+			"stats": {
+				"Regulärer Bonus": "+1",
+				"Defensiver Bonus": "+2",
+				"Besonderheit": "-3 für Berittenen Kampf"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "standard:schilde:drachenschild",
+			"name": "Drachenschild",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "standard",
+			"price": 400,
+			"priceText": "4 Kronen",
+			"stats": {
+				"Regulärer Bonus": "+2",
+				"Defensiver Bonus": "+1",
+				"Besonderheit": "-1 für Berittenen Kampf"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "standard:schilde:dreieckschild",
+			"name": "Dreieckschild",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "standard",
+			"price": 600,
+			"priceText": "6 Kronen",
+			"stats": {
+				"Regulärer Bonus": "+3",
+				"Defensiver Bonus": "+1"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "standard:schilde:turmschild",
+			"name": "Turmschild",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "standard",
+			"price": 500,
+			"priceText": "5 Kronen",
+			"stats": {
+				"Regulärer Bonus": "+1",
+				"Defensiver Bonus": "+4",
+				"Besonderheit": "Nicht auf Pferd verwendbar"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "standard:schilde:pavese",
+			"name": "Pavese",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "standard",
+			"price": 800,
+			"priceText": "8 Kronen",
+			"stats": {
+				"Regulärer Bonus": "0",
+				"Defensiver Bonus": "+6",
+				"Besonderheit": "Zweihändig, aufstellbar für halbe/volle Deckung"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde.md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "standard:garnitur:aermlicheKleidung",
+			"name": "Ärmliche Kleidung",
+			"category": "Garnitur",
+			"group": "gear",
+			"setting": "standard",
+			"price": 100,
+			"priceText": "1 Krone",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Garnitur"
+			}
+		},
+		{
+			"id": "standard:garnitur:baeuerlicheKleidung",
+			"name": "Bäuerliche Kleidung",
+			"category": "Garnitur",
+			"group": "gear",
+			"setting": "standard",
+			"price": 350,
+			"priceText": "3,5 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Garnitur"
+			}
+		},
+		{
+			"id": "standard:garnitur:handwerkerkleidung",
+			"name": "Handwerkerkleidung",
+			"category": "Garnitur",
+			"group": "gear",
+			"setting": "standard",
+			"price": 500,
+			"priceText": "5 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Garnitur"
+			}
+		},
+		{
+			"id": "standard:garnitur:funktionaleKleidung",
+			"name": "Funktionale Kleidung",
+			"category": "Garnitur",
+			"group": "gear",
+			"setting": "standard",
+			"price": 650,
+			"priceText": "6,5 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Garnitur"
+			}
+		},
+		{
+			"id": "standard:garnitur:buergerlicheKleidung",
+			"name": "Bürgerliche Kleidung",
+			"category": "Garnitur",
+			"group": "gear",
+			"setting": "standard",
+			"price": 700,
+			"priceText": "7 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Garnitur"
+			}
+		},
+		{
+			"id": "standard:garnitur:gehobeneBuergerkleidung",
+			"name": "Gehobene Bürgerkleidung",
+			"category": "Garnitur",
+			"group": "gear",
+			"setting": "standard",
+			"price": 1500,
+			"priceText": "15 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Garnitur"
+			}
+		},
+		{
+			"id": "standard:garnitur:patrizierkleidung",
+			"name": "Patrizierkleidung",
+			"category": "Garnitur",
+			"group": "gear",
+			"setting": "standard",
+			"price": 5000,
+			"priceText": "50 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Garnitur"
+			}
+		},
+		{
+			"id": "standard:garnitur:niederadligeKleidung",
+			"name": "Niederadlige Kleidung",
+			"category": "Garnitur",
+			"group": "gear",
+			"setting": "standard",
+			"price": 4000,
+			"priceText": "40 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Garnitur"
+			}
+		},
+		{
+			"id": "standard:garnitur:hochadligeKleidung",
+			"name": "Hochadlige Kleidung",
+			"category": "Garnitur",
+			"group": "gear",
+			"setting": "standard",
+			"price": 7000,
+			"priceText": "70 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Garnitur"
+			}
+		},
+		{
+			"id": "standard:kleidung:brucheLangeUnterhose",
+			"name": "Bruche (Lange Unterhose)",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 20,
+			"priceMax": 50,
+			"priceText": "20-50 Pfennig",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:unterkleid",
+			"name": "Unterkleid",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 75,
+			"priceMax": 150,
+			"priceText": "75-150 Pfennig",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:tunika",
+			"name": "Tunika",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 80,
+			"priceMax": 300,
+			"priceText": "80-300 Pfennig",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:wams",
+			"name": "Wams",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 200,
+			"priceMax": 700,
+			"priceText": "2-7 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:hemd",
+			"name": "Hemd",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 300,
+			"priceMax": 1000,
+			"priceText": "3-10 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:ueberrock",
+			"name": "Überrock",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 150,
+			"priceMax": 500,
+			"priceText": "1,5-5 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:lederjacke",
+			"name": "Lederjacke",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 150,
+			"priceMax": 500,
+			"priceText": "1,5 – 5 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:waffenrock",
+			"name": "Waffenrock",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 100,
+			"priceMax": 1000,
+			"priceText": "1 – 10 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:tappertEdlerMantel",
+			"name": "Tappert (Edler Mantel)",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 250,
+			"priceMax": 1500,
+			"priceText": "2,5 – 15 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:umhang",
+			"name": "Umhang",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 50,
+			"priceMax": 400,
+			"priceText": "0,5 – 4 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:surcotKleid",
+			"name": "Surcot (Kleid)",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 200,
+			"priceMax": 2500,
+			"priceText": "2 – 25 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:beinlinge",
+			"name": "Beinlinge",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 50,
+			"priceMax": 200,
+			"priceText": "0,5 – 2 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:moenchsrock",
+			"name": "Mönchsrock",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 60,
+			"priceMax": 300,
+			"priceText": "0,6 – 3 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:lederhandschuhe",
+			"name": "Lederhandschuhe",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 150,
+			"priceMax": 500,
+			"priceText": "1,5 – 5 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:bundschuhe",
+			"name": "Bundschuhe",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 70,
+			"priceMax": 600,
+			"priceText": "0,7 – 6 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:schnabelschuhe",
+			"name": "Schnabelschuhe",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 400,
+			"priceMax": 1500,
+			"priceText": "4 – 15 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:lederstiefel",
+			"name": "Lederstiefel",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 200,
+			"priceMax": 1200,
+			"priceText": "2 – 12 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:bundhaube",
+			"name": "Bundhaube",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 30,
+			"priceMax": 120,
+			"priceText": "0,3 - 1,2 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:gugelhaube",
+			"name": "Gugelhaube",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 90,
+			"priceMax": 300,
+			"priceText": "0,9 – 3 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:filzhut",
+			"name": "Filzhut",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 250,
+			"priceMax": 750,
+			"priceText": "2,5 – 7,5 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "standard:kleidung:haube",
+			"name": "Haube",
+			"category": "Kleidung",
+			"group": "gear",
+			"setting": "standard",
+			"price": 40,
+			"priceMax": 350,
+			"priceText": "0,4 – 3,5 Kronen",
+			"stats": {},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen.md",
+				"section": "Kleidung"
+			}
+		},
+		{
+			"id": "fallout:faustwaffen:faust",
+			"name": "Faust",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": null,
+			"priceText": "",
+			"stats": {
+				"Schaden": "1W3",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "fallout:faustwaffen:verstaerkterHandschuh",
+			"name": "Verstärkter Handschuh",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 10,
+			"priceText": "10 Kronkorken",
+			"stats": {
+				"Schaden": "1W3+1",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "fallout:faustwaffen:stahlhandschuh",
+			"name": "Stahlhandschuh",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 40,
+			"priceText": "40 Kronkorken",
+			"stats": {
+				"Schaden": "1W3+3",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "fallout:faustwaffen:schlagring",
+			"name": "Schlagring",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Schaden": "1W4+1",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "fallout:faustwaffen:stachelring",
+			"name": "Stachelring",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 30,
+			"priceText": "30 Kronkorken",
+			"stats": {
+				"Schaden": "1W4+2",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "fallout:faustwaffen:klingenhandschuh",
+			"name": "Klingenhandschuh",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 150,
+			"priceText": "150 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+3",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "fallout:faustwaffen:energiehandschuh",
+			"name": "Energiehandschuh",
+			"category": "Faustwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 800,
+			"priceText": "800 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+5",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Faustwaffen"
+			}
+		},
+		{
+			"id": "fallout:dolcheUndMesser:wurfmesser",
+			"name": "Wurfmesser",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Schaden": "1W3+2",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "fallout:dolcheUndMesser:kuechenmesser",
+			"name": "Küchenmesser",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 5,
+			"priceText": "5 Kronkorken",
+			"stats": {
+				"Schaden": "1W4+1",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Minimal"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "fallout:dolcheUndMesser:fleischermesser",
+			"name": "Fleischermesser",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 15,
+			"priceText": "15 Kronkorken",
+			"stats": {
+				"Schaden": "1W4+2",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "fallout:dolcheUndMesser:jagdmesser",
+			"name": "Jagdmesser",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken",
+			"stats": {
+				"Schaden": "1W4+4",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "fallout:dolcheUndMesser:dolch",
+			"name": "Dolch",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 30,
+			"priceText": "30 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+2",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "fallout:dolcheUndMesser:parierdolch",
+			"name": "Parierdolch",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 35,
+			"priceText": "35 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+1",
+				"Länge": "Kurz",
+				"Besonderheit": "Paradewaffe"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "fallout:dolcheUndMesser:langdolch",
+			"name": "Langdolch",
+			"category": "Dolche und Messer",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 45,
+			"priceText": "45 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+3",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Dolche und Messer"
+			}
+		},
+		{
+			"id": "fallout:schwerter:kurzschwert",
+			"name": "Kurzschwert",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 50,
+			"priceText": "50 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+2",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "fallout:schwerter:machete",
+			"name": "Machete",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 100,
+			"priceText": "100 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+3",
+				"Länge": "Mittel",
+				"Besonderheit": "Nutzbar für Hiebwaffen-Manöver"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "fallout:schwerter:langschwert",
+			"name": "Langschwert",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 150,
+			"priceText": "150 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+4",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "fallout:schwerter:saebel",
+			"name": "Säbel",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 200,
+			"priceText": "200 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+4",
+				"Länge": "Mittel",
+				"Besonderheit": "+1 SP gegen Ungepanzert"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "fallout:schwerter:bastardschwert",
+			"name": "Bastardschwert",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 350,
+			"priceText": "350 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+5",
+				"Länge": "Lang",
+				"Besonderheit": "+1 SP wenn Zweihändig"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "fallout:schwerter:kriegsmesser2h",
+			"name": "Kriegsmesser (2H)",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 500,
+			"priceText": "500 Kronkorken",
+			"stats": {
+				"Schaden": "2W6+3",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "fallout:schwerter:kriegssaebel2h",
+			"name": "Kriegssäbel (2H)",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 650,
+			"priceText": "650 Kronkorken",
+			"stats": {
+				"Schaden": "2W6+4",
+				"Länge": "Lang",
+				"Besonderheit": "+1 SP gegen Ungepanzert"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "fallout:schwerter:zweihaender2h",
+			"name": "Zweihänder (2H)",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 750,
+			"priceText": "750 Kronkorken",
+			"stats": {
+				"Schaden": "2W6+5",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "fallout:schwerter:militaerischeKettensaege2h",
+			"name": "Militärische Kettensäge (2H)",
+			"category": "Schwerter",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 900,
+			"priceText": "900 Kronkorken",
+			"stats": {
+				"Schaden": "2W10+3",
+				"Modifikator": "-3 (Unhandlich)",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Schwerter"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:peitsche",
+			"name": "Peitsche",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 15,
+			"priceText": "15 Kronkorken",
+			"stats": {
+				"Schaden": "1W4+2",
+				"Länge": "Sehr lang",
+				"Besonderheit": "Ignoriert Schilde"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:wurfbeil",
+			"name": "Wurfbeil",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 35,
+			"priceText": "35 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+2",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:handbeil",
+			"name": "Handbeil",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+3",
+				"Länge": "Kurz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:keule",
+			"name": "Keule",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+3",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:holzfaelleraxt",
+			"name": "Holzfälleraxt",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 30,
+			"priceText": "30 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+4",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:streitaxt",
+			"name": "Streitaxt",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 100,
+			"priceText": "100 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+5",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:streithammer",
+			"name": "Streithammer",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 150,
+			"priceText": "150 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+6",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:morgenstern",
+			"name": "Morgenstern",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 200,
+			"priceText": "200 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+4",
+				"Länge": "Mittel"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:flegelNunchaku",
+			"name": "Flegel/Nunchaku",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 150,
+			"priceText": "150 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+4",
+				"Modifikator": "-1 (Unhandlich)",
+				"Länge": "Mittel",
+				"Besonderheit": "Ignoriert Schilde"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:kriegshammer2h",
+			"name": "Kriegshammer (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 550,
+			"priceText": "550 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+7",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:kriegsaxt2h",
+			"name": "Kriegsaxt (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 650,
+			"priceText": "650 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+5",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:vorschlaghammer2h",
+			"name": "Vorschlaghammer (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 450,
+			"priceText": "450 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+8",
+				"Modifikator": "-2 (Gewicht)",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:kriegsflegel2h",
+			"name": "Kriegsflegel (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 400,
+			"priceText": "400 Kronkorken",
+			"stats": {
+				"Schaden": "2W6+2",
+				"Modifikator": "-1 (Unhandlich)",
+				"Länge": "Lang",
+				"Besonderheit": "Ignoriert Schilde"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:hiebwaffen:spalter2h",
+			"name": "Spalter (2H)",
+			"category": "Hiebwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 450,
+			"priceText": "450 Kronkorken",
+			"stats": {
+				"Schaden": "2W6+5",
+				"Modifikator": "-1 (Gewicht)",
+				"Länge": "Lang",
+				"Besonderheit": "Erleichtert Spalten"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Hiebwaffen"
+			}
+		},
+		{
+			"id": "fallout:stangenwaffen:wurfspeer",
+			"name": "Wurfspeer",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 75,
+			"priceText": "75 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+3",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "fallout:stangenwaffen:kampfstock",
+			"name": "Kampfstock",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 15,
+			"priceText": "15 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+2",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "fallout:stangenwaffen:mistgabel",
+			"name": "Mistgabel",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+2",
+				"Modifikator": "-1 (Improvisiert)",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "fallout:stangenwaffen:speer",
+			"name": "Speer",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 30,
+			"priceText": "30 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+3",
+				"Länge": "Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "fallout:stangenwaffen:sense2h",
+			"name": "Sense (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 45,
+			"priceText": "45 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+3",
+				"Länge": "Sehr Lang",
+				"Besonderheit": "Erleichtert Hakenmanöver"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "fallout:stangenwaffen:glefeNaginata2h",
+			"name": "Glefe/Naginata (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 350,
+			"priceText": "350 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+5",
+				"Länge": "Sehr Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "fallout:stangenwaffen:hellebarde2h",
+			"name": "Hellebarde (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 350,
+			"priceText": "350 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+5",
+				"Länge": "Sehr Lang",
+				"Besonderheit": "Erleichtert Hakenmanöver"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "fallout:stangenwaffen:schwertstab2h",
+			"name": "Schwertstab (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 500,
+			"priceText": "500 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+6",
+				"Länge": "Sehr Lang"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "fallout:stangenwaffen:rabenschnabel2h",
+			"name": "Rabenschnabel (2H)",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 650,
+			"priceText": "650 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+7",
+				"Länge": "Sehr Lang",
+				"Besonderheit": "Nutzbar als Hiebwaffe"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "fallout:stangenwaffen:lanze",
+			"name": "Lanze",
+			"category": "Stangenwaffen",
+			"group": "melee",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+2",
+				"Länge": "Sehr Lang",
+				"Besonderheit": "Nur zu Pferd nutzbar / Reiterangriff (3W8+2)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Nahkampfwaffen_(Fallout).md",
+				"section": "Stangenwaffen"
+			}
+		},
+		{
+			"id": "fallout:boegen:primitiverBoden",
+			"name": "Primitiver Boden",
+			"category": "Bögen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 30,
+			"priceText": "30 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+2",
+				"Reichweite": "10/50/80",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Bögen"
+			}
+		},
+		{
+			"id": "fallout:boegen:kurzbogen",
+			"name": "Kurzbogen",
+			"category": "Bögen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 50,
+			"priceText": "50 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+4",
+				"Reichweite": "10/50/80",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Bögen"
+			}
+		},
+		{
+			"id": "fallout:boegen:kompositbogen",
+			"name": "Kompositbogen",
+			"category": "Bögen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 350,
+			"priceText": "350 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+5",
+				"Reichweite": "15/70/130",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Bögen"
+			}
+		},
+		{
+			"id": "fallout:boegen:langbogen",
+			"name": "Langbogen",
+			"category": "Bögen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 450,
+			"priceText": "450 Kronkorken",
+			"stats": {
+				"Schaden": "1W8+7",
+				"Reichweite": "15/70/130",
+				"Ladezeit": "1 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Bögen"
+			}
+		},
+		{
+			"id": "fallout:armbruesteUndFeuerwaffen:leichteArmbrust1h",
+			"name": "Leichte Armbrust (1H)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 150,
+			"priceText": "150 Kronkorken",
+			"stats": {
+				"Schaden": "2W4+2",
+				"Reichweite": "10/50/80",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "fallout:armbruesteUndFeuerwaffen:repetierarmbrust2h",
+			"name": "Repetierarmbrust (2H)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 350,
+			"priceText": "350 Kronkorken",
+			"stats": {
+				"Schaden": "2W4+4",
+				"Reichweite": "10/50/80",
+				"Ladezeit": "2 KR (Magazin von 5 Runden)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "fallout:armbruesteUndFeuerwaffen:schwereArmbrust2h",
+			"name": "Schwere Armbrust (2H)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 250,
+			"priceText": "250 Kronkorken",
+			"stats": {
+				"Schaden": "2W6+5",
+				"Reichweite": "15/70/130",
+				"Ladezeit": "1 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "fallout:armbruesteUndFeuerwaffen:pistole1h",
+			"name": "Pistole (1H)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 200,
+			"priceText": "200 Kronkorken",
+			"stats": {
+				"Schaden": "1W6+6",
+				"Reichweite": "15/30/80",
+				"Ladezeit": "1 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "fallout:armbruesteUndFeuerwaffen:revolver1h",
+			"name": "Revolver (1H)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 300,
+			"priceText": "300 Kronkorken",
+			"stats": {
+				"Schaden": "2W6+4",
+				"Reichweite": "15/30/80",
+				"Ladezeit": "2 KR (Magazin von 3 Runden)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "fallout:armbruesteUndFeuerwaffen:abgesaegteSchrotflinte1h",
+			"name": "Abgesägte Schrotflinte (1H)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 400,
+			"priceText": "400 Kronkorken",
+			"stats": {
+				"Schaden": "2W4+4",
+				"Modifikator": "Schaden in 2 Schritt Radius",
+				"Reichweite": "2/5/10",
+				"Ladezeit": "1 KR (Magazin von 2 Runden)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "fallout:armbruesteUndFeuerwaffen:schrotflinte2h",
+			"name": "Schrotflinte (2H)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 450,
+			"priceText": "450 Kronkorken",
+			"stats": {
+				"Schaden": "3W4+4",
+				"Modifikator": "Schaden in 1 Schritt Radius",
+				"Reichweite": "5/10/15",
+				"Ladezeit": "1 KR (Magazin von 2 Runden)",
+				"Besonderheit": "Kann mit Messer zu Bayonett kombiniert werden (Nutzbar als Stangenwaffe)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "fallout:armbruesteUndFeuerwaffen:jagdgewehr2h",
+			"name": "Jagdgewehr (2H)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 750,
+			"priceText": "750 Kronkorken",
+			"stats": {
+				"Schaden": "2W8+8",
+				"Reichweite": "50/130/300",
+				"Ladezeit": "1 KR",
+				"Besonderheit": "Kann mit Messer zu Bayonett kombiniert werden (Nutzbar als Stangenwaffe)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "fallout:armbruesteUndFeuerwaffen:repetiergewehr2h",
+			"name": "Repetiergewehr (2H)",
+			"category": "Armbrüste und Feuerwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 1500,
+			"priceText": "1.500 Kronkorken",
+			"stats": {
+				"Schaden": "2W8+6",
+				"Reichweite": "30/100/250",
+				"Ladezeit": "2 KR (Magazin von 5 Runden)",
+				"Besonderheit": "Kann mit Messer zu Bayonett kombiniert werden (Nutzbar als Stangenwaffe)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Armbrüste und Feuerwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:stein",
+			"name": "Stein",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": null,
+			"priceText": "",
+			"stats": {
+				"Schaden": "1W3+1",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:wurfmesser",
+			"name": "Wurfmesser",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Schaden": "2W3+1",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:wurfstern",
+			"name": "Wurfstern",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 30,
+			"priceText": "30 Kronkorken",
+			"stats": {
+				"Schaden": "2W3+2",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:wurfkeule",
+			"name": "Wurfkeule",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken",
+			"stats": {
+				"Schaden": "2W4+1",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:wurfbeil",
+			"name": "Wurfbeil",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 35,
+			"priceText": "35 Kronkorken",
+			"stats": {
+				"Schaden": "2W4+2",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:wurfpfeil",
+			"name": "Wurfpfeil",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 45,
+			"priceText": "45 Kronkorken",
+			"stats": {
+				"Schaden": "2W6+1",
+				"Reichweite": "10/30/50",
+				"Ladezeit": "1 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:wurfspeer",
+			"name": "Wurfspeer",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 75,
+			"priceText": "75 Kronkorken",
+			"stats": {
+				"Schaden": "2W6+3",
+				"Reichweite": "5/25/40",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:dynamit",
+			"name": "Dynamit",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 30,
+			"priceText": "30 Kronkorken",
+			"stats": {
+				"Schaden": "1W10 (1 Schritt) pro Stab",
+				"Reichweite": "5/10/15",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:molotovCocktail",
+			"name": "Molotov-Cocktail",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 45,
+			"priceText": "45 Kronkorken",
+			"stats": {
+				"Schaden": "1W6 (3 Schritt) + Feuer",
+				"Reichweite": "10/15/25",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:splittergranate",
+			"name": "Splittergranate",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 150,
+			"priceText": "150 Kronkorken",
+			"stats": {
+				"Schaden": "5W10 (-1W10 alle 2 Schritt)",
+				"Reichweite": "10/25/40",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:blendgranate",
+			"name": "Blendgranate",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 170,
+			"priceText": "170 Kronkorken",
+			"stats": {
+				"Schaden": "1W4 plus Blenden in 10 Schritt",
+				"Reichweite": "10/25/40",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:wurfwaffen:c4",
+			"name": "C-4",
+			"category": "Wurfwaffen",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 350,
+			"priceText": "350 Kronkorken",
+			"stats": {
+				"Schaden": "5W12 (-1W12 alle 5 Schritt)",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "2/5/10 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Wurfwaffen"
+			}
+		},
+		{
+			"id": "fallout:schleudern:lasso",
+			"name": "Lasso",
+			"category": "Schleudern",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 10,
+			"priceText": "10 Kronkorken",
+			"stats": {
+				"Schaden": "0",
+				"Reichweite": "2/5/10",
+				"Ladezeit": "0 KR",
+				"Besonderheit": "Schnürrt ein"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Schleudern"
+			}
+		},
+		{
+			"id": "fallout:schleudern:bola",
+			"name": "Bola",
+			"category": "Schleudern",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 15,
+			"priceText": "15 Kronkorken",
+			"stats": {
+				"Schaden": "1W3",
+				"Reichweite": "2/10/15",
+				"Ladezeit": "0 KR",
+				"Besonderheit": "Kann zu Fall bringen"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Schleudern"
+			}
+		},
+		{
+			"id": "fallout:schleudern:zwille",
+			"name": "Zwille",
+			"category": "Schleudern",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 10,
+			"priceText": "10 Kronkorken",
+			"stats": {
+				"Schaden": "1W3+2",
+				"Reichweite": "3/10/40",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Schleudern"
+			}
+		},
+		{
+			"id": "fallout:schleudern:steinschleuder",
+			"name": "Steinschleuder",
+			"category": "Schleudern",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 15,
+			"priceText": "15 Kronkorken",
+			"stats": {
+				"Schaden": "2W4+2",
+				"Reichweite": "5/25/60",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Schleudern"
+			}
+		},
+		{
+			"id": "fallout:schleudern:bleischleuder",
+			"name": "Bleischleuder",
+			"category": "Schleudern",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Schaden": "2W4+3",
+				"Reichweite": "10/30/100",
+				"Ladezeit": "0 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Schleudern"
+			}
+		},
+		{
+			"id": "fallout:schleudern:stabschleuder",
+			"name": "Stabschleuder",
+			"category": "Schleudern",
+			"group": "ranged",
+			"setting": "fallout",
+			"price": 35,
+			"priceText": "35 Kronkorken",
+			"stats": {
+				"Schaden": "2W4+5",
+				"Modifikator": "-1 (Unpräzise)",
+				"Reichweite": "20/30/120",
+				"Ladezeit": "1 KR",
+				"Besonderheit": "Nicht unter 5 Schritt"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Fernkampfwaffen_(Fallout).md",
+				"section": "Schleudern"
+			}
+		},
+		{
+			"id": "fallout:leichteRuestung:dickerMantel",
+			"name": "Dicker Mantel",
+			"category": "Leichte Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "1 RS"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Leichte Rüstung"
+			}
+		},
+		{
+			"id": "fallout:leichteRuestung:lederjacke",
+			"name": "Lederjacke",
+			"category": "Leichte Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 50,
+			"priceText": "50 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "2 RS"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Leichte Rüstung"
+			}
+		},
+		{
+			"id": "fallout:leichteRuestung:fellruestung",
+			"name": "Fellrüstung",
+			"category": "Leichte Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 80,
+			"priceText": "80 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "3 RS"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Leichte Rüstung"
+			}
+		},
+		{
+			"id": "fallout:leichteRuestung:polsterjacke",
+			"name": "Polsterjacke",
+			"category": "Leichte Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 100,
+			"priceText": "100 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "4 RS"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Leichte Rüstung"
+			}
+		},
+		{
+			"id": "fallout:mittlereRuestung:schrottruestung",
+			"name": "Schrottrüstung",
+			"category": "Mittlere Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 300,
+			"priceText": "300 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "5 RS",
+				"Besonderheiten": "Min. 8 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Mittlere Rüstung"
+			}
+		},
+		{
+			"id": "fallout:mittlereRuestung:kettenruestung",
+			"name": "Kettenrüstung",
+			"category": "Mittlere Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 450,
+			"priceText": "450 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "6 RS",
+				"Besonderheiten": "Min. 10 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Mittlere Rüstung"
+			}
+		},
+		{
+			"id": "fallout:mittlereRuestung:metallruestung",
+			"name": "Metallrüstung",
+			"category": "Mittlere Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 750,
+			"priceText": "750 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "7 RS",
+				"Besonderheiten": "Min. 12 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Mittlere Rüstung"
+			}
+		},
+		{
+			"id": "fallout:schwereRuestung:kevlarKampfruestung",
+			"name": "Kevlar-Kampfrüstung",
+			"category": "Schwere Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 1500,
+			"priceText": "1.500 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "8 RS",
+				"Besonderheiten": "Min. 10 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Schwere Rüstung"
+			}
+		},
+		{
+			"id": "fallout:schwereRuestung:plattenruestung",
+			"name": "Plattenrüstung",
+			"category": "Schwere Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 3000,
+			"priceText": "3.000 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "9 RS",
+				"Besonderheiten": "Min. 14 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Schwere Rüstung"
+			}
+		},
+		{
+			"id": "fallout:schwereRuestung:recycelteEnergieruestung",
+			"name": "Recycelte Energierüstung",
+			"category": "Schwere Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 5000,
+			"priceText": "5000 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "10 RS",
+				"Besonderheiten": "Min. 16 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Schwere Rüstung"
+			}
+		},
+		{
+			"id": "fallout:schwereRuestung:energieruestung",
+			"name": "Energierüstung",
+			"category": "Schwere Rüstung",
+			"group": "armor",
+			"setting": "fallout",
+			"price": 5000,
+			"priceText": "5.000 Kronkorken",
+			"stats": {
+				"Rüstungsschutz": "14 RS",
+				"Besonderheiten": "Min. 16 KON"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Schwere Rüstung"
+			}
+		},
+		{
+			"id": "fallout:schilde:buckler",
+			"name": "Buckler",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "fallout",
+			"price": 200,
+			"priceText": "200 Kronkorken",
+			"stats": {
+				"Regulärer Bonus": "+4",
+				"Defensiver Bonus": "0",
+				"Besonderheit": "Verwendbar mit Zweihandwaffen (Regulärer Bonus von +1)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "fallout:schilde:rundschild",
+			"name": "Rundschild",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "fallout",
+			"price": 50,
+			"priceText": "50 Kronkorken",
+			"stats": {
+				"Regulärer Bonus": "+1",
+				"Defensiver Bonus": "+2",
+				"Besonderheit": "-3 für Berittenen Kampf"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "fallout:schilde:holzschild",
+			"name": "Holzschild",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "fallout",
+			"price": 80,
+			"priceText": "80 Kronkorken",
+			"stats": {
+				"Regulärer Bonus": "+2",
+				"Defensiver Bonus": "+1",
+				"Besonderheit": "-1 für Berittenen Kampf"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "fallout:schilde:metallschild",
+			"name": "Metallschild",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "fallout",
+			"price": 100,
+			"priceText": "100 Kronkorken",
+			"stats": {
+				"Regulärer Bonus": "+3",
+				"Defensiver Bonus": "+1"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "fallout:schilde:turmschild",
+			"name": "Turmschild",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "fallout",
+			"price": 120,
+			"priceText": "120 Kronkorken",
+			"stats": {
+				"Regulärer Bonus": "+1",
+				"Defensiver Bonus": "+4",
+				"Besonderheit": "Nicht auf Pferd verwendbar"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "fallout:schilde:barrikade",
+			"name": "Barrikade",
+			"category": "Schilde",
+			"group": "shield",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Regulärer Bonus": "0",
+				"Defensiver Bonus": "+6",
+				"Besonderheit": "Zweihändig, aufstellbar für halbe/volle Deckung"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_der_Rüstungen_und_Schilde_(Fallout).md",
+				"section": "Schilde"
+			}
+		},
+		{
+			"id": "fallout:nuetzlicheGegenstaende:militaerischesDuctTape",
+			"name": "Militärisches Duct Tape",
+			"category": "Nützliche Gegenstände",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken",
+			"stats": {
+				"Effekt": "Erleichtert Reparieren und Basteln"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Nützliche Gegenstände"
+			}
+		},
+		{
+			"id": "fallout:nuetzlicheGegenstaende:dietrich",
+			"name": "Dietrich",
+			"category": "Nützliche Gegenstände",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken",
+			"stats": {
+				"Effekt": "Ermöglicht es, Schlösser zu knacken"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Nützliche Gegenstände"
+			}
+		},
+		{
+			"id": "fallout:nuetzlicheGegenstaende:handschellen",
+			"name": "Handschellen",
+			"category": "Nützliche Gegenstände",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 50,
+			"priceText": "50 Kronkorken",
+			"stats": {
+				"Effekt": "Ermöglicht es, einfach Humaniode zu fesseln"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Nützliche Gegenstände"
+			}
+		},
+		{
+			"id": "fallout:klamotten:sonnenbrille",
+			"name": "Sonnenbrille",
+			"category": "Klamotten",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 45,
+			"priceText": "45 Kronkorken",
+			"stats": {
+				"Effekt": "Schützt gegen Blendung"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Klamotten"
+			}
+		},
+		{
+			"id": "fallout:klamotten:arbeitsschuhe",
+			"name": "Arbeitsschuhe",
+			"category": "Klamotten",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 75,
+			"priceText": "75 Kronkorken",
+			"stats": {
+				"Effekt": "Isoliert gegen Stromfluss"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Klamotten"
+			}
+		},
+		{
+			"id": "fallout:klamotten:gasmaske",
+			"name": "Gasmaske",
+			"category": "Klamotten",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 180,
+			"priceText": "180 Kronkorken",
+			"stats": {
+				"Effekt": "Schützt gegen verunreinigte Luft"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Klamotten"
+			}
+		},
+		{
+			"id": "fallout:klamotten:strahlenschutzanzug",
+			"name": "Strahlenschutzanzug",
+			"category": "Klamotten",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 350,
+			"priceText": "350 Kronkorken",
+			"stats": {
+				"Effekt": "Schutz gegen Strahlung"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Klamotten"
+			}
+		},
+		{
+			"id": "fallout:technischeGegenstaende:taschenuhr",
+			"name": "Taschenuhr",
+			"category": "Technische Gegenstände",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 100,
+			"priceText": "100 Kronkorken",
+			"stats": {
+				"Effekt": "Verrät die Tageszeit, Vorteil auf Navigieren-Proben"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Technische Gegenstände"
+			}
+		},
+		{
+			"id": "fallout:technischeGegenstaende:radio",
+			"name": "Radio",
+			"category": "Technische Gegenstände",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 125,
+			"priceText": "125 Kronkorken",
+			"stats": {
+				"Effekt": "Ermöglicht es, auf Radioübertragungen zuzugreifen und Nachrichten zu verschicken"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Technische Gegenstände"
+			}
+		},
+		{
+			"id": "fallout:technischeGegenstaende:fernglas",
+			"name": "Fernglas",
+			"category": "Technische Gegenstände",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 150,
+			"priceText": "150 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Wahrnehmungsproben auf Distanz"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Technische Gegenstände"
+			}
+		},
+		{
+			"id": "fallout:technischeGegenstaende:geigerZaehler",
+			"name": "Geiger-Zähler",
+			"category": "Technische Gegenstände",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 250,
+			"priceText": "250 Kronkorken",
+			"stats": {
+				"Effekt": "Ermöglicht es, Strahlenbelastung zu messen"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Technische Gegenstände"
+			}
+		},
+		{
+			"id": "fallout:technischeGegenstaende:leuchtpistole",
+			"name": "Leuchtpistole",
+			"category": "Technische Gegenstände",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 350,
+			"priceText": "350 Kronkorken",
+			"stats": {
+				"Effekt": "Feuert Leuchtprojektil ab"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Technische Gegenstände"
+			}
+		},
+		{
+			"id": "fallout:technischeGegenstaende:enterhakenpistole",
+			"name": "Enterhakenpistole",
+			"category": "Technische Gegenstände",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 450,
+			"priceText": "450 Kronkorken",
+			"stats": {
+				"Effekt": "Erleichtert Klettern (Reichweite 10 Schritt)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Technische Gegenstände"
+			}
+		},
+		{
+			"id": "fallout:waffenzubehoer:erweitertesMagazin",
+			"name": "Erweitertes Magazin",
+			"category": "Waffenzubehör",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 250,
+			"priceText": "250 Kronkorken",
+			"stats": {
+				"Effekt": "Fügt eine zusätzliche KR Magazinkapazität hinzu"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Waffenzubehör"
+			}
+		},
+		{
+			"id": "fallout:waffenzubehoer:visier",
+			"name": "Visier",
+			"category": "Waffenzubehör",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 270,
+			"priceText": "270 Kronkorken",
+			"stats": {
+				"Effekt": "Erhöht Reichweite von Schusswaffen um 50 Prozent"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Waffenzubehör"
+			}
+		},
+		{
+			"id": "fallout:waffenzubehoer:schnellwechselMagazin",
+			"name": "Schnellwechsel-Magazin",
+			"category": "Waffenzubehör",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 300,
+			"priceText": "300 Kronkorken",
+			"stats": {
+				"Effekt": "Verlangsamt Ladezeit um 1 KR"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Waffenzubehör"
+			}
+		},
+		{
+			"id": "fallout:waffenzubehoer:schalldaempfer",
+			"name": "Schalldämpfer",
+			"category": "Waffenzubehör",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 350,
+			"priceText": "350 Kronkorken",
+			"stats": {
+				"Effekt": "Verringert Lärm durch Schusswaffen"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Waffenzubehör"
+			}
+		},
+		{
+			"id": "fallout:waffenzubehoer:nachtsichtVisier",
+			"name": "Nachtsicht-Visier",
+			"category": "Waffenzubehör",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 450,
+			"priceText": "450 Kronkorken",
+			"stats": {
+				"Effekt": "Erhöht Reichweite von Schusswaffen um 50 Prozent"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Waffenzubehör"
+			}
+		},
+		{
+			"id": "fallout:granatenUndSprengstoff:flare",
+			"name": "Flare",
+			"category": "Granaten und Sprengstoff",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken",
+			"stats": {
+				"Effekt": "Stößt farbigen Rauch aus"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Granaten und Sprengstoff"
+			}
+		},
+		{
+			"id": "fallout:granatenUndSprengstoff:dynamit",
+			"name": "Dynamit",
+			"category": "Granaten und Sprengstoff",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 30,
+			"priceText": "30 Kronkorken",
+			"stats": {
+				"Effekt": "Verursacht 1W10 SP in einem Schritt pro Stab (2W10 SP in zwei Schritt bei zwei Stäben)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Granaten und Sprengstoff"
+			}
+		},
+		{
+			"id": "fallout:granatenUndSprengstoff:molotovCocktail",
+			"name": "Molotov-Cocktail",
+			"category": "Granaten und Sprengstoff",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 45,
+			"priceText": "45 Kronkorken",
+			"stats": {
+				"Effekt": "Verursacht 1W6 SP in 3 Schritt und setzt die Fläche in Brand"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Granaten und Sprengstoff"
+			}
+		},
+		{
+			"id": "fallout:granatenUndSprengstoff:rauchgranate",
+			"name": "Rauchgranate",
+			"category": "Granaten und Sprengstoff",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 120,
+			"priceText": "120 Kronkorken",
+			"stats": {
+				"Effekt": "Verursacht Rauch in einem 3x3 Schritt Umkreis"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Granaten und Sprengstoff"
+			}
+		},
+		{
+			"id": "fallout:granatenUndSprengstoff:blendgranate",
+			"name": "Blendgranate",
+			"category": "Granaten und Sprengstoff",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 170,
+			"priceText": "170 Kronkorken",
+			"stats": {
+				"Effekt": "Verursacht 1W4 plus Blenden in 10 Schritt Umkreis"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Granaten und Sprengstoff"
+			}
+		},
+		{
+			"id": "fallout:granatenUndSprengstoff:splittermine",
+			"name": "Splittermine",
+			"category": "Granaten und Sprengstoff",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 230,
+			"priceText": "230 Kronkorken",
+			"stats": {
+				"Effekt": "Verursacht 1W10 SP in einem Schritt (Benötigt Sprengstoff-Fertigkeit)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Granaten und Sprengstoff"
+			}
+		},
+		{
+			"id": "fallout:granatenUndSprengstoff:c4",
+			"name": "C-4",
+			"category": "Granaten und Sprengstoff",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 350,
+			"priceText": "350 Kronkorken",
+			"stats": {
+				"Effekt": "Verursacht 5W12 (-1W12 alle 5 Schritt)"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Granaten und Sprengstoff"
+			}
+		},
+		{
+			"id": "fallout:munition:militaerischerBrandpfeil",
+			"name": "Militärischer Brandpfeil",
+			"category": "Munition",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken pro Pfeil",
+			"stats": {
+				"Effekt": "Verursacht 2W4 Feuerschaden und setzt Fläche in Brand"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Munition"
+			}
+		},
+		{
+			"id": "fallout:munition:hochgeschwindigkeitsmunition",
+			"name": "Hochgeschwindigkeitsmunition",
+			"category": "Munition",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 35,
+			"priceText": "35 Kronkorken pro Kugel",
+			"stats": {
+				"Effekt": "Munition durchbohrt Ziel und trifft Ziele dahinter"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Munition"
+			}
+		},
+		{
+			"id": "fallout:munition:sedativpfeil",
+			"name": "Sedativpfeil",
+			"category": "Munition",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 45,
+			"priceText": "45 Kronkorken pro Pfeil",
+			"stats": {
+				"Effekt": "Verursacht keinen Schaden, sondern schläfert Ziel ein"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Munition"
+			}
+		},
+		{
+			"id": "fallout:munition:explosivmunition",
+			"name": "Explosivmunition",
+			"category": "Munition",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 75,
+			"priceText": "75 Kronkorken pro Kugel",
+			"stats": {
+				"Effekt": "Munition explodiert und verursacht 3W4 SP an allen Zielen im Umkreis von 2 Schritt"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Munition"
+			}
+		},
+		{
+			"id": "fallout:munition:nukleareMunition",
+			"name": "Nukleare Munition",
+			"category": "Munition",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 150,
+			"priceText": "150 Kronkorken pro Kugel",
+			"stats": {
+				"Effekt": "Munition explodiert und verursacht 4W6 Strahlungsschaden an allen Zielen im Umkreis von 5 Schritt und verstrahlt sie"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Munition"
+			}
+		},
+		{
+			"id": "fallout:alkohol:bier",
+			"name": "Bier",
+			"category": "Alkohol",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 2,
+			"priceText": "2 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Charisma und Stärke, Nachteil auf Klugheit für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alkohol"
+			}
+		},
+		{
+			"id": "fallout:alkohol:wastelandWein",
+			"name": "Wasteland Wein",
+			"category": "Alkohol",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 3,
+			"priceText": "3 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Charisma und Intuition, Nachteil auf Klugheit für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alkohol"
+			}
+		},
+		{
+			"id": "fallout:alkohol:whiskey",
+			"name": "Whiskey",
+			"category": "Alkohol",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 4,
+			"priceText": "4 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Charisma und Konstitution, Nachteil auf Klugheit für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alkohol"
+			}
+		},
+		{
+			"id": "fallout:alkohol:rum",
+			"name": "Rum",
+			"category": "Alkohol",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 4,
+			"priceText": "4 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Charisma und Geschick, Nachteil auf Klugheit für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alkohol"
+			}
+		},
+		{
+			"id": "fallout:alkohol:mesqual",
+			"name": "Mesqual",
+			"category": "Alkohol",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 4,
+			"priceText": "4 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Charisma und Willenskraft, Nachteil auf Klugheit für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alkohol"
+			}
+		},
+		{
+			"id": "fallout:alkohol:moonshine",
+			"name": "Moonshine",
+			"category": "Alkohol",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 5,
+			"priceText": "5 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Charisma, Stärke und Konstitution, Nachteil auf Klugheit und Wahrnehmung für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alkohol"
+			}
+		},
+		{
+			"id": "fallout:alkohol:absinth",
+			"name": "Absinth",
+			"category": "Alkohol",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 9,
+			"priceText": "9 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Charisma, Willenskraft und Intuition, Nachteil auf Klugheit und Geschick  für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alkohol"
+			}
+		},
+		{
+			"id": "fallout:softDrinks:schmutzwasser",
+			"name": "Schmutzwasser",
+			"category": "Soft Drinks",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 2,
+			"priceText": "2 Kronkorken",
+			"stats": {
+				"Effekt": "+1W4 TP, 1 RAD"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Soft Drinks"
+			}
+		},
+		{
+			"id": "fallout:softDrinks:sunsetSarsaparilla",
+			"name": "Sunset Sarsaparilla",
+			"category": "Soft Drinks",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 4,
+			"priceText": "4 Kronkorken",
+			"stats": {
+				"Effekt": "+1W4 TP, 1 RAD, +1 Kronkorken"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Soft Drinks"
+			}
+		},
+		{
+			"id": "fallout:softDrinks:wastelandKaffee",
+			"name": "Wasteland-Kaffee",
+			"category": "Soft Drinks",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 6,
+			"priceText": "6 Kronkorken",
+			"stats": {
+				"Effekt": "+1W4 TP, 1 RAD, Vorteil Klugheit, Nachteil Geschick für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Soft Drinks"
+			}
+		},
+		{
+			"id": "fallout:softDrinks:klaresWasser",
+			"name": "Klares Wasser",
+			"category": "Soft Drinks",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 10,
+			"priceText": "10 Kronkorken",
+			"stats": {
+				"Effekt": "+1W4 TP"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Soft Drinks"
+			}
+		},
+		{
+			"id": "fallout:softDrinks:nukaCola",
+			"name": "Nuka Cola",
+			"category": "Soft Drinks",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 5,
+			"priceText": "5 Kronkorken",
+			"stats": {
+				"Effekt": "+1W4 maxTP für 1h, 1 RAD, +1 Kronkorken"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Soft Drinks"
+			}
+		},
+		{
+			"id": "fallout:softDrinks:nukaColaVictory",
+			"name": "Nuka Cola Victory",
+			"category": "Soft Drinks",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Effekt": "+1W6 maxTP für 1h, Vorteil Willenskraft, 3 RAD"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Soft Drinks"
+			}
+		},
+		{
+			"id": "fallout:softDrinks:nukaColaQuantum",
+			"name": "Nuka Cola Quantum",
+			"category": "Soft Drinks",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 35,
+			"priceText": "35 Kronkorken",
+			"stats": {
+				"Effekt": "+1W8 maxTP für 1h, Vorteil Geschick, Nachtsicht, 5 RAD"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Soft Drinks"
+			}
+		},
+		{
+			"id": "fallout:chems:radx",
+			"name": "RadX",
+			"category": "Chems",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 15,
+			"priceText": "15 Kronkorken",
+			"stats": {
+				"Effekt": "RAD-Resistenz für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Chems"
+			}
+		},
+		{
+			"id": "fallout:chems:radaway",
+			"name": "RadAway",
+			"category": "Chems",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken",
+			"stats": {
+				"Effekt": "-5 RAD"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Chems"
+			}
+		},
+		{
+			"id": "fallout:chems:cateye",
+			"name": "Cateye",
+			"category": "Chems",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken",
+			"stats": {
+				"Effekt": "Nachtsicht für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Chems"
+			}
+		},
+		{
+			"id": "fallout:chems:mentats",
+			"name": "Mentats",
+			"category": "Chems",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 30,
+			"priceText": "30 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Intuition, Klugheit, Wahrnehmung und Charisma für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Chems"
+			}
+		},
+		{
+			"id": "fallout:chems:buffout",
+			"name": "Buffout",
+			"category": "Chems",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 35,
+			"priceText": "35 Kronkorken",
+			"stats": {
+				"Effekt": "1W10 maxTP, Vorteil auf Stärke und Konstitution für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Chems"
+			}
+		},
+		{
+			"id": "fallout:chems:jet",
+			"name": "Jet",
+			"category": "Chems",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 40,
+			"priceText": "40 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Nahkampf und Fernkampf, Bewegung x1,5, Vorteil auf Geschick für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Chems"
+			}
+		},
+		{
+			"id": "fallout:chems:psycho",
+			"name": "Psycho",
+			"category": "Chems",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 45,
+			"priceText": "45 Kronkorken",
+			"stats": {
+				"Effekt": "+2 Schadensbonus für 1h, ggf. Blutrausch"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Chems"
+			}
+		},
+		{
+			"id": "fallout:chems:stimpack",
+			"name": "Stimpack",
+			"category": "Chems",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 45,
+			"priceText": "45 Kronkorken",
+			"stats": {
+				"Effekt": "-2W6 Wundpunkte"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Chems"
+			}
+		},
+		{
+			"id": "fallout:chems:medX",
+			"name": "Med-X",
+			"category": "Chems",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 45,
+			"priceText": "45 Kronkorken",
+			"stats": {
+				"Effekt": "halbierter Schaden für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Chems"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:kautabak",
+			"name": "Kautabak",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 8,
+			"priceText": "8 Kronkorken",
+			"stats": {
+				"Effekt": "1W4 TP, Vorteil auf Wahrnehmung für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:zigaretten",
+			"name": "Zigaretten",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 10,
+			"priceText": "10 Kronkorken",
+			"stats": {
+				"Effekt": "1W4 TP, Vorteil auf Wahrnehmung und auf nächsten Glückswurf für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:schlangenoel",
+			"name": "Schlangenöl",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 12,
+			"priceText": "12 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Intuition für 1h, Ermöglicht es, Glück neu zu rollen"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:ginsengElixir",
+			"name": "Ginseng Elixir",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 15,
+			"priceText": "15 Kronkorken",
+			"stats": {
+				"Effekt": "1W6 maxTP für 1h, 1 RAD"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:heilpulver",
+			"name": "Heilpulver",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Effekt": "-1 Wundpunkt, Nachteil auf Wahrnehmung für 1 Tag"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:cannabisJoint",
+			"name": "Cannabis-Joint",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Effekt": "1W6 TP, Vorteil auf Intuition und Charisma für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:kokainkaugummi",
+			"name": "Kokainkaugummi",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 20,
+			"priceText": "20 Kronkorken",
+			"stats": {
+				"Effekt": "1W4 maxTP, Vorteil auf Konstitution für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:zigarre",
+			"name": "Zigarre",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 25,
+			"priceText": "25 Kronkorken",
+			"stats": {
+				"Effekt": "1W6 TP, Vorteil auf Wahrnehmung und Intuition für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:kokain",
+			"name": "Kokain",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 30,
+			"priceText": "30 Kronkorken",
+			"stats": {
+				"Effekt": "1W8 maxTP für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:lsd",
+			"name": "LSD",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 35,
+			"priceText": "35 Kronkorken",
+			"stats": {
+				"Effekt": "Vorteil auf Intuition, Geschick und Wahrnehmung für 1h"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		},
+		{
+			"id": "fallout:alchemikaUndTonikums:blutreserve",
+			"name": "Blutreserve",
+			"category": "Alchemika und Tonikums",
+			"group": "gear",
+			"setting": "fallout",
+			"price": 50,
+			"priceText": "50 Kronkorken",
+			"stats": {
+				"Effekt": "-1W4 Wundpunkte, 3 RAD"
+			},
+			"source": {
+				"file": "Ausrüstung/Liste_von_Ausrüstungsgegenständen_(Fallout).md",
+				"section": "Alchemika und Tonikums"
+			}
+		}
+	]
+}

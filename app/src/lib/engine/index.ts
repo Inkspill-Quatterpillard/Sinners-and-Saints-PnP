@@ -23,3 +23,5 @@ export type { CombatSkillView, CombatStepView } from './steps/combat';
 export { techniqueUnlocks } from './steps/combat';
 export type { Contingent, DisciplineView, MagicStepView } from './steps/magic';
 export { contingentFor } from './steps/magic';
+export type { EquipmentStepView, OwnedItem, OwnedItemView } from './steps/equipment';
+export { currencyOf } from './steps/equipment';

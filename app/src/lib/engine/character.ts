@@ -1,6 +1,7 @@
 import type { AttributeId } from '$lib/ruleData';
 import type { ChoiceState } from './choices';
 import type { CharacteristicMode } from './steps/characteristic';
+import type { OwnedItem } from './steps/equipment';
 
 /** Version des Formats der Charakterdatei. Ältere Dateien werden beim Laden migriert. */
 export const FORMAT_VERSION = 1;
@@ -45,6 +46,11 @@ export interface Basis {
 	style?: string;
 	/** Gewählte Zauber (ohne die automatisch erlernten Basiszauber). */
 	spells: string[];
+	equipment: {
+		items: OwnedItem[];
+		/** Zähler für eindeutige Schlüssel neuer Gegenstände. */
+		nextKey: number;
+	};
 	characteristics: {
 		mode?: CharacteristicMode;
 		/** Frei gewählte bzw. eingetragene Charakteristik je Platz. */
@@ -115,6 +121,7 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			stunts: [],
 			techniques: [],
 			spells: [],
+			equipment: { items: [], nextKey: 1 },
 			characteristics: { picks: {}, rolls: {}, rerolledSlots: {} },
 			age: { youngMalus: {}, maturity: {}, atrophia: {}, senility: {} },
 			profession: { name: '', skills: [], heroSlots: {} },

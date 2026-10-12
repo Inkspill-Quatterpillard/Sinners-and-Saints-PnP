@@ -4,18 +4,70 @@
 			"id": "charakteristik",
 			"name": "Charakteristik",
 			"defaultEnabled": true,
-			"source": { "file": "Charaktererstellung/Charakteristik.md" }
+			"source": {
+				"file": "Charaktererstellung/Charakteristik.md"
+			}
 		},
 		{
 			"id": "besondereHerkunft",
 			"name": "Besondere Herkunft",
 			"defaultEnabled": false,
-			"source": { "file": "Charaktererstellung/Herkunft.md" }
+			"source": {
+				"file": "Charaktererstellung/Herkunft.md"
+			}
 		}
 	],
 	"settings": [
-		{ "id": "standard", "name": "Standard" },
-		{ "id": "fallout", "name": "Fallout" }
+		{
+			"id": "standard",
+			"name": "Standard",
+			"currency": {
+				"kroneValue": 100,
+				"units": [
+					{
+						"id": "gulden",
+						"name": "Gulden",
+						"short": "G",
+						"value": 10000
+					},
+					{
+						"id": "krone",
+						"name": "Kronen",
+						"short": "K",
+						"value": 100
+					},
+					{
+						"id": "pfennig",
+						"name": "Pfennig",
+						"short": "Pf",
+						"value": 1
+					}
+				],
+				"source": {
+					"file": "Charaktererstellung/Ausstattung.md",
+					"section": "Währung im Kaiserreich"
+				}
+			}
+		},
+		{
+			"id": "fallout",
+			"name": "Fallout",
+			"currency": {
+				"kroneValue": 1,
+				"units": [
+					{
+						"id": "kronkorken",
+						"name": "Kronkorken",
+						"short": "KK",
+						"value": 1
+					}
+				],
+				"provisional": {
+					"question": "F1",
+					"note": "Für Fallout fehlt eine eigene Status-/Geldtabelle; die Beträge der Statustabelle gelten 1:1 in Kronkorken."
+				}
+			}
+		}
 	],
 	"defaultSetting": "standard"
 }

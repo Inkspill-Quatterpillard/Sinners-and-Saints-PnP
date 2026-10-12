@@ -3,6 +3,7 @@ import type {
 	AttributeDef,
 	CharacteristicDef,
 	CombatRules,
+	EquipmentDef,
 	MagicRules,
 	OriginDef,
 	ProfessionRules,
@@ -10,7 +11,9 @@ import type {
 	RuleData,
 	SecondaryRules,
 	SkillDef,
+	SettingDef,
 	SpeciesDef,
+	StatusTable,
 	StuntDef
 } from './types';
 import religionen from './data/religionen.json';
@@ -19,6 +22,8 @@ import herkuenfte from './data/herkuenfte.json';
 import kunststuecke from './data/kunststuecke.json';
 import kampf from './data/kampf.json';
 import zauber from './data/zauber.json';
+import status from './data/status.json';
+import ausruestung from './data/ausruestung.json';
 import profession from './data/profession.json';
 import alter from './data/alter.json';
 import fertigkeiten from './data/fertigkeiten.json';
@@ -36,7 +41,7 @@ export const ruleData: RuleData = {
 	attributes: grundattribute.attributes as AttributeDef[],
 	attributeGeneration: grundattribute.generation,
 	optionalRules: optionen.optionalRules,
-	settings: optionen.settings,
+	settings: optionen.settings as SettingDef[],
 	defaultSetting: optionen.defaultSetting,
 	species: spezies.species as SpeciesDef[],
 	secondary: sekundaerattribute as SecondaryRules,
@@ -54,5 +59,7 @@ export const ruleData: RuleData = {
 	origins: herkuenfte.origins as OriginDef[],
 	stunts: kunststuecke.stunts as StuntDef[],
 	combat: kampf as CombatRules,
-	magic: zauber as MagicRules
+	magic: zauber as MagicRules,
+	statusTable: status as StatusTable,
+	equipment: ausruestung.items as EquipmentDef[]
 };

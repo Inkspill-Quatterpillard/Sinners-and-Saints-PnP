@@ -1,6 +1,6 @@
 # 14 — Ausstattung
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,8 +10,8 @@ Aus dem Status ergeben sich Stufe, Geldbeutel, Tagesgeld und Besitztümer. Der S
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Die Status-Tabelle steht in den Regeldaten (aus `Ausstattung.md`). Die Besitztümer folgen der Formel, nicht den Spannen.
-- [ ] Die Währung (1 Gulden = 100 Kronen, 1 Krone = 100 Pfennig) wird umgerechnet, angezeigt und eingegeben.
-- [ ] Die Kataloge aus `Ausrüstung/*.md` sind je Setting erfasst (Standard und Fallout), mit Schaden, Modifikator, Länge, RS, Preis und Besonderheiten, soweit vorhanden.
-- [ ] Freie Einträge mit Name, Preis und Notiz sind möglich.
-- [ ] Das Restgeld wird angezeigt. Überziehen ergibt eine Warnung, keinen Fehler.
+- [x] Die Status-Tabelle steht in den Regeldaten (aus `Ausstattung.md`). Die Besitztümer folgen der Formel, nicht den Spannen.
+- [x] Die Währung (1 Gulden = 100 Kronen, 1 Krone = 100 Pfennig) wird umgerechnet, angezeigt und eingegeben.
+- [x] Die Kataloge aus `Ausrüstung/*.md` sind je Setting erfasst (Standard und Fallout), mit Schaden, Modifikator, Länge, RS, Preis und Besonderheiten, soweit vorhanden.
+- [x] Freie Einträge mit Name, Preis und Notiz sind möglich.
+- [x] Das Restgeld wird angezeigt. Überziehen ergibt eine Warnung, keinen Fehler.

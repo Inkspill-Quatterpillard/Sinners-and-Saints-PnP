@@ -43,5 +43,6 @@ export const messages = {
 		`${style}: Ein Kampfstil verlangt ${from} Punkte in einer passenden Kampffertigkeit (Nah- bzw. Fernkampf).`,
 	spellsExceeded: (discipline: string, total: number) =>
 		`${discipline}: Die gewählten Zauber überschreiten das Kontingent (${total} Zauber, Stufen und Höchstzahlen laut Tabelle). Entferne Zauber oder steigere die Fertigkeit.`,
+	overspent: 'Die Ausrüstung kostet mehr, als im Geldbeutel ist. Das ist erlaubt, wenn der Spielleiter zustimmt.',
 	characteristicForbidden: 'Durch „Eherner Wille“ (keine Charakteristik) darf keine Charakteristik gewählt werden.'
 };

@@ -1,0 +1,77 @@
+{
+	"source": {
+		"file": "Charaktererstellung/Ausstattung.md",
+		"section": "Geld und Besitz"
+	},
+	"stages": [
+		{
+			"id": "mittellos",
+			"name": "Mittellos",
+			"min": null,
+			"max": 0,
+			"purse": 0.15,
+			"daily": 0.05,
+			"possessions": {
+				"factor": 0,
+				"text": "Keine"
+			}
+		},
+		{
+			"id": "arm",
+			"name": "Arm",
+			"min": 1,
+			"max": 2,
+			"purse": 3,
+			"daily": 0.5,
+			"possessions": {
+				"factor": 50
+			}
+		},
+		{
+			"id": "durchschnittlich",
+			"name": "Durchschnittlich",
+			"min": 3,
+			"max": 9,
+			"purse": 10,
+			"daily": 1,
+			"possessions": {
+				"factor": 250
+			}
+		},
+		{
+			"id": "wohlhabend",
+			"name": "Wohlhabend",
+			"min": 10,
+			"max": 17,
+			"purse": 30,
+			"daily": 3,
+			"possessions": {
+				"factor": 2500
+			}
+		},
+		{
+			"id": "vornehm",
+			"name": "Vornehm",
+			"min": 18,
+			"max": 19,
+			"purse": 120,
+			"daily": 10,
+			"possessions": {
+				"factor": 10000
+			}
+		},
+		{
+			"id": "kaiserlich",
+			"name": "Kaiserlich",
+			"min": 20,
+			"max": null,
+			"purse": 400,
+			"daily": 25,
+			"possessions": {
+				"fixed": 5000000,
+				"text": "5.000.000+ Kronen"
+			}
+		}
+	],
+	"note": "Besitztümer nach der Formel Status × Faktor (Regelfrage W9); die Spannen im Regelwerk sind nur grobe Werte."
+}

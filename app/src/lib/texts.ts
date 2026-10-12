@@ -33,7 +33,8 @@ export const t = {
 		senility: 'Vergreisung',
 		stunts: 'Kunststücke',
 		combat: 'Kampf',
-		magic: 'Zauber'
+		magic: 'Zauber',
+		equipment: 'Ausstattung'
 	} as Record<string, string>,
 	previousStep: '← Zurück',
 	nextStep: 'Weiter →',
@@ -209,6 +210,31 @@ export const t = {
 		tier: (tier: number) => `Stufe ${['', 'I', 'II', 'III'][tier]}`,
 		provisional:
 			'Vorläufig: Die Tabelle der Zauberkontingente folgt Charaktererstellung.md, bis der Autor die Abweichung zu Magie_erlernen.md klärt (Regelfrage W6).'
+	},
+	equipment: {
+		intro:
+			'Dein Status bestimmt Geldbeutel, Tagesgeld und Besitztümer. Rüste dich aus dem Katalog aus oder trage eigene Gegenstände ein. Die App zieht das Geld nicht zwingend ab, sie zeigt dir aber, was übrig bleibt.',
+		stage: 'Stufe',
+		status: (v: number) => `Status ${v}`,
+		purse: 'Geldbeutel',
+		daily: 'Tagesgeld',
+		possessions: 'Besitztümer',
+		remaining: 'Übrig',
+		owned: 'Deine Ausrüstung',
+		nothing: 'Noch nichts eingetragen.',
+		range: (low: string, high: string) => `Preisspanne ${low} – ${high}`,
+		converted: 'Preis aus einem anderen Setting umgerechnet',
+		quantity: 'Menge',
+		quantityOf: (name: string) => `Menge ${name}`,
+		priceOf: (name: string) => `Preis ${name}`,
+		remove: (name: string) => `${name} entfernen`,
+		freeName: 'Eigener Gegenstand',
+		freePrice: 'Preis, z. B. 3 K 20 Pf',
+		addFree: 'Eintragen',
+		catalog: 'Katalog',
+		groups: { melee: 'Nahkampf', ranged: 'Fernkampf', armor: 'Rüstungen', shield: 'Schilde', gear: 'Ausrüstung' },
+		search: 'Im Katalog suchen',
+		add: 'Hinzufügen'
 	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',
