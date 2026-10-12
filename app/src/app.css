@@ -66,3 +66,27 @@ label {
 	display: grid;
 	gap: 0.25rem;
 }
+
+@media print {
+	:root {
+		--bg: #fff;
+		--surface: #fff;
+		--text: #000;
+		--muted: #444;
+		--line: #bbb;
+		--accent: #000;
+		color-scheme: light;
+	}
+	body > div > header,
+	.no-print {
+		display: none !important;
+	}
+	main {
+		max-width: none !important;
+		padding: 0 !important;
+	}
+	@page {
+		size: A4;
+		margin: 12mm;
+	}
+}

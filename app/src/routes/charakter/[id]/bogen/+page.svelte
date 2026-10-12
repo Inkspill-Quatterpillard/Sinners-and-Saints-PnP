@@ -79,6 +79,7 @@
 		</p>
 		<p class="links">
 			<a href="/charakter/{view.id}">{view.status === 'finished' ? t.live.editCreation : t.live.toCreation}</a>
+			· <a href="/charakter/{view.id}/druck">{t.print.open}</a>
 		</p>
 		{#if view.ruleDataChanged}<p class="hint">{t.live.ruleDataChanged}</p>{/if}
 		{#if view.status !== 'finished'}

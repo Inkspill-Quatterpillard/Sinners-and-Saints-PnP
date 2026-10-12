@@ -1,6 +1,6 @@
 # 22 — Druckbogen
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,6 +10,6 @@ Ein Spieler erzeugt aus einem Charakter eine druckbare Ansicht und druckt sie od
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Die Druckansicht enthält Identität, Grundattribute, Sekundärattribute, Fertigkeiten mit Halb- und Fünftelwerten, Heldenfertigkeiten, Kunststücke, Techniken, Stile, Zauber, Ausstattung, Vorgeschichte und den aktuellen Spielstand.
-- [ ] Ein Druck-CSS sorgt für ein sauberes Layout auf A4, ohne App-Navigation.
-- [ ] Die Ansicht wird von Hand per Testdruck bzw. PDF-Export geprüft.
+- [x] Die Druckansicht enthält Identität, Grundattribute, Sekundärattribute, Fertigkeiten mit Halb- und Fünftelwerten, Heldenfertigkeiten, Kunststücke, Techniken, Stile, Zauber, Ausstattung, Vorgeschichte und den aktuellen Spielstand.
+- [x] Ein Druck-CSS sorgt für ein sauberes Layout auf A4, ohne App-Navigation.
+- [x] Die Ansicht wird von Hand per Testdruck bzw. PDF-Export geprüft.

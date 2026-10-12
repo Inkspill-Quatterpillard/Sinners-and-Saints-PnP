@@ -400,6 +400,25 @@ export const t = {
 		imported: (name: string) => `„${name}“ wurde importiert.`,
 		ruleDataChanged: 'Neue Regeln: bitte prüfen'
 	},
+	print: {
+		back: 'Zurück zum Bogen',
+		print: 'Drucken / als PDF speichern',
+		open: 'Druckbogen',
+		profession: 'Profession',
+		attributes: 'Grundattribute',
+		values: 'Werte',
+		woundThreshold: 'Wundschwelle',
+		staStart: 'STA beim Start',
+		dodge: 'Ausweichen',
+		woundMalus: 'Wundenmalus',
+		skills: 'Fertigkeiten',
+		professionMarked: 'Fett: Professionsfertigkeiten bzw. gesetzte Heldenfertigkeiten.',
+		heroSkills: 'Heldenfertigkeiten',
+		specials: 'Besonderheiten',
+		basic: 'Basiszauber',
+		equipment: 'Ausrüstung',
+		writing: 'mit Schrift'
+	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',
 		choose: 'Religion'

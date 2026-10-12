@@ -18,7 +18,7 @@
 	<meta name="theme-color" content="#1b1a1f" />
 </svelte:head>
 
-<header>
+<header class="no-print">
 	<a href="/" class="brand">{t.appTitle} <span>{t.appSubtitle}</span></a>
 	<a href="/nachschlagen" class="nav">{t.lookup.nav}</a>
 </header>
