@@ -24,6 +24,8 @@ export interface DisciplineView {
 	/** Automatisch erlernte Basiszauber. */
 	basics: string[];
 	chosen: string[];
+	/** Zauber, die sich jetzt noch hinzuwählen lassen (Kontingent, Stufe und Höchstzahlen beachtet). */
+	selectable: string[];
 }
 
 export interface MagicStepView {
@@ -91,7 +93,8 @@ export function evaluateMagic(d: Derivation, skills: SkillView[]): MagicStepView
 				value: skill?.value,
 				contingent,
 				basics: learned ? own.filter((s) => s.tier === 0).map((s) => s.id) : [],
-				chosen
+				chosen,
+				selectable: own.filter((s) => !chosen.includes(s.id) && fits(rd, ok, s.id, contingent)).map((s) => s.id)
 			};
 		});
 	d.steps.push({ id: 'magic', status });

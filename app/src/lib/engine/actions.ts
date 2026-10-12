@@ -43,7 +43,6 @@ export type Action =
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
 	const next = structuredClone(character);
-	next.ruleDataVersion = ruleData.version;
 	const basis = next.basis;
 	switch (action.type) {
 		case 'setName':
@@ -150,6 +149,11 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'removeSpecialization':
 			applySkillsAction(basis, action, [...ruleData.skills, ...ruleData.heroSkills]);
 			break;
+	}
+	// Die Regeldaten-Version gilt als übernommen, sobald der Charakter mit ihr nicht (mehr) ungültig ist.
+	// So bleibt der Hinweis auf geänderte Regeldaten bestehen, bis die betroffenen Entscheidungen angepasst sind.
+	if (next.ruleDataVersion !== ruleData.version && !computeView(next, ruleData).steps.some((s) => s.status === 'invalid')) {
+		next.ruleDataVersion = ruleData.version;
 	}
 	return next;
 }

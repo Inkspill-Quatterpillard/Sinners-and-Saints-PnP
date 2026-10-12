@@ -7,7 +7,6 @@
 	let { view, dispatch }: { view: CharacterView; dispatch: (a: Action) => void } = $props();
 
 	const learned = $derived(view.magicStep.disciplines.filter((x) => x.basics.length > 0 || x.contingent.total > 0));
-	const tierOf = (id: string) => ruleData.magic.spells.find((s) => s.id === id)?.tier ?? 0;
 </script>
 
 <p class="intro">{t.magic.intro}</p>
@@ -38,15 +37,13 @@
 				<h4 class:locked={tier > c.maxTier}>{t.magic.tier(tier)}</h4>
 				{#each list as s (s.id)}
 					{@const chosen = d.chosen.includes(s.id)}
-					{@const tierCount = d.chosen.filter((id) => tierOf(id) === tier).length}
-					{@const tierFull = (tier === 2 && tierCount >= c.tier2) || (tier === 3 && tierCount >= c.tier3)}
 					<details class="spell" class:chosen class:locked={tier > c.maxTier}>
 						<summary>
 							<input
 								type="checkbox"
 								aria-label={s.name}
 								checked={chosen}
-								disabled={!chosen && (tier > c.maxTier || d.chosen.length >= c.total || tierFull)}
+								disabled={!chosen && !d.selectable.includes(s.id)}
 								onchange={() => dispatch({ type: 'toggleSpell', spell: s.id })}
 								onclick={(e) => e.stopPropagation()}
 							/>

@@ -163,6 +163,7 @@ export interface SecondaryRules {
 	magicPointsWilDivisor: number;
 	magicPointsMentalDivisor: number;
 	woundThresholdDivisor: number;
+	dodgeDivisor: number;
 	luckDie: number;
 	movementTable: ThresholdTable;
 	damageBonusTable: ThresholdTable;
@@ -388,6 +389,23 @@ export interface ConditionDef {
 	source: SourceRef;
 }
 
+/** Regeln des lebenden Bogens: Stabilität, Überziehen von MP, Ruhe und Wunden. */
+export interface PlayRules {
+	stability: { panicAbove: number; breakdownAbove: number; madnessBelowStartFraction: number; source: SourceRef };
+	magicOverdraw: { doubleFromPoint: number; source: SourceRef };
+	rest: {
+		fullTpAfterHours: number;
+		halfMpAfterHours: number;
+		fullMpAfterHours: number;
+		restPhaseHours: number;
+		source: SourceRef;
+	};
+	meditationDie: number;
+	/** Spalte der Ausrüstungstabellen, deren Zahl der Rüstungsschutz ist. */
+	armorColumn: string;
+	wounds: { twoWoundsFromFractionOfTp: number; malusDie: number; source: SourceRef };
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -412,4 +430,5 @@ export interface RuleData {
 	equipment: EquipmentDef[];
 	background: BackgroundTables;
 	conditions: ConditionDef[];
+	play: PlayRules;
 }

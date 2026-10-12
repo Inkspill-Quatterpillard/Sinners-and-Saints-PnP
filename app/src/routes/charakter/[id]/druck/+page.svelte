@@ -77,8 +77,8 @@
 						{@const v = view.attributes[a.id].effective}
 						<tr
 							><th>{a.id}</th><td>{a.name}</td><td class="num">{v ?? ''}</td><td class="num small"
-								>{v !== undefined ? Math.floor(v / 2) : ''}</td
-							><td class="num small">{v !== undefined ? Math.floor(v / 5) : ''}</td></tr
+								>{view.attributes[a.id].half ?? ''}</td
+							><td class="num small">{view.attributes[a.id].fifth ?? ''}</td></tr
 						>
 					{/each}
 				</tbody>

@@ -3,6 +3,7 @@
 	import type { Action, CharacterView } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
+	import { parseCount } from '$lib/format';
 
 	let { view, dispatch }: { view: CharacterView; dispatch: (a: Action) => void } = $props();
 
@@ -16,8 +17,8 @@
 
 	function loseStability(e: SubmitEvent) {
 		e.preventDefault();
-		const amount = Math.floor(Number(staLoss));
-		if (!amount || amount < 0) return;
+		const amount = parseCount(staLoss);
+		if (!amount) return;
 		const before = live.conditions;
 		dispatch({ type: 'loseStability', amount, inCombat });
 		const added = view.live.conditions.filter((c) => !before.includes(c));
@@ -28,8 +29,8 @@
 
 	function spendMp(e: SubmitEvent) {
 		e.preventDefault();
-		const amount = Math.floor(Number(mpCost));
-		if (!amount || amount < 0) return;
+		const amount = parseCount(mpCost);
+		if (!amount) return;
 		const tpBefore = live.tp;
 		const mpBefore = live.mp;
 		dispatch({ type: 'spendMp', amount });
@@ -39,8 +40,9 @@
 	}
 
 	function rest(h: number) {
+		const r = ruleData.play.rest;
 		dispatch({ type: 'rest', hours: h });
-		message = t.live.rested(h);
+		message = t.live.rested(h >= r.fullMpAfterHours ? 'sleep' : h >= r.restPhaseHours ? 'rest' : 'pause');
 	}
 </script>
 
@@ -64,9 +66,9 @@
 
 	<h3>{t.live.rest}</h3>
 	<div class="row">
-		<button onclick={() => rest(1)}>{t.live.pause}</button>
-		<button onclick={() => rest(4)}>{t.live.restPhase}</button>
-		<button onclick={() => rest(8)}>{t.live.sleep}</button>
+		<button onclick={() => rest(ruleData.play.rest.fullTpAfterHours)}>{t.live.pause}</button>
+		<button onclick={() => rest(ruleData.play.rest.restPhaseHours)}>{t.live.restPhase}</button>
+		<button onclick={() => rest(ruleData.play.rest.fullMpAfterHours)}>{t.live.sleep}</button>
 	</div>
 
 	<h3>{t.live.meditation}</h3>

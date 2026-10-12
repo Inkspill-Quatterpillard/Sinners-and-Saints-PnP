@@ -57,6 +57,7 @@
 			: []
 	);
 	const conditionGroups = ['body', 'mind', 'other'] as const;
+	const short = (key: string) => ruleData.secondary.secondaryAttributes.find((s) => s.key === key)?.short ?? key;
 	const secondaryKeys = ['movement', 'dodge', 'damageBonus', 'woundThreshold'] as const;
 </script>
 
@@ -90,25 +91,25 @@
 	<section class="counters">
 		<Counter
 			label={t.live.tp}
-			short="TP"
+			short={short('tp')}
 			value={live.tp}
 			max={live.maxTp}
 			warn={live.tp <= live.woundThreshold}
-			onchange={(d) => setCurrent('tp', Math.max(0, Math.min(live.maxTp, live.tp + d)))}
+			onchange={(d) => setCurrent('tp', live.tp + d)}
 			onset={(v) => setCurrent('tp', v)}
 		/>
 		<Counter
 			label={t.live.stability}
-			short="STA"
+			short={short('stability')}
 			value={live.stability}
 			max={live.maxStability}
-			warn={live.stabilityStart !== undefined && live.stability < live.stabilityStart / 2}
+			warn={live.stabilityWarning}
 			onchange={(d) => setCurrent('stability', live.stability + d)}
 			onset={(v) => setCurrent('stability', v)}
 		/>
 		<Counter
 			label={t.live.mp}
-			short="MP"
+			short={short('magicPoints')}
 			value={live.mp}
 			max={live.maxMp}
 			warn={live.mp < 0}
@@ -117,7 +118,7 @@
 		/>
 		<Counter
 			label={t.live.luck}
-			short="GLÜ"
+			short={short('luck')}
 			value={live.luck ?? 0}
 			onchange={(d) => setCurrent('luck', (live.luck ?? 0) + d)}
 			onset={(v) => setCurrent('luck', v)}

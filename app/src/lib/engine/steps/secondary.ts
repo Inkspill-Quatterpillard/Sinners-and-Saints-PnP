@@ -57,7 +57,7 @@ export function evaluateSecondary(d: Derivation): { secondary: Record<SecondaryK
 			floor(WIL! / r.magicPointsWilDivisor) + floor(Math.max(...(mental as number[])) / r.magicPointsMentalDivisor);
 	}
 	if (all(GES, KON)) base.movement = lookup(r.movementTable, GES! + KON!);
-	if (all(GES, WAH)) base.dodge = floor((GES! + WAH!) / 2);
+	if (all(GES, WAH)) base.dodge = floor((GES! + WAH!) / r.dodgeDivisor);
 	if (all(STR)) base.damageBonus = lookup(r.damageBonusTable, STR!);
 	const luck: LuckView = { advantage: d.luckAdvantages > 0, dice: 1 + d.luckAdvantages, roll: d.character.basis.luck };
 	base.luck = luckFromRoll(luck.roll, luck.dice);

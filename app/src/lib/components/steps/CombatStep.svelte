@@ -2,12 +2,12 @@
 	import type { Action, CharacterView } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
+	import { roman } from '$lib/format';
 
 	let { view, dispatch }: { view: CharacterView; dispatch: (a: Action) => void } = $props();
 
 	const step = $derived(view.combatStep);
 	const unlocked = $derived(step.skills.filter((s) => s.allowed > 0));
-	const roman = ['', 'I', 'II', 'III'];
 	const anyStyle = $derived(step.styleAllowed.melee || step.styleAllowed.ranged);
 </script>
 
@@ -24,11 +24,11 @@
 			<strong>{skill.name}</strong> ({skill.value}) · {t.combat.unlocked(
 				skill.chosen.length,
 				skill.allowed,
-				roman[skill.maxTier]
+				roman(skill.maxTier)
 			)}
 		</summary>
 		{#each [1, 2, 3] as tier (tier)}
-			<h4 class:locked={tier > skill.maxTier}>{t.combat.tier(roman[tier])}</h4>
+			<h4 class:locked={tier > skill.maxTier}>{t.combat.tier(roman(tier))}</h4>
 			{#each techniques.filter((x) => x.tier === tier) as tech (tech.id)}
 				{@const chosen = skill.chosen.includes(tech.id)}
 				<label class="tech" class:chosen class:locked={tier > skill.maxTier}>

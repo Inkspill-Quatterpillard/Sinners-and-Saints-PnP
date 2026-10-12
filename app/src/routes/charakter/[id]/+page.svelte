@@ -97,7 +97,7 @@
 		{/if}
 	</div>
 
-	<nav class="steps" aria-label="Schritte der Erstellung">
+	<nav class="steps" aria-label={t.stepsLabel}>
 		{#each view.steps as step (step.id)}
 			<button
 				class="step {step.status}"

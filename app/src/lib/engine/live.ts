@@ -1,4 +1,4 @@
-import type { RuleData, SecondaryKey } from '$lib/ruleData';
+import type { ResourcePeriod, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character, PlayState, Roll } from './character';
 import type { CounterDef, ResourceDef } from './derivation';
 import type { OwnedItemView } from './steps/equipment';
@@ -50,6 +50,10 @@ export interface LiveView {
 	mp: number;
 	maxMp: number;
 	luck?: number;
+	/** Stabilität unter der Hälfte des Startwerts: schleichender Wahnsinn droht. */
+	stabilityWarning: boolean;
+	/** Fester Bonus auf jeden Glückswurf (z. B. +2 für Kinder). */
+	luckBonus: number;
 	conditions: string[];
 	overrides: Partial<Record<OverrideKey, number>>;
 	/** Geld in der kleinsten Einheit des Settings. */
@@ -63,15 +67,15 @@ export interface LiveView {
 /** Was der lebende Bogen aus der übrigen Ansicht braucht. */
 export interface LiveContext {
 	remainingMoney: number;
+	/** Fester Bonus auf Glück (z. B. +2 für Kinder), der auch beim Neuwürfeln im Spiel gilt. */
+	luckBonus: number;
 	items: OwnedItemView[];
 	resources: ResourceDef[];
 	counters: CounterDef[];
 }
 
-function armorOf(items: OwnedItemView[]): number {
-	return items
-		.filter((i) => i.equipped && i.stats['Rüstungsschutz'])
-		.reduce((sum, i) => sum + (parseInt(i.stats['Rüstungsschutz'], 10) || 0), 0);
+function armorOf(items: OwnedItemView[], column: string): number {
+	return items.filter((i) => i.equipped && i.stats[column]).reduce((sum, i) => sum + (parseInt(i.stats[column], 10) || 0), 0);
 }
 
 export function createPlayState(): PlayState {
@@ -94,39 +98,42 @@ export function applyOverrides(play: PlayState, secondary: Record<SecondaryKey, 
 	}
 }
 
-export function computeLive(play: PlayState, secondary: Record<SecondaryKey, SecondaryValue>, ctx: LiveContext): LiveView {
+export function computeLive(
+	play: PlayState,
+	secondary: Record<SecondaryKey, SecondaryValue>,
+	ctx: LiveContext,
+	rd: RuleData
+): LiveView {
 	const o = play.overrides;
 	const maxTp = o.maxTp ?? Math.max(0, (secondary.tp.value ?? 0) - play.woundMalus);
 	const maxStability = o.maxStability ?? secondary.stability.value ?? 0;
 	const maxMp = o.maxMp ?? secondary.magicPoints.value ?? 0;
+	const stability = Math.min(play.stability ?? maxStability, maxStability);
+	const start = play.stabilityStart;
 	return {
 		tp: Math.min(play.tp ?? maxTp, maxTp),
 		maxTp,
 		woundThreshold: secondary.woundThreshold.value ?? 0,
 		woundMalus: play.woundMalus,
 		pendingWounds: play.pendingWounds,
-		stability: Math.min(play.stability ?? maxStability, maxStability),
+		stability,
 		maxStability,
 		stabilityStart: play.stabilityStart,
 		mp: Math.min(play.mp ?? maxMp, maxMp),
 		maxMp,
 		luck: play.luck ?? secondary.luck.value,
+		stabilityWarning: start !== undefined && stability < start * rd.play.stability.madnessBelowStartFraction,
+		luckBonus: ctx.luckBonus,
 		conditions: play.conditions,
 		overrides: o,
 		money: play.money ?? ctx.remainingMoney,
-		armor: armorOf(ctx.items),
+		armor: armorOf(ctx.items, rd.play.armorColumn),
 		resources: ctx.resources.map((r) => ({ ...r, used: Math.min(r.uses, play.resourceUses?.[r.id] ?? 0) })),
 		counters: ctx.counters.map((c) => ({ ...c, value: Math.max(0, Math.min(c.max, play.counters?.[c.id] ?? c.start)) }))
 	};
 }
 
-/** Panik ab mehr als 5 Stabilitätsverlust im Kampf, Zusammenbruch ab mehr als 10 auf einmal. */
-const PANIC_ABOVE = 5;
-const BREAKDOWN_ABOVE = 10;
-/** Ab dem fünften überzogenen Magiepunkt kostet jeder Punkt 2 TP. */
-const OVERDRAW_DOUBLE_FROM = 5;
-
-function resetResources(play: PlayState, live: LiveView, periods: string[]): void {
+function resetResources(play: PlayState, live: LiveView, periods: ResourcePeriod[]): void {
 	const uses = { ...play.resourceUses };
 	for (const r of live.resources) if (periods.includes(r.per)) uses[r.id] = 0;
 	play.resourceUses = uses;
@@ -145,9 +152,10 @@ export function applyLiveAction(
 	action: LiveAction,
 	live: LiveView,
 	canFinish: boolean,
-	_rd: RuleData
+	rd: RuleData
 ): void {
 	const play = character.play;
+	const rules = rd.play;
 	switch (action.type) {
 		case 'finishCreation':
 			if (!canFinish) return;
@@ -164,12 +172,18 @@ export function applyLiveAction(
 			if (!amount) return;
 			const tp = Math.max(0, live.tp - amount);
 			play.tp = tp;
+			const hadWound = play.conditions.includes('wunde') || play.pendingWounds > 0;
 			// Mindestens die Hälfte der maximalen TP auf einen Schlag gibt zwei Wunden, über der Wundschwelle eine.
-			const wounds = amount >= live.maxTp / 2 ? 2 : amount > live.woundThreshold ? 1 : 0;
+			let wounds = amount >= live.maxTp * rules.wounds.twoWoundsFromFractionOfTp ? 2 : amount > live.woundThreshold ? 1 : 0;
+			if (amount > live.maxTp) addCondition(play, 'tot');
+			else if (tp === 0 && hadWound) addCondition(play, 'sterbend');
+			else if (tp === 0) {
+				// Ohne vorherige Wunde kampfunfähig; nach dem Kampf folgt ebenfalls eine schwere Wunde.
+				addCondition(play, 'kampfunfaehig');
+				wounds = Math.max(wounds, 1);
+			}
 			play.pendingWounds += wounds;
 			if (wounds) addCondition(play, 'wunde');
-			if (amount > live.maxTp) addCondition(play, 'tot');
-			else if (tp === 0) addCondition(play, play.conditions.includes('wunde') ? 'sterbend' : 'kampfunfaehig');
 			break;
 		}
 		case 'endCombat': {
@@ -186,9 +200,15 @@ export function applyLiveAction(
 			if (action.value === undefined) delete play.overrides[action.key];
 			else play.overrides[action.key] = action.value;
 			break;
-		case 'setCurrent':
-			play[action.key] = action.value;
+		case 'setCurrent': {
+			// TP zwischen 0 und Maximum, Stabilität und MP höchstens beim Maximum (MP dürfen negativ werden).
+			const v = Math.round(action.value);
+			if (action.key === 'tp') play.tp = Math.max(0, Math.min(live.maxTp, v));
+			else if (action.key === 'stability') play.stability = Math.min(live.maxStability, v);
+			else if (action.key === 'mp') play.mp = Math.min(live.maxMp, v);
+			else play.luck = v;
 			break;
+		}
 		case 'setStabilityStart':
 			play.stabilityStart = action.value;
 			break;
@@ -196,10 +216,11 @@ export function applyLiveAction(
 			const amount = Math.max(0, Math.floor(action.amount));
 			const stability = live.stability - amount;
 			play.stability = stability;
-			if (action.inCombat && amount > PANIC_ABOVE) addCondition(play, 'panik');
-			if (amount > BREAKDOWN_ABOVE) addCondition(play, 'mentalerZusammenbruch');
+			if (action.inCombat && amount > rules.stability.panicAbove) addCondition(play, 'panik');
+			if (amount > rules.stability.breakdownAbove) addCondition(play, 'mentalerZusammenbruch');
 			const start = play.stabilityStart;
-			if (start !== undefined && stability < start / 2) addCondition(play, 'schleichenderWahnsinn');
+			if (start !== undefined && stability < start * rules.stability.madnessBelowStartFraction)
+				addCondition(play, 'schleichenderWahnsinn');
 			break;
 		}
 		case 'spendMp': {
@@ -209,25 +230,27 @@ export function applyLiveAction(
 			const after = Math.max(0, -mp);
 			// Jeder überzogene Punkt kostet 1 TP, ab dem fünften überzogenen Punkt 2 TP.
 			let damage = 0;
-			for (let point = before + 1; point <= after; point++) damage += point >= OVERDRAW_DOUBLE_FROM ? 2 : 1;
+			for (let point = before + 1; point <= after; point++) damage += point >= rules.magicOverdraw.doubleFromPoint ? 2 : 1;
 			play.mp = mp;
 			if (damage) play.tp = Math.max(0, live.tp - damage);
 			break;
 		}
-		case 'rest':
-			if (action.hours >= 4) resetResources(play, live, ['rest']);
-			if (action.hours >= 1) delete play.tp;
-			if (action.hours >= 8) delete play.mp;
-			else if (action.hours >= 4) play.mp = Math.min(live.maxMp, live.mp + Math.floor(live.maxMp / 2));
-			if (action.luck) play.luck = Math.max(...action.luck.dice);
+		case 'rest': {
+			const r = rules.rest;
+			if (action.hours >= r.restPhaseHours) resetResources(play, live, ['rest']);
+			if (action.hours >= r.fullTpAfterHours) delete play.tp;
+			if (action.hours >= r.fullMpAfterHours) delete play.mp;
+			else if (action.hours >= r.halfMpAfterHours) play.mp = Math.min(live.maxMp, live.mp + Math.floor(live.maxMp / 2));
+			if (action.luck) play.luck = Math.max(...action.luck.dice) + live.luckBonus;
 			break;
+		}
 		case 'meditate': {
 			const gained = action.rolls.reduce((sum, r) => sum + r.dice[0] + action.bonus, 0);
 			play.mp = Math.min(live.maxMp, live.mp + gained);
 			break;
 		}
 		case 'rerollLuck':
-			play.luck = Math.max(...action.roll.dice);
+			play.luck = Math.max(...action.roll.dice) + live.luckBonus;
 			break;
 		case 'fumble':
 			play.luck = (live.luck ?? 0) + 1;

@@ -1,4 +1,5 @@
 import type { RuleData, SourceRef } from '$lib/ruleData';
+import { t } from '$lib/texts';
 
 export type LookupArea =
 	| 'spell'
@@ -26,8 +27,6 @@ export interface LookupEntry {
 	source?: SourceRef;
 }
 
-const ROMAN = ['Basis', 'I', 'II', 'III', 'IV'];
-
 /** Baut den Index aller nachschlagbaren Texte aus den Regeldaten. */
 export function buildLookup(rd: RuleData): LookupEntry[] {
 	const skillName = (id: string) => [...rd.skills, ...rd.heroSkills].find((s) => s.id === id)?.name ?? id;
@@ -37,7 +36,7 @@ export function buildLookup(rd: RuleData): LookupEntry[] {
 			key: `spell:${s.id}`,
 			area: 'spell',
 			name: s.name,
-			meta: [skillName(s.skill), s.tier === 0 ? 'Basiszauber' : `Stufe ${s.tier}`, s.kind].filter(Boolean).join(' · '),
+			meta: [skillName(s.skill), s.tier === 0 ? t.lookup.basicSpell : t.lookup.tier(s.tier), s.kind].filter(Boolean).join(' · '),
 			text: s.text,
 			source: s.source
 		});
@@ -47,19 +46,19 @@ export function buildLookup(rd: RuleData): LookupEntry[] {
 			key: `stunt:${s.id}`,
 			area: 'stunt',
 			name: s.name,
-			meta: `Stufe ${s.tier} (${s.tierName}) · ${s.prerequisites.map((p) => p.text).join(', ')}`,
+			meta: `${t.lookup.stuntTier(s.tier, s.tierName)} · ${s.prerequisites.map((p) => p.text).join(', ')}`,
 			text: s.text,
 			source: s.source
 		});
 	}
-	for (const t of rd.combat.techniques) {
+	for (const x of rd.combat.techniques) {
 		entries.push({
-			key: `technique:${t.id}`,
+			key: `technique:${x.id}`,
 			area: 'technique',
-			name: t.name,
-			meta: [skillName(t.skill), `Stufe ${ROMAN[t.tier]}`, t.kind, t.hands].filter(Boolean).join(' · '),
-			text: [t.flavor ? `_${t.flavor}_` : '', t.text].filter(Boolean).join('\n\n'),
-			source: t.source
+			name: x.name,
+			meta: [skillName(x.skill), t.lookup.romanTier(x.tier), x.kind, x.hands].filter(Boolean).join(' · '),
+			text: [x.flavor ? `_${x.flavor}_` : '', x.text].filter(Boolean).join('\n\n'),
+			source: x.source
 		});
 	}
 	for (const s of rd.combat.styles) {
@@ -67,7 +66,7 @@ export function buildLookup(rd: RuleData): LookupEntry[] {
 			key: `style:${s.id}`,
 			area: 'style',
 			name: s.name,
-			meta: s.kind === 'melee' ? 'Nahkampf' : 'Fernkampf',
+			meta: s.kind === 'melee' ? t.lookup.melee : t.lookup.ranged,
 			text: s.text,
 			source: s.source
 		});
@@ -88,7 +87,7 @@ export function buildLookup(rd: RuleData): LookupEntry[] {
 			key: `origin:${o.id}`,
 			area: 'origin',
 			name: o.name,
-			meta: `Besondere Herkunft ${o.number}`,
+			meta: t.lookup.origin(o.number),
 			text: [o.description, ...o.abilities.map((a) => `**${a.name}:** ${a.text}`), options, o.note ? `_${o.note}_` : '']
 				.filter(Boolean)
 				.join('\n\n'),
@@ -116,7 +115,7 @@ export function buildLookup(rd: RuleData): LookupEntry[] {
 			key: `skill:${s.id}`,
 			area: 'skill',
 			name: s.name,
-			meta: `${s.fraction === 'half' ? '½' : '⅕'} ${s.attributes.join('/')}${s.specialization ? ' · Spezialisierung notwendig' : ''}`,
+			meta: `${s.fraction === 'half' ? '½' : '⅕'} ${s.attributes.join('/')}${s.specialization ? ` · ${t.lookup.specializationNeeded}` : ''}`,
 			text: s.description,
 			source: s.source
 		});

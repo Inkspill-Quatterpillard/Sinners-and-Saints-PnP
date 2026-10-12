@@ -1,4 +1,5 @@
 // Texte, die der Regelkern in Hinweisen und Warnungen ausgibt, gesammelt an einer Stelle.
+import { roman } from '$lib/format';
 export const messages = {
 	speciesSource: (name: string) => `Spezies: ${name}`,
 	optionNeedsCharacteristic: (trait: string) =>
@@ -38,7 +39,7 @@ export const messages = {
 	tooManyStunts: (chosen: number, allowed: number) => `Es sind ${chosen} Kunststücke gewählt, erlaubt sind ${allowed}.`,
 	stuntUnmet: (name: string, unmet: string[]) => `${name}: Voraussetzungen nicht erfüllt (${unmet.join(', ')}).`,
 	techniquesExceeded: (skill: string, chosen: number, allowed: number, maxTier: number) =>
-		`${skill}: ${chosen} Kampftechniken gewählt, erlaubt sind ${allowed}${maxTier ? ` bis Stufe ${['', 'I', 'II', 'III'][maxTier]}` : ''}. Entferne Techniken oder steigere die Fertigkeit.`,
+		`${skill}: ${chosen} Kampftechniken gewählt, erlaubt sind ${allowed}${maxTier ? ` bis Stufe ${roman(maxTier)}` : ''}. Entferne Techniken oder steigere die Fertigkeit.`,
 	styleNotUnlocked: (style: string, from: number) =>
 		`${style}: Ein Kampfstil verlangt ${from} Punkte in einer passenden Kampffertigkeit (Nah- bzw. Fernkampf).`,
 	spellsExceeded: (discipline: string, total: number) =>

@@ -117,7 +117,7 @@ export function createDerivation(character: Character, ruleData: RuleData, optio
 		secondary: Object.fromEntries(SECONDARY_KEYS.map((k) => [k, []])) as unknown as Derivation['secondary'],
 		secondaryCaps: {},
 		characteristicAllowance: { extra: 0, forbidden: false },
-		meditationDie: 6,
+		meditationDie: ruleData.play.meditationDie,
 		luckAdvantages: 0,
 		resources: [],
 		counters: [],

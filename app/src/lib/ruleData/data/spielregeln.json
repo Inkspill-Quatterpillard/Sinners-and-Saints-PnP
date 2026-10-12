@@ -1,0 +1,38 @@
+{
+	"stability": {
+		"panicAbove": 5,
+		"breakdownAbove": 10,
+		"madnessBelowStartFraction": 0.5,
+		"source": {
+			"file": "Geistige_Stabilität/Stabilität_im_Kampf.md",
+			"section": "Panik"
+		}
+	},
+	"magicOverdraw": {
+		"doubleFromPoint": 5,
+		"source": {
+			"file": "Magieregeln/Magiepunkte.md",
+			"section": "Magiepunkte überziehen"
+		}
+	},
+	"rest": {
+		"fullTpAfterHours": 1,
+		"halfMpAfterHours": 4,
+		"fullMpAfterHours": 8,
+		"restPhaseHours": 4,
+		"source": {
+			"file": "Magieregeln/Magiepunkte.md",
+			"section": "Magiepunkte regenerieren"
+		}
+	},
+	"meditationDie": 6,
+	"wounds": {
+		"twoWoundsFromFractionOfTp": 0.5,
+		"malusDie": 6,
+		"source": {
+			"file": "Kampfregeln/Trefferpunkte.md",
+			"section": "Wunden"
+		}
+	},
+	"armorColumn": "Rüstungsschutz"
+}

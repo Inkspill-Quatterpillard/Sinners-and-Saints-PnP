@@ -1,4 +1,5 @@
 // Alle sichtbaren Texte an einer Stelle, damit eine spätere Übersetzung möglich bleibt.
+import { roman } from '$lib/format';
 export const t = {
 	appTitle: 'Sinners and Saints',
 	appSubtitle: 'Charaktere',
@@ -20,6 +21,7 @@ export const t = {
 		valid: 'gültig',
 		invalid: 'ungültig'
 	},
+	stepsLabel: 'Schritte der Erstellung',
 	steps: {
 		options: 'Optionen',
 		attributes: 'Grundattribute',
@@ -205,11 +207,11 @@ export const t = {
 		none: 'Dein Charakter hat keine arkane Fertigkeit gelernt.',
 		contingent: (chosen: number, total: number, maxTier: number, tier2: number, tier3: number) =>
 			`${chosen} von ${total} Zaubern` +
-			(maxTier ? `, bis Stufe ${['', 'I', 'II', 'III'][maxTier]}` : '') +
+			(maxTier ? `, bis Stufe ${roman(maxTier)}` : '') +
 			(tier2 ? `, höchstens ${tier2} der Stufe II` : '') +
 			(tier3 ? `, höchstens ${tier3} der Stufe III` : ''),
 		basics: 'Basiszauber (automatisch)',
-		tier: (tier: number) => `Stufe ${['', 'I', 'II', 'III'][tier]}`,
+		tier: (tier: number) => `Stufe ${roman(tier)}`,
 		provisional:
 			'Vorläufig: Die Tabelle der Zauberkontingente folgt Charaktererstellung.md, bis der Autor die Abweichung zu Magie_erlernen.md klärt (Regelfrage W6).'
 	},
@@ -330,10 +332,10 @@ export const t = {
 		pause: '1 Stunde Pause',
 		restPhase: 'Ruhephase (4 Std.)',
 		sleep: '8 Stunden Schlaf',
-		rested: (h: number) =>
-			h >= 8
+		rested: (kind: 'pause' | 'rest' | 'sleep') =>
+			kind === 'sleep'
 				? 'TP und MP aufgefüllt.'
-				: h >= 4
+				: kind === 'rest'
 					? 'TP aufgefüllt, halbe MP regeneriert. Glück neu würfeln!'
 					: 'TP aufgefüllt; der Wundenmalus bleibt.',
 		meditation: 'Meditation',
@@ -357,6 +359,14 @@ export const t = {
 		newDay: 'Neuer Tag'
 	},
 	lookup: {
+		basicSpell: 'Basiszauber',
+		tier: (tier: number) => `Stufe ${tier}`,
+		romanTier: (tier: number) => `Stufe ${roman(tier)}`,
+		stuntTier: (tier: number, name: string) => `Stufe ${tier} (${name})`,
+		origin: (n: number) => `Besondere Herkunft ${n}`,
+		melee: 'Nahkampf',
+		ranged: 'Fernkampf',
+		specializationNeeded: 'Spezialisierung notwendig',
 		title: 'Nachschlagen',
 		nav: 'Nachschlagen',
 		search: 'Suchen, z. B. „Aura“ oder „Langbogen“',

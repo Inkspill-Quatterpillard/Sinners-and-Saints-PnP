@@ -30,6 +30,9 @@ import { evaluateProfession, warnLoweredHeroSkills, type ProfessionStepView, typ
 export interface AttributeView {
 	base?: number;
 	effective?: number;
+	/** Halb- und Fünftelwert (abgerundet) für Proben auf das Attribut. */
+	half?: number;
+	fifth?: number;
 	modifiers: Modifier[];
 }
 
@@ -112,7 +115,12 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		steps: d.steps,
 		issues: d.issues,
 		attributes: Object.fromEntries(
-			Object.entries(d.attributes).map(([id, s]) => [id, { base: s.base, effective: effective(s), modifiers: s.modifiers }])
+			Object.entries(d.attributes).map(([id, s]) => {
+				const value = effective(s);
+				const half = value === undefined ? undefined : Math.floor(value / 2);
+				const fifth = value === undefined ? undefined : Math.floor(value / 5);
+				return [id, { base: s.base, effective: value, half, fifth, modifiers: s.modifiers }];
+			})
 		) as Record<AttributeId, AttributeView>,
 		attributeStep: attributeStepView(d),
 		speciesStep,
@@ -138,12 +146,18 @@ export function computeView(character: Character, ruleData: RuleData): Character
 			(d.steps.some((s) => s.status === 'invalid') ||
 				(character.status === 'finished' && !d.steps.every((s) => s.status === 'valid'))),
 		meditationDie: d.meditationDie,
-		live: computeLive(character.play, secondary, {
-			remainingMoney: equipmentStep.remaining,
-			items: equipmentStep.items,
-			resources: d.resources,
-			counters: d.counters
-		}),
+		live: computeLive(
+			character.play,
+			secondary,
+			{
+				remainingMoney: equipmentStep.remaining,
+				luckBonus: secondary.luck.modifiers.reduce((sum, m) => sum + m.value, 0),
+				items: equipmentStep.items,
+				resources: d.resources,
+				counters: d.counters
+			},
+			ruleData
+		),
 		resources: d.resources,
 		counters: d.counters,
 		socialStatus,

@@ -8,6 +8,7 @@ import type {
 	EquipmentDef,
 	MagicRules,
 	OriginDef,
+	PlayRules,
 	ProfessionRules,
 	ReligionDef,
 	RuleData,
@@ -28,6 +29,7 @@ import status from './data/status.json';
 import ausruestung from './data/ausruestung.json';
 import vorgeschichte from './data/vorgeschichte.json';
 import zustaende from './data/zustaende.json';
+import spielregeln from './data/spielregeln.json';
 import profession from './data/profession.json';
 import alter from './data/alter.json';
 import fertigkeiten from './data/fertigkeiten.json';
@@ -67,5 +69,6 @@ export const ruleData: RuleData = {
 	statusTable: status as StatusTable,
 	equipment: ausruestung.items as EquipmentDef[],
 	background: vorgeschichte as BackgroundTables,
-	conditions: zustaende.conditions as ConditionDef[]
+	conditions: zustaende.conditions as ConditionDef[],
+	play: spielregeln as PlayRules
 };
