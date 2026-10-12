@@ -1,4 +1,5 @@
-import type { AgeRules, AttributeDef, RuleData, SecondaryRules, SkillDef, SpeciesDef } from './types';
+import type { AgeRules, AttributeDef, ProfessionRules, RuleData, SecondaryRules, SkillDef, SpeciesDef } from './types';
+import profession from './data/profession.json';
 import alter from './data/alter.json';
 import fertigkeiten from './data/fertigkeiten.json';
 import heldenfertigkeiten from './data/heldenfertigkeiten.json';
@@ -21,5 +22,6 @@ export const ruleData: RuleData = {
 	secondary: sekundaerattribute as SecondaryRules,
 	skills: fertigkeiten.skills as SkillDef[],
 	heroSkills: heldenfertigkeiten.heroSkills as SkillDef[],
-	age: alter as AgeRules
+	age: alter as AgeRules,
+	profession: profession as ProfessionRules
 };

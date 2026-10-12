@@ -41,6 +41,14 @@ export interface Basis {
 		/** Vergreisungswürfe je Nummer. */
 		senility: Record<number, Roll>;
 	};
+	profession: {
+		name: string;
+		/** Schlüssel der Professionsfertigkeiten (bei Spezialisierungen „id:Spezialisierung“). */
+		skills: string[];
+		statusRoll?: Roll;
+		/** Heldenfertigkeit je Platz; die Plätze entsprechen den Werten 14/12/10/8/8. */
+		heroSlots: Record<number, string>;
+	};
 	/** Angelegte Spezialisierungen je Fertigkeit, z. B. Wissenschaften: Alchemie. */
 	specializations: Record<string, string[]>;
 	/** Glückswurf (bei Vorteil zwei Würfel). */
@@ -74,6 +82,7 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			options: { optionalRules: {} },
 			attributes: { rolls: {}, assignment: {} },
 			age: { youngMalus: {}, maturity: {}, atrophia: {}, senility: {} },
+			profession: { name: '', skills: [], heroSlots: {} },
 			specializations: {},
 			choices: {}
 		},

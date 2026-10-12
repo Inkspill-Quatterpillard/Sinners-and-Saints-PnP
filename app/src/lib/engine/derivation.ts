@@ -1,7 +1,7 @@
 import type { AttributeId, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character } from './character';
 
-export type StepId = 'options' | 'attributes' | 'species' | 'age' | 'secondary' | 'senility';
+export type StepId = 'options' | 'attributes' | 'species' | 'age' | 'profession' | 'secondary' | 'senility';
 export type StepStatus = 'open' | 'valid' | 'invalid';
 
 /** Ein Hinweis zu einer Entscheidung: eine Warnung oder eine ungültige Entscheidung mit Begründung. */
@@ -51,6 +51,7 @@ export interface Derivation {
 	skillBonuses: Record<string, Modifier[]>;
 	/** Fest gesetzte Werte (z. B. Heldenfertigkeiten 14/12/10/8/8), die den Startwert ersetzen. */
 	skillSetValues: Record<string, Modifier>;
+	status: { base: number; modifiers: Modifier[] };
 	steps: StepResult[];
 	issues: Issue[];
 }
@@ -80,6 +81,7 @@ export function createDerivation(character: Character, ruleData: RuleData, optio
 		agingStages: 0,
 		skillBonuses: {},
 		skillSetValues: {},
+		status: { base: ruleData.profession.statusStart, modifiers: [] },
 		steps: [],
 		issues: []
 	};

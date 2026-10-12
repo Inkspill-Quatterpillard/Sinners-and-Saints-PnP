@@ -160,6 +160,19 @@ export interface SkillDef {
 	source: SourceRef;
 }
 
+export interface ProfessionRules {
+	source: SourceRef;
+	professionSkillCount: number;
+	professionSkillBonus: number;
+	statusStart: number;
+	statusDie: number;
+	/** Statusmodifikator je Würfelergebnis. */
+	statusTable: Record<string, number>;
+	/** Werte, auf die die Heldenfertigkeiten gesetzt werden (in beliebiger Reihenfolge). */
+	heroSkillValues: number[];
+	provisional?: Provisional[];
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -173,4 +186,5 @@ export interface RuleData {
 	skills: SkillDef[];
 	heroSkills: SkillDef[];
 	age: AgeRules;
+	profession: ProfessionRules;
 }

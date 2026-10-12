@@ -24,6 +24,7 @@ export const t = {
 		attributes: 'Grundattribute',
 		species: 'Spezies',
 		age: 'Alter',
+		profession: 'Profession',
 		secondary: 'Sekundärattribute',
 		senility: 'Vergreisung'
 	} as Record<string, string>,
@@ -71,6 +72,21 @@ export const t = {
 		atrophia: 'Atrophia',
 		atrophiaHint: 'Jeder Punkt Atrophia senkt ein körperliches Attribut deiner Wahl um 1. Punkte dürfen gebündelt werden.',
 		atrophiaPoint: (i: number) => `Atrophia-Punkt ${i + 1}`
+	},
+	profession: {
+		intro: 'Stell deine Profession selbst zusammen und gib ihr einen Namen. Eine Liste vorgefertigter Professionen gibt es noch nicht.',
+		name: 'Name der Profession',
+		namePlaceholder: 'z. B. Söldnerin, Schreiber, Kräuterkundige',
+		skills: (n: number, of: number) => `Professionsfertigkeiten (${n} von ${of})`,
+		skillsHint: (bonus: number) => `Jede Professionsfertigkeit erhält +${bonus}. Die Zahl zeigt den aktuellen Wert.`,
+		specHint: (names: string) => `Für ${names} lege zuerst unter „Alle Fertigkeiten“ eine Spezialisierung an.`,
+		status: 'Status',
+		statusHint: (start: number) => `Der Status startet bei ${start}. Würfle 1W6 für den Bonus oder Malus deiner Profession: 1: −3, 2: −2, 3: −1, 4: +1, 5: +2, 6: +3.`,
+		statusResult: (mod: string, value: number) => `Statusmodifikator ${mod}, Status jetzt ${value}.`,
+		heroSkills: 'Heldenfertigkeiten',
+		heroHint: 'Setze fünf Kampf- oder Magiefertigkeiten auf 14, 12, 10, 8 und 8. Die Werte ersetzen den Startwert.',
+		heroSlot: (value: number) => `Auf ${value}`,
+		start: (v: number | undefined) => `Start ${v ?? '–'}`
 	},
 	senility: {
 		intro: (loss: number) => `Würfle je Vergreisungswurf 1W100 gegen die Stabilität. Liegt der Wurf höher, sinkt die Stabilität um ${loss}.`,

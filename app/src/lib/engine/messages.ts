@@ -17,4 +17,11 @@ export const messages = {
 	atrophiaNotPhysical: (attr: string) => `Atrophia trifft nur körperliche Attribute (STR, KON, GES, WAH), nicht ${attr}.`,
 	belowMinimum: (attr: string, value: number, min: number) =>
 		`${attr} fiele durch Altersmali auf ${value}. Kein Attribut darf dadurch unter ${min} sinken.`
+,
+	professionSource: (name: string) => `Profession: ${name || 'ohne Namen'}`,
+	heroSkillSource: 'Heldenfertigkeit',
+	professionSkillMissing: (key: string) =>
+		`Die Professionsfertigkeit ${key.replace(':', ': ')} gibt es nicht mehr (z. B. weil die Spezialisierung entfernt wurde). Wähle eine andere.`,
+	heroSkillLowered: (name: string, start: number, value: number) =>
+		`${name}: Der Startwert ${start} sinkt durch das Setzen auf ${value}. Das ist erlaubt, aber vermutlich nicht gewollt.`
 };

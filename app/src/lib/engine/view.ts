@@ -7,6 +7,7 @@ import { evaluateSpecies, type SpeciesStepView } from './steps/species';
 import { evaluateSecondary, type LuckView, type SecondaryValue } from './steps/secondary';
 import { evaluateSkills, type SkillView } from './steps/skills';
 import { evaluateAge, evaluateSenility, type AgeStepView, type SenilityView } from './steps/age';
+import { evaluateProfession, warnLoweredHeroSkills, type ProfessionStepView, type StatusView } from './steps/profession';
 
 export interface AttributeView {
 	base?: number;
@@ -31,6 +32,9 @@ export interface CharacterView {
 	skills: SkillView[];
 	ageStep: AgeStepView;
 	senility: SenilityView;
+	professionStep: ProfessionStepView;
+	/** Der Statuswert (sozialer Rang), nicht zu verwechseln mit `status` (Stand der Erstellung). */
+	socialStatus: StatusView;
 	characteristicAllowance: Derivation['characteristicAllowance'];
 }
 
@@ -42,9 +46,11 @@ export function computeView(character: Character, ruleData: RuleData): Character
 	evaluateAttributes(d);
 	const speciesStep = evaluateSpecies(d);
 	const ageStep = evaluateAge(d);
+	const professionStep = evaluateProfession(d);
 	const { secondary, luck } = evaluateSecondary(d);
 	const senility = evaluateSenility(d, secondary.stability);
 	const skills = evaluateSkills(d);
+	warnLoweredHeroSkills(d, skills);
 
 	return {
 		id: character.id,
@@ -64,6 +70,12 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		skills,
 		ageStep,
 		senility,
+		professionStep,
+		socialStatus: {
+			base: d.status.base,
+			modifiers: d.status.modifiers,
+			value: d.status.base + d.status.modifiers.reduce((sum, m) => sum + m.value, 0)
+		},
 		characteristicAllowance: d.characteristicAllowance
 	};
 }

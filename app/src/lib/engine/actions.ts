@@ -7,6 +7,7 @@ import { applyChoiceAction, type ChoiceAction } from './choices';
 import { applySecondaryAction, type SecondaryAction } from './steps/secondary';
 import { applySkillsAction, type SkillsAction } from './steps/skills';
 import { applyAgeAction, type AgeAction } from './steps/age';
+import { applyProfessionAction, type ProfessionAction } from './steps/profession';
 
 export type Action =
 	| { type: 'setName'; name: string }
@@ -16,7 +17,8 @@ export type Action =
 	| ChoiceAction
 	| SecondaryAction
 	| SkillsAction
-	| AgeAction;
+	| AgeAction
+	| ProfessionAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -53,6 +55,12 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'setAtrophia':
 		case 'rollSenility':
 			applyAgeAction(basis, action);
+			break;
+		case 'setProfessionName':
+		case 'toggleProfessionSkill':
+		case 'rollStatus':
+		case 'assignHeroSkill':
+			applyProfessionAction(basis, action, ruleData);
 			break;
 		case 'addSpecialization':
 		case 'removeSpecialization':
