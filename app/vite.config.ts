@@ -1,6 +1,7 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { SvelteKitPWA } from '@vite-pwa/sveltekit';
 import { defineConfig } from 'vitest/config';
+import { thirdPartyLicenses } from './scripts/third-party-licenses';
 
 // Grundpfad, z. B. /Sinners-and-Saints-PnP auf GitHub Pages; lokal leer.
 const base = process.env.BASE_PATH ?? '';
@@ -8,6 +9,7 @@ const base = process.env.BASE_PATH ?? '';
 export default defineConfig({
 	plugins: [
 		sveltekit(),
+		thirdPartyLicenses(['workbox-core', 'workbox-precaching', 'workbox-routing', 'workbox-strategies']),
 		SvelteKitPWA({
 			registerType: 'autoUpdate',
 			// Die Registrierung übernimmt das Layout selbst.
@@ -28,7 +30,8 @@ export default defineConfig({
 			// Die Fallback-Seite des statischen Adapters muss mit in den Offline-Cache.
 			kit: { adapterFallback: 'index.html', spa: true },
 			// Eine neue Version übernimmt sofort, das Layout lädt dann neu.
-			workbox: { skipWaiting: true, clientsClaim: true },
+			// Die Lizenzdatei ist keine Seite der App; der Service Worker liefert dafür nicht die App aus.
+			workbox: { skipWaiting: true, clientsClaim: true, navigateFallbackDenylist: [/\.txt$/] },
 			devOptions: { enabled: false }
 		})
 	],

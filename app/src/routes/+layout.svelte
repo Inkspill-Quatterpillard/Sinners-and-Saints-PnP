@@ -36,6 +36,10 @@
 	{@render children()}
 </main>
 
+<footer class="no-print">
+	<a href="{base}/THIRD-PARTY-LICENSES.txt" data-sveltekit-reload>{t.licenses}</a>
+</footer>
+
 <style>
 	header {
 		display: flex;
@@ -52,6 +56,16 @@
 	.brand span {
 		color: var(--muted);
 		font-weight: 400;
+	}
+	footer {
+		max-width: 48rem;
+		margin: 2rem auto 0;
+		padding: 1rem;
+		border-top: 1px solid var(--line);
+		font-size: 0.85rem;
+	}
+	footer a {
+		color: var(--muted);
 	}
 	main {
 		max-width: 48rem;

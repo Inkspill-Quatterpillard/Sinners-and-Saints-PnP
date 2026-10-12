@@ -9,6 +9,7 @@ export const t = {
 	unnamed: 'Unbenannt',
 	backToList: 'Zur Übersicht',
 	back: 'Zurück',
+	licenses: 'Lizenzen verwendeter Software',
 	breakdown: (label: string) => `Zusammensetzung ${label}`,
 	statusLabel: 'Status',
 	statusStart: 'Startwert',
