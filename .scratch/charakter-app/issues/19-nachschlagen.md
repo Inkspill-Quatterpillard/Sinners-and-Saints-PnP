@@ -1,6 +1,6 @@
 # 19 — Nachschlagen
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,7 +10,7 @@ Ein Spieler durchsucht und liest alle Texte der Regeldaten: Zauber, Kunststücke
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Volltextsuche über alle Texte der Regeldaten, gefiltert nach Bereich und Setting.
-- [ ] Jeder Eintrag zeigt Name, Text und Werte.
-- [ ] Aus jedem Schritt der Erstellung und aus dem lebenden Bogen springt man direkt zum passenden Eintrag.
-- [ ] Die Ansicht funktioniert offline.
+- [x] Volltextsuche über alle Texte der Regeldaten, gefiltert nach Bereich und Setting.
+- [x] Jeder Eintrag zeigt Name, Text und Werte.
+- [x] Aus jedem Schritt der Erstellung und aus dem lebenden Bogen springt man direkt zum passenden Eintrag.
+- [x] Die Ansicht funktioniert offline.

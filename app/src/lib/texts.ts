@@ -354,6 +354,41 @@ export const t = {
 		use: 'Nutzen',
 		newDay: 'Neuer Tag'
 	},
+	lookup: {
+		title: 'Nachschlagen',
+		nav: 'Nachschlagen',
+		search: 'Suchen, z. B. „Aura“ oder „Langbogen“',
+		area: 'Bereich',
+		all: 'Alles',
+		areas: {
+			spell: 'Zauber',
+			stunt: 'Kunststücke',
+			technique: 'Kampftechniken',
+			style: 'Kampfstile',
+			characteristic: 'Charakteristiken',
+			origin: 'Herkünfte',
+			trait: 'Spezies-Eigenschaften',
+			religion: 'Religionen',
+			skill: 'Fertigkeiten',
+			equipment: 'Ausrüstung',
+			condition: 'Zustände'
+		},
+		hint: 'Gib einen Suchbegriff ein oder wähle einen Bereich.',
+		none: 'Nichts gefunden.',
+		count: (n: number, limit: number) => (n > limit ? `${n} Treffer, die ersten ${limit} werden gezeigt.` : `${n} Treffer`),
+		source: (file: string, section?: string) => `Quelle: Regelwerk/${file}${section ? ` – ${section}` : ''}`
+	},
+	specials: {
+		title: 'Besonderheiten',
+		traits: 'Spezies',
+		religion: 'Religion',
+		characteristic: 'Charakteristik',
+		origin: 'Besondere Herkunft',
+		stunts: 'Kunststücke',
+		techniques: 'Kampftechniken',
+		style: 'Kampfstil',
+		spells: 'Zauber'
+	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',
 		choose: 'Religion'

@@ -20,6 +20,7 @@
 
 <header>
 	<a href="/" class="brand">{t.appTitle} <span>{t.appSubtitle}</span></a>
+	<a href="/nachschlagen" class="nav">{t.lookup.nav}</a>
 </header>
 
 <main>
@@ -28,6 +29,9 @@
 
 <style>
 	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		padding: 0.75rem 1rem;
 		border-bottom: 1px solid var(--line);
 	}

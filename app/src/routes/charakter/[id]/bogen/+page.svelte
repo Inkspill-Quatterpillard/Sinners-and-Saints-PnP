@@ -5,6 +5,7 @@
 	import Overridable from '$lib/components/live/Overridable.svelte';
 	import RestPanel from '$lib/components/live/RestPanel.svelte';
 	import InventoryPanel from '$lib/components/live/InventoryPanel.svelte';
+	import Specials from '$lib/components/live/Specials.svelte';
 	import SkillTable from '$lib/components/SkillTable.svelte';
 	import type { CurrentKey, OverrideKey } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
@@ -209,6 +210,8 @@
 		</dl>
 		<p class="hint">{t.live.overrideHint}</p>
 	</section>
+
+	<Specials {view} />
 
 	<section>
 		<h2>{t.live.skills}</h2>
