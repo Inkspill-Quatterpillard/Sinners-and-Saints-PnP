@@ -21,3 +21,5 @@ export { characteristicForRoll } from './steps/characteristic';
 export type { OriginStepView, StuntStepView, StuntView } from './steps/origin';
 export type { CombatSkillView, CombatStepView } from './steps/combat';
 export { techniqueUnlocks } from './steps/combat';
+export type { Contingent, DisciplineView, MagicStepView } from './steps/magic';
+export { contingentFor } from './steps/magic';

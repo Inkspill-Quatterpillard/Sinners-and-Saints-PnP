@@ -1,0 +1,1047 @@
+{
+	"source": {
+		"file": "Charaktererstellung/Charaktererstellung.md",
+		"section": "Zauber"
+	},
+	"contingent": [
+		{
+			"from": 6,
+			"total": 1,
+			"maxTier": 1
+		},
+		{
+			"from": 8,
+			"total": 2,
+			"maxTier": 1
+		},
+		{
+			"from": 10,
+			"total": 3,
+			"maxTier": 1
+		},
+		{
+			"from": 12,
+			"total": 4,
+			"maxTier": 2,
+			"tier2": 1
+		},
+		{
+			"from": 14,
+			"total": 5,
+			"maxTier": 2,
+			"tier2": 2
+		},
+		{
+			"from": 16,
+			"total": 6,
+			"maxTier": 2,
+			"tier2": 3
+		},
+		{
+			"from": 18,
+			"total": 7,
+			"maxTier": 3,
+			"tier2": 3,
+			"tier3": 1
+		},
+		{
+			"from": 20,
+			"total": 8,
+			"maxTier": 3,
+			"tier2": 3,
+			"tier3": 3
+		}
+	],
+	"provisional": [
+		{
+			"question": "W6",
+			"note": "Tabelle aus Charaktererstellung.md. Magieregeln/Magie_erlernen.md (neuer) weicht bei 16 und 18 Punkten ab und wirkt verdreht. Bei 18 Punkten ist für Stufe II die Grenze von 16 Punkten (3) übernommen."
+		}
+	],
+	"spells": [
+		{
+			"id": "elementaristik:energieBuendelnUndWerfen",
+			"name": "Energie bündeln und werfen",
+			"skill": "elementaristik",
+			"tier": 0,
+			"kind": "",
+			"text": "Der Magier erzeugt einen gebündelten Energieball und ihn schleudert ihn in eine Richtung seiner Wahl. Trifft die Energie ein festes oder magisches Ziel, entlädt sie sich in Form einer Explosion oder elektrischen Entladung. Er kann damit entweder einen Energieball beschwören und abfeuern, oder mehrere bereits gebündelt Energiebälle zeitgleich abfeuern.\n\nModifikatoren: Verlangsamte Schüsse; ungerade Schüsse; mehrere Schüsse; durchdringende Schüsse\n\nLevel: Die Level steigen mit der Größe des Geschosses. Pro Level erhält das Geschoss eine Schadensstufe. Ebenfalls kann mit zusätzlichen Leveln die Größe des Explosionsradius des Geschosses um jeweils einen Schritt erhöht werden, um Ziele in einem Umkreis zu treffen.\n\n- Lvl. 0: 1W1 (1 oder 0) SP\n- Lvl. 1: 1W4 SP\n- Lvl. 2: 2W4 SP\n- Lvl. 3: 3W4 SP\n- Lvl. 4: 3W6 SP\n- Lvl. 5: 3W10 SP",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Energie bündeln und werfen (Basis)"
+			}
+		},
+		{
+			"id": "elementaristik:elementBeschwoerenFeuerWasserErdeLuft",
+			"name": "Element beschwören [Feuer/Wasser/Erde/Luft]",
+			"skill": "elementaristik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier wandelt Magiepunkte in ein Element um. Das Element erscheint in seiner Normalform und wird automatisch so modifiziert, dass es dem Magier nicht schadet, außer der Magier wünscht dies.\n\nModifikation: Ort der Beschwörung; Kontrollierte Erscheinungsform\n\nLevel: Das Level bestimmt die Menge des beschworenen Elements.\n\n- Level 0: Eine fingerkuppengroße Flamme beschwören\n- Level 1: Eine Hand voll Wasser beschwören.\n- Level 2: Kopfgroßen Stein beschwören.\n- Level 3: Körper in lodernde Flammen versetzen\n- Level 4: Klare Luft für mehrere Minuten Atemzeit beschwören.\n- Level 5: Windhose um den Magier beschwören",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Element beschwören [Feuer/Wasser/Erde/Luft] (Stufe 1)"
+			}
+		},
+		{
+			"id": "elementaristik:elementFormenFeuerWasserErdeLuft",
+			"name": "Element formen [Feuer/Wasser/Erde/Luft]",
+			"skill": "elementaristik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier formt gegenwärtige Elemente in eine stabile, aber inkonstante Form. So kann er etwa stabile Flammenschwerter, Eispfeile oder Feuerbälle formen, oder ganze Erdwälle errichten. Im Unterschied zum Zauber Element lenken erschafft dieser Zauber massive, wenn auch temporär begrenzte und instabile Elementarformen.\n\nKostenbeispiel:\n\n- Level 0: Ring oder Blume aus einem Element formen\n- Level 1: Flammenpfeil formen\n- Level 2: Stein zu einer bestimmten Schlüsselform formen, Schild aus Stein\n- Level 3: Wasser zu einem Speer aus Eis formen\n- Level 4: Käfig aus Eis formen\n- Level 5 = Wall aus Erde auftürmen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Element formen [Feuer/Wasser/Erde/Luft] (Stufe 1)"
+			}
+		},
+		{
+			"id": "elementaristik:elementKontrollierenFeuerWasserErdeLuft",
+			"name": "Element kontrollieren [Feuer/Wasser/Erde/Luft]",
+			"skill": "elementaristik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier gibt gegenwärtigen Elementen aus der Natur einen Befehl, wie etwa Gewässer, den Wind, ein Feuer oder den Boden. Er kann diese Elemente insoweit beeinflussen, dass er deren natürliches Verhalten verstärken oder schwächen kann. Er kann dem Element mit diesem Zauber allerdings keine unnatürlichen Befehle geben, etwa Wind in eine bestimmte Richtung schicken oder Wasser aus seinem Bett fließen lassen. Dafür ist dieser Zauber sehr effektiv darin, die Kapazitäten natürlicher Elemente auszunutzen. Die Spannweite der möglichen Aktionen reicht vom Aufflackern einer Kerzenflamme bis hin zum Erbebenlassen der Erde.\n\nModifikationen: Größe des Effets; Reichweite\n\nKostenbeispiel:\n\n- Level 0: Kerze flackern lassen\n- Level 1: Stein zerbrechen lassen\n- Level 2: Wind eine Nachricht wispern lassen\n- Level 3: Feuer eines Kamins zu einem Brand auflodern lassen\n- Level 4: Wind zu einem Sturm anschwellen lassen\n- Level 5: Lavine auslösen, Blizzard beschwören",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Element kontrollieren [Feuer/Wasser/Erde/Luft] (Stufe 1)"
+			}
+		},
+		{
+			"id": "elementaristik:elementLenkenFeuerWasserErdeLuft",
+			"name": "Element lenken [Feuer/Wasser/Erde/Luft]",
+			"skill": "elementaristik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier bewegt und befehligt ein gegenwärtiges Element nach seinem Willen. Dies muss dabei nicht den natürlichen Gegebenheiten folgen. So kann ein Magier Flammenbälle durch die Luft bewegen, jemanden in einen rotierenden Wasserball einschließen oder sogar sich vom Wind durch die Lüfte tragen lassen. Die Schwierigkeit wird hierbei von der Komplexität der Aufgabe bestimmt.\n\nKostenbeispiel:\n\n- Level 0: Kerzenflamme auf der Handfläche tanzen lassen\n- Level 1: Sand oder Erde zu dichter Staubwolke aufwirbeln\n- Level 2: Flammen in einem bestimmten Bereich lodern lassen\n- Level 3: Auf Welle durch einen See reiten\n- Level 4: See zu einem Strudel formen\n- Level 5: Wind zu einer Windhose formen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Element lenken [Feuer/Wasser/Erde/Luft] (Stufe 1)"
+			}
+		},
+		{
+			"id": "elementaristik:elementWerfenFeuerWasserErdeLuft",
+			"name": "Element werfen [Feuer/Wasser/Erde/Luft]",
+			"skill": "elementaristik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier schleudert ein Element in eine bestimmte Richtung. Dies kann sowohl als simples Geschoss (die einfachste Form) oder aber auch als Strahl gebündelt, gestreut oder in ein oder mehrere Richtungen gleichzeitig geschehen. Klassische Beispiele sind geschleuderte Steingeschosse, ein Flammenstrahl oder ein Windstoß, der mehrere Gegner in einem bestimmten Radius hinwegfegt.\n\nKostenbeispiel: Die Level steigen mit der Größe des Geschosses. Pro Level erhält das Geschoss eine Schadensstufe. Ebenfalls kann mit zusätzlichen Leveln die Größe oder Länge des Strahles um jeweils einen Schritt erhöht werden, um Ziele in einem Radius zu treffen.\n\n- Lvl. 0: 1W1 (1 oder 0) SP\n- Lvl. 1: 1W4 SP\n- Lvl. 2: 2W4 SP\n- Lvl. 3: 3W4 SP\n- Lvl. 4: 3W6 SP\n- Lvl. 5: 3W10 SP",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Element werfen [Feuer/Wasser/Erde/Luft] (Stufe 1)"
+			}
+		},
+		{
+			"id": "elementaristik:energieEntziehen",
+			"name": "Energie entziehen",
+			"skill": "elementaristik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier zieht Energie aus einer Magiequelle. Dabei kann es sich sowohl um eine künstliche Magiequelle wie etwa einen Seelenstein oder eine Ladungsglyphe handeln, oder auch um eine natürliche Magiequelle wie etwa ein Element oder ein Lebewesen. Je komplexer die Magiequelle ist, desto schwieriger ist der Energieentzug. Die entzogene Energie kann entweder gebündelt oder im persönlichen Energievorrat des Magiers gespeichert werden.\n\nKostenbeispiel:\n\n- Level 0: Magie aus einem Seelenstein entziehen\n- Level 1: Energie in einer Glyphe speichern\n- Level 2: Magie an ein Lebewesen übertragen\n- Level 3: Magie aus einem Lebewesen entziehen\n- Level 4: Magie an eine Gruppe von Lebewesen übertragen\n- Level 5: Magie aus einer Gruppe von Menschen entziehen.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Energie entziehen (Stufe 1)"
+			}
+		},
+		{
+			"id": "elementaristik:energieFormen",
+			"name": "Energie formen",
+			"skill": "elementaristik",
+			"tier": 1,
+			"kind": "",
+			"text": "Hierbei handelt es sich um einen der vielfältigsten Zauber, den ein Magier anwenden kann. Mit diesem formt ein Magier Energie zu mehr oder weniger komplexe Formen. Dies kann von simplen Formen wie etwa einem Schutzschild, einer Barrikade oder einer Schutzkuppel hin zum Formen von komplexen beschworenen Waffen und Objekten führen. Energie kann nach dem Formen nicht wieder verformt oder verändert, sondern nur aufgelöst oder mit speziellen Zaubern modifiziert werden. Solche Objekte müssen konstant oder regelmäßig magisch aufgeladen werden, da die gebündelter Energie flüchtig ist.\n\nModifikationen: Größe und Komplexität der Form\n\nKostenbeispiel:\n\n- Level 0: Kleine, schillernde magische Blüte, die in der Hand blüht.\n- Level 1: Flüchtiges Schild für eine Kampfrunde, um ein oder mehrere Projektil aufzuhalten\n- Level 2: Beschwören einer magischen Waffe, die etwa für die Dauer eines Kampfes hält\n- Level 3: Schutzkuppel, die eine Person vor Projektilen über eine kurze Zeit schützt\n- Level 4: Schutzbarriere für eine Nacht\n- Level 5: Große Barriere, die eine längere Zeit andauert",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Energie formen (Stufe 1)"
+			}
+		},
+		{
+			"id": "elementaristik:energieLenken",
+			"name": "Energie lenken",
+			"skill": "elementaristik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier bewegt Energie von sich weg oder von einem anderen Ort zum anderen. Dabei kontrolliert er Weg und Ziel. Die Energie kann dabei um Objekte herumgewoben werden, um diese zu transportieren\n\nModifikationen: Suchende Schüsse, Telekinese, Magisches Licht bewegen, Levitation\n\nKostenbeispien\n\n- Level 0: Magisches Licht durch einen Raum schweben lassen\n- Level 1: Energieball in eine bestimmte Richtung lenken\n- Level 2: Truhe anheben und zur Person schweben lassen\n- Level 3: Levitation eines größeren Objektes für eine längere Zeit\n- Level 4: Kontrollierte Selbstlevitation\n- Level 5: Kleinen Trupp Gegner schweben lassen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Energie lenken (Stufe 1)"
+			}
+		},
+		{
+			"id": "elementaristik:elementareVerkettung",
+			"name": "Elementare Verkettung",
+			"skill": "elementaristik",
+			"tier": 2,
+			"kind": "",
+			"text": "Zwei Elemente werden miteinander verkettet, sodass ein magischer Effekt, der auf ein Element gewirkt wird, auch auf das andere Element kopiert wird. Eine solche Verbindung ist stabiler, je ähnlicher die beiden Elemente sich sind. Abhängig von der Stärke der Verbindung wirkt der magische Effekt stärker oder schwächer. Tiefere Anwendungsbereiche sind etwa Blutmagie, in der ein Blutstropfen mit dem Blut im Körper verbunden wird und so mächtige Rituale und Flüche durchgeführt werden können.\n\nKostenbeispiel:\n\n- Level 0: Zwei Kerzenlichter verbinden, um beiden Lichtern eine andere Farbe zu geben\n- Level 1: Zwei Steine verbinden, um beide mit Telekinese anzuheben\n- Level 2:  Mehrere Fackeln in einem Raum verbinden, um Licht zu verdunkeln\n- Level 3: Blutstropfen mit Blut im Körper verbinden, um Fluch zu wirken\n- Level 4: Mehrere Stützpfeiler eines Gebäudes verbinden, um dieses einzureißen\n- Level 5: Blut in Körper einer kleinen Gruppe Lebewesen verbinden, um einen Fluch zu wirken.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Elementare Verkettung (Stufe 2)"
+			}
+		},
+		{
+			"id": "elementaristik:elementReinigenFeuerWasserErdeLuft",
+			"name": "Element reinigen [Feuer/Wasser/Erde/Luft]",
+			"skill": "elementaristik",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier befreit ein Element von sämtlichen Verunreinigungen. So wird etwa Wasser von Dreck und Gift befreit, ein Feuer brennt rein und ohne Ruß, Metall wird von Verunreinigungen gereinigt oder die Luft gefiltert. Überdies erhöht der Zauber den Reinheitsgrad des Elements und erleichtert Elementaristen den Umgang damit, bzw. ermöglicht stärkere und bessere Effekte.\n\nKostenbeispiel:\n\n- Level 0: Fackel klar und ohne Ruß brennen lassen\n- Level 1: Eimer Wasser säubern\n- Level 2: Glas mit Flüssigkeit von Gift reinihen\n- Level 3: Eisenerz von Verunreinigungen befreien\n- Level 4: Luft in einem Raum filtern\n- Level 5: Edelstein von Verunreinigungen befreien.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Element reinigen [Feuer/Wasser/Erde/Luft] (Stufe 2)"
+			}
+		},
+		{
+			"id": "elementaristik:elementVeraendernFeuerWasserErdeLuft",
+			"name": "Element verändern [Feuer/Wasser/Erde/Luft]",
+			"skill": "elementaristik",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier verändert Zustand oder Form des Elementes. So kann er etwa Feuer zu Glut werden lassen, Erde zu Sand oder zu Stein werden lassen, Wasser kochen lassen, zu Eis erstarren oder zu Dampf verdampfen lassen.\n\nKostenbeispiel:\n\n- Level 0: Kerze erlöschen lassen\n- Level 1: Glut zu Feuer auflodern lassen\n- Level 2: Wasser zu dichten Dampf verdampfen lassen\n- Level 3: Luft unter den Füßen erhärten lassen\n- Level 4: Sauerstoff in Lungen gefrieren lassen\n- Level 5: Stück eines Steinwalls zu Sand zerfallen lassen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Element verändern [Feuer/Wasser/Erde/Luft] (Stufe 2)"
+			}
+		},
+		{
+			"id": "elementaristik:energieformVeraendern",
+			"name": "Energieform verändern",
+			"skill": "elementaristik",
+			"tier": 2,
+			"kind": "",
+			"text": "Veränderung von bestehender geformter Energie oder Elementarmagie. Diese Veränderungen können die Energieform nur weiterentwickeln oder modifizieren, nicht aber im Kern verändern. Der Magier kann so ein Flammenschwert auflodern lassen, die Klinge eines beschworenen Dolches wachsen lassen oder einen Erdwall teilen.\n\nKostenbeispiel:\n\n- Level 0: Eine beschworene Knospe erblühen oder einen Elementarring aufleuchten lassen\n- Level 1:  Beschworenen Schlüssel an Schloss anpassen\n- Level 3: Widerhaken in einem Eispfeil erschaffen\n- Level 5:  Magisches Schutzschild zu einer größeren Barriere anwachsen oder im Gegenzug eine Magische Barriere auflösen lassen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Energieform verändern (Stufe 2)"
+			}
+		},
+		{
+			"id": "elementaristik:lebenslesung",
+			"name": "Lebenslesung",
+			"skill": "elementaristik",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier stellt eine Verbindung mit der Elementarmagie in Pflanzen und natürlichen Lebensformen her. Dies ermöglicht es ihm, auf magischer Ebene mit diesen Lebewesen zu kommunizieren und etwa Informationen zu erlangen oder Nachrichten zu übermitteln. Einfache Anwendungsmöglichkeiten sind das Diagnostizieren von Krankheiten einer Pflanze, Informationen über das Alter oder die Herkunft eines Baumes oder die Kommunikation mit einem Baumgeist. Mächtige Lebensleser können auf die Erinnerungen von Bäumen zugreifen, einen ganzen Wald als Spion nutzen oder Nachrichten an Lebensleser eine halbe Welt entfernt übersenden.\n\nKostenbeispiel:\n\n- Lvl. 0: Einfache Information über eine Pflanze\n- Lvl. 1: Kommunikation mit einer Blume\n- Lvl. 2: Kommunikation mit einem Strauch\n- Lvl. 3: Kommunikation mit einem Baum\n- Lvl. 4: Kommunikation mit einem kleinen Waldstück\n- Lvl. 5: Kommunikation mit einem ganzen Wald",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Lebenslesung (Stufe 2)"
+			}
+		},
+		{
+			"id": "elementaristik:elementarErwecken",
+			"name": "Elementar erwecken",
+			"skill": "elementaristik",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier erweckt einen Elementargeist aus einer künstlichen oder natürlichen Elementaressenz. Mit diesem Geist wird eine Verbindung auf Zeit eingegangen, die den Geist kontrolliert. Es entsteht ein Bund mit der urtümlichen Elementarmagie, aus der der Geist besteht. Unterworfene Elementargeister können verschiedene Funktionen übernehmen und etwa an ein Objekt oder einen Mechanismus gebunden werden. Die Stärke und Macht eines Elementar hängt von der jeweiligen Essenz ab.\n\nKostenbeispiel:\n\n- Level 0: Anregung einer Konversation mit einem Elementargeist\n- Level 1: Erweckung eines Geistes für wenige Minuten\n- Level 3: Bund mit einem Geist für einen bestimmten Auftrag\n- Level 5: Bindung eines Elementar in einen Golem",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Elementar erwecken (Stufe 3)"
+			}
+		},
+		{
+			"id": "elementaristik:elementareKommunikation",
+			"name": "Elementare Kommunikation",
+			"skill": "elementaristik",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier stellt eine Verbindung mit den reinsten und urtümlichsten Formen der Elementarmagie her, den Urelementen. Bei diesen kann es sich um das Herz und die Geister eines Ozeans, eines Berges, eines Vulkans oder eines Sturms handeln.\n\nKostenbeispiel:\n\n- Level 1:  Wassergeist in einem See herbeirufen\n- Level 3: Windgeist bitten, eine Nachricht zu überbringen\n- Level 5: Herz eines Berges nach Höhlensystem fragen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Elementare Kommunikation (Stufe 3)"
+			}
+		},
+		{
+			"id": "elementaristik:elementareStroemungenBuendeln",
+			"name": "Elementare Strömungen bündeln",
+			"skill": "elementaristik",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier absorbiert Elementarmagie aus den Elementarquellen in seiner Umgebung. Dabei wird umso mehr Energie gewonnen, je mehr und je bessere Quellen sich im Umfeld befinden. Der Magier kann die absorbierte Energie sofort als Element nutzen und einsetzten, allerdings nicht seinen Magievorrat auffüllen. Dabei kann er je nach Umfeld eine enorme Menge an magischer Energie generieren.\n\nKostenbeispiel: Wie viel Elementarmagie gewonnen werden kann, hängt von den verfügbaren Quellen in der Umgebung ab.\n\n- Keine Quellen (Windmagier unter der Erde): 1 MP = 0x Elementarmagie\n- Wenige Quellen (Feuermagier in der Stadt): 1 MP = 2x Elementarmagie\n- Einige Quellen (Wassermagier im Wald): 1 MP = 3x Elementarmagie\n- Viele Quellen (Erdmagier in einem Berg): 1 MP = 5x Elementarmagie",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Elementare Strömungen bündeln (Stufe 3)"
+			}
+		},
+		{
+			"id": "elementaristik:elementaressenzHerstellen",
+			"name": "Elementaressenz herstellen",
+			"skill": "elementaristik",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier nutzt ein besonders reines Element, um daraus eine stabilen Lebensessenzen zu destillieren. Diese Essenzen enthalten natürliche Lebensenergie und bestehen aus der reinsten Form der Elementarenergie. Mit Ihnen können unter anderem Zauber verstärkt, neue Elementarquellen hergestellt oder mächtige Elementargeister erweckt werden.\n\nKostenbeispiel:\n\n- Level 1:   Perfektes Element zur Elementaressenz wandeln\n- Level 3:  Unnatürlich reines Element zu Elementaressenz wandeln\n- Level 4:  Reines Element zu Elementaressenz wandeln",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Elementaressenz herstellen (Stufe 3)"
+			}
+		},
+		{
+			"id": "elementaristik:elementarmarkBeschwoeren",
+			"name": "Elementarmark beschwören",
+			"skill": "elementaristik",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier bündelt Elementarmagie, um einen stark komprimierten und sehr reinen Elementkern herzustellen. Diese kristallisierte Elementarmagie kann in Elementarmagie umgewandelt werden, welche wiederum für mächtige Zauber benutzt wird. Ein Elementarmark verhält sich wie ihr jeweiliges Element und lassen sich vom Magier beeinflussen. Je nach Stufe des Zaubers treten sie in verschiedenen Stabilitätsstufen auf, die für wenige Kampfrunden, über mehrere Wochen bis hin zu einer halben Ewigkeit intakt bleiben.\n\nIm Unterschied zu einer Elementaressenz ist ein Elementarmark nicht lebendig.\n\nKostenbeispiel: Als konzentrierte Elementarmagie wird ein Elementarmark mächtiger, je mehr Magie in es fließt. Ein Level gibt dem Mark daher eine Stufe.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Elementarmark beschwören (Stufe 3)"
+			}
+		},
+		{
+			"id": "elementaristik:elementeVerbinden",
+			"name": "Elemente verbinden",
+			"skill": "elementaristik",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier verbindet zwei Elemente miteinander. Dies führt dazu, dass sich die Elemente einander angleichen und Veränderungen an einem Element sich auf beide auswirken. Der Grad der Veränderung wird beeinflusst von der Stärke der Verbindung. Je ähnlicher die Elemente, desto einfacher die Verbindung und umgekehrt. Einfachere Anwendungsbeispiele wären das Erhitzen von Wasser oder das Gefrieren eines Feuers. Komplexe Anwendungen gehen tief in die Hohe Magie hinein und können etwa Erde fließen, Feuer gasförmig durch einen Raum wehen oder das Blut im Körper eines Feindes erstarren lassen.\n\nKostenbeispiel:\n\n- Level 0:   Glas Tee und eine Kerzenflamme verbinden, um Tee zu erhitzen\n- Level 1: Blut in einer Wunde und Fackel verbinden, um Blut zu erhitzen\n- Level 3:  Luft und Erde verbinden, um Luft schwergängig zu machen\n- Level 5:  Erde und Wasser verbinden, um Erde flüssig zu machen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Elementaristik.md",
+				"section": "Elemente verbinden (Stufe 3)"
+			}
+		},
+		{
+			"id": "illusion:illusionErschaffen",
+			"name": "Illusion erschaffen",
+			"skill": "illusion",
+			"tier": 0,
+			"kind": "",
+			"text": "Der Magier kreiert eine Illusion, also ein künstliches arkanes Trugbild, welches Materie imitiert. Diese Illusion kann beliebige Formen annehmen, wobei die Schwierigkeit je nach Größe und Komplexität der Illusion steigt. Geübte Illusionisten können eine Illusion natürlich wirken lassen, sie in die Umwelt einfügen, Bewegungen einfügen, magische Spuren unterdrücken oder sogar eine massive Illusion erzeugen. Langfristige Illusionen benötigen eine stetige Energiequelle, etwa in Form einer Glyphe, um aufrechterhalten zu werden.\n\nKostenbeispiel:\n\n- Level 0: Bild auf einer Spielkarte verändern\n\n- Level 1: Illusion einer Goldmünze erzeugen\n\n- Level 2: Aussehen des eigenen Gesichtes per Illusion verändern\n\n- Level 3: Kompletten Körper verändert aussehen lassen\n\n- Level 4: Komplexe Illusion, die einen ganzen Raum oder eine kleine Hütte leer aussehen lässt\n\n- Level 5: Illusion eines Irrgarten erschaffen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Illusion erschaffen (Basis)"
+			}
+		},
+		{
+			"id": "illusion:effektErzielen",
+			"name": "Effekt erzielen",
+			"skill": "illusion",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier bestimmt einen Effekt, den eine Illusion auf magische Weise auf einen beeinflusstes Lebewesen ausüben soll. Dabei handelt es sich um Emotionen, nicht aber um konkrete Sinneseindrücke wie Gerüche oder Geräusche, die beim Beeinflussten ausgelöst werden. Dieser Zauber kann sowohl für sich stehen als auch in eine bestehende Illusion eingewoben werden. Der Vorteil im Vergleich zu einer einfachen Illusion ist hierbei, dass dieser Effekt bei jedem, der die Illusion erblickt magisch ausgelöst wird und so die Wirkung nicht mehr sprichwörtlich „im Auge des Betrachters“ liegt. Wie wirkungsvoll der Effekt ist, hängt einerseits von der Macht des Zaubers sowie von der Stärke der Aura des Beeinflussten ab. Ein Illusionist kann so etwa einen Gegenstand wertvoller erscheinen lassen, sein eigenes Auftreten mächtig oder ein Haus unheimlich wirken lassen, sowie eine Illusion erschaffen, die Furcht in jedem Betrachter auslöst.\n\nKostenbeispiel:\n\n- Level 0:\n\n- Level 1: Das Trugbild einer Goldmünze verursacht Gier\n\n- Level 2:  Ein mit einer Illusion verändertes Gesicht wirkt attraktiv\n\n- Level 3:  Ein mit einer Illusion belegtes Haus wirkt besonders heimelig oder gruselig",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Effekt erzielen (Stufe 1)"
+			}
+		},
+		{
+			"id": "illusion:geistigesAbbild",
+			"name": "Geistiges Abbild",
+			"skill": "illusion",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier erschafft ein geistiges Abbild einer Situation in der realen Welt, welches in seinem Gedächtnis verankert wird. Mit diesem Zauber lassen sich komplexe oder kurzfristige Eindrücke und Situationen festhalten und für die Zukunft konservieren. Ein geistiges Abbild kann etwa auch per Telepathie geteilt werden, durch eine Illusion sichtbar gemacht werden oder mental auf Details durchsucht werden.\n\nKostenbeispiel:\n\n- Level 0: Gedanke oder geistige Notiz behalten\n- Level 1: Geistiges Abbild des Gesichtes einer Person speichern\n- Level 2: Zeichnung einer Karte memorieren\n- Level 3: Genaues Abbild der Situation in einem Raum speichern, um einen Mordfall zu untersuchen.\n- Level 4: Die gesammte Szenerie eines geschäftigen Marktplatzes in einer Stadt einfangen, um nach einer bestimmten Person zu suchen.\n- Level 5: Ein Schlachtfeld memorisieren, um die Illusion der Schlacht zu rekreieren.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Geistiges Abbild (Stufe 1)"
+			}
+		},
+		{
+			"id": "illusion:illusionAufloesen",
+			"name": "Illusion auflösen",
+			"skill": "illusion",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier löst eine Illusion, bzw. mehrere Illusionen in einem gewissen Bereich auf. Er kann diese zum Teil oder gänzlich auflösen, wobei sämtliche Effekte ihre Wirkung verlieren und die Magie sich verflüchtigt. Er kann mit diesem Zauber die Illusion jedoch nicht abändern oder ihre Effekte verändern.\n\nKostenbeispiel: Das Level des Zaubers hängen von den in die Illusion investierten Leveln ab. In der Regel braucht es ein etwa halb so großes Level, eine Illusion aufzulösen, wie investiert wurden.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Illusion auflösen (Stufe 1)"
+			}
+		},
+		{
+			"id": "illusion:illusionErkennen",
+			"name": "Illusion erkennen",
+			"skill": "illusion",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier erkennt arkane Trugbilder aller Art in einem bestimmten Bereich. Diese sind nur für ihn selbst erkennbar und er kann mit diesem Zauber nichts an deren Existenz verändern. Dieser Zauber mindert oder beseitigt für den Magier die meisten Effekte, die eine Illusion erzeugt oder erzeugen soll, wie etwa Furcht, Verwirrung oder ähnliches.\n\nKostenbeispiel:\n\n- Lvl. 1: Illusion an einem bestimmten Gegenstand überprüfen\n- Lvl. 2: Einfache Illusionseffekte auf Selbst erkennen\n- Lvl. 3: Innere Aurasphäre auf Illusionen überprüfen\n- Lvl. 4: Gebäude auf Illusion überprüfen\n- Lvl. 5: Entfernten Illusionen nachspüren",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Illusion erkennen (Stufe 1)"
+			}
+		},
+		{
+			"id": "illusion:illusionManipulieren",
+			"name": "Illusion manipulieren",
+			"skill": "illusion",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier manipuliert eine Illusion, um deren Aussehen, Ort oder Effekte zu verändern. Er kann mit diesem Zauber nur Aspekte der Illusion verändern, nicht aber neue Elemente hinzufügen. So kann etwa Aussehen, Farben, Schein, Geräusche, Gerüche, Effekte auf Betrachter oder ähnliches in einer Illusion verändert werden.\n\nKostenbeispiel:\n\n- Lvl. 0: Ablenkendes Geräusch ertönen lassen\n- Lvl. 1: Dramatische Musik in einer per Illusion gruselig wirkenden Villa erklingen lassen\n- Lvl. 2: Illusion eines schrecklichen Dämons in ein süßes Kätzchen wandeln\n- Lvl. 3: Effekt einer Illusion dem Verursacher spiegeln, so das er etwa Angst bekommt oder verwirrt wird\n- Lvl. 4: Jahreszeit in einem Hexensumpf verändern\n- Lvl. 5: Opfer in einem illusionistischen Spiegelkabinett hypnotisieren",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Illusion manipulieren (Stufe 2)"
+			}
+		},
+		{
+			"id": "illusion:lichtManipulieren",
+			"name": "Licht manipulieren",
+			"skill": "illusion",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier beeinflusst das Licht in einem bestimmten Bereich durch Illusionsmagie. Er kann es so etwa dimmen, einen bestimmten Bereich verdunkeln oder erhellen, den Fall des Licht verändern oder Schatten an bestimmten Stellen erscheinen lassen. Dabei handelt es sich jedoch um eine Illusion, also nicht um regeltechnisches echtes Licht.\n\nKostenbeispiel:\n\n- Lvl. 0: Licht einer Kerze dimmen\n- Lvl. 1: Licht einer Laterne verstärken\n- Lvl. 2: Schatten an einer Wand entstehen lassen\n- Lvl. 3: Bereich eines Raumes vollständig verdunkeln\n- Lvl. 4: Blendend grelles Licht aus eigenen Augen reflektieren lassen\n- Lvl. 5: Künstliche Sonnenfinsternis in einem Dorf hervorrufen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Licht manipulieren (Stufe 2)"
+			}
+		},
+		{
+			"id": "illusion:sinneseindrueckeHervorrufen",
+			"name": "Sinneseindrücke hervorrufen",
+			"skill": "illusion",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier ruft durch eine Illusion einen künstlichen Sinneseindruck bei einem Lebewesen hervor. Dabei kann es sich um ein Geräusch, einen Geruch, einen Geschmack oder eine Empfindung wie Schmerz, Hitze oder Kälte handeln. Dieser Zauber kann sowohl für sich stehen als auch in eine bestehende Illusion eingewoben werden.\n\nKostenbeispiel:\n\n- Lvl. 0: Einer Papierblume einen angenehmen Duft entströmen lassen\n- Lvl. 1: Schrei im Wald aus einer bestimmten Richtung vortäuschen\n- Lvl. 2: Ohrenbetäubenden Schrei erklingen lassen, den nur die Opfer der Illusion hören\n- Lvl. 3: Person Schmerzen empfinden lassen\n- Lvl. 4: Geruch von toxischen Gas in einem Haus erzeugen.\n- Lvl. 5: Person eine Verbrennung am Lebendigen Leib empfinden lassen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Sinneseindrücke hervorrufen (Stufe 2)"
+			}
+		},
+		{
+			"id": "illusion:unauffaelligkeit",
+			"name": "Unauffälligkeit",
+			"skill": "illusion",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier senkt mit einer Illusion die Merkmale von Materie oder Lebewesen, anhand derer andere Lebewesen sie als auffällig wahrnehmen. Sie sind damit technisch nicht unsichtbar, fallen jedoch nicht mehr auf oder werden sogar gänzlich ignoriert. Bei einer mächtigen Illusion können sie weder erkannt werden, gezielt gesucht werden, noch erinnert sich jemand im Nachhinein an ihre Anwesenheit. Ein Magier kann so etwa unerkannt durch einen Marktplatz voller Menschen laufen, ein Haus vor der Stadtwache verstecken oder einen Gegenstand unerkannt durch eine Zollstation schmuggeln.\n\nKostenbeispiel:\n\n- Lvl. 0: Einen Taschenspielertrick verdecken\n- Lvl. 1: Kleiner Gegenstand, etwa eine Schatulle, wird für kurze Zeit unauffällig\n- Lvl. 2: Dolch in der Hinterhand nicht auffallen lassen\n- Lvl. 3: Für ein paar Minuten unerkannt bleiben lassen\n- Lvl. 4: Zelt im Wald für einige Stunden unauffällig werden lassen\n- Lvl. 5: Haus in einer Stadt unauffindbar werden lassen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Unauffälligkeit (Stufe 2)"
+			}
+		},
+		{
+			"id": "illusion:imitieren",
+			"name": "Imitieren",
+			"skill": "illusion",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier kopiert einen realen Gegenstand in eine Illusion. Die entstandene Illusion übernimmt alle visuellen und die meisten haptischen Eigenschaften des Ausgangsgegenstandes. Ein imitiertes Schwert kann allerdings keinen wirklichen Schaden verursachen, es fühlt sich nur scharf an. Ebenso fühlt sich ein kopierter Schlüssel zwar wie ein Schlüssel an, kann jedoch kein Schloss aufschließen. Zudem werden keine magischen Eigenschaften auf die Illusion kopiert. Mit diesem Zauber kann ein Magier die Gestalt eines anderen Menschen durch Illusion annehmen, ohne sich tatsächlich in diesen zu verwandeln, Doppelgänger von sich schaffen oder einen Gegenstand als einen anderen ausgeben.\n\nKostenbeispiel: 1 MP = Kopie eines Briefes oder offiziellen Dokuments erschaffen\n\n3 MP = Fälschung eines Gemälde erschaffen\n\n5 MP = Gestalt eines anderen Menschen annehmen / Doppelgänger von sich zur Ablenkung erschaffen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Imitieren (Stufe 3)"
+			}
+		},
+		{
+			"id": "illusion:tarnen",
+			"name": "Tarnen",
+			"skill": "illusion",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier passt Materie oder Lebewesen durch eine Illusion ihrer Umwelt an, sodass diese getarnt wird. Dabei sind verschiedene Abstufungen bis hin zur völligen Unsichtbarkeit möglich. Ein Magier kann damit sowohl sich selbst als auch fremde Lebewesen, sowie Gegenstände tarnen.\n\nKostenbeispiel: 1 MP = Tinte auf einen Brief für eine Weile unsichtbar machen\n\n3 MP = Waffe für einige Zeit nahezu unsichtbar machen\n\n5 MP = Anpassung an die Umwelt für einige Minuten\n\n10 MP = Komplette Unsichtbarkeit für wenige Minuten",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Illusion.md",
+				"section": "Tarnen (Stufe 3)"
+			}
+		},
+		{
+			"id": "mystik:auraAnalysieren",
+			"name": "Aura analysieren",
+			"skill": "mystik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier untersucht die Aura eines fremden Lebewesens. Als arkaner Abdruck und Speicher kann ein Magier durch die Aura Informationen unter anderem über den Zustand, die Fähigkeiten oder auch über Stärken und Schwächen eines Lebewesens gewinnen. Ebenso kann auf diesen Weg die magische Signatur eines Lebewesens analysiert und gespeichert werden. Dies erlaubt es, die Person zu einem späteren Zeitpunkt zweifelsfrei zu identifizieren und kann zudem für Zauber genutzt werden. Erfahrene Magier können so auch kurze Einblicke in das Schicksal eines Lebewesens erhaschen.\n\nKostenbeispiel:\n\n- Lvl. 0: Kurzes Abtasten der Aura eines nahen Lebewesens. Kann sehr grobe Informationen über dessen Art und Zustand verraten.\n- Lvl. 1: Abfragen einer singulären, spezifischen Information (Information über TP- oder MP-Stand, bestimmten Wert oder Fertigkeiten)\n- Lvl. 2: Magische Schwächen eines Lebewesens herausfinden\n- Lvl. 3: Erfassen der magischen Signatur eines Lebewesens (Zum Verwandeln, für Illusionen oder zur späteren Identifizierung)\n- Lvl. 4: Persönliches Profil einer Person\n- Lvl. 5: Einblick in das Schicksal eines Lebewesens",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Aura analysieren (Stufe 1)"
+			}
+		},
+		{
+			"id": "mystik:auraDurchbrechen",
+			"name": "Aura durchbrechen",
+			"skill": "mystik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier greift die Aura eines Lebewesens an. Diese fungiert als arkane Verteidigung, die ein Wesen vor Magie schützt. Ist die Aura durchbrochen, sind Angriffe, Verzauberungen oder Beeinflussungen auf das jeweilige Lebewesen erleichtert. Ebenso kann sich mit diesem Zauber gegen Auraangriffe verteidigt werden.\n\nKostenbeispiel: Für jedes Level verursacht der Magier +1 Stabilitätsschaden am gegnerischen Magier.\n\nAuraschaden nach WIL-Wert\n\n- WIL < 3 = 1W2 Stabilitätspunkte\n- WIL > 3 = 1W3 Stabilitätspunkte\n- WIL > 6 = 1W4 Stabilitätspunkte\n- WIL > 10 = 1W6 Stabilitätspunkte\n- WIL > 14 = 1W8 Stabilitätspunkte\n- WIL > 18 = 1W10 Stabilitätspunkte",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Aura durchbrechen (Stufe 1)"
+			}
+		},
+		{
+			"id": "mystik:magieBeseitigen",
+			"name": "Magie beseitigen",
+			"skill": "mystik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier hebt aktive Magie auf. Hiermit können Verzauberungen, aktive Zauber wie Schilde oder Fallen oder sogar langfristige und komplexe Zauber wie etwa Flüche annulliert werden. Der dazu notwendige Zeitaufwand hängt sowohl von der Zeit ab, die für die Erschaffung des Zaubers benötigt wurde, als auch von dessen Komplexität.\n\nKostenbeispiel:\n\n- Lvl. 0: Kleineren Zauber erlöschen lassen, etwa eine magische Flamme\n- Lvl. 1: Glyphe deaktivieren\n- Lvl. 2: Magische Falle entschärfen\n- Lvl. 3: Magisches Geschoss annullieren\n- Lvl. 4: Magische Barriere auflösen\n- Lvl. 5: Großflächige Verzauberung auflösen, etwa ein Schutzzauber oder Fluch auf einem Haus",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Magie beseitigen (Stufe 1)"
+			}
+		},
+		{
+			"id": "mystik:magieStoeren",
+			"name": "Magie stören",
+			"skill": "mystik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier stört aktive Magie in einem bestimmten Bereich. So können gegnerische Zauber erschwert, dauerhaft aktive Zauber gestört oder magische Rituale unterbrochen werden. Der Effekt der Störung wird von der Stärke des Zaubers definiert.\n\nKostenbeispiel:\n\n- Lvl. 0: Unterbindung eines Zaubertricks.\n- Lvl. 1: Störung eines einzelnen Zaubers oder Rituals.\n- Lvl. 2: Störung der Zauber eines Magiers für eine gewisse Zeit(, bis sich dieser der geistigen Beeinflussung widersetzen kann).\n- Lvl. 3: Störung aller gesprochenen und aktiven Zauber in einem kleinen Radius.\n- Lvl. 4: Antimagische Zone in einem größerer Raum, die das Wirken jedweder Zauber stark einschränkt\n- Lvl. 5: Blockade jedes Versuches zu Zaubern in einem Haus.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Magie stören (Stufe 1)"
+			}
+		},
+		{
+			"id": "mystik:magischeSpurAufspueren",
+			"name": "Magische Spur aufspüren",
+			"skill": "mystik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier sucht nach den Spuren von magischen Handlungen oder Beeinflussungen. Hiermit kann etwa untersucht werden, ob ein Objekt magische Eigenschaften oder Verzauberungen hat, ob Magie in einem Bereich aktiv ist, ob eine Person vor einer gewissen Zeit Magie gewirkt hat oder ob sich magische Quellen in der Nähe befinden. Ebenso kann ein erfahrener Magier so den Grad und die Art der erspürten Magie herausfinden.\n\nKostenbeispiel:\n\n- Lvl. 0: Offensichtliche aktive Magie bei einem Objekt in Kontaktreichweite erspüren\n- Lvl. 1: Objekt auf magische Spuren untersuchen\n- Lvl. 2: Magische Objekte in kleinen Radius, etwa einem Schreibtisch oder einer Truhe, suchen\n- Lvl. 3: Raum nach magischen Spuren durchsuchen.\n- Lvl. 4: Bestimmtes magisches Objekt in einer größeren Reichweite ausfindig machen.\n- Lvl. 5: Aufspüren der Spur eines Magiers in einem Dorf oder einem Stadtviertel",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Magische Spur aufspüren (Stufe 1)"
+			}
+		},
+		{
+			"id": "mystik:magischeStrukturAnalysieren",
+			"name": "Magische Struktur analysieren",
+			"skill": "mystik",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier untersucht eine magische Struktur, wie etwa eine Glyphe, einen magischen Mechanismus, eine Magiequelle oder einen aktiven und präsenten Zauber. Dieser Zauber kann so Auskunft über die Art einer Verzauberung, den Effekt eines Zaubers oder die Stärke einer Quelle geben.\n\nKostenbeispiel:\n\n- Lvl. 0: Analyse einer kleinen, einfachen Glyphe\n- Lvl. 1: Analyse einer einzelnen Struktur, etwa einer Glyphe oder einer magischen Waffe\n- Lvl. 2:\n- Lvl. 3: Analyse eines Geflechts aus Runen\n- Lvl. 4: Analyse eines komplexen magischen Mechanismus, etwa eines magischen Raums\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Magische Struktur analysieren (Stufe 1)"
+			}
+		},
+		{
+			"id": "mystik:auraAussenden",
+			"name": "Aura aussenden",
+			"skill": "mystik",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier trennt seine Aura vom Körper. Er kann sich in einer Art arkanen Körper frei bewegen. Diese arkane Form ist für andere Lebewesen durch nichtmagische Mittel unsichtbar. Im Gegenzug kann der Magier durch seine Aura Magie- und Energieströme wahrnehmen. Er kann in dieser Form nur durch Magie mit seiner Umgebung interagieren. So kann der Magier etwa fremdes Gebiet auskundschaften, Lebewesen aufspüren oder sogar Gegner hinterrücks angreifen.\n\nKostenbeispiel: Der Zauber wird für gewöhnlich immer auf Lvl. 1 gewirkt. Jedoch kostet der Zauber zusätzlichg 1 MP für alle 10 Minuten, die die Aura vom Körper getrennt ist. Jede Meile, die sich der Magier von seinem Körper entfernt, kostet einen zusätzlichen MP.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Aura aussenden (Stufe 2)"
+			}
+		},
+		{
+			"id": "mystik:aurenErfassen",
+			"name": "Auren erfassen",
+			"skill": "mystik",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier erfasst Auren in einem gewissen Umkreis. Er kann so Lebewesen aufspüren und lokalisieren, auch durch Wände oder andere Barrieren hindurch.\n\nKostenbeispiel: Der Zauber kostet 1 MP pro fünf Schritt Umkreis. Größere Hindernisse, wie etwa Stahl- oder Steinwände, sowie magische Barrieren, können die Kosten hinter dem Hindernis verdoppeln.\n\n- Lvl. 0:\n- Lvl. 1:\n- Lvl. 2:\n- Lvl. 3:\n- Lvl. 4:\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Auren erfassen (Stufe 2)"
+			}
+		},
+		{
+			"id": "mystik:aurenVerbinden",
+			"name": "Auren verbinden",
+			"skill": "mystik",
+			"tier": 3,
+			"kind": "Beeinflussungszauber",
+			"text": "Der Magier verbindet die Auren zweier Lebewesen miteinander. Eine solche Verbindung kann dazu führen, dass magische oder sonstige Effekte, die auf ein Lebewesens einwirken, sich auch auf das verbundene Wesen auswirken. Je nach Stärke der Verbindung können so etwa Bezauberungen, Einflussnahmen oder auch körperlicher oder magischer Schaden geteilt werden.\n\nKostenbeispiel:\n\n- Lvl. 0: Leichte Verbindung, die ein unterschwelliges Gefühl der Nähe hervorrufen kann\n- Lvl. 1: Simple Verbindung, die zwei Lebewesen dieselbe Bezauberung für eine kurze Zeit teilen lässt\n- Lvl. 2:\n- Lvl. 3: Stabile Verbindung, mit der sich eine Einflussnahme von einem Lebewesen auf ein weiteres erstrecken lassen kann\n- Lvl. 4:\n- Lvl. 5: Starke Verbindung, die es Lebewesen ermöglicht, Schaden aller Art zu teilen (oder auch teilen zu müssen)",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Auren verbinden (Beeinflussungszauber, Stufe 3)"
+			}
+		},
+		{
+			"id": "mystik:gravitationBiegen",
+			"name": "Gravitation biegen",
+			"skill": "mystik",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier manipuliert Gravitation, um etwa Schwerkraft aufzuheben, zu verstärken oder umzukehren. Dieser Zauber bezieht sich auf Orte und Räume, nicht auf Gegenstände.\n\nKostenbeispiel:\n\n- Lvl. 0: Obst auf einer Schale schweben lassen\n- Lvl. 1: Schwerkraft auf dem Boden unter einer Person verstärken\n- Lvl. 2:\n- Lvl. 3: Gravitation in einer Fallgrube umkehren\n- Lvl. 4: Schwerkraft in einem Raum aufheben\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Gravitation biegen (Stufe 2)"
+			}
+		},
+		{
+			"id": "mystik:magischeStrukturBeeinflussen",
+			"name": "Magische Struktur beeinflussen",
+			"skill": "mystik",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier beeinflusst eine magische Struktur, wie etwa eine Glyphe, einen magischen Mechanismus, eine Magiequelle oder einen aktiven und präsenten Zauber. Er kann so den Effekt eines Zaubers oder einer Verzauberung verändern, dessen Stärke modifizieren oder dessen Quelle verändern.\n\nKostenbeispiel:\n\n- Lvl. 0: Farbe eines magischen Lichtes ändern\n- Lvl. 1: Fallen-Glyphe entschärfen\n- Lvl. 2: Gelenkten Energieball übernehmen\n- Lvl. 3: Seelenstein so modifizieren, dass er Energie entzieht anstelle abzugeben\n- Lvl. 4: Ziel eines angreifenden Golems verändern\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Magische Struktur beeinflussen (Stufe 2)"
+			}
+		},
+		{
+			"id": "mystik:raumWahrnehmen",
+			"name": "Raum wahrnehmen",
+			"skill": "mystik",
+			"tier": 2,
+			"kind": "Beeinflussungszauber",
+			"text": "Der Magier erfasst einen bestimmten Teil des Raums um ihn herum in variierendem Detailgrad. So können etwa bestimmte Sachen lokalisiert werden, Wege erkundet oder auch sich ein genauer Überblick über eine Situation verschafft werden.\n\nKostenbeispiel:\n\n- Lvl. 0: Kleines Loch in der Wand erkunden\n- Lvl. 1: Entfernung zwischen zwei Punkten messen\n- Lvl. 2:\n- Lvl. 3: Kleines Objekt in einem Raum lokalisieren\n- Lvl. 4: Abschnitt eines Höhlensystems erfassen\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Raum wahrnehmen (Beeinflussungszauber, Stufe 2)"
+			}
+		},
+		{
+			"id": "mystik:schicksalErspueren",
+			"name": "Schicksal erspüren",
+			"skill": "mystik",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier unterdrückt alle bewussten Gedanken, öffnet seine Seele und spürt in das Schicksal der Welten hinein. Er kann dabei entweder ungezielt in wahllose Schicksalsfäden hineinhorchen oder einer bestimmten Frage hinterherspüren. Die Antwort auf diese Fragen sind jedoch selten klar und eindeutig, sondern offenbaren sich in der Form von Wahrsagungen, Prophezeiungen und Visionen. Um den Zauber zu ermöglichen, werden oft Hilfsmittel wie Räucherstäbchen, Hypnose, Meditation oder schlichter Schlaf verwendet.\n\nKostenbeispiel:\n\n- Lvl. 0: Geistesblitz des Schicksals\n- Lvl. 1: Ungezielte Suche nach einer Vision\n- Lvl. 2: Gespür für die Tragweite einer Entscheidung erhalten\n- Lvl. 3: Tiefe Suche nach der Antwort auf eine konkrete Frage\n- Lvl. 4: Gezielte Vision zu einem bestimmten Geschehnis\n- Lvl. 5: Tiefe Analyse eines Schicksalsfaden, zum Beispiel nach den verschiedenen Auswirkungen einer Handlung",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Schicksal erspüren (Stufe 2)"
+			}
+		},
+		{
+			"id": "mystik:verfluchenOderSegnen",
+			"name": "Verfluchen oder Segnen",
+			"skill": "mystik",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier wirkt Schicksalsmagie auf ein Ziel, um dessen Schicksal auf magische Weise hervorzubringen. Er kanalisiert damit auf magische Weise das Karma des Ziel und kann es etwa für gute Taten belohnen oder für schlechte bestrafen. Flüche und Segen werden einfacher und mächtiger, je enger die Schicksalsverbindung zwischen Magier und Ziel ist. Im Idealfall muss also eine emotionale oder schicksalhafte Verbindung vorhanden sein. Es reicht jedoch, wenn eine Seite diese Verbindung empfindet.\n\nIn der Praxis verbindet der Magier daraufhin das Lebewesen mit einem dauerhaften Zauber. Dieser Zauber begleitet sein Opfer und wird entweder dauerhaft oder unter bestimmten Umständen ausgelöst. Je besser der Zauber zum Schicksal des Ziels passt, desto einfacher und mächtiger ist er. Je nach Fähigkeit des Magiers kann ein solcher Zauber äußerst subtil und schwer zu entdecken sein.\n\nKostenbeispiel:\n\n- Lvl. 0: Motivation für eine singuläre Aufgabe\n- Lvl. 1: Böser Blick: Unglück für den Tag\n- Lvl. 2: Fluch im Kampf (Variables Ungeschick in den nächsten Runden)\n- Lvl. 3: Simpler, eher nerviger Fluch, der sich nach einigen Wochen oder einer simplen Kondition verflüchtigt\n- Lvl. 4: Gruppe Kämpfer für einen Kampf segnen\n- Lvl. 5: Mächtiger Schutzsegen, der irgendwann in der Zukunft eine Person vor Unheil beschützen kann\n- Lvl. 8: Tiefer und komplexer Fluch mit mehreren Bedingungen und Konsequenzen (Prinz, der in einen Frosch verwandelt wird)\n- Lvl. 10: Tiefer, lebenslanger Segen, der zuverlässig vor einem bestimmten Unheil bewahrt (Lilis Segen auf Harry als Beispiel)\n- Lvl. 30: Segnung oder Verfluchung eines ganzen Landstrichs",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Verfluchen oder Segnen (Stufe 2)"
+			}
+		},
+		{
+			"id": "mystik:lebenBeeinflussen",
+			"name": "Leben beeinflussen",
+			"skill": "mystik",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier beeinflusst die Lebensenergie eines Lebewesens. Diese Form der Höheren Magie ist einerseits in der Lage, Lebensenergie zu spenden, Menschen zu verjüngen und sogar das Alter selbst aufzuhalten. Auf der anderen Seite ist dieser Zauber in der Lage, Lebensenergie auszusaugen und zu absorbieren, ebenso wie Lebewesen altern und zu Staub zerfallen zu lassen, oder sogar die Toten wiederauferstehen zu lassen. Nur wenige Magier beherrschen diese Form der Magie und jeder einzelne verfügt über eine unvorstellbar große Macht.\n\nKostenbeispiel:\n\n- Lvl. 0: Vorrübergehendes Altersmakel auf einer fremden Hand\n- Lvl. 1: Leben aus einem Lebewesen aussaugen\n- Lvl. 2: Gesicht für eine kurze Zeitspanne jünger erscheinen lassen\n- Lvl. 3: Lebewesen um Jahre altern lassen\n- Lvl. 4: Leiche zu einem Untoten erheben\n- Lvl. 5: Kürzlich gestorbene Person wiederbeleben",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Leben beeinflussen (Stufe 3)"
+			}
+		},
+		{
+			"id": "mystik:raumBiegen",
+			"name": "Raum biegen",
+			"skill": "mystik",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier formt den Raum nach seinem Willen. Genauso wie bei der Zeitmagie handelt es sich bei Raummagie um höhere Magie, die noch kaum erforscht ist und deren Potential zu einem Großteil im Dunkeln liegt. In der Praxis wird dieser Zauber meist dazu genutzt, Portale zwischen zwei Orten zu öffnen. Dabei muss mindestens ein Ort sich in Reichweite des Magiers befinden, während die anderen Orte bekannt und als klares Bild im Gedächtnis vorhanden sein müssen. Auch kann dieser Zauber für kurze Teleportationen aus strategischen Gründen benutzt werden.\n\nKostenbeispiel:\n\n- Lvl. 0: Papierkugel teleportieren\n- Lvl. 1: Kleinen Gegenstand in direkter Reichweite teleportieren, zum Beispiel einen Geldbeutel\n- Lvl. 2: Raumsprung (Direkte Sichtlinie überqueren)\n- Lvl. 3: Teleportation eines kleinen Gegenstand über größere Entfernung\n- Lvl. 4: Eigene Teleportation im Bereich der Aura\n- Lvl. 5: Öffnung eines Portals über kurze Reichweite (Umkreis von 3 Meilen)\n- Lvl. 8: Öffnung eines Portals über mittlere Reichweite (Umkreis von 10 Meilen)\n- Lvl. 10: Öffnung eines Portals über große Reichweite (Umkreis von 50 Meilen)\n- Lvl. 15: Öffnung eines Portals in einer riesigen Reichweite (Umkreis von 500 Meilen)",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Raum biegen (Stufe 3)"
+			}
+		},
+		{
+			"id": "mystik:sphaereBiegen",
+			"name": "Sphäre biegen",
+			"skill": "mystik",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier manipuliert die Sphärenwände, die die Barriere zwischen den verschiedenen Welten bilden. So kann er etwa Portale in eine fremde Dimension öffnen oder auch Sachen hinein- und sogar herausbefördern.\n\nKostenbeispiel: Die Kosten für diesen Zauber variieren, je weiter entfernt die jeweilige Sphäre von der Sphäre des Magiers ist und ebenso je nach Größe der Öffnung. So brauchen größere und mächtigere Dämonen in der Regel größere und stabilere Portale, um in dieser Sphäre zu wirken.\n\n- Lvl. 0:\n- Lvl. 1:\n- Lvl. 2:\n- Lvl. 3:\n- Lvl. 4:\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Sphäre biegen (Stufe 3)"
+			}
+		},
+		{
+			"id": "mystik:zeitBiegen",
+			"name": "Zeit biegen",
+			"skill": "mystik",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier manipuliert die Zeit selbst. Dieser Zauber geht tief hinein in die höhere Magie und bietet ein schier unerschöpfliches Potential für die Fähigsten der Magier. Zeit anhalten, verlangsamen, verschnellern, Blicke in die Vergangenheit und Zukunft, Zeitsprünge, sogar die Fähigkeit, den Lauf der Zeit zu verändern, all dies soll mit diesem Zauber möglich sein. Doch die Zeit selbst stellt eine unberechenbare magische Struktur da und nur wenige Magier trauen sich an diese heran.\n\nKostenbeispiel:\n\n- Lvl. 0: Münze langsamer fallen lassen\n- Lvl. 1: Pfeil verschnellern\n- Lvl. 2: Kurzen Blick in die unmittelbare Zukunft werfen\n- Lvl. 3:\n- Lvl. 4: Zeit für eine kurze Periode verlangsamen\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Mystik.md",
+				"section": "Zeit biegen (Stufe 3)"
+			}
+		},
+		{
+			"id": "psychomantie:emotionAusloesen",
+			"name": "Emotion auslösen",
+			"skill": "psychomantie",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier greift in die Gefühle eines mit ihm verbundenen Lebewesens ein und verändert dessen Emotionen. So kann er etwa Furcht erzeugen, Wut entfachen oder Zuversicht auslösen.\n\nKostenbeispiel:\n\n- Lvl. 0: Ein leichtes Gefühl der Unsicherheit bei einem Händedruck erzeugen\n- Lvl. 1: Zuversicht in einer benachbarten Person auslösen\n- Lvl. 2: Mit einer Umarmung eine Person für einen Tag mit warmen Gefühlen erfüllen\n- Lvl. 3: Wut in zwei sich im Gespräch befindlichen Menschen entzünden\n- Lvl. 4: Furcht in Lebewesen im direkten Umfeld auslösen\n- Lvl. 5: Temporärer Liebeszauber auf eine Person",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Psychomantie.md",
+				"section": "Emotion auslösen (Stufe 1)"
+			}
+		},
+		{
+			"id": "psychomantie:emotionenSehen",
+			"name": "Emotionen sehen",
+			"skill": "psychomantie",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier nimmt die Emotionen eines Lebewesens war. Er beeinflusst diese nicht, sondern erhält bloße Informationen über den Gemütszustand des Gegenübers.\n\nKostenbeispiel:\n\n- Lvl. 0: Bei einer Berührung einen Eindruck von der Stimmung des Gegenübers kriegen\n- Lvl. 1: Emotionen eines einzelnen Lebewesens lesen\n- Lvl. 2: Gemütszustand von Personen im direkten Umfeld sichtbar machen\n- Lvl. 3: Stimmungen in einer Gruppe Menschen erfühlen\n- Lvl. 4: Stimmungen eines Stadtviertels oder eines Dorfes erspüren\n- Lvl. 5: Eindruck von den Emotionen der Menschen eines ganzen Landstriches erhalten",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Psychomantie.md",
+				"section": "Emotionen sehen (Stufe 1)"
+			}
+		},
+		{
+			"id": "psychomantie:gedankenUebertragen",
+			"name": "Gedanken übertragen",
+			"skill": "psychomantie",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier überträgt seine Gedanken über eine geistige Verbindung telepathisch auf ein anderes Lebewesen. Er ist durch diesen Zauber nicht in der Lage, die Gedanken seines Gegenübers zu lesen. Um den Zauber zu wirken, muss der Magier entweder wissen, wo sich der Empfänger befindet oder eine emotionale oder magische Verbindung zu ihm besitzen. Erfahrene Magier können nicht nur Worte oder einzelne Sätze übertragen, sondern komplexe Bilder, Gedankenkomplexe oder sogar ganze Pläne. Die Schwierigkeit eines solchen Unterfangens wird durch die Willigkeit des Empfängers, die Nachricht zu empfangen, sowie der Länge und Komplexität der Botschaft determiniert.\n\nKostenbeispiel:\n\n- Lvl. 0: Nachricht an eine Person übermitteln, die man berührt\n- Lvl. 1: Nachricht an eine Person innerhalb der äußeren Aurasphäre\n- Lvl. 2: Nachricht an eine Person, die sich bis zu hundert Schritt entfernt aufhält\n- Lvl. 3: Nachricht an eine Person, die sich bis zu einer Meile entfernt aufhält\n- Lvl. 4: Nachricht an eine Person, die sich bis zu 10 Meilen entfernt aufhält\n- Lvl. 5: Nachricht an eine Person, die sich bis zu 50 Meilen entfernt aufhält",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Psychomantie.md",
+				"section": "Gedanken übertragen (Stufe 1)"
+			}
+		},
+		{
+			"id": "psychomantie:gedankenmanipulation",
+			"name": "Gedankenmanipulation",
+			"skill": "psychomantie",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier manipuliert Gedanken auf einer unbewussten Ebene. Er kann seinen Opfer so einen völlig neuen Gedanken oder eine Idee einpflanzen, einen bestehenden Gedanken verstärken oder eine Idee oder eine Erinnerung verdrehen und verändern. Je nach Erfolg und Stärke des Zaubers bleibt die Manipulation unentdeckt und hält länger oder sogar ewig an.\n\nKostenbeispiel:\n\n- Lvl. 0: Eigene Gedanken fokussieren\n- Lvl. 1: Gedanken einer Person verstärken, etwa um diese in etwas reinzureden\n- Lvl. 2: Dem Ziel einflüstern, an diesem Tag eine gute Tat vollbringen zu müssen\n- Lvl. 3: Eine konkrete Idee in einer Person verankern, etwa einen bestimmten Ort zu besuchen\n- Lvl. 4: Bestimmte Person aus einer Erinnerung streichen\n- Lvl. 5: Eine Erinnerung löschen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Psychomantie.md",
+				"section": "Gedankenmanipulation (Stufe 2)"
+			}
+		},
+		{
+			"id": "psychomantie:gedankenLesen",
+			"name": "Gedanken lesen",
+			"skill": "psychomantie",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier nimmt über eine geistige Verbindung die Gedanken des Gegenübers war. Je nach Komplexität des Zaubers kann er einzelne Gedankenfetzen bis hin zu komplexen Gedankensträngen und Pläne wahrnehmen. Gedankenlesen erlaubt allerdings nicht automatisch das Verständnis der Sprache des Gegenübers. Geübte Magier können jedoch auch bei Personen, die sie ursprünglich nicht verstehen, eine abstrakte Vorstellung des Gegenstands der Gedanken des Opfers erhalten. Neben dem unfreiwilligen Lesen von Gedanken kann Gedankenlesen auch dazu benutzt werden, die Gedanken des Gegenübers auf freiwilliger Basis in einer telepathischen Konversation zu lesen, wenn dieser seinerseits nicht in der Lage ist, seine Gedanken zu übertragen.\n\nKostenbeispiel: Das Level des Zaubers hängen von der Entfernung von der Zielperson sowie von der Dauer des Gedankenlesens ab. Normalerweise kostet Gedankenlesen 1 MP pro fünf Sekunden Lesen. Befindet sich die Person außerhalb der Reichweite des Magiers, wird das Level für alle zehn Meter um eins erhöht.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Psychomantie.md",
+				"section": "Gedanken lesen (Stufe 2)"
+			}
+		},
+		{
+			"id": "psychomantie:geistBeeinflussen",
+			"name": "Geist beeinflussen",
+			"skill": "psychomantie",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier manipuliert das Bewusstsein eines Lebewesens. Er kann so etwa dessen Wahrnehmung verändern, seinen Geist lähmen, seine Konzentration stören, ihm Dinge vorgaukeln, die nicht existieren oder auch seinen Willen brechen.\n\nKostenbeispiel:\n\n- Lvl. 0: Im Gespräch die Konzentration einer Person kurz stören\n- Lvl. 1: Aufmerksamkeit einer Person auf sich oder ein bestimmtes Objekt ziehen\n- Lvl. 2: Konzentration eines Magiers bei einem Zauber stören\n- Lvl. 3: Geist eines Magiers für eine geringe Zeitspanne lähmen\n- Lvl. 4: Verwirrung bei einer kleinen Gruppe auslösen\n- Lvl. 5: Willen einer Person brechen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Psychomantie.md",
+				"section": "Geist beeinflussen (Stufe 2)"
+			}
+		},
+		{
+			"id": "psychomantie:geistStaerken",
+			"name": "Geist stärken",
+			"skill": "psychomantie",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier stärkt seinen eigenen Geist oder den Geist eines anderen Lebewesens und schützt ihn vor magischer Beeinflussung von außen. Dieser Zauber erhöht die arkane Abwehrkraft der Aura und ermöglicht es zudem, fremde Beeinflussungen zu beseitigen. Der Magier kann sich so gegen einen anderen mächtigen Magier wappnen, eine fremde Beeinflussung des Geistes abwehren oder Lebewesen unter fremden magischen Einfluss befreien.\n\nKostenbeispiel: Für jedes Level erhält der Magier oder sein Verbündeter einen Bonus von +1 in einem Auraduell oder einer Gegenprobe gegen magische Beeinflussung. Dies wirkt sich auf die Schadensberechnung für Auraschaden aus. Ist der Verbündete weiter vom Magier entfernt, so steigt das Level ebenfalls",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Psychomantie.md",
+				"section": "Geist stärken (Stufe 2)"
+			}
+		},
+		{
+			"id": "psychomantie:lebewesenKontrollieren",
+			"name": "Lebewesen kontrollieren",
+			"skill": "psychomantie",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier übernimmt das Bewusstsein eines Lebewesens und damit die Kontrolle über dieses. Je nach Macht des Zaubers kann das Opfer zu unterschiedlichen Graden und über unterschiedliche Zeitspannen kontrolliert werden. Dies reicht von einfachen, zeitlich begrenzten Befehlen bis hin zur kompletten Kontrolle über einen beliebig langen Zeitraum. Der Zauber benötigt eine intakte geistige Verbindung zur Quelle der Kontrolle. Ist diese Verbindung unterbrochen, endet auch der Zauber.\n\nKostenbeispiel:\n\n- Lvl. 0:\n- Lvl. 1:\n- Lvl. 2:\n- Lvl. 3:\n- Lvl. 4:\n- Lvl. 5:\n\n1 MP = Einzelner, kurzzeitiger Befehl an eine unterworfene Person\n\n3 MP = Unterstützung von einer Person für eine kurze Zeitspanne erzwingen, etwa für einen Kampf\n\n5 MP = Völlige Kontrolle über eine Person für wenige Minuten\n\n10 MP = Unterwerfung eines nichtmagischen Lebewesens für mehrere Stunden",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Psychomantie.md",
+				"section": "Lebewesen kontrollieren (Stufe 3)"
+			}
+		},
+		{
+			"id": "psychomantie:psycheBeeinflussen",
+			"name": "Psyche beeinflussen",
+			"skill": "psychomantie",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier manipuliert das Unterbewusstsein eines Lebewesens. Mit diesem Zauber können Träume beeinflusst oder tiefe Ängste und Sehnsüchte herausgefunden, verstärkt oder abgeschwächt werden.\n\nKostenbeispiel: 1 MP = Einen Blick in den Traum eines Lebewesens werfen\n\n3 MP = Eine Person in Trance versetzen\n\n5 MP = Traum einer Person modifizieren, um etwa Ängste aufzudecken oder das Unterbewusstsein zu modifizieren\n\n10 MP = In den Traum eines Lebewesens schlüpfen (5 MP pro weiterer ½ Stunde)",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Psychomantie.md",
+				"section": "Psyche beeinflussen (Stufe 3)"
+			}
+		},
+		{
+			"id": "verzauberung:arkanerImpuls",
+			"name": "Arkaner Impuls",
+			"skill": "verzauberung",
+			"tier": 0,
+			"kind": "",
+			"text": "Der Magier sendet einen kleinen magischen Impuls aus, der eine arkane Struktur wie eine Glyphe oder einen magischen Mechanismus aktiviert.\n\nKostenbeispiel: Die Level des Zaubers schwanken mit der Größe der arkanen Struktur.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Arkaner Impuls (Basis)"
+			}
+		},
+		{
+			"id": "verzauberung:energieSpeichern",
+			"name": "Energie speichern",
+			"skill": "verzauberung",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier lädt eine Magiequelle mit Energie auf. Dabei kann er Energie einerseits in künstlichen Magiequellen speichern, andererseits auch in natürlichen Quellen wie etwa Lebewesen oder Elementen. Je besser der Magier, desto weniger Energie geht beim Speichervorgang verloren.\n\nKostenbeispiel: Das Level des Zaubers hängt davon ab, wie viele MP der Magier in der Quelle speichern will und wie komplex die Quelle ist.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Energie speichern (Stufe 1)"
+			}
+		},
+		{
+			"id": "verzauberung:glypheErschaffen",
+			"name": "Glyphe erschaffen",
+			"skill": "verzauberung",
+			"tier": 1,
+			"kind": "",
+			"text": "Mit einer Glyphe können einen oder mehrere bekannte Zauber an ein Objekt oder einen Ort gebunden werden. Zudem können Bedingungen festgelegt werden, unter welchen der Zauber in einem bestimmten Bereich ausgelöst wird. Der Magier muss alle Zauber, die die Glyphe beinhaltet, beherrschen. Der Magier legt zudem die Umstände fest, unter denen die Glyphe ausgelöst wird. So kann eine Glyphe etwa durch einen arkanen Impuls des Magiers oder eines anderen Magier, sowie durch einen anderen magischen Mechanismus ausgelöst werden. Ebenso können Glyphen unter Umständen dauerhaft aktiv sein. Eine Glyphe kann nach dem Erschaffen einmalig ausgelöst werden, ehe sie neu aufgeladen werden muss oder zerfällt. Glyphen können mit einer Magiequelle verbunden werden, so das sie sich selbstständig mit Energie für den Zauber auflädt.\n\nKostenbeispiel: Das Level einer Glyphe hängt von den Kosten des daran gebundenen Zaubers oder Zauberspruchs ab. Ein Zauberspruch, der in eine Glyphe gebunden wird, kostet doppelt im Vergleich zu einem direkt gewirkten Zauber.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Glyphe erschaffen (Stufe 1)"
+			}
+		},
+		{
+			"id": "verzauberung:kuenstlicheMagiequelleSchaffen",
+			"name": "Künstliche Magiequelle schaffen",
+			"skill": "verzauberung",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier erschafft eine arkane Struktur in einem Objekt, welche es diesem ermöglicht, Magie zu speichern. Diese Quelle enthält noch keine Energie und muss zunächst aufgeladen werden.\n\nKostenbeispiel: Das Level des Zaubers hängt von der erwünschten Kapazität der Magiequelle ab. Für jedes Level lassen sich 10 MP in der Quelle speichern.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Künstliche Magiequelle schaffen (Stufe 1)"
+			}
+		},
+		{
+			"id": "verzauberung:magischeVerbindungenModifizieren",
+			"name": "Magische Verbindungen modifizieren",
+			"skill": "verzauberung",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier erzeugt oder modifiziert eine Verbindung zwischen zwei magischen Strukturen, etwa einer Magiequelle, einem Mechanismus oder einer Glyphe. So lassen sich komplexere Glyphenstrukturen schaffen, Mechanismen und Glyphen an eine Energiequelle anschließen oder magische Verbindungen trennen.\n\nKostenbeispiel:\n\n- Lvl. 0: Glyphen miteinander verbinden, etwa Auslöser mit Falle oder Glyphe mit Magiequelle\n- Lvl. 1: Fallenglyphe entschärfen\n- Lvl. 2:\n- Lvl. 3:\n- Lvl. 4: Größeren Glyphen-Komplex lahmlegen\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Magische Verbindungen modifizieren (Stufe 1)"
+			}
+		},
+		{
+			"id": "verzauberung:alchemischeZutatenVeredeln",
+			"name": "Alchemische Zutaten veredeln",
+			"skill": "verzauberung",
+			"tier": 2,
+			"kind": "",
+			"text": "Bestimmte Eigenschaften von Pflanzen und anderen alchemischen Zutaten werden vom Magier extrahiert, potenziert oder abgeschwächt, um Alchemika zu brauen. So können sehr wirkungsvolle Tränke und Tinkturen entstehen, die eine breite Palette an Effekten aufweisen können. In der Praxis werden so zumeist die natürlichen Effekte von alchemischen Zutaten um ein Vielfaches verstärkt und Negativeffekte unterdrückt.\n\nKostenbeispiel: Die Kosten hängen von dem jeweiligen Rezept und der Zutat ab. Je mehr Effekt aus weniger Material herausgeholt werden muss, desto mehr MP müssen investiert werden.\n\n- Lvl. 0:\n- Lvl. 2:\n- Lvl. 3:\n- Lvl. 4:\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Alchemische Zutaten veredeln (Stufe 2)"
+			}
+		},
+		{
+			"id": "verzauberung:gemmenErschaffen",
+			"name": "Gemmen erschaffen",
+			"skill": "verzauberung",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier weckt und verstärkt mit magischen Stimuli die arkanen Kräfte, die in Edelsteinen und -metallen natürlich vorhanden sind. Die so entstandenen Gemmensteine bergen zwar keine Zauber in sich, können aber Rüstungen, Waffen, Amulette oder Glyphen, mit denen sie verbunden sind, auf magische Weise verstärken oder unterschwellige magische Effekte auf Lebewesen haben. So können rote Rubine die Macht von Schwertern und Hämmern erhöhen, Diamanten Waffen und Rüstungen härten und Amulette aus Saphir Wunden schließen. Gravuren aus Silber können Rüstungen gegen Magie verstärken oder Waffen effektiver gegen magische Kreaturen machen, während Selbiges in Gold Zauber und Glyphen verstärkt.\n\nKostenbeispiel: Die Kosten hängen von der Größe und Reinheit des Steins ab.\n\n- Lvl. 0:\n- Lvl. 2:\n- Lvl. 3:\n- Lvl. 4:\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Gemmen erschaffen (Stufe 2)"
+			}
+		},
+		{
+			"id": "verzauberung:glyphenKlonen",
+			"name": "Glyphen klonen",
+			"skill": "verzauberung",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier kopiert den Effekt einer Glyphe und bindet ihn an ein neues Objekt. So können Glyphen geklont oder auch die Effekte raffinierterer Glyphen gesammelt und bei Bedarf eingesetzt werden. Die Kopie einer Glyphe ist zwar einfacher als deren Herstellung, dennoch gehört einiges an Erfahrung dazu, eine komplexe Glyphe zu kopieren\n\nKostenbeispiel: Die Kosten des Zaubers hängen von der Komplexität und investierten Magiepunkten der kopierten Glyphe ab.\n\n- Lvl. 0:\n- Lvl. 2:\n- Lvl. 3:\n- Lvl. 4:\n- Lvl. 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Glyphen klonen (Stufe 2)"
+			}
+		},
+		{
+			"id": "verzauberung:magischenMechanismusErzeugen",
+			"name": "Magischen Mechanismus erzeugen",
+			"skill": "verzauberung",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier erschafft eine magische Struktur, die eine Konstruktion aus Glyphen und/oder profanen Mechaniken steuert und es diesem ermöglicht, die einzelnen Bestandteile zu kontrollieren und komplexere Befehle zu befolgen. Dies reicht von dem Betrieb einfacher Konstruktionen wie einer magischen Uhr oder einem Transportmechanismus bis hin zu komplexeren Mechanismen wie beispielsweise einem Schloss, welches nur auf bestimmte Schlüssel reagiert oder auch einem magischen Roboter, welcher einfache Aufgaben übernimmt. Die Komplexität der Konstruktion und der Befehle definiert dabei die Schwierigkeit des Zaubers. Ähnlich wie bei einer Glyphe benötigt auch ein magischer Mechanismus eine dauerhafte Magiequelle, um zu funktionieren.\n\nKostenbeispiel:\n\n- Lvl. 0:\n- Lvl. 1: Magisch betriebene Uhr\n- Lvl. 2:\n- Lvl. 3: Magische Tür, die sich nur für bestimmte Leute öffnet\n- Lvl. 4:\n- Lvl. 5: Steuerungseinheit für einen simplen Roboter, etwa eine kleine Drohne",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Magischen Mechanismus erzeugen (Stufe 2)"
+			}
+		},
+		{
+			"id": "verzauberung:elementarorbExtrahieren",
+			"name": "Elementarorb extrahieren",
+			"skill": "verzauberung",
+			"tier": 3,
+			"kind": "",
+			"text": "Konzentrierte Elementarmagie wie etwa Elemantarmarke oder Elementaressenzen können mit diesem Zauber zu einer Art natürlichen Pseudoglyphen verwandelt werden. So kann der Magier etwa ein Elementarmark so modifizieren, dass die gespeicherte Energie in einen im bekannten Elementarzauber umgewandelt wird, der im Orb gespeichert wird. Dieses Orb kann dann, analog zu einer Glyphe, jederzeit eingesetzt werden, um den Zauber zu wirken. Elementaressenzen funktionieren dabei im Kern ähnlich, nur das die daraus geschaffenen Orbs ein Eigenleben besitzen. Der Magier kann diesem Essenzorb einen Befehl geben, für den das Orb die in ihm gespeicherte Energie verwendet. Ein Magier kann somit so auch Zauberarten einsetzen, die ihm nicht direkt bekannt sind. Sie müssen jedoch zum Element des Orbs passen.\n\nKostenbeispiel: Der Zauber ist von der verwendeten Elementarmagie abhängig und kostet daher an sich keine Magiepunkte. Der Magier hat also die MP für den Zauber zu Verfügung die in das Elementarmark geflossen sind. Bei einer Elementaressenz richtet sich die verfügbare MP-Anzahl nach der Reinheit der Essenz.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Elementarorb extrahieren (Stufe 3)"
+			}
+		},
+		{
+			"id": "verzauberung:regenerierendeMagiequelleErschaffen",
+			"name": "Regenerierende Magiequelle erschaffen",
+			"skill": "verzauberung",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier modifiziert eine künstliche Magiequelle, sodass diese selbstständig Energie regenerieren kann. Die Quelle muss dabei irgendeine Möglichkeit haben, Energie zu erhalten. Das heißt in der Regel, dass eine natürliche Energiequelle erreichbar sein muss. Dies kann eine Elementarquelle wie ein Tümpel oder Wald sein, oder aber auch die Sonne, ein Energieknotenpunkt oder sogar andere Lebewesen.\n\nKostenbeispiel: Die Kosten hängen davon ab, wie sehr die Quelle von natürlichen Magiequellen isoliert ist.",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Regenerierende Magiequelle erschaffen (Stufe 3)"
+			}
+		},
+		{
+			"id": "verzauberung:beleben",
+			"name": "Beleben",
+			"skill": "verzauberung",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier erschafft mit höherer Magie eine magische Struktur, die Leben in unbelebter oder toter Materie imitiert. So erhält das Objekt etwa motorische Fähigkeiten, Sprachfähigkeit oder die Fähigkeit, einfache oder komplexe Befehle des Magiers zu befolgen. Je nach Komplexität des belebten Konstruktes kann dieses in der Lage sein, autark ohne Energieversorgung zu existieren.\n\nKostenbeispiel:\n\n- Level 1: Selbstschreibende Feder erschaffen\n\n- Level 2:  Sprechenden Spiegel erschaffen\n\n- Level 3:  Simples Skelett erwecken\n\n- Level 5: Golem für komplexere Aufträge erwecken",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Verzauberung.md",
+				"section": "Beleben (Stufe 3)"
+			}
+		},
+		{
+			"id": "veraenderung:gewebeRegenerieren",
+			"name": "Gewebe regenerieren",
+			"skill": "veraenderung",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier stellt verletztes oder fehlendes Gewebe, also etwa Fleisch, Haut oder Knochen wieder her. Mit diesem Zauber ist es möglich, Wunden zu schließen, Knochen zu richten oder sogar Gliedmaßen nachwachsen zu lassen.\n\nKostenbeispiel:\n\n- Lvl. 0: Oberflächige Kratzer verheilen lassen\n- Lvl. 1: Durch Berührung Fleischwunden heilen (I: 1W6 / II: 2W6 / III: 3W6 wiederherstellen) (Ohne Berührung Lvl. 3)\n- Lvl. 2: Durch Berührung Blutung stoppen\n- Lvl. 3: Tiefe Verwundung verheilen lassen (Äquivalent zu medizinischer Behandlung: I: 1W4/ II: 2W4/ III: 3W4 Wundpunkte regeneriert; Patzer -1W4 WP)\n- Lvl. 4: Fleischwunden der Verbündeten heilen (I: 1W6 / II: 2W6 / III: 3W6 TP im Umkreis)\n- Lvl. 5: Frische Verstümmelung heilen (z.B. Gliedmaßen anwachsen lassen, Auge wiederherstellen)",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Gewebe regenerieren (Stufe 1)"
+			}
+		},
+		{
+			"id": "veraenderung:materieErfassen",
+			"name": "Materie erfassen",
+			"skill": "veraenderung",
+			"tier": 1,
+			"kind": "",
+			"text": "Die Ausmaße und Dimensionen zusammenhängender Materie werden erfasst, indem der Magier Magie durch die Materie leitet. Dabei können etwa Schwachstellen in einem Schloss, Unregelmäßigkeiten in einer Wand oder die Ausmaße eines Raumes erfasst werden.\n\nKostenbeispiel:\n\n- Level 0: Die Maße eines kleinen Objektes werden erfasst\n- Level 1: Durchmesser einer Tür oder Unregelmäßigkeiten in einem Edelstein überprüfen\n- Level 2: Geheimes Fach in einem Schreibtisch suchen\n- Level 3: Grundriss eines Raumes im Dunkeln erfassen\n- Level 4: Schwachstellen in einem Tunnel ausfindig machen.\n- Level 5: Ausmaße eines Hauses erfassen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Materie erfassen (Stufe 1)"
+			}
+		},
+		{
+			"id": "veraenderung:materieFormen",
+			"name": "Materie formen",
+			"skill": "veraenderung",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier verändert die Form von unbelebter Materie nach seinem Willen. Damit kann ein Magier etwa Öffnungen in Wänden erzeugen, Schlösser öffnen oder Fesseln lösen sowie die Größe und Form von Waffen verändern. Die Schwierigkeit des Zaubers wird vom Umfang der Veränderung als auch von der Komplexität der zu formenden Materie beeinflusst.\n\nKostenbeispiel:\n\n- Level 0: Winziges Zeichen in einem Mauerstein einlassen\n- Level 1: Fesseln lösen\n- Level 2: Ein Schloss öffnen\n- Level 3: Öffnung in einer Steinmauer erzeugen\n- Level 4: Dolch zu einem Schwert werden lassen\n- Level 5: Hütte schrumpfen lassen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Materie formen (Stufe 1)"
+			}
+		},
+		{
+			"id": "veraenderung:materieVeraendern",
+			"name": "Materie verändern",
+			"skill": "veraenderung",
+			"tier": 1,
+			"kind": "",
+			"text": "Der Magier verändert die Eigenschaften von unbelebter Materie. Dieser Zauber verändert den Zustand einer Materie, etwa ihre Temperatur oder ihr Gewicht. So kann er etwa das Gewicht einer Rüstung vermindern oder Schuhe unerträglich heiß werden lassen.\n\nKostenbeispiel:\n\n- Level 0: Teetasse erwärmen\n- Level 1: Hantel leichter werden lassen\n- Level 2: Mantel zu einem Schutzschild erhärten lassen\n- Level 3: Schuhe eines Gegners glühen lassen\n- Level 4: Fremde Rüstung erschweren\n- Level 6: Raum auf tiefe Minusgrade herunterkühlen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Materie verändern (Stufe 1)"
+			}
+		},
+		{
+			"id": "veraenderung:gewebeVeraendern",
+			"name": "Gewebe verändern",
+			"skill": "veraenderung",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier verändert eigenes oder fremdes Gewebe, also Fleisch, Muskeln, Haut oder Knochen. Dies ermöglicht tiefergehende Veränderungen am Körper eines Lebewesens, wie etwa das temporäre Stärken oder Schwächen von Muskeln, die Verhärtung von Haut, das Entfernen von Geschwüren oder das Verändern von Gesichtszügen, bis hin zu komplexen Mutationen wie dem Hinzufügen von Gliedmaßen, der Veränderung der Knochenstruktur oder dem Aneinanderwachsen zweier ursprünglich fremder Geweben. Komplexe und dauerhafte Mutationen können dabei fast immer nur ein längerfristiges und kompliziertes Ritual hervorgerufen werden.\n\nKostenbeispiel:\n\n- Level 0: Schönheitsmakel temporär entfernen\n- Level 1: Muskeln eines Arms für ein paar Minuten kräftigen\n- Level 2: Haut verhärten (zusätzlicher Rüstungsschutz\n- Level 3: Gesichtszüge für ein paar Stunden verändern\n- Level 4: Fremden Arm anwachsen lassen\n- Level 5: Mutierte Flügel aus Knochen und Haut für wenige Stunden",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Gewebe verändern (Stufe 2)"
+			}
+		},
+		{
+			"id": "veraenderung:koerperVerwandeln",
+			"name": "Körper verwandeln",
+			"skill": "veraenderung",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier kopiert den Körper eines Lebewesens und überträgt ihn auf ein anderes Lebewesen. Hiermit können Magier sich selbst oder andere Lebewesen in Tiere, andere Menschen oder sogar finstere Monster verwandeln. Dabei wird jedoch nur das Aussehen, also der Körper temporär verändert, während Geist und Seele unverändert bleiben. Um sich in ein Lebewesen zu verwandeln, muss zudem zunächst dessen Aura analysiert worden sein, um dessen körperliches Bild übertragen zu können.\n\nKostenbeispiel: Die Level dieses Zaubers hängen in erster Linie von der Größe und Komplexität des zu verwandelnden Lebewesens in Relation zum Magier als auch von der angestrebten Dauer der Verwandlung ab. Für jede Größenkategorie, die das Lebewesen von der\n\n- Level 0: Verwandlung in ein jüngeres oder älteres Ich für einige Sekunden\n- Level 1: Verwandlung für etwa eine Minute\n- Level 2: Verwandlung für wenige Minuten\n- Level 3: Verwandlung für etwa eine Stunde\n- Level 4: Verwandlung für mehrere Stunden\n- Level 5: Verwandlung für einen Tag",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Körper verwandeln (Stufe 2)"
+			}
+		},
+		{
+			"id": "veraenderung:materieVerwandeln",
+			"name": "Materie verwandeln",
+			"skill": "veraenderung",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier gibt unbelebter Materie zeitweise eine völlig andere Form. So kann er einen Gegenstand temporär in einen anderen Gegenstand verwandeln. Einem Objekt wird dabei eine andere Gestalt magisch übergestülpt. Diese Form fungiert physisch wie die reale Gestalt des Objektes. Da jeder Gegenstand jedoch in seine eigene Gestalt zurück will, wird eine solche Veränderung je nach Stärke des Zauber früher oder später rückgängig gemacht. Die Komplexität und Perfektion dieses Zaubers schwankt mit der Erfahrung des Magiers. Die Verwandlung von Novizen behalten oft Attribute der Ursprungsform oder entsprechen dem generischsten Bild der Verwandlungsgestalt.\n\nKostenbeispiel:\n\n- Level 0: Kupferpfennig für kurze Zeit in eine Silbermünze verwandeln\n- Level 1: Teetasse für kurze Zeit in eine Schreibfeder verwandeln\n- Level 2: Ast in ein Schwert oder ein Seil verwandeln\n- Level 3: Steine in Goldmünzen verwandeln\n- Level 4: Fliegenden Pfeil in eine Feder verwandeln\n- Level 5: Rüstung in einen Kartoffelsack verwandeln",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Materie verwandeln (Stufe 2)"
+			}
+		},
+		{
+			"id": "veraenderung:materieZusammenfuegenUndDesintegrieren",
+			"name": "Materie zusammenfügen und desintegrieren",
+			"skill": "veraenderung",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier löst die Struktur von unbelebter Materie auf oder fügt zerstückelte Teile zusammen. So kann man etwa eine Nachricht oder ein Geschoss in der Luft verschwinden lassen, oder aber auch Türen und Rüstungen in Luft auflösen.\n\nKostenbeispiel:\n\n- Level 0: Münze verschwinden lassen\n- Level 1: Zerrissenen Brief zusammenfügen\n- Level 2: Zerstörte Waffe reparieren\n- Level 3: Pfeil desintegrieren lassen\n- Level 4: Rüstung desintegrieren lassen\n- Level 5: Eingestürzten Wall reparieren",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Materie zusammenfügen und desintegrieren (Stufe 2)"
+			}
+		},
+		{
+			"id": "veraenderung:nervensystemManipulieren",
+			"name": "Nervensystem manipulieren",
+			"skill": "veraenderung",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier wirkt mit seiner Magie auf das eigene oder fremde Nervensystem ein, um Sinne zu verstärken oder zu schwächen. So kann er seine Sicht oder seinen Geruchssinn verstärken, Gegner blenden, verstummen oder taub werden lassen. Diese Veränderungen sind temporär und kompliziert durchzuführen, insbesondere bei unwilligen Fremden. Das Nervensystem des Körpers ist eng mit Geist und Aura eines Lebewesens verbunden und ist daher nur schwer von Magie zu beeinflussen.\n\nKostenbeispiel:\n\n- Level 1: Sehsinn für wenige Augenblicke stören\n- Level 2: Sicht verstärken\n- Level 3: Sprachfähigkeit für einige Stunden verlieren lassen\n- Level 4: Orientierungssinn für mehrere Tage durcheinander bringen\n- Level 5: Dauerhaft blenden oder taub werden lassen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Nervensystem manipulieren (Stufe 2)"
+			}
+		},
+		{
+			"id": "veraenderung:organeVeraendern",
+			"name": "Organe verändern",
+			"skill": "veraenderung",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier greift mit seiner Magie tief in die Prozesse des menschlichen Körpers ein. Er stimuliert oder hemmt dabei Organe wie das Herz, Magen, Leber oder Lunge. Dies kann im positiven Sinne dazu genutzt werden, die Leistungsfähigkeit zu erhöhen, Magenverstimmungen oder Lebervergiftungen entgegenzuwirken oder sogar scheinbar Tote zu reanimieren. Im negativen Sinn können so allerdings auch fatale Schläge auf fremde Organe ausgeführt werden. Solche tiefgreifenden magischen Veränderungen an fremden Körpern sind jedoch äußerst schwierig und komplex und sind daher nur sehr erfahrenen Magiern möglich.\n\nKostenbeispiel:\n\n- Level 0: Leichte Kopfschmerzen beseitigen\n- Level 1: Leistungsfähigkeit der Lungen für wenige Minuten erhöhen (Ausdauer erhöhen)\n- Level 2: Künstliche Trunkenheit auslösen\n- Level 3: Eigenen Herzschlag für gewisse Zeit aussetzen lassen\n- Level 4: Wirkung von Gift verlangsamen/ Schwere Organschäden verursachen\n- Level 5: Herz reanimieren (Kürzlich gestorbenen Charakter wiederbeleben)/ Herz anhalten",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Organe verändern (Stufe 2)"
+			}
+		},
+		{
+			"id": "veraenderung:prozesseManipulieren",
+			"name": "Prozesse manipulieren",
+			"skill": "veraenderung",
+			"tier": 2,
+			"kind": "",
+			"text": "Der Magier verändert die natürlichen Prozesse einer unbelebter Materie. Er kann damit Zersetzung beschleunigen oder zurückdrehen. So ist er etwa in der Lage, Rüstungen rosten zu lassen oder im Gegenzug zu entrosten, Holz faulen oder Nahrung schimmeln zu lassen.\n\nKostenbeispiel:\n\n- Level 0: Pfennig entrosten\n- Level 1: Schimmeligen Apfel regenerieren\n- Level 2: Schwert rosten lassen\n- Level 3: Stützbalken faulen lassen\n- Level 4: Leiche vor Fäulnis bewahren\n- Level 5: Mauersteine zu Staub zersetzen lassen",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Prozesse manipulieren (Stufe 2)"
+			}
+		},
+		{
+			"id": "veraenderung:veraenderungRueckwirken",
+			"name": "Veränderung rückwirken",
+			"skill": "veraenderung",
+			"tier": 3,
+			"kind": "",
+			"text": "Der Magier macht eine magische Veränderung rückgängig. Dies ist wesentlich einfacher bei temporären Veränderungen als bei dauerhaften. Das Objekt oder der Körper kehrt dabei in den Zustand vor der magischen Veränderung zurück.\n\nKostenbeispiel: Die Kosten für den Zauber hängen von der Komplexität und der investierten Magie der Veränderung ab.\n\n- Level 0:\n- Level 1:\n- Level 2:\n- Level 3:\n- Level 4:\n- Level 5:",
+			"source": {
+				"file": "Charaktererstellung/Zauber/Veränderung.md",
+				"section": "Veränderung rückwirken (Stufe 3)"
+			}
+		}
+	]
+}

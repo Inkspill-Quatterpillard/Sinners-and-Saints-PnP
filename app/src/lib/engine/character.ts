@@ -43,6 +43,8 @@ export interface Basis {
 	techniques: string[];
 	/** Gewählter Kampfstil. */
 	style?: string;
+	/** Gewählte Zauber (ohne die automatisch erlernten Basiszauber). */
+	spells: string[];
 	characteristics: {
 		mode?: CharacteristicMode;
 		/** Frei gewählte bzw. eingetragene Charakteristik je Platz. */
@@ -112,6 +114,7 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			origin: {},
 			stunts: [],
 			techniques: [],
+			spells: [],
 			characteristics: { picks: {}, rolls: {}, rerolledSlots: {} },
 			age: { youngMalus: {}, maturity: {}, atrophia: {}, senility: {} },
 			profession: { name: '', skills: [], heroSlots: {} },

@@ -1,6 +1,6 @@
 # 13 — Zauber
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,8 +10,8 @@ Ein Spieler mit Magiefertigkeiten erhält deren Basiszauber automatisch, sobald 
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Die Zauber stehen je Disziplin in den Regeldaten (aus `Zauber/*.md`), mit Stufe und Text.
-- [ ] Basiszauber werden automatisch gewährt.
-- [ ] Die Kontingenttabelle steht in den Regeldaten. Vorläufig gilt die Tabelle aus `Charaktererstellung.md`, als vorläufig markiert mit Verweis auf Regelfrage W6.
-- [ ] Die Auswahl über dem Kontingent ist nicht möglich. Wird das Kontingent durch Änderungen kleiner, wird die Auswahl als ungültig markiert.
-- [ ] Regeltests decken jede Stufe der Kontingenttabelle ab.
+- [x] Die Zauber stehen je Disziplin in den Regeldaten (aus `Zauber/*.md`), mit Stufe und Text.
+- [x] Basiszauber werden automatisch gewährt.
+- [x] Die Kontingenttabelle steht in den Regeldaten. Vorläufig gilt die Tabelle aus `Charaktererstellung.md`, als vorläufig markiert mit Verweis auf Regelfrage W6.
+- [x] Die Auswahl über dem Kontingent ist nicht möglich. Wird das Kontingent durch Änderungen kleiner, wird die Auswahl als ungültig markiert.
+- [x] Regeltests decken jede Stufe der Kontingenttabelle ab.

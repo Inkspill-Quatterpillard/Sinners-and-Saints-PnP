@@ -14,7 +14,8 @@ export type StepId =
 	| 'secondary'
 	| 'senility'
 	| 'stunts'
-	| 'combat';
+	| 'combat'
+	| 'magic';
 export type StepStatus = 'open' | 'valid' | 'invalid';
 
 /** Ein Hinweis zu einer Entscheidung: eine Warnung oder eine ungültige Entscheidung mit Begründung. */

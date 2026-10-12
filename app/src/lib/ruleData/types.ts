@@ -283,6 +283,28 @@ export interface CombatRules {
 	styles: StyleDef[];
 }
 
+export interface SpellDef {
+	/** „Disziplin:Name“, z. B. „mystik:auraAnalysieren“. */
+	id: string;
+	name: string;
+	/** Die arkane Fertigkeit (Disziplin). */
+	skill: string;
+	/** 0 = Basiszauber, sonst Stufe 1–3. */
+	tier: number;
+	/** Zusatz wie „Beeinflussungszauber“. */
+	kind: string;
+	/** Volltext als Markdown (mit Kostenbeispielen). */
+	text: string;
+	source: SourceRef;
+}
+
+export interface MagicRules {
+	/** Kontingent nach Fertigkeitswert: Gesamtzahl, höchste Stufe und Höchstzahl der Stufe-II- und -III-Zauber. */
+	contingent: { from: number; total: number; maxTier: number; tier2?: number; tier3?: number }[];
+	provisional?: Provisional[];
+	spells: SpellDef[];
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -302,4 +324,5 @@ export interface RuleData {
 	origins: OriginDef[];
 	stunts: StuntDef[];
 	combat: CombatRules;
+	magic: MagicRules;
 }

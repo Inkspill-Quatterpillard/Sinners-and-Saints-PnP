@@ -3,6 +3,7 @@ import type {
 	AttributeDef,
 	CharacteristicDef,
 	CombatRules,
+	MagicRules,
 	OriginDef,
 	ProfessionRules,
 	ReligionDef,
@@ -17,6 +18,7 @@ import charakteristiken from './data/charakteristiken.json';
 import herkuenfte from './data/herkuenfte.json';
 import kunststuecke from './data/kunststuecke.json';
 import kampf from './data/kampf.json';
+import zauber from './data/zauber.json';
 import profession from './data/profession.json';
 import alter from './data/alter.json';
 import fertigkeiten from './data/fertigkeiten.json';
@@ -51,5 +53,6 @@ export const ruleData: RuleData = {
 	},
 	origins: herkuenfte.origins as OriginDef[],
 	stunts: kunststuecke.stunts as StuntDef[],
-	combat: kampf as CombatRules
+	combat: kampf as CombatRules,
+	magic: zauber as MagicRules
 };

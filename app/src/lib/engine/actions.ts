@@ -14,6 +14,7 @@ import { applyCharacteristicAction, type CharacteristicAction } from './steps/ch
 import { allowedStunts, applyOriginAction, type OriginAction } from './steps/origin';
 import { resolveOptions } from './steps/options';
 import { applyCombatAction, type CombatAction } from './steps/combat';
+import { applyMagicAction, type MagicAction } from './steps/magic';
 import { computeView } from './view';
 
 export type Action =
@@ -30,7 +31,8 @@ export type Action =
 	| ReligionAction
 	| CharacteristicAction
 	| OriginAction
-	| CombatAction;
+	| CombatAction
+	| MagicAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -57,6 +59,9 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'chooseStyle':
 			// Was wählbar ist, hängt von den aktuellen Fertigkeitswerten ab.
 			applyCombatAction(basis, action, computeView(character, ruleData).combatStep, ruleData);
+			break;
+		case 'toggleSpell':
+			applyMagicAction(basis, action, computeView(character, ruleData).magicStep, ruleData);
 			break;
 		case 'chooseOriginOrStunt':
 		case 'chooseOrigin':

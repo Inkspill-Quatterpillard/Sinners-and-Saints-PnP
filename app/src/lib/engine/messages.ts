@@ -41,5 +41,7 @@ export const messages = {
 		`${skill}: ${chosen} Kampftechniken gewählt, erlaubt sind ${allowed}${maxTier ? ` bis Stufe ${['', 'I', 'II', 'III'][maxTier]}` : ''}. Entferne Techniken oder steigere die Fertigkeit.`,
 	styleNotUnlocked: (style: string, from: number) =>
 		`${style}: Ein Kampfstil verlangt ${from} Punkte in einer passenden Kampffertigkeit (Nah- bzw. Fernkampf).`,
+	spellsExceeded: (discipline: string, total: number) =>
+		`${discipline}: Die gewählten Zauber überschreiten das Kontingent (${total} Zauber, Stufen und Höchstzahlen laut Tabelle). Entferne Zauber oder steigere die Fertigkeit.`,
 	characteristicForbidden: 'Durch „Eherner Wille“ (keine Charakteristik) darf keine Charakteristik gewählt werden.'
 };

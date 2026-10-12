@@ -32,7 +32,8 @@ export const t = {
 		secondary: 'Sekundärattribute',
 		senility: 'Vergreisung',
 		stunts: 'Kunststücke',
-		combat: 'Kampf'
+		combat: 'Kampf',
+		magic: 'Zauber'
 	} as Record<string, string>,
 	previousStep: '← Zurück',
 	nextStep: 'Weiter →',
@@ -194,6 +195,20 @@ export const t = {
 		noStyleChoice: 'Kein Kampfstil',
 		melee: 'Nahkampf',
 		ranged: 'Fernkampf'
+	},
+	magic: {
+		intro:
+			'Wer Punkte in eine arkane Fertigkeit steckt, erlernt ihre Basiszauber automatisch. Ab 6 Punkten kommen wählbare Zauber hinzu, höhere Stufen ab 12 und 18 Punkten.',
+		none: 'Dein Charakter hat keine arkane Fertigkeit gelernt.',
+		contingent: (chosen: number, total: number, maxTier: number, tier2: number, tier3: number) =>
+			`${chosen} von ${total} Zaubern` +
+			(maxTier ? `, bis Stufe ${['', 'I', 'II', 'III'][maxTier]}` : '') +
+			(tier2 ? `, höchstens ${tier2} der Stufe II` : '') +
+			(tier3 ? `, höchstens ${tier3} der Stufe III` : ''),
+		basics: 'Basiszauber (automatisch)',
+		tier: (tier: number) => `Stufe ${['', 'I', 'II', 'III'][tier]}`,
+		provisional:
+			'Vorläufig: Die Tabelle der Zauberkontingente folgt Charaktererstellung.md, bis der Autor die Abweichung zu Magie_erlernen.md klärt (Regelfrage W6).'
 	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',
