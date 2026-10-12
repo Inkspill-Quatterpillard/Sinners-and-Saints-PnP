@@ -8,7 +8,8 @@
 	let { view, dispatch }: { view: CharacterView; dispatch: (a: Action) => void } = $props();
 
 	const step = $derived(view.combatStep);
-	const unlocked = $derived(step.skills.filter((s) => s.allowed > 0));
+	// Auch Fertigkeiten mit gewählten, aber nicht mehr erlaubten Techniken, damit man sie abwählen kann.
+	const unlocked = $derived(step.skills.filter((s) => s.allowed > 0 || s.chosen.length > 0));
 	const anyStyle = $derived(step.styleAllowed.melee || step.styleAllowed.ranged);
 	// Aufgeklappt bleibt, was der Spieler aufgeklappt hat; sonst sind Bereiche mit Auswahl offen.
 	let opened = $state<Record<string, boolean>>({});

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ValueBreakdown from '$lib/components/ValueBreakdown.svelte';
 	import { currencyOf, type Action, type CharacterView } from '$lib/engine';
 	import { formatMoney, parseMoney } from '$lib/money';
 	import { ruleData } from '$lib/ruleData';
@@ -73,6 +74,16 @@
 		<dd>{money(eq.remaining)}</dd>
 	</div>
 </dl>
+<details class="status">
+	<summary>{t.equipment.statusOrigin}</summary>
+	<ValueBreakdown
+		label={t.statusLabel}
+		baseLabel={t.statusStart}
+		base={view.socialStatus.base}
+		modifiers={view.socialStatus.modifiers}
+		value={view.socialStatus.value}
+	/>
+</details>
 
 <section>
 	<h3>{t.equipment.owned}</h3>

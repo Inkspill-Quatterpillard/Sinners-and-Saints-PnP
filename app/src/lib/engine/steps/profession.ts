@@ -92,7 +92,7 @@ export function evaluateProfession(d: Derivation): ProfessionStepView {
 
 	const statusModifier = p.statusRoll ? rules.statusTable[String(p.statusRoll.dice[0])] : undefined;
 	d.status.base = rules.statusStart;
-	if (statusModifier !== undefined) d.status.modifiers.push({ source, value: statusModifier });
+	if (statusModifier !== undefined) d.status.modifiers.push({ source: messages.statusRollSource(p.name), value: statusModifier });
 	else status = worst(status, 'open');
 
 	const heroSlots = rules.heroSkillValues.map((value, index) => ({ index, value, skill: p.heroSlots[index] }));

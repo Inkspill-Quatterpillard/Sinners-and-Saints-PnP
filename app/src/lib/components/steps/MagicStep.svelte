@@ -6,7 +6,10 @@
 
 	let { view, dispatch }: { view: CharacterView; dispatch: (a: Action) => void } = $props();
 
-	const learned = $derived(view.magicStep.disciplines.filter((x) => x.basics.length > 0 || x.contingent.total > 0));
+	// Auch Disziplinen mit gewählten, aber nicht mehr erlaubten Zaubern, damit man sie abwählen kann.
+	const learned = $derived(
+		view.magicStep.disciplines.filter((x) => x.basics.length > 0 || x.contingent.total > 0 || x.chosen.length > 0)
+	);
 </script>
 
 <p class="intro">{t.magic.intro}</p>

@@ -22,6 +22,7 @@ export const messages = {
 	belowMinimum: (attr: string, value: number, min: number) =>
 		`${attr} fiele durch Altersmali auf ${value}. Kein Attribut darf dadurch unter ${min} sinken.`,
 	professionSource: (name: string) => `Profession: ${name || 'ohne Namen'}`,
+	statusRollSource: (name: string) => `Statuswurf der Profession${name ? ` (${name})` : ''}`,
 	heroSkillSource: 'Heldenfertigkeit',
 	professionSkillMissing: (key: string) =>
 		`Die Professionsfertigkeit ${key.replace(':', ': ')} gibt es nicht mehr (z. B. weil die Spezialisierung entfernt wurde). Wähle eine andere.`,

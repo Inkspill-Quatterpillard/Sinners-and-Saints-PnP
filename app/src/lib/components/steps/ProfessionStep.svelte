@@ -1,6 +1,7 @@
 <script lang="ts">
 	import DiceInput from '$lib/components/DiceInput.svelte';
 	import SkillName from '$lib/components/SkillName.svelte';
+	import ValueBreakdown from '$lib/components/ValueBreakdown.svelte';
 	import SpecializationEditor from '$lib/components/SpecializationEditor.svelte';
 	import type { Action, CharacterView, SkillView } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
@@ -85,6 +86,13 @@
 	{#if p.statusModifier !== undefined}
 		<p>{t.profession.statusResult(sign(p.statusModifier), view.socialStatus.value)}</p>
 	{/if}
+	<ValueBreakdown
+		label={t.statusLabel}
+		baseLabel={t.statusStart}
+		base={view.socialStatus.base}
+		modifiers={view.socialStatus.modifiers}
+		value={view.socialStatus.value}
+	/>
 </section>
 
 <section>

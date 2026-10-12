@@ -9,6 +9,9 @@ export const t = {
 	unnamed: 'Unbenannt',
 	backToList: 'Zur Übersicht',
 	back: 'Zurück',
+	breakdown: (label: string) => `Zusammensetzung ${label}`,
+	statusLabel: 'Status',
+	statusStart: 'Startwert',
 	name: 'Name',
 	notFound: 'Dieser Charakter wurde nicht gefunden.',
 	loading: 'Lädt …',
@@ -227,6 +230,7 @@ export const t = {
 		intro:
 			'Dein Status bestimmt Geldbeutel, Tagesgeld und Besitztümer. Kaufe oder finde Gegenstände aus dem Katalog oder trage eigene ein. Überziehen ist möglich, die App zeigt dir, was übrig bleibt.',
 		stage: 'Stufe',
+		statusOrigin: 'Wie setzt sich der Status zusammen?',
 		status: (v: number) => `Status ${v}`,
 		purse: 'Geldbeutel',
 		daily: 'Tagesgeld',
