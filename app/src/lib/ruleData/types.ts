@@ -88,6 +88,31 @@ export interface SpeciesDef {
 	traits: TraitDef[];
 }
 
+export interface SecondaryDef {
+	key: SecondaryKey;
+	name: string;
+	short: string;
+	formula: string;
+	source: SourceRef;
+	note?: string;
+}
+
+/** Stufentabelle: der Wert der höchsten Zeile, deren `min` erreicht ist. */
+export type ThresholdTable = { min: number; value: number }[];
+
+export interface SecondaryRules {
+	rounding: 'floor';
+	secondaryAttributes: SecondaryDef[];
+	tpBonus: number;
+	stabilityFactor: number;
+	magicPointsWilDivisor: number;
+	magicPointsMentalDivisor: number;
+	woundThresholdDivisor: number;
+	luckDie: number;
+	movementTable: ThresholdTable;
+	damageBonusTable: ThresholdTable;
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -97,4 +122,5 @@ export interface RuleData {
 	settings: SettingDef[];
 	defaultSetting: string;
 	species: SpeciesDef[];
+	secondary: SecondaryRules;
 }

@@ -9,3 +9,4 @@ export type { Issue, Modifier, StepId, StepResult, StepStatus } from './derivati
 export type { AttributeSlot, AttributeStepView } from './steps/attributes';
 export type { SpeciesStepView } from './steps/species';
 export type { ChoiceState, TraitView } from './choices';
+export type { LuckView, SecondaryValue } from './steps/secondary';

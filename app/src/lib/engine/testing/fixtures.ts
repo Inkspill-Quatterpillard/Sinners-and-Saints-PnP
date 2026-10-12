@@ -26,7 +26,8 @@ export const testRuleData: RuleData = {
 				}
 			]
 		},
-		{ id: 'anderes', name: 'Anderes', source: { file: 'test' }, attributeModifiers: {}, traits: [] }
+		{ id: 'anderes', name: 'Anderes', source: { file: 'test' }, attributeModifiers: {}, traits: [] },
+		{ id: 'stark', name: 'Stark', source: { file: 'test' }, attributeModifiers: { STR: 2 }, traits: [] }
 	]
 };
 

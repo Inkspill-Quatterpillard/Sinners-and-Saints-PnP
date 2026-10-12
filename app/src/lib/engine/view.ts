@@ -4,6 +4,7 @@ import { createDerivation, effective, type Derivation, type Issue, type Modifier
 import { attributeStepView, evaluateAttributes, type AttributeStepView } from './steps/attributes';
 import { evaluateOptions, resolveOptions } from './steps/options';
 import { evaluateSpecies, type SpeciesStepView } from './steps/species';
+import { evaluateSecondary, type LuckView, type SecondaryValue } from './steps/secondary';
 
 export interface AttributeView {
 	base?: number;
@@ -23,6 +24,8 @@ export interface CharacterView {
 	attributeStep: AttributeStepView;
 	speciesStep: SpeciesStepView;
 	secondaryModifiers: Record<SecondaryKey, Modifier[]>;
+	secondary: Record<SecondaryKey, SecondaryValue>;
+	luck: LuckView;
 	characteristicAllowance: Derivation['characteristicAllowance'];
 }
 
@@ -33,6 +36,7 @@ export function computeView(character: Character, ruleData: RuleData): Character
 	evaluateOptions(d);
 	evaluateAttributes(d);
 	const speciesStep = evaluateSpecies(d);
+	const { secondary, luck } = evaluateSecondary(d);
 
 	return {
 		id: character.id,
@@ -47,6 +51,8 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		attributeStep: attributeStepView(d),
 		speciesStep,
 		secondaryModifiers: d.secondary,
+		secondary,
+		luck,
 		characteristicAllowance: d.characteristicAllowance
 	};
 }

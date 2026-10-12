@@ -30,6 +30,8 @@ export interface Basis {
 		assignment: Partial<Record<AttributeId, number>>;
 	};
 	species?: string;
+	/** Glückswurf (bei Vorteil zwei Würfel). */
+	luck?: Roll;
 	/** Wahlen bei Eigenschaften usw., je Eintrag (siehe `ChoiceState`). */
 	choices: Record<string, ChoiceState>;
 }

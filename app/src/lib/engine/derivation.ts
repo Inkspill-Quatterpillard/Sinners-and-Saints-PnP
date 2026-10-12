@@ -1,7 +1,7 @@
 import type { AttributeId, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character } from './character';
 
-export type StepId = 'options' | 'attributes' | 'species';
+export type StepId = 'options' | 'attributes' | 'species' | 'secondary';
 export type StepStatus = 'open' | 'valid' | 'invalid';
 
 /** Ein Hinweis zu einer Entscheidung: eine Warnung oder eine ungültige Entscheidung mit Begründung. */
@@ -43,6 +43,8 @@ export interface Derivation {
 	characteristicAllowance: { extra: number; forbidden: boolean };
 	/** Würfel für die Regeneration von MP durch Meditation. */
 	meditationDie: number;
+	/** Glück wird mit Vorteil gewürfelt (z. B. bei Kindern und Jugendlichen). */
+	luckAdvantage: boolean;
 	steps: StepResult[];
 	issues: Issue[];
 }
@@ -68,6 +70,7 @@ export function createDerivation(character: Character, ruleData: RuleData, optio
 		secondaryCaps: {},
 		characteristicAllowance: { extra: 0, forbidden: false },
 		meditationDie: 6,
+		luckAdvantage: false,
 		steps: [],
 		issues: []
 	};

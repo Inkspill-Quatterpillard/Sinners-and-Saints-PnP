@@ -4,13 +4,15 @@ import { applyAttributesAction, type AttributesAction } from './steps/attributes
 import { applyOptionsAction, type OptionsAction } from './steps/options';
 import { applySpeciesAction, type SpeciesAction } from './steps/species';
 import { applyChoiceAction, type ChoiceAction } from './choices';
+import { applySecondaryAction, type SecondaryAction } from './steps/secondary';
 
 export type Action =
 	| { type: 'setName'; name: string }
 	| OptionsAction
 	| AttributesAction
 	| SpeciesAction
-	| ChoiceAction;
+	| ChoiceAction
+	| SecondaryAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -36,6 +38,9 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'chooseTraitOption':
 		case 'chooseTraitAttribute':
 			applyChoiceAction(basis, action);
+			break;
+		case 'rollLuck':
+			applySecondaryAction(basis, action);
 			break;
 	}
 	return next;

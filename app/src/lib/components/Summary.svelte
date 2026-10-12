@@ -17,6 +17,14 @@
 			</div>
 		{/each}
 	</dl>
+	<dl class="attrs secondary">
+		{#each ruleData.secondary.secondaryAttributes as def (def.key)}
+			<div title={def.name}>
+				<dt>{def.short}</dt>
+				<dd>{view.secondary[def.key].value ?? '–'}</dd>
+			</div>
+		{/each}
+	</dl>
 </aside>
 
 <style>
@@ -35,6 +43,11 @@
 		grid-template-columns: repeat(4, 1fr);
 		gap: 0.4rem;
 		margin: 0;
+	}
+	.secondary {
+		margin-top: 0.7rem;
+		padding-top: 0.6rem;
+		border-top: 1px solid var(--line);
 	}
 	.attrs div {
 		text-align: center;

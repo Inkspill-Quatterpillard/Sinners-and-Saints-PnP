@@ -22,7 +22,8 @@ export const t = {
 	steps: {
 		options: 'Optionen',
 		attributes: 'Grundattribute',
-		species: 'Spezies'
+		species: 'Spezies',
+		secondary: 'Sekundärattribute'
 	} as Record<string, string>,
 	previousStep: '← Zurück',
 	nextStep: 'Weiter →',
@@ -48,6 +49,17 @@ export const t = {
 	species: {
 		intro: 'Die Spezies verändert die Grundattribute und bringt zwei Eigenschaften mit sich.',
 		traits: 'Eigenschaften'
+	},
+	secondary: {
+		intro: 'Die Sekundärattribute ergeben sich aus den Grundattributen und werden immer abgerundet. Nur das Glück wird gewürfelt.',
+		luck: 'Glück',
+		luckPlain: 'Würfle 1W20.',
+		luckAdvantage: 'Würfle mit Vorteil: zwei W20, der höhere zählt.',
+		luckNeedsSecondDie: 'Mit Vorteil braucht es zwei Würfel. Würfle oder trage den zweiten nach.',
+		value: 'Wert',
+		formula: 'Berechnung',
+		result: 'Ergebnis',
+		cap: (max: number) => `höchstens ${max}`
 	},
 	traits: {
 		choose: 'Wähle eine Variante',

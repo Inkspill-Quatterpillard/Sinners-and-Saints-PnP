@@ -1,6 +1,6 @@
 # 04 — Sekundärattribute und Glück
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,7 +10,7 @@ Ein Spieler sieht jederzeit TP, Stabilität (STA), Magiepunkte, Ausweichen, Scha
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Die Formeln folgen `Sekundärattribute.md`:
+- [x] Die Formeln folgen `Sekundärattribute.md`:
   - TP = KON + 5
   - STA = (WIL + KON) × 5 / 2
   - MP = WIL/2 + max(CHA, INT, KLU)/5
@@ -18,8 +18,8 @@ Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
   - Schadensbonus nach STR-Tabelle
   - Wundschwelle = TP/5
   - Bewegung nach GES + KON
-- [ ] Es wird immer abgerundet (Regelparameter in den Regeldaten).
-- [ ] Boni aus anderen Quellen (Spezies, später Charakteristik, Herkunft, Religion) fließen über einen gemeinsamen Mechanismus ein.
-- [ ] Glück ist ein W20-Wurf. Vorteil (zwei Würfe, der höhere zählt) lässt sich durch andere Regeln auslösen.
-- [ ] Die Werte erscheinen in der Zusammenfassung des Charakters und werden nach jeder Änderung neu berechnet.
-- [ ] Regeltests decken jede Formel und Grenzfälle der Tabellen ab.
+- [x] Es wird immer abgerundet (Regelparameter in den Regeldaten).
+- [x] Boni aus anderen Quellen (Spezies, später Charakteristik, Herkunft, Religion) fließen über einen gemeinsamen Mechanismus ein.
+- [x] Glück ist ein W20-Wurf. Vorteil (zwei Würfe, der höhere zählt) lässt sich durch andere Regeln auslösen.
+- [x] Die Werte erscheinen in der Zusammenfassung des Charakters und werden nach jeder Änderung neu berechnet.
+- [x] Regeltests decken jede Formel und Grenzfälle der Tabellen ab.
