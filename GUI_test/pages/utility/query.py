@@ -1,0 +1,9 @@
+QUERY_HOME = 'home'
+QUERY_MODULE = 'module'
+QUERY_SKILLS = "skills"
+QUERY_SKILL_FINITE = 'finiteskillcard'
+QUERY_SKILL_CONTINOUS = 'continuousskillcard'
+QUERY_COMPONENTS = 'components'
+QUERY_PORTS = 'ports'
+QUERY_WEBPAGE = 'webpage'
+QUERY_STORAGE = "storage"
