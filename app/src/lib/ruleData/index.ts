@@ -1,8 +1,15 @@
-import type { RuleData } from './types';
+import type { AttributeDef, RuleData } from './types';
+import grundattribute from './data/grundattribute.json';
+import optionen from './data/optionen.json';
 
-export type { RuleData } from './types';
+export type * from './types';
 
-/** Die Regeldaten der App. Jeder Bereich verweist auf seine Quelle im Regelwerk. */
+/** Die Regeldaten der App. Jeder Eintrag verweist auf seine Quelle im Regelwerk. */
 export const ruleData: RuleData = {
-	version: 1
+	version: 1,
+	attributes: grundattribute.attributes as AttributeDef[],
+	attributeGeneration: grundattribute.generation,
+	optionalRules: optionen.optionalRules,
+	settings: optionen.settings,
+	defaultSetting: optionen.defaultSetting
 };

@@ -1,11 +1,33 @@
+import type { AttributeId } from '$lib/ruleData';
+
 /** Version des Formats der Charakterdatei. Ältere Dateien werden beim Laden migriert. */
 export const FORMAT_VERSION = 1;
 
 export type CharacterStatus = 'inCreation' | 'finished';
 
+/** Ein Würfelergebnis: die einzelnen Würfel und ob die App gewürfelt oder der Spieler eingetragen hat. */
+export interface Roll {
+	dice: number[];
+	source: 'app' | 'manual';
+}
+
+export type AttributeMethod = 'roll' | 'array';
+
 /** Die aktuellen Entscheidungen der Charaktererstellung. */
 export interface Basis {
 	name: string;
+	options: {
+		/** Nur ausdrücklich gesetzte Werte; sonst gilt die Voreinstellung der Regeldaten. */
+		optionalRules: Record<string, boolean>;
+		setting?: string;
+	};
+	attributes: {
+		method?: AttributeMethod;
+		/** Würfe je Platz (Schlüssel = Platznummer), nur beim Verfahren „würfeln“. */
+		rolls: Record<number, Roll>;
+		/** Welcher Platz welchem Grundattribut zugeordnet ist. */
+		assignment: Partial<Record<AttributeId, number>>;
+	};
 }
 
 /** Die im Spiel wechselnden Werte des lebenden Bogens. */
@@ -28,7 +50,11 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 		id,
 		ruleDataVersion,
 		status: 'inCreation',
-		basis: { name: '' },
+		basis: {
+			name: '',
+			options: { optionalRules: {} },
+			attributes: { rolls: {}, assignment: {} }
+		},
 		play: {}
 	};
 }

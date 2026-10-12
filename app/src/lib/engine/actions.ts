@@ -1,15 +1,27 @@
 import type { RuleData } from '$lib/ruleData';
 import type { Character } from './character';
+import { applyAttributesAction, type AttributesAction } from './steps/attributes';
+import { applyOptionsAction, type OptionsAction } from './steps/options';
 
-export type Action = { type: 'setName'; name: string };
+export type Action = { type: 'setName'; name: string } | OptionsAction | AttributesAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
 	const next = structuredClone(character);
 	next.ruleDataVersion = ruleData.version;
+	const basis = next.basis;
 	switch (action.type) {
 		case 'setName':
-			next.basis.name = action.name;
+			basis.name = action.name;
+			break;
+		case 'setOptionalRule':
+		case 'setSetting':
+			applyOptionsAction(basis, action);
+			break;
+		case 'setAttributeMethod':
+		case 'rollAttributeSlot':
+		case 'assignAttribute':
+			applyAttributesAction(basis, action);
 			break;
 	}
 	return next;

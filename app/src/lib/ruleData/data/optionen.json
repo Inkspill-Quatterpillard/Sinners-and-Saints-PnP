@@ -1,0 +1,11 @@
+{
+	"optionalRules": [
+		{ "id": "charakteristik", "name": "Charakteristik", "defaultEnabled": true, "source": { "file": "Charaktererstellung/Charakteristik.md" } },
+		{ "id": "besondereHerkunft", "name": "Besondere Herkunft", "defaultEnabled": false, "source": { "file": "Charaktererstellung/Herkunft.md" } }
+	],
+	"settings": [
+		{ "id": "standard", "name": "Standard" },
+		{ "id": "fallout", "name": "Fallout" }
+	],
+	"defaultSetting": "standard"
+}
