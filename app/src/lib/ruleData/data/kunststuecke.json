@@ -1,0 +1,2307 @@
+{
+	"source": {
+		"file": "Charaktererstellung/Kunststücke.md"
+	},
+	"stunts": [
+		{
+			"id": "aderlass",
+			"name": "Aderlass",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["medizin"],
+					"value": 12,
+					"text": "Medizin 12"
+				},
+				{
+					"skills": ["ueberzeugen"],
+					"value": 10,
+					"text": "Überzeugung 10"
+				}
+			],
+			"text": "Der Charakter kann andere Personen für eine halbe Wunde Stabilität regenerieren lassen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Aderlass"
+			}
+		},
+		{
+			"id": "analyse",
+			"name": "Analyse",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["faehrtenlesen"],
+					"value": 12,
+					"text": "Fährtenlesen 12"
+				},
+				{
+					"skills": ["menschenkenntnis"],
+					"value": 8,
+					"text": "Menschenkenntnis 8"
+				}
+			],
+			"text": "Der Charakter kann anhand von Spuren bestimmte Werte herausfinden.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Analyse"
+			}
+		},
+		{
+			"id": "antiquariar",
+			"name": "Antiquariar",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["inspizieren"],
+					"value": 14,
+					"text": "Inspizieren 14"
+				},
+				{
+					"skills": ["laenderkunde"],
+					"value": 10,
+					"text": "Länderkunde 10"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Inspizieren die Geschichte eines Gegenstandes rekonstruieren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Antiquariar"
+			}
+		},
+		{
+			"id": "assImAermel",
+			"name": "Ass im Ärmel",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["fingerfertigkeit"],
+					"value": 12,
+					"text": "Fingerfertigkeit 12"
+				},
+				{
+					"skills": ["charme"],
+					"value": 8,
+					"text": "Charme 8"
+				}
+			],
+			"text": "Der Charakter ist besonders geübt darin, in Karten- oder Glücksspielen zu betrügen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Ass im Ärmel"
+			}
+		},
+		{
+			"id": "abrollen",
+			"name": "Abrollen",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["akrobatik"],
+					"value": 12,
+					"text": "Akrobatik 12"
+				},
+				{
+					"skills": ["klettern"],
+					"value": 8,
+					"text": "Klettern 8"
+				}
+			],
+			"text": "Der Charakter kann eine Akrobatik-Probe ablegen, um seinen Fallschaden zu halbieren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Abrollen"
+			}
+		},
+		{
+			"id": "bastler",
+			"name": "Bastler",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["reparierenUndKonstruieren"],
+					"value": 14,
+					"text": "Reparieren und Konstruieren 14"
+				},
+				{
+					"skills": ["vorstellungskraft"],
+					"value": 8,
+					"text": "Vorstellungskraft 8"
+				}
+			],
+			"text": "Der Charakter kann improvisierte Versionen einer Waffe erstellen und zugleich mit einer Probe auf Reparieren und Konstruieren reguläre Waffen um +1 SP verbessern.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Bastler"
+			}
+		},
+		{
+			"id": "beinschneider",
+			"name": "Beinschneider",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["medizin"],
+					"value": 14,
+					"text": "Medizin 14"
+				},
+				{
+					"skills": ["autoritaet"],
+					"value": 12,
+					"text": "Autorität 12"
+				}
+			],
+			"text": "Der Charakter kann einer Person eine Verstümmelung zufügen, um eine infizierte Wunde oder eine Vergiftung zu heilen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Beinschneider"
+			}
+		},
+		{
+			"id": "doppelterEinsatz",
+			"name": "Doppelter Einsatz",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["beschwatzen"],
+					"value": 14,
+					"text": "Beschwatzen 14"
+				},
+				{
+					"skills": ["menschenkenntnis"],
+					"value": 10,
+					"text": "Menschenkenntnis 10"
+				}
+			],
+			"text": "Der Charakter kann sich aus jeder sozialen Probe herausreden, in dem er anstelle der originalen Fertigkeit mit Beschwatzen forciert.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Doppelter Einsatz"
+			}
+		},
+		{
+			"id": "entwaffnenderCharme",
+			"name": "Entwaffnender Charme",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["charme"],
+					"value": 14,
+					"text": "Charme 14"
+				},
+				{
+					"skills": ["beschwatzen"],
+					"value": 12,
+					"text": "Beschwatzen 12"
+				}
+			],
+			"text": "Der Charakter kann eine Person mit einer Probe auf Charme für eine Kampfrunde dazu bringen, ihre Waffen sinken zu lassen und dich nicht anzugreifen. Dies funktioniert pro Person nur einmal pro Kampf.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Entwaffnender Charme"
+			}
+		},
+		{
+			"id": "feuerfass",
+			"name": "Feuerfass",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["fahrzeugSteuern", "steuernBoot"],
+					"value": 14,
+					"text": "Steuern 14"
+				},
+				{
+					"skills": ["reparierenUndKonstruieren"],
+					"value": 12,
+					"text": "Reparieren und Konstruieren 12"
+				}
+			],
+			"text": "Der Charakter kann aus einer brennbaren Flüssigkeit ein wasserdichtes Feuerfass konstruieren, welches nach einer bestimmten Zeit explodieren kann.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Feuerfass"
+			}
+		},
+		{
+			"id": "frisieren",
+			"name": "Frisieren",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["fahrzeugSteuern"],
+					"value": 10,
+					"text": "Fahrzeug steuern 10"
+				},
+				{
+					"skills": ["reparierenUndKonstruieren"],
+					"value": 8,
+					"text": "Reparieren und Konstruieren 8"
+				}
+			],
+			"text": "Der Charakter kann die Leistungsfähigkeit und Geschwindigkeit eines Fahrzeuges mit einer Probe auf Fahrzeug steuern dauerhaft erhöhen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Frisieren"
+			}
+		},
+		{
+			"id": "geheimschrift",
+			"name": "Geheimschrift",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["sprachkunst"],
+					"value": 14,
+					"text": "Sprachkunst 14"
+				},
+				{
+					"skills": ["vorstellungskraft"],
+					"value": 12,
+					"text": "Vorstellungskraft 12"
+				}
+			],
+			"text": "Der Charakter kann Schriftstücke verschlüsseln oder unsichtbar schreiben.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Geheimschrift"
+			}
+		},
+		{
+			"id": "gespuerFuerUnheil",
+			"name": "Gespür für Unheil",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["gespuer"],
+					"value": 14,
+					"text": "Gespür 14"
+				},
+				{
+					"skills": ["okkultismus"],
+					"value": 10,
+					"text": "Okkultismus 10"
+				}
+			],
+			"text": "Der Charakter spürt dämonische Präsenzen in seinem Umfeld. Er kann diese mit einer Probe auf Gespür identifizieren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Gespür für Unheil"
+			}
+		},
+		{
+			"id": "gildenkultur",
+			"name": "Gildenkultur",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["handwerkUndKuenste"],
+					"value": 14,
+					"text": "Handwerk und Künste 14"
+				},
+				{
+					"skills": ["ueberzeugen"],
+					"value": 12,
+					"text": "Überzeugen 12"
+				}
+			],
+			"text": "Der Charakter hat einen Vorteil auf soziale Aktionen mit anderen Handwerkern oder Künstlern seiner Zunft. Er kann mit einer Überzeugen-Probe einen Gefallen in Form eines Gildenpfandes von ihnen einfordern.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Gildenkultur"
+			}
+		},
+		{
+			"id": "improvisateur",
+			"name": "Improvisateur",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["reparierenUndKonstruieren"],
+					"value": 12,
+					"text": "Reparieren und Konstruieren 12"
+				},
+				{
+					"skills": ["handwerkUndKuenste"],
+					"value": 10,
+					"text": "Handwerk 10"
+				}
+			],
+			"text": "Der Charakter kann sein Handwerk mit improvisierten Werkzeugen ohne Nachteil ausüben",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Improvisateur"
+			}
+		},
+		{
+			"id": "lockruf",
+			"name": "Lockruf",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["natur"],
+					"value": 12,
+					"text": "Natur 12"
+				},
+				{
+					"skills": ["umgangMitTieren"],
+					"value": 8,
+					"text": "Umgang mit Tieren 8"
+				}
+			],
+			"text": "Der Charakter kann für Tiere und Bestien in seinem bevorzugten Habitat Lockrufe anwenden, um diese anzulocken.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Lockruf"
+			}
+		},
+		{
+			"id": "masseur",
+			"name": "Masseur",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["ersteHilfe"],
+					"value": 14,
+					"text": "Erste Hilfe 14"
+				},
+				{
+					"skills": ["empathie"],
+					"value": 10,
+					"text": "Empathie 10"
+				}
+			],
+			"text": "Der Charakter kann durch eine gute Massage mit einer Fingerfertigkeitsprobe 1W4 Stabilitätspunkte eines anderen Charakters regenerieren oder ihm 2W4 temporäre TP verleihen. Dies funktioniert pro Charakter nur einmal in der Woche.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Masseur"
+			}
+		},
+		{
+			"id": "mentaleBurg",
+			"name": "Mentale Burg",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["selbstbeherrschung"],
+					"value": 14,
+					"text": "Selbstbeherrschung 14"
+				},
+				{
+					"skills": ["ueberzeugen"],
+					"value": 8,
+					"text": "Überzeugung 8"
+				}
+			],
+			"text": "Der Charakter erhält einen Vorteil auf Selbstbeherrschungsproben, um magische Beeinflussung zu widerstehen. Er kann zudem sich mit Selbstbeherrschung gegen ein Auraduell zur Wehr setzen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Mentale Burg"
+			}
+		},
+		{
+			"id": "pferderuf",
+			"name": "Pferderuf",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["reiten"],
+					"value": 12,
+					"text": "Reiten 12"
+				},
+				{
+					"skills": ["autoritaet"],
+					"value": 8,
+					"text": "Autorität 8"
+				}
+			],
+			"text": "Der Reiter kann sein Reittier herbeirufen, wenn es sich im weitesten Sinne in Hörreichweite befindet. Das Reittier kommt auf schnellsten Weg zu ihm.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Pferderuf"
+			}
+		},
+		{
+			"id": "pflanzenbuch",
+			"name": "Pflanzenbuch",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["natur"],
+					"value": 14,
+					"text": "Natur 14"
+				},
+				{
+					"skills": ["kalkulation"],
+					"value": 8,
+					"text": "Kalkulation 8"
+				}
+			],
+			"text": "Der Charakter führt automatisch ein Sammelsurium an den wichtigsten Kräutern und Pflanzen seines bevorzugten Habitat mit sich, welches er auffüllt, sobald er sich durch dieses bewegt.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Pflanzenbuch"
+			}
+		},
+		{
+			"id": "planGottes",
+			"name": "Plan Gottes",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["religion"],
+					"value": 12,
+					"text": "Religion 12"
+				},
+				{
+					"skills": ["ueberzeugen"],
+					"value": 10,
+					"text": "Überzeugung 10"
+				}
+			],
+			"text": "Der Charakter kann Ereignisse als den Plan Gottes abstempeln und so Stabilitätsproben durch eine Religionsprobe ersetzen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Plan Gottes"
+			}
+		},
+		{
+			"id": "prothesenbauer",
+			"name": "Prothesenbauer",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["reparierenUndKonstruieren"],
+					"value": 16,
+					"text": "Reparieren und Konstruieren 16"
+				},
+				{
+					"skills": ["medizin"],
+					"value": 14,
+					"text": "Medizin 14"
+				}
+			],
+			"text": "Der Charakter kann eine magische Prothese konstruieren, welches ein verstümmeltes Organ ersetzt.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Prothesenbauer"
+			}
+		},
+		{
+			"id": "reporter",
+			"name": "Reporter",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["recherche"],
+					"value": 12,
+					"text": "Recherche 12"
+				},
+				{
+					"skills": ["sprachkunst"],
+					"value": 6,
+					"text": "Sprachkunst 6"
+				}
+			],
+			"text": "Der Charakter vermag es, eine Konversation fließend mitzuschreiben und diese im Nachhinein widerzugeben.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Reporter"
+			}
+		},
+		{
+			"id": "schlachtsprech",
+			"name": "Schlachtsprech",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["sprachkunst"],
+					"value": 12,
+					"text": "Sprachkunst 12"
+				},
+				{
+					"skills": ["beschwatzen"],
+					"value": 10,
+					"text": "Beschwatzen 10"
+				}
+			],
+			"text": "Gegner können mit einer Probe auf Sprachkunst blamiert oder provoziert werden.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Schlachtsprech"
+			}
+		},
+		{
+			"id": "seemannsgarn",
+			"name": "Seemannsgarn",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["fahrzeugSteuern", "steuernBoot"],
+					"value": 12,
+					"text": "Steuern 12"
+				},
+				{
+					"skills": ["vorstellungskraft"],
+					"value": 10,
+					"text": "Vorstellungskraft 10"
+				}
+			],
+			"text": "Der Charakter würfelt mit Vorteil, wenn es darum geht, anderen Charakteren eine völlig absurde Geschichte als glaubhaft zu verkaufen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Seemannsgarn"
+			}
+		},
+		{
+			"id": "spurloseBewegung",
+			"name": "Spurlose Bewegung",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["faehrtenlesen"],
+					"value": 14,
+					"text": "Fährtenlesen 14"
+				},
+				{
+					"skills": ["schleichen"],
+					"value": 10,
+					"text": "Schleichen 10"
+				}
+			],
+			"text": "Der Charakter kann sich mit einer Probe auf Fährtenlesen oder Schleichen vorsichtig voran bewegen, ohne Spuren zu hinterlassen. Dies ist je nach Untergrund ggf. erschwert.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Spurlose Bewegung"
+			}
+		},
+		{
+			"id": "standesduenkel",
+			"name": "Standesdünkel",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["inspizieren"],
+					"value": 12,
+					"text": "Inspizieren 12"
+				},
+				{
+					"status": true,
+					"value": 8,
+					"text": "Status 8"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Inspizieren mit Vorteil den sozialen Status einer Person abschätzen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Standesdünkel"
+			}
+		},
+		{
+			"id": "tierfreund",
+			"name": "Tierfreund",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["umgangMitTieren"],
+					"value": 14,
+					"text": "Umgang mit Tieren 14"
+				},
+				{
+					"skills": ["empathie"],
+					"value": 12,
+					"text": "Empathie 12"
+				}
+			],
+			"text": "Der Charakter bekommt einen Vorteil auf Interaktionen mit Tieren aller Art. Bei kritischen Treffern freundet sich das Tier instantan mit ihm an.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Tierfreund"
+			}
+		},
+		{
+			"id": "trickbetrueger",
+			"name": "Trickbetrüger",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["fingerfertigkeit"],
+					"value": 14,
+					"text": "Fingerfertigkeit 14"
+				},
+				{
+					"skills": ["beschwatzen"],
+					"value": 12,
+					"text": "Beschwatzen 12"
+				}
+			],
+			"text": "Der Charakter kann sich mit einer Probe auf Beschwatzen einen Vorteil auf eine Fingerfertigkeitsprobe geben, da er die Person effizient ablenkt.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Trickbetrüger"
+			}
+		},
+		{
+			"id": "unauffaelligkeit",
+			"name": "Unauffälligkeit",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["fingerfertigkeit"],
+					"value": 12,
+					"text": "Fingerfertigkeit 12"
+				},
+				{
+					"skills": ["schleichen"],
+					"value": 10,
+					"text": "Schleichen 10"
+				}
+			],
+			"text": "Der Charakter versteht es, bei seinen Gaunereien möglichst unauffällig und unscheinbar auszusehen. Personen verdächtigen ihn nicht, bevor sie einen handfesten Grund dazu haben und haben Schwierigkeiten, sich sein Gesicht zu merken.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Unauffälligkeit"
+			}
+		},
+		{
+			"id": "voltigieren",
+			"name": "Voltigieren",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["reiten"],
+					"value": 14,
+					"text": "Reiten 14"
+				},
+				{
+					"skills": ["akrobatik"],
+					"value": 10,
+					"text": "Akrobatik 10"
+				}
+			],
+			"text": "Der Reiter kann in einer Zusatzaktion den Leib seines Pferdes zu einer Seite als volle oder halbe Deckung nutzen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Voltigieren"
+			}
+		},
+		{
+			"id": "wagenburg",
+			"name": "Wagenburg",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["fahrzeugSteuern"],
+					"value": 12,
+					"text": "Fahrzeug steuern 12"
+				},
+				{
+					"skills": ["wissenschaften:Kriegskunst"],
+					"value": 5,
+					"text": "Wissenschaft (Kriegskunst) 5"
+				}
+			],
+			"text": "Der Charakter kann seinen Wagen als provisorische Befestigung verwenden. Dieser gibt je nach Größe mehreren Kämpfern wahlweise volle oder halbe Deckung.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Wagenburg"
+			}
+		},
+		{
+			"id": "wasserkampf",
+			"name": "Wasserkampf",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["schwimmen"],
+					"value": 14,
+					"text": "Schwimmen 14"
+				},
+				{
+					"attribute": "WAH",
+					"value": 10,
+					"text": "Wahrnehmung 10"
+				}
+			],
+			"text": "Der Schwimmer hat gelernt, sich unter Wasser zur Wehr zu setzen und kann die Nachteile beim Nahkampf im Wasser ignorieren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Wasserkampf"
+			}
+		},
+		{
+			"id": "wahrsagen",
+			"name": "Wahrsagen",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["okkultismus"],
+					"value": 12,
+					"text": "Okkultismus 12"
+				},
+				{
+					"skills": ["ueberzeugen"],
+					"value": 8,
+					"text": "Überzeugung 8"
+				}
+			],
+			"text": "Der Charakter kann durch eine Okkultismus-Probe wahrsagen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Wahrsagen"
+			}
+		},
+		{
+			"id": "wuenschelrute",
+			"name": "Wünschelrute",
+			"tier": 1,
+			"tierName": "Exzeptionell",
+			"prerequisites": [
+				{
+					"skills": ["schwimmen"],
+					"value": 14,
+					"text": "Schwimmen 14"
+				},
+				{
+					"skills": ["gespuer"],
+					"value": 12,
+					"text": "Gespür 12"
+				}
+			],
+			"text": "Der Schwimmer kann Wasseradern erspüren und orten.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 1: Wünschelrute"
+			}
+		},
+		{
+			"id": "alarmbereitschaft",
+			"name": "Alarmbereitschaft",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["sondieren"],
+					"value": 16,
+					"text": "Sondieren 16"
+				},
+				{
+					"skills": ["selbstbeherrschung"],
+					"value": 12,
+					"text": "Selbstbeherrschung 12"
+				}
+			],
+			"text": "Der Charakter kann nicht überrascht werden. Er würfelt als Ziel eines Schleichangriffs nicht mit Nachteil, wenn er den Gegner entdeckt.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Alarmbereitschaft"
+			}
+		},
+		{
+			"id": "arkaneRecherche",
+			"name": "Arkane Recherche",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["recherche"],
+					"value": 16,
+					"text": "Recherche 16"
+				},
+				{
+					"skills": ["sondieren"],
+					"value": 12,
+					"text": "Sondieren 12"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Recherche magische Bücher in einer Bibliothek oder ähnlichen orten.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Arkane Recherche"
+			}
+		},
+		{
+			"id": "apnoeTauchen",
+			"name": "Apnoe-Tauchen",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["schwimmen"],
+					"value": 16,
+					"text": "Schwimmen 16"
+				},
+				{
+					"skills": ["selbstbeherrschung"],
+					"value": 12,
+					"text": "Selbstbeherrschung 12"
+				}
+			],
+			"text": "Der Schwimmer kann bis zu zehn Minuten unter Wasser die Luft anhalten.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Apnoe-Tauchen"
+			}
+		},
+		{
+			"id": "bootsbauer",
+			"name": "Bootsbauer",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["fahrzeugSteuern", "steuernBoot"],
+					"value": 16,
+					"text": "Steuern 16"
+				},
+				{
+					"skills": ["reparierenUndKonstruieren"],
+					"value": 14,
+					"text": "Reparieren und Konstruieren 14"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Reparieren und Konstruieren aus allen möglichen Materialien improvisierte Boote bauen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Bootsbauer"
+			}
+		},
+		{
+			"id": "charismatischeWucht",
+			"name": "Charismatische Wucht",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["charme"],
+					"value": 16,
+					"text": "Charme 16"
+				},
+				{
+					"skills": ["autoritaet"],
+					"value": 12,
+					"text": "Autorität 12"
+				}
+			],
+			"text": "Der Charakter kann eine Probe auf Charme einsetzen, um zu überprüfen, ob eine fremde Person von ihm gehört hat. Mit einer weiteren Probe auf Charme, ggf. erschwert, um einen Gefallen von dieser Person einzufordern und ihr einen Befehl zu geben.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Charismatische Wucht"
+			}
+		},
+		{
+			"id": "chirurgischePraezision",
+			"name": "Chirurgische Präzision",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["medizin"],
+					"value": 16,
+					"text": "Medizin 16"
+				},
+				{
+					"skills": ["fingerfertigkeit"],
+					"value": 12,
+					"text": "Fingerfertigkeit 12"
+				}
+			],
+			"text": "Der Schadensbonus des Charakters steigt um eine Stufe.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Chirurgische Präzision"
+			}
+		},
+		{
+			"id": "effizienteVerdraengung",
+			"name": "Effiziente Verdrängung",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["vorstellungskraft"],
+					"value": 16,
+					"text": "Vorstellungskraft 16"
+				},
+				{
+					"skills": ["selbstbeherrschung"],
+					"value": 14,
+					"text": "Selbstbeherrschung 14"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Vorstellungskraft ein Trauma verdrängen und so entsprechende Stabilitätspunkte regenerieren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Effiziente Verdrängung"
+			}
+		},
+		{
+			"id": "entfesselungskuenstler",
+			"name": "Entfesselungskünstler",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["akrobatik"],
+					"value": 16,
+					"text": "Akrobatik 16"
+				},
+				{
+					"skills": ["fingerfertigkeit"],
+					"value": 12,
+					"text": "Fingerfertigkeit 12"
+				}
+			],
+			"text": "Der Charakter kann mittels einer Akrobatik-Probe Fesseln und Handschellen lösen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Entfesselungskünstler"
+			}
+		},
+		{
+			"id": "ermutigendeKunst",
+			"name": "Ermutigende Kunst",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["handwerkUndKuenste:Kunsttalent"],
+					"value": 16,
+					"text": "Handwerk und Künste (Kunsttalent) 16"
+				},
+				{
+					"skills": ["charme"],
+					"value": 12,
+					"text": "Charme 12"
+				}
+			],
+			"text": "Der Charakter kann einmal am Tag durch eine Probe auf ein Kunsttalent Verbündeten einen unmittelbaren Vorteilswurf geben, den diese einsetzen können, wann sie wollen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Ermutigende Kunst"
+			}
+		},
+		{
+			"id": "falscheFaehrte",
+			"name": "Falsche Fährte",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["faehrtenlesen"],
+					"value": 16,
+					"text": "Fährtenlesen 16"
+				},
+				{
+					"skills": ["reparierenUndKonstruieren"],
+					"value": 10,
+					"text": "Reparieren und Konstruieren 10"
+				}
+			],
+			"text": "Der Charakter kann eine falsche Fährte mit Fährtenlesen in geeigneten Terrain legen, um einen Gegner in die Irre zu führen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Falsche Fährte"
+			}
+		},
+		{
+			"id": "faelscher",
+			"name": "Fälscher",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["sprachkunst"],
+					"value": 16,
+					"text": "Sprachkunst 16"
+				},
+				{
+					"skills": ["laenderkunde"],
+					"value": 12,
+					"text": "Länderkunde 12"
+				}
+			],
+			"text": "Der Charakter kann Schriftstücke, Siegel und Unterschriften perfekt fälschen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Fälscher"
+			}
+		},
+		{
+			"id": "feuerschlucker",
+			"name": "Feuerschlucker",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["akrobatik"],
+					"value": 16,
+					"text": "Akrobatik 16"
+				},
+				{
+					"skills": ["handwerkUndKuenste:Alchemie"],
+					"value": 8,
+					"text": "Handwerk (Alchemie) 8"
+				}
+			],
+			"text": "Der Charakter kann mittels einer einer Akrobatik-Probe eine Flamme auf den Gegner speien. Der Angriff verursacht 2W4 SP und kann den Gegner für 1W6 KR blenden.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Feuerschlucker"
+			}
+		},
+		{
+			"id": "fledermausmensch",
+			"name": "Fledermausmensch",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["klettern"],
+					"value": 16,
+					"text": "Klettern 16"
+				},
+				{
+					"skills": ["akrobatik"],
+					"value": 12,
+					"text": "Akrobatik 12"
+				}
+			],
+			"text": "Der Kletterer kann ohne Erschwernis während des Kletterns an der Wand einen Gegner angreifen, zaubern oder eine Fernkampfwaffe abfeuern, in dem er sich an den Beinen von der Wand hängen lässt. Dabei kann er sogar zweihändige Waffen verwenden.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Fledermausmensch"
+			}
+		},
+		{
+			"id": "heiligerEid",
+			"name": "Heiliger Eid",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["religion"],
+					"value": 16,
+					"text": "Religion 16"
+				},
+				{
+					"skills": ["menschenkenntnis"],
+					"value": 12,
+					"text": "Menschenkenntnis 12"
+				}
+			],
+			"text": "Du kannst mit Personen, die gläubig sind, einen heiligen Eid schwören, an den diese Person sich halten muss.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Heiliger Eid"
+			}
+		},
+		{
+			"id": "kampfbewusstsein",
+			"name": "Kampfbewusstsein",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["gespuer"],
+					"value": 16,
+					"text": "Gespür 16"
+				},
+				{
+					"secondary": "dodge",
+					"value": 8,
+					"text": "Ausweichen 8"
+				}
+			],
+			"text": "Der Charakter erhält auf eine Ausweichenprobe im Kampf einen bedingungslosen Vorteil. Damit kann er auch einem Geschoss ausweichen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Kampfbewusstsein"
+			}
+		},
+		{
+			"id": "kampfsanitaeter",
+			"name": "Kampfsanitäter",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["ersteHilfe"],
+					"value": 16,
+					"text": "Erste Hilfe 16"
+				},
+				{
+					"skills": ["sondieren"],
+					"value": 12,
+					"text": "Sondieren 12"
+				}
+			],
+			"text": "Der Charakter kann im Kampf in einer Aktion die wichtigsten Wunden verbinden und so 1W6 TP von sich selbst oder anderen regenerieren. Keiner der Beteiligten darf sich dabei in einer Kampfgruppe befinden.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Kampfsanitäter"
+			}
+		},
+		{
+			"id": "kauderwelsch",
+			"name": "Kauderwelsch",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["fremdsprachen"],
+					"value": 16,
+					"text": "Fremdsprachen 16"
+				},
+				{
+					"skills": ["menschenkenntnis"],
+					"value": 14,
+					"text": "Menschenkenntnis 14"
+				}
+			],
+			"text": "Der Charakter kann, falls er eine Sprache nicht spricht, eine schwere Probe auf eine seiner Sprachen ablegen, um diese zu verstehen oder eine extreme Probe, um in dieser zu kommunizieren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Kauderwelsch"
+			}
+		},
+		{
+			"id": "magischeIdentifikation",
+			"name": "Magische Identifikation",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["inspizieren"],
+					"value": 16,
+					"text": "Inspizieren 16"
+				},
+				{
+					"skills": ["wissenschaften:Arkanistik"],
+					"value": 10,
+					"text": "Wissenschaft (Arkanistik) 10"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Inspizieren die magischen Eigenschaften eines Gegenstandes herausfinden.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Magische Identifikation"
+			}
+		},
+		{
+			"id": "netzwerker",
+			"name": "Netzwerker",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"status": true,
+					"value": 14,
+					"text": "Status 14"
+				},
+				{
+					"skills": ["laenderkunde"],
+					"value": 12,
+					"text": "Länderkunde 12"
+				}
+			],
+			"text": "Der Charakter kann eine Probe auf Status ablegen, um zu schauen, ob er eine Kontaktperson an einem Ort kennt.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Netzwerker"
+			}
+		},
+		{
+			"id": "notfallchirurg",
+			"name": "Notfallchirurg",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["medizin"],
+					"value": 16,
+					"text": "Medizin 16"
+				},
+				{
+					"skills": ["ersteHilfe"],
+					"value": 14,
+					"text": "Erste Hilfe 14"
+				}
+			],
+			"text": "Der Charakter kann an im Sterben liegenden oder kürzlich gestorbenen Personen eine Notoperation durchführen. Diese stabilisiert den Charakter.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Notfallchirurg"
+			}
+		},
+		{
+			"id": "parkour",
+			"name": "Parkour",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["klettern"],
+					"value": 18,
+					"text": "Klettern 18"
+				},
+				{
+					"skills": ["akrobatik"],
+					"value": 14,
+					"text": "Akrobatik 14"
+				}
+			],
+			"text": "Der Charakter ist vertikal nahezu genauso schnell wie auf ebenen Boden. Er kann schwieriges Gelände und Hindernisse ohne Geschwindigkeitsverlust überwinden.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Parkour"
+			}
+		},
+		{
+			"id": "pferdefluesterer",
+			"name": "Pferdeflüsterer",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["reiten"],
+					"value": 16,
+					"text": "Reiten 16"
+				},
+				{
+					"skills": ["umgangMitTieren"],
+					"value": 12,
+					"text": "Umgang mit Tieren 12"
+				}
+			],
+			"text": "Pferde vertrauen dem Reiter schneller. Zudem erhöht sich ihre Grundgeschwindigkeit und ihre Lebenspunkte um ein Fünftel, wenn der Reiter sie reitet.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Pferdeflüsterer"
+			}
+		},
+		{
+			"id": "prophet",
+			"name": "Prophet",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["ueberzeugen"],
+					"value": 16,
+					"text": "Überzeugung 16"
+				},
+				{
+					"skills": ["autoritaet"],
+					"value": 14,
+					"text": "Autorität 14"
+				}
+			],
+			"text": "Der Charakter kann mit einer Überzeugungs-Probe eine Person von seinen Lehren oder seiner Ideologie überzeugen. Die Person wird zu einem Jünger. Er kann mit einer weiteren Überzeugungs-Probe einen Jünger dazu bringen, einen Dienst für die Sache zu vollüben.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Prophet"
+			}
+		},
+		{
+			"id": "ritualzauberer",
+			"name": "Ritualzauberer",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["okkultismus"],
+					"value": 16,
+					"text": "Okkultismus 16"
+				},
+				{
+					"skills": ["natur"],
+					"value": 12,
+					"text": "Natur 12"
+				}
+			],
+			"text": "Der Charakter kann aus einem Zauber ein Ritual machen, um dessen Schwierigkeit um drei Level zu reduzieren. Die MP-Kosten bleiben gleich. Die Länge des Rituals schwankt nach Level des Zaubers.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Ritualzauberer"
+			}
+		},
+		{
+			"id": "rufDesBerges",
+			"name": "Ruf des Berges",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["klettern"],
+					"value": 16,
+					"text": "Klettern 16"
+				},
+				{
+					"skills": ["natur"],
+					"value": 12,
+					"text": "Natur 12"
+				}
+			],
+			"text": "Die Berge revitalisieren den Charakter. Befindet er sich im Gebirge, so erhält der Charakter einen Vorteil auf alle körperlichen Proben außer Kampfproben und darf seine Regeneration mit Vorteil werfen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Ruf des Berges"
+			}
+		},
+		{
+			"id": "taschenschaetzen",
+			"name": "Taschenschätzen",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["fingerfertigkeit"],
+					"value": 16,
+					"text": "Fingerfertigkeit 16"
+				},
+				{
+					"skills": ["inspizieren"],
+					"value": 12,
+					"text": "Inspizieren 12"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Fingerfertigkeit oder Sondieren beurteilen, welche Gegenstände eine Person verdeckt oder in Taschen bei sich trägt.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Taschenschätzen"
+			}
+		},
+		{
+			"id": "uebersteuern",
+			"name": "Übersteuern",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["fahrzeugSteuern"],
+					"value": 16,
+					"text": "Fahrzeug steuern 16"
+				},
+				{
+					"skills": ["kalkulation"],
+					"value": 8,
+					"text": "Kalkulation 8"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Fahrzeug steuern seinen Wagen um bis zu 180 Grad drehen und mit der selben Geschwindigkeit weiterfahren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Übersteuern"
+			}
+		},
+		{
+			"id": "ungeheuerlichesVerstaendnis",
+			"name": "Ungeheuerliches Verständnis",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["umgangMitTieren"],
+					"value": 16,
+					"text": "Umgang mit Tieren 16"
+				},
+				{
+					"skills": ["autoritaet"],
+					"value": 14,
+					"text": "Autorität 14"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Umgang mit Tieren auch mit Biestern und andern Monstern interagieren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Ungeheuerliches Verständnis"
+			}
+		},
+		{
+			"id": "untertauchen",
+			"name": "Untertauchen",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["schleichen"],
+					"value": 16,
+					"text": "Schleichen 16"
+				},
+				{
+					"skills": ["menschenkenntnis"],
+					"value": 10,
+					"text": "Menschenkenntnis 10"
+				}
+			],
+			"text": "Der Charakter verschwindet automatisch innerhalb einer Menschenmenge und kann so Verfolger abhängen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Untertauchen"
+			}
+		},
+		{
+			"id": "visuellesKalkulieren",
+			"name": "Visuelles Kalkulieren",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["kalkulation"],
+					"value": 16,
+					"text": "Kalkulation 16"
+				},
+				{
+					"skills": ["faehrtenlesen"],
+					"value": 14,
+					"text": "Fährtenlesen 14"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Kalkulation Geschehnisse und komplexe Szenen gedanklich rekonstruieren. Mit einer Probe mit Nachteil kann er andere Personen daran teilhaben lassen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Visuelles Kalkulieren"
+			}
+		},
+		{
+			"id": "wachsabdruck",
+			"name": "Wachsabdruck",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["fingerfertigkeit"],
+					"value": 16,
+					"text": "Fingerfertigkeit 16"
+				},
+				{
+					"skills": ["reparierenUndKonstruieren"],
+					"value": 10,
+					"text": "Reparieren und Konstruieren 10"
+				}
+			],
+			"text": "Der Charakter kann mit ein wenig Wachs und einem Augenblick Zeit einen Abdruck eines Schlüssels machen. Er muss dafür den Schlüssel für einen kurzen Augenblick in der Hand halten. Mit den Abdruck kann er den Schlüssel kopieren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Wachsabdruck"
+			}
+		},
+		{
+			"id": "waldlaeufer",
+			"name": "Waldläufer",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["navigieren"],
+					"value": 16,
+					"text": "Navigieren 16"
+				},
+				{
+					"skills": ["faehrtenlesen"],
+					"value": 14,
+					"text": "Fährtenlesen 14"
+				}
+			],
+			"text": "Der Charakter ignoriert unwegsames Gelände bei seiner Bewegung und kann dies mit einer Probe auf Navigieren auf andere Personen erweitern.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Waldläufer"
+			}
+		},
+		{
+			"id": "wennSFaehrtDannFaehrtS",
+			"name": "Wenn‘s fährt, dann fährt‘s",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["fahrzeugSteuern"],
+					"value": 16,
+					"text": "Fahrzeug steuern 16"
+				},
+				{
+					"skills": ["vorstellungskraft"],
+					"value": 10,
+					"text": "Vorstellungskraft 10"
+				}
+			],
+			"text": "Der Charakter kann alles, was entfernt an einen fahrbaren Untersatz erinnert, entweder für kurze Zeit als improvisierten Wagen mit entsprechenden Geschwindigkeitsboni entfremden, oder auch längerfristig zu einem Wagen umbauen. Dieser benötigt dann allerdings eine Form von Antrieb.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Wenn‘s fährt, dann fährt‘s"
+			}
+		},
+		{
+			"id": "zirkelschluss",
+			"name": "Zirkelschluss",
+			"tier": 2,
+			"tierName": "Meisterlich",
+			"prerequisites": [
+				{
+					"skills": ["wissenschaften"],
+					"value": 16,
+					"text": "Wissenschaft 16"
+				},
+				{
+					"skills": ["ueberzeugen"],
+					"value": 14,
+					"text": "Überzeugen 14"
+				}
+			],
+			"text": "Der Charakter kann in einer Konversation oder einem Kampf seinen Gegner mit einer Probe auf eine Wissenschaft argumentativ verwirren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 2: Zirkelschluss"
+			}
+		},
+		{
+			"id": "alternativeMedizin",
+			"name": "Alternative Medizin",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["natur"],
+					"value": 18,
+					"text": "Natur 18"
+				},
+				{
+					"skills": ["okkultismus"],
+					"value": 16,
+					"text": "Okkultismus 16"
+				}
+			],
+			"text": "Der Charakter kann medizinische Ausrüstung für eine medizinische Behandlung vollkommen mit Bestandteilen aus der Natur ersetzen. Er kann eine medizinische Behandlung mit einer schweren Natur oder Okkultismus-Probe durchführen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Alternative Medizin"
+			}
+		},
+		{
+			"id": "aquatischeVerstaendigung",
+			"name": "Aquatische Verständigung",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["schwimmen"],
+					"value": 20,
+					"text": "Schwimmen 20"
+				},
+				{
+					"skills": ["umgangMitTieren"],
+					"value": 16,
+					"text": "Umgang mit Tieren 16"
+				}
+			],
+			"text": "Der Schwimmer vermag es, unter Wasser mit Wasserwesen zu kommunizieren",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Aquatische Verständigung"
+			}
+		},
+		{
+			"id": "auramantel",
+			"name": "Auramantel",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["schleichen"],
+					"value": 20,
+					"text": "Schleichen 20"
+				},
+				{
+					"attribute": "WIL",
+					"value": 14,
+					"text": "Willenskraft 14"
+				}
+			],
+			"text": "Der Charakter vermag es, seine Anwesenheit auch auf magische Art und Weise zu verbergen. Er darf Schleichen-Proben gegen Entdeckung auf magische Art und Weise sowie gegen magische Beeinflussung von Gegnern, die ihn noch nicht entdeckt haben, einsetzen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Auramantel"
+			}
+		},
+		{
+			"id": "balanceakt",
+			"name": "Balanceakt",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["akrobatik"],
+					"value": 20,
+					"text": "Akrobatik 20"
+				},
+				{
+					"skills": ["schleichen"],
+					"value": 12,
+					"text": "Schleichen 12"
+				}
+			],
+			"text": "Der Charakter kann sich durch kämpfende Gegner hindurch bewegen, ohne in die Kampfgruppe hinein gezogen werden zu können. Ebenso darf er jederzeit aus einer Kampfgruppe fliehen, ohne einen freien Angriff des Gegners in Kauf nehmen zu müssen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Balanceakt"
+			}
+		},
+		{
+			"id": "bauernregel",
+			"name": "Bauernregel",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["handwerkUndKuenste:Landwirtschaft"],
+					"value": 18,
+					"text": "Handwerk und Künste (Landwirtschaft) 18"
+				},
+				{
+					"skills": ["vorstellungskraft"],
+					"value": 14,
+					"text": "Vorstellungskraft 14"
+				}
+			],
+			"text": "Der Charakter kann sich mit einer schweren Probe auf Handwerk (Landwirtschaft) ein Wetter herbeiwünschen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Bauernregel"
+			}
+		},
+		{
+			"id": "bedrohlicheAura",
+			"name": "Bedrohliche Aura",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["autoritaet"],
+					"value": 20,
+					"text": "Autorität 20"
+				},
+				{
+					"skills": ["empathie"],
+					"value": 16,
+					"text": "Empathie 16"
+				}
+			],
+			"text": "Personen müssen einmalig eine Probe auf Selbstbeherrschung bestehen, wenn sie den Charakter angreifen wollen oder eine Gegenprobe gegen ihn initiieren. Scheitern sie, fürchten sie sich vor dem Charakter.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Bedrohliche Aura"
+			}
+		},
+		{
+			"id": "dunkelsicht",
+			"name": "Dunkelsicht",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["sondieren"],
+					"value": 18,
+					"text": "Sondieren 18"
+				},
+				{
+					"skills": ["faehrtenlesen"],
+					"value": 14,
+					"text": "Fährtenlesen 14"
+				}
+			],
+			"text": "Der Charakter kann im Dunkeln wie im Hellen sehen. Dies gilt nicht für magische Dunkelheit.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Dunkelsicht"
+			}
+		},
+		{
+			"id": "einGeistZweiKoerper",
+			"name": "Ein Geist, zwei Körper",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["reiten"],
+					"value": 20,
+					"text": "Reiten 20"
+				},
+				{
+					"skills": ["umgangMitTieren"],
+					"value": 14,
+					"text": "Umgang mit Tieren 14"
+				}
+			],
+			"text": "Der Reiter kann sein Reittier steuern, wenn es sich in der Nähe befindet. Dies gilt sowohl, wenn er es reitet, als auch, wenn er abgesessen ist. Es kann also zum Beispiel selbstständig Feinde angreifen, auch wenn es gerade geritten wird. Zudem steigen der Schaden des Reittier um +2 SP und sein Leben um ein Viertel an.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Ein Geist, zwei Körper"
+			}
+		},
+		{
+			"id": "faszinierendeKunst",
+			"name": "Faszinierende Kunst",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["handwerkUndKuenste:Kunsttalent"],
+					"value": 18,
+					"text": "Handwerk und Künste (Kunsttalent) 18"
+				},
+				{
+					"skills": ["empathie"],
+					"value": 14,
+					"text": "Empathie 14"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf ein Kunsttalent Personen in den Bann seiner Kunst ziehen. Sie müssen eine Probe auf Selbstbeherrschung bestehen oder gelten als hypnotisiert.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Faszinierende Kunst"
+			}
+		},
+		{
+			"id": "geckofinger",
+			"name": "Geckofinger",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["klettern"],
+					"value": 20,
+					"text": "Klettern 20"
+				},
+				{
+					"skills": ["fingerfertigkeit"],
+					"value": 10,
+					"text": "Fingerfertigkeit 10"
+				}
+			],
+			"text": "Die Fingerspitzen des Charakters finden überall Halt. Der Charakter kann ohne Hilfsmittel eine glatte, steile Wand mit einer Probe auf Klettern hinaufklettern und mit einer Probe mit Nachteil sogar an der Decke entlangklettern.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Geckofinger"
+			}
+		},
+		{
+			"id": "gedaechtnispalast",
+			"name": "Gedächtnispalast",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["recherche"],
+					"value": 18,
+					"text": "Recherche 18"
+				},
+				{
+					"skills": ["sondieren"],
+					"value": 14,
+					"text": "Sondieren 14"
+				}
+			],
+			"text": "Der Charakter kann sich mit einer Probe auf Recherche eine Szene bis ins kleinste Detail einprägen, sodass er später die Szene mental durchsuchen kann.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Gedächtnispalast"
+			}
+		},
+		{
+			"id": "gefuehlssensitiv",
+			"name": "Gefühlssensitiv",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["empathie"],
+					"value": 18,
+					"text": "Empathie 18"
+				},
+				{
+					"skills": ["gespuer"],
+					"value": 12,
+					"text": "Gespür 12"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Empathie die Gefühle der Lebewesen um ihn herum erspüren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Gefühlssensitiv"
+			}
+		},
+		{
+			"id": "geistDesOmnissiah",
+			"name": "Geist des Omnissiah",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["reparierenUndKonstruieren"],
+					"value": 18,
+					"text": "Reparieren und Konstruieren 18"
+				},
+				{
+					"skills": ["religion"],
+					"value": 16,
+					"text": "Religion 16"
+				}
+			],
+			"text": "Der Charakter weiß um die Beseeltheit von besonderen Gegenständen. Mit einer Probe auf Religion kann er ein Werkzeug zu einem magischen Werkzeug machen, welches magische Gegenstände modifizieren oder erzeugen kann, oder eine Waffe zu einer Artefaktwaffe machen, die magischen Schaden verursacht.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Geist des Omnissiah"
+			}
+		},
+		{
+			"id": "heilendeAura",
+			"name": "Heilende Aura",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["medizin"],
+					"value": 20,
+					"text": "Medizin 20"
+				},
+				{
+					"skills": ["autoritaet"],
+					"value": 16,
+					"text": "Autorität 16"
+				}
+			],
+			"text": "Der Charakter strahlt pure medizinische Autorität aus. In seiner Anwesenheit erhalten Personen einen Vorteil und +1 auf ihren Wundregenerationswurf.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Heilende Aura"
+			}
+		},
+		{
+			"id": "heiligeAura",
+			"name": "Heilige Aura",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["religion"],
+					"value": 18,
+					"text": "Religion 18"
+				},
+				{
+					"skills": ["ueberzeugen"],
+					"value": 16,
+					"text": "Überzeugung 16"
+				}
+			],
+			"text": "Die Heilige Aura des Charakters gibt diesem einen Vorteil auf alle sozialen Proben gegen Personen des gleichen Glaubens. Mit einer Probe auf Religion kann der Charakter Verbündeten einen Vorteil im Kampf für 2W4 KR geben, wenn sie gegen Gegner eines anderen Glaubens kämpfen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Heilige Aura"
+			}
+		},
+		{
+			"id": "herzdruckmassage",
+			"name": "Herzdruckmassage",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["ersteHilfe"],
+					"value": 18,
+					"text": "Erste Hilfe 18"
+				},
+				{
+					"skills": ["selbstbeherrschung"],
+					"value": 14,
+					"text": "Selbstbeherrschung 14"
+				}
+			],
+			"text": "Charaktere können nach ihrem Tod wiederbelebt werden. Mit jeder verstrichenen KR wird das Ergebnis des Wurfs um eins erhöht.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Herzdruckmassage"
+			}
+		},
+		{
+			"id": "jagdsinn",
+			"name": "Jagdsinn",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["faehrtenlesen"],
+					"value": 18,
+					"text": "Fährtenlesen 18"
+				},
+				{
+					"skills": ["gespuer"],
+					"value": 10,
+					"text": "Gespür 10"
+				}
+			],
+			"text": "Der Charakter spürt die Präsent von Lebewesen in seinem Umfeld. Er kann mit einer schweren Probe auf Fährtenlesen prüfen, ob sich innerhalb seiner doppelten Wahrnehmung in Schritten Lebewesen befinden. Er erhält einen Vorteil darauf, diese aufzuspüren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Jagdsinn"
+			}
+		},
+		{
+			"id": "kompassDesEntdeckers",
+			"name": "Kompass des Entdeckers",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["navigieren"],
+					"value": 18,
+					"text": "Navigieren 18"
+				},
+				{
+					"skills": ["sondieren"],
+					"value": 16,
+					"text": "Sondieren 16"
+				}
+			],
+			"text": "Der Charakter hat einen intuitiven Sinn für das Verborgene und kann auf Reisen einen Glückswurf mit Vorteil rollen, um einen verborgenen Ort oder Schatz ausfindig zu machen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Kompass des Entdeckers"
+			}
+		},
+		{
+			"id": "markDesJaegers",
+			"name": "Mark des Jägers",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["faehrtenlesen"],
+					"value": 20,
+					"text": "Fährtenlesen 20"
+				},
+				{
+					"skills": ["natur"],
+					"value": 14,
+					"text": "Natur 14"
+				}
+			],
+			"text": "Der Charakter kann ein Wesen in Sichtweite markieren und erhält einen Vorteil darauf, diese Kreatur aufzuspüren sowie einen (zusätzlichen) Vorteil auf den ersten Angriff.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Mark des Jägers"
+			}
+		},
+		{
+			"id": "materielleKommunikation",
+			"name": "Materielle Kommunikation",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["inspizieren"],
+					"value": 18,
+					"text": "Inspizieren 18"
+				},
+				{
+					"skills": ["vorstellungskraft"],
+					"value": 14,
+					"text": "Vorstellungskraft 14"
+				}
+			],
+			"text": "Der Charakter kann Gespräche mit Gegenständen führen, um Dinge über sie herauszufinden.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Materielle Kommunikation"
+			}
+		},
+		{
+			"id": "metabolismusKontrollieren",
+			"name": "Metabolismus kontrollieren",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["selbstbeherrschung"],
+					"value": 18,
+					"text": "Selbstbeherrschung 18"
+				},
+				{
+					"attribute": "KON",
+					"value": 14,
+					"text": "Konstitution 14"
+				}
+			],
+			"text": "Der Charakter kann seinen Metabolismus kontrolliert herunterfahren und so die Wirkung eines Giftes pro KR halbieren. Außerdem kann er sich mit einer Probe auf Selbstbeherrschung tot stellen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Metabolismus kontrollieren"
+			}
+		},
+		{
+			"id": "niederstarren",
+			"name": "Niederstarren",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["autoritaet"],
+					"value": 18,
+					"text": "Autorität 18"
+				},
+				{
+					"skills": ["selbstbeherrschung"],
+					"value": 14,
+					"text": "Selbstbeherrschung 14"
+				}
+			],
+			"text": "Der Charakter kann einen Gegner mit einer Probe auf Autorität so einschüchtern, das dieser auf die Knie sinkt und für 1W4 KR in dieser Position verharrt. Ggf. kann der Gegner aus dieser Position jedoch angreifen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Niederstarren"
+			}
+		},
+		{
+			"id": "pferdebund",
+			"name": "Pferdebund",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["reiten"],
+					"value": 18,
+					"text": "Reiten 18"
+				},
+				{
+					"skills": ["empathie"],
+					"value": 12,
+					"text": "Empathie 12"
+				}
+			],
+			"text": "Der Reiter besitzt eine besondere Bindung zu seinem Reittier. Das Reittier spürt, wenn sein Reiter es benötigt und kann so jederzeit herbeigerufen werden. Das Reittier versucht, auf dem schnellsten Weg zu seinem Reiter zu gelangen, wenn es ihm möglich ist.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Pferdebund"
+			}
+		},
+		{
+			"id": "phantom",
+			"name": "Phantom",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["schleichen"],
+					"value": 18,
+					"text": "Schleichen 18"
+				},
+				{
+					"skills": ["akrobatik"],
+					"value": 10,
+					"text": "Akrobatik 10"
+				}
+			],
+			"text": "Selbst, wenn man ihn kurz erhascht, ist dieser Charakter kaum mit den Augen zu fassen. Er erhält die Kampfrunde, in der er seine Tarnung aufgeflogen oder er entdeckt wurde, halbe Deckung gegen Fernkampf und Nahkampfangriffe.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Phantom"
+			}
+		},
+		{
+			"id": "rennfahrer",
+			"name": "Rennfahrer",
+			"tier": 3,
+			"tierName": "Legendär",
+			"prerequisites": [
+				{
+					"skills": ["fahrzeugSteuern"],
+					"value": 20,
+					"text": "Fahrzeug steuern 20"
+				},
+				{
+					"skills": ["gespuer"],
+					"value": 12,
+					"text": "Gespür 12"
+				}
+			],
+			"text": "Wenn er am Steuer oder an den Zügeln sitzt, verlangsamt sich die Zeit für den Charakter. Er erhält eine zusätzliche Aktion neben dem Fahren, in der er etwa angreifen, zaubern oder eine Waffe abfeuern kann. Zudem kann er mit einer Probe auf Fahrzeug steuern die Geschwindigkeit des Wagens für 2W3 Runden veranderthalbfachen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 3: Rennfahrer"
+			}
+		},
+		{
+			"id": "einsMitDemSchatten",
+			"name": "Eins mit dem Schatten",
+			"tier": 4,
+			"tierName": "Mythisch",
+			"prerequisites": [
+				{
+					"skills": ["schleichen"],
+					"value": 22,
+					"text": "Schleichen 22"
+				},
+				{
+					"skills": ["selbstbeherrschung"],
+					"value": 14,
+					"text": "Selbstbeherrschung 14"
+				}
+			],
+			"text": "Der Charakter verschmilzt mit den Schatten und gilt in völlig dunklen Ecken als unsichtbar. In schattigen oder halbschattigen Ecken gilt er als nahezu unsichtbar, sofern er sich bewegt und als völlig unsichtbar, sobald er still steht. Auch magische Entdeckung ist erschwert.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 4: Eins mit dem Schatten"
+			}
+		},
+		{
+			"id": "gedankenlesen",
+			"name": "Gedankenlesen",
+			"tier": 4,
+			"tierName": "Mythisch",
+			"prerequisites": [
+				{
+					"skills": ["menschenkenntnis"],
+					"value": 22,
+					"text": "Menschenkenntnis 22"
+				},
+				{
+					"skills": ["empathie"],
+					"value": 16,
+					"text": "Empathie 16"
+				}
+			],
+			"text": "Der Charakter kann mit einer Probe auf Menschenkenntnis die Gedanken eines anderen Charakters lesen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 4: Gedankenlesen"
+			}
+		},
+		{
+			"id": "lebenSpueren",
+			"name": "Leben spüren",
+			"tier": 4,
+			"tierName": "Mythisch",
+			"prerequisites": [
+				{
+					"skills": ["gespuer"],
+					"value": 21,
+					"text": "Gespür 21"
+				},
+				{
+					"skills": ["sondieren"],
+					"value": 16,
+					"text": "Sondieren 16"
+				}
+			],
+			"text": "Der Charakter kann mit einer erschwerten Probe auf Gespür in einem Radius von seinem Gespür-Wert in Schritten Lebewesen wahrnehmen. Dies funktioniert auch durch Hindernisse oder Wände hindurch.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 4: Leben spüren"
+			}
+		},
+		{
+			"id": "wandelnderHeiliger",
+			"name": "Wandelnder Heiliger",
+			"tier": 4,
+			"tierName": "Mythisch",
+			"prerequisites": [
+				{
+					"skills": ["religion"],
+					"value": 22,
+					"text": "Religion 22"
+				},
+				{
+					"skills": ["autoritaet"],
+					"value": 16,
+					"text": "Autorität 16"
+				}
+			],
+			"text": "Die alleinige Präsenz des Charakters fügt dämonischen Wesen Schmerzen zu. Mit einer Probe auf Religion kann der Charakter für eine Stunde Dämonen und vergleichbaren 2W4 SP pro Runde und einen unmittelbaren Nachteil zufügen, wenn sie ihn angreifen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 4: Wandelnder Heiliger"
+			}
+		},
+		{
+			"id": "wasseratmung",
+			"name": "Wasseratmung",
+			"tier": 4,
+			"tierName": "Mythisch",
+			"prerequisites": [
+				{
+					"skills": ["schwimmen"],
+					"value": 22,
+					"text": "Schwimmen 22"
+				},
+				{
+					"skills": ["natur:Wasser"],
+					"value": 14,
+					"text": "Natur (Wasser) 14"
+				}
+			],
+			"text": "Der Schwimmer erhält die Fähigkeit, unter Wasser zu atmen.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 4: Wasseratmung"
+			}
+		},
+		{
+			"id": "wunschMaterialisieren",
+			"name": "Wunsch materialisieren",
+			"tier": 4,
+			"tierName": "Mythisch",
+			"prerequisites": [
+				{
+					"skills": ["vorstellungskraft"],
+					"value": 22,
+					"text": "Vorstellungskraft 22"
+				},
+				{
+					"attribute": "WIL",
+					"value": 18,
+					"text": "Willenskraft 18"
+				}
+			],
+			"text": "Der Charakter kann mit einem kritischen Erfolg in Vorstellungskraft einen Wunsch von ihm materialisieren.",
+			"source": {
+				"file": "Charaktererstellung/Kunststücke.md",
+				"section": "Stufe 4: Wunsch materialisieren"
+			}
+		}
+	]
+}

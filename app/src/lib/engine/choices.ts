@@ -31,7 +31,7 @@ export interface TraitView {
 	id: string;
 	name: string;
 	text: string;
-	options?: { id: string; name: string }[];
+	options?: { id: string; name: string; text?: string }[];
 	chosenOption?: string;
 	/** Bei Gleichstand (oder ungültiger Wahl) für „höchstes Attribut“: die Attribute, zwischen denen der Spieler wählt. */
 	tiedAttributes?: AttributeId[];
@@ -64,7 +64,7 @@ export function applyTrait(d: Derivation, trait: TraitDef, step: StepId): { stat
 	const choice = d.character.basis.choices[trait.id] ?? {};
 
 	if (trait.options) {
-		view.options = trait.options.map((o) => ({ id: o.id, name: o.name }));
+		view.options = trait.options.map((o) => ({ id: o.id, name: o.name, text: o.text }));
 		const option = trait.options.find((o) => o.id === choice.option);
 		view.chosenOption = option?.id;
 		if (!option) {
@@ -117,6 +117,12 @@ function applyEffect(d: Derivation, effect: Effect, trait: TraitDef, choice: Cho
 			return 'valid';
 		case 'resource':
 			d.resources.push({ id: effect.id, name: effect.name, per: effect.per, uses: effect.uses, source: trait.name });
+			return 'valid';
+		case 'counter':
+			d.counters.push({ id: effect.id, name: effect.name, start: effect.start, max: effect.max, source: trait.name });
+			return 'valid';
+		case 'secondaryPercent':
+			d.secondaryPercent[effect.key] = (d.secondaryPercent[effect.key] ?? 0) + effect.percent;
 			return 'valid';
 		case 'skillChoice': {
 			view.skillChoice = { includeHeroSkills: effect.includeHeroSkills, value: effect.value, chosen: choice.skill };

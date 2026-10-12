@@ -8,10 +8,12 @@ export type StepId =
 	| 'age'
 	| 'religion'
 	| 'characteristic'
+	| 'origin'
 	| 'profession'
 	| 'interests'
 	| 'secondary'
-	| 'senility';
+	| 'senility'
+	| 'stunts';
 export type StepStatus = 'open' | 'valid' | 'invalid';
 
 /** Ein Hinweis zu einer Entscheidung: eine Warnung oder eine ungültige Entscheidung mit Begründung. */
@@ -32,6 +34,14 @@ export interface ResourceDef {
 	per: ResourcePeriod;
 	uses: number;
 	/** Woher die Fähigkeit stammt. */
+	source: string;
+}
+
+export interface CounterDef {
+	id: string;
+	name: string;
+	start: number;
+	max: number;
 	source: string;
 }
 
@@ -66,6 +76,10 @@ export interface Derivation {
 	luckAdvantages: number;
 	/** Begrenzt nutzbare Fähigkeiten aus Religion, Herkunft usw. */
 	resources: ResourceDef[];
+	/** Zähler für den lebenden Bogen (z. B. Seelen im Artefakt). */
+	counters: CounterDef[];
+	/** Prozentuale Zuschläge auf Sekundärattribute. */
+	secondaryPercent: Partial<Record<SecondaryKey, number>>;
 	ageStage?: 'child' | 'youth' | 'adult' | 'aging';
 	agingStages: number;
 	/** Boni auf Fertigkeiten, je Fertigkeitsschlüssel (siehe `skillKey`). */
@@ -102,6 +116,8 @@ export function createDerivation(character: Character, ruleData: RuleData, optio
 		meditationDie: 6,
 		luckAdvantages: 0,
 		resources: [],
+		counters: [],
+		secondaryPercent: {},
 		agingStages: 0,
 		skillBonuses: {},
 		skillSetValues: {},

@@ -64,13 +64,19 @@ export type Effect =
 	/** Bonus oder Malus auf den Status. */
 	| { type: 'status'; value: number }
 	/** Eine begrenzt nutzbare Fähigkeit, die im lebenden Bogen abgehakt wird. */
-	| { type: 'resource'; id: string; name: string; per: ResourcePeriod; uses: number };
+	| { type: 'resource'; id: string; name: string; per: ResourcePeriod; uses: number }
+	/** Ein Zähler im lebenden Bogen, z. B. Seelen im Artefakt. */
+	| { type: 'counter'; id: string; name: string; start: number; max: number }
+	/** Prozentualer Zuschlag auf ein Sekundärattribut (z. B. Atronach: +50 % MP). */
+	| { type: 'secondaryPercent'; key: SecondaryKey; percent: number };
 
 export type ResourcePeriod = 'day' | 'rest' | 'session' | 'permanent';
 
 export interface ChoiceOption {
 	id: string;
 	name: string;
+	/** Beschreibung der Option, falls sie mehr als ihr Name ist. */
+	text?: string;
 	effects: Effect[];
 }
 
@@ -210,6 +216,40 @@ export interface CharacteristicRules {
 	entries: CharacteristicDef[];
 }
 
+export interface OriginDef {
+	id: string;
+	/** Nummer im Regelwerk (3–18). */
+	number: number;
+	name: string;
+	description: string;
+	abilities: { name: string; text: string }[];
+	effects?: Effect[];
+	options?: ChoiceOption[];
+	note?: string;
+	source: SourceRef;
+}
+
+export interface StuntPrerequisite {
+	/** Originaltext, z. B. „Medizin 12“. */
+	text: string;
+	value?: number;
+	/** Fertigkeitsschlüssel; eine davon genügt (z. B. „Steuern“ = Fahrzeug steuern oder Steuern (Boot)). */
+	skills?: string[];
+	attribute?: AttributeId;
+	secondary?: SecondaryKey;
+	status?: boolean;
+}
+
+export interface StuntDef {
+	id: string;
+	name: string;
+	tier: number;
+	tierName: string;
+	prerequisites: StuntPrerequisite[];
+	text: string;
+	source: SourceRef;
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -226,4 +266,6 @@ export interface RuleData {
 	profession: ProfessionRules;
 	religions: ReligionDef[];
 	characteristics: CharacteristicRules;
+	origins: OriginDef[];
+	stunts: StuntDef[];
 }

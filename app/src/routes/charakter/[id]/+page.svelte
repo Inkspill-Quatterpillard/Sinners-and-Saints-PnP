@@ -12,6 +12,8 @@
 	import InterestsStep from '$lib/components/steps/InterestsStep.svelte';
 	import ReligionStep from '$lib/components/steps/ReligionStep.svelte';
 	import CharacteristicStep from '$lib/components/steps/CharacteristicStep.svelte';
+	import OriginStep from '$lib/components/steps/OriginStep.svelte';
+	import StuntsStep from '$lib/components/steps/StuntsStep.svelte';
 	import { applyAction, computeView, type Action, type Character, type StepId } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { loadCharacter, saveCharacter } from '$lib/storage/characterStore';
@@ -29,10 +31,12 @@
 		age: AgeStep,
 		religion: ReligionStep,
 		characteristic: CharacteristicStep,
+		origin: OriginStep,
 		profession: ProfessionStep,
 		interests: InterestsStep,
 		secondary: SecondaryStep,
-		senility: SenilityStep
+		senility: SenilityStep,
+		stunts: StuntsStep
 	};
 
 	let current = $state<StepId>('options');

@@ -34,5 +34,8 @@ export const messages = {
 		' Wähle eine andere Fertigkeit.',
 	characteristicDuplicateRoll: (name: string) => `${name} wurde doppelt gewürfelt. Würfle diesen Platz neu.`,
 	characteristicDuplicatePick: (name: string) => `${name} ist zweimal eingetragen. Jede Charakteristik zählt nur einmal.`,
+	percentSource: (percent: number) => `+${percent} %`,
+	tooManyStunts: (chosen: number, allowed: number) => `Es sind ${chosen} Kunststücke gewählt, erlaubt sind ${allowed}.`,
+	stuntUnmet: (name: string, unmet: string[]) => `${name}: Voraussetzungen nicht erfüllt (${unmet.join(', ')}).`,
 	characteristicForbidden: 'Durch „Eherner Wille“ (keine Charakteristik) darf keine Charakteristik gewählt werden.'
 };

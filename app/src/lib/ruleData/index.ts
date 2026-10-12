@@ -2,15 +2,19 @@ import type {
 	AgeRules,
 	AttributeDef,
 	CharacteristicDef,
+	OriginDef,
 	ProfessionRules,
 	ReligionDef,
 	RuleData,
 	SecondaryRules,
 	SkillDef,
-	SpeciesDef
+	SpeciesDef,
+	StuntDef
 } from './types';
 import religionen from './data/religionen.json';
 import charakteristiken from './data/charakteristiken.json';
+import herkuenfte from './data/herkuenfte.json';
+import kunststuecke from './data/kunststuecke.json';
 import profession from './data/profession.json';
 import alter from './data/alter.json';
 import fertigkeiten from './data/fertigkeiten.json';
@@ -42,5 +46,7 @@ export const ruleData: RuleData = {
 		maxRolled: charakteristiken.maxRolled,
 		rerolls: charakteristiken.rerolls,
 		entries: charakteristiken.characteristics as CharacteristicDef[]
-	}
+	},
+	origins: herkuenfte.origins as OriginDef[],
+	stunts: kunststuecke.stunts as StuntDef[]
 };

@@ -11,6 +11,8 @@ import { applyProfessionAction, type ProfessionAction } from './steps/profession
 import { applyInterestsAction, type InterestsAction } from './steps/interests';
 import { applyReligionAction, type ReligionAction } from './steps/religion';
 import { applyCharacteristicAction, type CharacteristicAction } from './steps/characteristic';
+import { allowedStunts, applyOriginAction, type OriginAction } from './steps/origin';
+import { resolveOptions } from './steps/options';
 
 export type Action =
 	| { type: 'setName'; name: string }
@@ -24,7 +26,8 @@ export type Action =
 	| ProfessionAction
 	| InterestsAction
 	| ReligionAction
-	| CharacteristicAction;
+	| CharacteristicAction
+	| OriginAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -46,6 +49,11 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 			break;
 		case 'chooseSpecies':
 			applySpeciesAction(basis, action);
+			break;
+		case 'chooseOriginOrStunt':
+		case 'chooseOrigin':
+		case 'toggleStunt':
+			applyOriginAction(basis, action, allowedStunts(basis, resolveOptions(basis, ruleData).optionalRules));
 			break;
 		case 'setCharacteristicMode':
 		case 'pickCharacteristic':

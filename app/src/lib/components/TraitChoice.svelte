@@ -35,7 +35,9 @@
 						checked={trait.chosenOption === option.id}
 						onchange={() => dispatch({ type: 'chooseTraitOption', trait: trait.id, option: option.id })}
 					/>
-					{option.name}
+					<span
+						>{option.name}{#if option.text}<small class="option-text">{option.text}</small>{/if}</span
+					>
 				</label>
 			{/each}
 		</fieldset>
@@ -108,6 +110,14 @@
 	.check {
 		display: flex;
 		gap: 0.5rem;
-		align-items: center;
+		align-items: flex-start;
+	}
+	.check input {
+		margin-top: 0.3rem;
+	}
+	.option-text {
+		display: block;
+		color: var(--muted);
+		font-size: 0.88rem;
 	}
 </style>

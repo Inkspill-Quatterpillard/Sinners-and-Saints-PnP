@@ -3,6 +3,7 @@ import type { Character, CharacterStatus } from './character';
 import {
 	createDerivation,
 	effective,
+	type CounterDef,
 	type Derivation,
 	type Issue,
 	type Modifier,
@@ -17,6 +18,7 @@ import { evaluateSkills, type SkillView } from './steps/skills';
 import { evaluateAge, evaluateSenility, type AgeStepView, type SenilityView } from './steps/age';
 import { evaluateReligion, type ReligionStepView } from './steps/religion';
 import { evaluateCharacteristic, type CharacteristicStepView } from './steps/characteristic';
+import { applySecondaryPercent, evaluateOrigin, evaluateStunts, type OriginStepView, type StuntStepView } from './steps/origin';
 import { evaluateInterests, type InterestsStepView } from './steps/interests';
 import { evaluateProfession, warnLoweredHeroSkills, type ProfessionStepView, type StatusView } from './steps/profession';
 
@@ -49,7 +51,10 @@ export interface CharacterView {
 	interestsStep: InterestsStepView;
 	religionStep: ReligionStepView;
 	characteristicStep: CharacteristicStepView;
+	originStep: OriginStepView;
+	stuntStep: StuntStepView;
 	resources: ResourceDef[];
+	counters: CounterDef[];
 	characteristicAllowance: Derivation['characteristicAllowance'];
 }
 
@@ -63,12 +68,20 @@ export function computeView(character: Character, ruleData: RuleData): Character
 	const ageStep = evaluateAge(d);
 	const religionStep = evaluateReligion(d);
 	const characteristicStep = evaluateCharacteristic(d);
+	const originStep = evaluateOrigin(d);
 	const professionStep = evaluateProfession(d);
 	const interestsStep = evaluateInterests(d);
 	const { secondary, luck } = evaluateSecondary(d);
+	applySecondaryPercent(d, secondary);
 	const senility = evaluateSenility(d, secondary.stability);
 	const skills = evaluateSkills(d);
 	warnLoweredHeroSkills(d, skills);
+	const socialStatus: StatusView = {
+		base: d.status.base,
+		modifiers: d.status.modifiers,
+		value: d.status.base + d.status.modifiers.reduce((sum, m) => sum + m.value, 0)
+	};
+	const stuntStep = evaluateStunts(d, skills, secondary, socialStatus.value);
 
 	return {
 		id: character.id,
@@ -92,12 +105,11 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		interestsStep,
 		religionStep,
 		characteristicStep,
+		originStep,
+		stuntStep,
 		resources: d.resources,
-		socialStatus: {
-			base: d.status.base,
-			modifiers: d.status.modifiers,
-			value: d.status.base + d.status.modifiers.reduce((sum, m) => sum + m.value, 0)
-		},
+		counters: d.counters,
+		socialStatus,
 		characteristicAllowance: d.characteristicAllowance
 	};
 }

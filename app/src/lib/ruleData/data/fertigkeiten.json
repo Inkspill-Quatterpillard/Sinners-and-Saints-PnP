@@ -370,7 +370,8 @@
 			"source": {
 				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
 				"section": "Wissenschaften (⅕ KLU) [Spezialisierung notwendig]"
-			}
+			},
+			"aliases": ["Wissenschaft"]
 		},
 		{
 			"id": "ersteHilfe",
@@ -409,7 +410,8 @@
 			"source": {
 				"file": "Charaktererstellung/Liste_der_Fertigkeiten.md",
 				"section": "Handwerk und Künste (⅕ INT): [Spezialisierung notwendig]"
-			}
+			},
+			"aliases": ["Handwerk"]
 		},
 		{
 			"id": "natur",

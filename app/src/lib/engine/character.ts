@@ -32,6 +32,13 @@ export interface Basis {
 	};
 	species?: string;
 	religion?: string;
+	origin: {
+		/** Besondere Herkunft oder stattdessen ein zweites Kunststück (nur mit der optionalen Regel). */
+		choice?: 'origin' | 'stunt';
+		origin?: string;
+	};
+	/** Gewählte Kunststücke. */
+	stunts: string[];
 	characteristics: {
 		mode?: CharacteristicMode;
 		/** Frei gewählte bzw. eingetragene Charakteristik je Platz. */
@@ -98,6 +105,8 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			name: '',
 			options: { optionalRules: {} },
 			attributes: { rolls: {}, assignment: {} },
+			origin: {},
+			stunts: [],
 			characteristics: { picks: {}, rolls: {}, rerolledSlots: {} },
 			age: { youngMalus: {}, maturity: {}, atrophia: {}, senility: {} },
 			profession: { name: '', skills: [], heroSlots: {} },

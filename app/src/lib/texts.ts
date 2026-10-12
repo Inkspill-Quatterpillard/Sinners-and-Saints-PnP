@@ -26,10 +26,12 @@ export const t = {
 		age: 'Alter',
 		religion: 'Religion',
 		characteristic: 'Charakteristik',
+		origin: 'Herkunft',
 		profession: 'Profession',
 		interests: 'Interessen',
 		secondary: 'Sekundärattribute',
-		senility: 'Vergreisung'
+		senility: 'Vergreisung',
+		stunts: 'Kunststücke'
 	} as Record<string, string>,
 	previousStep: '← Zurück',
 	nextStep: 'Weiter →',
@@ -157,6 +159,25 @@ export const t = {
 		slot: (i: number, extra: boolean) => (extra ? `Zusätzliche Charakteristik (Spezies)` : `Charakteristik ${i + 1}`),
 		reroll: 'Neu würfeln (einmalig)',
 		rerolled: 'neu gewürfelt'
+	},
+	origin: {
+		intro:
+			'Die Besondere Herkunft gestaltet die Abstammung deines Charakters zusätzlich zur Spezies. Statt einer Herkunft darfst du ein zweites Kunststück wählen.',
+		disabled: 'Ihr spielt ohne Besondere Herkunft. Du kannst die optionale Regel unter „Optionen“ aktivieren.',
+		choice: 'Besondere Herkunft oder zweites Kunststück?',
+		takeOrigin: 'Besondere Herkunft wählen',
+		takeStunt: 'Stattdessen ein zweites Kunststück',
+		origin: 'Herkunft'
+	},
+	stunts: {
+		intro: (allowed: number) =>
+			`Kunststücke sind besondere Fähigkeiten mit Voraussetzungen an Fertigkeiten oder Attribute. Du wählst ${allowed === 1 ? 'eines' : `${allowed}`}.`,
+		chosen: (n: number, allowed: number) => `${n} von ${allowed} gewählt`,
+		onlyAvailable: 'Nur verfügbare zeigen',
+		search: 'Suchen',
+		none: 'Keine passenden Kunststücke. Deaktiviere „Nur verfügbare zeigen“, um alle zu sehen.',
+		tier: (tier: number, name: string) => `Stufe ${tier} (${name})`,
+		unmet: (list: string) => `Fehlt: ${list}`
 	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',
