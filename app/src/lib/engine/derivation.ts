@@ -1,7 +1,7 @@
 import type { AttributeId, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character } from './character';
 
-export type StepId = 'options' | 'attributes' | 'species' | 'age' | 'profession' | 'secondary' | 'senility';
+export type StepId = 'options' | 'attributes' | 'species' | 'age' | 'profession' | 'interests' | 'secondary' | 'senility';
 export type StepStatus = 'open' | 'valid' | 'invalid';
 
 /** Ein Hinweis zu einer Entscheidung: eine Warnung oder eine ungültige Entscheidung mit Begründung. */

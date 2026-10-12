@@ -24,4 +24,8 @@ export const messages = {
 		`Die Professionsfertigkeit ${key.replace(':', ': ')} gibt es nicht mehr (z. B. weil die Spezialisierung entfernt wurde). Wähle eine andere.`,
 	heroSkillLowered: (name: string, start: number, value: number) =>
 		`${name}: Der Startwert ${start} sinkt durch das Setzen auf ${value}. Das ist erlaubt, aber vermutlich nicht gewollt.`
+,
+	interestsSource: 'Persönliche Interessen',
+	tooManyInterestPoints: (spent: number, total: number) =>
+		`Es sind ${spent} Punkte für Persönliche Interessen verteilt, zur Verfügung stehen ${total}. Nimm ${spent - total} Punkte zurück.`
 };

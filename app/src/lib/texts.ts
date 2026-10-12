@@ -25,6 +25,7 @@ export const t = {
 		species: 'Spezies',
 		age: 'Alter',
 		profession: 'Profession',
+		interests: 'Interessen',
 		secondary: 'Sekundärattribute',
 		senility: 'Vergreisung'
 	} as Record<string, string>,
@@ -87,6 +88,18 @@ export const t = {
 		heroHint: 'Setze fünf Kampf- oder Magiefertigkeiten auf 14, 12, 10, 8 und 8. Die Werte ersetzen den Startwert.',
 		heroSlot: (value: number) => `Auf ${value}`,
 		start: (v: number | undefined) => `Start ${v ?? '–'}`
+	},
+	interests: {
+		intro: 'Verteile Punkte auf persönliche Interessen: beliebige Fertigkeiten, auch Professionsfertigkeiten, und den Status. Kampf- und Magiefertigkeiten sind ausgeschlossen.',
+		basis: 'Punkte aus',
+		basisOption: (attr: string, value: number | undefined) => `2 × ${attr} (${value === undefined ? '–' : value * 2} Punkte)`,
+		needsAttributes: 'Lege zuerst die Grundattribute fest.',
+		remaining: (remaining: number, total: number) =>
+			remaining >= 0 ? `Noch ${remaining} von ${total} Punkten zu verteilen` : `${-remaining} Punkte zu viel verteilt (${total} verfügbar)`,
+		status: 'Status',
+		points: (name: string) => `Punkte für ${name}`,
+		more: (name: string) => `${name} +1`,
+		less: (name: string) => `${name} −1`
 	},
 	senility: {
 		intro: (loss: number) => `Würfle je Vergreisungswurf 1W100 gegen die Stabilität. Liegt der Wurf höher, sinkt die Stabilität um ${loss}.`,

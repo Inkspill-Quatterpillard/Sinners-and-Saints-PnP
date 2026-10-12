@@ -1,6 +1,6 @@
 # 08 — Persönliche Interessen
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,7 +10,7 @@ Ein Spieler bekommt Punkte für Persönliche Interessen in Höhe von 2× KLU ode
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Die Wahl zwischen KLU und INT ist frei, vorausgewählt ist der höhere Wert.
-- [ ] Die Punkte lassen sich auf beliebige Fertigkeiten und auf Status verteilen. Kampf- und Magiefertigkeiten sind ausgeschlossen.
-- [ ] Die Ansicht zeigt die Restpunkte. Überzogene Punkte machen den Schritt ungültig.
-- [ ] Ändern sich KLU oder INT später, werden die Punkte neu bewertet.
+- [x] Die Wahl zwischen KLU und INT ist frei, vorausgewählt ist der höhere Wert.
+- [x] Die Punkte lassen sich auf beliebige Fertigkeiten und auf Status verteilen. Kampf- und Magiefertigkeiten sind ausgeschlossen.
+- [x] Die Ansicht zeigt die Restpunkte. Überzogene Punkte machen den Schritt ungültig.
+- [x] Ändern sich KLU oder INT später, werden die Punkte neu bewertet.

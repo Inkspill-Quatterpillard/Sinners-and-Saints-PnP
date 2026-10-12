@@ -9,6 +9,7 @@
 	import AgeStep from '$lib/components/steps/AgeStep.svelte';
 	import SenilityStep from '$lib/components/steps/SenilityStep.svelte';
 	import ProfessionStep from '$lib/components/steps/ProfessionStep.svelte';
+	import InterestsStep from '$lib/components/steps/InterestsStep.svelte';
 	import { applyAction, computeView, type Action, type Character, type StepId } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { loadCharacter, saveCharacter } from '$lib/storage/characterStore';
@@ -25,6 +26,7 @@
 		species: SpeciesStep,
 		age: AgeStep,
 		profession: ProfessionStep,
+		interests: InterestsStep,
 		secondary: SecondaryStep,
 		senility: SenilityStep
 	};

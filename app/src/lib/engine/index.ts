@@ -13,3 +13,5 @@ export type { LuckView, SecondaryValue } from './steps/secondary';
 export type { SkillView } from './steps/skills';
 export type { AgeStage, AgeStepView, MaturityRollView, SenilityRollView, SenilityView } from './steps/age';
 export type { HeroSlotView, ProfessionStepView, StatusView } from './steps/profession';
+export type { InterestsStepView } from './steps/interests';
+export { STATUS_TARGET } from './steps/interests';

@@ -8,6 +8,7 @@ import { applySecondaryAction, type SecondaryAction } from './steps/secondary';
 import { applySkillsAction, type SkillsAction } from './steps/skills';
 import { applyAgeAction, type AgeAction } from './steps/age';
 import { applyProfessionAction, type ProfessionAction } from './steps/profession';
+import { applyInterestsAction, type InterestsAction } from './steps/interests';
 
 export type Action =
 	| { type: 'setName'; name: string }
@@ -18,7 +19,8 @@ export type Action =
 	| SecondaryAction
 	| SkillsAction
 	| AgeAction
-	| ProfessionAction;
+	| ProfessionAction
+	| InterestsAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -61,6 +63,10 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'rollStatus':
 		case 'assignHeroSkill':
 			applyProfessionAction(basis, action, ruleData);
+			break;
+		case 'setInterestBasis':
+		case 'setInterestPoints':
+			applyInterestsAction(basis, action, new Set(ruleData.skills.map((s) => s.id)));
 			break;
 		case 'addSpecialization':
 		case 'removeSpecialization':

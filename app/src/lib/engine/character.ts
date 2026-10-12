@@ -49,6 +49,12 @@ export interface Basis {
 		/** Heldenfertigkeit je Platz; die Plätze entsprechen den Werten 14/12/10/8/8. */
 		heroSlots: Record<number, string>;
 	};
+	interests: {
+		/** Ausdrücklich gewählte Grundlage; sonst gilt das höhere von KLU und INT. */
+		basis?: AttributeId;
+		/** Punkte je Fertigkeitsschlüssel oder „status“. */
+		points: Record<string, number>;
+	};
 	/** Angelegte Spezialisierungen je Fertigkeit, z. B. Wissenschaften: Alchemie. */
 	specializations: Record<string, string[]>;
 	/** Glückswurf (bei Vorteil zwei Würfel). */
@@ -83,6 +89,7 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			attributes: { rolls: {}, assignment: {} },
 			age: { youngMalus: {}, maturity: {}, atrophia: {}, senility: {} },
 			profession: { name: '', skills: [], heroSlots: {} },
+			interests: { points: {} },
 			specializations: {},
 			choices: {}
 		},
