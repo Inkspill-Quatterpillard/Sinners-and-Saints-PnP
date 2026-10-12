@@ -1,6 +1,6 @@
 # 21 — Prüfskript für die Regeldaten
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,9 +10,9 @@ Ein Maintainer startet lokal einen einzigen npm-Befehl. Das Skript vergleicht di
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Node/TypeScript-Skript, das lokal per npm-Befehl läuft.
-- [ ] Geprüft werden Ausrüstungslisten (alle Settings), Status-Tabelle, Fertigkeitsliste, Heldenfertigkeiten, Charakteristiken und Kunststücke.
-- [ ] Die Ausgabe nennt pro Abweichung Bereich, Eintrag, Wert im Regelwerk und Wert in den Regeldaten.
-- [ ] Bei Abweichungen beendet sich das Skript mit Fehlercode. Einträge mit dem Vermerk „vorläufig“ ergeben nur eine Warnung.
-- [ ] Fließtext wird nicht geprüft.
-- [ ] Tests mit kleinen Beispiel-Markdown- und Beispiel-Datendateien.
+- [x] Node/TypeScript-Skript, das lokal per npm-Befehl läuft.
+- [x] Geprüft werden Ausrüstungslisten (alle Settings), Status-Tabelle, Fertigkeitsliste, Heldenfertigkeiten, Charakteristiken und Kunststücke.
+- [x] Die Ausgabe nennt pro Abweichung Bereich, Eintrag, Wert im Regelwerk und Wert in den Regeldaten.
+- [x] Bei Abweichungen beendet sich das Skript mit Fehlercode. Einträge mit dem Vermerk „vorläufig“ ergeben nur eine Warnung.
+- [x] Fließtext wird nicht geprüft.
+- [x] Tests mit kleinen Beispiel-Markdown- und Beispiel-Datendateien.

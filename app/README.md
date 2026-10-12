@@ -10,6 +10,8 @@ Offline-fähige PWA (SvelteKit, statischer Build) zum Erstellen und Führen von 
 - `npm run check`: Typecheck
 - `npm run build`: statischer Build nach `build/`
 - `npm run preview`: den Build lokal ausliefern, mit Service Worker und offline-fähig
+- `npm run check-rules`: die Regeldaten mit den Tabellen und Listen im `Regelwerk/` vergleichen. Das Skript endet bei Abweichungen mit Fehlercode 1; vorläufige Einträge ergeben nur Warnungen. Geprüft werden Fertigkeiten, Heldenfertigkeiten, Status-Tabelle, Charakteristiken, Kunststücke und alle Ausrüstungslisten. Fließtext prüft es nicht.
+- `npm run format`: Code einheitlich formatieren (Prettier)
 
 ## Aufbau
 
