@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import DiceInput from '$lib/components/DiceInput.svelte';
+	import AttributeName from '$lib/components/AttributeName.svelte';
 	import Counter from '$lib/components/live/Counter.svelte';
 	import Overridable from '$lib/components/live/Overridable.svelte';
 	import RestPanel from '$lib/components/live/RestPanel.svelte';
@@ -214,7 +215,7 @@
 		<dl class="grid">
 			{#each ruleData.attributes as a (a.id)}
 				<div class="item">
-					<dt>{a.id}</dt>
+					<dt><AttributeName id={a.id} {view} /></dt>
 					<dd>{view.attributes[a.id].effective ?? '–'}</dd>
 				</div>
 			{/each}

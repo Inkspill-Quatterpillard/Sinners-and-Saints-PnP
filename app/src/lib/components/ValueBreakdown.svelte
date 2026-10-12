@@ -11,10 +11,10 @@
 		value
 	}: {
 		label: string;
-		base: number;
+		base?: number;
 		baseLabel: string;
 		modifiers: Modifier[];
-		value: number;
+		value?: number;
 	} = $props();
 
 	const signed = (v: number) => (v >= 0 ? `+${v}` : `−${-v}`);
@@ -22,11 +22,11 @@
 
 <table class="breakdown" aria-label={t.breakdown(label)}>
 	<tbody>
-		<tr><td>{baseLabel}</td><td class="num">{base}</td></tr>
+		<tr><td>{baseLabel}</td><td class="num">{base ?? '–'}</td></tr>
 		{#each modifiers as m, i (i)}
 			<tr><td>{m.source}</td><td class="num" class:minus={m.value < 0}>{signed(m.value)}</td></tr>
 		{/each}
-		<tr class="total"><td>{label}</td><td class="num">{value}</td></tr>
+		<tr class="total"><td>{label}</td><td class="num">{value ?? '–'}</td></tr>
 	</tbody>
 </table>
 

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import AttributeName from '$lib/components/AttributeName.svelte';
+	import SecondaryName from '$lib/components/SecondaryName.svelte';
 	import type { CharacterView } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
@@ -11,16 +13,16 @@
 	<dl class="attrs">
 		{#each ruleData.attributes as attr (attr.id)}
 			{@const a = view.attributes[attr.id]}
-			<div title={a.modifiers.map((m) => `${m.source}: ${m.value > 0 ? '+' : ''}${m.value}`).join('\n')}>
-				<dt>{attr.id}</dt>
+			<div>
+				<dt><AttributeName id={attr.id} {view} /></dt>
 				<dd>{a.effective ?? '–'}</dd>
 			</div>
 		{/each}
 	</dl>
 	<dl class="attrs secondary">
 		{#each ruleData.secondary.secondaryAttributes as def (def.key)}
-			<div title={def.name}>
-				<dt>{def.short}</dt>
+			<div>
+				<dt><SecondaryName {def} {view} /></dt>
 				<dd>{view.secondary[def.key].value ?? '–'}</dd>
 			</div>
 		{/each}

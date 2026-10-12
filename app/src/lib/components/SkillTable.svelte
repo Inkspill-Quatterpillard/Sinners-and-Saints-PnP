@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Action, SkillView } from '$lib/engine';
+	import SkillName from '$lib/components/SkillName.svelte';
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
 
@@ -47,7 +48,7 @@
 					{/if}
 					<tr class:spec={!!s.specialization}>
 						<td>
-							<span class="name">{s.name}</span>
+							<span class="name"><SkillName skill={s} /></span>
 							<small>{fraction(s)}{s.needsSpecialization && !s.specialization ? ` · ${t.skills.anySpecialization}` : ''}</small>
 							{#if s.specialization && dispatch}
 								<button

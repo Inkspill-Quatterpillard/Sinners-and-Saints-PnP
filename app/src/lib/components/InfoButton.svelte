@@ -9,9 +9,11 @@
 		text: string;
 		meta?: string;
 		children: Snippet;
+		/** Weiterer Inhalt unter dem Text, z. B. die Zusammensetzung eines Werts. */
+		details?: Snippet;
 	}
 
-	let { title, text, meta, children }: Props = $props();
+	let { title, text, meta, children, details }: Props = $props();
 	let dialog: HTMLDialogElement;
 </script>
 
@@ -25,6 +27,7 @@
 		</header>
 		{#if meta}<p class="meta">{meta}</p>{/if}
 		<RuleText {text} />
+		{@render details?.()}
 	</article>
 </dialog>
 

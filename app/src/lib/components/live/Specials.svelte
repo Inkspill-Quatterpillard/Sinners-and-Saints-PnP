@@ -1,12 +1,14 @@
 <script lang="ts">
+	import InfoButton from '$lib/components/InfoButton.svelte';
 	import type { CharacterView } from '$lib/engine';
+	import { buildLookup } from '$lib/lookup';
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
 
-	/** Alle Besonderheiten des Charakters mit Links zum Nachschlagen. */
+	/** Alle Besonderheiten des Charakters; antippen öffnet den Regeltext als Pop-up. */
 	let { view }: { view: CharacterView } = $props();
 
-	const lookup = (key: string) => `/nachschlagen?eintrag=${encodeURIComponent(key)}`;
+	const entries = new Map(buildLookup(ruleData).map((e) => [e.key, e]));
 	const items = $derived.by(() => {
 		const list: { group: string; name: string; key: string }[] = [];
 		for (const tr of view.speciesStep.traits) list.push({ group: t.specials.traits, name: tr.name, key: `trait:${tr.id}` });
@@ -47,7 +49,14 @@
 			<h3>{group}</h3>
 			<ul>
 				{#each items.filter((i) => i.group === group) as item (item.key)}
-					<li><a href={lookup(item.key)}>{item.name}</a></li>
+					{@const entry = entries.get(item.key)}
+					<li>
+						{#if entry}
+							<InfoButton title={entry.name} meta={entry.meta} text={entry.text}>{item.name}</InfoButton>
+						{:else}
+							{item.name}
+						{/if}
+					</li>
 				{/each}
 			</ul>
 		{/each}
