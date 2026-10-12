@@ -18,6 +18,7 @@ import { applyMagicAction, type MagicAction } from './steps/magic';
 import { applyEquipmentAction, type EquipmentAction } from './steps/equipment';
 import { applyBackgroundAction, type BackgroundAction } from './steps/background';
 import { computeView } from './view';
+import { applyLiveAction, type LiveAction } from './live';
 
 export type Action =
 	| { type: 'setName'; name: string }
@@ -36,7 +37,8 @@ export type Action =
 	| CombatAction
 	| MagicAction
 	| EquipmentAction
-	| BackgroundAction;
+	| BackgroundAction
+	| LiveAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -64,6 +66,17 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 			// Was wählbar ist, hängt von den aktuellen Fertigkeitswerten ab.
 			applyCombatAction(basis, action, computeView(character, ruleData).combatStep, ruleData);
 			break;
+		case 'finishCreation':
+		case 'reopenCreation':
+		case 'takeDamage':
+		case 'endCombat':
+		case 'setCondition':
+		case 'overrideValue':
+		case 'setCurrent': {
+			const current = computeView(character, ruleData);
+			applyLiveAction(next, action, current.live, current.canFinish, ruleData);
+			break;
+		}
 		case 'setBackground':
 		case 'addPerson':
 		case 'updatePerson':

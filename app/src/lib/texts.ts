@@ -10,6 +10,7 @@ export const t = {
 	name: 'Name',
 	notFound: 'Dieser Charakter wurde nicht gefunden.',
 	loading: 'Lädt …',
+	undo: '↶ Rückgängig',
 	status: {
 		inCreation: 'In Erstellung',
 		finished: 'Fertig'
@@ -270,6 +271,49 @@ export const t = {
 		residence: 'Wohnort',
 		languages: 'Sprachen',
 		writing: (script: string) => `kann lesen und schreiben (${script})`
+	},
+	live: {
+		finish: 'Erstellung abschließen',
+		finishHint: 'Alle Schritte sind gültig. Danach öffnet sich der lebende Bogen.',
+		notYet: (steps: string) => `Zum Abschließen fehlen noch: ${steps}.`,
+		open: 'Zum lebenden Bogen',
+		editingFinished: 'Der Charakter ist abgeschlossen. Änderungen an der Erstellung wirken sofort.',
+		editCreation: 'Erstellung ansehen und ändern',
+		toCreation: 'Zur Erstellung',
+		notFinished: 'Dieser Charakter ist noch nicht abgeschlossen.',
+		years: (n: number) => `${n} Jahre`,
+		tp: 'Trefferpunkte',
+		stability: 'Stabilität',
+		mp: 'Magiepunkte',
+		luck: 'Glück',
+		setValue: (label: string) => `${label} setzen`,
+		tapToSet: 'Antippen, um den Wert direkt zu setzen',
+		minus: (label: string) => `${label} −1`,
+		plus: (label: string) => `${label} +1`,
+		damage: 'Schaden',
+		applyDamage: 'Schaden nehmen',
+		threshold: (n: number) => `Wundschwelle ${n}: mehr Schaden auf einen Schlag gibt eine Wunde, die Hälfte der TP zwei.`,
+		hintWound: (n: number) =>
+			n === 1
+				? 'Eine Wunde! Probe auf KON, sonst fällt der Charakter zu Boden.'
+				: `${n} Wunden! Probe auf KON, sonst fällt der Charakter zu Boden.`,
+		hintDown: 'Keine TP mehr: kampfunfähig.',
+		hintDead: 'Mehr Schaden als die maximalen TP auf einen Schlag: Der Charakter stirbt auf der Stelle.',
+		pending: (n: number) =>
+			`Kampfende: Würfle für ${n === 1 ? 'die Wunde' : `die ${n} Wunden`} je 1W6 Wundenmalus auf die maximalen TP.`,
+		woundMalus: (n: number) => `Wundenmalus insgesamt: −${n} auf die maximalen TP.`,
+		conditions: 'Zustände',
+		values: 'Werte',
+		maxTpShort: 'TP max',
+		maxStaShort: 'STA max',
+		maxMpShort: 'MP max',
+		override: (label: string) => `${label} von Hand setzen`,
+		tapToOverride: 'Antippen, um den Wert von Hand zu setzen',
+		resetOverride: 'Auf den berechneten Wert zurücksetzen',
+		resetOverrideOf: (label: string) => `${label} zurücksetzen`,
+		overrideHint:
+			'Von Hand gesetzte Werte (golden) gehen dem berechneten Wert vor, etwa nach einer Entscheidung des Spielleiters.',
+		skills: 'Wichtige Fertigkeiten'
 	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',

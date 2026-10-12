@@ -380,6 +380,14 @@ export interface BackgroundTables {
 	names: NameList[];
 }
 
+export interface ConditionDef {
+	id: string;
+	name: string;
+	group: 'body' | 'mind' | 'other';
+	text: string;
+	source: SourceRef;
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -403,4 +411,5 @@ export interface RuleData {
 	statusTable: StatusTable;
 	equipment: EquipmentDef[];
 	background: BackgroundTables;
+	conditions: ConditionDef[];
 }

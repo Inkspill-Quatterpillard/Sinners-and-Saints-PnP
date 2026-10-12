@@ -24,6 +24,7 @@ import { evaluateCombat, type CombatStepView } from './steps/combat';
 import { evaluateMagic, type MagicStepView } from './steps/magic';
 import { evaluateEquipment, type EquipmentStepView } from './steps/equipment';
 import { evaluateBackground, type BackgroundView } from './steps/background';
+import { applyOverrides, computeLive, type LiveView } from './live';
 import { evaluateProfession, warnLoweredHeroSkills, type ProfessionStepView, type StatusView } from './steps/profession';
 
 export interface AttributeView {
@@ -61,6 +62,9 @@ export interface CharacterView {
 	magicStep: MagicStepView;
 	equipmentStep: EquipmentStepView;
 	background: BackgroundView;
+	/** Alle Schritte der Erstellung sind gültig. */
+	canFinish: boolean;
+	live: LiveView;
 	resources: ResourceDef[];
 	counters: CounterDef[];
 	characteristicAllowance: Derivation['characteristicAllowance'];
@@ -83,6 +87,7 @@ export function computeView(character: Character, ruleData: RuleData): Character
 	applySecondaryPercent(d, secondary);
 	const senility = evaluateSenility(d, secondary.stability);
 	const skills = evaluateSkills(d);
+	applyOverrides(character.play, secondary, skills);
 	warnLoweredHeroSkills(d, skills);
 	const socialStatus: StatusView = {
 		base: d.status.base,
@@ -123,6 +128,8 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		magicStep,
 		equipmentStep,
 		background,
+		canFinish: d.steps.every((s) => s.status === 'valid'),
+		live: computeLive(character.play, secondary),
 		resources: d.resources,
 		counters: d.counters,
 		socialStatus,

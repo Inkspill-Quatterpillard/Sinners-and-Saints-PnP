@@ -30,7 +30,7 @@
 	<ul class="list">
 		{#each characters as c (c.id)}
 			<li>
-				<a href="/charakter/{c.id}">{c.name || t.unnamed}</a>
+				<a href={c.status === 'finished' ? `/charakter/${c.id}/bogen` : `/charakter/${c.id}`}>{c.name || t.unnamed}</a>
 				<span class="status">{t.status[c.status]}</span>
 			</li>
 		{/each}

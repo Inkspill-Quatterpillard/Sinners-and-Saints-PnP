@@ -1,0 +1,142 @@
+{
+	"source": {
+		"file": "Kampfregeln/Trefferpunkte.md"
+	},
+	"conditions": [
+		{
+			"id": "wunde",
+			"name": "Wunde",
+			"group": "body",
+			"text": "Schwere Wunde: Nach dem Kampf wird ihre Schwere mit 1W6 als Wundenmalus von den maximalen TP abgezogen. Muss bis zum Ende der nächsten Ruhepause mit Erster Hilfe versorgt werden.",
+			"source": {
+				"file": "Kampfregeln/Trefferpunkte.md",
+				"section": "Wunden"
+			}
+		},
+		{
+			"id": "verstuemmelt",
+			"name": "Verstümmelt",
+			"group": "body",
+			"text": "Optionale Regel: Verlust von mehr als drei Vierteln der maximalen TP mit einem Angriff. Gilt als schwere Wunde, Schwere 3W6.",
+			"source": {
+				"file": "Kampfregeln/Trefferpunkte.md",
+				"section": "Versorgung einer Wunde"
+			}
+		},
+		{
+			"id": "infektion",
+			"name": "Infektion",
+			"group": "body",
+			"text": "Die Wunde verschlimmert sich jeden Tag um 1W4 Wundenpunkte und heilt nur noch durch erschwerte medizinische Behandlung.",
+			"source": {
+				"file": "Kampfregeln/Trefferpunkte.md",
+				"section": "Infektion"
+			}
+		},
+		{
+			"id": "wundfieber",
+			"name": "Wundfieber",
+			"group": "body",
+			"text": "Mehr als die Hälfte der TP sind entzündete Wundpunkte: zusätzlich Stabilitätsprobe, Verlust von Stabilität.",
+			"source": {
+				"file": "Kampfregeln/Trefferpunkte.md",
+				"section": "Infektion"
+			}
+		},
+		{
+			"id": "kampfunfaehig",
+			"name": "Kampfunfähig",
+			"group": "body",
+			"text": "Alle TP verloren: kampfunfähig, aber nicht im Sterben.",
+			"source": {
+				"file": "Kampfregeln/Trefferpunkte.md",
+				"section": "Wunden"
+			}
+		},
+		{
+			"id": "sterbend",
+			"name": "Im Sterben",
+			"group": "body",
+			"text": "Mit schwerer Wunde auf null TP: drei Runden in Folge je ein Rettungswurf (W20 unter 10 ist geschafft). Nach zwei Erfolgen bei Bewusstsein, aber weiter im Sterben; nach zwei Fehlschlägen tot.",
+			"source": {
+				"file": "Kampfregeln/Trefferpunkte.md",
+				"section": "Kampfunfähigkeit und Tod"
+			}
+		},
+		{
+			"id": "bewusstlos",
+			"name": "Bewusstlos",
+			"group": "body",
+			"text": "Bewusstlos, bis zumindest ein Teil der Wunden regeneriert ist oder eine Probe gelingt.",
+			"source": {
+				"file": "Kampfregeln/Trefferpunkte.md",
+				"section": "Regeneration von Kampfkraft"
+			}
+		},
+		{
+			"id": "tot",
+			"name": "Tot",
+			"group": "body",
+			"text": "Mehr als die maximalen TP mit einem Schlag verloren oder gescheiterte Rettungswürfe.",
+			"source": {
+				"file": "Kampfregeln/Trefferpunkte.md",
+				"section": "Versorgung einer Wunde"
+			}
+		},
+		{
+			"id": "panik",
+			"name": "Panik",
+			"group": "mind",
+			"text": "Mehr als 5 Stabilität im Kampf verloren.",
+			"source": {
+				"file": "Geistige_Stabilität/Stabilität_im_Kampf.md"
+			}
+		},
+		{
+			"id": "mentalerZusammenbruch",
+			"name": "Mentaler Zusammenbruch",
+			"group": "mind",
+			"text": "Mehr als 10 Stabilität auf einmal verloren.",
+			"source": {
+				"file": "Geistige_Stabilität/Wahnsinn/Mentaler_Zusammenbruch.md"
+			}
+		},
+		{
+			"id": "mentaleInstabilitaet",
+			"name": "Mentale Instabilität",
+			"group": "mind",
+			"text": "Nach einem mentalen Zusammenbruch für 1W10 Stunden.",
+			"source": {
+				"file": "Geistige_Stabilität/Wahnsinn/Mentale_Instabilität.md"
+			}
+		},
+		{
+			"id": "schleichenderWahnsinn",
+			"name": "Schleichender Wahnsinn",
+			"group": "mind",
+			"text": "Stabilität unter der Hälfte des Startwerts.",
+			"source": {
+				"file": "Geistige_Stabilität/Wahnsinn/Schleichender_Wahnsinn.md"
+			}
+		},
+		{
+			"id": "betaeubt",
+			"name": "Betäubt",
+			"group": "other",
+			"text": "Stufen der Betäubung, etwa durch einen Knaufschlag.",
+			"source": {
+				"file": "Kampfregeln/Manöver.md"
+			}
+		},
+		{
+			"id": "revitalisiert",
+			"name": "Revitalisiert",
+			"group": "other",
+			"text": "Dhampir nach dem Bluttrinken: eine Stunde Vorteil auf körperliche Proben, Geschwindigkeit +50 %.",
+			"source": {
+				"file": "Charaktererstellung/Herkunft.md",
+				"section": "11. Dhampir"
+			}
+		}
+	]
+}

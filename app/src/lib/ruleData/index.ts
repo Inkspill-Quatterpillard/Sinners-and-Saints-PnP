@@ -4,6 +4,7 @@ import type {
 	BackgroundTables,
 	CharacteristicDef,
 	CombatRules,
+	ConditionDef,
 	EquipmentDef,
 	MagicRules,
 	OriginDef,
@@ -26,6 +27,7 @@ import zauber from './data/zauber.json';
 import status from './data/status.json';
 import ausruestung from './data/ausruestung.json';
 import vorgeschichte from './data/vorgeschichte.json';
+import zustaende from './data/zustaende.json';
 import profession from './data/profession.json';
 import alter from './data/alter.json';
 import fertigkeiten from './data/fertigkeiten.json';
@@ -64,5 +66,6 @@ export const ruleData: RuleData = {
 	magic: zauber as MagicRules,
 	statusTable: status as StatusTable,
 	equipment: ausruestung.items as EquipmentDef[],
-	background: vorgeschichte as BackgroundTables
+	background: vorgeschichte as BackgroundTables,
+	conditions: zustaende.conditions as ConditionDef[]
 };

@@ -95,8 +95,22 @@ export interface Basis {
 	choices: Record<string, ChoiceState>;
 }
 
-/** Die im Spiel wechselnden Werte des lebenden Bogens. */
-export type PlayState = Record<string, never>;
+/** Die im Spiel wechselnden Werte des lebenden Bogens. Fehlt ein aktueller Wert, gilt der Höchstwert. */
+export interface PlayState {
+	tp?: number;
+	stability?: number;
+	mp?: number;
+	luck?: number;
+	/** Stabilität beim Abschließen der Erstellung. */
+	stabilityStart?: number;
+	/** Summe der Wundenmali auf die maximalen TP. */
+	woundMalus: number;
+	/** Wunden des laufenden Kampfes, deren Malus noch ausgewürfelt wird. */
+	pendingWounds: number;
+	conditions: string[];
+	/** Von Hand gesetzte Werte, die dem berechneten Wert vorgehen. */
+	overrides: Partial<Record<string, number>>;
+}
 
 /** Ein Charakter speichert nur seinen aktuellen Stand, nicht den Weg dorthin. */
 export interface Character {
@@ -132,6 +146,6 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			specializations: {},
 			choices: {}
 		},
-		play: {}
+		play: { woundMalus: 0, pendingWounds: 0, conditions: [], overrides: {} }
 	};
 }

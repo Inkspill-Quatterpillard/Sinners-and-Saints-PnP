@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import Summary from '$lib/components/Summary.svelte';
 	import SkillTable from '$lib/components/SkillTable.svelte';
@@ -18,15 +19,14 @@
 	import MagicStep from '$lib/components/steps/MagicStep.svelte';
 	import EquipmentStep from '$lib/components/steps/EquipmentStep.svelte';
 	import BackgroundStep from '$lib/components/steps/BackgroundStep.svelte';
-	import { applyAction, computeView, type Action, type Character, type StepId } from '$lib/engine';
-	import { ruleData } from '$lib/ruleData';
-	import { loadCharacter, saveCharacter } from '$lib/storage/characterStore';
+	import type { StepId } from '$lib/engine';
+	import { CharacterSession } from '$lib/session.svelte';
 	import { t } from '$lib/texts';
 	import type { Component } from 'svelte';
 
-	// Der Regelkern liefert bei jeder Aktion einen neuen Charakter, daher genügt $state.raw.
-	let character = $state.raw<Character | undefined | null>();
-	const view = $derived(character ? computeView(character, ruleData) : undefined);
+	const session = new CharacterSession();
+	const view = $derived(session.view);
+	const dispatch = session.dispatch;
 
 	const stepComponents: Partial<Record<StepId, Component<any>>> = {
 		options: OptionsStep,
@@ -49,29 +49,32 @@
 
 	let current = $state<StepId>('options');
 	const currentIndex = $derived(view ? view.steps.findIndex((s) => s.id === current) : -1);
+	const openSteps = $derived(view ? view.steps.filter((s) => s.status !== 'valid') : []);
 
 	$effect(() => {
-		loadCharacter(page.params.id!).then((c) => (character = c ?? null));
+		session.load(page.params.id!);
 	});
-
-	function dispatch(action: Action) {
-		if (!character) return;
-		character = applyAction(character, action, ruleData);
-		saveCharacter(character);
-	}
 
 	function go(offset: number) {
 		if (!view) return;
 		const next = view.steps[currentIndex + offset];
 		if (next) current = next.id;
 	}
+
+	async function finish() {
+		dispatch({ type: 'finishCreation' });
+		await goto(`/charakter/${page.params.id}/bogen`);
+	}
 </script>
 
-<p><a href="/">← {t.backToList}</a></p>
+<p class="top">
+	<a href="/">← {t.backToList}</a>
+	{#if session.canUndo}<button onclick={session.undo}>{t.undo}</button>{/if}
+</p>
 
-{#if character === undefined}
+{#if session.character === undefined}
 	<p>{t.loading}</p>
-{:else if character === null || !view}
+{:else if session.character === null || !view}
 	<p>{t.notFound}</p>
 {:else}
 	<h1>{view.name || t.unnamed}</h1>
@@ -79,6 +82,18 @@
 		{t.name}
 		<input value={view.name} oninput={(e) => dispatch({ type: 'setName', name: e.currentTarget.value })} />
 	</label>
+
+	<div class="finish">
+		{#if view.status === 'finished'}
+			<a class="button primary" href="/charakter/{view.id}/bogen">{t.live.open}</a>
+			<span>{t.live.editingFinished}</span>
+		{:else if view.canFinish}
+			<button class="primary" onclick={finish}>{t.live.finish}</button>
+			<span>{t.live.finishHint}</span>
+		{:else}
+			<span class="hint">{t.live.notYet(openSteps.map((s) => t.steps[s.id]).join(', '))}</span>
+		{/if}
+	</div>
 
 	<nav class="steps" aria-label="Schritte der Erstellung">
 		{#each view.steps as step (step.id)}
@@ -119,9 +134,26 @@
 {/if}
 
 <style>
+	.top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 	.name {
 		max-width: 24rem;
 		margin-bottom: 1rem;
+	}
+	.finish {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+	.finish span,
+	.hint {
+		color: var(--muted);
+		font-size: 0.9rem;
 	}
 	.steps {
 		display: flex;
