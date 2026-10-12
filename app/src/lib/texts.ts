@@ -21,7 +21,8 @@ export const t = {
 	},
 	steps: {
 		options: 'Optionen',
-		attributes: 'Grundattribute'
+		attributes: 'Grundattribute',
+		species: 'Spezies'
 	} as Record<string, string>,
 	previousStep: '← Zurück',
 	nextStep: 'Weiter →',
@@ -43,6 +44,14 @@ export const t = {
 		notAssigned: '–',
 		rollAll: 'Alle würfeln',
 		chooseMethod: 'Wähle zuerst ein Verfahren.'
+	},
+	species: {
+		intro: 'Die Spezies verändert die Grundattribute und bringt zwei Eigenschaften mit sich.',
+		traits: 'Eigenschaften'
+	},
+	traits: {
+		choose: 'Wähle eine Variante',
+		tied: 'Welches Attribut?'
 	},
 	dice: {
 		roll: (count: number, sides: number) => `${count}W${sides} würfeln`,

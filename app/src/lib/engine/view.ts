@@ -1,8 +1,9 @@
-import type { AttributeId, RuleData } from '$lib/ruleData';
+import type { AttributeId, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character, CharacterStatus } from './character';
-import { effective, type Derivation, type Issue, type Modifier, type StepResult } from './derivation';
+import { createDerivation, effective, type Derivation, type Issue, type Modifier, type StepResult } from './derivation';
 import { attributeStepView, evaluateAttributes, type AttributeStepView } from './steps/attributes';
 import { evaluateOptions, resolveOptions } from './steps/options';
+import { evaluateSpecies, type SpeciesStepView } from './steps/species';
 
 export interface AttributeView {
 	base?: number;
@@ -20,23 +21,18 @@ export interface CharacterView {
 	issues: Issue[];
 	attributes: Record<AttributeId, AttributeView>;
 	attributeStep: AttributeStepView;
+	speciesStep: SpeciesStepView;
+	secondaryModifiers: Record<SecondaryKey, Modifier[]>;
+	characteristicAllowance: Derivation['characteristicAllowance'];
 }
 
-/** Die Schritte der Erstellung in ihrer festen Reihenfolge. */
-const STEPS: ((d: Derivation) => void)[] = [evaluateOptions, evaluateAttributes];
-
 export function computeView(character: Character, ruleData: RuleData): CharacterView {
-	const d: Derivation = {
-		character,
-		ruleData,
-		options: resolveOptions(character.basis, ruleData),
-		attributes: Object.fromEntries(
-			ruleData.attributes.map((a) => [a.id, { modifiers: [] }])
-		) as unknown as Derivation['attributes'],
-		steps: [],
-		issues: []
-	};
-	for (const step of STEPS) step(d);
+	const d = createDerivation(character, ruleData, resolveOptions(character.basis, ruleData));
+
+	// Die Schritte der Erstellung in ihrer festen Reihenfolge; jeder baut auf den früheren auf.
+	evaluateOptions(d);
+	evaluateAttributes(d);
+	const speciesStep = evaluateSpecies(d);
 
 	return {
 		id: character.id,
@@ -46,11 +42,11 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		steps: d.steps,
 		issues: d.issues,
 		attributes: Object.fromEntries(
-			Object.entries(d.attributes).map(([id, s]) => [
-				id,
-				{ base: s.base, effective: effective(s), modifiers: s.modifiers }
-			])
+			Object.entries(d.attributes).map(([id, s]) => [id, { base: s.base, effective: effective(s), modifiers: s.modifiers }])
 		) as Record<AttributeId, AttributeView>,
-		attributeStep: attributeStepView(d)
+		attributeStep: attributeStepView(d),
+		speciesStep,
+		secondaryModifiers: d.secondary,
+		characteristicAllowance: d.characteristicAllowance
 	};
 }

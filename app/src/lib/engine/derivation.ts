@@ -1,7 +1,7 @@
-import type { AttributeId, RuleData } from '$lib/ruleData';
+import type { AttributeId, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character } from './character';
 
-export type StepId = 'options' | 'attributes';
+export type StepId = 'options' | 'attributes' | 'species';
 export type StepStatus = 'open' | 'valid' | 'invalid';
 
 /** Ein Hinweis zu einer Entscheidung: eine Warnung oder eine ungültige Entscheidung mit Begründung. */
@@ -36,8 +36,41 @@ export interface Derivation {
 	ruleData: RuleData;
 	options: { optionalRules: Record<string, boolean>; setting: string };
 	attributes: Record<AttributeId, AttributeState>;
+	/** Beiträge zu Sekundärattributen aus Spezies, Charakteristik, Herkunft usw. */
+	secondary: Record<SecondaryKey, Modifier[]>;
+	/** Obergrenzen einzelner Sekundärattribute (z. B. Stabilität höchstens 99). */
+	secondaryCaps: Partial<Record<SecondaryKey, number>>;
+	characteristicAllowance: { extra: number; forbidden: boolean };
+	/** Würfel für die Regeneration von MP durch Meditation. */
+	meditationDie: number;
 	steps: StepResult[];
 	issues: Issue[];
+}
+
+export const SECONDARY_KEYS: SecondaryKey[] = [
+	'tp',
+	'stability',
+	'magicPoints',
+	'luck',
+	'movement',
+	'dodge',
+	'damageBonus',
+	'woundThreshold'
+];
+
+export function createDerivation(character: Character, ruleData: RuleData, options: Derivation['options']): Derivation {
+	return {
+		character,
+		ruleData,
+		options,
+		attributes: Object.fromEntries(ruleData.attributes.map((a) => [a.id, { modifiers: [] }])) as unknown as Derivation['attributes'],
+		secondary: Object.fromEntries(SECONDARY_KEYS.map((k) => [k, []])) as unknown as Derivation['secondary'],
+		secondaryCaps: {},
+		characteristicAllowance: { extra: 0, forbidden: false },
+		meditationDie: 6,
+		steps: [],
+		issues: []
+	};
 }
 
 export function effective(state: AttributeState): number | undefined {

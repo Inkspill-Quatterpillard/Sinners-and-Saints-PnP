@@ -1,6 +1,7 @@
-import type { AttributeDef, RuleData } from './types';
+import type { AttributeDef, RuleData, SpeciesDef } from './types';
 import grundattribute from './data/grundattribute.json';
 import optionen from './data/optionen.json';
+import spezies from './data/spezies.json';
 
 export type * from './types';
 
@@ -11,5 +12,6 @@ export const ruleData: RuleData = {
 	attributeGeneration: grundattribute.generation,
 	optionalRules: optionen.optionalRules,
 	settings: optionen.settings,
-	defaultSetting: optionen.defaultSetting
+	defaultSetting: optionen.defaultSetting,
+	species: spezies.species as SpeciesDef[]
 };

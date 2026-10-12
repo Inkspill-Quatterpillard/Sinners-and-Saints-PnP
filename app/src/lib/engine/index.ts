@@ -7,3 +7,5 @@ export { computeView } from './view';
 export type { AttributeView, CharacterView } from './view';
 export type { Issue, Modifier, StepId, StepResult, StepStatus } from './derivation';
 export type { AttributeSlot, AttributeStepView } from './steps/attributes';
+export type { SpeciesStepView } from './steps/species';
+export type { ChoiceState, TraitView } from './choices';

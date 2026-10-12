@@ -48,6 +48,7 @@ Legende:
   - Steuern = Fahrzeug steuern oder Steuern (Boot), je nach Zusammenhang
 - [x] **U6 – Kampftechniken.** → Gemeint ist „weitere Technik“.
 - [ ] **U7 – Stupor Mundi.** Laut `Spezies_&_Alter.md` darf ein Mensch „in der Reflexionsphase einen zusätzlichen **Reifewurf**“ durchführen. Laut `Spezies.md` ist es ein zusätzlicher **Verbesserungswurf**. Reifewurf und Verbesserungswurf sind aber verschiedene Würfe (U4). Welcher ist gemeint? Betrifft erst Version 2 (Reflexionsphase).
+- [ ] **U8 – Blut der Alten Welt: höchstes Attribut.** Zählt das höchste Attribut vor oder nach den Modifikatoren der Spezies? Und wer entscheidet bei Gleichstand? → *Vorläufig:* nach den Modifikatoren der Spezies; bei Gleichstand wählt der Spieler.
 
 ## Unvollständiger Text
 

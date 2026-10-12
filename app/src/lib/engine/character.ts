@@ -1,4 +1,5 @@
 import type { AttributeId } from '$lib/ruleData';
+import type { ChoiceState } from './choices';
 
 /** Version des Formats der Charakterdatei. Ältere Dateien werden beim Laden migriert. */
 export const FORMAT_VERSION = 1;
@@ -28,6 +29,9 @@ export interface Basis {
 		/** Welcher Platz welchem Grundattribut zugeordnet ist. */
 		assignment: Partial<Record<AttributeId, number>>;
 	};
+	species?: string;
+	/** Wahlen bei Eigenschaften usw., je Eintrag (siehe `ChoiceState`). */
+	choices: Record<string, ChoiceState>;
 }
 
 /** Die im Spiel wechselnden Werte des lebenden Bogens. */
@@ -53,7 +57,8 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 		basis: {
 			name: '',
 			options: { optionalRules: {} },
-			attributes: { rolls: {}, assignment: {} }
+			attributes: { rolls: {}, assignment: {} },
+			choices: {}
 		},
 		play: {}
 	};

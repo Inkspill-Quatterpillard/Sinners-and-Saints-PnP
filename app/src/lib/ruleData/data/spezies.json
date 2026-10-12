@@ -1,0 +1,97 @@
+{
+	"species": [
+		{
+			"id": "mensch",
+			"name": "Mensch",
+			"source": { "file": "Charaktererstellung/Spezies_&_Alter.md", "section": "Mensch" },
+			"attributeModifiers": { "CHA": 1, "WAH": -1, "WIL": -1 },
+			"traits": [
+				{
+					"id": "stuporMundi",
+					"name": "Stupor Mundi",
+					"text": "Wenn es eine Sache gibt, die die menschliche Spezies von den anderen Völkern abhebt, so ist es deren Neugier, Anpassungsfähigkeit und Erfindungsreichtum. Ein Mensch darf daher in der Reflexionsphase einen zusätzlichen Reifewurf durchführen."
+				},
+				{
+					"id": "dominiumTerrae",
+					"name": "Dominium terrae",
+					"text": "Menschen sind im Gegensatz zu anderen Spezies besonders anfällig gegenüber magischen Einflüssen. Magische Strömungen können sich negativ auf die geistige Stabilität ungeübter Menschen auswirken, etwa durch den Kontakt mit magischen Alchemika, Verzauberungen oder eines stark magischen Gebietes. Während andere Spezies dies erdulden oder es sie sogar stärkt, erleiden Menschen Albträume, verwirrende Visionen oder Halluzinationen. Sie müssen in solchen Situationen eine Stabilitätsprobe bestehen, ansonsten erleiden sie Stabilitätsschaden."
+				}
+			]
+		},
+		{
+			"id": "zwerg",
+			"name": "Zwerg",
+			"source": { "file": "Charaktererstellung/Spezies_&_Alter.md", "section": "Zwerg" },
+			"attributeModifiers": { "KON": 2, "STR": 1, "GES": -1, "WAH": -2 },
+			"traits": [
+				{
+					"id": "ehernerWille",
+					"name": "Eherner Wille",
+					"text": "Der berühmte eiserne Wille der Zwerge ermöglicht es den Steingeborenen, Belastungen jeder Art zu durchstehen. Doch die mentale Stärke kommt zu einem Preis. Viele Zwerge gelten als exzentrisch, zumindest jedoch als etwas eigen. Ein Zwerg hat die Möglichkeit, eine zusätzliche Charakteristik auszuwürfeln. Im Folgenden darf er sein Leben um 5 Punkte oder seine Stabilität (SAN) um 20 Punkte erhöhen (Maximum von 99 Punkten). Alternativ kann ein Spieler sich dazu entscheiden, keine Charakteristik zu wählen. Dafür erhöht er seine Stabilität um 10 Punkte.",
+					"options": [
+						{
+							"id": "leben",
+							"name": "Zusätzliche Charakteristik und +5 TP",
+							"effects": [
+								{ "type": "extraCharacteristic", "count": 1 },
+								{ "type": "secondary", "key": "tp", "value": 5 }
+							]
+						},
+						{
+							"id": "stabilitaet",
+							"name": "Zusätzliche Charakteristik und +20 Stabilität (höchstens 99)",
+							"effects": [
+								{ "type": "extraCharacteristic", "count": 1 },
+								{ "type": "secondary", "key": "stability", "value": 20, "max": 99 }
+							]
+						},
+						{
+							"id": "keineCharakteristik",
+							"name": "Keine Charakteristik und +10 Stabilität",
+							"effects": [
+								{ "type": "noCharacteristic" },
+								{ "type": "secondary", "key": "stability", "value": 10 }
+							]
+						}
+					]
+				},
+				{
+					"id": "steingeborener",
+					"name": "Steingeborener",
+					"text": "Als älteste Spezies des Kontinents besitzen Zwerge von allen humanoiden Völkern die engste Bindung zur Natur und den darin eingeworbenen magischen Geflechten. Zwerge, die mit der Natur und dem Stein, aus dem sie stammen, verbunden in den Gebirgen und Höhlen ihrer Ahnen leben, werden älter, stärker und weiser als jene Zwerge, die die heiligen Berge verlassen haben. Ebenso schwankt die Fähigkeit eines Zwerges, Magie zu wirken, daher stark mit der Umgebung, in welcher dieser sich aufhält. Die Kosten für Zauber eines Zwerges werden verdoppelt, solange er sich außerhalb seiner Heimat aufhält. Befindet sich ein Zwerg jedoch im Gebirge oder unter der Erde, so kosten sie lediglich die Hälfte."
+				}
+			]
+		},
+		{
+			"id": "elf",
+			"name": "Elf",
+			"source": { "file": "Charaktererstellung/Spezies_&_Alter.md", "section": "Elf" },
+			"attributeModifiers": { "WAH": 2, "GES": 1, "STR": -1, "KON": -2 },
+			"traits": [
+				{
+					"id": "waechterDerStroeme",
+					"name": "Wächter der Ströme",
+					"text": "Ihre Verbindung zu den arkanen Strömen der Welt verbessert die Regeneration von Magiepunkten eines Elfen. Wenn sie meditieren, um Magiepunkte zu regenerieren, dürfen sie einen W10 anstelle eines W6 zur Regeneration benutzen. Halten sie sich am Rand einer Elementarquelle oder an einem heiligen Ort auf, so dürfen sie durch Meditation alle halbe Stunde MP regenerieren.",
+					"effects": [{ "type": "meditationDie", "sides": 10 }]
+				},
+				{
+					"id": "blutDerAltenWelt",
+					"name": "Blut der Alten Welt",
+					"text": "Ihr altes Blut gewährt Elfen unerreichte Expertise in bestimmten Bereichen, jedoch Mali in anderen Bereichen. Sie erhalten einen Bonus von zwei Punkten auf ihr höchstes Attribut. Dieses Attribut kann auf über 20 Punkte ansteigen. Alle anderen Attribute sinken dagegen um einen Punkt. Alternativ kann eine zusätzliche Charakteristik ausgewürfelt werden und die Attribute bleiben unverändert.",
+					"options": [
+						{
+							"id": "attribute",
+							"name": "+2 auf das höchste Attribut, −1 auf alle anderen",
+							"effects": [{ "type": "highestAttribute", "bonus": 2, "others": -1 }]
+						},
+						{
+							"id": "charakteristik",
+							"name": "Zusätzliche Charakteristik, Attribute bleiben unverändert",
+							"effects": [{ "type": "extraCharacteristic", "count": 1 }]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -40,6 +40,54 @@ export interface SettingDef {
 	name: string;
 }
 
+export type SecondaryKey =
+	| 'tp'
+	| 'stability'
+	| 'magicPoints'
+	| 'luck'
+	| 'movement'
+	| 'dodge'
+	| 'damageBonus'
+	| 'woundThreshold';
+
+/**
+ * Ein mechanischer Effekt als Daten. Effekte, die sich so nicht beschreiben lassen,
+ * stehen nur im Text des Eintrags und werden nicht automatisch angewendet.
+ */
+export type Effect =
+	| { type: 'attribute'; attribute: AttributeId; value: number }
+	| { type: 'secondary'; key: SecondaryKey; value: number; max?: number }
+	| { type: 'extraCharacteristic'; count: number }
+	| { type: 'noCharacteristic' }
+	/** Bonus auf das höchste Grundattribut, Malus auf alle anderen (bei Gleichstand wählt der Spieler). */
+	| { type: 'highestAttribute'; bonus: number; others: number }
+	/** Würfel für die Regeneration durch Meditation (Standard W6). */
+	| { type: 'meditationDie'; sides: number };
+
+export interface ChoiceOption {
+	id: string;
+	name: string;
+	effects: Effect[];
+}
+
+export interface TraitDef {
+	id: string;
+	name: string;
+	text: string;
+	/** Effekte, die immer gelten. */
+	effects?: Effect[];
+	/** Hat die Eigenschaft eine Wahl, muss der Spieler genau eine Option wählen. */
+	options?: ChoiceOption[];
+}
+
+export interface SpeciesDef {
+	id: string;
+	name: string;
+	source: SourceRef;
+	attributeModifiers: Partial<Record<AttributeId, number>>;
+	traits: TraitDef[];
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -48,4 +96,5 @@ export interface RuleData {
 	optionalRules: OptionalRuleDef[];
 	settings: SettingDef[];
 	defaultSetting: string;
+	species: SpeciesDef[];
 }

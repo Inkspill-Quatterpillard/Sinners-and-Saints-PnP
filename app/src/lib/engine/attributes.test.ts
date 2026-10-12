@@ -21,7 +21,7 @@ const ARRAY_ASSIGNMENT: Action[] = [
 describe('Erstellungsablauf', () => {
 	it('ein neuer Charakter beginnt mit gültigen Standardoptionen und offenen Grundattributen', () => {
 		const view = computeView(createCharacter('c1'), ruleData);
-		expect(view.steps.map((s) => [s.id, s.status])).toEqual([
+		expect(view.steps.slice(0, 2).map((s) => [s.id, s.status])).toEqual([
 			['options', 'valid'],
 			['attributes', 'open']
 		]);

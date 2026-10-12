@@ -1,6 +1,6 @@
 # 03 — Spezies und Neubewertung
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,10 +10,10 @@ Ein Spieler wählt Mensch, Zwerg oder Elf und sieht sofort die effektiven Grunda
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Die Spezies stehen in den Regeldaten (aus `Spezies_&_Alter.md`) mit Modifikatoren, Eigenschaften (Text und, wo möglich, strukturierte Effekte) und Wahlmöglichkeiten.
-- [ ] Die Ansicht liefert die effektiven Grundattribute (Basis plus alle Modifikatoren).
-- [ ] „Blut der Alten Welt“ (+2 auf das höchste Attribut, auch über 20, −1 auf alle anderen) und „Eherner Wille“ sind als Wahl umgesetzt. Eine Variante, die eine zusätzliche Charakteristik bringt, ist vermerkt (wird in Ticket 10 wirksam).
-- [ ] Eigenschaften, die sich nicht strukturiert beschreiben lassen, erscheinen als Text.
-- [ ] Ändert sich die Spezies, bleiben gültige Entscheidungen erhalten. Ungültige werden in der Ansicht als ungültig markiert, mit Begründung, und nicht gelöscht.
-- [ ] Ungültige Entscheidungen sind in der Schrittnavigation sichtbar markiert.
-- [ ] Mechaniktests mit eigenen kleinen Testdaten decken die Neubewertung ab, Regeltests mit den echten Regeldaten die Spezies.
+- [x] Die Spezies stehen in den Regeldaten (aus `Spezies_&_Alter.md`) mit Modifikatoren, Eigenschaften (Text und, wo möglich, strukturierte Effekte) und Wahlmöglichkeiten.
+- [x] Die Ansicht liefert die effektiven Grundattribute (Basis plus alle Modifikatoren).
+- [x] „Blut der Alten Welt“ (+2 auf das höchste Attribut, auch über 20, −1 auf alle anderen) und „Eherner Wille“ sind als Wahl umgesetzt. Eine Variante, die eine zusätzliche Charakteristik bringt, ist vermerkt (wird in Ticket 10 wirksam).
+- [x] Eigenschaften, die sich nicht strukturiert beschreiben lassen, erscheinen als Text.
+- [x] Ändert sich die Spezies, bleiben gültige Entscheidungen erhalten. Ungültige werden in der Ansicht als ungültig markiert, mit Begründung, und nicht gelöscht.
+- [x] Ungültige Entscheidungen sind in der Schrittnavigation sichtbar markiert.
+- [x] Mechaniktests mit eigenen kleinen Testdaten decken die Neubewertung ab, Regeltests mit den echten Regeldaten die Spezies.

@@ -3,6 +3,7 @@
 	import Summary from '$lib/components/Summary.svelte';
 	import AttributesStep from '$lib/components/steps/AttributesStep.svelte';
 	import OptionsStep from '$lib/components/steps/OptionsStep.svelte';
+	import SpeciesStep from '$lib/components/steps/SpeciesStep.svelte';
 	import { applyAction, computeView, type Action, type Character, type StepId } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { loadCharacter, saveCharacter } from '$lib/storage/characterStore';
@@ -15,7 +16,8 @@
 
 	const stepComponents: Partial<Record<StepId, Component<any>>> = {
 		options: OptionsStep,
-		attributes: AttributesStep
+		attributes: AttributesStep,
+		species: SpeciesStep
 	};
 
 	let current = $state<StepId>('options');
