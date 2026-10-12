@@ -16,6 +16,7 @@ import { resolveOptions } from './steps/options';
 import { applyCombatAction, type CombatAction } from './steps/combat';
 import { applyMagicAction, type MagicAction } from './steps/magic';
 import { applyEquipmentAction, type EquipmentAction } from './steps/equipment';
+import { applyBackgroundAction, type BackgroundAction } from './steps/background';
 import { computeView } from './view';
 
 export type Action =
@@ -34,7 +35,8 @@ export type Action =
 	| OriginAction
 	| CombatAction
 	| MagicAction
-	| EquipmentAction;
+	| EquipmentAction
+	| BackgroundAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -61,6 +63,14 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'chooseStyle':
 			// Was wählbar ist, hängt von den aktuellen Fertigkeitswerten ab.
 			applyCombatAction(basis, action, computeView(character, ruleData).combatStep, ruleData);
+			break;
+		case 'setBackground':
+		case 'addPerson':
+		case 'updatePerson':
+		case 'removePerson':
+		case 'toggleLanguage':
+		case 'setLanguageWriting':
+			applyBackgroundAction(basis, action);
 			break;
 		case 'addItem':
 		case 'updateItem':

@@ -1,6 +1,6 @@
 # 15 — Vorgeschichte und Name
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -17,7 +17,7 @@ Für Inspiration würfelt er aus den W10-Tabellen, lässt sich Namensvorschläge
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Alle Felder lassen sich frei eingeben.
-- [ ] Die W10-Tabellen, die Namenslisten, die Sprachen und die Aussehens-Adjektive stehen in den Regeldaten (aus `Vorgeschichte.md`).
-- [ ] Ein Wurf aus einer Tabelle füllt das Feld vor. Der Text bleibt danach frei bearbeitbar.
-- [ ] Der Schritt ist gültig, sobald ein Name vergeben ist.
+- [x] Alle Felder lassen sich frei eingeben.
+- [x] Die W10-Tabellen, die Namenslisten, die Sprachen und die Aussehens-Adjektive stehen in den Regeldaten (aus `Vorgeschichte.md`).
+- [x] Ein Wurf aus einer Tabelle füllt das Feld vor. Der Text bleibt danach frei bearbeitbar.
+- [x] Der Schritt ist gültig, sobald ein Name vergeben ist.

@@ -16,7 +16,8 @@ export type StepId =
 	| 'stunts'
 	| 'combat'
 	| 'magic'
-	| 'equipment';
+	| 'equipment'
+	| 'background';
 export type StepStatus = 'open' | 'valid' | 'invalid';
 
 /** Ein Hinweis zu einer Entscheidung: eine Warnung oder eine ungültige Entscheidung mit Begründung. */

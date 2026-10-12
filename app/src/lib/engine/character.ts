@@ -2,6 +2,7 @@ import type { AttributeId } from '$lib/ruleData';
 import type { ChoiceState } from './choices';
 import type { CharacteristicMode } from './steps/characteristic';
 import type { OwnedItem } from './steps/equipment';
+import type { Background } from './steps/background';
 
 /** Version des Formats der Charakterdatei. Ältere Dateien werden beim Laden migriert. */
 export const FORMAT_VERSION = 1;
@@ -46,6 +47,7 @@ export interface Basis {
 	style?: string;
 	/** Gewählte Zauber (ohne die automatisch erlernten Basiszauber). */
 	spells: string[];
+	background: Background;
 	equipment: {
 		items: OwnedItem[];
 		/** Zähler für eindeutige Schlüssel neuer Gegenstände. */
@@ -122,6 +124,7 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			techniques: [],
 			spells: [],
 			equipment: { items: [], nextKey: 1 },
+			background: { fields: {}, people: [], languages: [] },
 			characteristics: { picks: {}, rolls: {}, rerolledSlots: {} },
 			age: { youngMalus: {}, maturity: {}, atrophia: {}, senility: {} },
 			profession: { name: '', skills: [], heroSlots: {} },

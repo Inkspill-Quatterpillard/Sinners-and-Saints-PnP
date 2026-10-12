@@ -17,6 +17,7 @@
 	import CombatStep from '$lib/components/steps/CombatStep.svelte';
 	import MagicStep from '$lib/components/steps/MagicStep.svelte';
 	import EquipmentStep from '$lib/components/steps/EquipmentStep.svelte';
+	import BackgroundStep from '$lib/components/steps/BackgroundStep.svelte';
 	import { applyAction, computeView, type Action, type Character, type StepId } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { loadCharacter, saveCharacter } from '$lib/storage/characterStore';
@@ -42,7 +43,8 @@
 		stunts: StuntsStep,
 		combat: CombatStep,
 		magic: MagicStep,
-		equipment: EquipmentStep
+		equipment: EquipmentStep,
+		background: BackgroundStep
 	};
 
 	let current = $state<StepId>('options');

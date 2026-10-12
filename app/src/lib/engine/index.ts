@@ -25,3 +25,4 @@ export type { Contingent, DisciplineView, MagicStepView } from './steps/magic';
 export { contingentFor } from './steps/magic';
 export type { EquipmentStepView, OwnedItem, OwnedItemView } from './steps/equipment';
 export { currencyOf } from './steps/equipment';
+export type { BackgroundField, BackgroundView, ImportantPerson } from './steps/background';

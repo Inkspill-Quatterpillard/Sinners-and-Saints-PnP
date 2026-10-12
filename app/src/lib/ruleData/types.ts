@@ -358,6 +358,28 @@ export interface EquipmentDef {
 	source: SourceRef;
 }
 
+export interface NameList {
+	id: string;
+	culture: string;
+	description: string;
+	male: string[];
+	female: string[];
+	notes: string;
+}
+
+export interface BackgroundTables {
+	source: SourceRef;
+	appearanceAdjectives: string[];
+	beliefs: string[];
+	worldviews: string[];
+	personRelations: string[];
+	personReasons: string[];
+	places: string[];
+	possessions: string[];
+	languages: { id: string; name: string; script: string; text: string }[];
+	names: NameList[];
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -380,4 +402,5 @@ export interface RuleData {
 	magic: MagicRules;
 	statusTable: StatusTable;
 	equipment: EquipmentDef[];
+	background: BackgroundTables;
 }
