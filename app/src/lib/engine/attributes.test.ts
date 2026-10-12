@@ -62,8 +62,9 @@ describe('Grundattribute', () => {
 		expect(view.attributeStep.slots.every((s) => s.value === undefined)).toBe(true);
 	});
 
-	it('zugewiesene Werte erscheinen als Grundattribute und der Schritt wird gültig', () => {
-		const view = computeView(play(...ARRAY_ASSIGNMENT), ruleData);
+	it('zugewiesene Werte erscheinen als Grundattribute; mit dem Glückswurf wird der Schritt gültig', () => {
+		expect(computeView(play(...ARRAY_ASSIGNMENT), ruleData).steps.find((s) => s.id === 'attributes')?.status).toBe('open');
+		const view = computeView(play(...ARRAY_ASSIGNMENT, { type: 'rollLuck', roll: { dice: [7], source: 'app' } }), ruleData);
 		expect(view.attributes.STR.base).toBe(16);
 		expect(view.attributes.WIL.base).toBe(8);
 		expect(view.attributes.STR.effective).toBe(16);
@@ -92,15 +93,24 @@ describe('Grundattribute', () => {
 		expect(slot.roll?.source).toBe('manual');
 	});
 
-	it('ein Wechsel des Verfahrens behält die Zuordnung zu den Plätzen', () => {
-		const c = play(...ARRAY_ASSIGNMENT, { type: 'setAttributeMethod', method: 'roll' });
-		const view = computeView(c, ruleData);
-		expect(view.attributes.STR.base).toBeUndefined();
-		expect(view.steps.find((s) => s.id === 'attributes')?.status).toBe('open');
-		const rolled = [0, 1, 2, 3, 4, 5, 6, 7].reduce(
-			(acc, slot) => applyAction(acc, { type: 'rollAttributeSlot', slot, roll: { dice: [6, 6, 6, 1], source: 'app' } }, ruleData),
-			c
+	it('ein Wechsel des Verfahrens beginnt die Verteilung neu, die Würfe bleiben erhalten', () => {
+		const rolled = play(
+			{ type: 'setAttributeMethod', method: 'roll' },
+			{ type: 'rollAttributeSlot', slot: 0, roll: { dice: [6, 6, 6, 1], source: 'app' } },
+			{ type: 'assignAttribute', attribute: 'STR', slot: 0 }
 		);
-		expect(computeView(rolled, ruleData).attributes.STR.base).toBe(18);
+		const toArray = applyAction(rolled, { type: 'setAttributeMethod', method: 'array' }, ruleData);
+		expect(computeView(toArray, ruleData).attributes.STR.base).toBeUndefined();
+		const back = applyAction(toArray, { type: 'setAttributeMethod', method: 'roll' }, ruleData);
+		expect(computeView(back, ruleData).attributeStep.slots[0]).toMatchObject({ value: 18, assignedTo: undefined });
+	});
+
+	it('ein Wurf lässt sich zurücksetzen', () => {
+		const c = play(
+			{ type: 'setAttributeMethod', method: 'roll' },
+			{ type: 'rollAttributeSlot', slot: 0, roll: { dice: [6, 6, 6, 1], source: 'app' } },
+			{ type: 'rollAttributeSlot', slot: 0, roll: undefined }
+		);
+		expect(computeView(c, ruleData).attributeStep.slots[0].value).toBeUndefined();
 	});
 });

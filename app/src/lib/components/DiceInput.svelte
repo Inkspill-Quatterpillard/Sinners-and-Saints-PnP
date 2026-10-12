@@ -9,14 +9,16 @@
 		sides: number;
 		roll?: Roll;
 		onroll: (roll: Roll) => void;
+		/** Setzt den Wurf zurück; ohne diese Funktion gibt es keinen Knopf dafür. */
+		onreset?: () => void;
 		/**
 		 * Nach einem Wurf nicht erneut von der App würfeln lassen (die Regeln erlauben kein Neuwürfeln).
-		 * Ein am Tisch gewürfeltes Ergebnis lässt sich weiterhin eintragen bzw. korrigieren.
+		 * Ein am Tisch gewürfeltes Ergebnis lässt sich weiterhin überschreiben.
 		 */
 		locked?: boolean;
 	}
 
-	let { count, sides, roll, onroll, locked = false }: Props = $props();
+	let { count, sides, roll, onroll, onreset, locked = false }: Props = $props();
 
 	let editing = $state(false);
 	let text = $state('');
@@ -42,6 +44,7 @@
 		<form onsubmit={submitManual}>
 			<input
 				bind:value={text}
+				inputmode="numeric"
 				placeholder={t.dice.manualPlaceholder(count, sides)}
 				aria-label={t.dice.manualLabel(count, sides)}
 				size="10"
@@ -53,7 +56,10 @@
 		{#if !(locked && roll)}
 			<button type="button" onclick={() => onroll(rollDice(count, sides))}>{t.dice.roll(count, sides)}</button>
 		{/if}
-		<button type="button" onclick={() => (editing = true)}>{t.dice.enter}</button>
+		<button type="button" onclick={() => (editing = true)}>{roll ? t.dice.overwrite : t.dice.enter}</button>
+		{#if roll && onreset}
+			<button type="button" class="reset" aria-label={t.dice.reset} title={t.dice.reset} onclick={onreset}>↺</button>
+		{/if}
 	{/if}
 </span>
 

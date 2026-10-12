@@ -128,12 +128,13 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 			applySecondaryAction(basis, action);
 			break;
 		case 'setAge':
+		case 'setAgeStage':
 		case 'setYoungMalus':
 		case 'rollMaturity':
 		case 'setMaturityAttribute':
-		case 'setAtrophia':
+		case 'setAtrophiaPoints':
 		case 'rollSenility':
-			applyAgeAction(basis, action);
+			applyAgeAction(basis, action, ruleData);
 			break;
 		case 'setProfessionName':
 		case 'toggleProfessionSkill':

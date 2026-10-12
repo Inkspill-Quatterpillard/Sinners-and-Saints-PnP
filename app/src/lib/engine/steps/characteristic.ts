@@ -9,7 +9,7 @@ export type CharacteristicMode = 'none' | 'free' | 'roll' | 'override';
 export type CharacteristicAction =
 	| { type: 'setCharacteristicMode'; mode: CharacteristicMode }
 	| { type: 'pickCharacteristic'; slot: number; characteristic: string | undefined }
-	| { type: 'rollCharacteristic'; slot: number; roll: Roll }
+	| { type: 'rollCharacteristic'; slot: number; roll: Roll | undefined }
 	| { type: 'rerollCharacteristic'; slot: number; roll: Roll };
 
 export interface CharacteristicSlotView {
@@ -52,7 +52,8 @@ export function applyCharacteristicAction(basis: Basis, action: CharacteristicAc
 			else delete c.picks[action.slot];
 			break;
 		case 'rollCharacteristic':
-			c.rolls[action.slot] = action.roll;
+			if (action.roll) c.rolls[action.slot] = action.roll;
+			else delete c.rolls[action.slot];
 			break;
 		case 'rerollCharacteristic':
 			// Nur so oft wie erlaubt (einmal insgesamt) und nur für einen bereits gewürfelten Platz.

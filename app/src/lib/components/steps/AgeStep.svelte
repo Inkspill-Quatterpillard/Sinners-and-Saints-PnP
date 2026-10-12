@@ -1,6 +1,8 @@
 <script lang="ts">
 	import DiceInput from '$lib/components/DiceInput.svelte';
-	import type { Action, CharacterView } from '$lib/engine';
+	import PointsControl from '$lib/components/PointsControl.svelte';
+	import type { Action, AgeStage, CharacterView } from '$lib/engine';
+	import { parseCount } from '$lib/format';
 	import { ruleData, type AttributeId } from '$lib/ruleData';
 	import { t } from '$lib/texts';
 
@@ -10,8 +12,24 @@
 	const species = $derived(ruleData.species.find((s) => s.id === view.speciesStep.selected));
 	const rules = ruleData.age;
 	const physical = ruleData.attributes.filter((a) => a.physical);
+	const stages: AgeStage[] = ['child', 'youth', 'adult', 'aging'];
 	// Gewähltes Zielattribut für noch nicht gewürfelte Reifewürfe.
 	let pendingTarget = $state<Record<number, AttributeId>>({});
+	let yearsText = $state('');
+	$effect(() => {
+		yearsText = age.years !== undefined ? String(age.years) : '';
+	});
+
+	function range(stage: AgeStage): string {
+		if (!species) return '';
+		const a = species.age;
+		if (stage === 'child') return t.age.under(a.childUnder);
+		if (stage === 'youth') return t.age.between(a.childUnder, a.youthUnder - 1);
+		if (stage === 'adult') return t.age.between(a.youthUnder, a.adultUnder - 1);
+		return t.age.from(a.adultUnder, a.agingInterval);
+	}
+	const atrophiaLeft = $derived(age.atrophia.required - age.atrophia.distributed);
+	const malusLeft = $derived(age.youngMalus.required - age.youngMalus.distributed);
 </script>
 
 <p class="intro">{t.age.intro}</p>
@@ -19,58 +37,59 @@
 {#if !species}
 	<p>{t.age.chooseSpeciesFirst}</p>
 {:else}
-	<p class="ranges">
-		{t.age.ranges(
-			species.name,
-			species.age.childUnder,
-			species.age.youthUnder,
-			species.age.adultUnder,
-			species.age.agingInterval
-		)}
-	</p>
-{/if}
+	<div class="cards">
+		{#each stages as stage (stage)}
+			<button
+				type="button"
+				class="card"
+				class:selected={age.stage === stage}
+				aria-pressed={age.stage === stage}
+				onclick={() => dispatch({ type: 'setAgeStage', stage })}
+			>
+				<strong>{t.age.stages[stage]}</strong>
+				<small>{range(stage)}</small>
+			</button>
+		{/each}
+	</div>
 
-<label class="years">
-	{t.age.years}
-	<input
-		type="number"
-		min="0"
-		inputmode="numeric"
-		value={age.years ?? ''}
-		oninput={(e) => {
-			const v = e.currentTarget.value;
-			dispatch({ type: 'setAge', years: v === '' ? undefined : Math.max(0, Math.floor(Number(v))) });
-		}}
-	/>
-</label>
+	{#if age.stage === 'aging'}
+		<div class="row stages">
+			<span>{t.age.agingStagesLabel}</span>
+			<PointsControl
+				label={t.age.agingStagesLabel}
+				value={age.agingStages}
+				max={99}
+				onchange={(n) => n >= 1 && dispatch({ type: 'setAgeStage', stage: 'aging', agingStages: n })}
+			/>
+		</div>
+	{/if}
 
-{#if age.stage}
-	<p class="stage">
-		<strong>{t.age.stages[age.stage]}</strong>{age.agingStages ? ` · ${t.age.agingStages(age.agingStages)}` : ''}
-	</p>
+	<label class="years">
+		{t.age.yearsOptional}
+		<input
+			inputmode="numeric"
+			bind:value={yearsText}
+			onchange={() => dispatch({ type: 'setAge', years: yearsText.trim() ? parseCount(yearsText) : undefined })}
+		/>
+	</label>
 {/if}
 
 {#if age.youngMalus.required > 0}
 	<section>
 		<h3>{t.age.malus}</h3>
-		<p>{t.age.malusHint(age.youngMalus.required, age.youngMalus.distributed)}</p>
-		<div class="row">
+		<p class="hint">{t.age.malusHint(age.youngMalus.required, age.youngMalus.distributed)}</p>
+		<div class="grid">
 			{#each age.youngMalus.attributes as attr (attr)}
-				<label>
-					{attr}
-					<input
-						type="number"
-						min="0"
-						max={age.youngMalus.required}
-						value={age.youngMalus.points[attr] ?? 0}
-						oninput={(e) =>
-							dispatch({
-								type: 'setYoungMalus',
-								attribute: attr,
-								points: Math.max(0, Math.floor(Number(e.currentTarget.value) || 0))
-							})}
+				{@const points = age.youngMalus.points[attr] ?? 0}
+				<div class="row">
+					<span class="attr">{attr} <small>{view.attributes[attr].effective ?? '–'}</small></span>
+					<PointsControl
+						label={attr}
+						value={points}
+						max={points + Math.max(0, Math.min(malusLeft, (view.attributes[attr].effective ?? 0) - rules.minimumAttribute))}
+						onchange={(n) => dispatch({ type: 'setYoungMalus', attribute: attr, points: n })}
 					/>
-				</label>
+				</div>
 			{/each}
 		</div>
 	</section>
@@ -79,7 +98,9 @@
 {#if age.maturityRolls.length}
 	<section>
 		<h3>{t.age.maturity}</h3>
-		<p class="hint">{t.age.maturityHint}</p>
+		<p class="hint">
+			{t.age.maturityHint}{species?.age.maxMaturityRolls ? ` ${t.age.maturityCap(species.age.maxMaturityRolls)}` : ''}
+		</p>
 		<ol class="rolls">
 			{#each age.maturityRolls as roll (roll.index)}
 				{@const target = roll.attribute ?? pendingTarget[roll.index] ?? rules.maturityAttributes[0]}
@@ -103,11 +124,12 @@
 						sides={rules.maturityDie}
 						roll={roll.roll}
 						onroll={(r) => dispatch({ type: 'rollMaturity', index: roll.index, attribute: target, roll: r })}
+						onreset={() => dispatch({ type: 'rollMaturity', index: roll.index, attribute: target, roll: undefined })}
 					/>
-					{#if roll.success !== undefined}
-						<span class:ok={roll.success}
-							>{roll.success ? t.age.maturitySuccess(roll.target!) : t.age.maturityFail(roll.target!)}</span
-						>
+					{#if roll.success !== undefined && roll.target !== undefined}
+						<span class:ok={roll.success}>
+							{roll.success ? t.age.maturitySuccess(roll.target) : t.age.maturityFail(roll.target)}
+						</span>
 					{/if}
 				</li>
 			{/each}
@@ -118,40 +140,91 @@
 {#if age.atrophia.required}
 	<section>
 		<h3>{t.age.atrophia}</h3>
-		<p class="hint">{t.age.atrophiaHint}</p>
-		<div class="row">
-			{#each age.atrophia.slots as attr, index (index)}
-				<select
-					value={attr ?? ''}
-					aria-label={t.age.atrophiaPoint(index)}
-					onchange={(e) => dispatch({ type: 'setAtrophia', index, attribute: e.currentTarget.value as AttributeId })}
-				>
-					<option value="" disabled>–</option>
-					{#each physical as a (a.id)}
-						<option value={a.id}>{a.id}</option>
-					{/each}
-				</select>
+		<p class="hint">{t.age.atrophiaHint(age.atrophia.required, age.atrophia.distributed)}</p>
+		<div class="grid">
+			{#each physical as a (a.id)}
+				{@const points = age.atrophia.points[a.id] ?? 0}
+				<div class="row">
+					<span class="attr">{a.id} <small>{view.attributes[a.id].effective ?? '–'}</small></span>
+					<PointsControl
+						label={a.name}
+						value={points}
+						max={Math.min(points + Math.max(0, atrophiaLeft), age.atrophia.maxPerAttribute[a.id] ?? points)}
+						onchange={(n) => dispatch({ type: 'setAtrophiaPoints', attribute: a.id, points: n })}
+					/>
+				</div>
 			{/each}
 		</div>
+	</section>
+{/if}
+
+{#if view.senility.rolls.length}
+	<section>
+		<h3>{t.age.senility}</h3>
+		<p class="hint">{t.senility.intro(rules.senilityStabilityLoss)}</p>
+		<ol class="rolls">
+			{#each view.senility.rolls as roll (roll.index)}
+				<li>
+					<DiceInput
+						locked
+						count={1}
+						sides={rules.senilityDie}
+						roll={roll.roll}
+						onroll={(r) => dispatch({ type: 'rollSenility', index: roll.index, roll: r })}
+						onreset={() => dispatch({ type: 'rollSenility', index: roll.index, roll: undefined })}
+					/>
+					{#if roll.success !== undefined && roll.target !== undefined}
+						<span class:bad={roll.success}>{roll.success ? t.senility.lost(roll.target) : t.senility.kept(roll.target)}</span>
+					{/if}
+				</li>
+			{/each}
+		</ol>
+		<p>{t.senility.result(view.secondary.stability.value)}</p>
 	</section>
 {/if}
 
 <style>
 	.intro,
 	.hint,
-	.ranges {
+	small {
 		color: var(--muted);
 	}
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+		gap: 0.5rem;
+		margin-bottom: 0.8rem;
+	}
+	.card {
+		display: grid;
+		gap: 0.15rem;
+		text-align: left;
+		padding: 0.6rem 0.8rem;
+	}
+	.card.selected {
+		border-color: var(--accent);
+		color: var(--accent);
+	}
+	.stages {
+		justify-content: start;
+	}
 	.years {
-		max-width: 10rem;
+		max-width: 12rem;
+		margin-top: 0.6rem;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+		gap: 0.5rem 1rem;
 	}
 	.row {
 		display: flex;
-		flex-wrap: wrap;
 		gap: 0.6rem;
+		align-items: center;
+		justify-content: space-between;
 	}
-	.row input {
-		width: 4rem;
+	.attr {
+		font-weight: 600;
 	}
 	.rolls {
 		padding-left: 1.2rem;
@@ -166,5 +239,8 @@
 	}
 	.ok {
 		color: var(--ok);
+	}
+	.bad {
+		color: var(--danger);
 	}
 </style>

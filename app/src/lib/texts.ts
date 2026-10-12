@@ -11,6 +11,11 @@ export const t = {
 	name: 'Name',
 	notFound: 'Dieser Charakter wurde nicht gefunden.',
 	loading: 'Lädt …',
+	close: 'Schließen',
+	points: {
+		more: (label: string) => `${label} +1`,
+		less: (label: string) => `${label} −1`
+	},
 	undo: '↶ Rückgängig',
 	status: {
 		inCreation: 'In Erstellung',
@@ -32,8 +37,6 @@ export const t = {
 		origin: 'Herkunft',
 		profession: 'Profession',
 		interests: 'Interessen',
-		secondary: 'Sekundärattribute',
-		senility: 'Vergreisung',
 		stunts: 'Kunststücke',
 		combat: 'Kampf',
 		magic: 'Zauber',
@@ -58,7 +61,10 @@ export const t = {
 		assign: 'Verteilung',
 		notAssigned: '–',
 		rollAll: 'Alle würfeln',
-		chooseMethod: 'Wähle zuerst ein Verfahren.'
+		chooseMethod: 'Wähle zuerst ein Verfahren.',
+		methodHint:
+			'Ein Wechsel des Verfahrens setzt die Verteilung zurück, weil die Werte andere sind. Gewürfelte Werte bleiben erhalten.',
+		luckValue: (v: number) => `Glück: ${v}`
 	},
 	species: {
 		intro: 'Die Spezies verändert die Grundattribute und bringt zwei Eigenschaften mit sich.',
@@ -67,11 +73,14 @@ export const t = {
 	age: {
 		intro: 'Das Alter entscheidet über Mali junger Charaktere, Reifewürfe und den Verfall im Alter.',
 		chooseSpeciesFirst: 'Die Altersstufen hängen von der Spezies ab. Wähle zuerst eine Spezies.',
-		ranges: (species: string, child: number, youth: number, adult: number, interval: number) =>
-			`${species}: Kind unter ${child}, jugendlich unter ${youth}, erwachsen unter ${adult} Jahren; danach alle ${interval} Jahre eine Alterungsstufe.`,
-		years: 'Alter in Jahren',
+		yearsOptional: 'Alter in Jahren (optional)',
+		agingStagesLabel: 'Alterungsstufen',
+		under: (n: number) => `unter ${n} Jahren`,
+		between: (a: number, b: number) => `${a}–${b} Jahre`,
+		from: (n: number, step: number) => `ab ${n} Jahren, alle ${step} Jahre eine Stufe`,
+		maturityCap: (n: number) => `Höchstens ${n} Reifewürfe.`,
+		senility: 'Vergreisungswürfe',
 		stages: { child: 'Kind', youth: 'Jugendlich', adult: 'Erwachsen', aging: 'Gealtert' },
-		agingStages: (n: number) => `${n} Alterungsstufe${n === 1 ? '' : 'n'}`,
 		malus: 'Malus',
 		malusHint: (required: number, distributed: number) =>
 			`Verteile insgesamt ${required} Malus-Punkte frei auf STR, KON und INT (verteilt: ${distributed}). Kein Attribut darf dadurch unter 5 fallen.`,
@@ -81,8 +90,8 @@ export const t = {
 		maturitySuccess: (target: number) => `über ${target}: +1`,
 		maturityFail: (target: number) => `nicht über ${target}`,
 		atrophia: 'Atrophia',
-		atrophiaHint: 'Jeder Punkt Atrophia senkt ein körperliches Attribut deiner Wahl um 1. Punkte dürfen gebündelt werden.',
-		atrophiaPoint: (i: number) => `Atrophia-Punkt ${i + 1}`
+		atrophiaHint: (required: number, distributed: number) =>
+			`Verteile ${required} Punkte Atrophia auf körperliche Attribute (verteilt: ${distributed}). Kein Attribut darf dadurch unter 5 fallen.`
 	},
 	profession: {
 		intro:
@@ -124,16 +133,10 @@ export const t = {
 		result: (value: number | undefined) => `Stabilität jetzt: ${value ?? '–'}`
 	},
 	secondary: {
-		intro:
-			'Die Sekundärattribute ergeben sich aus den Grundattributen und werden immer abgerundet. Nur das Glück wird gewürfelt.',
 		luck: 'Glück',
 		luckPlain: 'Würfle 1W20.',
 		luckAdvantage: 'Würfle mit Vorteil: zwei W20, der höhere zählt.',
-		luckNeedsSecondDie: 'Mit Vorteil braucht es zwei Würfel. Würfle oder trage den zweiten nach.',
-		value: 'Wert',
-		formula: 'Berechnung',
-		result: 'Ergebnis',
-		cap: (max: number) => `höchstens ${max}`
+		luckNeedsSecondDie: 'Mit Vorteil braucht es zwei Würfel. Würfle oder trage den zweiten nach.'
 	},
 	skills: {
 		all: 'Alle Fertigkeiten',
@@ -436,6 +439,8 @@ export const t = {
 	dice: {
 		roll: (count: number, sides: number) => `${count}W${sides} würfeln`,
 		enter: 'Eintragen',
+		overwrite: 'Überschreiben',
+		reset: 'Wurf zurücksetzen',
 		apply: 'Übernehmen',
 		cancel: 'Abbrechen',
 		manualPlaceholder: (count: number, sides: number) => (count === 1 ? `1–${sides}` : `${count} Würfel, z. B. 6 4 3 1`),

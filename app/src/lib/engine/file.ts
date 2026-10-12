@@ -10,7 +10,17 @@ type Raw = Record<string, unknown>;
  * Version 0 sind Vorabversionen ohne `formatVersion`.
  */
 const MIGRATIONS: Record<number, (raw: Raw) => Raw> = {
-	0: (raw) => ({ ...raw, formatVersion: 1 })
+	0: (raw) => ({ ...raw, formatVersion: 1 }),
+	// Version 2: Atrophia als Punkte je Attribut statt als Liste einzelner Punkte.
+	1: (raw) => {
+		const basis = isObject(raw.basis) ? raw.basis : {};
+		const age = isObject(basis.age) ? basis.age : {};
+		const points: Record<string, number> = {};
+		if (isObject(age.atrophia)) {
+			for (const attr of Object.values(age.atrophia)) if (typeof attr === 'string') points[attr] = (points[attr] ?? 0) + 1;
+		}
+		return { ...raw, formatVersion: 2, basis: { ...basis, age: { ...age, atrophia: points } } };
+	}
 };
 
 const isObject = (v: unknown): v is Raw => typeof v === 'object' && v !== null && !Array.isArray(v);

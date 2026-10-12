@@ -116,6 +116,8 @@ export interface SpeciesAgeDef {
 	/** Ab `adultUnder` beginnt die erste Alterungsstufe, danach alle `agingInterval` Jahre eine weitere. */
 	agingInterval: number;
 	perStage: { maturity: number; atrophia: number; senility: number };
+	/** Höchstzahl der Reifewürfe insgesamt (ohne Angabe unbegrenzt). */
+	maxMaturityRolls?: number;
 	note?: string;
 }
 

@@ -2,10 +2,11 @@ import type { AttributeId } from '$lib/ruleData';
 import type { ChoiceState } from './choices';
 import type { CharacteristicMode } from './steps/characteristic';
 import type { OwnedItem } from './steps/equipment';
+import type { AgeStage } from './steps/age';
 import type { Background } from './steps/background';
 
 /** Version des Formats der Charakterdatei. Ältere Dateien werden beim Laden migriert. */
-export const FORMAT_VERSION = 1;
+export const FORMAT_VERSION = 2;
 
 export type CharacterStatus = 'inCreation' | 'finished';
 
@@ -63,13 +64,17 @@ export interface Basis {
 		rerolledSlots: Record<number, true>;
 	};
 	age: {
+		/** Gewählte Altersstufe; bei „gealtert“ zusammen mit der Anzahl der Alterungsstufen. */
+		stage?: AgeStage;
+		agingStages?: number;
+		/** Alter in Jahren (optional). */
 		years?: number;
 		/** Verteilte Malus-Punkte junger Charaktere je Attribut. */
 		youngMalus: Partial<Record<AttributeId, number>>;
 		/** Reifewürfe je Nummer, mit dem gewählten Zielattribut. */
 		maturity: Record<number, { attribute: AttributeId; roll: Roll }>;
-		/** Atrophia-Punkte je Nummer: das betroffene körperliche Attribut. */
-		atrophia: Record<number, AttributeId>;
+		/** Atrophia-Punkte je körperlichem Attribut. */
+		atrophia: Partial<Record<AttributeId, number>>;
 		/** Vergreisungswürfe je Nummer. */
 		senility: Record<number, Roll>;
 	};

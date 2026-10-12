@@ -140,12 +140,8 @@ describe('Alter', () => {
 	describe('Atrophia', () => {
 		it('ein alter Mensch verteilt pro Alterungsstufe einen Punkt Atrophia auf ein körperliches Attribut', () => {
 			const c = human({ type: 'setAge', years: 52 });
-			expect(view(c).ageStep.atrophia).toMatchObject({ required: 2, assigned: [] });
-			const done = applyAction(
-				applyAction(c, { type: 'setAtrophia', index: 0, attribute: 'GES' }, ruleData),
-				{ type: 'setAtrophia', index: 1, attribute: 'GES' },
-				ruleData
-			);
+			expect(view(c).ageStep.atrophia).toMatchObject({ required: 2, distributed: 0 });
+			const done = applyAction(c, { type: 'setAtrophiaPoints', attribute: 'GES', points: 2 }, ruleData);
 			expect(view(done).attributes.GES.effective).toBe(10);
 		});
 
@@ -155,7 +151,7 @@ describe('Alter', () => {
 		});
 
 		it('nur körperliche Attribute sind erlaubt', () => {
-			const c = human({ type: 'setAge', years: 45 }, { type: 'setAtrophia', index: 0, attribute: 'KLU' });
+			const c = human({ type: 'setAge', years: 45 }, { type: 'setAtrophiaPoints', attribute: 'KLU', points: 1 });
 			expect(ageStatus(c)).toBe('invalid');
 		});
 	});
@@ -171,7 +167,7 @@ describe('Alter', () => {
 			);
 			const v = view(c);
 			expect(v.senility.rolls).toHaveLength(2);
-			expect(v.steps.find((s) => s.id === 'senility')?.status).toBe('open');
+			expect(v.steps.find((s) => s.id === 'age')?.status).toBe('open');
 			const rolled = applyAction(
 				applyAction(c, { type: 'rollSenility', index: 0, roll: { dice: [80], source: 'app' } }, ruleData),
 				{ type: 'rollSenility', index: 1, roll: { dice: [46], source: 'app' } },
@@ -181,11 +177,12 @@ describe('Alter', () => {
 			// 80 > 50 → 45; 46 > 45 → 40
 			expect(r.senility.rolls.map((x) => x.success)).toEqual([true, true]);
 			expect(r.secondary.stability.value).toBe(40);
-			expect(r.steps.find((s) => s.id === 'senility')?.status).toBe('valid');
+			// Die Vergreisungswürfe sind erledigt; offen sind nur noch die Reifewürfe der Elfe.
+			expect(r.senility.rolls.every((x) => x.roll)).toBe(true);
 		});
 
-		it('ohne Vergreisungswürfe gibt es den Schritt nicht', () => {
-			expect(view(human({ type: 'setAge', years: 25 })).steps.some((s) => s.id === 'senility')).toBe(false);
+		it('ohne Vergreisungswürfe gibt es keine', () => {
+			expect(view(human({ type: 'setAge', years: 25 })).senility.rolls).toEqual([]);
 		});
 	});
 
@@ -202,5 +199,40 @@ describe('Alter', () => {
 		const dwarf = applyAction(c, { type: 'chooseSpecies', species: 'zwerg' }, ruleData);
 		expect(view(dwarf).ageStep.stage).toBe('adult');
 		expect(view(dwarf).ageStep.maturityRolls).toHaveLength(1);
+	});
+
+	describe('Altersstufe ohne Jahreszahl', () => {
+		it('die Stufe lässt sich direkt wählen; bei „gealtert“ mit Anzahl der Alterungsstufen', () => {
+			const c = human({ type: 'setAgeStage', stage: 'aging', agingStages: 2 });
+			expect(view(c).ageStep).toMatchObject({ stage: 'aging', agingStages: 2, years: undefined });
+			expect(view(c).ageStep.maturityRolls).toHaveLength(3);
+		});
+
+		it('ohne Jahre gilt für den Bewegungsabzug der Beginn der Stufe', () => {
+			// Mensch, 2. Alterungsstufe: ab 50 Jahren → −1
+			expect(view(human({ type: 'setAgeStage', stage: 'aging', agingStages: 2 })).secondary.movement.value).toBe(7);
+		});
+
+		it('passt eine eingetragene Jahreszahl nicht zur neuen Stufe, wird sie entfernt', () => {
+			const c = human({ type: 'setAge', years: 45 }, { type: 'setAgeStage', stage: 'youth' });
+			expect(view(c).ageStep).toMatchObject({ stage: 'youth', years: undefined });
+			const same = human({ type: 'setAge', years: 45 }, { type: 'setAgeStage', stage: 'aging', agingStages: 1 });
+			expect(view(same).ageStep.years).toBe(45);
+		});
+	});
+
+	it('Menschen haben höchstens 10 Reifewürfe', () => {
+		expect(view(human({ type: 'setAgeStage', stage: 'aging', agingStages: 15 })).ageStep.maturityRolls).toHaveLength(10);
+	});
+
+	it('Atrophia: die Ansicht sagt, wie viele Punkte je Attribut höchstens möglich sind (Untergrenze 5)', () => {
+		// GES 12 → bis 5 also höchstens 7 Punkte
+		expect(view(human({ type: 'setAge', years: 95 })).ageStep.atrophia.maxPerAttribute.GES).toBe(7);
+	});
+
+	it('ein Wurf lässt sich zurücksetzen', () => {
+		const c = human({ type: 'setAge', years: 25 }, { type: 'rollMaturity', index: 0, attribute: 'KLU', roll: d20(15) });
+		const reset = applyAction(c, { type: 'rollMaturity', index: 0, attribute: 'KLU', roll: undefined }, ruleData);
+		expect(view(reset).ageStep.maturityRolls[0].roll).toBeUndefined();
 	});
 });

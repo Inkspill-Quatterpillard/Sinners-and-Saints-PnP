@@ -12,6 +12,9 @@ export const messages = {
 	atrophiaSource: 'Atrophia',
 	senilitySource: 'Vergreisung',
 	ageMovementSource: 'Alter',
+	tooMuchAtrophia: (distributed: number, required: number) =>
+		`Es sind ${distributed} Atrophia-Punkte verteilt, vorgesehen sind ${required}.`,
+	luckMissing: 'Würfle noch das Glück.',
 	malusWrongAttribute: (attr: string) => `Der Altersmalus darf nur auf STR, KON oder INT verteilt werden, nicht auf ${attr}.`,
 	tooMuchMalus: (distributed: number, required: number) =>
 		`Es sind ${distributed} Malus-Punkte verteilt, vorgesehen sind ${required}.`,

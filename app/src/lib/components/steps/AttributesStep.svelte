@@ -1,7 +1,8 @@
 <script lang="ts">
 	import DiceInput from '$lib/components/DiceInput.svelte';
+	import InfoButton from '$lib/components/InfoButton.svelte';
 	import { rollDice } from '$lib/dice';
-	import type { Action, CharacterView } from '$lib/engine';
+	import type { Action, AttributeMethod, CharacterView } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
 
@@ -9,102 +10,108 @@
 
 	const gen = ruleData.attributeGeneration;
 	const step = $derived(view.attributeStep);
+	const unrolled = $derived(step.method === 'roll' ? step.slots.filter((s) => !s.roll) : []);
+	/** Plätze in der Auswahl absteigend nach Wert. */
+	const sortedSlots = $derived([...step.slots].sort((a, b) => (b.value ?? -1) - (a.value ?? -1) || a.index - b.index));
 
 	function rollAll() {
-		step.slots.forEach((slot) => {
-			if (!slot.roll) dispatch({ type: 'rollAttributeSlot', slot: slot.index, roll: rollDice(gen.dice.count, gen.dice.sides) });
-		});
+		for (const slot of unrolled) {
+			dispatch({ type: 'rollAttributeSlot', slot: slot.index, roll: rollDice(gen.dice.count, gen.dice.sides) });
+		}
 	}
 </script>
 
 <p class="intro">{t.attributes.intro}</p>
 
-<fieldset>
-	<legend>{t.attributes.method}</legend>
-	<label class="check">
-		<input
-			type="radio"
-			name="method"
-			checked={step.method === 'roll'}
-			onchange={() => dispatch({ type: 'setAttributeMethod', method: 'roll' })}
-		/>
-		{t.attributes.methodRoll(gen.dice.count, gen.dice.sides, gen.dice.keep)}
-	</label>
-	<label class="check">
-		<input
-			type="radio"
-			name="method"
-			checked={step.method === 'array'}
-			onchange={() => dispatch({ type: 'setAttributeMethod', method: 'array' })}
-		/>
-		{t.attributes.methodArray(gen.fixedArray)}
-	</label>
-</fieldset>
+<label class="method">
+	{t.attributes.method}
+	<select
+		value={step.method ?? ''}
+		onchange={(e) => dispatch({ type: 'setAttributeMethod', method: e.currentTarget.value as AttributeMethod })}
+	>
+		<option value="" disabled>–</option>
+		<option value="roll">{t.attributes.methodRoll(gen.dice.count, gen.dice.sides, gen.dice.keep)}</option>
+		<option value="array">{t.attributes.methodArray(gen.fixedArray)}</option>
+	</select>
+</label>
+{#if step.method}<p class="hint">{t.attributes.methodHint}</p>{/if}
 
-{#if !step.method}
-	<p>{t.attributes.chooseMethod}</p>
-{:else}
-	{#if step.method === 'roll'}
-		<section>
-			<h3>{t.attributes.slots}</h3>
-			<ol class="slots">
-				{#each step.slots as slot (slot.index)}
-					<li>
-						<span class="slot-name">{t.attributes.slot(slot.index)}</span>
-						<strong class="value">{slot.value ?? '–'}</strong>
-						<DiceInput
-							locked
-							count={gen.dice.count}
-							sides={gen.dice.sides}
-							roll={slot.roll}
-							onroll={(roll) => dispatch({ type: 'rollAttributeSlot', slot: slot.index, roll })}
-						/>
-					</li>
-				{/each}
-			</ol>
-			<button onclick={rollAll}>{t.attributes.rollAll}</button>
-		</section>
-	{/if}
+{#if step.method === 'roll'}
+	<section>
+		<h3>{t.attributes.slots}</h3>
+		<button class="primary" onclick={rollAll} disabled={unrolled.length === 0}>{t.attributes.rollAll}</button>
+		<ol class="slots">
+			{#each step.slots as slot (slot.index)}
+				<li>
+					<span class="slot-name">{t.attributes.slot(slot.index)}</span>
+					<strong class="value">{slot.value ?? '–'}</strong>
+					<DiceInput
+						locked
+						count={gen.dice.count}
+						sides={gen.dice.sides}
+						roll={slot.roll}
+						onroll={(roll) => dispatch({ type: 'rollAttributeSlot', slot: slot.index, roll })}
+						onreset={() => dispatch({ type: 'rollAttributeSlot', slot: slot.index, roll: undefined })}
+					/>
+				</li>
+			{/each}
+		</ol>
+	</section>
+{/if}
 
+{#if step.method}
 	<section>
 		<h3>{t.attributes.assign}</h3>
 		<div class="assign">
 			{#each ruleData.attributes as attr (attr.id)}
 				{@const current = step.slots.find((s) => s.assignedTo === attr.id)}
-				<label>
-					<span><strong>{attr.id}</strong> {attr.name}</span>
+				<div class="attr">
+					<InfoButton title={`${attr.name} (${attr.id})`} text={attr.description}>
+						<strong>{attr.id}</strong>
+						{attr.name}
+					</InfoButton>
 					<select
+						aria-label={attr.name}
 						value={current?.index ?? ''}
 						onchange={(e) => dispatch({ type: 'assignAttribute', attribute: attr.id, slot: Number(e.currentTarget.value) })}
 					>
 						<option value="" disabled>{t.attributes.notAssigned}</option>
-						{#each step.slots as slot (slot.index)}
+						{#each sortedSlots as slot (slot.index)}
 							<option value={slot.index} disabled={slot.value === undefined}>
 								{slot.value ?? '?'}{slot.assignedTo && slot.assignedTo !== attr.id ? ` (${slot.assignedTo})` : ''}
 							</option>
 						{/each}
 					</select>
-				</label>
+				</div>
 			{/each}
 		</div>
 	</section>
 {/if}
 
+<section>
+	<h3>{t.secondary.luck}</h3>
+	<p class="hint">{view.luck.advantage ? t.secondary.luckAdvantage : t.secondary.luckPlain}</p>
+	<DiceInput
+		locked={view.secondary.luck.value !== undefined}
+		count={view.luck.dice}
+		sides={ruleData.secondary.luckDie}
+		roll={view.luck.roll}
+		onroll={(roll) => dispatch({ type: 'rollLuck', roll })}
+		onreset={() => dispatch({ type: 'rollLuck', roll: undefined })}
+	/>
+	{#if view.luck.roll && view.secondary.luck.value === undefined}
+		<p class="hint">{t.secondary.luckNeedsSecondDie}</p>
+	{/if}
+	{#if view.secondary.luck.value !== undefined}<p>{t.attributes.luckValue(view.secondary.luck.value)}</p>{/if}
+</section>
+
 <style>
-	fieldset {
-		border: 1px solid var(--line);
-		border-radius: 0.5rem;
-		margin: 0 0 1rem;
-		display: grid;
-		gap: 0.4rem;
-	}
-	.check {
-		display: flex;
-		gap: 0.5rem;
-		align-items: center;
-	}
-	.intro {
+	.intro,
+	.hint {
 		color: var(--muted);
+	}
+	.method {
+		max-width: 28rem;
 	}
 	.slots {
 		list-style: none;
@@ -131,5 +138,9 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 		gap: 0.6rem;
+	}
+	.attr {
+		display: grid;
+		gap: 0.25rem;
 	}
 </style>

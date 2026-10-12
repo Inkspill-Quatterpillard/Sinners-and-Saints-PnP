@@ -11,8 +11,6 @@ export type StepId =
 	| 'origin'
 	| 'profession'
 	| 'interests'
-	| 'secondary'
-	| 'senility'
 	| 'stunts'
 	| 'combat'
 	| 'magic'

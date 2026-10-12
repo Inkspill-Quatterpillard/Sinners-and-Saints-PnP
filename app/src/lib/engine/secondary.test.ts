@@ -139,7 +139,7 @@ describe('Sekundärattribute', () => {
 });
 
 describe('Glück', () => {
-	const luckStatus = (c: Character) => computeView(c, ruleData).steps.find((s) => s.id === 'secondary')?.status;
+	const luckStatus = (c: Character) => computeView(c, ruleData).steps.find((s) => s.id === 'attributes')?.status;
 
 	it('ist ein W20-Wurf und der Schritt bleibt offen, bis gewürfelt wurde', () => {
 		const c = play(...attributes(BASE));

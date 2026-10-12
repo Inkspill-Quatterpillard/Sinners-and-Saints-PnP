@@ -4,7 +4,7 @@ import type { Derivation } from '../derivation';
 
 export type AttributesAction =
 	| { type: 'setAttributeMethod'; method: AttributeMethod }
-	| { type: 'rollAttributeSlot'; slot: number; roll: Roll }
+	| { type: 'rollAttributeSlot'; slot: number; roll: Roll | undefined }
 	| { type: 'assignAttribute'; attribute: AttributeId; slot: number };
 
 export interface AttributeSlot {
@@ -23,10 +23,13 @@ export function applyAttributesAction(basis: Basis, action: AttributesAction): v
 	const step = basis.attributes;
 	switch (action.type) {
 		case 'setAttributeMethod':
+			// Die Plätze bedeuten je Verfahren andere Werte; die Verteilung beginnt deshalb neu.
+			if (step.method !== action.method) step.assignment = {};
 			step.method = action.method;
 			break;
 		case 'rollAttributeSlot':
-			step.rolls[action.slot] = action.roll;
+			if (action.roll) step.rolls[action.slot] = action.roll;
+			else delete step.rolls[action.slot];
 			break;
 		case 'assignAttribute': {
 			const previousSlot = step.assignment[action.attribute];

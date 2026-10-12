@@ -7,7 +7,7 @@ import type { SkillView } from './skills';
 export type ProfessionAction =
 	| { type: 'setProfessionName'; name: string }
 	| { type: 'toggleProfessionSkill'; skill: string }
-	| { type: 'rollStatus'; roll: Roll }
+	| { type: 'rollStatus'; roll: Roll | undefined }
 	| { type: 'assignHeroSkill'; slot: number; skill: string | undefined };
 
 export interface HeroSlotView {
@@ -48,7 +48,8 @@ export function applyProfessionAction(basis: Basis, action: ProfessionAction, ru
 			break;
 		}
 		case 'rollStatus':
-			p.statusRoll = action.roll;
+			if (action.roll) p.statusRoll = action.roll;
+			else delete p.statusRoll;
 			break;
 		case 'assignHeroSkill': {
 			// Eine Heldenfertigkeit belegt höchstens einen Platz.

@@ -33,7 +33,9 @@
 					"maturity": 1,
 					"atrophia": 1,
 					"senility": 1
-				}
+				},
+				"maxMaturityRolls": 10,
+				"note": "Höchstens 10 Reifewürfe (Entscheidung, siehe docs/offene-regelfragen.md)."
 			}
 		},
 		{

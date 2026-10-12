@@ -6,9 +6,7 @@
 	import AttributesStep from '$lib/components/steps/AttributesStep.svelte';
 	import OptionsStep from '$lib/components/steps/OptionsStep.svelte';
 	import SpeciesStep from '$lib/components/steps/SpeciesStep.svelte';
-	import SecondaryStep from '$lib/components/steps/SecondaryStep.svelte';
 	import AgeStep from '$lib/components/steps/AgeStep.svelte';
-	import SenilityStep from '$lib/components/steps/SenilityStep.svelte';
 	import ProfessionStep from '$lib/components/steps/ProfessionStep.svelte';
 	import InterestsStep from '$lib/components/steps/InterestsStep.svelte';
 	import ReligionStep from '$lib/components/steps/ReligionStep.svelte';
@@ -38,8 +36,6 @@
 		origin: OriginStep,
 		profession: ProfessionStep,
 		interests: InterestsStep,
-		secondary: SecondaryStep,
-		senility: SenilityStep,
 		stunts: StuntsStep,
 		combat: CombatStep,
 		magic: MagicStep,

@@ -1,8 +1,10 @@
 import type { AttributeId, SecondaryKey, ThresholdTable } from '$lib/ruleData';
 import type { Basis, Roll } from '../character';
 import { effective, SECONDARY_KEYS, type Derivation, type Modifier } from '../derivation';
+import { messages } from '../messages';
 
-export type SecondaryAction = { type: 'rollLuck'; roll: Roll };
+/** Ohne `roll` wird der Glückswurf zurückgesetzt. */
+export type SecondaryAction = { type: 'rollLuck'; roll: Roll | undefined };
 
 export interface SecondaryValue {
 	/** Wert aus der Formel, vor direkten Boni. */
@@ -22,7 +24,8 @@ export interface LuckView {
 }
 
 export function applySecondaryAction(basis: Basis, action: SecondaryAction): void {
-	basis.luck = action.roll;
+	if (action.roll) basis.luck = action.roll;
+	else delete basis.luck;
 }
 
 function lookup(table: ThresholdTable, value: number): number {
@@ -75,7 +78,11 @@ export function evaluateSecondary(d: Derivation): { secondary: Record<SecondaryK
 	const tp = result.tp.value;
 	finish('woundThreshold', tp === undefined ? undefined : floor(tp / r.woundThresholdDivisor));
 
-	const attributesComplete = d.ruleData.attributes.every((attr) => d.attributes[attr.id].base !== undefined);
-	d.steps.push({ id: 'secondary', status: attributesComplete && base.luck !== undefined ? 'valid' : 'open' });
+	// Das Glück wird im Schritt „Grundattribute“ gewürfelt; fehlt der Wurf, ist der Schritt noch offen.
+	const attributeStep = d.steps.find((st) => st.id === 'attributes');
+	if (base.luck === undefined && attributeStep) {
+		if (attributeStep.status === 'valid') attributeStep.status = 'open';
+		if (luck.roll) d.issues.push({ step: 'attributes', severity: 'warning', message: messages.luckMissing });
+	}
 	return { secondary: result, luck };
 }
