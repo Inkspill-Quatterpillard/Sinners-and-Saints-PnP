@@ -1,0 +1,60 @@
+{
+	"source": {
+		"file": "Charaktererstellung/Spezies_&_Alter.md",
+		"section": "Überblick"
+	},
+	"youngMalus": {
+		"child": 4,
+		"youth": 2,
+		"attributes": [
+			"STR",
+			"KON",
+			"INT"
+		]
+	},
+	"childLuckBonus": 2,
+	"minimumAttribute": 5,
+	"minimumAttributeSource": {
+		"file": "Charaktererstellung/Alter.md"
+	},
+	"adultMaturityRolls": 1,
+	"maturityDie": 20,
+	"maturityAttributes": [
+		"INT",
+		"KLU"
+	],
+	"senilityDie": 100,
+	"senilityStabilityLoss": 5,
+	"movementByAge": [
+		{
+			"min": 50,
+			"value": -1
+		},
+		{
+			"min": 60,
+			"value": -2
+		},
+		{
+			"min": 70,
+			"value": -3
+		},
+		{
+			"min": 80,
+			"value": -4
+		},
+		{
+			"min": 90,
+			"value": -5
+		}
+	],
+	"movementByAgeSource": {
+		"file": "Charaktererstellung/Sekundärattribute.md",
+		"section": "Bewegungsgeschwindigkeit"
+	},
+	"provisional": [
+		{
+			"question": "U9",
+			"note": "Ein Charakter mit Alterungsstufen erhält den Reifewurf des Erwachsenen und zusätzlich die Reifewürfe je Alterungsstufe."
+		}
+	]
+}

@@ -80,12 +80,39 @@ export interface TraitDef {
 	options?: ChoiceOption[];
 }
 
+export interface SpeciesAgeDef {
+	/** Kind unter diesem Alter, jugendlich unter `youthUnder`, erwachsen unter `adultUnder`. */
+	childUnder: number;
+	youthUnder: number;
+	adultUnder: number;
+	/** Ab `adultUnder` beginnt die erste Alterungsstufe, danach alle `agingInterval` Jahre eine weitere. */
+	agingInterval: number;
+	perStage: { maturity: number; atrophia: number; senility: number };
+	note?: string;
+}
+
 export interface SpeciesDef {
 	id: string;
 	name: string;
 	source: SourceRef;
 	attributeModifiers: Partial<Record<AttributeId, number>>;
 	traits: TraitDef[];
+	age: SpeciesAgeDef;
+}
+
+export interface AgeRules {
+	source: SourceRef;
+	youngMalus: { child: number; youth: number; attributes: AttributeId[] };
+	childLuckBonus: number;
+	/** Durch Altersmali darf kein Attribut unter diesen Wert fallen. */
+	minimumAttribute: number;
+	adultMaturityRolls: number;
+	maturityDie: number;
+	maturityAttributes: AttributeId[];
+	senilityDie: number;
+	senilityStabilityLoss: number;
+	movementByAge: ThresholdTable;
+	provisional?: Provisional[];
 }
 
 export interface SecondaryDef {
@@ -145,4 +172,5 @@ export interface RuleData {
 	secondary: SecondaryRules;
 	skills: SkillDef[];
 	heroSkills: SkillDef[];
+	age: AgeRules;
 }

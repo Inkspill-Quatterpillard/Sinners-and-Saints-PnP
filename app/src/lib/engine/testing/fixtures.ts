@@ -5,6 +5,14 @@ import { applyAction, createCharacter, type Action, type Character } from '../in
  * Kleine, stabile Testdaten für Mechaniktests (Neubewertung, ungültige Entscheidungen).
  * Sie ändern sich nicht, wenn sich das Regelwerk ändert.
  */
+const testAge = {
+	childUnder: 15,
+	youthUnder: 20,
+	adultUnder: 40,
+	agingInterval: 10,
+	perStage: { maturity: 1, atrophia: 1, senility: 1 }
+};
+
 export const testRuleData: RuleData = {
 	...realRuleData,
 	version: 999,
@@ -14,6 +22,7 @@ export const testRuleData: RuleData = {
 			name: 'Testvolk',
 			source: { file: 'test' },
 			attributeModifiers: { STR: 1 },
+			age: testAge,
 			traits: [
 				{
 					id: 'testwahl',
@@ -26,8 +35,8 @@ export const testRuleData: RuleData = {
 				}
 			]
 		},
-		{ id: 'anderes', name: 'Anderes', source: { file: 'test' }, attributeModifiers: {}, traits: [] },
-		{ id: 'stark', name: 'Stark', source: { file: 'test' }, attributeModifiers: { STR: 2 }, traits: [] }
+		{ id: 'anderes', name: 'Anderes', source: { file: 'test' }, attributeModifiers: {}, traits: [], age: testAge },
+		{ id: 'stark', name: 'Stark', source: { file: 'test' }, attributeModifiers: { STR: 2 }, traits: [], age: testAge }
 	]
 };
 

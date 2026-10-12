@@ -6,6 +6,7 @@ import { evaluateOptions, resolveOptions } from './steps/options';
 import { evaluateSpecies, type SpeciesStepView } from './steps/species';
 import { evaluateSecondary, type LuckView, type SecondaryValue } from './steps/secondary';
 import { evaluateSkills, type SkillView } from './steps/skills';
+import { evaluateAge, evaluateSenility, type AgeStepView, type SenilityView } from './steps/age';
 
 export interface AttributeView {
 	base?: number;
@@ -28,6 +29,8 @@ export interface CharacterView {
 	secondary: Record<SecondaryKey, SecondaryValue>;
 	luck: LuckView;
 	skills: SkillView[];
+	ageStep: AgeStepView;
+	senility: SenilityView;
 	characteristicAllowance: Derivation['characteristicAllowance'];
 }
 
@@ -38,7 +41,9 @@ export function computeView(character: Character, ruleData: RuleData): Character
 	evaluateOptions(d);
 	evaluateAttributes(d);
 	const speciesStep = evaluateSpecies(d);
+	const ageStep = evaluateAge(d);
 	const { secondary, luck } = evaluateSecondary(d);
+	const senility = evaluateSenility(d, secondary.stability);
 	const skills = evaluateSkills(d);
 
 	return {
@@ -57,6 +62,8 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		secondary,
 		luck,
 		skills,
+		ageStep,
+		senility,
 		characteristicAllowance: d.characteristicAllowance
 	};
 }

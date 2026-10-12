@@ -30,6 +30,17 @@ export interface Basis {
 		assignment: Partial<Record<AttributeId, number>>;
 	};
 	species?: string;
+	age: {
+		years?: number;
+		/** Verteilte Malus-Punkte junger Charaktere je Attribut. */
+		youngMalus: Partial<Record<AttributeId, number>>;
+		/** Reifewürfe je Nummer, mit dem gewählten Zielattribut. */
+		maturity: Record<number, { attribute: AttributeId; roll: Roll }>;
+		/** Atrophia-Punkte je Nummer: das betroffene körperliche Attribut. */
+		atrophia: Record<number, AttributeId>;
+		/** Vergreisungswürfe je Nummer. */
+		senility: Record<number, Roll>;
+	};
 	/** Angelegte Spezialisierungen je Fertigkeit, z. B. Wissenschaften: Alchemie. */
 	specializations: Record<string, string[]>;
 	/** Glückswurf (bei Vorteil zwei Würfel). */
@@ -62,6 +73,7 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			name: '',
 			options: { optionalRules: {} },
 			attributes: { rolls: {}, assignment: {} },
+			age: { youngMalus: {}, maturity: {}, atrophia: {}, senility: {} },
 			specializations: {},
 			choices: {}
 		},

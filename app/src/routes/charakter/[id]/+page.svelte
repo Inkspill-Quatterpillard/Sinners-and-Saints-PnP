@@ -6,6 +6,8 @@
 	import OptionsStep from '$lib/components/steps/OptionsStep.svelte';
 	import SpeciesStep from '$lib/components/steps/SpeciesStep.svelte';
 	import SecondaryStep from '$lib/components/steps/SecondaryStep.svelte';
+	import AgeStep from '$lib/components/steps/AgeStep.svelte';
+	import SenilityStep from '$lib/components/steps/SenilityStep.svelte';
 	import { applyAction, computeView, type Action, type Character, type StepId } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { loadCharacter, saveCharacter } from '$lib/storage/characterStore';
@@ -20,7 +22,9 @@
 		options: OptionsStep,
 		attributes: AttributesStep,
 		species: SpeciesStep,
-		secondary: SecondaryStep
+		age: AgeStep,
+		secondary: SecondaryStep,
+		senility: SenilityStep
 	};
 
 	let current = $state<StepId>('options');

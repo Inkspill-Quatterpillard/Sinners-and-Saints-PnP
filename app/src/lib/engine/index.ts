@@ -11,3 +11,4 @@ export type { SpeciesStepView } from './steps/species';
 export type { ChoiceState, TraitView } from './choices';
 export type { LuckView, SecondaryValue } from './steps/secondary';
 export type { SkillView } from './steps/skills';
+export type { AgeStage, AgeStepView, MaturityRollView, SenilityRollView, SenilityView } from './steps/age';

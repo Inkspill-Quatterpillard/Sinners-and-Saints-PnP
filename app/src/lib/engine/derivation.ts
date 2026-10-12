@@ -1,7 +1,7 @@
 import type { AttributeId, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character } from './character';
 
-export type StepId = 'options' | 'attributes' | 'species' | 'secondary';
+export type StepId = 'options' | 'attributes' | 'species' | 'age' | 'secondary' | 'senility';
 export type StepStatus = 'open' | 'valid' | 'invalid';
 
 /** Ein Hinweis zu einer Entscheidung: eine Warnung oder eine ungültige Entscheidung mit Begründung. */
@@ -45,6 +45,8 @@ export interface Derivation {
 	meditationDie: number;
 	/** Glück wird mit Vorteil gewürfelt (z. B. bei Kindern und Jugendlichen). */
 	luckAdvantage: boolean;
+	ageStage?: 'child' | 'youth' | 'adult' | 'aging';
+	agingStages: number;
 	/** Boni auf Fertigkeiten, je Fertigkeitsschlüssel (siehe `skillKey`). */
 	skillBonuses: Record<string, Modifier[]>;
 	/** Fest gesetzte Werte (z. B. Heldenfertigkeiten 14/12/10/8/8), die den Startwert ersetzen. */
@@ -75,6 +77,7 @@ export function createDerivation(character: Character, ruleData: RuleData, optio
 		characteristicAllowance: { extra: 0, forbidden: false },
 		meditationDie: 6,
 		luckAdvantage: false,
+		agingStages: 0,
 		skillBonuses: {},
 		skillSetValues: {},
 		steps: [],

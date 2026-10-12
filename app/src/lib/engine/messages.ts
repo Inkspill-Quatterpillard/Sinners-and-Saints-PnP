@@ -4,5 +4,17 @@ export const messages = {
 	optionNeedsCharacteristic: (trait: string) =>
 		`${trait}: Diese Variante bringt eine zusätzliche Charakteristik, es wird aber ohne Charakteristik gespielt. Wähle eine andere Variante oder aktiviere die Charakteristik.`,
 	notHighestAttribute: (trait: string, attribute: string, highest: string[]) =>
-		`${trait}: ${attribute} ist nicht mehr das höchste Attribut (jetzt ${highest.join(' oder ')}). Wähle das Attribut neu.`
+		`${trait}: ${attribute} ist nicht mehr das höchste Attribut (jetzt ${highest.join(' oder ')}). Wähle das Attribut neu.`,
+	ageSourcePrefix: 'Alter: ',
+	ageSource: (stage: 'child' | 'youth') => (stage === 'child' ? 'Alter: Kind' : 'Alter: Jugend'),
+	maturitySource: 'Reifewurf',
+	atrophiaSource: 'Atrophia',
+	senilitySource: 'Vergreisung',
+	ageMovementSource: 'Alter',
+	malusWrongAttribute: (attr: string) => `Der Altersmalus darf nur auf STR, KON oder INT verteilt werden, nicht auf ${attr}.`,
+	tooMuchMalus: (distributed: number, required: number) =>
+		`Es sind ${distributed} Malus-Punkte verteilt, vorgesehen sind ${required}.`,
+	atrophiaNotPhysical: (attr: string) => `Atrophia trifft nur körperliche Attribute (STR, KON, GES, WAH), nicht ${attr}.`,
+	belowMinimum: (attr: string, value: number, min: number) =>
+		`${attr} fiele durch Altersmali auf ${value}. Kein Attribut darf dadurch unter ${min} sinken.`
 };

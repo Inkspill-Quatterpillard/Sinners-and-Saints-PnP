@@ -6,6 +6,7 @@ import { applySpeciesAction, type SpeciesAction } from './steps/species';
 import { applyChoiceAction, type ChoiceAction } from './choices';
 import { applySecondaryAction, type SecondaryAction } from './steps/secondary';
 import { applySkillsAction, type SkillsAction } from './steps/skills';
+import { applyAgeAction, type AgeAction } from './steps/age';
 
 export type Action =
 	| { type: 'setName'; name: string }
@@ -14,7 +15,8 @@ export type Action =
 	| SpeciesAction
 	| ChoiceAction
 	| SecondaryAction
-	| SkillsAction;
+	| SkillsAction
+	| AgeAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -43,6 +45,14 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 			break;
 		case 'rollLuck':
 			applySecondaryAction(basis, action);
+			break;
+		case 'setAge':
+		case 'setYoungMalus':
+		case 'rollMaturity':
+		case 'setMaturityAttribute':
+		case 'setAtrophia':
+		case 'rollSenility':
+			applyAgeAction(basis, action);
 			break;
 		case 'addSpecialization':
 		case 'removeSpecialization':

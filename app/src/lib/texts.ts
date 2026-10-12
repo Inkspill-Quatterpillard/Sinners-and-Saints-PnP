@@ -23,7 +23,9 @@ export const t = {
 		options: 'Optionen',
 		attributes: 'Grundattribute',
 		species: 'Spezies',
-		secondary: 'Sekundärattribute'
+		age: 'Alter',
+		secondary: 'Sekundärattribute',
+		senility: 'Vergreisung'
 	} as Record<string, string>,
 	previousStep: '← Zurück',
 	nextStep: 'Weiter →',
@@ -49,6 +51,32 @@ export const t = {
 	species: {
 		intro: 'Die Spezies verändert die Grundattribute und bringt zwei Eigenschaften mit sich.',
 		traits: 'Eigenschaften'
+	},
+	age: {
+		intro: 'Das Alter entscheidet über Mali junger Charaktere, Reifewürfe und den Verfall im Alter.',
+		chooseSpeciesFirst: 'Die Altersstufen hängen von der Spezies ab. Wähle zuerst eine Spezies.',
+		ranges: (species: string, child: number, youth: number, adult: number, interval: number) =>
+			`${species}: Kind unter ${child}, jugendlich unter ${youth}, erwachsen unter ${adult} Jahren; danach alle ${interval} Jahre eine Alterungsstufe.`,
+		years: 'Alter in Jahren',
+		stages: { child: 'Kind', youth: 'Jugendlich', adult: 'Erwachsen', aging: 'Gealtert' },
+		agingStages: (n: number) => `${n} Alterungsstufe${n === 1 ? '' : 'n'}`,
+		malus: 'Malus',
+		malusHint: (required: number, distributed: number) =>
+			`Verteile insgesamt ${required} Malus-Punkte frei auf STR, KON und INT (verteilt: ${distributed}). Kein Attribut darf dadurch unter 5 fallen.`,
+		maturity: 'Reifewürfe',
+		maturityHint: 'Wähle INT oder KLU und würfle 1W20. Liegt das Ergebnis über dem aktuellen Wert, steigt er um 1.',
+		maturityTarget: (i: number) => `Zielattribut für Reifewurf ${i + 1}`,
+		maturitySuccess: (target: number) => `über ${target}: +1`,
+		maturityFail: (target: number) => `nicht über ${target}`,
+		atrophia: 'Atrophia',
+		atrophiaHint: 'Jeder Punkt Atrophia senkt ein körperliches Attribut deiner Wahl um 1. Punkte dürfen gebündelt werden.',
+		atrophiaPoint: (i: number) => `Atrophia-Punkt ${i + 1}`
+	},
+	senility: {
+		intro: (loss: number) => `Würfle je Vergreisungswurf 1W100 gegen die Stabilität. Liegt der Wurf höher, sinkt die Stabilität um ${loss}.`,
+		lost: (target: number) => `über ${target}: Stabilität sinkt`,
+		kept: (target: number) => `nicht über ${target}`,
+		result: (value: number | undefined) => `Stabilität jetzt: ${value ?? '–'}`
 	},
 	secondary: {
 		intro: 'Die Sekundärattribute ergeben sich aus den Grundattributen und werden immer abgerundet. Nur das Glück wird gewürfelt.',
