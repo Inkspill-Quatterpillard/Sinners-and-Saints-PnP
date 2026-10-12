@@ -13,6 +13,8 @@ import { applyReligionAction, type ReligionAction } from './steps/religion';
 import { applyCharacteristicAction, type CharacteristicAction } from './steps/characteristic';
 import { allowedStunts, applyOriginAction, type OriginAction } from './steps/origin';
 import { resolveOptions } from './steps/options';
+import { applyCombatAction, type CombatAction } from './steps/combat';
+import { computeView } from './view';
 
 export type Action =
 	| { type: 'setName'; name: string }
@@ -27,7 +29,8 @@ export type Action =
 	| InterestsAction
 	| ReligionAction
 	| CharacteristicAction
-	| OriginAction;
+	| OriginAction
+	| CombatAction;
 
 /** Wendet eine Aktion an und liefert einen neuen Charakter; der übergebene bleibt unverändert. */
 export function applyAction(character: Character, action: Action, ruleData: RuleData): Character {
@@ -49,6 +52,11 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 			break;
 		case 'chooseSpecies':
 			applySpeciesAction(basis, action);
+			break;
+		case 'toggleTechnique':
+		case 'chooseStyle':
+			// Was wählbar ist, hängt von den aktuellen Fertigkeitswerten ab.
+			applyCombatAction(basis, action, computeView(character, ruleData).combatStep, ruleData);
 			break;
 		case 'chooseOriginOrStunt':
 		case 'chooseOrigin':

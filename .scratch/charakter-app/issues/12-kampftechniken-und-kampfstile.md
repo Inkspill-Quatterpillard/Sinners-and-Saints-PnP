@@ -1,6 +1,6 @@
 # 12 — Kampftechniken und Kampfstile
 
-Status: ready-for-agent
+Status: done
 
 **What to build:**
 
@@ -10,8 +10,8 @@ Ein Spieler sieht, welche Kampftechniken seine Kampffertigkeiten freischalten (S
 
 Siehe Spec: `.scratch/charakter-app/spec.md`. Begriffe: `CONTEXT.md`.
 
-- [ ] Kampftechniken stehen je Waffengattung in den Regeldaten (aus `Kampftechniken/*.md`), mit Stufe und Text.
-- [ ] Kampfstile stehen in den Regeldaten (aus `Kampfstile.md`).
-- [ ] Freischaltschwellen und Anzahl stehen als Regelparameter in den Daten.
-- [ ] Kampfstil ab 18 Punkten.
-- [ ] Techniken oder Stile, die nicht mehr erlaubt sind, werden als ungültig markiert.
+- [x] Kampftechniken stehen je Waffengattung in den Regeldaten (aus `Kampftechniken/*.md`), mit Stufe und Text.
+- [x] Kampfstile stehen in den Regeldaten (aus `Kampfstile.md`).
+- [x] Freischaltschwellen und Anzahl stehen als Regelparameter in den Daten.
+- [x] Kampfstil ab 18 Punkten.
+- [x] Techniken oder Stile, die nicht mehr erlaubt sind, werden als ungültig markiert.

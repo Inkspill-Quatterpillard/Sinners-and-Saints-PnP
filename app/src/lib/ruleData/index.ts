@@ -2,6 +2,7 @@ import type {
 	AgeRules,
 	AttributeDef,
 	CharacteristicDef,
+	CombatRules,
 	OriginDef,
 	ProfessionRules,
 	ReligionDef,
@@ -15,6 +16,7 @@ import religionen from './data/religionen.json';
 import charakteristiken from './data/charakteristiken.json';
 import herkuenfte from './data/herkuenfte.json';
 import kunststuecke from './data/kunststuecke.json';
+import kampf from './data/kampf.json';
 import profession from './data/profession.json';
 import alter from './data/alter.json';
 import fertigkeiten from './data/fertigkeiten.json';
@@ -48,5 +50,6 @@ export const ruleData: RuleData = {
 		entries: charakteristiken.characteristics as CharacteristicDef[]
 	},
 	origins: herkuenfte.origins as OriginDef[],
-	stunts: kunststuecke.stunts as StuntDef[]
+	stunts: kunststuecke.stunts as StuntDef[],
+	combat: kampf as CombatRules
 };

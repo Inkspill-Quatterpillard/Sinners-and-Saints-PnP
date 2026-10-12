@@ -250,6 +250,39 @@ export interface StuntDef {
 	source: SourceRef;
 }
 
+export interface TechniqueDef {
+	/** „Fertigkeit:Name“, z. B. „schwerter:finte“. */
+	id: string;
+	name: string;
+	/** Die Kampffertigkeit, zu der die Technik gehört. */
+	skill: string;
+	tier: number;
+	/** Aktiv, Passiv oder beides. */
+	kind: string;
+	/** Hinweis zur Waffenführung, z. B. „Ein- und zweihändig“. */
+	hands: string;
+	flavor: string;
+	text: string;
+	source: SourceRef;
+}
+
+export interface StyleDef {
+	id: string;
+	name: string;
+	kind: 'melee' | 'ranged';
+	text: string;
+	source: SourceRef;
+}
+
+export interface CombatRules {
+	techniqueUnlocks: { firstAt: number; everyPoints: number; tiers: { tier: number; from: number }[] };
+	styleUnlock: { from: number; count: number; note?: string };
+	meleeSkills: string[];
+	rangedSkills: string[];
+	techniques: TechniqueDef[];
+	styles: StyleDef[];
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -268,4 +301,5 @@ export interface RuleData {
 	characteristics: CharacteristicRules;
 	origins: OriginDef[];
 	stunts: StuntDef[];
+	combat: CombatRules;
 }

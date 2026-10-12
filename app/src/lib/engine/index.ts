@@ -19,3 +19,5 @@ export type { ReligionStepView } from './steps/religion';
 export type { CharacteristicMode, CharacteristicSlotView, CharacteristicStepView } from './steps/characteristic';
 export { characteristicForRoll } from './steps/characteristic';
 export type { OriginStepView, StuntStepView, StuntView } from './steps/origin';
+export type { CombatSkillView, CombatStepView } from './steps/combat';
+export { techniqueUnlocks } from './steps/combat';

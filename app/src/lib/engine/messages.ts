@@ -37,5 +37,9 @@ export const messages = {
 	percentSource: (percent: number) => `+${percent} %`,
 	tooManyStunts: (chosen: number, allowed: number) => `Es sind ${chosen} Kunststücke gewählt, erlaubt sind ${allowed}.`,
 	stuntUnmet: (name: string, unmet: string[]) => `${name}: Voraussetzungen nicht erfüllt (${unmet.join(', ')}).`,
+	techniquesExceeded: (skill: string, chosen: number, allowed: number, maxTier: number) =>
+		`${skill}: ${chosen} Kampftechniken gewählt, erlaubt sind ${allowed}${maxTier ? ` bis Stufe ${['', 'I', 'II', 'III'][maxTier]}` : ''}. Entferne Techniken oder steigere die Fertigkeit.`,
+	styleNotUnlocked: (style: string, from: number) =>
+		`${style}: Ein Kampfstil verlangt ${from} Punkte in einer passenden Kampffertigkeit (Nah- bzw. Fernkampf).`,
 	characteristicForbidden: 'Durch „Eherner Wille“ (keine Charakteristik) darf keine Charakteristik gewählt werden.'
 };

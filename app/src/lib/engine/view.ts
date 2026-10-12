@@ -20,6 +20,7 @@ import { evaluateReligion, type ReligionStepView } from './steps/religion';
 import { evaluateCharacteristic, type CharacteristicStepView } from './steps/characteristic';
 import { applySecondaryPercent, evaluateOrigin, evaluateStunts, type OriginStepView, type StuntStepView } from './steps/origin';
 import { evaluateInterests, type InterestsStepView } from './steps/interests';
+import { evaluateCombat, type CombatStepView } from './steps/combat';
 import { evaluateProfession, warnLoweredHeroSkills, type ProfessionStepView, type StatusView } from './steps/profession';
 
 export interface AttributeView {
@@ -53,6 +54,7 @@ export interface CharacterView {
 	characteristicStep: CharacteristicStepView;
 	originStep: OriginStepView;
 	stuntStep: StuntStepView;
+	combatStep: CombatStepView;
 	resources: ResourceDef[];
 	counters: CounterDef[];
 	characteristicAllowance: Derivation['characteristicAllowance'];
@@ -82,6 +84,7 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		value: d.status.base + d.status.modifiers.reduce((sum, m) => sum + m.value, 0)
 	};
 	const stuntStep = evaluateStunts(d, skills, secondary, socialStatus.value);
+	const combatStep = evaluateCombat(d, skills);
 
 	return {
 		id: character.id,
@@ -107,6 +110,7 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		characteristicStep,
 		originStep,
 		stuntStep,
+		combatStep,
 		resources: d.resources,
 		counters: d.counters,
 		socialStatus,

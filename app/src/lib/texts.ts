@@ -31,7 +31,8 @@ export const t = {
 		interests: 'Interessen',
 		secondary: 'Sekundärattribute',
 		senility: 'Vergreisung',
-		stunts: 'Kunststücke'
+		stunts: 'Kunststücke',
+		combat: 'Kampf'
 	} as Record<string, string>,
 	previousStep: '← Zurück',
 	nextStep: 'Weiter →',
@@ -178,6 +179,21 @@ export const t = {
 		none: 'Keine passenden Kunststücke. Deaktiviere „Nur verfügbare zeigen“, um alle zu sehen.',
 		tier: (tier: number, name: string) => `Stufe ${tier} (${name})`,
 		unmet: (list: string) => `Fehlt: ${list}`
+	},
+	combat: {
+		intro:
+			'Ab 10 Punkten in einer Kampffertigkeit darfst du Kampftechniken wählen, ab 18 Punkten einen Kampfstil. Beides ist freiwillig.',
+		techniques: 'Kampftechniken',
+		noTechniques: 'Noch keine Kampffertigkeit hat 10 Punkte.',
+		unlocked: (chosen: number, allowed: number, tier: string) => `${chosen} von ${allowed} Techniken, bis Stufe ${tier}`,
+		tier: (tier: string) => `Stufe ${tier}`,
+		style: 'Kampfstil',
+		styleHint: (from: number) =>
+			`Ein Kampfstil verlangt ${from} Punkte in einer Nah- oder Fernkampffertigkeit und gilt dann für alle Kampffertigkeiten.`,
+		noStyle: 'Noch keine Kampffertigkeit erreicht 18 Punkte.',
+		noStyleChoice: 'Kein Kampfstil',
+		melee: 'Nahkampf',
+		ranged: 'Fernkampf'
 	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',

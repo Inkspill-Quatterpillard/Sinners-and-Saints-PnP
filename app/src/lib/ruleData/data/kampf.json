@@ -1,0 +1,1778 @@
+{
+	"source": {
+		"file": "Charaktererstellung/Kampftechniken.md"
+	},
+	"techniqueUnlocks": {
+		"firstAt": 10,
+		"everyPoints": 2,
+		"tiers": [
+			{
+				"tier": 1,
+				"from": 10
+			},
+			{
+				"tier": 2,
+				"from": 14
+			},
+			{
+				"tier": 3,
+				"from": 18
+			}
+		]
+	},
+	"styleUnlock": {
+		"from": 18,
+		"count": 1,
+		"note": "Laut Regelfrage W7 ab 18 Punkten."
+	},
+	"meleeSkills": ["faustkampf", "dolcheUndMesser", "schwerter", "hiebwaffen", "stangenwaffen"],
+	"rangedSkills": ["boegen", "armbruesteUndSchusswaffen", "wurfwaffen", "schleudern"],
+	"techniques": [
+		{
+			"id": "armbruesteUndSchusswaffen:ballistischerSchuss",
+			"name": "Ballistischer Schuss",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Durch die Einberechnung eines Winkels gibt der Schütze seinen Schuss nicht horizontal auf den Gegner ab, sondern lässt das Geschütz in einem leichten Bogen fliegen.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +1 erhöht wird. Dabei ist die maximale Reichweite seiner Waffe um 50 Prozent erhöht. Der variable Schaden der Waffe wird für den Angriff um eine Stufe reduziert (XW6+X auf XW4+X).",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Ballistischer Schuss"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:flankieren",
+			"name": "Flankieren",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Die Schwachstellen des Ziels werden optimal ausgenutzt, in dem von einer Seite angegriffen wird, auf der das Ziel keine Sicht auf den Schützen hat.",
+			"text": "Greift der Schütze einen Gegner von hinten, oben oder von der Seite an, so erhält er einen Vorteil auf den Kampfwurf. Der Schütze erhält zwei nicht kumulative Vorteile, wenn er noch nicht entdeckt wurde. Der Gegner kann dem Angriff nicht ausweichen, auch wenn er sich darauf vorbereitet.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Flankieren"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:hueftschuss",
+			"name": "Hüftschuss",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Anstelle zu zielen, gibt der Schütze einen schnellen Schuss aus der Hüfte auf Gegner ab.",
+			"text": "Der Schütze kann die Nachladezeit seiner Armbrust um eine Runde verringern. Dafür ist erhält der anschließende Kampfwurf einen Nachteil und es kann keine Trefferzone anvisiert oder eine zusätzliche Kampftechnik eingesetzt werden.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Hüftschuss"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:kontaktschuss",
+			"name": "Kontaktschuss",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Der Schütze versteht es, seine Armbrust im Nahkampf zu nutzen und sich mit ihr genug Platz zu verschaffen, um einen Schuss aus direkter Nähe auf den Gegner abzugeben.",
+			"text": "Wird der Schütze in einen Kampf verwickelt und hält eine geladene Fernkampfwaffe in der Hand, so kann er diese als improvisierte Nahkampfwaffe (mit Nachteil) mit der entsprechenden Fernkampffertigkeit nutzen. Würde der Schütze Schaden verursachen, so kann er den Schuss aus nächster Distanz abgeben.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Kontaktschuss"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:plaenkeln",
+			"name": "Plänkeln",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Nach dem erfolgten Schuss zieht sich der Schütze zurück, im Idealfall in die entgegengesetzte Richtung des Gegner.",
+			"text": "Der Schütze führt eine reguläre Kampfprobe aus. Danach kann er sich um seine halbierte Geschwindigkeit bewegen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Plänkeln"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:berittenerSchuss",
+			"name": "Berittener Schuss",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Indem er sich perfekt mit der Bewegung des Pferdes unter ihm synchronisiert, hat der Schütze es gelernt, selbst während des unstetesten Ritt seinen Schuss präzise und verlässlich abzugeben.",
+			"text": "Dem Schützen ist es möglich, seine Armbrust ohne Malus zu Pferd abzufeuern, auch wenn sich dieses bewegt. Der Kämpfer kann nur frontal in einem 180 Grad Winkel ohne Malus werfen, es sei denn, er besitzt entsprechende Kampftechniken.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Berittener Schuss"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:blinderSchuss",
+			"name": "Blinder Schuss",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Sicher verborgen hinter einer Mauer oder einem Baumstamm wartet der Schütze auf die Gelegenheit für den optimalen Schuss. Er behält sein Ziel stets im Blick, wagt sich aber nur in einer kurzen, flüssigen Bewegung für seinen Schuss aus der Deckung hervor.",
+			"text": "Der Schütze kann aus einer halben Deckung, die eigentlich seine Sicht behindern würde, ohne Mali auf einen Gegner schießen. Er kann zudem auch aus voller Deckung heraus auf den Gegner schießen, solange er von einer Seite der Deckung Sicht auf den Gegner hat. Dabei erhält er einen Nachteil.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Blinder Schuss"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:dualesSchiessen",
+			"name": "Duales Schießen",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "Nur einhändig",
+			"flavor": "Der Schütze verwendet zwei einhändige Schusswaffen parallel, um seine Feuerkraft zu verdoppeln.",
+			"text": "Führt der Schütze zwei Schusswaffen in seinen Händen, so darf er in einer Runde zwei Kampfwürfe ausführen, deren Ergebnis um +3 erhöht wird. Treffen ein oder mehrere Kampfwürfe, so wird der Schaden separat berechnet. Mit den Angriffen kann dasselbe Ziel oder zwei verschiedene Ziele anvisiert werden. Beide Waffen müssen eigenständig und nacheinander nachgeladen werden.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Duales Schießen (Nur einhändig)"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:laderoutine",
+			"name": "Laderoutine",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Das Laden seiner Waffe geht für den Schützen völlig automatisiert und flüssig von der Hand. Wenn er in seiner Routine versinkt, steigt seine Effizienz drastisch.",
+			"text": "Wenn sich der Schütze während des Ladevorgangs nicht bewegt, kann er die Ladezeit um eine Kampfrunde verkürzen. Bewegt sich der Schütze während der gesamten Zeit nicht, ist der nächste Ladevorgang nach dem Schuss um eine weitere Runde verkürzt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Laderoutine"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:kimmeUndKorn",
+			"name": "Kimme und Korn",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Mit dem Knöchel seines Daumens erzeugt der Schütze ein improvisiertes Visier, welches in Verbund mit der Pfeilspitze das Zielen erleichtert.",
+			"text": "Der Schütze kann eine Kampfrunde zum Zielen aufwenden, um das Ergebnis seines Kampfwurfes um -1 zu reduzieren. Für jede weitere investierte Runde verringert sich das Ergebnis um -1, bis zu einem Maximum von -5.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Kimme und Korn"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:ueberladen",
+			"name": "Überladen",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "Armbrüste",
+			"flavor": "Der Bogen der Armbrust wird über das Äußerste hinaus gespannt, um das Maximum aus der Zugkraft der Waffe herauszuholen.",
+			"text": "Der Schütze verwendet vor dem Kampfwurf eine zusätzliche Runde zum Laden. Dafür darf der Schütze den variablen Schaden, den seine Waffe verursacht, um eine Stufe erhöhen (XW6+X auf XW8+X). Bei einem Patzer wird die Armbrust beschädigt oder die Sehne reißt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Überladen (Armbrüste)"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:entwaffnen",
+			"name": "Entwaffnen",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Ein perfekt gezielter Schuss auf die Hand des Gegners schlägt diesem die Waffe aus der Hand.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +3 erhöht wird. Der Wurf gilt als Angriff, der die Trefferzone Arm anvisiert. Ist der Kampfwurf erfolgreich, erleidet der Gegner keinen Schaden. Stattdessen muss er einen Geschick- oder Stärkeprobe mit Nachteil bestehen. Bei Misserfolg lässt er alle Gegenstände oder Waffen in dieser Hand fallen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Entwaffnen"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:marraskanischerSchuss",
+			"name": "Marraskanischer Schuss",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Im vollen Galopp vermag es der Schütze, nach Art der Marraskaner seinen Körper zu drehen und einen Schuss nach hinten abzufeuern.",
+			"text": "Dem Schütze ist es möglich, zu Pferd an einem beliebigen Punkt inmitten der Bewegung einen Angriff auszuführen. Er kann dabei die komplette Bewegungsreichweite des Pferdes zurücklegen. Der Kampfwurf ist erschwert, wenn der Schütze nicht über eine entsprechende Kampftechnik verfügt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Marraskanischer Schuss"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:pulsschuss",
+			"name": "Pulsschuss",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Die völlige Kontrolle über seinen Körper ermöglicht es dem Schützen, seinen Schuss genau zwischen zwei Herzschlägen abzugeben und dabei sämtliche Störungen auszublenden.",
+			"text": "Der Schütze führt vor dem Kampfwurf eine Konstitutionsprobe durch. Ist diese erfolgreich, so darf er sämtliche Fernkampfmali ignorieren und in einen Vorteil verwandeln. Ist die Probe nicht erfolgreich, so erhält der Schütze einen zusätzlichen Nachteil.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Pulsschuss"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:sturmschuss",
+			"name": "Sturmschuss",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Zu Beginn des Angriffs gibt der Schütze einen Schuss ab, ehe er in einer flüssigen Bewegung seine Zweitwaffe zieht und sich auf den Gegner stürzt.",
+			"text": "Der Schütze kann sich entscheiden, vor dem Kampfmanöver Sturmangriff einen zusätzlichen Fernkampfangriff durchzuführen. Dazu er führt vor dem Sturmangriff einen Kampfwurf, dessen Ergebnis um +3 erhöht wird, mit der Wurfwaffe durch und führt diesen Schuss regulär aus. Im Folgenden darf der Schütze auf eine griffbereite Waffe wechseln und den Kampf initiieren.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Sturmschuss"
+			}
+		},
+		{
+			"id": "armbruesteUndSchusswaffen:kernschussweite",
+			"name": "Kernschussweite",
+			"skill": "armbruesteUndSchusswaffen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Durch jahrelange Übung ist der Schütze genau auf seine Waffe eingeschossen. Er muss die Flugbahn des Geschosses nicht nur vorausberechnen, er fühlt sie.",
+			"text": "Der Schütze kann die Nachteile eines Schusses auf lange Distanz ignorieren. Auf mittlere Distanz verursacht er +2 SP und auf kurze Distanz sogar +4 SP.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Armbrüste.md",
+				"section": "Kernschussweite"
+			}
+		},
+		{
+			"id": "boegen:ballistischerSchuss",
+			"name": "Ballistischer Schuss",
+			"skill": "boegen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Durch die Einberechnung eines Winkels gibt der Schütze seinen Schuss nicht horizontal auf den Gegner ab, sondern lässt das Geschütz in einem hohen Bogen fliegen.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +1 erhöht wird. Dabei ist die maximale Reichweite seiner Waffe um 50 Prozent erhöht. Der variable Schaden der Waffe wird für den Angriff um eine Stufe reduziert (XW6+X auf XW4+X).",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Ballistischer Schuss"
+			}
+		},
+		{
+			"id": "boegen:flankieren",
+			"name": "Flankieren",
+			"skill": "boegen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Die Schwachstellen des Ziels werden optimal ausgenutzt, in dem von einer Seite angegriffen wird, auf der das Ziel keine Sicht auf den Schützen hat.",
+			"text": "Greift der Schütze einen Gegner von hinten, oben oder von der Seite an, so erhält er einen Vorteil auf den Kampfwurf. Der Schütze erhält zwei nicht kumulative Vorteile, wenn er noch nicht entdeckt wurde. Der Gegner kann dem Angriff nicht ausweichen, auch wenn er sich darauf vorbereitet.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Flankieren"
+			}
+		},
+		{
+			"id": "boegen:halberSchuss",
+			"name": "Halber Schuss",
+			"skill": "boegen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Der Schütze schießt seinen Bogen aus der Hüfte ab und spannt dabei die Sehne seines Bogens nicht vollständig durch. Dies ermöglicht es ihm, eine Reihe schneller Schüsse abzugeben, denen es jedoch im Vergleich an Kraft und Geschwindigkeit fehlt.",
+			"text": "Die Nachladezeit für den Bogen verringert sich um eine Runde. Bögen, die keine Nachladezeit benötigen, können zweimal in einer Runde abgefeuert werden. Dafür halbiert sich Schaden und Reichweite des Bogens.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Halber Schuss"
+			}
+		},
+		{
+			"id": "boegen:plaenkeln",
+			"name": "Plänkeln",
+			"skill": "boegen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Nach dem erfolgten Schuss zieht sich der Schütze zurück, im Idealfall in die entgegengesetzte Richtung des Gegner.",
+			"text": "Der Schütze führt eine reguläre Kampfprobe aus. Danach kann er sich um seine halbierte Geschwindigkeit bewegen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Plänkeln"
+			}
+		},
+		{
+			"id": "boegen:zuggewichtAusgleichen",
+			"name": "Zuggewicht ausgleichen",
+			"skill": "boegen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Der Schütze nutzt seinen festen Stand und die gesamte Kraft seiner Schultern und stemmt sich in den Bogen, um ihn zu spannen.",
+			"text": "Die erforderliche Stärke für die Nutzung eines Bogens ist um 4 Punkte reduziert. Übersteigt die Stärke des Schützen das Stärkeerfordernis des Bogens um mindestens 5 Punkte, wird der Schaden um +1 erhöht.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Zuggewicht ausgleichen"
+			}
+		},
+		{
+			"id": "boegen:berittenerSchuss",
+			"name": "Berittener Schuss",
+			"skill": "boegen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Indem er sich perfekt mit der Bewegung des Pferdes unter ihm synchronisiert, hat der Schütze es gelernt, selbst während des unstetesten Ritt seinen Schuss präzise und verlässlich abzugeben.",
+			"text": "Dem Schützen ist es möglich, seinen Bogen ohne Malus zu Pferd abzufeuern, auch wenn sich dieses bewegt. Der Kämpfer kann nur frontal in einem 180 Grad Winkel ohne Malus werfen, es sei denn, er besitzt entsprechende Kampftechniken.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Berittener Schuss"
+			}
+		},
+		{
+			"id": "boegen:blinderSchuss",
+			"name": "Blinder Schuss",
+			"skill": "boegen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Sicher verborgen hinter einer Mauer oder einem Baumstamm wartet der Schütze auf die Gelegenheit für den optimalen Schuss. Er behält sein Ziel stets im Blick, wagt sich aber nur in einer kurzen, flüssigen Bewegung für seinen Schuss aus der Deckung hervor.",
+			"text": "Der Schütze kann aus einer halben Deckung, die eigentlich seine Sicht behindern würde, ohne Nachteile auf einen Gegner schießen. Er kann zudem auch aus voller Deckung heraus auf den Gegner schießen, solange er von einer Seite der Deckung Sicht auf den Gegner hat. Dabei erhält er einen Nachteil.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Blinder Schuss"
+			}
+		},
+		{
+			"id": "boegen:einschiessen",
+			"name": "Einschießen",
+			"skill": "boegen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Durch eine Reihe aufeinander folgender Schüsse werden die Bewegungen des Schützen immer sicherer und flüssiger, so dass es ihm leichter fällt, sein Ziel anzuvisieren.",
+			"text": "Für jeden aufeinander folgenden Schuss, der abgegeben wird, wird das Ergebnis des Kampfwurf um -1 reduziert, bis ein maximaler Bonus von -3 erreicht ist. Der Schütze erhält zudem einen zusätzlichen, einmaligen Bonus von -1 , wenn er ein Ziel anvisiert, auf welches er mit seinem letzten Fernkampfangriff bereits geschossen hat. Die Kampftechnik wird unterbrochen, sollte der Charakter eine andere Aktion als eine Fernkampfaktion ausführen, sich bewegen oder angegriffen werden.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Einschießen"
+			}
+		},
+		{
+			"id": "boegen:ueberdehnen",
+			"name": "Überdehnen",
+			"skill": "boegen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Der Bogen wird über das Äußerste hinaus gespannt, um das Maximum aus der Zugkraft der Waffe herauszuholen.",
+			"text": "Der Schütze führt vor dem Kampfwurf eine Stärkeprobe durch. Diese Probe erhält für einen Bogen, der mehr als 8 Stärke zum Spannen benötigt, einen Nachteil. Ist die Probe erfolgreich, darf der Schütze den variablen Schaden, den seine Waffe verursacht, um eine Stufe erhöhen (XW6+X auf XW8+X). Scheitert die Probe, wird der Schaden um eine Stufe verringert. Bei einem Patzer wird der Bogen beschädigt oder die Sehne reißt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Überdehnen"
+			}
+		},
+		{
+			"id": "boegen:elfischerStil",
+			"name": "Elfischer Stil",
+			"skill": "boegen",
+			"tier": 3,
+			"kind": "",
+			"hands": "Nur Bögen ohne Ladezeit",
+			"flavor": "Der Schütze hält seine Pfeile in der Hand, die auch den Bogen hält. Dies ermöglicht es ihm, diese Pfeile in atemberaubender Geschwindigkeit aufzuspannen und abzuschießen.",
+			"text": "Der Schütze muss eine Runde mit Nachladen verbringen. Daraufhin kann er in der nächsten Runde drei reguläre Fernkampfangriffe mit seinem Bogen ausführen. Die Technik lässt sich zu Pferd einsetzten.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Elfischer Stil (Nur Bögen ohne Ladezeit)"
+			}
+		},
+		{
+			"id": "boegen:entwaffnen",
+			"name": "Entwaffnen",
+			"skill": "boegen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Ein perfekt gezielter Schuss auf die Hand des Gegners schlägt diesem die Waffe aus der Hand.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +3 erhöht wird. Der Wurf gilt als Angriff, der die Trefferzone Arm anvisiert. Ist der Kampfwurf erfolgreich, erleidet der Gegner keinen Schaden. Stattdessen muss er einen Geschick- oder Stärkeprobe mit Nachteil bestehen. Bei Misserfolg lässt er alle Gegenstände oder Waffen in dieser Hand fallen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Entwaffnen"
+			}
+		},
+		{
+			"id": "boegen:marraskanischerSchuss",
+			"name": "Marraskanischer Schuss",
+			"skill": "boegen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Im vollen Galopp vermag es der Schütze, nach Art der Marraskaner seinen Körper zu drehen und einen Schuss nach hinten abzufeuern.",
+			"text": "Dem Schütze ist es möglich, zu Pferd an einem beliebigen Punkt inmitten der Bewegung einen Angriff auszuführen. Er kann dabei die komplette Bewegungsreichweite des Pferdes zurücklegen. Der Kampfwurf ist erschwert, wenn der Schütze nicht über eine entsprechende Kampftechnik verfügt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Marraskanischer Schuss"
+			}
+		},
+		{
+			"id": "boegen:pulsschuss",
+			"name": "Pulsschuss",
+			"skill": "boegen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Die völlige Kontrolle über seinen Körper ermöglicht es dem Schützen, seinen Schuss genau zwischen zwei Herzschlägen abzugeben und dabei sämtliche Störungen auszublenden.",
+			"text": "Der Schütze führt vor dem Kampfwurf eine Konstitutionsprobe durch. Ist diese erfolgreich, so darf er sämtliche Fernkampfmali ignorieren und in einen Vorteil verwandeln. Ist die Probe nicht erfolgreich, so erhält der Schütze einen zusätzlichen Nachteil.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Pulsschuss"
+			}
+		},
+		{
+			"id": "boegen:pfeilspalter",
+			"name": "Pfeilspalter",
+			"skill": "boegen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Der Schütze wagt einen gar unmöglichen Schuss, in dem er einen bereits im Ziel steckenden Pfeil exakt in der Mitte trifft und spaltet. So nutzt er die bereits entstandene Lücke in der Rüstung nutzt und treibt den Pfeilkopf noch weiter ins Ziel.",
+			"text": "Der Schütze schießt auf ein Ziel, welches bereits durch einen Pfeil verletzt wurde. Das Ergebnis des Kampfwurf wird um +5 erhöht. Der Wurf gilt als Angriff auf eine Schwachstelle und ignoriert die Rüstung.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Bögen.md",
+				"section": "Pfeilspalter"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:ausfallschritt",
+			"name": "Ausfallschritt",
+			"skill": "dolcheUndMesser",
+			"tier": 1,
+			"kind": "Passiv",
+			"hands": "",
+			"flavor": "Durch geschickte Bewegungen weicht der Kämpfer vor seinem Gegner zurück. Wenn dieser nachsetzen will, fällt der Kämpfer in einen tiefen Ausfallschritt und sticht mit seiner Waffe nach dem Kontrahenten.",
+			"text": "Addiere +1 auf das Ergebnis des Angriffswurfs. Der Kämpfer kann für eine Kampfrunde auf mittlere Reichweite angreifen, mitsamt der entsprechenden Modifikatoren für den Gegner. Verursacht der Angriff Schaden, ergreift der Kämpfer das Momentum.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Ausfallschritt, passiv"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:finte",
+			"name": "Finte",
+			"skill": "dolcheUndMesser",
+			"tier": 1,
+			"kind": "Aktiv oder passiv",
+			"hands": "",
+			"flavor": "Der Kämpfer täuscht seinen Angriff an, bricht diesen im letzten Moment ab und versetzt dem Gegner daraufhin einen überraschenden Streich von einer unerwarteten Seite.",
+			"text": "Der Kämpfer erhält eine Möglichkeit auf einen zweiten Angriff nach einem Patt (Beide Proben erfolgreich/nicht erfolgreich). Der Kämpfer wirft einen weiteren Angriffswurf, bei welchen +1 auf das Ergebnis addiert wird. Sein Gegner muss seinen Wurf ebenfalls mit +1 bestätigen. Entsteht ein weiteres Patt, erhält nur der Kämpfer Schaden.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Finte, Aktiv oder Passiv"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:klingenfaenger",
+			"name": "Klingenfänger",
+			"skill": "dolcheUndMesser",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "In seiner schwachen Hand führt der Kämpfer einen weiteren Dolch, mit dem er Angriffe blocken und Klingen fangen kann.",
+			"text": "Ein beliebiger Dolch kann als Parierdolch in der schwachen Hand genutzt werden und gibt einen regulären Bonus von +2 auf das Kampftalent. Ein spezieller Parierdolch gibt mit dieser Fertigkeit +3 Bonus. Dies gibt keinen defensiven Bonus.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Klingenfänger"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:schwachstellenAnvisieren",
+			"name": "Schwachstellen anvisieren",
+			"skill": "dolcheUndMesser",
+			"tier": 1,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Die meisten guten Rüstungen bieten einen fast allumfassenden Schutz. Doch auch die beste Rüstung offenbart kleine Öffnungen, etwa unter den Schultern, an den Gelenken, den Lenden oder an den Augenschlitzen. Diese sind oft klein, aber groß genug, um ein Messer oder Dolch hindurchzustechen.",
+			"text": "Kleine Öffnungen in schweren oder mittleren Rüstungen können anvisiert werden, um den Rüstungsschutz zu umgehen. Dafür muss ein Gegner entweder unbemerkt angegriffen werden (Schleichen-Probe), oder in irgendeiner Form beeinträchtigt sein, etwa fixiert, betäubt oder liegend. Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +1 erhöht wird und darf bei Erfolg die Rüstung des Gegners ignorieren.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Schwachstellen anvisieren, Aktiv"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:blutigerStich",
+			"name": "Blutiger Stich",
+			"skill": "dolcheUndMesser",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Es gibt viele Stellen an einem humanoiden Körper, die man nur anritzen braucht, um das Blut in Strömen fließen zu lassen. Der Kämpfer weiß dies und kann Stellen gezielt anvisieren, an denen das Blut durch den Körper getragen wird.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Der potentielle Schaden wird halbiert, dafür verursacht der Kämpfer eine blutende Wunde, sobald Schaden durch die Rüstung dringt. Der Gegner verliert 1W3 SP pro Kampfrunde, solange er nicht eine Kampfrunde darauf verwendet, die Wunde mit einer Erste Hilfe-Probe zu versorgen. Dieser Effekt ist nicht kumulativ.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Blutiger Stich, Aktiv"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:verstummenderStich",
+			"name": "Verstummender Stich",
+			"skill": "dolcheUndMesser",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Mit einem einzigen Stich kann der Assassine sein Opfer an seinem eigenen Blut ersticken lassen, so dass kein einziger Laut aus der Kehle dringen kann.",
+			"text": "Der Kämpfer führt einen Kampfwurf, dessen Ergebnis um +2 erhöht wird, gegen ein unbemerkt angegriffenen Gegner aus. Er greift dabei die Trefferzone Kopf an. Tötet er den Gegner mit dem Angriff, hat dieser keine Möglichkeit, einen Laut von sich zu geben.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Verstummender Stich, Aktiv"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:wespenstich",
+			"name": "Wespenstich",
+			"skill": "dolcheUndMesser",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Eine mit Gift benetzte Klinge wird beim Vorbeigehen unbemerkt in die Seite des Opfers gestochen. Dabei ritzt die Klinge die Haut des Opfers nur an, sodass die Aktion mit einem Anrempeln verdeckt werden kann.",
+			"text": "Der Kämpfer führt eine Schleichen-Probe und einen Kampfwurf gegen einen sehr nahen und nicht im Kampf befindlichen Gegner aus. Der Gegner würfelt auf Wahrnehmung mit Nachteil, falls die Probe erfolgreich ist. Anstelle Schaden auszuwürfeln, gilt der Gegner als Vergiftet mit dem jeweiligen Gift.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Wespenstich, Aktiv"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:umarmenderStich",
+			"name": "Umarmender Stich",
+			"skill": "dolcheUndMesser",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Eine harmlose Geste kann den schnellen Tod bringen. Der Assassine zückt während einer Umarmung, einem innigen Gespräch oder beim unscheinbaren Anrempeln seine Waffe und sticht auf den Gegner ein. Dies alles so schnell und unbemerkt, dass es für fremde Beobachter schwer ist auszumachen, was vor sich geht.",
+			"text": "Der Kämpfer führt eine Schleichen-Probe und einen Kampfwurf gegen einen sehr nahen und nicht im Kampf befindlichen Gegner aus. Der Gegner würfelt dabei mit Nachteil auf Wahrnehmung. Gelingt ihm die Probe nicht, darf er sich nicht verteidigen. Ist der Angriff erfolgreich, darf der Kämpfer frei eine Trefferzone wählen oder Schwachstellen anvisieren. Stirbt der Gegner dabei, kann ihn der Kämpfer mit einer Geschick-Probe auffangen und unauffällig auf einem beliebigen Objekt platzieren.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Umarmender Stich"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:unterlaufen",
+			"name": "Unterlaufen",
+			"skill": "dolcheUndMesser",
+			"tier": 2,
+			"kind": "Aktiv oder passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Die Waffe des Gegners wird mit dem Messer gefangen und nach oben gedrückt. Der Kämpfer nutzt den entstehenden Raum, um sich mit der Schulter in den Gegner zu werfen.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird, der evtl. Boni für den Gegner durch die Länge der Waffe ignoriert. Der Angriff verursacht im Erfolgsfall keinen Schaden, sondern führt dazu, dass sich beide Kämpfer im Ringkampf auf kurzer Distanz befinden. Der Kämpfer kann sich nun entscheiden, eine einfache Geschick- oder Kraftprobe auszuführen. Der Gegner muss daraufhin Geschicklichkeitsprobe mit Nachteil bestehen, ansonsten wird er zu Boden geworfen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Unterlaufen, aktiv oder passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:adlersturz",
+			"name": "Adlersturz",
+			"skill": "dolcheUndMesser",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Mit einem Angriff aus der Luft überrascht der Kämpfer den Gegner. Er lässt sich auf den Gegner von einem höher gelegenen Ort fallen, reißt ihn zu Boden und versetzt ihm einen tödlichen Stich.",
+			"text": "Der Kämpfer führt einen regulären Kampfwurf gegen einen Gegner aus, der sich unter ihm befindet. Der Gegner darf den Angriff mit Wurf mit festen Nachteil parieren, falls er den Kämpfer bemerkt. Setzt sich der Kämpfer durch, darf er regulären Schaden auswürfeln. Darf der Gegner jedoch Schaden auswürfeln, kann er diesen verdoppeln. Bei einem Patt erleiden immer beide Parteien Schaden. Zudem wird eine Gegenprobe zwischen der Geschicklichkeit des Angreifers und der Geschicklichkeit des Gegners geworfen. Gewinnt der Angreifer, wird der Gegner zu Boden gerissen. Ansonsten kann der Gegner den Kämpfer abschütteln. Die Fertigkeit kann mit einem gezielten Angriff kombiniert werden. Dies negiert den Nachteil des Gegners.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Adlersturz, Aktiv"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:doppelmord",
+			"name": "Doppelmord",
+			"skill": "dolcheUndMesser",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Trägt der Kämpfer zwei Dolche in der Hand, so kann er zwei nichtsahnende Gegner zeitgleich erstechen.",
+			"text": "Der Kämpfer führt zwei um +3 erhöhte Kampfwürfe gegen zwei unbemerkt angegriffene Gegner aus. Die Gegner müssen eine Probe mit Nachteil auf Wahrnehmung bestehen, sonst dürfen sie sich nicht verteidigen. Ist der Angriff erfolgreich, darf der Kämpfer frei eine Trefferzone wählen oder Schwachstellen anvisieren. Für jeden erfolgreichen und nicht parierten Kampfwurf darf der Kämpfer Schaden auswürfeln.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Doppelmord, Aktiv"
+			}
+		},
+		{
+			"id": "dolcheUndMesser:zweiterStich",
+			"name": "Zweiter Stich",
+			"skill": "dolcheUndMesser",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Der Kämpfer führt einen zweiten Dolch in seiner schwachen Hand. Jeder Angriff des Kämpfers wird von einem zweiten, schmerzhaften Stich begleitet.",
+			"text": "Trägt der Kämpfer ein Messer oder einen Dolch in seiner schwachen Hand, so darf er, sobald er im Kampf Schaden zufügt, eine um +3 erhöhte zusätzliche Kampfprobe ablegen, um mit seinem Dolch zusätzlichen Schaden zu verursachen. Dies funktioniert sowohl mit einem Dolch und einer anderen Einhandwaffe als auch bei zwei Dolchen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Dolche_und_Messer.md",
+				"section": "Zweiter Stich, Aktiv"
+			}
+		},
+		{
+			"id": "faustkampf:bastardhieb",
+			"name": "Bastardhieb",
+			"skill": "faustkampf",
+			"tier": 1,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Ein schneller Schlag, der den Gegner ohne Vorwarnung trifft und ihm keine Zeit zur Verteidigung lässt.",
+			"text": "Der Kämpfer führt einen Kampfwurf, dessen Ergebnis um +1 erhöht wird, gegen einen nahen und nicht im Kampf befindlichen Gegner aus. Der Gegner würfelt dabei eine Probe mit Nachteil auf Menschenkenntnis. Gelingt ihm die Probe nicht, darf er sich nicht verteidigen. Ist der Angriff erfolgreich, darf der Kämpfer frei eine Trefferzone wählen. Der Kämpfer erhält hierdurch das Momentum, falls ein Kampf ausbricht.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Bastardhieb, Aktiv"
+			}
+		},
+		{
+			"id": "faustkampf:handkantenschlag",
+			"name": "Handkantenschlag",
+			"skill": "faustkampf",
+			"tier": 1,
+			"kind": "Aktiv oder passiv",
+			"hands": "",
+			"flavor": "Ein vertikaler Handkantenschlag trifft den Gegner am Hals und lähmt ihn.",
+			"text": "Der Kämpfer muss einen Kampfwurf, dessen Ergebnis um +1 erhöht wird, ablegen. Wird dabei erfolgreich Schaden verursacht, wird dieser halbiert. Dafür ist muss der Gegner eine Konstitutionsprobe ablegen. Ist diese erfolgreich, muss der Gegner die nächste Runde auf alle körperlichen Proben, inklusive Kampfproben, mit Nachteil würfeln. Fehlt der Gegner, erleidet dieser für 1W3 Runden diese Einschränkung. In beiden Fällen gilt der Gegner für die jeweilige Zeit als beeinträchtigt. Bei einem kritischen Treffer oder dem Verursachen einer Wunde verliert der Gegner für 2W6 Runden das Bewusstsein.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Handkantenschlag, Aktiv oder Passiv"
+			}
+		},
+		{
+			"id": "faustkampf:kopfstoss",
+			"name": "Kopfstoß",
+			"skill": "faustkampf",
+			"tier": 1,
+			"kind": "Aktiv oder passiv",
+			"hands": "",
+			"flavor": "Im engen Ringkampf wird dem Gegner ein rücksichtsloser Kopfstoß versetzt.",
+			"text": "Befindet sich der Kämpfer im Ringkampf oder in naher Distanz zum Gegner, so kann er einen regulären Kampfwurf würfeln. Der potenzielle Schaden wird geteilt. Die eine Hälfte trifft die Trefferzone Kopf des Gegners. Die andere Hälfte des Schadens erleiden die Kampfteilnehmer, welche eine anschließende Konstitutionsprobe nicht bestehen. Auch dieser Schaden trifft die Trefferzone Kopf. Erleidet der Gegner den vollen Schaden, muss er, unabhängig von einer erlittenen Wunde, zurücktaumeln und den Ringkampf auflösen. Der Kämpfer erhält das Momentum.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Kopfstoß, Aktiv oder Passiv"
+			}
+		},
+		{
+			"id": "faustkampf:schulterstoss",
+			"name": "Schulterstoß",
+			"skill": "faustkampf",
+			"tier": 1,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Der Gegner wird mit der Schulter gerammt und in den Dreck befördert.",
+			"text": "Der Kämpfer führt einen regulären Kampfwurf aus, bei dem er im Erfolgsfall sicher Schaden verursacht und Schaden durch den Gegner in Kauf nimmt. Verursacht er Schaden, so erfolgt zusätzlich für beide Parteien eine Stärke-Probe. Wer diese nicht besteht, fällt auf den Boden. Bestehen beide, befinden sie sich im Ringkampf. Es können auch beide Parteien zu Boden fallen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Schulterstoß, aktiv"
+			}
+		},
+		{
+			"id": "faustkampf:wuergegriff",
+			"name": "Würgegriff",
+			"skill": "faustkampf",
+			"tier": 1,
+			"kind": "Aktiv oder passiv",
+			"hands": "",
+			"flavor": "Der Kämpfer wirft sich auf den Gegner und schnürt ihm mit einem geschickten Griff die Luft ab.",
+			"text": "Für die Fertigkeit müssen sich die Kämpfer im Ringkampf oder in naher Reichweite befinden. Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +1 erhöht wird. Anstelle Schaden zu verursachen, fixiert er den Gegner und darf jede Runde eine Stärke-Gegenprobe gegen ihn würfeln. Gewinnt er diese, kann er den Gegner 1W6 Schadenspunkte verursachen und dabei sämtlichen Schutz ignorieren. Verliert er, kann sich der Gegner befreien. Bei einem Patt verändert sich die Situation nicht. Der Gegner kann sich dazu entscheiden, die Stärke-Probe zu ignorieren und kann in seinem fixierten Status mit Nachteil angreifen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Würgegriff, aktiv oder passiv"
+			}
+		},
+		{
+			"id": "faustkampf:mondtritt",
+			"name": "Mondtritt",
+			"skill": "faustkampf",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Mit einem kreisförmig ausgeführten Tritt umgeht der Kämpfer die Verteidigung seines Gegners und trifft dessen Kopf von der Seite.",
+			"text": "Der Kämpfer führt einen regulären Kampfwurf aus. Jeder verursachte Schaden trifft die Trefferzone Kopf. Dabei erhält der Gegner keinen Vorteil durch das Anvisieren einer Trefferzone. Sobald der Gegner bei dem Angriff eine Wunde erhält, ist er benommen für die Dauer des Kampfes.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Mondtritt, Aktiv"
+			}
+		},
+		{
+			"id": "faustkampf:klingengriff",
+			"name": "Klingengriff",
+			"skill": "faustkampf",
+			"tier": 2,
+			"kind": "Passiv",
+			"hands": "",
+			"flavor": "Mit einem beherzten Griff in die gegnerische Waffe nimmt der Kämpfer eine Verwundung in Kauf, um einen sicheren Schlag auf den Gegner zu landen.",
+			"text": "Vor der Runde kann der Kämpfer halbierten Schaden durch die Waffe des Gegners in Kauf nehmen. Dafür darf er auf seinen Kampfwurf und den Schadenswurf mit Vorteil würfeln. Will der Kämpfer eine Trefferzone anvisieren, erhält der Gegner regulär einen Vorteil. Ist die Probe des Gegners erfolgreich, erhält der Kämpfer regulären Schaden. Fehlt zusätzlich die Probe des Kämpfers, so erhält der Kämpfer den halbierten Schaden zusätzlich.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Klingengriff, Passiv"
+			}
+		},
+		{
+			"id": "faustkampf:schelle",
+			"name": "Schelle",
+			"skill": "faustkampf",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Eine schnelle und unvorhergesehene Backpfeife, die vielleicht nicht effizient ist, aber den Gegner erzürnt und demütigt.",
+			"text": "Der Kämpfer führt vor dem eigentlichen Kampfwurf einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Dieser kann nicht verteidigt werden und fügt halben Schaden zu. Erleidet der Gegner dadurch Schaden, würfelt er den folgenden Kampfwurf mit Nachteil, darf aber seinem potenziellen Schaden +2 Schadenpunkte hinzufügen. Trifft der Kämpfer nicht mit einer Schelle, erhält der Gegner anstelle der regulären Kampfrunde einen freien Angriff. Außerhalb eines Kampfes kann die Fertigkeit als Überraschungsangriff eingesetzt werden. Der Gegner muss daraufhin den Kämpfer angreifen oder eine Stabilitätsprobe bestehen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Schelle, Aktiv"
+			}
+		},
+		{
+			"id": "faustkampf:sichelgriff",
+			"name": "Sichelgriff",
+			"skill": "faustkampf",
+			"tier": 2,
+			"kind": "Aktiv oder passiv",
+			"hands": "",
+			"flavor": "Mit geschickten Griffen und Beinbewegungen wird das Gleichgewicht des Gegners gebrochen und er auf den Boden befördert.",
+			"text": "Für die Fertigkeit müssen sich die Kämpfer im Ringkampf oder in naher Reichweite befinden. Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Anstelle Schaden zu verursachen, wird der Gegner zu Boden geworfen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Sichelgriff, Aktiv oder Passiv"
+			}
+		},
+		{
+			"id": "faustkampf:entwaffnenderGriff",
+			"name": "Entwaffnender Griff",
+			"skill": "faustkampf",
+			"tier": 3,
+			"kind": "Aktiv oder passiv",
+			"hands": "",
+			"flavor": "Ein eleganter Handgriff windet dem Gegner seine Waffe aus der Hand.",
+			"text": "Der Kämpfer würfelt einen regulären Angriff. Anstelle Schaden zu verursachen, wird eine Geschicklichkeits-Vergleichsprobe ausgewürfelt. Obsiegt der Gegner oder scheitern beide Parteien, behält der Gegner seine Waffe und darf ggf. Schaden auswürfeln. Bei einem Patt verliert der Gegner seine Waffe, welche zu Boden fällt. Gewinnt der Kämpfer, so darf er die Waffe des Gegners übernehmen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Entwaffnender Griff, Aktiv oder Passiv"
+			}
+		},
+		{
+			"id": "faustkampf:wellenbrecherwurf",
+			"name": "Wellenbrecherwurf",
+			"skill": "faustkampf",
+			"tier": 3,
+			"kind": "Passiv",
+			"hands": "",
+			"flavor": "Der Ansturm des Gegners wird von dem Kämpfer fließend aufgenommen und die anrollende Kraft gegen den Gegner verwendet, indem dieser aus dem Takt gebracht und in einer Richtung geschleudert wird.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +3 erhöht wird. Anstelle Schaden zu verursachen, muss der Gegner Geschicklichkeitswurf mit Nachteil bestehen. Ist dieser erfolgreich, wird der Gegner bis zu drei Schritt in eine vom Kämpfer bestimmte Richtung geworfen, kann sich allerdings abrollen und aufstehen. Scheitert die Probe, bleibt er auf dem Boden liegen. Der Kämpfer darf sich in Folge der Fertigkeit in Richtung des Gegners umdrehen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Wellenbrecherwurf, Passiv"
+			}
+		},
+		{
+			"id": "faustkampf:sprungtritt",
+			"name": "Sprungtritt",
+			"skill": "faustkampf",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Mit einem gewagten Sprungtritt fliegt der Kämpfer dem Gegner entgegen.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +3 erhöht wird. Der Angriff verursacht verdoppelten Schaden, dafür erleidet der Kämpfer allerdings auch potenziell verdoppelten Schaden. Verursacht der Angriff eine Wunde, wird der Gegner zu Boden geworfen. Nach einem Sprungtritt verliert der Kämpfer erzwungenermaßen das Momentum.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Faustkampf.md",
+				"section": "Sprungtritt, Aktiv"
+			}
+		},
+		{
+			"id": "hiebwaffen:abzug",
+			"name": "Abzug",
+			"skill": "hiebwaffen",
+			"tier": 1,
+			"kind": "Passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Der Kämpfer geht mit einem weiten Streich auf Distanz zum Gegner und löst sich anschließend sicher aus dem Kampf.",
+			"text": "Nach einem erfolgreichen regulären Kampfwurf kann sich der Kämpfer am Ende seines Zuges aus dem Kampf lösen und um die Hälfte seiner maximalen Bewegung wegbewegen. Dabei ist es unerheblich, ob der Kämpfer in dieser Runde Schaden zufügt oder zugefügt bekommt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Abzug, Passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:finte",
+			"name": "Finte",
+			"skill": "hiebwaffen",
+			"tier": 1,
+			"kind": "Aktiv oder passiv",
+			"hands": "Einhändig",
+			"flavor": "Der Kämpfer täuscht seinen Angriff an, bricht diesen im letzten Moment ab und versetzt dem Gegner daraufhin einen überraschenden Streich von einer unerwarteten Seite.",
+			"text": "Der Kämpfer erhält eine Möglichkeit auf einen zweiten Angriff nach einem Patt (Beide Proben erfolgreich/nicht erfolgreich). Der Kämpfer wirft einen weiteren Angriffswurf, bei welchen +1 auf das Ergebnis addiert wird. Sein Gegner muss seinen Wurf ebenfalls mit +1 bestätigen. Entsteht ein weiteres Patt, erhält nur der Kämpfer Schaden.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Finte, Aktiv oder Passiv (Einhändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:gegenschlag",
+			"name": "Gegenschlag",
+			"skill": "hiebwaffen",
+			"tier": 1,
+			"kind": "Passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Wird ein Kämpfer von seinem Gegner immer weiter bedrängt, so führt er im Zurückweichen einen weiten, befreienden Schlag aus. Dieser Hieb bringt den Gegner zurück auf Distanz.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +1 erhöht wird. Ist die Probe erfolgreich, erhält der Kämpfer das Momentum, unabhängig vom Wurf des Gegners.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Gegenschlag, passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:kopfgriff",
+			"name": "Kopfgriff",
+			"skill": "hiebwaffen",
+			"tier": 1,
+			"kind": "Aktiv oder passiv",
+			"hands": "Zweihändig",
+			"flavor": "Die Waffe wird mit einer Hand kurz unter dem Kopf gefasst, um mehr Kontrolle über die Spitze zu erlangen.",
+			"text": "Der Kämpfer führt einen Kampfwurf mit Vorteil aus. Die Reichweite der Waffe gilt für den Kampf als kurz. Der verursachte Schaden wird halbiert. Visiert ein Kämpfer mit diesem Manöver eine Trefferzone an, so erhält der Gegner keinen Vorteil.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Kopfgriff, aktiv oder passiv (Zweihändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:krummhau",
+			"name": "Krummhau",
+			"skill": "hiebwaffen",
+			"tier": 1,
+			"kind": "Aktiv oder passiv",
+			"hands": "Axt, Ein- und zweihändig",
+			"flavor": "Ein fast waagerechten Schlag geführter Schlag umläuft mit einer tückischen Drehung die Waffe des Gegners und gräbt sich in dessen Hände und Arme.",
+			"text": "Der Kämpfer führt einen regulären Kampfwurf aus. Jeder verursachte Schaden trifft die Trefferzone Arme. Sobald der Gegner bei dem Angriff eine Wunde erhält, ist er gezwungen, seine Waffe fallen zu lassen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Krummhau, Aktiv oder Passiv (Axt, Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:donnerhau",
+			"name": "Donnerhau",
+			"skill": "hiebwaffen",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Nachdem der Kämpfer einen Schritt vom Gegner zurück gewichen ist, führt er einen mächtigen, vertikal über die Schulter geführten Hieb aus, der über die Verteidigung des Gegners hinwegfegt.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Verursacht der Angriff Schaden, erhält der Kämpfer einen Schadensbonus abhängig von seinem Schadensbonus. Nach einem Donnerhau verliert der Kämpfer erzwungenermaßen das Momentum Schadensbonus bei -1 = keinen Bonus SB 0 = 1W3 SB +1 = 1W4 SB +2 = 1W6 SB +3 = 1W8",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Donnerhau, Aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:eisenschnabel",
+			"name": "Eisenschnabel",
+			"skill": "hiebwaffen",
+			"tier": 2,
+			"kind": "Aktiv oder passiv",
+			"hands": "Einhändig",
+			"flavor": "Die Waffe wird knapp unter dem Kopf gegriffen. Aus nächster Distanz bohrt der Kämpfer dann die Spitze der Waffe, oftmals ein Stachel oder der Zahn der Schneide einer Axt, in die verwundbaren Schwachstellen der Rüstung des Gegners.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Die Reichweite der Waffe gilt für den Kampf als sehr kurz. Gelingt der Angriff, greift der Kämpfer eine Schwachstelle in der Rüstung des Gegners an. Somit gelten nur ein Viertel der Rüstungspunkte der gegnerischen Rüstung.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Eisenschnabel, Aktiv oder Passiv (Einhändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:sonnenstoss",
+			"name": "Sonnenstoß",
+			"skill": "hiebwaffen",
+			"tier": 2,
+			"kind": "Aktiv oder passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Aus naher Distanz versetzt der Kämpfer seinen Gegner einen schmerzhaft lähmenden Stoß mit seiner Waffe in die Bauchregion, kurz unter dem Brustbein.",
+			"text": "Der Kämpfer würfelt einen regulären Kampfwurf. Wird dabei erfolgreich Schaden verursacht, wird anstelle eines Schadenswurf eine Gegenprobe zwischen der Stärke des Kämpfers und der Konstitution des Gegners ausgewürfelt. Gewinnt der Gegner, wird der Schaden des Kämpfers annulliert. Bei Gleichstand darf der Kämpfer halbierten Schaden auswürfeln. Gewinnt der Angreifer, erleidet der Gegner halbierten Schaden und wird betäubt. Gewinnt der Angreifer mit einem kritischen Treffer oder der Gegner patzt, so verliert der Gegner das Bewusstsein.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Sonnenstoß, aktiv oder passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:schildbruch",
+			"name": "Schildbruch",
+			"skill": "hiebwaffen",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "Hammer, Ein- und zweihändig",
+			"flavor": "Mit einem kraftvollen Schlag auf die richtige Stelle des gegnerischen Schild wird der Schildarm des Gegners gelähmt.",
+			"text": "Der Kämpfer führt einen regulären Kampfwurf aus gegen einen Gegner, der sich mit einem Schild verteidigt. Trifft er den Gegner, wird anstelle einer Schadensberechnung für 2W6 Runden der Schildarm des Gegners gelähmt. Er kann für diese Zeit den Bonus seines Schildes nicht nutzen, weder regulär noch defensiv.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Schildbruch, Aktiv (Hammer, Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:ruestungDemolieren",
+			"name": "Rüstung demolieren",
+			"skill": "hiebwaffen",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "Hammer, Ein- und zweihändig",
+			"flavor": "Die Rüstung des Gegners wird von einem kräftigen Schlag des Nagels eines Hammers getroffen, welcher die Rüstung verbeult oder sogar eine Öffnung in den Schutz reißt.",
+			"text": "Der Kämpfer führt einen Kampfwurf, dessen Ergebnis um +3 erhöht wird, gegen einen Gegner mit schwerer Rüstung aus. Der potentielle Schadenswurf des Kämpfers wird mit Nachteil ausgeführt. Dabei wird eine Trefferzone durch Entscheid des Spielleiters oder den Wurf eines W6 ausgewählt. Die getroffene Trefferzone gilt fortan als Schwachstelle und die Rüstung als beschädigt. Überschreitet der ausgewürfelte Schaden die Hälfte des Rüstungsschutzes, wird die Rüstung an dieser Stelle verbeult, was den Rüstungsschutz an dieser Stelle für künftige Kampfrunden halbiert. Überschreitet der ausgewürfelte Schaden den gesamten Rüstungsschutz, reißt die Waffe ein Loch. Für künftige Kampfrunden gilt die Trefferzone als ungeschützt. Zusätzlicher Schaden wird regulär von den Lebenspunkten des Gegners abgezogen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Rüstung demolieren, Aktiv (Hammer, Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:uebertrumpfen",
+			"name": "Übertrumpfen",
+			"skill": "hiebwaffen",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "Zweihändig",
+			"flavor": "Das untere Ende der Waffe wird über das Schild des Gegners gehoben, um diesem dann mit einer Hebelbewegung einen fatalen Schlag zu versetzen.",
+			"text": "Verteidigt sich ein Gegner in einer Kampfrunde mit Schild, kann der Kämpfer einen um +3 erhöhten Angriffswurf ausführen. Der Verteidigungsbonus des Schildes wird für die Runde annulliert. Ist der Angriff des Kämpfers erfolgreich und der Gegner pariert, erhält der Gegner dennoch halbierten Schaden. Nach der Attacke verliert der Kämpfer erzwungenermaßen das Momentum",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Übertrumpfen, Aktiv (Zweihändig)"
+			}
+		},
+		{
+			"id": "hiebwaffen:wolfsfaenge",
+			"name": "Wolfsfänge",
+			"skill": "hiebwaffen",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "Axt, Ein- und zweihändig",
+			"flavor": "Die Waffe des Gegners wird mit dem verlängerten Ende des Axt- oder Hammerkopfes, dem Bart, eingehakt und aus den Händen des Gegners geschleudert.",
+			"text": "Der Kämpfer führt einen regulären Kampfwurf aus. Anstelle Schaden zu erleiden, muss der Gegner eine Stärkeprobe mit Nachteil bestehen, ansonsten verliert er seine Waffe.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Hiebwaffen.md",
+				"section": "Wolfsfänge, Aktiv (Axt, Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "schleudern:ballistischerSchuss",
+			"name": "Ballistischer Schuss",
+			"skill": "schleudern",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Durch die Einberechnung eines Winkels gibt der Schütze seinen Schuss nicht horizontal auf den Gegner ab, sondern lässt das Geschütz in einem leichten Bogen fliegen.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +1 erhöht wird. Dabei ist die maximale Reichweite seiner Waffe um 50 Prozent erhöht. Der variable Schaden der Waffe wird für den Angriff um eine Stufe reduziert (XW6+X auf XW4+X).",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Ballistischer Schuss"
+			}
+		},
+		{
+			"id": "schleudern:einhaendigSchleudern",
+			"name": "Einhändig schleudern",
+			"skill": "schleudern",
+			"tier": 1,
+			"kind": "",
+			"hands": "Außer Stabschleuder",
+			"flavor": "Der Schütze beherrscht es, seine Schleuder mit einem Arm zu laden und sich währenddessen in der sicheren Deckung seines Schildes wiegen.",
+			"text": "Die Schleuder kann einhändig verwendet und nachgeladen werden. Dies ermöglicht es, eine Schleuder in Kombination mit einem Schild oder einer anderen Waffe zu nutzen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Einhändig schleudern, (Außer Stabschleuder)"
+			}
+		},
+		{
+			"id": "schleudern:flankieren",
+			"name": "Flankieren",
+			"skill": "schleudern",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Die Schwachstellen des Ziels werden optimal ausgenutzt, in dem von einer Seite angegriffen wird, auf der das Ziel keine Sicht auf den Schützen hat.",
+			"text": "Greift der Schütze einen Gegner von hinten, oben oder von der Seite an, so erhält er einen Vorteil auf den Kampfwurf. Der Schütze erhält zwei nicht kumulative Vorteile, wenn er noch nicht entdeckt wurde. Der Gegner kann dem Angriff nicht ausweichen, auch wenn er sich darauf vorbereitet.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Flankieren"
+			}
+		},
+		{
+			"id": "schleudern:kurzerGriff",
+			"name": "Kurzer Griff",
+			"skill": "schleudern",
+			"tier": 1,
+			"kind": "",
+			"hands": "Außer Stabschleuder",
+			"flavor": "Der Schütze verkürzt durch einen speziellen Griff die Schlinge der Schleuder. Dies ermöglicht es ihm, schnellere Schüsse abzugeben, denen es jedoch im Vergleich an Kraft und Geschwindigkeit fehlt.",
+			"text": "Der Schütze kann zweimal pro Runde mit seiner Schleuder schießen. Dafür halbiert sich Schaden und Reichweite der Schleuder.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Kurzer Griff, (Außer Stabschleuder)"
+			}
+		},
+		{
+			"id": "schleudern:plaenkeln",
+			"name": "Plänkeln",
+			"skill": "schleudern",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Nach dem erfolgten Schuss zieht sich der Schütze zurück, im Idealfall in die entgegengesetzte Richtung des Gegner.",
+			"text": "Der Schütze führt eine reguläre Kampfprobe aus. Danach kann er sich um seine halbierte Geschwindigkeit bewegen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Plänkeln"
+			}
+		},
+		{
+			"id": "schleudern:berittenerSchuss",
+			"name": "Berittener Schuss",
+			"skill": "schleudern",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Indem er sich perfekt mit der Bewegung des Pferdes unter ihm synchronisiert, hat der Schütze es gelernt, selbst während des unstetesten Ritt seinen Schuss präzise und verlässlich abzugeben.",
+			"text": "Dem Schützen ist es möglich, seine Schleuder ohne Malus zu Pferd abzufeuern, auch wenn sich dieses bewegt. Der Kämpfer kann nur frontal in einem 180 Grad Winkel ohne Malus werfen, es sei denn, er besitzt entsprechende Kampftechniken.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Berittener Schuss"
+			}
+		},
+		{
+			"id": "schleudern:blinderSchuss",
+			"name": "Blinder Schuss",
+			"skill": "schleudern",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Sicher verborgen hinter einer Mauer oder einem Baumstamm wartet der Schütze auf die Gelegenheit für den optimalen Schuss. Er behält sein Ziel stets im Blick, wagt sich aber nur in einer kurzen, flüssigen Bewegung für seinen Schuss aus der Deckung hervor.",
+			"text": "Der Schütze kann aus einer halben Deckung, die eigentlich seine Sicht behindern würde, ohne Nachteile auf einen Gegner schießen. Er kann zudem auch aus voller Deckung heraus auf den Gegner schießen, solange er von einer Seite der Deckung Sicht auf den Gegner hat. Dabei erhält er einen Nachteil.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Blinder Schuss"
+			}
+		},
+		{
+			"id": "schleudern:einschiessen",
+			"name": "Einschießen",
+			"skill": "schleudern",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Durch eine Reihe aufeinander folgender Schüsse werden die Bewegungen des Schützen immer sicherer und flüssiger, so dass es ihm leichter fällt, sein Ziel anzuvisieren.",
+			"text": "Für jeden aufeinander folgenden Schuss, der abgegeben wird, wird das Ergebnis des Kampfwurf um -1 reduziert, bis ein maximaler Bonus von -3 erreicht ist. Der Schütze erhält zudem einen zusätzlichen, einmaligen Bonus von -1 , wenn er ein Ziel anvisiert, auf welches er mit seinem letzten Fernkampfangriff bereits geschossen hat. Die Kampftechnik wird unterbrochen, sollte der Charakter eine andere Aktion als eine Fernkampfaktion ausführen, sich bewegen oder angegriffen werden.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Einschießen"
+			}
+		},
+		{
+			"id": "schleudern:stoppen",
+			"name": "Stoppen",
+			"skill": "schleudern",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Der Gegner wird von einem wuchtigen und präzisen Schuss in seiner Bewegung unterbrochen und gestoppt.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Wird der Gegner durch den Wurf getroffen, so kann er sich in seiner folgenden Aktion nicht bewegen. Dies kann entweder in derselben Runde oder der nächsten geschehen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Stoppen"
+			}
+		},
+		{
+			"id": "schleudern:abprallenderSchuss",
+			"name": "Abprallender Schuss",
+			"skill": "schleudern",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Der Schütze schleudert das Geschoss auf den Boden oder gegen eine Wand. Der Stein prallt ab und trifft den Gegner, der sich hinter Schild oder Deckung zu verstecken sucht.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +3 erhöht wird. Der Schuss ignoriert sowohl halbe oder volle Deckung und den Schildbonus des Gegners.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Abprallender Schuss"
+			}
+		},
+		{
+			"id": "schleudern:illonischerSchuss",
+			"name": "Illonischer Schuss",
+			"skill": "schleudern",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Nach Art der berühmten illonischen Schleuderer zielt der Schütze auf die zumeist weder durch Rüstung noch Schild gedeckten Knie des Gegners, mit dem Ziel, den Gegner zu verkrüppeln und kampfunfähig zu machen.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +3 erhöht wird. Der Wurf gilt als Angriff, der die Trefferzone Bein anvisiert. Will der Gegner ausweichen, so kann er den defensiven Bonus seines Schildes nicht nutzen. Verursacht der Angriff Schaden, so erleidet der Gegner eine Wunde an der Trefferzone Bein, unabhängig von der Höhe des Schadens. Verursacht der Angriff eine Verstümmlung, wird automatisch das Knie des Gegners zertrümmert.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Illonischer Schuss"
+			}
+		},
+		{
+			"id": "schleudern:entwaffnen",
+			"name": "Entwaffnen",
+			"skill": "schleudern",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Ein perfekt gezielter Schuss auf die Hand des Gegners schlägt diesem die Waffe aus der Hand.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +3 erhöht wird. Der Wurf gilt als Angriff, der die Trefferzone Arm anvisiert. Ist der Kampfwurf erfolgreich, erleidet der Gegner keinen Schaden. Stattdessen muss er einen Geschick- oder Stärkeprobe mit Nachteil bestehen. Bei Misserfolg lässt er alle Gegenstände oder Waffen in dieser Hand fallen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Entwaffnen"
+			}
+		},
+		{
+			"id": "schleudern:marraskanischerSchuss",
+			"name": "Marraskanischer Schuss",
+			"skill": "schleudern",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Im vollen Galopp vermag es der Schütze, nach Art der Marraskaner seinen Körper zu drehen und einen Schuss nach hinten abzufeuern.",
+			"text": "Dem Schütze ist es möglich, zu Pferd an einem beliebigen Punkt inmitten der Bewegung einen Angriff auszuführen. Er kann dabei die komplette Bewegungsreichweite des Pferdes zurücklegen. Der Kampfwurf ist erschwert, wenn der Schütze nicht über eine entsprechende Kampftechnik verfügt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schleudern.md",
+				"section": "Marraskanischer Schuss"
+			}
+		},
+		{
+			"id": "schwerter:abzug",
+			"name": "Abzug",
+			"skill": "schwerter",
+			"tier": 1,
+			"kind": "Passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Der Kämpfer geht mit einem weiten Streich auf Distanz zum Gegner und löst sich anschließend sicher aus dem Kampf.",
+			"text": "Nach einem erfolgreichen regulären Kampfwurf kann sich der Kämpfer am Ende seines Zuges aus dem Kampf lösen und um die Hälfte seiner maximalen Bewegung wegbewegen. Dabei ist es unerheblich, ob der Kämpfer in dieser Runde Schaden zufügt oder zugefügt bekommt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Abzug, Passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "schwerter:ausfallschritt",
+			"name": "Ausfallschritt",
+			"skill": "schwerter",
+			"tier": 1,
+			"kind": "Passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Durch geschickte Bewegungen weicht der Kämpfer vor seinem Gegner zurück. Wenn dieser nachsetzen will, fällt der Kämpfer in einen tiefen Ausfallschritt und sticht mit seiner Waffe nach dem Kontrahenten.",
+			"text": "Der Kämpfer erhöht für eine Kampfrunde seine Reichweite um eins, mitsamt der entsprechenden Modifikatoren für den Gegner. Verursacht der Angriff Schaden, ergreift der Kämpfer das Momentum.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Ausfallschritt, passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "schwerter:finte",
+			"name": "Finte",
+			"skill": "schwerter",
+			"tier": 1,
+			"kind": "Aktiv oder passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Der Kämpfer täuscht seinen Angriff an und versetzt dem Gegner einen unerwarteten Streich.",
+			"text": "Der Kämpfer erhält eine Möglichkeit auf einen zweiten Angriff nach einem Patt (Beide Proben erfolgreich/nicht erfolgreich). Der Kämpfer wirft einen weiteren Angriffswurf, bei welchen +1 auf das Ergebnis addiert wird. Sein Gegner muss seinen Wurf ebenfalls mit +1 bestätigen. Entsteht ein weiteres Patt, erhält nur der Kämpfer Schaden.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Finte, Aktiv oder Passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "schwerter:knaufschlag",
+			"name": "Knaufschlag",
+			"skill": "schwerter",
+			"tier": 1,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Der Gegner wird mit dem Knauf der Waffe am Kopf oder Helm getroffen, um ihn zu betäuben.",
+			"text": "Der Kämpfer muss einen Kampfwurf, dessen Ergebnis um +1 erhöht wird, bestehen. Wird dabei erfolgreich Schaden verursacht, wird dieser halbiert. Dafür ist muss der Gegner eine Konstitutionsprobe ablegen. Ist diese erfolgreich, erhält der Gegner eine Stufe Betäubung.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Knaufschlag, Aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "schwerter:krummhau",
+			"name": "Krummhau",
+			"skill": "schwerter",
+			"tier": 1,
+			"kind": "Aktiv oder passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Ein fast waagerechten Schlag geführter Schlag umläuft mit einer tückischen Drehung die Waffe des Gegners und gräbt sich in dessen Hände und Arme.",
+			"text": "Der Kämpfer führt einen regulären Kampfwurf aus. Jeder verursachte Schaden trifft die Trefferzone Arme. Sobald der Gegner bei dem Angriff eine Wunde erhält, ist er gezwungen, seine Waffe fallen zu lassen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Krummhau, Aktiv oder Passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "schwerter:doppelstich",
+			"name": "Doppelstich",
+			"skill": "schwerter",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "Einhändig",
+			"flavor": "Durch sofortiges Nachsetzen nach einem erfolgreichen Treffer wird dem Gegner ein zweiter Stich durch eine Drehbewegung des Körpers versetzt.",
+			"text": "Möglichkeit auf einen zweiten Treffer nach einem erfolgreichen Angriff mit Schaden. Nach dem ein Kämpfer mit einem einhändigen Schwert Schaden verursacht hat, kann er direkt einen zweiten Angriff mit festen Nachteil auswerfen. Dieser Angriff kann nicht verteidigt werden. Ist der Wurf erfolgreich, kann der Kämpfer noch einmal halbierten Schaden verursachen. Ist der Angriff jedoch nicht erfolgreich, verliert der Kämpfer das Momentum.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Doppelstich, Aktiv (Einhändig)"
+			}
+		},
+		{
+			"id": "schwerter:durchlaufen",
+			"name": "Durchlaufen",
+			"skill": "schwerter",
+			"tier": 2,
+			"kind": "Aktiv oder passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Die Waffe des Gegners wird zwischen Klinge und Parierstange geblockt und nach oben gedrückt. Der Kämpfer nutzt den entstehenden Raum, um sich mit der Schulter in den Gegner zu werfen.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird, der evtl. Boni für den Gegner durch die Länge der Waffe ignoriert. Der Angriff verursacht im Erfolgsfall keinen Schaden, sondern führt dazu, dass sich beide Kämpfer im Ringkampf auf kurzer Distanz befinden. Der Kämpfer kann sich nun entscheiden, eine einfache Geschick- oder Kraftprobe auszuführen. Der Gegner muss daraufhin eine Geschicklichkeitsprobe mit Nachteil bestehen, ansonsten wird er zu Boden geworfen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Durchlaufen, aktiv oder passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "schwerter:halbschwert",
+			"name": "Halbschwert",
+			"skill": "schwerter",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Mit einem Griff in die Klinge gelingt es dem Kämpfer, die Spitze seiner Waffe zielgerichtet in die Schwachstellen der gegnerischen Rüstung zu bohren.",
+			"text": "Für die Fertigkeit muss der Gegner in irgendeiner Form beeinträchtigt sein, etwa fixiert, betäubt oder liegend. Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Die Reichweite der Waffe gilt für den Kampf als Kurz. Gelingt der Angriff, greift der Kämpfer eine Schwachstelle in der Rüstung des Gegners an. Somit gelten nur ein Viertel der Rüstungspunkte der gegnerischen Rüstung.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Halbschwert, aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "schwerter:zornhau",
+			"name": "Zornhau",
+			"skill": "schwerter",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "Zweihändig",
+			"flavor": "Nachdem der Kämpfer einen Schritt vom Gegner zurück gewichen ist, führt er einen mächtigen, vertikal über die Schulter geführten Hieb aus, der über die Verteidigung des Gegners hinwegfegt.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Verursacht der Angriff Schaden, erhält der Kämpfer einen Schadensbonus abhängig von seinem Schadensbonus. Nach einem Zornhau verliert der Kämpfer erzwungenermaßen das Momentum Schadensbonus bei -1 = keinen Bonus SB 0 = 1W3 SB +1 = 1W4 SB +2 = 1W6 SB +3 = 1W8",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Zornhau, Aktiv (Zweihändig)"
+			}
+		},
+		{
+			"id": "schwerter:dreiWunder",
+			"name": "Drei Wunder",
+			"skill": "schwerter",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Der Gegner wird mit einer tödlichen Kombination aus dem gesamten Repertoire der Fechtkunst getroffen. Zunächst erfolgt ein mächtiger, vertikale Doppelhieb, der die Verteidigung des Gegners ins Wanken bringen soll. Dieser geht anschließend lückenlos in einen schnellen Stich durch die Parade des Gegners über. Die Abfolge wird beim Zurückziehen mit einem tückischen Schnitt veredelt.",
+			"text": "Der Kämpfer führt anstelle eines Kampfwurfes drei Kampfwürfe nacheinander aus. Dabei bricht jeder Fehlschlag die Kombination ab und das höchste Ergebnis gilt. Nach drei erfolgreiche Proben landet der Kämpfer unabhängig vom Ergebnis des Gegners einen sicheren Treffer und darf dreimal den Waffenschaden auswürfeln. Dabei sollte beachtet werden, dass von jedem der drei Würfelergebnisse der Rüstungsschutz abgerechnet wird. Diese Technik kann nicht eingesetzt werden, wenn der Kämpfer einen Nachteil bei seinem Angriff besitzt, außerdem sind Vorteile bedeutungslos. Bei dieser Technik kann keine Trefferzone anvisiert werden. Nach dem Einsatz der Technik verliert der Kämpfer erzwungenermaßen das Momentum.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Drei Wunder, aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "schwerter:duplieren",
+			"name": "Duplieren",
+			"skill": "schwerter",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Duplieren bezeichnet eine Technik, bei der der Kämpfer nach einem abgewehrten Schlag seine Klinge hinter die gegnerische Waffe windet und einen weiterer Hieb ausführt. So umgeht er die Verteidigung des Gegners.",
+			"text": "Wird ein Angriffswurf vom Gegner pariert, ohne das Schaden erlitten wird, kann der Kämpfer einen weiteren um +3 erhöhten Angriffswurf ausführen. Ist dieser erfolgreich, erhält der Gegner Schaden. Ist die Probe nicht erfolgreich, erhält der Kämpfer Schaden durch die Waffe des Gegners.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Duplieren, aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "schwerter:mordhau",
+			"name": "Mordhau",
+			"skill": "schwerter",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Das Schwert wird gedreht und bei der Klinge gegriffen, um mit Knauf und Stange einem Hammer gleich die Rüstung des Gegners zu durchbrechen.",
+			"text": "Der Kämpfer führt einen regulären Kampfwurf aus. Dabei wird im Erfolgsfall der variable Schaden der jeweiligen Waffe um eine Stufe reduziert (bspw. 1W8+3 auf 1W6+3). Dafür wird die Rüstung des Gegners reduziert. Schwere Rüstungen gelten für den Angriff als halbiert und mittlere Rüstungen verlieren ein Drittel ihrer Rüstungspunkte. Auf Leichte Rüstungen hat die Fertigkeit keine Auswirkungen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Schwerter.md",
+				"section": "Mordhau, aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "stangenwaffen:aufDistanzBringen",
+			"name": "Auf Distanz bringen",
+			"skill": "stangenwaffen",
+			"tier": 1,
+			"kind": "Passiv",
+			"hands": "",
+			"flavor": "Ein Gegner, der zu nahe an den Kämpfer herangerückt ist, wird durch einen energischen Schlag mit dem Schaft der Waffe auf eine günstigere Reichweite zurückgetrieben.",
+			"text": "Der Kämpfer führt einen regulären Kampfwurf gegen einen Gegner aus, der sich in einer näheren Reichweite als die Waffenreichweite des Kämpfers befindet. Anstelle Schaden auszuwürfeln, wird der Gegner im Erfolgsfall auf Waffenreichweite zurückgebracht.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Auf Distanz bringen, passiv"
+			}
+		},
+		{
+			"id": "stangenwaffen:auflaufen",
+			"name": "Auflaufen",
+			"skill": "stangenwaffen",
+			"tier": 1,
+			"kind": "Passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Das Ende der Waffe in den Erdboden gerammt, erwartet der Kämpfer den anstürmenden Feind, geduldig wie tödlich.",
+			"text": "Verteidigt der Kämpfer einen Sturmangriff oder einen anstürmenden Gegner, so darf er seine Verteidigungsprobe mit Vorteil würfeln. Bei einem Patt gewinnt er, darf seinem Gegner Schaden zufügen und erleidet im Gegenzug nur halbierten Schaden.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Auflaufen, Passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "stangenwaffen:hoherSpeer",
+			"name": "Hoher Speer",
+			"skill": "stangenwaffen",
+			"tier": 1,
+			"kind": "Aktiv oder passiv",
+			"hands": "Einhändig",
+			"flavor": "Der Speer wird die Spitze unten in der Faust gehalten und im Kampf über dem Kopf geschwungen, um mit mehr Kraft auf den Gegner einstechen zu können.",
+			"text": "Der Kämpfer verursacht in seiner Runde +2 zusätzlichen potenziellen Schaden. Dafür wird die Reichweite der Waffe auf Mittel herabgesetzt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Hoher Speer, Aktiv oder Passiv (Einhändig)"
+			}
+		},
+		{
+			"id": "stangenwaffen:falschesEnde",
+			"name": "Falsches Ende",
+			"skill": "stangenwaffen",
+			"tier": 1,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Der Gegner wird durch einen schnellen und unerwarteten Schlag mit dem Ende des Schafts am Kopf oder Helm getroffen.",
+			"text": "Der Kämpfer muss einen Kampfwurf, dessen Ergebnis um +1 erhöht wird, bestehen. Wird dabei erfolgreich Schaden verursacht, wird dieser halbiert. Dafür ist muss der Gegner eine Konstitutionsprobe ablegen. Ist diese erfolgreich, muss der Gegner die nächste Runde auf alle körperlichen Proben, inklusive Kampfproben, mit Nachteil würfeln. Fehlt der Gegner, erleidet dieser für 1W3 Runden diese Einschränkung. In beiden Fällen gilt der Gegner für die jeweilige Zeit als beeinträchtigt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Falsches Ende, Aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "stangenwaffen:kurzerGriff",
+			"name": "Kurzer Griff",
+			"skill": "stangenwaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "Zweihändig",
+			"flavor": "Die Waffe wird knapp unter dem Kopf gefasst, um mehr Kontrolle über den Stich zu erlangen.",
+			"text": "Der Kämpfer führt einen Kampfwurf mit Vorteil aus. Die Reichweite der Waffe gilt für den Kampf als mittel. Der verursachte Schaden wird halbiert. Visiert ein Kämpfer mit diesem Manöver eine Trefferzone an, so erhält der Gegner keinen Vorteil",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Kurzer Griff (Zweihändig)"
+			}
+		},
+		{
+			"id": "stangenwaffen:einhaken",
+			"name": "Einhaken",
+			"skill": "stangenwaffen",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "",
+			"flavor": "Nach einem Stich wird beim Zurückziehen mit dem Heft der Waffe die Beine des Gegners weggezogen, um diesen aus der Balance zu bringen oder zu Boden zu werfen.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Anstelle Schaden zu verursachen, wird der Gegner zu Boden geworfen. Greift der Kämpfer mit einer Stangenwaffe mit Haken an, darf er den Kampfwurf regulär durchführen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Einhaken, Aktiv"
+			}
+		},
+		{
+			"id": "stangenwaffen:lanzensturm",
+			"name": "Lanzensturm",
+			"skill": "stangenwaffen",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Der Kämpfer stürmt in einem Sturmangriff mit eingelegten Speer auf seinen Gegner zu, um die stählerne Spitze mit tödlicher Präzision in das Fleisch des Gegners zu bohren.",
+			"text": "Kann der Kämpfer mit einem Sturmangriff in gerader Linie erreichen, so darf er den variablen Schaden seiner Waffe um eine Stufe erhöhen (XW8+X auf XW10+X).",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Lanzensturm, Aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "stangenwaffen:wirbelwind",
+			"name": "Wirbelwind",
+			"skill": "stangenwaffen",
+			"tier": 2,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Die Waffe wird einem Wirbelsturm gleich einmal um den Körper geschwungen, um dann in einem mächtigen Schlag auf den Gegner herunterzufahren.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Verursacht der Angriff Schaden, erhält der Kämpfer einen Schadensbonus abhängig von seinem Schadensbonus. Nach einem Wirbelwind verliert der Kämpfer erzwungenermaßen das Momentum. Schadensbonus bei -1 = keinen Bonus - SB 0 = 1W3 - SB +1 = 1W4 - SB +2 = 1W6 - SB +3 = 1W8",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Wirbelwind, Aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "stangenwaffen:wurf",
+			"name": "Wurf",
+			"skill": "stangenwaffen",
+			"tier": 2,
+			"kind": "Passiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Der Gegner wird mit dem Schaft der Waffe ausgehebelt und über die Schulter geworfen.",
+			"text": "Der Kämpfer führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Anstelle Schaden zu verursachen, muss der Gegner einen Geschicklichkeitswurf mit Nachteil bestehen. Ist dieser erfolgreich, wird der Gegner in eine vom Kämpfer bestimmte Richtung hinter den Kämpfer geworfen, kann sich allerdings abrollen und aufstehen. Scheitert die Probe, bleibt er auf dem Boden liegen. Der Kämpfer darf sich in Folge der Fertigkeit umdrehen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Wurf, Passiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "stangenwaffen:aufspiessen",
+			"name": "Aufspießen",
+			"skill": "stangenwaffen",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Die Spitze der Waffe bohrt sich in das Fleisch des Gegners und fixiert ihn auf schmerzhafte Weise an Ort und Stelle.",
+			"text": "Verursacht der Kämpfer mit einem Schadenswurf eine Wunde, kann er sich entscheiden, einen weiteren Kampfwurf, dessen Ergebnis um +3 erhöht wird, gegen eine Konstitutionsprobe des Gegners durchzuführen. Triumphiert der Kämpfer, kann er den Gegner zu Boden werfen und mit seinem Speer fixieren. Scheitert der Kampfwurf, darf der Gegner einen freien Angriff ausführen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Aufspießen, Aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "stangenwaffen:drachenschlag",
+			"name": "Drachenschlag",
+			"skill": "stangenwaffen",
+			"tier": 3,
+			"kind": "Aktiv",
+			"hands": "Ein- und zweihändig",
+			"flavor": "Eine mächtige Drehattacke, die das Potential hat, mehrere Gegner im direkten Umkreis zu treffen, von den Füßen zu reißen oder zumindest Respekt einzuflößen.__",
+			"text": "Der Kämpfer führt einen Kampfwurf mit jeweils einem Erhöhung des Ergebnisses von +1 pro zusätzlichen Gegner im Umkreis aus. Falls der Angriff Schaden verursachen würde, darf für jeden Gegner individuell Schaden ausgewürfelt werden. Bei einem erfolgreichen Patt erhält der Kämpfer nur halbierten Schaden, die Gegner dagegen normalen Schaden. Verursacht der Kämpfer mit seinem Schaden eine Wunde, so wirft er zusätzlich den jeweiligen Gegner zu Boden.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Stangenwaffen.md",
+				"section": "Drachenschlag, Aktiv (Ein- und zweihändig)"
+			}
+		},
+		{
+			"id": "wurfwaffen:anlauf",
+			"name": "Anlauf",
+			"skill": "wurfwaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Mit ein paar schnellen Schritten gelingt es dem Schützen, seine gesamte Kraft in einen Wurf zu werfen.",
+			"text": "Der Schütze darf den variablen Schaden, den seine Waffe verursacht, um eine Stufe erhöhen (XW6+X auf XW8+X). Dafür muss er sich um seinen einfachen Geschwindigkeitswert auf den Gegner zubewegen. Die Kampftechnik lässt sich mit anderen Kampftechniken kombinieren, bei denen sich der Schütze auf den Gegner zubewegt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Anlauf"
+			}
+		},
+		{
+			"id": "wurfwaffen:ballistischerWurf",
+			"name": "Ballistischer Wurf",
+			"skill": "wurfwaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Durch die Einberechnung eines Winkels wirft der Schütze seine Waffe nicht horizontal auf den Gegner, sondern lässt das Geschütz in einem leichten Bogen fliegen.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +1 erhöht wird. Dabei ist die maximale Reichweite seiner Waffe um 50 Prozent erhöht. Der variable Schaden der Waffe wird für den Angriff um eine Stufe reduziert (XW6+X auf XW4+X).",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Ballistischer Wurf"
+			}
+		},
+		{
+			"id": "wurfwaffen:flankieren",
+			"name": "Flankieren",
+			"skill": "wurfwaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Die Schwachstellen des Ziels werden optimal ausgenutzt, in dem von einer Seite angegriffen wird, auf der das Ziel keine Sicht auf den Schützen hat.",
+			"text": "Greift der Schütze einen Gegner von hinten, oben oder von der Seite an, so erhält er einen Vorteil auf den Kampfwurf. Der Schütze erhält zwei nicht kumulative Vorteile, wenn er noch nicht entdeckt wurde. Der Gegner kann dem Angriff nicht ausweichen, auch wenn er sich darauf vorbereitet.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Flankieren"
+			}
+		},
+		{
+			"id": "wurfwaffen:plaenkeln",
+			"name": "Plänkeln",
+			"skill": "wurfwaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "",
+			"flavor": "Nach dem erfolgten Wurf zieht sich der Schütze zurück, im Idealfall weg vom Gegner.",
+			"text": "Der Schütze führt eine reguläre Kampfprobe aus. Danach kann er sich um seine halbierte Geschwindigkeit bewegen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Plänkeln"
+			}
+		},
+		{
+			"id": "wurfwaffen:verdeckterWurf",
+			"name": "Verdeckter Wurf",
+			"skill": "wurfwaffen",
+			"tier": 1,
+			"kind": "",
+			"hands": "Wurfdolch oder kleiner",
+			"flavor": "Verdeckt und aus dem Handgelenk wird eine kleine Wurfwaffe auf den ahnungslosen Gegner geworfen.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +1 erhöht wird. Der Gegner kann dem Geschoss nicht ausweichen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Verdeckter Wurf (Wurfdolch oder kleiner)"
+			}
+		},
+		{
+			"id": "wurfwaffen:berittenerWurf",
+			"name": "Berittener Wurf",
+			"skill": "wurfwaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Indem er sich perfekt mit der Bewegung des Pferdes unter ihm synchronisiert, hat der Schütze es gelernt, selbst während des unstetesten Ritt seine Waffe präzise und verlässlich ans Ziel zu bringen.",
+			"text": "Dem Schützen ist es möglich, Wurfwaffen aller Art ohne Malus zu Pferd abzufeuern, auch wenn sich dieses bewegt. Der Kämpfer kann nur frontal in einem 180 Grad Winkel ohne Malus werfen, es sei denn, er besitzt entsprechende Kampftechniken.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Berittener Wurf"
+			}
+		},
+		{
+			"id": "wurfwaffen:schildwurf",
+			"name": "Schildwurf",
+			"skill": "wurfwaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "Wurfspeere",
+			"flavor": "Der Speer des Schützen bohrt sich tief in den Schild des Gegners und behindert dessen Bewegung.",
+			"text": "Der Schütze führt eine reguläre Kampfprobe aus. Ist diese erfolgreich, verursacht der Angriff keinen Schaden. Stattdessen gilt der Schild des Gegners nun als unbrauchbar. Der defensive Bonus des Schilds wird ignoriert und der reguläre Bonus im Kampf umgekehrt (+4 auf -4), bis der Speer durch eine Geschicklichkeits-Probe entfernt wurde. Der Gegner kann den Schild fallen lassen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Schildwurf (Wurfspeere)"
+			}
+		},
+		{
+			"id": "wurfwaffen:schwachstelleAnvisieren",
+			"name": "Schwachstelle anvisieren",
+			"skill": "wurfwaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "Kleiner als Wurfdolch",
+			"flavor": "Durch eine geschickte Analyse der Verteidigung des Gegners kann der Schütze die Schwachstellen in dessen Rüstung ausmachen. Diese sind oft gerade groß genug, dass kleine Wurfwaffen dort einen Weg finden.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Der Rüstungsschutz des Gegners wird halbiert, falls Schaden verursacht wird.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Schwachstelle anvisieren (Kleiner als Wurfdolch)"
+			}
+		},
+		{
+			"id": "wurfwaffen:stoppen",
+			"name": "Stoppen",
+			"skill": "wurfwaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Der Gegner wird von einem wuchtigen und präzisen Wurf in seiner Bewegung unterbrochen und gestoppt.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +2 erhöht wird. Wird der Gegner durch den Wurf getroffen, so kann er sich in seiner folgenden Aktion nicht bewegen. Dies kann entweder in derselben Runde oder der nächsten geschehen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Stoppen"
+			}
+		},
+		{
+			"id": "wurfwaffen:wurfImKampf",
+			"name": "Wurf im Kampf",
+			"skill": "wurfwaffen",
+			"tier": 2,
+			"kind": "",
+			"hands": "",
+			"flavor": "Durch eine geschickte Bewegung löst sich der Schütze gerade soweit und so lange aus einem Kampf, um seine Waffe auf den Gegner zu schleudern.",
+			"text": "Der Schütze kann im Nahkampf eine Waffe werfen. Er muss diese dabei in der Hand tragen oder eine Hand freihaben, um sie zu ziehen. In letzteren Falle müssen ggf. die Mali für das Benutzen der schwachen Hand eingerechnet werden. Der Wurf ersetzt die normale Kampfaktion und verbraucht eine Aktion.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Wurf im Kampf"
+			}
+		},
+		{
+			"id": "wurfwaffen:entwaffnen",
+			"name": "Entwaffnen",
+			"skill": "wurfwaffen",
+			"tier": 3,
+			"kind": "",
+			"hands": "Außer Wurfspeere",
+			"flavor": "Ein perfekt gezielter Schuss auf die Hand des Gegners schlägt diesem die Waffe aus der Hand.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +3 erhöht wird. Der Wurf gilt als Angriff, der die Trefferzone Arm anvisiert. Ist der Kampfwurf erfolgreich, erleidet der Gegner keinen Schaden. Stattdessen muss er einen Geschick- oder Stärkeprobe mit Nachteil bestehen. Bei Misserfolg lässt er alle Gegenstände oder Waffen in dieser Hand fallen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Entwaffnen (Außer Wurfspeere)"
+			}
+		},
+		{
+			"id": "wurfwaffen:machtwurf",
+			"name": "Machtwurf",
+			"skill": "wurfwaffen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Mit aller Macht wird die Waffe auf den Gegner geschleudert, so dass sie ihn von den Füßen fegt.",
+			"text": "Der Schütze führt einen Kampfwurf aus, dessen Ergebnis um +3 erhöht wird. Ist die Kampfprobe erfolgreich, wird der Gegner zu Boden geworfen.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Machtwurf"
+			}
+		},
+		{
+			"id": "wurfwaffen:marraskanischerSchuss",
+			"name": "Marraskanischer Schuss",
+			"skill": "wurfwaffen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Im vollen Galopp vermag es der Schütze, nach Art der Marraskaner seinen Körper zu drehen und einen Schuss nach hinten abzufeuern.",
+			"text": "Dem Schütze ist es möglich, zu Pferd an einem beliebigen Punkt inmitten der Bewegung einen Angriff auszuführen. Er kann dabei die komplette Bewegungsreichweite des Pferdes zurücklegen. Der Kampfwurf ist erschwert, wenn der Schütze nicht über eine entsprechende Kampftechnik verfügt.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Marraskanischer Schuss"
+			}
+		},
+		{
+			"id": "wurfwaffen:sturmwurf",
+			"name": "Sturmwurf",
+			"skill": "wurfwaffen",
+			"tier": 3,
+			"kind": "",
+			"hands": "",
+			"flavor": "Zu Beginn des Angriffs schleudert der Schütze seine Waffe, ehe er in einer flüssigen Bewegung seine Zweitwaffe zieht und sich auf den Gegner stürzt.",
+			"text": "Der Schütze kann sich entscheiden, vor dem Kampfmanöver Sturmangriff einen zusätzlichen Wurfangriff durchzuführen. Dazu er führt vor dem Sturmangriff einen Kampfwurf, Kampfwurf, dessen Ergebnis um +3 erhöht wird, mit der Wurfwaffe durch und führt diesen Schuss regulär aus. Im Folgenden darf der Schütze auf eine griffbereite Waffe wechseln und den Kampf initiieren.",
+			"source": {
+				"file": "Charaktererstellung/Kampftechniken/Kampftechniken_Wurfwaffen.md",
+				"section": "Sturmwurf"
+			}
+		}
+	],
+	"styles": [
+		{
+			"id": "kampfstilDesWolfes",
+			"name": "Kampfstil des Wolfes",
+			"kind": "melee",
+			"text": "Der Kämpfer tänzelt um seinen Gegner und verunsichert ihn durch stetige Bewegung. Er verunsichert den Gegner mit schnellen Vorstößen und greift dann selbst im richtigen Moment aus der idealen Position an. Dieser Stil ermöglicht es Kämpfern, sich nach einem erfolgreichen Treffer an einer beliebigen Position um oder zwischen seinen Gegnern zu positionieren. Der Kämpfer kann so in eine vorteilhafte Position gelangen.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil des Wolfes"
+			}
+		},
+		{
+			"id": "kampfstilDesHirsches",
+			"name": "Kampfstil des Hirsches",
+			"kind": "melee",
+			"text": "Der Kämpfer drängt mit aller Macht auf seinen Gegner ein und zwingt ihn dazu, Grund um Grund aufzugeben. Der Stil ermöglicht es, mit jedem Treffer den Gegner einen Schritt in eine beliebige Richtung zu drängen. Bei einem kritischen Treffer stolpert der Gegner fünf Schritte in eine beliebige Richtung.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil des Hirsches"
+			}
+		},
+		{
+			"id": "kampfstilDerSchlange",
+			"name": "Kampfstil der Schlange",
+			"kind": "melee",
+			"text": "Der Kämpfer traktiert seinen Gegner mit blitzschnellen Angriffen, nur um sich anschließend geschickt aus dem Kampf zu lösen. Dieser Stil ermöglicht es dem Kämpfer, nach jeder Kampfrunde den Kampf mit der Hälfte seiner maximalen Bewegungsreichweite zu verlassen.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil der Schlange"
+			}
+		},
+		{
+			"id": "kampfstilDesKraken",
+			"name": "Kampfstil des Kraken",
+			"kind": "melee",
+			"text": "Der Kämpfer antizipiert jeden Schachzug des Gegners und setzt ihn mit einer Mischung aus taktischen Bewegungen und geschickten Paraden matt. Dieser Stil ermöglicht es dem Kämpfer, seinen Gegner in beliebig vielen Runden Bewegungsaktionen und Momentum zu verwehren. Der Kämpfer kann also ungeachtet des Geschehens das Momentum behalten. Dafür ist der Schaden des Kämpfers in diesen Runden halbiert.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil des Kraken"
+			}
+		},
+		{
+			"id": "kampfstilDesAdlers",
+			"name": "Kampfstil des Adlers",
+			"kind": "melee",
+			"text": "Der Kämpfer beobachtet jede Bewegung seines Kontrahenten und prägt sich Bewegungsablauf und Schwachstellen genau ein, um entscheidenden Moment loszuschlagen. Dieser Kampfstil ermöglicht es dem Kämpfer, in Runden, in denen er sich verteidigt, den Gegner auszurechnen. Er spart dabei Punkte an, die er in einer beliebigen Runde ausgeben kann. In dieser darf er das Momentum ergreifen und erhält für jeden Punkt +2 auf seine Kampfprobe und +1 auf den verursachten Schaden. Wird der Kämpfer verletzt, während er sich verteidigt, werden die angesparten Punkte zurückgesetzt.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil des Adlers"
+			}
+		},
+		{
+			"id": "kampfstilDerWildsau",
+			"name": "Kampfstil der Wildsau",
+			"kind": "melee",
+			"text": "Der Kämpfer kämpft wild, unorthodox und unberechenbar. Seine Körperhaltung ermöglicht es ihm, sich in jeder Situation auf den Gegner zu werfen. Der Kampfstil ermöglicht es dem Kämpfer, in jeder beliebigen Runde ohne Manöver in den Ringkampf zu wechseln. Dort kämpft er immer aus einer vorteilhaften Position heraus.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil der Wildsau"
+			}
+		},
+		{
+			"id": "kampfstilDerSchildkroete",
+			"name": "Kampfstil der Schildkröte",
+			"kind": "melee",
+			"text": "Der Kämpfer bleibt abwartend und verharrt in seiner Hut, immer darauf lauernd, dass sein Gegner einen Fehler begeht. Dieser Stil ermöglicht es dem Kämpfer, beim erfolgreichen Verteidigen dem Gegner halben Schaden zuzufügen. Bei kritischen Verteidigungen oder einem Patzer des Gegners fügt er sogar vollen Schaden zu. Solange der Kämpfer nicht das Momentum innehat, kann er Mali wegen Überzahl, Positionierung oder Bewaffnung ignorieren.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil der Schildkröte"
+			}
+		},
+		{
+			"id": "kampfstilDesStieres",
+			"name": "Kampfstil des Stieres",
+			"kind": "melee",
+			"text": "Der Kämpfer wirft sich ungestüm und rücksichtslos in den Kampf. Dabei setzt er alles auf den ersten Zusammenprall. Dieser Stil gibt dem Kämpfer einen Vorteil in der ersten Runde des Kampfes. Er erhält automatisch das Momentum, auch wenn er den Kampf nicht initiiert hat. Zudem darf er bei einem erfolgreichen Angriff den Schaden verdoppeln. Muss der Gegner daraufhin eine Probe ablegen, um auf den Beinen zu bleiben, wird diese mit Nachteil gewürfelt. Verteidigt sich der Gegner erfolgreich und vermeidet so Schaden trotz erfolgreichem Angriffswurf, darf der Kämpfer eine Stärke-Gegenprobe initiieren, um den Gegner zu Boden zu werfen. Erleidet der Kämpfer in der ersten Runde Schaden, wird dieser ebenfalls verdoppelt.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil des Stieres"
+			}
+		},
+		{
+			"id": "kampfstilDesWindhundes",
+			"name": "Kampfstil des Windhundes",
+			"kind": "ranged",
+			"text": "Der Schütze kämpft agil und bleibt ständig in Bewegung. Er hat es perfektioniert, seine Waffe im Laufen abzufeuern und dabei den genauen Moment für eine stabile Schussbahn abzupassen. Durch diesen Stil kann ein Kämpfer sich nach einem Fernkampfangriff um seine volle Bewegungsreichweite fortbewegen, anstelle seiner halben.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil des Windhundes"
+			}
+		},
+		{
+			"id": "kampfstilDesHabichts",
+			"name": "Kampfstil des Habichts",
+			"kind": "ranged",
+			"text": "Der Schütze kennt seinen Körper in und auswendig und kann sämtliche seiner Sinne und Körperfunktionen auf den einen Schuss ausrichten. Somit ist er ein Meister darin, sein Ziel auf maximale Distanz zu treffen. Er beherrscht es, zwischen zwei Herzschlägen zu schießen und Flugkurve und Windeinfluss bis ins kleinste Detail zu berechnen. Durch den Kampfstil ist es möglich, bei jeder Waffe jede der Distanzstufen um das Anderthalbfache zu erhöhen. Etwaige Kampftechniken, die die Reichweite erhöhen, werden nach dem Kampfstil miteinberechnet.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil des Habichts"
+			}
+		},
+		{
+			"id": "kampfstilDesKranichs",
+			"name": "Kampfstil des Kranichs",
+			"kind": "ranged",
+			"text": "Jede Bewegung des Schützen gleitet wie der Fluss des Wassers, routiniert wie grazile. Die flüssigen Bewegungen und absolute Körperkontrolle ermöglichen es, repetitive Bewegungen in einer ungekannten Geschwindigkeit durchzuführen. Der Kampfstil verringert die Nachladezeit aller Fernkampfwaffen um eine Runde.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil des Kranichs"
+			}
+		},
+		{
+			"id": "kampfstilDesLindwurms",
+			"name": "Kampfstil des Lindwurms",
+			"kind": "ranged",
+			"text": "Der Kämpfer hat den Übergang zwischen Nahkampf und Fernkampf perfektioniert und zu einer tödlichen Symmetrie vereint. Mit diesem Schussstil kann ein Kämpfer, sobald er angegriffen wird, noch einen Schuss mit seiner Fernkampfwaffe auf den herausgeforderten Gegner abgeben. Danach zieht er seine Nahkampfwaffe und geht in den Kampf.",
+			"source": {
+				"file": "Charaktererstellung/Kampfstile.md",
+				"section": "Kampfstil des Lindwurms"
+			}
+		}
+	]
+}

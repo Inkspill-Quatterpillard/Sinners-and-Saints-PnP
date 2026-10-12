@@ -39,6 +39,10 @@ export interface Basis {
 	};
 	/** Gewählte Kunststücke. */
 	stunts: string[];
+	/** Gewählte Kampftechniken (IDs „Fertigkeit:Name“). */
+	techniques: string[];
+	/** Gewählter Kampfstil. */
+	style?: string;
 	characteristics: {
 		mode?: CharacteristicMode;
 		/** Frei gewählte bzw. eingetragene Charakteristik je Platz. */
@@ -107,6 +111,7 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			attributes: { rolls: {}, assignment: {} },
 			origin: {},
 			stunts: [],
+			techniques: [],
 			characteristics: { picks: {}, rolls: {}, rerolledSlots: {} },
 			age: { youngMalus: {}, maturity: {}, atrophia: {}, senility: {} },
 			profession: { name: '', skills: [], heroSlots: {} },
