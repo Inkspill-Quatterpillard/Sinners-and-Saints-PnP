@@ -2,7 +2,6 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import Summary from '$lib/components/Summary.svelte';
-	import SkillTable from '$lib/components/SkillTable.svelte';
 	import AttributesStep from '$lib/components/steps/AttributesStep.svelte';
 	import OptionsStep from '$lib/components/steps/OptionsStep.svelte';
 	import SpeciesStep from '$lib/components/steps/SpeciesStep.svelte';
@@ -18,7 +17,9 @@
 	import EquipmentStep from '$lib/components/steps/EquipmentStep.svelte';
 	import BackgroundStep from '$lib/components/steps/BackgroundStep.svelte';
 	import type { StepId } from '$lib/engine';
+	import { downloadCharacter } from '$lib/download';
 	import { CharacterSession } from '$lib/session.svelte';
+	import { saveCharacter } from '$lib/storage/characterStore';
 	import { t } from '$lib/texts';
 	import type { Component } from 'svelte';
 
@@ -45,6 +46,14 @@
 
 	let current = $state<StepId>('options');
 	const currentIndex = $derived(view ? view.steps.findIndex((s) => s.id === current) : -1);
+	// Der am weitesten erreichte Schritt dieser Sitzung, damit man nach einem Blick zurück wieder hinspringen kann.
+	let furthest = $state(0);
+	$effect(() => {
+		if (currentIndex > furthest) furthest = currentIndex;
+	});
+	const jumpTarget = $derived(view && currentIndex < furthest ? view.steps[furthest] : undefined);
+	const isLast = $derived(view ? currentIndex === view.steps.length - 1 : false);
+	let saved = $state(false);
 	const openSteps = $derived(view ? view.steps.filter((s) => s.status !== 'valid') : []);
 
 	$effect(() => {
@@ -57,6 +66,13 @@
 		if (next) current = next.id;
 	}
 
+	async function save() {
+		if (!session.character) return;
+		await saveCharacter(session.character);
+		saved = true;
+		setTimeout(() => (saved = false), 2000);
+	}
+
 	async function finish() {
 		dispatch({ type: 'finishCreation' });
 		await goto(`/charakter/${page.params.id}/bogen`);
@@ -65,7 +81,10 @@
 
 <p class="top">
 	<a href="/">← {t.backToList}</a>
-	{#if session.canUndo}<button onclick={session.undo}>{t.undo}</button>{/if}
+	<span class="history">
+		<button onclick={session.undo} disabled={!session.canUndo}>{t.undo}</button>
+		<button onclick={session.redo} disabled={!session.canRedo}>{t.redo}</button>
+	</span>
 </p>
 
 {#if session.character === undefined}
@@ -106,6 +125,9 @@
 			</button>
 		{/each}
 	</nav>
+	{#if jumpTarget}
+		<p class="jump"><button onclick={() => (current = jumpTarget.id)}>{t.jumpTo(t.steps[jumpTarget.id])}</button></p>
+	{/if}
 
 	<div class="layout">
 		<section class="step-body">
@@ -119,16 +141,18 @@
 			{/if}
 			<div class="pager">
 				<button onclick={() => go(-1)} disabled={currentIndex <= 0}>{t.previousStep}</button>
-				<button class="primary" onclick={() => go(1)} disabled={currentIndex >= view.steps.length - 1}>{t.nextStep}</button>
+				{#if isLast}
+					<span class="history">
+						<button onclick={() => session.character && downloadCharacter(session.character)}>{t.export}</button>
+						<button class="primary" onclick={save}>{saved ? `${t.saved} ✓` : t.save}</button>
+					</span>
+				{:else}
+					<button class="primary" onclick={() => go(1)}>{t.nextStep}</button>
+				{/if}
 			</div>
 		</section>
 		<Summary {view} />
 	</div>
-
-	<details class="all-skills">
-		<summary>{t.skills.all}</summary>
-		<SkillTable skills={view.skills} {dispatch} />
-	</details>
 {/if}
 
 <style>
@@ -196,12 +220,15 @@
 		justify-content: space-between;
 		margin-top: 1.5rem;
 	}
-	.all-skills {
-		margin-top: 1.5rem;
+	.history {
+		display: flex;
+		gap: 0.4rem;
 	}
-	.all-skills summary {
-		cursor: pointer;
-		font-weight: 600;
+	.history button:disabled {
+		opacity: 0.4;
+	}
+	.jump {
+		margin: -0.4rem 0 1rem;
 	}
 	.issue {
 		padding: 0.4rem 0.7rem;

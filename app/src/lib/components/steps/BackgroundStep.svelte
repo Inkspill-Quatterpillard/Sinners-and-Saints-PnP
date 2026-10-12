@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { autosize } from '$lib/autosize';
 	import { rollDice } from '$lib/dice';
 	import type { Action, BackgroundField, CharacterView } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
@@ -37,7 +38,8 @@
 			</select>
 			<button type="button" onclick={() => set(field, pick(list))}>{t.background.rollW10(list.length)}</button>
 		</span>
-		<textarea rows="2" value={b[field] ?? ''} oninput={(e) => set(field, e.currentTarget.value)}></textarea>
+		<textarea rows="2" use:autosize={b[field] ?? ''} value={b[field] ?? ''} oninput={(e) => set(field, e.currentTarget.value)}
+		></textarea>
 	</label>
 {/snippet}
 
@@ -85,7 +87,11 @@
 	</label>
 	<label class="field">
 		<span>{t.background.description}</span>
-		<textarea rows="3" value={b.description ?? ''} oninput={(e) => set('description', e.currentTarget.value)}></textarea>
+		<textarea
+			rows="3"
+			use:autosize={b.description ?? ''}
+			value={b.description ?? ''}
+			oninput={(e) => set('description', e.currentTarget.value)}></textarea>
 	</label>
 </section>
 
@@ -123,6 +129,7 @@
 					rows="2"
 					placeholder={t.background.reason}
 					aria-label={t.background.reason}
+					use:autosize={person.reason ?? ''}
 					value={person.reason ?? ''}
 					oninput={(e) => dispatch({ type: 'updatePerson', index, person: { reason: e.currentTarget.value } })}></textarea>
 				<button
@@ -145,7 +152,8 @@
 	{@render tableField('possession', t.background.possession, tables.possessions)}
 	<label class="field">
 		<span>{t.background.traits}</span>
-		<textarea rows="3" value={b.traits ?? ''} oninput={(e) => set('traits', e.currentTarget.value)}></textarea>
+		<textarea rows="3" use:autosize={b.traits ?? ''} value={b.traits ?? ''} oninput={(e) => set('traits', e.currentTarget.value)}
+		></textarea>
 	</label>
 	<label class="field">
 		<span>{t.background.birthplace}</span>

@@ -17,6 +17,11 @@ export const t = {
 		less: (label: string) => `${label} −1`
 	},
 	undo: '↶ Rückgängig',
+	redo: '↷ Wiederherstellen',
+	save: 'Speichern',
+	saved: 'Gespeichert',
+	export: 'Exportieren',
+	jumpTo: (step: string) => `Zurück zu ${step} →`,
 	status: {
 		inCreation: 'In Erstellung',
 		finished: 'Fertig'
@@ -100,7 +105,9 @@ export const t = {
 		namePlaceholder: 'z. B. Söldnerin, Schreiber, Kräuterkundige',
 		skills: (n: number, of: number) => `Professionsfertigkeiten (${n} von ${of})`,
 		skillsHint: (bonus: number) => `Jede Professionsfertigkeit erhält +${bonus}. Die Zahl zeigt den aktuellen Wert.`,
-		specHint: (names: string) => `Für ${names} lege zuerst unter „Alle Fertigkeiten“ eine Spezialisierung an.`,
+		specTitle: 'Spezialisierungen',
+		specHint:
+			'Manche Fertigkeiten gibt es nur mit Spezialisierung, z. B. Handwerk (Schmied). Lege sie hier an, dann kannst du sie oben wählen.',
 		status: 'Status',
 		statusHint: (start: number) =>
 			`Der Status startet bei ${start}. Würfle 1W6 für den Bonus oder Malus deiner Profession: 1: −3, 2: −2, 3: −1, 4: +1, 5: +2, 6: +3.`,

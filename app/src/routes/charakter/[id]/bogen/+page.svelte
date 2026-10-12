@@ -63,7 +63,10 @@
 
 <p class="top">
 	<a href="/">← {t.backToList}</a>
-	{#if session.canUndo}<button onclick={session.undo}>{t.undo}</button>{/if}
+	<span class="history">
+		<button onclick={session.undo} disabled={!session.canUndo}>{t.undo}</button>
+		<button onclick={session.redo} disabled={!session.canRedo}>{t.redo}</button>
+	</span>
 </p>
 
 {#if session.character === undefined}
@@ -347,5 +350,12 @@
 		text-align: right !important;
 		font-variant-numeric: tabular-nums;
 		width: 3rem;
+	}
+	.history {
+		display: flex;
+		gap: 0.4rem;
+	}
+	.history button:disabled {
+		opacity: 0.4;
 	}
 </style>

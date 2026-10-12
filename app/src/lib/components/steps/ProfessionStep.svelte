@@ -1,5 +1,6 @@
 <script lang="ts">
 	import DiceInput from '$lib/components/DiceInput.svelte';
+	import SpecializationEditor from '$lib/components/SpecializationEditor.svelte';
 	import type { Action, CharacterView } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
 	import { t } from '$lib/texts';
@@ -42,10 +43,15 @@
 			</label>
 		{/each}
 	</div>
-	{#if needsSpec.length}
-		<p class="hint">{t.profession.specHint(needsSpec.map((s) => s.name).join(', '))}</p>
-	{/if}
 </section>
+
+{#if needsSpec.length}
+	<section>
+		<h3>{t.profession.specTitle}</h3>
+		<p class="hint">{t.profession.specHint}</p>
+		<SpecializationEditor skills={view.skills} {dispatch} />
+	</section>
+{/if}
 
 <section>
 	<h3>{t.profession.status}</h3>
@@ -56,6 +62,7 @@
 		sides={ruleData.profession.statusDie}
 		roll={p.statusRoll}
 		onroll={(roll) => dispatch({ type: 'rollStatus', roll })}
+		onreset={() => dispatch({ type: 'rollStatus', roll: undefined })}
 	/>
 	{#if p.statusModifier !== undefined}
 		<p>{t.profession.statusResult(sign(p.statusModifier), view.socialStatus.value)}</p>

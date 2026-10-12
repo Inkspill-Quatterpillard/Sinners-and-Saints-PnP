@@ -4,11 +4,11 @@
 		computeView,
 		createCharacter,
 		duplicateCharacter,
-		exportCharacter,
 		parseCharacterFile,
 		type Character,
 		type CharacterView
 	} from '$lib/engine';
+	import { downloadCharacter } from '$lib/download';
 	import { ruleData } from '$lib/ruleData';
 	import { deleteCharacter, listCharacters, loadCharacter, saveCharacter } from '$lib/storage/characterStore';
 	import { t } from '$lib/texts';
@@ -40,16 +40,6 @@
 		if (!confirm(t.list.confirmDelete(c.name || t.unnamed))) return;
 		await deleteCharacter(c.id);
 		await refresh();
-	}
-
-	function download(c: Character) {
-		const blob = new Blob([exportCharacter(c)], { type: 'application/json' });
-		const url = URL.createObjectURL(blob);
-		const a = document.createElement('a');
-		a.href = url;
-		a.download = `${(c.basis.name || 'charakter').replace(/[^\p{L}\p{N}_-]+/gu, '_')}.sns.json`;
-		a.click();
-		URL.revokeObjectURL(url);
 	}
 
 	async function importFile(e: Event) {
@@ -91,7 +81,7 @@
 					{#if view.ruleDataChanged}<span class="warn">{t.list.ruleDataChanged}</span>{/if}
 				</div>
 				<div class="actions">
-					<button onclick={() => download(character)}>{t.list.export}</button>
+					<button onclick={() => downloadCharacter(character)}>{t.list.export}</button>
 					<button onclick={() => duplicate(character)}>{t.list.duplicate}</button>
 					<button class="danger" onclick={() => remove(view)}>{t.list.delete}</button>
 				</div>

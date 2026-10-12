@@ -54,6 +54,7 @@
 					sides={rules.die}
 					roll={slot.roll}
 					onroll={(roll) => dispatch({ type: 'rollCharacteristic', slot: slot.index, roll: unique(roll, slot.index) })}
+					onreset={() => dispatch({ type: 'rollCharacteristic', slot: slot.index, roll: undefined })}
 				/>
 				{#if slot.roll && step.rerollAvailable && !slot.duplicate}
 					<button
