@@ -133,7 +133,7 @@ export function evaluateAge(d: Derivation): AgeStepView {
 		} else if (distributed < required) {
 			status = worst(status, 'open');
 		}
-		d.luckAdvantage = true;
+		d.luckAdvantages += 1;
 		if (stage === 'child') d.secondary.luck.push({ source, value: rules.childLuckBonus });
 	}
 

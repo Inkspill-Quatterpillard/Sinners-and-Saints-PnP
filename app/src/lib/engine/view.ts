@@ -1,12 +1,13 @@
 import type { AttributeId, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character, CharacterStatus } from './character';
-import { createDerivation, effective, type Derivation, type Issue, type Modifier, type StepResult } from './derivation';
+import { createDerivation, effective, type Derivation, type Issue, type Modifier, type ResourceDef, type StepResult } from './derivation';
 import { attributeStepView, evaluateAttributes, type AttributeStepView } from './steps/attributes';
 import { evaluateOptions, resolveOptions } from './steps/options';
 import { evaluateSpecies, type SpeciesStepView } from './steps/species';
 import { evaluateSecondary, type LuckView, type SecondaryValue } from './steps/secondary';
 import { evaluateSkills, type SkillView } from './steps/skills';
 import { evaluateAge, evaluateSenility, type AgeStepView, type SenilityView } from './steps/age';
+import { evaluateReligion, type ReligionStepView } from './steps/religion';
 import { evaluateInterests, type InterestsStepView } from './steps/interests';
 import { evaluateProfession, warnLoweredHeroSkills, type ProfessionStepView, type StatusView } from './steps/profession';
 
@@ -37,6 +38,8 @@ export interface CharacterView {
 	/** Der Statuswert (sozialer Rang), nicht zu verwechseln mit `status` (Stand der Erstellung). */
 	socialStatus: StatusView;
 	interestsStep: InterestsStepView;
+	religionStep: ReligionStepView;
+	resources: ResourceDef[];
 	characteristicAllowance: Derivation['characteristicAllowance'];
 }
 
@@ -48,6 +51,7 @@ export function computeView(character: Character, ruleData: RuleData): Character
 	evaluateAttributes(d);
 	const speciesStep = evaluateSpecies(d);
 	const ageStep = evaluateAge(d);
+	const religionStep = evaluateReligion(d);
 	const professionStep = evaluateProfession(d);
 	const interestsStep = evaluateInterests(d);
 	const { secondary, luck } = evaluateSecondary(d);
@@ -75,6 +79,8 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		senility,
 		professionStep,
 		interestsStep,
+		religionStep,
+		resources: d.resources,
 		socialStatus: {
 			base: d.status.base,
 			modifiers: d.status.modifiers,

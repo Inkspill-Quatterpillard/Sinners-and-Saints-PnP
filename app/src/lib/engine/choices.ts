@@ -1,6 +1,6 @@
 import type { AttributeId, Effect, TraitDef } from '$lib/ruleData';
 import type { Basis } from './character';
-import { effective, type Derivation, type StepId, type StepStatus } from './derivation';
+import { addSkillBonus, effective, skillKeyExists, type Derivation, type StepId, type StepStatus } from './derivation';
 import { messages } from './messages';
 
 /**
@@ -11,16 +11,20 @@ import { messages } from './messages';
 export interface ChoiceState {
 	option?: string;
 	attribute?: AttributeId;
+	/** Gewählte Fertigkeit (Schlüssel) bei Effekten wie „+2 auf eine beliebige Fertigkeit“. */
+	skill?: string;
 }
 
 export type ChoiceAction =
 	| { type: 'chooseTraitOption'; trait: string; option: string }
-	| { type: 'chooseTraitAttribute'; trait: string; attribute: AttributeId };
+	| { type: 'chooseTraitAttribute'; trait: string; attribute: AttributeId }
+	| { type: 'chooseTraitSkill'; trait: string; skill: string };
 
 export function applyChoiceAction(basis: Basis, action: ChoiceAction): void {
 	const state = (basis.choices[action.trait] ??= {});
 	if (action.type === 'chooseTraitOption') state.option = action.option;
-	else state.attribute = action.attribute;
+	else if (action.type === 'chooseTraitAttribute') state.attribute = action.attribute;
+	else state.skill = action.skill;
 }
 
 export interface TraitView {
@@ -32,6 +36,8 @@ export interface TraitView {
 	/** Bei Gleichstand (oder ungültiger Wahl) für „höchstes Attribut“: die Attribute, zwischen denen der Spieler wählt. */
 	tiedAttributes?: AttributeId[];
 	chosenAttribute?: AttributeId;
+	/** Bei „Bonus auf eine beliebige Fertigkeit“: ob Heldenfertigkeiten erlaubt sind und welche gewählt ist. */
+	skillChoice?: { includeHeroSkills: boolean; value: number; chosen?: string };
 	/** Gesetzt, wenn die getroffene Wahl ungültig ist. */
 	invalid?: string;
 }
@@ -106,6 +112,28 @@ function applyEffect(
 		case 'meditationDie':
 			d.meditationDie = effect.sides;
 			return 'valid';
+		case 'luckAdvantage':
+			d.luckAdvantages += 1;
+			return 'valid';
+		case 'status':
+			d.status.modifiers.push({ source: trait.name, value: effect.value });
+			return 'valid';
+		case 'skill':
+			addSkillBonus(d, effect.skill, { source: trait.name, value: effect.value });
+			return 'valid';
+		case 'resource':
+			d.resources.push({ id: effect.id, name: effect.name, per: effect.per, uses: effect.uses, source: trait.name });
+			return 'valid';
+		case 'skillChoice': {
+			view.skillChoice = { includeHeroSkills: effect.includeHeroSkills, value: effect.value, chosen: choice.skill };
+			if (!choice.skill) return 'open';
+			if (!skillKeyExists(d, choice.skill, effect.includeHeroSkills)) {
+				view.invalid = messages.skillChoiceInvalid(trait.name, choice.skill, effect.includeHeroSkills);
+				return 'invalid';
+			}
+			addSkillBonus(d, choice.skill, { source: trait.name, value: effect.value });
+			return 'valid';
+		}
 		case 'highestAttribute': {
 			const highest = highestAttributes(d);
 			if (!highest) return 'open';

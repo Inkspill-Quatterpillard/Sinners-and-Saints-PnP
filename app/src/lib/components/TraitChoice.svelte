@@ -1,8 +1,21 @@
 <script lang="ts">
-	import type { Action, TraitView } from '$lib/engine';
+	import type { Action, SkillView, TraitView } from '$lib/engine';
 	import { t } from '$lib/texts';
 
-	let { trait, dispatch }: { trait: TraitView; dispatch: (a: Action) => void } = $props();
+	interface Props {
+		trait: TraitView;
+		dispatch: (a: Action) => void;
+		/** Für Effekte wie „+2 auf eine beliebige Fertigkeit“. */
+		skills?: SkillView[];
+	}
+
+	let { trait, dispatch, skills = [] }: Props = $props();
+
+	const choosable = $derived(
+		trait.skillChoice
+			? skills.filter((s) => !(s.needsSpecialization && !s.specialization) && (trait.skillChoice!.includeHeroSkills || s.category === 'general'))
+			: []
+	);
 </script>
 
 <article class:invalid={!!trait.invalid}>
@@ -39,6 +52,23 @@
 				</label>
 			{/each}
 		</fieldset>
+	{/if}
+	{#if trait.skillChoice}
+		<label>
+			{t.traits.skill(trait.skillChoice.value)}
+			<select
+				value={trait.skillChoice.chosen ?? ''}
+				onchange={(e) => dispatch({ type: 'chooseTraitSkill', trait: trait.id, skill: e.currentTarget.value })}
+			>
+				<option value="" disabled>–</option>
+				{#if trait.skillChoice.chosen && !choosable.some((s) => s.key === trait.skillChoice!.chosen)}
+					<option value={trait.skillChoice.chosen}>{trait.skillChoice.chosen}</option>
+				{/if}
+				{#each choosable as s (s.key)}
+					<option value={s.key}>{s.name} ({s.value ?? '–'})</option>
+				{/each}
+			</select>
+		</label>
 	{/if}
 </article>
 

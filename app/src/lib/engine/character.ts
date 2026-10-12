@@ -30,6 +30,7 @@ export interface Basis {
 		assignment: Partial<Record<AttributeId, number>>;
 	};
 	species?: string;
+	religion?: string;
 	age: {
 		years?: number;
 		/** Verteilte Malus-Punkte junger Charaktere je Attribut. */

@@ -27,5 +27,9 @@ export const messages = {
 ,
 	interestsSource: 'Persönliche Interessen',
 	tooManyInterestPoints: (spent: number, total: number) =>
-		`Es sind ${spent} Punkte für Persönliche Interessen verteilt, zur Verfügung stehen ${total}. Nimm ${spent - total} Punkte zurück.`
+		`Es sind ${spent} Punkte für Persönliche Interessen verteilt, zur Verfügung stehen ${total}. Nimm ${spent - total} Punkte zurück.`,
+	skillChoiceInvalid: (trait: string, key: string, heroAllowed: boolean) =>
+		`${trait}: ${key.replace(':', ': ')} ist hier nicht wählbar` +
+		(heroAllowed ? ' (die Spezialisierung wurde entfernt).' : ' (keine Kampf- oder Magiefertigkeit; Spezialisierungen müssen angelegt sein).') +
+		' Wähle eine andere Fertigkeit.'
 };

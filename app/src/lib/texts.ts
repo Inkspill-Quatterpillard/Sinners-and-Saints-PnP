@@ -24,6 +24,7 @@ export const t = {
 		attributes: 'Grundattribute',
 		species: 'Spezies',
 		age: 'Alter',
+		religion: 'Religion',
 		profession: 'Profession',
 		interests: 'Interessen',
 		secondary: 'Sekundärattribute',
@@ -131,7 +132,12 @@ export const t = {
 	},
 	traits: {
 		choose: 'Wähle eine Variante',
-		tied: 'Welches Attribut?'
+		tied: 'Welches Attribut?',
+		skill: (value: number) => `Fertigkeit für +${value}`
+	},
+	religion: {
+		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',
+		choose: 'Religion'
 	},
 	dice: {
 		roll: (count: number, sides: number) => `${count}W${sides} würfeln`,

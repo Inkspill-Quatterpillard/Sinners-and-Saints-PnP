@@ -147,6 +147,6 @@ describe('Glück', () => {
 
 	it('der Wurf wird mit Herkunft gespeichert', () => {
 		const c = play(...attributes(BASE), { type: 'rollLuck', roll: { dice: [4], source: 'manual' } });
-		expect(computeView(c, ruleData).luck).toEqual({ advantage: false, roll: { dice: [4], source: 'manual' } });
+		expect(computeView(c, ruleData).luck).toEqual({ advantage: false, dice: 1, roll: { dice: [4], source: 'manual' } });
 	});
 });

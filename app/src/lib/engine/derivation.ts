@@ -1,7 +1,7 @@
-import type { AttributeId, RuleData, SecondaryKey } from '$lib/ruleData';
+import type { AttributeId, ResourcePeriod, RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character } from './character';
 
-export type StepId = 'options' | 'attributes' | 'species' | 'age' | 'profession' | 'interests' | 'secondary' | 'senility';
+export type StepId = 'options' | 'attributes' | 'species' | 'age' | 'religion' | 'profession' | 'interests' | 'secondary' | 'senility';
 export type StepStatus = 'open' | 'valid' | 'invalid';
 
 /** Ein Hinweis zu einer Entscheidung: eine Warnung oder eine ungültige Entscheidung mit Begründung. */
@@ -14,6 +14,15 @@ export interface Issue {
 export interface StepResult {
 	id: StepId;
 	status: StepStatus;
+}
+
+export interface ResourceDef {
+	id: string;
+	name: string;
+	per: ResourcePeriod;
+	uses: number;
+	/** Woher die Fähigkeit stammt. */
+	source: string;
 }
 
 /** Ein Beitrag zu einem Wert, mit seiner Herkunft (z. B. „Spezies: Zwerg“). */
@@ -43,8 +52,10 @@ export interface Derivation {
 	characteristicAllowance: { extra: number; forbidden: boolean };
 	/** Würfel für die Regeneration von MP durch Meditation. */
 	meditationDie: number;
-	/** Glück wird mit Vorteil gewürfelt (z. B. bei Kindern und Jugendlichen). */
-	luckAdvantage: boolean;
+	/** Anzahl der Vorteile beim Glückswurf (Jugend, Kult der Dana …); jeder Vorteil bringt einen W20 mehr. */
+	luckAdvantages: number;
+	/** Begrenzt nutzbare Fähigkeiten aus Religion, Herkunft usw. */
+	resources: ResourceDef[];
 	ageStage?: 'child' | 'youth' | 'adult' | 'aging';
 	agingStages: number;
 	/** Boni auf Fertigkeiten, je Fertigkeitsschlüssel (siehe `skillKey`). */
@@ -77,7 +88,8 @@ export function createDerivation(character: Character, ruleData: RuleData, optio
 		secondaryCaps: {},
 		characteristicAllowance: { extra: 0, forbidden: false },
 		meditationDie: 6,
-		luckAdvantage: false,
+		luckAdvantages: 0,
+		resources: [],
 		agingStages: 0,
 		skillBonuses: {},
 		skillSetValues: {},
@@ -99,4 +111,14 @@ export function skillKey(skillId: string, specialization?: string): string {
 
 export function addSkillBonus(d: Derivation, key: string, modifier: Modifier): void {
 	(d.skillBonuses[key] ??= []).push(modifier);
+}
+
+/** Gibt es eine Fertigkeit mit diesem Schlüssel (bei Spezialisierungen: ist sie angelegt)? */
+export function skillKeyExists(d: Derivation, key: string, includeHeroSkills: boolean): boolean {
+	const [id, specialization] = key.split(':');
+	const def =
+		d.ruleData.skills.find((s) => s.id === id) ?? (includeHeroSkills ? d.ruleData.heroSkills.find((s) => s.id === id) : undefined);
+	if (!def) return false;
+	if (!specialization) return true;
+	return def.specialization && (d.character.basis.specializations[id] ?? []).includes(specialization);
 }

@@ -62,7 +62,19 @@ export type Effect =
 	/** Bonus auf das höchste Grundattribut, Malus auf alle anderen (bei Gleichstand wählt der Spieler). */
 	| { type: 'highestAttribute'; bonus: number; others: number }
 	/** Würfel für die Regeneration durch Meditation (Standard W6). */
-	| { type: 'meditationDie'; sides: number };
+	| { type: 'meditationDie'; sides: number }
+	/** Bonus auf eine vom Spieler gewählte Fertigkeit. */
+	| { type: 'skillChoice'; value: number; includeHeroSkills: boolean }
+	/** Bonus auf eine bestimmte Fertigkeit (Schlüssel wie in den Fertigkeitslisten). */
+	| { type: 'skill'; skill: string; value: number }
+	/** Glück wird (zusätzlich) mit Vorteil gewürfelt. */
+	| { type: 'luckAdvantage' }
+	/** Bonus oder Malus auf den Status. */
+	| { type: 'status'; value: number }
+	/** Eine begrenzt nutzbare Fähigkeit, die im lebenden Bogen abgehakt wird. */
+	| { type: 'resource'; id: string; name: string; per: ResourcePeriod; uses: number };
+
+export type ResourcePeriod = 'day' | 'rest' | 'session' | 'permanent';
 
 export interface ChoiceOption {
 	id: string;
@@ -173,6 +185,19 @@ export interface ProfessionRules {
 	provisional?: Provisional[];
 }
 
+export interface ReligionDef {
+	id: string;
+	name: string;
+	description: string;
+	/** Name des Segens, z. B. „Göttliches Zeichen“. */
+	blessing: string;
+	/** Text des Segens. */
+	text: string;
+	effects?: Effect[];
+	options?: ChoiceOption[];
+	source: SourceRef;
+}
+
 export interface RuleData {
 	/** Wird erhöht, sobald sich Regeldaten so ändern, dass gespeicherte Charaktere betroffen sein können. */
 	version: number;
@@ -187,4 +212,5 @@ export interface RuleData {
 	heroSkills: SkillDef[];
 	age: AgeRules;
 	profession: ProfessionRules;
+	religions: ReligionDef[];
 }

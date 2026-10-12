@@ -1,6 +1,6 @@
 import type { RuleData } from '$lib/ruleData';
 import type { Basis, Roll } from '../character';
-import { addSkillBonus, skillKey, type Derivation, type Modifier, type StepStatus } from '../derivation';
+import { addSkillBonus, skillKey, skillKeyExists, type Derivation, type Modifier, type StepStatus } from '../derivation';
 import { messages } from '../messages';
 import type { SkillView } from './skills';
 
@@ -62,15 +62,6 @@ export function applyProfessionAction(basis: Basis, action: ProfessionAction, ru
 	}
 }
 
-/** Gibt es eine Fertigkeit mit diesem Schlüssel (bei Spezialisierungen: ist sie angelegt)? */
-function skillExists(d: Derivation, key: string): boolean {
-	const [id, specialization] = key.split(':');
-	const def = d.ruleData.skills.find((s) => s.id === id);
-	if (!def) return false;
-	if (!specialization) return true;
-	return (d.character.basis.specializations[id] ?? []).includes(specialization);
-}
-
 const worst = (a: StepStatus, b: StepStatus): StepStatus =>
 	a === 'invalid' || b === 'invalid' ? 'invalid' : a === 'open' || b === 'open' ? 'open' : 'valid';
 
@@ -81,7 +72,7 @@ export function evaluateProfession(d: Derivation): ProfessionStepView {
 	const source = messages.professionSource(p.name.trim());
 
 	for (const key of p.skills) {
-		if (!skillExists(d, key)) {
+		if (!skillKeyExists(d, key, false)) {
 			status = 'invalid';
 			d.issues.push({ step: 'profession', severity: 'invalid', message: messages.professionSkillMissing(key) });
 			continue;

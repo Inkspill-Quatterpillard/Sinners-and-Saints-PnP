@@ -14,8 +14,10 @@ export interface SecondaryValue {
 }
 
 export interface LuckView {
-	/** Mit Vorteil: zwei W20, der höhere zählt. */
+	/** Mit Vorteil: mehrere W20, der höchste zählt. */
 	advantage: boolean;
+	/** Anzahl der W20 (1 + Anzahl der Vorteile). */
+	dice: number;
 	roll?: Roll;
 }
 
@@ -29,12 +31,10 @@ function lookup(table: ThresholdTable, value: number): number {
 	return result;
 }
 
-/** Glückswurf: bei Vorteil zählt der höhere von zwei Würfeln; fehlt der zweite, ist der Wurf unvollständig. */
-function luckFromRoll(roll: Roll | undefined, advantage: boolean): number | undefined {
-	if (!roll || roll.dice.length === 0) return undefined;
-	if (!advantage) return roll.dice[0];
-	if (roll.dice.length < 2) return undefined;
-	return Math.max(roll.dice[0], roll.dice[1]);
+/** Glückswurf: bei Vorteil zählt der höchste der Würfel; fehlen Würfel, ist der Wurf unvollständig. */
+function luckFromRoll(roll: Roll | undefined, dice: number): number | undefined {
+	if (!roll || roll.dice.length < dice) return undefined;
+	return Math.max(...roll.dice.slice(0, dice));
 }
 
 export function evaluateSecondary(d: Derivation): { secondary: Record<SecondaryKey, SecondaryValue>; luck: LuckView } {
@@ -54,8 +54,8 @@ export function evaluateSecondary(d: Derivation): { secondary: Record<SecondaryK
 	if (all(GES, KON)) base.movement = lookup(r.movementTable, GES! + KON!);
 	if (all(GES, WAH)) base.dodge = floor((GES! + WAH!) / 2);
 	if (all(STR)) base.damageBonus = lookup(r.damageBonusTable, STR!);
-	const luck: LuckView = { advantage: d.luckAdvantage, roll: d.character.basis.luck };
-	base.luck = luckFromRoll(luck.roll, luck.advantage);
+	const luck: LuckView = { advantage: d.luckAdvantages > 0, dice: 1 + d.luckAdvantages, roll: d.character.basis.luck };
+	base.luck = luckFromRoll(luck.roll, luck.dice);
 
 	const result = {} as Record<SecondaryKey, SecondaryValue>;
 	const finish = (key: SecondaryKey, baseValue: number | undefined) => {
