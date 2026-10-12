@@ -132,7 +132,12 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		background,
 		canFinish: d.steps.every((s) => s.status === 'valid'),
 		meditationDie: d.meditationDie,
-		live: computeLive(character.play, secondary),
+		live: computeLive(character.play, secondary, {
+			remainingMoney: equipmentStep.remaining,
+			items: equipmentStep.items,
+			resources: d.resources,
+			counters: d.counters
+		}),
 		resources: d.resources,
 		counters: d.counters,
 		socialStatus,

@@ -338,7 +338,21 @@ export const t = {
 		hours: 'Stunden',
 		bonus: 'Bonus',
 		meditated: 'MP durch Meditation regeneriert. Am Ende ist eine Stabilitätsprobe fällig.',
-		fumble: 'Patzer (+1 Glück)'
+		fumble: 'Patzer (+1 Glück)',
+		moneyAndGear: 'Geld, Inventar, Fähigkeiten',
+		amount: 'Betrag, z. B. 2 K 50 Pf',
+		income: 'Einnehmen',
+		expense: 'Ausgeben',
+		inventory: 'Inventar',
+		armor: (rs: number) => `Rüstungsschutz angelegt: ${rs}`,
+		equippedHint: 'Häkchen = angelegt bzw. getragen.',
+		addItem: 'Gegenstand suchen oder eintragen',
+		addFree: 'Eintragen',
+		abilities: 'Begrenzte Fähigkeiten',
+		periods: { day: 'einmal am Tag', rest: 'je Ruhephase', session: 'je Spielsitzung', permanent: 'bis zum Zurücksetzen' },
+		used: (used: number, uses: number) => `${used} von ${uses} genutzt`,
+		use: 'Nutzen',
+		newDay: 'Neuer Tag'
 	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',

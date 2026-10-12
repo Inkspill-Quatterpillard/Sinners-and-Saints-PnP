@@ -4,6 +4,7 @@
 	import Counter from '$lib/components/live/Counter.svelte';
 	import Overridable from '$lib/components/live/Overridable.svelte';
 	import RestPanel from '$lib/components/live/RestPanel.svelte';
+	import InventoryPanel from '$lib/components/live/InventoryPanel.svelte';
 	import SkillTable from '$lib/components/SkillTable.svelte';
 	import type { CurrentKey, OverrideKey } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
@@ -147,6 +148,7 @@
 	</section>
 
 	<RestPanel {view} {dispatch} />
+	<InventoryPanel {view} {dispatch} />
 
 	<section>
 		<h2>{t.live.conditions}</h2>

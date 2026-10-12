@@ -79,7 +79,12 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'rest':
 		case 'meditate':
 		case 'rerollLuck':
-		case 'fumble': {
+		case 'fumble':
+		case 'changeMoney':
+		case 'useResource':
+		case 'resetResource':
+		case 'newDay':
+		case 'setCounter': {
 			const current = computeView(character, ruleData);
 			applyLiveAction(next, action, current.live, current.canFinish, ruleData);
 			break;
@@ -95,6 +100,7 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'addItem':
 		case 'updateItem':
 		case 'removeItem':
+		case 'toggleEquipped':
 			applyEquipmentAction(basis, action, ruleData, resolveOptions(basis, ruleData).setting);
 			break;
 		case 'toggleSpell':

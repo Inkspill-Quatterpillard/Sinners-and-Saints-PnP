@@ -110,6 +110,12 @@ export interface PlayState {
 	conditions: string[];
 	/** Von Hand gesetzte Werte, die dem berechneten Wert vorgehen. */
 	overrides: Partial<Record<string, number>>;
+	/** Geld im Spiel (kleinste Einheit); fehlt es, gilt das Restgeld der Erstellung. */
+	money?: number;
+	/** Wie oft begrenzte Fähigkeiten seit dem letzten Zurücksetzen genutzt wurden. */
+	resourceUses?: Record<string, number>;
+	/** Aktuelle Werte der Zähler (z. B. Seelen im Artefakt); fehlt ein Wert, gilt der Startwert. */
+	counters?: Record<string, number>;
 }
 
 /** Ein Charakter speichert nur seinen aktuellen Stand, nicht den Weg dorthin. */

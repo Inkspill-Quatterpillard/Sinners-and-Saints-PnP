@@ -1,5 +1,7 @@
 import type { RuleData, SecondaryKey } from '$lib/ruleData';
 import type { Character, PlayState, Roll } from './character';
+import type { CounterDef, ResourceDef } from './derivation';
+import type { OwnedItemView } from './steps/equipment';
 import type { SecondaryValue } from './steps/secondary';
 import type { SkillView } from './steps/skills';
 
@@ -25,7 +27,13 @@ export type LiveAction =
 	/** Meditation: je Stunde ein Würfel (W6, bei Wächter der Ströme W10) plus Bonus. */
 	| { type: 'meditate'; rolls: Roll[]; bonus: number }
 	| { type: 'rerollLuck'; roll: Roll }
-	| { type: 'fumble' };
+	| { type: 'fumble' }
+	| { type: 'changeMoney'; delta: number }
+	| { type: 'useResource'; id: string }
+	| { type: 'resetResource'; id: string }
+	/** Ein neuer Tag: setzt Fähigkeiten „einmal am Tag“ zurück. */
+	| { type: 'newDay' }
+	| { type: 'setCounter'; id: string; value: number };
 
 export interface LiveView {
 	tp: number;
@@ -44,6 +52,26 @@ export interface LiveView {
 	luck?: number;
 	conditions: string[];
 	overrides: Partial<Record<OverrideKey, number>>;
+	/** Geld in der kleinsten Einheit des Settings. */
+	money: number;
+	/** Rüstungsschutz der angelegten Rüstungen. */
+	armor: number;
+	resources: (ResourceDef & { used: number })[];
+	counters: (CounterDef & { value: number })[];
+}
+
+/** Was der lebende Bogen aus der übrigen Ansicht braucht. */
+export interface LiveContext {
+	remainingMoney: number;
+	items: OwnedItemView[];
+	resources: ResourceDef[];
+	counters: CounterDef[];
+}
+
+function armorOf(items: OwnedItemView[]): number {
+	return items
+		.filter((i) => i.equipped && i.stats['Rüstungsschutz'])
+		.reduce((sum, i) => sum + (parseInt(i.stats['Rüstungsschutz'], 10) || 0), 0);
 }
 
 export function createPlayState(): PlayState {
@@ -66,7 +94,7 @@ export function applyOverrides(play: PlayState, secondary: Record<SecondaryKey, 
 	}
 }
 
-export function computeLive(play: PlayState, secondary: Record<SecondaryKey, SecondaryValue>): LiveView {
+export function computeLive(play: PlayState, secondary: Record<SecondaryKey, SecondaryValue>, ctx: LiveContext): LiveView {
 	const o = play.overrides;
 	const maxTp = o.maxTp ?? Math.max(0, (secondary.tp.value ?? 0) - play.woundMalus);
 	const maxStability = o.maxStability ?? secondary.stability.value ?? 0;
@@ -84,7 +112,11 @@ export function computeLive(play: PlayState, secondary: Record<SecondaryKey, Sec
 		maxMp,
 		luck: play.luck ?? secondary.luck.value,
 		conditions: play.conditions,
-		overrides: o
+		overrides: o,
+		money: play.money ?? ctx.remainingMoney,
+		armor: armorOf(ctx.items),
+		resources: ctx.resources.map((r) => ({ ...r, used: Math.min(r.uses, play.resourceUses?.[r.id] ?? 0) })),
+		counters: ctx.counters.map((c) => ({ ...c, value: Math.max(0, Math.min(c.max, play.counters?.[c.id] ?? c.start)) }))
 	};
 }
 
@@ -93,6 +125,12 @@ const PANIC_ABOVE = 5;
 const BREAKDOWN_ABOVE = 10;
 /** Ab dem fünften überzogenen Magiepunkt kostet jeder Punkt 2 TP. */
 const OVERDRAW_DOUBLE_FROM = 5;
+
+function resetResources(play: PlayState, live: LiveView, periods: string[]): void {
+	const uses = { ...play.resourceUses };
+	for (const r of live.resources) if (periods.includes(r.per)) uses[r.id] = 0;
+	play.resourceUses = uses;
+}
 
 function addCondition(play: PlayState, id: string): void {
 	if (!play.conditions.includes(id)) play.conditions.push(id);
@@ -115,6 +153,8 @@ export function applyLiveAction(
 			if (!canFinish) return;
 			character.status = 'finished';
 			play.stabilityStart ??= live.maxStability;
+			// Das Restgeld der Erstellung wird zum Geld im Spiel.
+			play.money ??= live.money;
 			break;
 		case 'reopenCreation':
 			character.status = 'inCreation';
@@ -175,6 +215,7 @@ export function applyLiveAction(
 			break;
 		}
 		case 'rest':
+			if (action.hours >= 4) resetResources(play, live, ['rest']);
 			if (action.hours >= 1) delete play.tp;
 			if (action.hours >= 8) delete play.mp;
 			else if (action.hours >= 4) play.mp = Math.min(live.maxMp, live.mp + Math.floor(live.maxMp / 2));
@@ -191,5 +232,26 @@ export function applyLiveAction(
 		case 'fumble':
 			play.luck = (live.luck ?? 0) + 1;
 			break;
+		case 'changeMoney':
+			play.money = live.money + Math.round(action.delta);
+			break;
+		case 'useResource': {
+			const res = live.resources.find((r) => r.id === action.id);
+			if (!res || res.used >= res.uses) return;
+			play.resourceUses = { ...play.resourceUses, [action.id]: res.used + 1 };
+			break;
+		}
+		case 'resetResource':
+			play.resourceUses = { ...play.resourceUses, [action.id]: 0 };
+			break;
+		case 'newDay':
+			resetResources(play, live, ['day', 'rest']);
+			break;
+		case 'setCounter': {
+			const counter = live.counters.find((c) => c.id === action.id);
+			if (!counter) return;
+			play.counters = { ...play.counters, [action.id]: Math.max(0, Math.min(counter.max, Math.round(action.value))) };
+			break;
+		}
 	}
 }

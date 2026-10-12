@@ -7,7 +7,8 @@ export type EquipmentAction =
 	| { type: 'addItem'; catalogId: string }
 	| { type: 'addItem'; name: string; price: number; note?: string }
 	| { type: 'updateItem'; key: string; quantity?: number; price?: number; note?: string; name?: string }
-	| { type: 'removeItem'; key: string };
+	| { type: 'removeItem'; key: string }
+	| { type: 'toggleEquipped'; key: string };
 
 /** Ein Gegenstand des Charakters, aus dem Katalog oder frei eingetragen. */
 export interface OwnedItem {
@@ -20,6 +21,8 @@ export interface OwnedItem {
 	setting: string;
 	quantity: number;
 	note?: string;
+	/** Angelegt bzw. getragen (lebender Bogen). */
+	equipped?: boolean;
 }
 
 export interface OwnedItemView extends OwnedItem {
@@ -76,6 +79,11 @@ export function applyEquipmentAction(basis: Basis, action: EquipmentAction, rd: 
 		case 'removeItem':
 			eq.items = eq.items.filter((i) => i.key !== action.key);
 			break;
+		case 'toggleEquipped': {
+			const owned = eq.items.find((i) => i.key === action.key);
+			if (owned) owned.equipped = !owned.equipped;
+			break;
+		}
 	}
 }
 
