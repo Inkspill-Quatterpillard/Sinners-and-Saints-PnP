@@ -29,12 +29,13 @@ Legende:
 - [x] **W7 – Kampfstil.** → Ab 18 Punkten.
 - [x] **W8 – Steigerung vs. Formeln.** → `Sekundärattribute.md` ist aktueller und gilt.
 - [x] **W9 – Besitztümer.** → Es gilt die Formel. Die Spannen sind nur grobe Werte.
+- [ ] **W10 – Wundschwelle.** `Charaktererstellung.md` und `Spielsystem/Trefferpunkte.md` sagen TP/5, `Sekundärattribute.md` und `Kampfregeln/Trefferpunkte.md` sagen TP/4. → **Entschieden (Nutzer):** TP/5 (neuere Änderung des Autors). Bestätigung durch den Autor steht aus.
 
 ## Unklare Formulierungen
 
 - [x] **U1 – Persönliche Interessen.** → Der Spieler wählt KLU oder INT frei. Vorausgewählt ist der höhere Wert.
 - [x] **U2 – Heldenfertigkeiten 14/12/10/8/8.** → Die Werte werden *gesetzt*, nicht addiert. Liegt der Startwert schon höher, darf trotzdem gesetzt werden, die App warnt aber vor der Verringerung.
-- [x] **U3 – Charakteristik.** → Eine der beiden gewürfelten Charakteristiken darf neu gewürfelt werden. Doppelte Ergebnisse werden neu gewürfelt. Über einen Override kann der Spieler beide selbst wählen, etwa wenn am Tisch gewürfelt wurde.
+- [x] **U3 – Charakteristik.** → Eine der beiden gewürfelten Charakteristiken darf neu gewürfelt werden. Doppelte Ergebnisse werden neu gewürfelt. Am Tisch gewürfelte Ergebnisse wählt der Spieler je Platz direkt aus einer Liste.
 - [x] **U4 – Begriffe.** →
   - Willenskraft
   - Stabilität (STA)
@@ -56,8 +57,12 @@ Legende:
 ## Unvollständiger Text
 
 - [ ] **T1 – Herkunft.** Talisman und Foliant brechen ab, „Erde“ heißt ebenfalls „Sturmmark“, Biestmensch ist nur skizziert. → Vorerst übersprungen. Die App zeigt den Text so, wie er im Regelwerk steht.
-- [ ] **T3 – Stufe von „Auren verbinden“.** In `Zauber/Mystik.md` steht der Zauber unter „Stufe 2“, die Überschrift nennt aber „Stufe 3“. → *Vorläufig:* Stufe 3 laut Überschrift.
+- [ ] **T3 – Stufe von „Auren verbinden“.** In `Charaktererstellung/Zauber/Mystik.md` steht der Zauber unter „Stufe 2“, die Überschrift nennt aber „Stufe 3“. → *Vorläufig:* Stufe 3 laut Überschrift.
 - [ ] **T2 – Kaputte Links.** → Wird später angegangen.
+
+## Andere Fragen
+
+- [ ] **V1 – Verkaufen.** Eine Regel zum Wiederverkauf fehlt. → **Entschieden (Nutzer):** Verkaufen bringt den vollen Preis, Verlieren nichts; Gefundenes kostet nichts. Bestätigung durch den Autor steht aus.
 
 ## Settings
 
