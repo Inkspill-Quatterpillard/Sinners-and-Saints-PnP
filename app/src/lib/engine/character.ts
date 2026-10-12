@@ -53,6 +53,8 @@ export interface Basis {
 		items: OwnedItem[];
 		/** Zähler für eindeutige Schlüssel neuer Gegenstände. */
 		nextKey: number;
+		/** Ausgleich des Geldbeutels der Erstellung: verlorene Käufe (+) und verkaufte Funde (−). */
+		purseAdjustment: number;
 	};
 	characteristics: {
 		mode?: CharacteristicMode;
@@ -148,7 +150,7 @@ export function createCharacter(id: string, ruleDataVersion = 0): Character {
 			stunts: [],
 			techniques: [],
 			spells: [],
-			equipment: { items: [], nextKey: 1 },
+			equipment: { items: [], nextKey: 1, purseAdjustment: 0 },
 			background: { fields: {}, people: [], languages: [] },
 			characteristics: { picks: {}, rolls: {}, rerolledSlots: {} },
 			age: { youngMalus: {}, maturity: {}, atrophia: {}, senility: {} },

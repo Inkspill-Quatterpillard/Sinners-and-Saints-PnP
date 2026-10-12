@@ -27,10 +27,22 @@ describe('Geld im Spiel', () => {
 		expect(view(c).live.money).toBe(1120);
 	});
 
-	it('neue Gegenstände im Spiel ziehen kein Geld ab, das Geld bleibt, wie es ist', () => {
+	it('im Spiel kostet Kaufen Geld, Finden nicht', () => {
 		const c = act(base(), { type: 'changeMoney', delta: 500 });
-		const more = act(c, { type: 'addItem', catalogId: item('Stachelring').id });
-		expect(view(more).live.money).toBe(400);
+		expect(view(c).live.money).toBe(400);
+		const bought = act(c, { type: 'addItem', catalogId: item('Stachelring').id });
+		expect(view(bought).live.money).toBe(250);
+		const found = act(c, { type: 'addItem', catalogId: item('Stachelring').id, found: true });
+		expect(view(found).live.money).toBe(400);
+	});
+
+	it('im Spiel bringt Verkaufen den vollen Preis, Verlieren nichts', () => {
+		// Mit der ersten Geldänderung im Spiel führt der Bogen das Geld selbst.
+		const c = act(base(), { type: 'changeMoney', delta: 0 });
+		const key = view(c).equipmentStep.items[0].key;
+		expect(view(act(c, { type: 'sellItem', key })).live.money).toBe(900);
+		expect(view(act(c, { type: 'loseItem', key })).live.money).toBe(-100);
+		expect(view(act(c, { type: 'loseItem', key })).equipmentStep.items).toHaveLength(1);
 	});
 });
 

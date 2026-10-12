@@ -86,6 +86,43 @@ describe('Ausrüstung', () => {
 		expect(view(c).equipmentStep.items).toEqual([]);
 	});
 
+	describe('Kaufen, Finden, Verkaufen, Verlieren', () => {
+		const gambeson = () => item('Gambeson').id;
+		const keyOf = (c: Character) => view(c).equipmentStep.items[0].key;
+
+		it('Gefundenes kostet nichts', () => {
+			const c = play(...ATTRS, status(3), { type: 'addItem', catalogId: gambeson(), found: true });
+			expect(view(c).equipmentStep.items[0]).toMatchObject({ name: 'Gambeson', found: true });
+			expect(view(c).equipmentStep.spent).toBe(0);
+		});
+
+		it('Verkaufen bringt den vollen Preis zurück, auch für Gefundenes', () => {
+			const bought = play(...ATTRS, status(3), { type: 'addItem', catalogId: gambeson() });
+			const sold = applyAction(bought, { type: 'sellItem', key: keyOf(bought) }, ruleData);
+			expect(view(sold).equipmentStep).toMatchObject({ items: [], spent: 0, remaining: 1000 });
+			const found = play(...ATTRS, status(3), { type: 'addItem', catalogId: gambeson(), found: true });
+			const soldFound = applyAction(found, { type: 'sellItem', key: keyOf(found) }, ruleData);
+			expect(view(soldFound).equipmentStep).toMatchObject({ items: [], remaining: 2000 });
+		});
+
+		it('Verlieren gibt kein Geld zurück', () => {
+			const bought = play(...ATTRS, status(3), { type: 'addItem', catalogId: gambeson() });
+			const lost = applyAction(bought, { type: 'loseItem', key: keyOf(bought) }, ruleData);
+			expect(view(lost).equipmentStep).toMatchObject({ items: [], remaining: 0 });
+		});
+
+		it('bei mehreren Stück wird eines verkauft oder verloren', () => {
+			let c = play(...ATTRS, status(3), { type: 'addItem', catalogId: item('Tunika').id });
+			c = applyAction(c, { type: 'updateItem', key: keyOf(c), quantity: 3 }, ruleData);
+			c = applyAction(c, { type: 'sellItem', key: keyOf(c) }, ruleData);
+			expect(view(c).equipmentStep.items[0].quantity).toBe(2);
+			expect(view(c).equipmentStep.spent).toBe(160);
+			c = applyAction(c, { type: 'loseItem', key: keyOf(c) }, ruleData);
+			expect(view(c).equipmentStep.items[0].quantity).toBe(1);
+			expect(view(c).equipmentStep.spent).toBe(160);
+		});
+	});
+
 	it('wechselt das Setting, werden Preise anderer Währungen umgerechnet statt falsch gelesen', () => {
 		// Gambeson 10 Kronen = 1000 Pfennig; im Fallout-Setting (vorläufig 1 Krone = 1 Kronkorken) also 10 Kronkorken
 		const c = play(

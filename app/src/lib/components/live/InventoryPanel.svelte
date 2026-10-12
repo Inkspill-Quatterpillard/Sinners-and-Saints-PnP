@@ -29,7 +29,7 @@
 	);
 	function addFree() {
 		if (!search.trim()) return;
-		dispatch({ type: 'addItem', name: search.trim(), price: 0 });
+		dispatch({ type: 'addItem', name: search.trim(), price: 0, found: true });
 		search = '';
 	}
 </script>
@@ -51,6 +51,7 @@
 					<input type="checkbox" checked={!!item.equipped} onchange={() => dispatch({ type: 'toggleEquipped', key: item.key })} />
 					<span>
 						<strong>{item.name}</strong>{item.quantity > 1 ? ` ×${item.quantity}` : ''}
+						<small>{money(item.price)}</small>
 						{#if Object.keys(item.stats).length}
 							<small
 								>{Object.entries(item.stats)
@@ -60,9 +61,14 @@
 						{/if}
 					</span>
 				</label>
-				<button aria-label={t.equipment.remove(item.name)} onclick={() => dispatch({ type: 'removeItem', key: item.key })}
-					>×</button
-				>
+				<span class="actions">
+					<button aria-label={t.equipment.sellOf(item.name)} onclick={() => dispatch({ type: 'sellItem', key: item.key })}
+						>{t.equipment.sell}</button
+					>
+					<button aria-label={t.equipment.loseOf(item.name)} onclick={() => dispatch({ type: 'loseItem', key: item.key })}
+						>{t.equipment.lose}</button
+					>
+				</span>
 			</li>
 		{/each}
 	</ul>
@@ -82,12 +88,22 @@
 			{#each matches as m (m.id)}
 				<li>
 					<span>{m.name} <small>{m.priceText}</small></span>
-					<button
-						onclick={() => {
-							dispatch({ type: 'addItem', catalogId: m.id });
-							search = '';
-						}}>{t.equipment.add}</button
-					>
+					<span class="actions">
+						<button
+							aria-label={t.equipment.buyOf(m.name)}
+							onclick={() => {
+								dispatch({ type: 'addItem', catalogId: m.id });
+								search = '';
+							}}>{t.equipment.buy}</button
+						>
+						<button
+							aria-label={t.equipment.findOf(m.name)}
+							onclick={() => {
+								dispatch({ type: 'addItem', catalogId: m.id, found: true });
+								search = '';
+							}}>{t.equipment.find}</button
+						>
+					</span>
 				</li>
 			{/each}
 		</ul>
@@ -198,5 +214,13 @@
 	}
 	.hint {
 		font-size: 0.85rem;
+	}
+	.actions {
+		display: flex;
+		gap: 0.3rem;
+	}
+	.actions button {
+		padding: 0.2rem 0.5rem;
+		font-size: 0.88rem;
 	}
 </style>

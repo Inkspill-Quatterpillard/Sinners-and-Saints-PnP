@@ -1,14 +1,18 @@
 import type { CurrencyDef, RuleData } from '$lib/ruleData';
-import type { Basis } from '../character';
+import type { Basis, PlayState } from '../character';
 import type { Derivation } from '../derivation';
 import { messages } from '../messages';
 
 export type EquipmentAction =
-	| { type: 'addItem'; catalogId: string }
-	| { type: 'addItem'; name: string; price: number; note?: string }
+	/** Ohne `found` gekauft: in der Erstellung aus dem Geldbeutel, im Spiel vom Geld. */
+	| { type: 'addItem'; catalogId: string; found?: boolean }
+	| { type: 'addItem'; name: string; price: number; note?: string; found?: boolean }
 	| { type: 'updateItem'; key: string; quantity?: number; price?: number; note?: string; name?: string }
 	| { type: 'removeItem'; key: string }
-	| { type: 'toggleEquipped'; key: string };
+	| { type: 'toggleEquipped'; key: string }
+	/** Ein Stück verkaufen (voller Preis zurück) bzw. verlieren (kein Geld). */
+	| { type: 'sellItem'; key: string }
+	| { type: 'loseItem'; key: string };
 
 /** Ein Gegenstand des Charakters, aus dem Katalog oder frei eingetragen. */
 export interface OwnedItem {
@@ -23,6 +27,10 @@ export interface OwnedItem {
 	note?: string;
 	/** Angelegt bzw. getragen (lebender Bogen). */
 	equipped?: boolean;
+	/** Gefunden statt gekauft: kostet nichts. */
+	found?: boolean;
+	/** Im Spiel gekauft: bezahlt vom Geld im Spiel, nicht aus dem Geldbeutel der Erstellung. */
+	paidInPlay?: boolean;
 }
 
 export interface OwnedItemView extends OwnedItem {
@@ -61,6 +69,7 @@ export function applyEquipmentAction(basis: Basis, action: EquipmentAction, rd: 
 			} else {
 				eq.items.push({ key, name: action.name, price: Math.max(0, action.price), setting, quantity: 1, note: action.note });
 			}
+			if (action.found) eq.items.at(-1)!.found = true;
 			break;
 		}
 		case 'updateItem': {
@@ -84,6 +93,44 @@ export function applyEquipmentAction(basis: Basis, action: EquipmentAction, rd: 
 			if (owned) owned.equipped = !owned.equipped;
 			break;
 		}
+	}
+}
+
+/** Zählt ein Gegenstand gegen den Geldbeutel der Erstellung? */
+const fromPurse = (i: OwnedItem) => !i.found && !i.paidInPlay;
+
+/**
+ * Geldwirksame Folgen von Kaufen, Verkaufen und Verlieren. Führt der Bogen das Geld im Spiel
+ * (`play.money`), ändert sich dieses; sonst der Geldbeutel der Erstellung. `items` sind die Gegenstände
+ * vor der Aktion mit Preisen in der aktuellen Währung.
+ */
+export function applyTradeAction(
+	basis: Basis,
+	play: PlayState,
+	action: Extract<EquipmentAction, { type: 'addItem' | 'sellItem' | 'loseItem' }>,
+	items: OwnedItemView[],
+	newItemPrice: () => number
+): void {
+	const eq = basis.equipment;
+	const inPlay = play.money !== undefined;
+	if (action.type === 'addItem') {
+		const added = eq.items.at(-1);
+		if (!added || !inPlay || action.found) return;
+		added.paidInPlay = true;
+		play.money! -= newItemPrice();
+		return;
+	}
+	const owned = eq.items.find((i) => i.key === action.key);
+	const price = items.find((i) => i.key === action.key)?.price;
+	if (!owned || price === undefined) return;
+	if (owned.quantity > 1) owned.quantity--;
+	else eq.items = eq.items.filter((i) => i !== owned);
+	if (inPlay) {
+		if (action.type === 'sellItem') play.money! += price;
+	} else if (action.type === 'sellItem' && !fromPurse(owned)) {
+		eq.purseAdjustment -= price;
+	} else if (action.type === 'loseItem' && fromPurse(owned)) {
+		eq.purseAdjustment += price;
 	}
 }
 
@@ -119,7 +166,8 @@ export function evaluateEquipment(d: Derivation, socialStatus: number): Equipmen
 			stats: def?.stats ?? {}
 		};
 	});
-	const spent = items.reduce((sum, i) => sum + i.price * i.quantity, 0);
+	const spent =
+		items.filter(fromPurse).reduce((sum, i) => sum + i.price * i.quantity, 0) + d.character.basis.equipment.purseAdjustment;
 	const purse = toUnits(stage.purse);
 	if (spent > purse) d.issues.push({ step: 'equipment', severity: 'warning', message: messages.overspent });
 

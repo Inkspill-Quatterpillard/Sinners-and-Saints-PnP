@@ -15,7 +15,7 @@ import { allowedStunts, applyOriginAction, type OriginAction } from './steps/ori
 import { resolveOptions } from './steps/options';
 import { applyCombatAction, type CombatAction } from './steps/combat';
 import { applyMagicAction, type MagicAction } from './steps/magic';
-import { applyEquipmentAction, type EquipmentAction } from './steps/equipment';
+import { applyEquipmentAction, applyTradeAction, type EquipmentAction } from './steps/equipment';
 import { applyBackgroundAction, type BackgroundAction } from './steps/background';
 import { computeView } from './view';
 import { applyLiveAction, type LiveAction } from './live';
@@ -96,12 +96,19 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'setLanguageWriting':
 			applyBackgroundAction(basis, action);
 			break;
-		case 'addItem':
 		case 'updateItem':
 		case 'removeItem':
 		case 'toggleEquipped':
 			applyEquipmentAction(basis, action, ruleData, resolveOptions(basis, ruleData).setting);
 			break;
+		case 'addItem':
+		case 'sellItem':
+		case 'loseItem': {
+			const items = computeView(character, ruleData).equipmentStep.items;
+			if (action.type === 'addItem') applyEquipmentAction(basis, action, ruleData, resolveOptions(basis, ruleData).setting);
+			applyTradeAction(basis, next.play, action, items, () => computeView(next, ruleData).equipmentStep.items.at(-1)?.price ?? 0);
+			break;
+		}
 		case 'toggleSpell':
 			applyMagicAction(basis, action, computeView(character, ruleData).magicStep, ruleData);
 			break;

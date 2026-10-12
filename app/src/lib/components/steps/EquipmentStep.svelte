@@ -24,13 +24,25 @@
 
 	let freeName = $state('');
 	let freePrice = $state('');
-	function addFree(e: SubmitEvent) {
-		e.preventDefault();
+	function addFree(found: boolean) {
 		if (!freeName.trim()) return;
-		dispatch({ type: 'addItem', name: freeName.trim(), price: parseMoney(freePrice, currency) ?? 0 });
+		dispatch({ type: 'addItem', name: freeName.trim(), price: parseMoney(freePrice, currency) ?? 0, found });
 		freeName = '';
 		freePrice = '';
 	}
+	// Wischen über den Katalog wechselt die Kategorie (am Handy).
+	let touch: { x: number; y: number } | undefined;
+	function swipe(e: TouchEvent) {
+		const start = touch;
+		touch = undefined;
+		const end = e.changedTouches[0];
+		if (!start || search) return;
+		const dx = end.clientX - start.x;
+		if (Math.abs(dx) < 60 || Math.abs(dx) < 2 * Math.abs(end.clientY - start.y)) return;
+		const i = groups.indexOf(group) + (dx < 0 ? 1 : -1);
+		if (i >= 0 && i < groups.length) group = groups[i];
+	}
+
 	const statsText = (stats: Record<string, string>) =>
 		Object.entries(stats)
 			.map(([k, v]) => `${k}: ${v}`)
@@ -72,6 +84,7 @@
 			<li>
 				<div class="name">
 					<strong>{item.name}</strong>
+					{#if item.found}<small>{t.equipment.found}</small>{/if}
 					{#if Object.keys(item.stats).length}<small>{statsText(item.stats)}</small>{/if}
 					{#if item.foreignCurrency}<small>{t.equipment.converted}</small>{/if}
 					{#if item.priceMax}<small>{t.equipment.range(money(item.price), money(item.priceMax))}</small>{/if}
@@ -95,34 +108,48 @@
 						if (p !== undefined) dispatch({ type: 'updateItem', key: item.key, price: p });
 					}}
 				/>
-				<button aria-label={t.equipment.remove(item.name)} onclick={() => dispatch({ type: 'removeItem', key: item.key })}
-					>×</button
-				>
+				<span class="actions">
+					<button aria-label={t.equipment.sellOf(item.name)} onclick={() => dispatch({ type: 'sellItem', key: item.key })}
+						>{t.equipment.sell}</button
+					>
+					<button aria-label={t.equipment.loseOf(item.name)} onclick={() => dispatch({ type: 'loseItem', key: item.key })}
+						>{t.equipment.lose}</button
+					>
+				</span>
 			</li>
 		{/each}
 	</ul>
-	<form class="free" onsubmit={addFree}>
+	<form class="free" onsubmit={(e) => (e.preventDefault(), addFree(false))}>
 		<input bind:value={freeName} placeholder={t.equipment.freeName} aria-label={t.equipment.freeName} />
 		<input bind:value={freePrice} placeholder={t.equipment.freePrice} aria-label={t.equipment.freePrice} size="8" />
-		<button type="submit" disabled={!freeName.trim()}>{t.equipment.addFree}</button>
+		<button type="submit" disabled={!freeName.trim()}>{t.equipment.buy}</button>
+		<button type="button" disabled={!freeName.trim()} onclick={() => addFree(true)}>{t.equipment.find}</button>
 	</form>
+	<p class="hint">{t.equipment.tradeHint}</p>
 </section>
 
-<section>
+<section
+	aria-label={t.equipment.catalog}
+	ontouchstart={(e) => (touch = { x: e.touches[0].clientX, y: e.touches[0].clientY })}
+	ontouchend={swipe}
+>
 	<h3>{t.equipment.catalog}</h3>
-	<div class="tabs" role="tablist">
-		{#each groups as g (g)}
-			<button
-				role="tab"
-				aria-selected={group === g && !search}
-				class:active={group === g && !search}
-				onclick={() => ((group = g), (search = ''))}
-			>
-				{t.equipment.groups[g]}
-			</button>
-		{/each}
+	<div class="sticky">
+		<div class="tabs" role="tablist">
+			{#each groups as g (g)}
+				<button
+					role="tab"
+					aria-selected={group === g && !search}
+					class:active={group === g && !search}
+					onclick={() => ((group = g), (search = ''))}
+				>
+					{t.equipment.groups[g]}
+				</button>
+			{/each}
+		</div>
+		<input type="search" placeholder={t.equipment.search} aria-label={t.equipment.search} bind:value={search} />
 	</div>
-	<input type="search" placeholder={t.equipment.search} aria-label={t.equipment.search} bind:value={search} />
+	<p class="hint swipe">{t.equipment.swipeHint}</p>
 	{#each categories as category (category)}
 		<h4>{category}</h4>
 		<ul class="catalog">
@@ -133,7 +160,15 @@
 						{#if Object.keys(entry.stats).length}<small>{statsText(entry.stats)}</small>{/if}
 					</div>
 					<span class="cost">{entry.priceText || '–'}</span>
-					<button onclick={() => dispatch({ type: 'addItem', catalogId: entry.id })}>{t.equipment.add}</button>
+					<span class="actions">
+						<button aria-label={t.equipment.buyOf(entry.name)} onclick={() => dispatch({ type: 'addItem', catalogId: entry.id })}
+							>{t.equipment.buy}</button
+						>
+						<button
+							aria-label={t.equipment.findOf(entry.name)}
+							onclick={() => dispatch({ type: 'addItem', catalogId: entry.id, found: true })}>{t.equipment.find}</button
+						>
+					</span>
 				</li>
 			{/each}
 		</ul>
@@ -187,6 +222,16 @@
 		flex: 1;
 		min-width: 0;
 	}
+	/* Eigene Gegenstände: am Handy stehen Menge, Preis und Knöpfe unter dem Namen. */
+	.owned li {
+		flex-wrap: wrap;
+	}
+	.owned .name {
+		flex: 1 1 12rem;
+	}
+	.free input {
+		min-width: 0;
+	}
 	.qty input {
 		width: 3.4rem;
 	}
@@ -205,13 +250,44 @@
 		margin-top: 0.6rem;
 	}
 	.free input:first-child {
-		flex: 1;
+		flex: 1 1 10rem;
+	}
+	/* Damit beim Fokussieren nichts unter den klebenden Kategorien verschwindet. */
+	.catalog li {
+		scroll-margin-top: 7rem;
+	}
+	.sticky {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		background: var(--bg);
+		padding: 0.4rem 0;
 	}
 	.tabs {
 		display: flex;
-		flex-wrap: wrap;
 		gap: 0.3rem;
 		margin-bottom: 0.5rem;
+		overflow-x: auto;
+	}
+	.tabs button {
+		white-space: nowrap;
+	}
+	.actions {
+		display: flex;
+		gap: 0.3rem;
+	}
+	.actions button {
+		padding: 0.2rem 0.5rem;
+		font-size: 0.88rem;
+	}
+	.swipe {
+		display: none;
+		font-size: 0.82rem;
+	}
+	@media (pointer: coarse) {
+		.swipe {
+			display: block;
+		}
 	}
 	.tabs .active {
 		border-color: var(--accent);

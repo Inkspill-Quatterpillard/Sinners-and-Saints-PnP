@@ -223,7 +223,7 @@ export const t = {
 	},
 	equipment: {
 		intro:
-			'Dein Status bestimmt Geldbeutel, Tagesgeld und Besitztümer. Rüste dich aus dem Katalog aus oder trage eigene Gegenstände ein. Die App zieht das Geld nicht zwingend ab, sie zeigt dir aber, was übrig bleibt.',
+			'Dein Status bestimmt Geldbeutel, Tagesgeld und Besitztümer. Kaufe oder finde Gegenstände aus dem Katalog oder trage eigene ein. Überziehen ist möglich, die App zeigt dir, was übrig bleibt.',
 		stage: 'Stufe',
 		status: (v: number) => `Status ${v}`,
 		purse: 'Geldbeutel',
@@ -237,14 +237,22 @@ export const t = {
 		quantity: 'Menge',
 		quantityOf: (name: string) => `Menge ${name}`,
 		priceOf: (name: string) => `Preis ${name}`,
-		remove: (name: string) => `${name} entfernen`,
+		sell: 'Verkaufen',
+		lose: 'Verlieren',
+		buy: 'Kaufen',
+		find: 'Finden',
+		found: 'gefunden',
+		sellOf: (name: string) => `${name} verkaufen (voller Preis zurück)`,
+		loseOf: (name: string) => `${name} verlieren (kein Geld zurück)`,
+		buyOf: (name: string) => `${name} kaufen`,
+		findOf: (name: string) => `${name} finden (kostenlos)`,
+		tradeHint: 'Kaufen kostet den Preis, Finden nichts. Verkaufen bringt den vollen Preis zurück, Verlieren nichts.',
+		swipeHint: 'Wische nach links oder rechts, um die Kategorie zu wechseln.',
 		freeName: 'Eigener Gegenstand',
 		freePrice: 'Preis, z. B. 3 K 20 Pf',
-		addFree: 'Eintragen',
 		catalog: 'Katalog',
 		groups: { melee: 'Nahkampf', ranged: 'Fernkampf', armor: 'Rüstungen', shield: 'Schilde', gear: 'Ausrüstung' },
-		search: 'Im Katalog suchen',
-		add: 'Hinzufügen'
+		search: 'Im Katalog suchen'
 	},
 	background: {
 		intro:
