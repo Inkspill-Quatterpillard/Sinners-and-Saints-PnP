@@ -64,6 +64,8 @@ export interface CharacterView {
 	background: BackgroundView;
 	/** Alle Schritte der Erstellung sind gültig. */
 	canFinish: boolean;
+	/** Würfel für die Meditation (W6, bei Wächter der Ströme W10). */
+	meditationDie: number;
 	live: LiveView;
 	resources: ResourceDef[];
 	counters: CounterDef[];
@@ -129,6 +131,7 @@ export function computeView(character: Character, ruleData: RuleData): Character
 		equipmentStep,
 		background,
 		canFinish: d.steps.every((s) => s.status === 'valid'),
+		meditationDie: d.meditationDie,
 		live: computeLive(character.play, secondary),
 		resources: d.resources,
 		counters: d.counters,

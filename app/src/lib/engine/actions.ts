@@ -72,7 +72,14 @@ export function applyAction(character: Character, action: Action, ruleData: Rule
 		case 'endCombat':
 		case 'setCondition':
 		case 'overrideValue':
-		case 'setCurrent': {
+		case 'setCurrent':
+		case 'setStabilityStart':
+		case 'loseStability':
+		case 'spendMp':
+		case 'rest':
+		case 'meditate':
+		case 'rerollLuck':
+		case 'fumble': {
 			const current = computeView(character, ruleData);
 			applyLiveAction(next, action, current.live, current.canFinish, ruleData);
 			break;

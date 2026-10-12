@@ -3,6 +3,7 @@
 	import DiceInput from '$lib/components/DiceInput.svelte';
 	import Counter from '$lib/components/live/Counter.svelte';
 	import Overridable from '$lib/components/live/Overridable.svelte';
+	import RestPanel from '$lib/components/live/RestPanel.svelte';
 	import SkillTable from '$lib/components/SkillTable.svelte';
 	import type { CurrentKey, OverrideKey } from '$lib/engine';
 	import { ruleData } from '$lib/ruleData';
@@ -144,6 +145,8 @@
 		{/if}
 		{#if live.woundMalus}<p class="hint">{t.live.woundMalus(live.woundMalus)}</p>{/if}
 	</section>
+
+	<RestPanel {view} {dispatch} />
 
 	<section>
 		<h2>{t.live.conditions}</h2>

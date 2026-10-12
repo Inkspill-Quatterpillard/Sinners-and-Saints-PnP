@@ -313,7 +313,32 @@ export const t = {
 		resetOverrideOf: (label: string) => `${label} zurücksetzen`,
 		overrideHint:
 			'Von Hand gesetzte Werte (golden) gehen dem berechneten Wert vor, etwa nach einer Entscheidung des Spielleiters.',
-		skills: 'Wichtige Fertigkeiten'
+		skills: 'Wichtige Fertigkeiten',
+		mindAndMagic: 'Stabilität, Magie und Ruhe',
+		staLoss: 'Stabilitätsverlust',
+		inCombat: 'im Kampf',
+		apply: 'Abziehen',
+		newConditions: (list: string) => `Neuer Zustand: ${list}.`,
+		staStart: (start: number) => `Start-Stabilität ${start}: Unter der Hälfte (${start / 2}) droht schleichender Wahnsinn.`,
+		mpCost: 'MP ausgeben',
+		spend: 'Ausgeben',
+		overdrawn: (lost: number, first: boolean) =>
+			`MP überzogen: ${lost} TP Schaden${first ? '. Probe auf WIL, sonst Ohnmacht und der Zauber bricht ab' : ''}. Nach dem Kampf sinkt KON vorübergehend um jeden überzogenen Punkt.`,
+		rest: 'Ruhe',
+		pause: '1 Stunde Pause',
+		restPhase: 'Ruhephase (4 Std.)',
+		sleep: '8 Stunden Schlaf',
+		rested: (h: number) =>
+			h >= 8
+				? 'TP und MP aufgefüllt.'
+				: h >= 4
+					? 'TP aufgefüllt, halbe MP regeneriert. Glück neu würfeln!'
+					: 'TP aufgefüllt; der Wundenmalus bleibt.',
+		meditation: 'Meditation',
+		hours: 'Stunden',
+		bonus: 'Bonus',
+		meditated: 'MP durch Meditation regeneriert. Am Ende ist eine Stabilitätsprobe fällig.',
+		fumble: 'Patzer (+1 Glück)'
 	},
 	religion: {
 		intro: 'Die Religion prägt Erziehung und Weltbild deines Charakters. Jeder Kult gewährt einen Segen.',

@@ -16,7 +16,16 @@ export type LiveAction =
 	| { type: 'endCombat'; rolls: Roll[] }
 	| { type: 'setCondition'; condition: string; active: boolean }
 	| { type: 'overrideValue'; key: OverrideKey; value: number | undefined }
-	| { type: 'setCurrent'; key: CurrentKey; value: number };
+	| { type: 'setCurrent'; key: CurrentKey; value: number }
+	| { type: 'setStabilityStart'; value: number }
+	| { type: 'loseStability'; amount: number; inCombat: boolean }
+	| { type: 'spendMp'; amount: number }
+	/** Pause bzw. Ruhephase: ab 1 Stunde volle TP, ab 4 Stunden halbe MP, ab 8 Stunden volle MP; optional neues Glück. */
+	| { type: 'rest'; hours: number; luck?: Roll }
+	/** Meditation: je Stunde ein Würfel (W6, bei Wächter der Ströme W10) plus Bonus. */
+	| { type: 'meditate'; rolls: Roll[]; bonus: number }
+	| { type: 'rerollLuck'; roll: Roll }
+	| { type: 'fumble' };
 
 export interface LiveView {
 	tp: number;
@@ -79,6 +88,12 @@ export function computeLive(play: PlayState, secondary: Record<SecondaryKey, Sec
 	};
 }
 
+/** Panik ab mehr als 5 Stabilitätsverlust im Kampf, Zusammenbruch ab mehr als 10 auf einmal. */
+const PANIC_ABOVE = 5;
+const BREAKDOWN_ABOVE = 10;
+/** Ab dem fünften überzogenen Magiepunkt kostet jeder Punkt 2 TP. */
+const OVERDRAW_DOUBLE_FROM = 5;
+
 function addCondition(play: PlayState, id: string): void {
 	if (!play.conditions.includes(id)) play.conditions.push(id);
 }
@@ -133,6 +148,48 @@ export function applyLiveAction(
 			break;
 		case 'setCurrent':
 			play[action.key] = action.value;
+			break;
+		case 'setStabilityStart':
+			play.stabilityStart = action.value;
+			break;
+		case 'loseStability': {
+			const amount = Math.max(0, Math.floor(action.amount));
+			const stability = live.stability - amount;
+			play.stability = stability;
+			if (action.inCombat && amount > PANIC_ABOVE) addCondition(play, 'panik');
+			if (amount > BREAKDOWN_ABOVE) addCondition(play, 'mentalerZusammenbruch');
+			const start = play.stabilityStart;
+			if (start !== undefined && stability < start / 2) addCondition(play, 'schleichenderWahnsinn');
+			break;
+		}
+		case 'spendMp': {
+			const amount = Math.max(0, Math.floor(action.amount));
+			const before = Math.max(0, -live.mp);
+			const mp = live.mp - amount;
+			const after = Math.max(0, -mp);
+			// Jeder überzogene Punkt kostet 1 TP, ab dem fünften überzogenen Punkt 2 TP.
+			let damage = 0;
+			for (let point = before + 1; point <= after; point++) damage += point >= OVERDRAW_DOUBLE_FROM ? 2 : 1;
+			play.mp = mp;
+			if (damage) play.tp = Math.max(0, live.tp - damage);
+			break;
+		}
+		case 'rest':
+			if (action.hours >= 1) delete play.tp;
+			if (action.hours >= 8) delete play.mp;
+			else if (action.hours >= 4) play.mp = Math.min(live.maxMp, live.mp + Math.floor(live.maxMp / 2));
+			if (action.luck) play.luck = Math.max(...action.luck.dice);
+			break;
+		case 'meditate': {
+			const gained = action.rolls.reduce((sum, r) => sum + r.dice[0] + action.bonus, 0);
+			play.mp = Math.min(live.maxMp, live.mp + gained);
+			break;
+		}
+		case 'rerollLuck':
+			play.luck = Math.max(...action.roll.dice);
+			break;
+		case 'fumble':
+			play.luck = (live.luck ?? 0) + 1;
 			break;
 	}
 }
