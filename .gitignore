@@ -27,8 +27,12 @@ desktop.ini
 
 # VS Code
 .vscode/
-# KI-Werkzeuge (Claude Code): Anweisungen, Einstellungen, Planung. Nur lokal.
+
+# KI-Werkzeuge (Claude Code): Anweisungen und Einstellungen. Nur lokal.
 CLAUDE.md
 .claude/
 docs/agents/
+
+# Eigene Planungsnotizen und Glossar. Nur lokal.
 .scratch/
+CONTEXT.md
