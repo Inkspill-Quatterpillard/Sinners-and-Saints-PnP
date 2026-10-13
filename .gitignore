@@ -1,0 +1,26 @@
+# Gilt für das ganze Repo. Was nur die App betrifft, steht in app/.gitignore.
+
+# Abhängigkeiten
+node_modules/
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editoren
+.idea/
+*.swp
+
+# Umgebungsvariablen und Zugangsdaten
+.env
+.env.*
+!.env.example
+
+# Eigene Aufnahmen und Testvideos (nur lokal)
+*.webm
+*.mp4
+*.mov
+
+# Logs
+*.log
