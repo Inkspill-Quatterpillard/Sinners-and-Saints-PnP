@@ -24,3 +24,11 @@ desktop.ini
 
 # Logs
 *.log
+
+# VS Code
+.vscode/
+# KI-Werkzeuge (Claude Code): Anweisungen, Einstellungen, Planung. Nur lokal.
+CLAUDE.md
+.claude/
+docs/agents/
+.scratch/

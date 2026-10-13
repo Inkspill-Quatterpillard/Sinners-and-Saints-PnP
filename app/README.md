@@ -1,6 +1,6 @@
 # Sinners and Saints – Charakter-App
 
-Offline-fähige PWA (SvelteKit, statischer Build) zum Erstellen und Führen von Charakteren. Hintergrund in `../CONTEXT.md`, `../docs/adr/` und `../.scratch/charakter-app/`.
+Offline-fähige PWA (SvelteKit, statischer Build) zum Erstellen und Führen von Charakteren. Hintergrund in `../CONTEXT.md` und `../docs/adr/`.
 
 ## Befehle
 
